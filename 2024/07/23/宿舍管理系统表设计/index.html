@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>test |  xuanz</title>
+      <title>数据库表设计 |  xuanz</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -55,7 +55,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-test"
+  id="post-宿舍管理系统表设计"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -66,7 +66,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  test
+  数据库表设计
 </h1>
  
 
@@ -74,15 +74,15 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2024/07/23/test/" class="article-date">
-  <time datetime="2024-07-23T05:18:51.000Z" itemprop="datePublished">2024-07-23</time>
+      <a href="/2024/07/23/%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%A1%A8%E8%AE%BE%E8%AE%A1/" class="article-date">
+  <time datetime="2024-07-23T07:57:34.000Z" itemprop="datePublished">2024-07-23</time>
 </a>   
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">1</span>
+            <span class="post-count">736</span>
         </span>
     </span>
 
@@ -91,7 +91,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">2 min</span>
         </span>
     </span>
 </div>
@@ -106,8 +106,402 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1> 
+  <p align="right">
+  <span style="color:#0077cc; font-weight:bold;">作者: 戴暄哲</span><br>
+  日期: 2024年6月
+</p>
+
+
+<h3 id="表：d-admin"><a href="#表：d-admin" class="headerlink" title="表：d_admin"></a>表：<code>d_admin</code></h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>a_id</code></td>
+<td>int</td>
+<td>管理员ID</td>
+</tr>
+<tr>
+<td><code>a_username</code></td>
+<td>varchar(20)</td>
+<td>用户名</td>
+</tr>
+<tr>
+<td><code>a_password</code></td>
+<td>varchar(50)</td>
+<td>密码</td>
+</tr>
+<tr>
+<td><code>a_name</code></td>
+<td>varchar(20)</td>
+<td>姓名</td>
+</tr>
+<tr>
+<td><code>a_phone</code></td>
+<td>bigint</td>
+<td>电话号码</td>
+</tr>
+<tr>
+<td><code>a_power</code></td>
+<td>varchar(20)</td>
+<td>权限</td>
+</tr>
+<tr>
+<td><code>a_describe</code></td>
+<td>varchar(40)</td>
+<td>描述</td>
+</tr>
+</tbody></table>
+<h3 id="表：d-class"><a href="#表：d-class" class="headerlink" title="表：d_class"></a>表：<code>d_class</code></h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>c_id</code></td>
+<td>int</td>
+<td>班级ID</td>
+</tr>
+<tr>
+<td><code>c_classid</code></td>
+<td>int</td>
+<td>班级编号</td>
+</tr>
+<tr>
+<td><code>c_classname</code></td>
+<td>varchar(30)</td>
+<td>班级名称</td>
+</tr>
+<tr>
+<td><code>c_counsellor</code></td>
+<td>varchar(30)</td>
+<td>辅导员</td>
+</tr>
+</tbody></table>
+<h3 id="表：d-dormgrade"><a href="#表：d-dormgrade" class="headerlink" title="表：d_dormgrade"></a>表：<code>d_dormgrade</code></h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>g_id</code></td>
+<td>int</td>
+<td>宿舍评分ID</td>
+</tr>
+<tr>
+<td><code>d_id</code></td>
+<td>int</td>
+<td>宿舍ID</td>
+</tr>
+<tr>
+<td><code>d_dormbuilding</code></td>
+<td>varchar(20)</td>
+<td>宿舍楼名称</td>
+</tr>
+<tr>
+<td><code>d_grade</code></td>
+<td>int</td>
+<td>评分</td>
+</tr>
+<tr>
+<td><code>create_time</code></td>
+<td>datetime</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td><code>update_time</code></td>
+<td>datetime</td>
+<td>更新时间</td>
+</tr>
+</tbody></table>
+<h3 id="表：d-dormitoryinfo"><a href="#表：d-dormitoryinfo" class="headerlink" title="表：d_dormitoryinfo"></a>表：<code>d_dormitoryinfo</code></h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>d_id</code></td>
+<td>int</td>
+<td>宿舍信息ID</td>
+</tr>
+<tr>
+<td><code>s_dormitoryid</code></td>
+<td>int</td>
+<td>宿舍编号</td>
+</tr>
+<tr>
+<td><code>d_dormbuilding</code></td>
+<td>varchar(20)</td>
+<td>宿舍楼名称</td>
+</tr>
+<tr>
+<td><code>d_bedtotal</code></td>
+<td>varchar(20)</td>
+<td>总床位数</td>
+</tr>
+<tr>
+<td><code>d_bed</code></td>
+<td>varchar(20)</td>
+<td>可用床位数</td>
+</tr>
+<tr>
+<td><code>a_name</code></td>
+<td>varchar(20)</td>
+<td>宿舍管理员姓名</td>
+</tr>
+</tbody></table>
+<h3 id="表：d-dormrepair"><a href="#表：d-dormrepair" class="headerlink" title="表：d_dormrepair"></a>表：<code>d_dormrepair</code></h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>r_id</code></td>
+<td>int</td>
+<td>维修ID</td>
+</tr>
+<tr>
+<td><code>d_id</code></td>
+<td>int</td>
+<td>宿舍ID</td>
+</tr>
+<tr>
+<td><code>d_dormbuilding</code></td>
+<td>varchar(30)</td>
+<td>宿舍楼名称</td>
+</tr>
+<tr>
+<td><code>r_name</code></td>
+<td>varchar(20)</td>
+<td>报修人姓名</td>
+</tr>
+<tr>
+<td><code>reason</code></td>
+<td>varchar(50)</td>
+<td>报修原因</td>
+</tr>
+<tr>
+<td><code>create_time</code></td>
+<td>datetime</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td><code>update_time</code></td>
+<td>datetime</td>
+<td>更新时间</td>
+</tr>
+</tbody></table>
+<h3 id="表：d-stgrade"><a href="#表：d-stgrade" class="headerlink" title="表：d_stgrade"></a>表：<code>d_stgrade</code></h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>g_id</code></td>
+<td>int</td>
+<td>学生成绩ID</td>
+</tr>
+<tr>
+<td><code>s_studentid</code></td>
+<td>int</td>
+<td>学生编号</td>
+</tr>
+<tr>
+<td><code>s_name</code></td>
+<td>varchar(20)</td>
+<td>学生姓名</td>
+</tr>
+<tr>
+<td><code>s_grade</code></td>
+<td>int</td>
+<td>评分</td>
+</tr>
+<tr>
+<td><code>s_classid</code></td>
+<td>int</td>
+<td>班级编号</td>
+</tr>
+<tr>
+<td><code>s_dormitoryid</code></td>
+<td>int</td>
+<td>宿舍编号</td>
+</tr>
+<tr>
+<td><code>create_time</code></td>
+<td>datetime</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td><code>update_time</code></td>
+<td>datetime</td>
+<td>更新时间</td>
+</tr>
+</tbody></table>
+<h3 id="表：d-student"><a href="#表：d-student" class="headerlink" title="表：d_student"></a>表：<code>d_student</code></h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>s_id</code></td>
+<td>int</td>
+<td>学生ID</td>
+</tr>
+<tr>
+<td><code>s_studentid</code></td>
+<td>int</td>
+<td>学生编号</td>
+</tr>
+<tr>
+<td><code>s_name</code></td>
+<td>varchar(20)</td>
+<td>学生姓名</td>
+</tr>
+<tr>
+<td><code>s_sex</code></td>
+<td>varchar(20)</td>
+<td>性别</td>
+</tr>
+<tr>
+<td><code>s_age</code></td>
+<td>int</td>
+<td>年龄</td>
+</tr>
+<tr>
+<td><code>s_phone</code></td>
+<td>bigint</td>
+<td>电话号码</td>
+</tr>
+<tr>
+<td><code>s_classid</code></td>
+<td>int</td>
+<td>班级编号</td>
+</tr>
+<tr>
+<td><code>s_classname</code></td>
+<td>varchar(20)</td>
+<td>班级名称</td>
+</tr>
+<tr>
+<td><code>s_dormitoryid</code></td>
+<td>int</td>
+<td>宿舍编号</td>
+</tr>
+</tbody></table>
+<h3 id="表：d-visitor"><a href="#表：d-visitor" class="headerlink" title="表：d_visitor"></a>表：<code>d_visitor</code></h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>v_id</code></td>
+<td>int</td>
+<td>访客ID</td>
+</tr>
+<tr>
+<td><code>v_name</code></td>
+<td>varchar(20)</td>
+<td>访客姓名</td>
+</tr>
+<tr>
+<td><code>v_phone</code></td>
+<td>bigint</td>
+<td>访客电话号码</td>
+</tr>
+<tr>
+<td><code>v_dormitoryid</code></td>
+<td>int</td>
+<td>访问宿舍编号</td>
+</tr>
+<tr>
+<td><code>v_dormbuilding</code></td>
+<td>varchar(20)</td>
+<td>访问宿舍楼名称</td>
+</tr>
+<tr>
+<td><code>create_time</code></td>
+<td>datetime</td>
+<td>创建时间</td>
+</tr>
+</tbody></table>
+<p>这些表之间通过特定字段进行关联，以下是它们之间的关系说明：</p>
+<ol>
+<li><p><strong>d_admin</strong> 表：</p>
+<ul>
+<li>没有直接的外键与其他表关联，通常通过 <code>a_id</code> 与其他表关联管理员信息。</li>
+</ul>
+</li>
+<li><p><strong>d_class</strong> 表：</p>
+<ul>
+<li>没有直接的外键与其他表关联，通过 <code>c_classid</code> 与其他表关联班级信息。</li>
+</ul>
+</li>
+<li><p><strong>d_dormgrade</strong> 表：</p>
+<ul>
+<li><code>d_id</code> 字段与 <strong>d_dormitoryinfo</strong> 表中的 <code>d_id</code> 字段关联，表示宿舍评分与宿舍信息的关系。</li>
+</ul>
+</li>
+<li><p><strong>d_dormitoryinfo</strong> 表：</p>
+<ul>
+<li><code>s_dormitoryid</code> 字段与 <strong>d_stgrade</strong> 和 <strong>d_visitor</strong> 表中的 <code>s_dormitoryid</code> 字段关联，表示宿舍信息与学生和访客的关系。</li>
+</ul>
+</li>
+<li><p><strong>d_dormrepair</strong> 表：</p>
+<ul>
+<li><code>d_id</code> 字段与 <strong>d_dormitoryinfo</strong> 表中的 <code>d_id</code> 字段关联，表示宿舍维修信息与宿舍信息的关系。</li>
+</ul>
+</li>
+<li><p><strong>d_stgrade</strong> 表：</p>
+<ul>
+<li><code>s_studentid</code> 字段与 <strong>d_student</strong> 表中的 <code>s_studentid</code> 字段关联，表示学生成绩与学生信息的关系。</li>
+<li><code>s_dormitoryid</code> 字段与 <strong>d_dormitoryinfo</strong> 表中的 <code>s_dormitoryid</code> 字段关联，表示学生成绩与宿舍信息的关系。</li>
+</ul>
+</li>
+<li><p><strong>d_student</strong> 表：</p>
+<ul>
+<li><code>s_classid</code> 字段与 <strong>d_class</strong> 表中的 <code>c_id</code> 字段关联，表示学生与班级信息的关系。</li>
+<li><code>s_dormitoryid</code> 字段与 <strong>d_dormitoryinfo</strong> 表中的 <code>s_dormitoryid</code> 字段关联，表示学生与宿舍信息的关系。</li>
+</ul>
+</li>
+<li><p><strong>d_visitor</strong> 表：</p>
+<ul>
+<li><code>v_dormitoryid</code> 字段与 <strong>d_dormitoryinfo</strong> 表中的 <code>s_dormitoryid</code> 字段关联，表示访客与宿舍信息的关系。</li>
+</ul>
+</li>
+</ol>
+ 
       <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
       
     </div>
     
@@ -158,7 +552,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2024/07/23/test/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2024/07/23/%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%A1%A8%E8%AE%BE%E8%AE%A1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -169,10 +563,19 @@
    
   <nav class="article-nav">
     
+      <a href="/2024/07/23/md%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            md语法速查
+          
+        </div>
+      </a>
     
-      <a href="/2024/07/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="article-nav-link">
+    
+      <a href="/2024/07/23/%E6%95%B0%E7%94%B5%E5%AF%86%E7%A0%81%E9%94%81%E8%AE%BE%E8%AE%A1/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">第一篇文章</div>
+        <div class="article-nav-title">数电密码锁设计</div>
       </a>
     
   </nav>
