@@ -274,6 +274,12 @@
 <p>效果：<br>&#x27A4;</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
   </entry>
   <entry>
     <title>数据库表设计</title>
@@ -667,6 +673,14 @@
 </li>
 </ol>
 ]]></content>
+      <categories>
+        <category>作品</category>
+      </categories>
+      <tags>
+        <tag>设计</tag>
+        <tag>数据库</tag>
+        <tag>Java</tag>
+      </tags>
   </entry>
   <entry>
     <title>数电密码锁设计</title>
@@ -728,5 +742,33 @@
 </ol>
 <h3 id="七、总结"><a href="#七、总结" class="headerlink" title="七、总结"></a>七、总结</h3><p>通过组合74LS138、74LS151和74LS04，我们设计了一个密码锁系统。用户输入的3位二进制密码通过数据选择器和译码器进行比较，若一致则输出高电平控制灯亮，否则输出低电平灯灭。这个设计保持了简单性，并使用了三个芯片，符合实验箱的限制，同时实现了基本的密码锁功能。</p>
 ]]></content>
+      <categories>
+        <category>作品</category>
+      </categories>
+      <tags>
+        <tag>设计</tag>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搜索引擎搜索技巧</title>
+    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<ol>
+<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
+<li>限定标题：<code>intitle:标题内容</code></li>
+<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
+<li>限定内容关键词：<code>intext:内容关键词</code></li>
+<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
+<li>限定网址搜索来源：<code>site:具体的网址</code></li>
+<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
+</ol>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>效率</tag>
+        <tag>浏览器</tag>
+      </tags>
   </entry>
 </search>
