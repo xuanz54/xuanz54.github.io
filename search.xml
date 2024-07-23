@@ -1,6 +1,308 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>md语法速查</title>
+    <url>/2024/07/23/md%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5/</url>
+    <content><![CDATA[<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><blockquote>
+<p>语法：# (一级标题)  ## (二级标题)  ### (三级标题) ……</p>
+</blockquote>
+<blockquote>
+<p>代码：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;# 这是一级标题</span><br><span class="line">&gt;## 这是二级标题</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:  </p>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2></blockquote>
+<blockquote>
+<p>快捷键:</p>
+<ul>
+<li>Ctrl+数字1~6可以快速将选中的文本调成对应级别的标题</li>
+<li>Ctrl+0可以快速将选中的文本调成普通文本</li>
+<li>Ctrl+加号&#x2F;减号对标题级别进行加减</li>
+</ul>
+</blockquote>
+<h2 id="二、段落"><a href="#二、段落" class="headerlink" title="二、段落"></a>二、段落</h2><h3 id="1、换行"><a href="#1、换行" class="headerlink" title="1、换行"></a>1、换行</h3><blockquote>
+<p>代码:  </p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;这是一个段落</span><br><span class="line">&gt;这是一个段落</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果: </p>
+<p>这是一个段落<br>这是一个段落</p>
+</blockquote>
+<h3 id="2、分割线"><a href="#2、分割线" class="headerlink" title="2、分割线"></a>2、分割线</h3><blockquote>
+<p>语法:  —或者***+回车</p>
+</blockquote>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;---或者***</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<hr>
+</blockquote>
+<h2 id="三、文字显示"><a href="#三、文字显示" class="headerlink" title="三、文字显示"></a>三、文字显示</h2><h3 id="1、字体"><a href="#1、字体" class="headerlink" title="1、字体"></a>1、字体</h3><blockquote>
+<p>语法:</p>
+<ul>
+<li>粗体:  用一对双星号包裹</li>
+<li>删除线:  用一对双飘号包裹</li>
+<li>下划线:  用一对u标签包裹</li>
+<li>斜体:  用一对单星号包裹</li>
+<li>高亮:  用一对双等号包裹</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;**这是粗体**</span><br><span class="line">&gt;~~这是删除线~~</span><br><span class="line">&gt;&lt;u&gt;这是下划线&lt;/u&gt;</span><br><span class="line">&gt;*这是斜体*</span><br><span class="line">&gt;==这是高亮==</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><strong>这是粗体</strong><br><del>这是删除线</del><br><u>这是下划线</u><br><em>这是斜体</em><br>&#x3D;&#x3D;这是高亮&#x3D;&#x3D;</p>
+</blockquote>
+<blockquote>
+<p>快捷键:</p>
+<ul>
+<li>加粗:  Ctrl+B</li>
+<li>删除线:  Shift+Alt+5</li>
+<li>下划线:  Ctrl+U</li>
+<li>斜体:  Ctrl+I</li>
+</ul>
+</blockquote>
+<h3 id="2、上下标"><a href="#2、上下标" class="headerlink" title="2、上下标"></a>2、上下标</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;x^2^</span><br><span class="line">&gt;H~2~O</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>x^2^<br>H<del>2</del>O</p>
+</blockquote>
+<h2 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h2><h3 id="1、无序列表"><a href="#1、无序列表" class="headerlink" title="1、无序列表"></a>1、无序列表</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;*/-/+ +空格</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>1.只有同一级别:</p>
+<ul>
+<li>苹果</li>
+<li>香蕉</li>
+<li>橘子</li>
+</ul>
+<p>2.子集类:</p>
+<ul>
+<li>一级分类<ul>
+<li>二级分类 <ul>
+<li>三级分类</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+]</p>
+</blockquote>
+<h3 id="2、有序列表"><a href="#2、有序列表" class="headerlink" title="2、有序列表"></a>2、有序列表</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;数字+.+空格</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<ol>
+<li>第一个标题</li>
+<li>第二个标题</li>
+<li>第三个标题</li>
+</ol>
+<ul>
+<li>子内容1</li>
+<li>子内容2</li>
+</ul>
+<ol start="4">
+<li>第四个标题</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+[</p>
+</blockquote>
+<h3 id="3、任务列表"><a href="#3、任务列表" class="headerlink" title="3、任务列表"></a>3、任务列表</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;- [ ] 吃早餐</span><br><span class="line">&gt;- [x] 背单词</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<ul>
+<li><input disabled="" type="checkbox"> 吃早餐</li>
+<li><input checked="" disabled="" type="checkbox"> 背单词</li>
+</ul>
+</blockquote>
+<h2 id="五、区块显示"><a href="#五、区块显示" class="headerlink" title="五、区块显示"></a>五、区块显示</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&gt;+回车</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<blockquote>
+<p>这是最外层区块</p>
+<blockquote>
+<p>这是内层区块</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>这是最内层区块</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="六、代码显示"><a href="#六、代码显示" class="headerlink" title="六、代码显示"></a>六、代码显示</h2><h3 id="1、行内代码"><a href="#1、行内代码" class="headerlink" title="1、行内代码"></a>1、行内代码</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;`int a=0;`（说明：`位于Esc下面）</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><code>int a=0;</code></p>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+&#96;</p>
+</blockquote>
+<h3 id="2、代码块"><a href="#2、代码块" class="headerlink" title="2、代码块"></a>2、代码块</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;```js/java/c#/text</span><br><span class="line">&gt;内容</span><br><span class="line">&gt;```</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+K</p>
+</blockquote>
+<h2 id="七、链接"><a href="#七、链接" class="headerlink" title="七、链接"></a>七、链接</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;www.baidu.com</span><br><span class="line">&gt;[百度一下](https://www.baidu.com)</span><br><span class="line">&gt;[百度一下](https://www.baidu.com &quot;https://www.baidu.com&quot;)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><a href="http://www.baidu.com/">www.baidu.com</a><br><a href="https://www.baidu.com/">百度一下</a><br><a href="https://www.baidu.com/" title="https://www.baidu.com">百度一下</a></p>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+K</p>
+</blockquote>
+<h2 id="八、脚注"><a href="#八、脚注" class="headerlink" title="八、脚注"></a>八、脚注</h2><blockquote>
+<p>说明:  对文本进行解释说明。</p>
+</blockquote>
+<blockquote>
+<p>代码: </p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;[^文本]</span><br><span class="line">&gt;[^文本]:解释说明</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>这是一个技术<a href="%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E6%A1%86%E6%9E%B6%E3%80%82">^①</a></p>
+</blockquote>
+<h2 id="九、图片插入"><a href="#九、图片插入" class="headerlink" title="九、图片插入"></a>九、图片插入</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;![不显示的文字](图片路径 &quot;图片标题&quot;)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+I</p>
+</blockquote>
+<h2 id="十、表格"><a href="#十、表格" class="headerlink" title="十、表格"></a>十、表格</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;|  1   |  2   |  3   |</span><br><span class="line">&gt;| :--- | :--: | ---: |</span><br><span class="line">&gt;|  4   |  5   |  6   |</span><br><span class="line">&gt;|  7   |  8   |  9   |</span><br><span class="line">&gt;|  10  |  11  |  12  |</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th align="center">2</th>
+<th align="right">3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>4</td>
+<td align="center">5</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td>7</td>
+<td align="center">8</td>
+<td align="right">9</td>
+</tr>
+<tr>
+<td>10</td>
+<td align="center">11</td>
+<td align="right">12</td>
+</tr>
+</tbody></table>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+T</p>
+</blockquote>
+<h2 id="十一、支持的HTML元素"><a href="#十一、支持的HTML元素" class="headerlink" title="十一、支持的HTML元素"></a>十一、支持的HTML元素</h2><h3 id="1、文本居中"><a href="#1、文本居中" class="headerlink" title="1、文本居中"></a>1、文本居中</h3><blockquote>
+<p>代码</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;center&gt;内容&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果</p>
+<center>内容</center>
+</blockquote>
+<h3 id="2、快捷键显示"><a href="#2、快捷键显示" class="headerlink" title="2、快捷键显示"></a>2、快捷键显示</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;kbd&gt;内容&lt;/kbd&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><kbd>内容</kbd></p>
+</blockquote>
+<h3 id="3、加粗"><a href="#3、加粗" class="headerlink" title="3、加粗"></a>3、加粗</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;b&gt;加粗&lt;/b&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<p><b>加粗</b></p>
+</blockquote>
+<h3 id="4、倾斜"><a href="#4、倾斜" class="headerlink" title="4、倾斜"></a>4、倾斜</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;i&gt;倾斜&lt;/i&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><i>倾斜</i></p>
+</blockquote>
+<h3 id="5、上下标"><a href="#5、上下标" class="headerlink" title="5、上下标"></a>5、上下标</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;开始&lt;sup&gt;123hi你好&lt;/sup&gt;</span><br><span class="line">&gt;开始&lt;sub&gt;321hi你好&lt;/sub&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>开始<sup>123hi你好</sup><br>开始<sub>321hi你好</sub></p>
+</blockquote>
+<h3 id="6、填充的黑色箭头"><a href="#6、填充的黑色箭头" class="headerlink" title="6、填充的黑色箭头"></a>6、填充的黑色箭头</h3><blockquote>
+<p>代码：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&amp;#x27A4;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果：<br>&#x27A4;</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搜索引擎搜索技巧</title>
+    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<ol>
+<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
+<li>限定标题：<code>intitle:标题内容</code></li>
+<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
+<li>限定内容关键词：<code>intext:内容关键词</code></li>
+<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
+<li>限定网址搜索来源：<code>site:具体的网址</code></li>
+<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
+</ol>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>效率</tag>
+        <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数据库表设计</title>
     <url>/2024/07/23/%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%A1%A8%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<p align="right">
@@ -399,308 +701,6 @@
         <tag>设计</tag>
         <tag>数据库</tag>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搜索引擎搜索技巧</title>
-    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<ol>
-<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
-<li>限定标题：<code>intitle:标题内容</code></li>
-<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
-<li>限定内容关键词：<code>intext:内容关键词</code></li>
-<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
-<li>限定网址搜索来源：<code>site:具体的网址</code></li>
-<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
-</ol>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>效率</tag>
-        <tag>浏览器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>md语法速查</title>
-    <url>/2024/07/23/md%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5/</url>
-    <content><![CDATA[<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><blockquote>
-<p>语法：# (一级标题)  ## (二级标题)  ### (三级标题) ……</p>
-</blockquote>
-<blockquote>
-<p>代码：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;# 这是一级标题</span><br><span class="line">&gt;## 这是二级标题</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:  </p>
-<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2></blockquote>
-<blockquote>
-<p>快捷键:</p>
-<ul>
-<li>Ctrl+数字1~6可以快速将选中的文本调成对应级别的标题</li>
-<li>Ctrl+0可以快速将选中的文本调成普通文本</li>
-<li>Ctrl+加号&#x2F;减号对标题级别进行加减</li>
-</ul>
-</blockquote>
-<h2 id="二、段落"><a href="#二、段落" class="headerlink" title="二、段落"></a>二、段落</h2><h3 id="1、换行"><a href="#1、换行" class="headerlink" title="1、换行"></a>1、换行</h3><blockquote>
-<p>代码:  </p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;这是一个段落</span><br><span class="line">&gt;这是一个段落</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果: </p>
-<p>这是一个段落<br>这是一个段落</p>
-</blockquote>
-<h3 id="2、分割线"><a href="#2、分割线" class="headerlink" title="2、分割线"></a>2、分割线</h3><blockquote>
-<p>语法:  —或者***+回车</p>
-</blockquote>
-<blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;---或者***</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<hr>
-</blockquote>
-<h2 id="三、文字显示"><a href="#三、文字显示" class="headerlink" title="三、文字显示"></a>三、文字显示</h2><h3 id="1、字体"><a href="#1、字体" class="headerlink" title="1、字体"></a>1、字体</h3><blockquote>
-<p>语法:</p>
-<ul>
-<li>粗体:  用一对双星号包裹</li>
-<li>删除线:  用一对双飘号包裹</li>
-<li>下划线:  用一对u标签包裹</li>
-<li>斜体:  用一对单星号包裹</li>
-<li>高亮:  用一对双等号包裹</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;**这是粗体**</span><br><span class="line">&gt;~~这是删除线~~</span><br><span class="line">&gt;&lt;u&gt;这是下划线&lt;/u&gt;</span><br><span class="line">&gt;*这是斜体*</span><br><span class="line">&gt;==这是高亮==</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><strong>这是粗体</strong><br><del>这是删除线</del><br><u>这是下划线</u><br><em>这是斜体</em><br>&#x3D;&#x3D;这是高亮&#x3D;&#x3D;</p>
-</blockquote>
-<blockquote>
-<p>快捷键:</p>
-<ul>
-<li>加粗:  Ctrl+B</li>
-<li>删除线:  Shift+Alt+5</li>
-<li>下划线:  Ctrl+U</li>
-<li>斜体:  Ctrl+I</li>
-</ul>
-</blockquote>
-<h3 id="2、上下标"><a href="#2、上下标" class="headerlink" title="2、上下标"></a>2、上下标</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;x^2^</span><br><span class="line">&gt;H~2~O</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>x^2^<br>H<del>2</del>O</p>
-</blockquote>
-<h2 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h2><h3 id="1、无序列表"><a href="#1、无序列表" class="headerlink" title="1、无序列表"></a>1、无序列表</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;*/-/+ +空格</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>1.只有同一级别:</p>
-<ul>
-<li>苹果</li>
-<li>香蕉</li>
-<li>橘子</li>
-</ul>
-<p>2.子集类:</p>
-<ul>
-<li>一级分类<ul>
-<li>二级分类 <ul>
-<li>三级分类</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+]</p>
-</blockquote>
-<h3 id="2、有序列表"><a href="#2、有序列表" class="headerlink" title="2、有序列表"></a>2、有序列表</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;数字+.+空格</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<ol>
-<li>第一个标题</li>
-<li>第二个标题</li>
-<li>第三个标题</li>
-</ol>
-<ul>
-<li>子内容1</li>
-<li>子内容2</li>
-</ul>
-<ol start="4">
-<li>第四个标题</li>
-</ol>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+[</p>
-</blockquote>
-<h3 id="3、任务列表"><a href="#3、任务列表" class="headerlink" title="3、任务列表"></a>3、任务列表</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;- [ ] 吃早餐</span><br><span class="line">&gt;- [x] 背单词</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<ul>
-<li><input disabled="" type="checkbox"> 吃早餐</li>
-<li><input checked="" disabled="" type="checkbox"> 背单词</li>
-</ul>
-</blockquote>
-<h2 id="五、区块显示"><a href="#五、区块显示" class="headerlink" title="五、区块显示"></a>五、区块显示</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&gt;+回车</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<blockquote>
-<p>这是最外层区块</p>
-<blockquote>
-<p>这是内层区块</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>这是最内层区块</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="六、代码显示"><a href="#六、代码显示" class="headerlink" title="六、代码显示"></a>六、代码显示</h2><h3 id="1、行内代码"><a href="#1、行内代码" class="headerlink" title="1、行内代码"></a>1、行内代码</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;`int a=0;`（说明：`位于Esc下面）</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><code>int a=0;</code></p>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+&#96;</p>
-</blockquote>
-<h3 id="2、代码块"><a href="#2、代码块" class="headerlink" title="2、代码块"></a>2、代码块</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;```js/java/c#/text</span><br><span class="line">&gt;内容</span><br><span class="line">&gt;```</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+K</p>
-</blockquote>
-<h2 id="七、链接"><a href="#七、链接" class="headerlink" title="七、链接"></a>七、链接</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;www.baidu.com</span><br><span class="line">&gt;[百度一下](https://www.baidu.com)</span><br><span class="line">&gt;[百度一下](https://www.baidu.com &quot;https://www.baidu.com&quot;)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><a href="http://www.baidu.com/">www.baidu.com</a><br><a href="https://www.baidu.com/">百度一下</a><br><a href="https://www.baidu.com/" title="https://www.baidu.com">百度一下</a></p>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+K</p>
-</blockquote>
-<h2 id="八、脚注"><a href="#八、脚注" class="headerlink" title="八、脚注"></a>八、脚注</h2><blockquote>
-<p>说明:  对文本进行解释说明。</p>
-</blockquote>
-<blockquote>
-<p>代码: </p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;[^文本]</span><br><span class="line">&gt;[^文本]:解释说明</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>这是一个技术<a href="%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E6%A1%86%E6%9E%B6%E3%80%82">^①</a></p>
-</blockquote>
-<h2 id="九、图片插入"><a href="#九、图片插入" class="headerlink" title="九、图片插入"></a>九、图片插入</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;![不显示的文字](图片路径 &quot;图片标题&quot;)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+I</p>
-</blockquote>
-<h2 id="十、表格"><a href="#十、表格" class="headerlink" title="十、表格"></a>十、表格</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;|  1   |  2   |  3   |</span><br><span class="line">&gt;| :--- | :--: | ---: |</span><br><span class="line">&gt;|  4   |  5   |  6   |</span><br><span class="line">&gt;|  7   |  8   |  9   |</span><br><span class="line">&gt;|  10  |  11  |  12  |</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<table>
-<thead>
-<tr>
-<th>1</th>
-<th align="center">2</th>
-<th align="right">3</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>4</td>
-<td align="center">5</td>
-<td align="right">6</td>
-</tr>
-<tr>
-<td>7</td>
-<td align="center">8</td>
-<td align="right">9</td>
-</tr>
-<tr>
-<td>10</td>
-<td align="center">11</td>
-<td align="right">12</td>
-</tr>
-</tbody></table>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+T</p>
-</blockquote>
-<h2 id="十一、支持的HTML元素"><a href="#十一、支持的HTML元素" class="headerlink" title="十一、支持的HTML元素"></a>十一、支持的HTML元素</h2><h3 id="1、文本居中"><a href="#1、文本居中" class="headerlink" title="1、文本居中"></a>1、文本居中</h3><blockquote>
-<p>代码</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;center&gt;内容&lt;/center&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果</p>
-<center>内容</center>
-</blockquote>
-<h3 id="2、快捷键显示"><a href="#2、快捷键显示" class="headerlink" title="2、快捷键显示"></a>2、快捷键显示</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;kbd&gt;内容&lt;/kbd&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><kbd>内容</kbd></p>
-</blockquote>
-<h3 id="3、加粗"><a href="#3、加粗" class="headerlink" title="3、加粗"></a>3、加粗</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;b&gt;加粗&lt;/b&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<p><b>加粗</b></p>
-</blockquote>
-<h3 id="4、倾斜"><a href="#4、倾斜" class="headerlink" title="4、倾斜"></a>4、倾斜</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;i&gt;倾斜&lt;/i&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><i>倾斜</i></p>
-</blockquote>
-<h3 id="5、上下标"><a href="#5、上下标" class="headerlink" title="5、上下标"></a>5、上下标</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;开始&lt;sup&gt;123hi你好&lt;/sup&gt;</span><br><span class="line">&gt;开始&lt;sub&gt;321hi你好&lt;/sub&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>开始<sup>123hi你好</sup><br>开始<sub>321hi你好</sub></p>
-</blockquote>
-<h3 id="6、填充的黑色箭头"><a href="#6、填充的黑色箭头" class="headerlink" title="6、填充的黑色箭头"></a>6、填充的黑色箭头</h3><blockquote>
-<p>代码：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&amp;#x27A4;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果：<br>&#x27A4;</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
