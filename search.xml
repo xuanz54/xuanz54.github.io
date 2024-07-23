@@ -1,308 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>md语法速查</title>
-    <url>/2024/07/23/md%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5/</url>
-    <content><![CDATA[<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><blockquote>
-<p>语法：# (一级标题)  ## (二级标题)  ### (三级标题) ……</p>
-</blockquote>
-<blockquote>
-<p>代码：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;# 这是一级标题</span><br><span class="line">&gt;## 这是二级标题</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:  </p>
-<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2></blockquote>
-<blockquote>
-<p>快捷键:</p>
-<ul>
-<li>Ctrl+数字1~6可以快速将选中的文本调成对应级别的标题</li>
-<li>Ctrl+0可以快速将选中的文本调成普通文本</li>
-<li>Ctrl+加号&#x2F;减号对标题级别进行加减</li>
-</ul>
-</blockquote>
-<h2 id="二、段落"><a href="#二、段落" class="headerlink" title="二、段落"></a>二、段落</h2><h3 id="1、换行"><a href="#1、换行" class="headerlink" title="1、换行"></a>1、换行</h3><blockquote>
-<p>代码:  </p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;这是一个段落</span><br><span class="line">&gt;这是一个段落</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果: </p>
-<p>这是一个段落<br>这是一个段落</p>
-</blockquote>
-<h3 id="2、分割线"><a href="#2、分割线" class="headerlink" title="2、分割线"></a>2、分割线</h3><blockquote>
-<p>语法:  —或者***+回车</p>
-</blockquote>
-<blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;---或者***</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<hr>
-</blockquote>
-<h2 id="三、文字显示"><a href="#三、文字显示" class="headerlink" title="三、文字显示"></a>三、文字显示</h2><h3 id="1、字体"><a href="#1、字体" class="headerlink" title="1、字体"></a>1、字体</h3><blockquote>
-<p>语法:</p>
-<ul>
-<li>粗体:  用一对双星号包裹</li>
-<li>删除线:  用一对双飘号包裹</li>
-<li>下划线:  用一对u标签包裹</li>
-<li>斜体:  用一对单星号包裹</li>
-<li>高亮:  用一对双等号包裹</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;**这是粗体**</span><br><span class="line">&gt;~~这是删除线~~</span><br><span class="line">&gt;&lt;u&gt;这是下划线&lt;/u&gt;</span><br><span class="line">&gt;*这是斜体*</span><br><span class="line">&gt;==这是高亮==</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><strong>这是粗体</strong><br><del>这是删除线</del><br><u>这是下划线</u><br><em>这是斜体</em><br>&#x3D;&#x3D;这是高亮&#x3D;&#x3D;</p>
-</blockquote>
-<blockquote>
-<p>快捷键:</p>
-<ul>
-<li>加粗:  Ctrl+B</li>
-<li>删除线:  Shift+Alt+5</li>
-<li>下划线:  Ctrl+U</li>
-<li>斜体:  Ctrl+I</li>
-</ul>
-</blockquote>
-<h3 id="2、上下标"><a href="#2、上下标" class="headerlink" title="2、上下标"></a>2、上下标</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;x^2^</span><br><span class="line">&gt;H~2~O</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>x^2^<br>H<del>2</del>O</p>
-</blockquote>
-<h2 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h2><h3 id="1、无序列表"><a href="#1、无序列表" class="headerlink" title="1、无序列表"></a>1、无序列表</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;*/-/+ +空格</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>1.只有同一级别:</p>
-<ul>
-<li>苹果</li>
-<li>香蕉</li>
-<li>橘子</li>
-</ul>
-<p>2.子集类:</p>
-<ul>
-<li>一级分类<ul>
-<li>二级分类 <ul>
-<li>三级分类</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+]</p>
-</blockquote>
-<h3 id="2、有序列表"><a href="#2、有序列表" class="headerlink" title="2、有序列表"></a>2、有序列表</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;数字+.+空格</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<ol>
-<li>第一个标题</li>
-<li>第二个标题</li>
-<li>第三个标题</li>
-</ol>
-<ul>
-<li>子内容1</li>
-<li>子内容2</li>
-</ul>
-<ol start="4">
-<li>第四个标题</li>
-</ol>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+[</p>
-</blockquote>
-<h3 id="3、任务列表"><a href="#3、任务列表" class="headerlink" title="3、任务列表"></a>3、任务列表</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;- [ ] 吃早餐</span><br><span class="line">&gt;- [x] 背单词</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<ul>
-<li><input disabled="" type="checkbox"> 吃早餐</li>
-<li><input checked="" disabled="" type="checkbox"> 背单词</li>
-</ul>
-</blockquote>
-<h2 id="五、区块显示"><a href="#五、区块显示" class="headerlink" title="五、区块显示"></a>五、区块显示</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&gt;+回车</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<blockquote>
-<p>这是最外层区块</p>
-<blockquote>
-<p>这是内层区块</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>这是最内层区块</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="六、代码显示"><a href="#六、代码显示" class="headerlink" title="六、代码显示"></a>六、代码显示</h2><h3 id="1、行内代码"><a href="#1、行内代码" class="headerlink" title="1、行内代码"></a>1、行内代码</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;`int a=0;`（说明：`位于Esc下面）</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><code>int a=0;</code></p>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+&#96;</p>
-</blockquote>
-<h3 id="2、代码块"><a href="#2、代码块" class="headerlink" title="2、代码块"></a>2、代码块</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;```js/java/c#/text</span><br><span class="line">&gt;内容</span><br><span class="line">&gt;```</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+K</p>
-</blockquote>
-<h2 id="七、链接"><a href="#七、链接" class="headerlink" title="七、链接"></a>七、链接</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;www.baidu.com</span><br><span class="line">&gt;[百度一下](https://www.baidu.com)</span><br><span class="line">&gt;[百度一下](https://www.baidu.com &quot;https://www.baidu.com&quot;)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><a href="http://www.baidu.com/">www.baidu.com</a><br><a href="https://www.baidu.com/">百度一下</a><br><a href="https://www.baidu.com/" title="https://www.baidu.com">百度一下</a></p>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+K</p>
-</blockquote>
-<h2 id="八、脚注"><a href="#八、脚注" class="headerlink" title="八、脚注"></a>八、脚注</h2><blockquote>
-<p>说明:  对文本进行解释说明。</p>
-</blockquote>
-<blockquote>
-<p>代码: </p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;[^文本]</span><br><span class="line">&gt;[^文本]:解释说明</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>这是一个技术<a href="%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E6%A1%86%E6%9E%B6%E3%80%82">^①</a></p>
-</blockquote>
-<h2 id="九、图片插入"><a href="#九、图片插入" class="headerlink" title="九、图片插入"></a>九、图片插入</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;![不显示的文字](图片路径 &quot;图片标题&quot;)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+I</p>
-</blockquote>
-<h2 id="十、表格"><a href="#十、表格" class="headerlink" title="十、表格"></a>十、表格</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;|  1   |  2   |  3   |</span><br><span class="line">&gt;| :--- | :--: | ---: |</span><br><span class="line">&gt;|  4   |  5   |  6   |</span><br><span class="line">&gt;|  7   |  8   |  9   |</span><br><span class="line">&gt;|  10  |  11  |  12  |</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<table>
-<thead>
-<tr>
-<th>1</th>
-<th align="center">2</th>
-<th align="right">3</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>4</td>
-<td align="center">5</td>
-<td align="right">6</td>
-</tr>
-<tr>
-<td>7</td>
-<td align="center">8</td>
-<td align="right">9</td>
-</tr>
-<tr>
-<td>10</td>
-<td align="center">11</td>
-<td align="right">12</td>
-</tr>
-</tbody></table>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+T</p>
-</blockquote>
-<h2 id="十一、支持的HTML元素"><a href="#十一、支持的HTML元素" class="headerlink" title="十一、支持的HTML元素"></a>十一、支持的HTML元素</h2><h3 id="1、文本居中"><a href="#1、文本居中" class="headerlink" title="1、文本居中"></a>1、文本居中</h3><blockquote>
-<p>代码</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;center&gt;内容&lt;/center&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果</p>
-<center>内容</center>
-</blockquote>
-<h3 id="2、快捷键显示"><a href="#2、快捷键显示" class="headerlink" title="2、快捷键显示"></a>2、快捷键显示</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;kbd&gt;内容&lt;/kbd&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><kbd>内容</kbd></p>
-</blockquote>
-<h3 id="3、加粗"><a href="#3、加粗" class="headerlink" title="3、加粗"></a>3、加粗</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;b&gt;加粗&lt;/b&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<p><b>加粗</b></p>
-</blockquote>
-<h3 id="4、倾斜"><a href="#4、倾斜" class="headerlink" title="4、倾斜"></a>4、倾斜</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;i&gt;倾斜&lt;/i&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><i>倾斜</i></p>
-</blockquote>
-<h3 id="5、上下标"><a href="#5、上下标" class="headerlink" title="5、上下标"></a>5、上下标</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;开始&lt;sup&gt;123hi你好&lt;/sup&gt;</span><br><span class="line">&gt;开始&lt;sub&gt;321hi你好&lt;/sub&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>开始<sup>123hi你好</sup><br>开始<sub>321hi你好</sub></p>
-</blockquote>
-<h3 id="6、填充的黑色箭头"><a href="#6、填充的黑色箭头" class="headerlink" title="6、填充的黑色箭头"></a>6、填充的黑色箭头</h3><blockquote>
-<p>代码：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&amp;#x27A4;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果：<br>&#x27A4;</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搜索引擎搜索技巧</title>
-    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<ol>
-<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
-<li>限定标题：<code>intitle:标题内容</code></li>
-<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
-<li>限定内容关键词：<code>intext:内容关键词</code></li>
-<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
-<li>限定网址搜索来源：<code>site:具体的网址</code></li>
-<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
-</ol>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>效率</tag>
-        <tag>浏览器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数据库表设计</title>
     <url>/2024/07/23/%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%A1%A8%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<p align="right">
@@ -701,6 +399,431 @@
         <tag>设计</tag>
         <tag>数据库</tag>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>md语法速查</title>
+    <url>/2024/07/23/md%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5/</url>
+    <content><![CDATA[<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><blockquote>
+<p>语法：# (一级标题)  ## (二级标题)  ### (三级标题) ……</p>
+</blockquote>
+<blockquote>
+<p>代码：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;# 这是一级标题</span><br><span class="line">&gt;## 这是二级标题</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:  </p>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2></blockquote>
+<blockquote>
+<p>快捷键:</p>
+<ul>
+<li>Ctrl+数字1~6可以快速将选中的文本调成对应级别的标题</li>
+<li>Ctrl+0可以快速将选中的文本调成普通文本</li>
+<li>Ctrl+加号&#x2F;减号对标题级别进行加减</li>
+</ul>
+</blockquote>
+<h2 id="二、段落"><a href="#二、段落" class="headerlink" title="二、段落"></a>二、段落</h2><h3 id="1、换行"><a href="#1、换行" class="headerlink" title="1、换行"></a>1、换行</h3><blockquote>
+<p>代码:  </p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;这是一个段落</span><br><span class="line">&gt;这是一个段落</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果: </p>
+<p>这是一个段落<br>这是一个段落</p>
+</blockquote>
+<h3 id="2、分割线"><a href="#2、分割线" class="headerlink" title="2、分割线"></a>2、分割线</h3><blockquote>
+<p>语法:  —或者***+回车</p>
+</blockquote>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;---或者***</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<hr>
+</blockquote>
+<h2 id="三、文字显示"><a href="#三、文字显示" class="headerlink" title="三、文字显示"></a>三、文字显示</h2><h3 id="1、字体"><a href="#1、字体" class="headerlink" title="1、字体"></a>1、字体</h3><blockquote>
+<p>语法:</p>
+<ul>
+<li>粗体:  用一对双星号包裹</li>
+<li>删除线:  用一对双飘号包裹</li>
+<li>下划线:  用一对u标签包裹</li>
+<li>斜体:  用一对单星号包裹</li>
+<li>高亮:  用一对双等号包裹</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;**这是粗体**</span><br><span class="line">&gt;~~这是删除线~~</span><br><span class="line">&gt;&lt;u&gt;这是下划线&lt;/u&gt;</span><br><span class="line">&gt;*这是斜体*</span><br><span class="line">&gt;==这是高亮==</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><strong>这是粗体</strong><br><del>这是删除线</del><br><u>这是下划线</u><br><em>这是斜体</em><br>&#x3D;&#x3D;这是高亮&#x3D;&#x3D;</p>
+</blockquote>
+<blockquote>
+<p>快捷键:</p>
+<ul>
+<li>加粗:  Ctrl+B</li>
+<li>删除线:  Shift+Alt+5</li>
+<li>下划线:  Ctrl+U</li>
+<li>斜体:  Ctrl+I</li>
+</ul>
+</blockquote>
+<h3 id="2、上下标"><a href="#2、上下标" class="headerlink" title="2、上下标"></a>2、上下标</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;x^2^</span><br><span class="line">&gt;H~2~O</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>x^2^<br>H<del>2</del>O</p>
+</blockquote>
+<h2 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h2><h3 id="1、无序列表"><a href="#1、无序列表" class="headerlink" title="1、无序列表"></a>1、无序列表</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;*/-/+ +空格</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>1.只有同一级别:</p>
+<ul>
+<li>苹果</li>
+<li>香蕉</li>
+<li>橘子</li>
+</ul>
+<p>2.子集类:</p>
+<ul>
+<li>一级分类<ul>
+<li>二级分类 <ul>
+<li>三级分类</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+]</p>
+</blockquote>
+<h3 id="2、有序列表"><a href="#2、有序列表" class="headerlink" title="2、有序列表"></a>2、有序列表</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;数字+.+空格</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<ol>
+<li>第一个标题</li>
+<li>第二个标题</li>
+<li>第三个标题</li>
+</ol>
+<ul>
+<li>子内容1</li>
+<li>子内容2</li>
+</ul>
+<ol start="4">
+<li>第四个标题</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+[</p>
+</blockquote>
+<h3 id="3、任务列表"><a href="#3、任务列表" class="headerlink" title="3、任务列表"></a>3、任务列表</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;- [ ] 吃早餐</span><br><span class="line">&gt;- [x] 背单词</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<ul>
+<li><input disabled="" type="checkbox"> 吃早餐</li>
+<li><input checked="" disabled="" type="checkbox"> 背单词</li>
+</ul>
+</blockquote>
+<h2 id="五、区块显示"><a href="#五、区块显示" class="headerlink" title="五、区块显示"></a>五、区块显示</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&gt;+回车</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<blockquote>
+<p>这是最外层区块</p>
+<blockquote>
+<p>这是内层区块</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>这是最内层区块</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="六、代码显示"><a href="#六、代码显示" class="headerlink" title="六、代码显示"></a>六、代码显示</h2><h3 id="1、行内代码"><a href="#1、行内代码" class="headerlink" title="1、行内代码"></a>1、行内代码</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;`int a=0;`（说明：`位于Esc下面）</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><code>int a=0;</code></p>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+&#96;</p>
+</blockquote>
+<h3 id="2、代码块"><a href="#2、代码块" class="headerlink" title="2、代码块"></a>2、代码块</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;```js/java/c#/text</span><br><span class="line">&gt;内容</span><br><span class="line">&gt;```</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+K</p>
+</blockquote>
+<h2 id="七、链接"><a href="#七、链接" class="headerlink" title="七、链接"></a>七、链接</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;www.baidu.com</span><br><span class="line">&gt;[百度一下](https://www.baidu.com)</span><br><span class="line">&gt;[百度一下](https://www.baidu.com &quot;https://www.baidu.com&quot;)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><a href="http://www.baidu.com/">www.baidu.com</a><br><a href="https://www.baidu.com/">百度一下</a><br><a href="https://www.baidu.com/" title="https://www.baidu.com">百度一下</a></p>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+K</p>
+</blockquote>
+<h2 id="八、脚注"><a href="#八、脚注" class="headerlink" title="八、脚注"></a>八、脚注</h2><blockquote>
+<p>说明:  对文本进行解释说明。</p>
+</blockquote>
+<blockquote>
+<p>代码: </p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;[^文本]</span><br><span class="line">&gt;[^文本]:解释说明</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>这是一个技术<a href="%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E6%A1%86%E6%9E%B6%E3%80%82">^①</a></p>
+</blockquote>
+<h2 id="九、图片插入"><a href="#九、图片插入" class="headerlink" title="九、图片插入"></a>九、图片插入</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;![不显示的文字](图片路径 &quot;图片标题&quot;)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+I</p>
+</blockquote>
+<h2 id="十、表格"><a href="#十、表格" class="headerlink" title="十、表格"></a>十、表格</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;|  1   |  2   |  3   |</span><br><span class="line">&gt;| :--- | :--: | ---: |</span><br><span class="line">&gt;|  4   |  5   |  6   |</span><br><span class="line">&gt;|  7   |  8   |  9   |</span><br><span class="line">&gt;|  10  |  11  |  12  |</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th align="center">2</th>
+<th align="right">3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>4</td>
+<td align="center">5</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td>7</td>
+<td align="center">8</td>
+<td align="right">9</td>
+</tr>
+<tr>
+<td>10</td>
+<td align="center">11</td>
+<td align="right">12</td>
+</tr>
+</tbody></table>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+T</p>
+</blockquote>
+<h2 id="十一、支持的HTML元素"><a href="#十一、支持的HTML元素" class="headerlink" title="十一、支持的HTML元素"></a>十一、支持的HTML元素</h2><h3 id="1、文本居中"><a href="#1、文本居中" class="headerlink" title="1、文本居中"></a>1、文本居中</h3><blockquote>
+<p>代码</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;center&gt;内容&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果</p>
+<center>内容</center>
+</blockquote>
+<h3 id="2、快捷键显示"><a href="#2、快捷键显示" class="headerlink" title="2、快捷键显示"></a>2、快捷键显示</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;kbd&gt;内容&lt;/kbd&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><kbd>内容</kbd></p>
+</blockquote>
+<h3 id="3、加粗"><a href="#3、加粗" class="headerlink" title="3、加粗"></a>3、加粗</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;b&gt;加粗&lt;/b&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<p><b>加粗</b></p>
+</blockquote>
+<h3 id="4、倾斜"><a href="#4、倾斜" class="headerlink" title="4、倾斜"></a>4、倾斜</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;i&gt;倾斜&lt;/i&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><i>倾斜</i></p>
+</blockquote>
+<h3 id="5、上下标"><a href="#5、上下标" class="headerlink" title="5、上下标"></a>5、上下标</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;开始&lt;sup&gt;123hi你好&lt;/sup&gt;</span><br><span class="line">&gt;开始&lt;sub&gt;321hi你好&lt;/sub&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>开始<sup>123hi你好</sup><br>开始<sub>321hi你好</sub></p>
+</blockquote>
+<h3 id="6、填充的黑色箭头"><a href="#6、填充的黑色箭头" class="headerlink" title="6、填充的黑色箭头"></a>6、填充的黑色箭头</h3><blockquote>
+<p>代码：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&amp;#x27A4;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果：<br>&#x27A4;</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pandas数据结构</title>
+    <url>/2024/07/23/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>构造 DataFrame 和 Series 的方法有多种。以下是一些常见的方法：</p>
+<h3 id="构造-DataFrame："><a href="#构造-DataFrame：" class="headerlink" title="构造 DataFrame："></a>构造 DataFrame：</h3><ol>
+<li><strong>从字典构造</strong>：使用字典创建 DataFrame，字典的键是列名，值是列的数据。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;A&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="string">&#x27;B&#x27;</span>: [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]&#125;</span><br><span class="line">df = pd.DataFrame(data)</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>从列表构造</strong>：使用列表构造 DataFrame，每个子列表代表一行数据。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = [[<span class="number">1</span>, <span class="number">4</span>], [<span class="number">2</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">6</span>]]</span><br><span class="line">df = pd.DataFrame(data, columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>从 NumPy 数组构造</strong>：使用 NumPy 数组构造 DataFrame。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">data = np.array([[<span class="number">1</span>, <span class="number">4</span>], [<span class="number">2</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">6</span>]])</span><br><span class="line">df = pd.DataFrame(data, columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><strong>从 Series 构造</strong>：使用 Series 构造 DataFrame。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s1 = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">s2 = pd.Series([<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&#x27;A&#x27;</span>: s1, <span class="string">&#x27;B&#x27;</span>: s2&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="构造-Series："><a href="#构造-Series：" class="headerlink" title="构造 Series："></a>构造 Series：</h3><ol>
+<li><strong>从列表构造</strong>：使用列表构造 Series。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>从 NumPy 数组构造</strong>：使用 NumPy 数组构造 Series。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">arr = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br><span class="line">s = pd.Series(arr)</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>从字典构造</strong>：使用字典构造 Series，字典的键作为索引。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = &#123;<span class="string">&#x27;a&#x27;</span>: <span class="number">1</span>, <span class="string">&#x27;b&#x27;</span>: <span class="number">2</span>, <span class="string">&#x27;c&#x27;</span>: <span class="number">3</span>, <span class="string">&#x27;d&#x27;</span>: <span class="number">4</span>&#125;</span><br><span class="line">s = pd.Series(data)</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><strong>从标量值构造</strong>：使用标量值构造 Series，指定索引长度。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = pd.Series(<span class="number">5</span>, index=[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<p>这些是构造 DataFrame 和 Series 最常见的方法，根据数据的来源和形式选择合适的构造方式。</p>
+<hr>
+<p>在 Pandas 中，<code>iloc</code>、<code>loc</code>、<code>at</code> 和 <code>iat</code> 是用于访问数据的四种方法，它们之间的区别和使用方法如下：</p>
+<ol>
+<li><code>iloc</code>：通过整数位置来访问数据。你可以使用行号和列号来获取数据。行和列的编号都是从 0 开始的。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个示例 DataFrame</span></span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&#x27;A&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="string">&#x27;B&#x27;</span>: [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过整数位置访问数据</span></span><br><span class="line"><span class="built_in">print</span>(df.iloc[<span class="number">0</span>, <span class="number">1</span>])  <span class="comment"># 输出第 0 行、第 1 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><code>loc</code>：通过标签来访问数据。你可以使用行标签和列标签来获取数据。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 loc 访问数据</span></span><br><span class="line"><span class="built_in">print</span>(df.loc[<span class="number">0</span>, <span class="string">&#x27;B&#x27;</span>])  <span class="comment"># 输出第 0 行、&#x27;B&#x27; 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><code>at</code>：通过标签快速访问标量值。类似于 <code>loc</code>，但 <code>at</code> 只能用于获取单个元素，速度更快。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 at 访问单个元素</span></span><br><span class="line"><span class="built_in">print</span>(df.at[<span class="number">0</span>, <span class="string">&#x27;B&#x27;</span>])  <span class="comment"># 输出第 0 行、&#x27;B&#x27; 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><code>iat</code>：通过整数位置快速访问标量值。类似于 <code>iloc</code>，但 <code>iat</code> 只能用于获取单个元素，速度更快。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 iat 访问单个元素</span></span><br><span class="line"><span class="built_in">print</span>(df.iat[<span class="number">0</span>, <span class="number">1</span>])  <span class="comment"># 输出第 0 行、第 1 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<p>总结一下：</p>
+<ul>
+<li>当你知道你要访问的数据的位置时，使用 <code>iloc</code> 和 <code>iat</code>，它们更快。其中iat获取单个元素</li>
+<li>当你知道你要访问的数据的标签时，使用 <code>loc</code> 和 <code>at</code>，它们更直观。其中at获取单个元素</li>
+</ul>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
+    <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
+    <content><![CDATA[<img src="https://www.pnglog.com/FDPPbA.jpg" style="zoom: 33%;"/>
+
+<p>​	</p>
+<p>​	当地时间7月21日下午，美国总统拜登宣布，他不再谋求连任，并全力支持副总统哈里斯作为民主党总统候选人，参与2024年总统角逐。22日，哈里斯发表声明称，已获得足够支持成为民主党总统候选人。</p>
+<p>​	拜登“主动请辞”，让民主党总算松了口气。然而，临阵换帅怎么说也是兵家大忌。相比拜登，副总统哈里斯尽管有年龄、性别及少数族裔等诸多“优势”加持，但想在未来短短几个月内扭转颓势，给民主党带来好运，恐怕是“不可能完成的任务”。</p>
+<p><strong>临危受命，哈里斯手里有几张牌？</strong></p>
+<p>​	被推上风口浪尖的副总统哈里斯，在拜登宣布支持提名她作为党内总统候选人的第一时间，表达了对拜登的感谢之情，希望自己能够“赢得党内总统候选人的提名”，尽一切努力击败共和党总统候选人特朗普。</p>
+<p>​	临危受命的哈里斯，手里到底握有几张牌？</p>
+<p>​	首先，哈里斯的年龄优势。1964年出生的哈里斯，比拜登整整年轻了22岁，比特朗普年轻19岁，享有巨大的年龄优势。在拜登的年龄、健康状况和认知能力饱受质疑、成为特朗普竞选团队重要攻击把柄的情况下，选择年轻的哈里斯无疑是对特朗普竞选策略的釜底抽薪，让对手无法再将火力集中于民主党总统候选人的年龄和健康状况上。一个朝气蓬勃、充满活力的哈里斯将为民主党沉闷的竞选活动注入新鲜血液，相比之下，特朗普的年龄反而成了劣势和诟病对象。</p>
+<p>​	其次，哈里斯的女性身份。民调显示，特朗普在女性选民中的支持率一直低迷，远低于拜登在女性中的支持率。特朗普私生活的不检点和在堕胎问题上的首鼠两端立场，让很多女性选民对他望而却步。然而，拜登由于年龄、健康问题以及在堕胎问题上的不坚定立场，也无法激起女性选民、特别是年轻女性选民的热情。哈里斯在堕胎问题上“支持选择权”（支持女性有堕胎权利和自由）的坚定立场和对女性权利的坚强捍卫，无疑在情感上与女性、特别是年轻女性更能产生共鸣。特别是在面对特朗普时，哈里斯的女性身份和女权立场，更能赢得女性选民支持。</p>
+<p>​	再次，哈里斯的少数族裔身份。哈里斯的父母分别来自印度和牙买加，拥有亚裔和非裔双重少数族裔身份。这两大少数族裔身份的加持，相对于特朗普，哈里斯更能获得非裔和亚裔少数族裔的共情与共鸣。特朗普在对哈里斯进行“攻击”时，更可能投鼠忌器，担心一不小心被扣上种族主义的帽子。在拉美裔、非裔等少数族裔对拜登日益不满的节骨眼，作为少数族裔的哈里斯“出征”，或许能扭转不利于民主党的选情变化，逐步赢得少数族裔支持。</p>
+<p>​	最后，哈里斯担任检察官的经历。在进入华盛顿政坛以前，哈里斯长期在加州政治圈耕耘，先后在县检察官办公室和旧金山地方检察官办公室工作，并历任旧金山地区检察官和加州总检察长。长期担任检察官的经历，让哈里斯熟稔法律，思维敏捷，长于辩论，并善于抓住对手漏洞穷追猛打。哈里斯担任参议员期间，曾在司法部长塞申斯和联邦最高法院大法官卡瓦纳任命听证会上对其进行刨根问底式的“灵魂拷问”，给观众留下深刻印象。哈里斯的这些经历及雄辩口才，与拜登辩论时的卡壳、口吃和不知所云，将形成强烈反差，特朗普将遇到一个强劲的辩论对手。特别是，特朗普被定罪与哈里斯作为“检察官”的履历，如果进行辩论，很容易让人浮现起检察官“审判”犯人的画面。</p>
+<img src="https://www.pnglog.com/tOtZ5c.png" />
+
+
+
+<p><strong>哈里斯锁定党内提名已无悬念</strong></p>
+<p>​	哈里斯虽然得到拜登的全力支持，但是到目前为止，民主党内大佬、前总统奥巴马还没有明确表态。奥巴马在拜登退选后的一份声明中表示：“在接下来的几天里，我们将在未知的水域前行。但我非常有信心，我们党的领导人将能组织一个产生一位杰出候选人的过程。”显然，奥巴马对哈里斯并不满意。</p>
+<p>​	不过，好消息是，自拜登周日宣布退选后，民主党已经迅速集结在哈里斯周围，哈里斯也已获得了拜登的竞选资金，准备全力迎战特朗普。特别是没有在第一时间表态的民主党重量级人物——前议长佩洛西、参议院民主党领袖舒默和众议院民主党领袖杰弗里斯，已经在当地时间周一表态支持哈里斯。此外，所有民主党州长都已经表态支持哈里斯，密歇根州长惠特曼还自告奋勇担任哈里斯竞选团队的共同主席。</p>
+<p>​	鉴于民主党全国代表大会召开在即，留给民主党的时间已经不多了。特别是，俄亥俄州最早9月份就开始大选投票。根据该州法律，两党必须在8月7日前提交总统候选人名单。因此，民主党几乎没有时间就总统候选人进行内部详细讨论和公开角逐。果然，当地时间7月22日，哈里斯发表声明称已获得足够支持成为民主党总统候选人。</p>
+<img src="https://www.pnglog.com/vQyfIJ.png" style="zoom: 67%;" />
+
+
+
+<p><strong>哈里斯能否挽回民主党颓势？</strong></p>
+<p>​	哈里斯锁定党内总统候选人提名几无悬念，但是能否扭转民主党选举颓势，将是一个巨大的问号。实际上，从目前情况看，这似乎是一个无法完成的任务。</p>
+<p>​	首先，临阵换帅是兵家大忌。在距民主党全国代表大会召开不到一个月，距大选投票不足4个月之际，通过“逼宫”方式，迫使现任总统和党内总统候选人退选，无异于一场不流血的“政变”。这至少说明：第一，民主党对赢得此次大选几乎失去了信心，否则也不会铤而走险，出此下策。第二，民主党担心的不仅仅是失去白宫，更担心可能失去国会参议院多数席位及两院的控制权。</p>
+<p>​	逼退现任总统候选人，还会留下诸多“后遗症”。一是影响民主党内部团结。拜登在宣布退选的前一天还坚持不会退选，退选时声称是出于党派利益和国家利益退选，并对奥巴马等“幕后主使”心怀怨愤。奥巴马在拜登退选后特意没有选择公开支持哈里斯，以及佩洛西、舒默等人姗姗来迟的支持，都凸显民主党内部在这一问题上的分歧与矛盾。二是留给哈里斯的时间不多。哈里斯尽管位居副总统，但普遍认为她不在拜登的决策核心圈。哈里斯仓促上位，在短时间内团结本党、凝聚共识，组建竞选团队，提出竞选纲领，迎战特朗普，扭转民主党颓势，可谓时间紧、任务重，困难重重。</p>
+<p>​	其次，哈里斯是“矮子里面拔将军”。哈里斯近四年的副总统履历，并没有成为她的政治加分项，相反可能是负资产。哈里斯担任副总统期间，几乎没有拿得出手、哪怕是一项让美国民众能够印象深刻的政绩。相反，在美国民众的记忆里，满是哈里斯在公开场合不合时宜的“傻笑”、面对边境非法移民激增时的手足无措以及副总统办公室内“宫斗”的丑闻。就像特朗普在竞选集会上嘲讽的，近四年时间里，拜登只让哈里斯专注一件事，即应对边境非法移民问题，但她却完全搞砸了，非法移民长驱直入，让美国边境形同虚设。拿着这张成绩单的哈里斯，能否成为特朗普的“克星”和民主党的“救星”，让人捏把汗。</p>
+<p>​	最后，特朗普风头正健。至少自去年底以来，无论是全国性民调，还是在6-7个关键摇摆州的民调，特朗普都稳定领先拜登。特别是今年4月以来美国大学校园抗议运动、6月27日拜登与特朗普的首场大选电视辩论以及7月13日特朗普在竞选中的遇刺事件，更是进一步拖累了拜登的人气，让民主党忧心如焚。特朗普遇刺后的诸多民调显示，人们对特朗普的正面印象有了较大幅度提升。据美国广播公司新闻和益普索的民调，在未遂暗杀和共和党全国代表大会之后，特朗普的支持率稳步上升，达到40%，创下了该机构四年来民意调查的最高支持率，而大多数美国人则希望总统拜登退出竞选。很多美国政治评论家甚至认为，特朗普在竞选中遇袭，已经将特朗普变成了一种政治符号，完成了对他选举的“加冕仪式”。尽管有些夸张，但特朗普遇袭及遇袭后特朗普在特勤人员簇拥下高举拳头、高呼“战斗”的“定型照”，无疑是今年大选最具冲击力的画面。</p>
+<p>​	哈里斯要挽回民主党选情颓势，可能难于上青天。但是，这并不意味着哈里斯就无计可施。如果哈里斯将矛头对准特朗普的人品、集中于特朗普的道德瑕疵，聚焦特朗普对美国选举制度和法治的践踏与不尊重，强调特朗普代表了富人和大公司的利益，把大选再次变成对特朗普的“公投”，或许还能给特朗普竞选造成一定干扰，给民主党赢得一些喘息空间。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>时政</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搜索引擎搜索技巧</title>
+    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<ol>
+<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
+<li>限定标题：<code>intitle:标题内容</code></li>
+<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
+<li>限定内容关键词：<code>intext:内容关键词</code></li>
+<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
+<li>限定网址搜索来源：<code>site:具体的网址</code></li>
+<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
+</ol>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>浏览器</tag>
       </tags>
   </entry>
   <entry>
