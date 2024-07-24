@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>拜登退选：哈里斯接任，2024年总统大选的新格局 |  xuanz的博客</title>
+      <title>三数之和:排序+双指针 |  xuanz的博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -55,7 +55,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-拜登退选：哈里斯接任，2024年总统大选的新格局"
+  id="post-三数之和：排序+双指针"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -66,7 +66,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  拜登退选：哈里斯接任，2024年总统大选的新格局
+  三数之和:排序+双指针
 </h1>
  
 
@@ -74,11 +74,11 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/" class="article-date">
-  <time datetime="2024-07-23T15:22:00.000Z" itemprop="datePublished">2024-07-23</time>
+      <a href="/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/" class="article-date">
+  <time datetime="2024-07-24T06:03:00.000Z" itemprop="datePublished">2024-07-24</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+    <a class="article-category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
   </div>
   
 <div class="word_count">
@@ -86,7 +86,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">2.8k</span>
+            <span class="post-count">625</span>
         </span>
     </span>
 
@@ -95,7 +95,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">9 min</span>
+            <span class="post-count">2 min</span>
         </span>
     </span>
 </div>
@@ -104,37 +104,25 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <img src="https://www.pnglog.com/FDPPbA.jpg" style="zoom: 33%;"/>
+  <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
+<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
 
-<p>​	</p>
-<p>​	当地时间7月21日下午，美国总统拜登宣布，他不再谋求连任，并全力支持副总统哈里斯作为民主党总统候选人，参与2024年总统角逐。22日，哈里斯发表声明称，已获得足够支持成为民主党总统候选人。</p>
-<p>​	拜登“主动请辞”，让民主党总算松了口气。然而，临阵换帅怎么说也是兵家大忌。相比拜登，副总统哈里斯尽管有年龄、性别及少数族裔等诸多“优势”加持，但想在未来短短几个月内扭转颓势，给民主党带来好运，恐怕是“不可能完成的任务”。</p>
-<p><strong>临危受命，哈里斯手里有几张牌？</strong></p>
-<p>​	被推上风口浪尖的副总统哈里斯，在拜登宣布支持提名她作为党内总统候选人的第一时间，表达了对拜登的感谢之情，希望自己能够“赢得党内总统候选人的提名”，尽一切努力击败共和党总统候选人特朗普。</p>
-<p>​	临危受命的哈里斯，手里到底握有几张牌？</p>
-<p>​	首先，哈里斯的年龄优势。1964年出生的哈里斯，比拜登整整年轻了22岁，比特朗普年轻19岁，享有巨大的年龄优势。在拜登的年龄、健康状况和认知能力饱受质疑、成为特朗普竞选团队重要攻击把柄的情况下，选择年轻的哈里斯无疑是对特朗普竞选策略的釜底抽薪，让对手无法再将火力集中于民主党总统候选人的年龄和健康状况上。一个朝气蓬勃、充满活力的哈里斯将为民主党沉闷的竞选活动注入新鲜血液，相比之下，特朗普的年龄反而成了劣势和诟病对象。</p>
-<p>​	其次，哈里斯的女性身份。民调显示，特朗普在女性选民中的支持率一直低迷，远低于拜登在女性中的支持率。特朗普私生活的不检点和在堕胎问题上的首鼠两端立场，让很多女性选民对他望而却步。然而，拜登由于年龄、健康问题以及在堕胎问题上的不坚定立场，也无法激起女性选民、特别是年轻女性选民的热情。哈里斯在堕胎问题上“支持选择权”（支持女性有堕胎权利和自由）的坚定立场和对女性权利的坚强捍卫，无疑在情感上与女性、特别是年轻女性更能产生共鸣。特别是在面对特朗普时，哈里斯的女性身份和女权立场，更能赢得女性选民支持。</p>
-<p>​	再次，哈里斯的少数族裔身份。哈里斯的父母分别来自印度和牙买加，拥有亚裔和非裔双重少数族裔身份。这两大少数族裔身份的加持，相对于特朗普，哈里斯更能获得非裔和亚裔少数族裔的共情与共鸣。特朗普在对哈里斯进行“攻击”时，更可能投鼠忌器，担心一不小心被扣上种族主义的帽子。在拉美裔、非裔等少数族裔对拜登日益不满的节骨眼，作为少数族裔的哈里斯“出征”，或许能扭转不利于民主党的选情变化，逐步赢得少数族裔支持。</p>
-<p>​	最后，哈里斯担任检察官的经历。在进入华盛顿政坛以前，哈里斯长期在加州政治圈耕耘，先后在县检察官办公室和旧金山地方检察官办公室工作，并历任旧金山地区检察官和加州总检察长。长期担任检察官的经历，让哈里斯熟稔法律，思维敏捷，长于辩论，并善于抓住对手漏洞穷追猛打。哈里斯担任参议员期间，曾在司法部长塞申斯和联邦最高法院大法官卡瓦纳任命听证会上对其进行刨根问底式的“灵魂拷问”，给观众留下深刻印象。哈里斯的这些经历及雄辩口才，与拜登辩论时的卡壳、口吃和不知所云，将形成强烈反差，特朗普将遇到一个强劲的辩论对手。特别是，特朗普被定罪与哈里斯作为“检察官”的履历，如果进行辩论，很容易让人浮现起检察官“审判”犯人的画面。</p>
-<img src="https://www.pnglog.com/tOtZ5c.png" />
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
 
+<p><strong>示例 3：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
 
-
-<p><strong>哈里斯锁定党内提名已无悬念</strong></p>
-<p>​	哈里斯虽然得到拜登的全力支持，但是到目前为止，民主党内大佬、前总统奥巴马还没有明确表态。奥巴马在拜登退选后的一份声明中表示：“在接下来的几天里，我们将在未知的水域前行。但我非常有信心，我们党的领导人将能组织一个产生一位杰出候选人的过程。”显然，奥巴马对哈里斯并不满意。</p>
-<p>​	不过，好消息是，自拜登周日宣布退选后，民主党已经迅速集结在哈里斯周围，哈里斯也已获得了拜登的竞选资金，准备全力迎战特朗普。特别是没有在第一时间表态的民主党重量级人物——前议长佩洛西、参议院民主党领袖舒默和众议院民主党领袖杰弗里斯，已经在当地时间周一表态支持哈里斯。此外，所有民主党州长都已经表态支持哈里斯，密歇根州长惠特曼还自告奋勇担任哈里斯竞选团队的共同主席。</p>
-<p>​	鉴于民主党全国代表大会召开在即，留给民主党的时间已经不多了。特别是，俄亥俄州最早9月份就开始大选投票。根据该州法律，两党必须在8月7日前提交总统候选人名单。因此，民主党几乎没有时间就总统候选人进行内部详细讨论和公开角逐。果然，当地时间7月22日，哈里斯发表声明称已获得足够支持成为民主党总统候选人。</p>
-<img src="https://www.pnglog.com/vQyfIJ.png" style="zoom: 67%;" />
-
-
-
-<p><strong>哈里斯能否挽回民主党颓势？</strong></p>
-<p>​	哈里斯锁定党内总统候选人提名几无悬念，但是能否扭转民主党选举颓势，将是一个巨大的问号。实际上，从目前情况看，这似乎是一个无法完成的任务。</p>
-<p>​	首先，临阵换帅是兵家大忌。在距民主党全国代表大会召开不到一个月，距大选投票不足4个月之际，通过“逼宫”方式，迫使现任总统和党内总统候选人退选，无异于一场不流血的“政变”。这至少说明：第一，民主党对赢得此次大选几乎失去了信心，否则也不会铤而走险，出此下策。第二，民主党担心的不仅仅是失去白宫，更担心可能失去国会参议院多数席位及两院的控制权。</p>
-<p>​	逼退现任总统候选人，还会留下诸多“后遗症”。一是影响民主党内部团结。拜登在宣布退选的前一天还坚持不会退选，退选时声称是出于党派利益和国家利益退选，并对奥巴马等“幕后主使”心怀怨愤。奥巴马在拜登退选后特意没有选择公开支持哈里斯，以及佩洛西、舒默等人姗姗来迟的支持，都凸显民主党内部在这一问题上的分歧与矛盾。二是留给哈里斯的时间不多。哈里斯尽管位居副总统，但普遍认为她不在拜登的决策核心圈。哈里斯仓促上位，在短时间内团结本党、凝聚共识，组建竞选团队，提出竞选纲领，迎战特朗普，扭转民主党颓势，可谓时间紧、任务重，困难重重。</p>
-<p>​	其次，哈里斯是“矮子里面拔将军”。哈里斯近四年的副总统履历，并没有成为她的政治加分项，相反可能是负资产。哈里斯担任副总统期间，几乎没有拿得出手、哪怕是一项让美国民众能够印象深刻的政绩。相反，在美国民众的记忆里，满是哈里斯在公开场合不合时宜的“傻笑”、面对边境非法移民激增时的手足无措以及副总统办公室内“宫斗”的丑闻。就像特朗普在竞选集会上嘲讽的，近四年时间里，拜登只让哈里斯专注一件事，即应对边境非法移民问题，但她却完全搞砸了，非法移民长驱直入，让美国边境形同虚设。拿着这张成绩单的哈里斯，能否成为特朗普的“克星”和民主党的“救星”，让人捏把汗。</p>
-<p>​	最后，特朗普风头正健。至少自去年底以来，无论是全国性民调，还是在6-7个关键摇摆州的民调，特朗普都稳定领先拜登。特别是今年4月以来美国大学校园抗议运动、6月27日拜登与特朗普的首场大选电视辩论以及7月13日特朗普在竞选中的遇刺事件，更是进一步拖累了拜登的人气，让民主党忧心如焚。特朗普遇刺后的诸多民调显示，人们对特朗普的正面印象有了较大幅度提升。据美国广播公司新闻和益普索的民调，在未遂暗杀和共和党全国代表大会之后，特朗普的支持率稳步上升，达到40%，创下了该机构四年来民意调查的最高支持率，而大多数美国人则希望总统拜登退出竞选。很多美国政治评论家甚至认为，特朗普在竞选中遇袭，已经将特朗普变成了一种政治符号，完成了对他选举的“加冕仪式”。尽管有些夸张，但特朗普遇袭及遇袭后特朗普在特勤人员簇拥下高举拳头、高呼“战斗”的“定型照”，无疑是今年大选最具冲击力的画面。</p>
-<p>​	哈里斯要挽回民主党选情颓势，可能难于上青天。但是，这并不意味着哈里斯就无计可施。如果哈里斯将矛头对准特朗普的人品、集中于特朗普的道德瑕疵，聚焦特朗普对美国选举制度和法治的践踏与不尊重，强调特朗普代表了富人和大公司的利益，把大选再次变成对特朗普的“公投”，或许还能给特朗普竞选造成一定干扰，给民主党赢得一些喘息空间。</p>
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
+<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
+<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
  
       <!-- reward -->
       
@@ -193,12 +181,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xuanz54.github.io/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xuanz54.github.io/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%B6%E6%94%BF/" rel="tag">时政</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
 
     </footer>
   </div>
@@ -206,19 +194,19 @@
    
   <nav class="article-nav">
     
-      <a href="/2024/07/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/" class="article-nav-link">
+      <a href="/2024/07/24/%E4%B8%BB%E6%B5%81%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%B8%8E%E9%80%89%E6%8B%A9/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            Git的使用
+            主流大语言模型评测与选择
           
         </div>
       </a>
     
     
-      <a href="/2024/07/23/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="article-nav-link">
+      <a href="/2024/07/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">pandas数据结构</div>
+        <div class="article-nav-title">Git的使用</div>
       </a>
     
   </nav>
