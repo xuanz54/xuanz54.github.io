@@ -1,6 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Git的使用</title>
+    <url>/2024/07/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Git-与-GitHub"><a href="#Git-与-GitHub" class="headerlink" title="Git 与 GitHub"></a>Git 与 GitHub</h1><h2 id="Git-的起源"><a href="#Git-的起源" class="headerlink" title="Git 的起源"></a>Git 的起源</h2><h4 id="“自由主义-开源-教皇”-林纳斯·托瓦兹"><a href="#“自由主义-开源-教皇”-林纳斯·托瓦兹" class="headerlink" title="“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹"></a>“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹</h4><ul>
+<li>Linux</li>
+<li>Git</li>
+</ul>
+<h4 id="Git-是什么？"><a href="#Git-是什么？" class="headerlink" title="Git 是什么？"></a>Git 是什么？</h4><ul>
+<li>Git 是目前世界上最先进的<font color='red'>分布式</font>版本控制工具( 没有之一 )</li>
+</ul>
+<h2 id="Git-的使用"><a href="#Git-的使用" class="headerlink" title="Git 的使用"></a>Git 的使用</h2><h4 id="Git-的安装"><a href="#Git-的安装" class="headerlink" title="Git 的安装"></a>Git 的安装</h4><ul>
+<li><p>Windows git 下载地址 :</p>
+<ol>
+<li><a href="https://git-scm.com/download/win">Git - Downloading Package (git-scm.com)</a></li>
+<li>下载 -&gt; 默认选项安装</li>
+<li>桌面右键 点击 <code>Git Bash Here</code>  即可看到一个终端窗口</li>
+<li>在终端内输入 git –version 如果看到版本信息即安装成功</li>
+</ol>
+</li>
+<li><p>安装完成后，需要最后一步设置，在终端内输入(<font color='red'><strong>不要复制 英文输入法下手打</strong></font>)</p>
+<ol>
+<li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
+</li>
+<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#101;&#109;&#x61;&#x69;&#x6c;&#64;&#120;&#x78;&#x78;&#46;&#x63;&#x6f;&#x6d;">&#101;&#109;&#x61;&#x69;&#x6c;&#64;&#120;&#x78;&#x78;&#46;&#x63;&#x6f;&#x6d;</a></strong></font>“</p>
+<p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
+</li>
+<li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
+</li>
+<li><p><font color='blue'><strong>git config user.email</strong></font> 用于查看配置的邮箱</p>
+</li>
+<li><p>因为 Git 是分布式版本控制系统，所以每个机器必须配置：用户名和email地址</p>
+</li>
+</ol>
+</li>
+</ul>
+<h4 id="常用-Linux命令-部分"><a href="#常用-Linux命令-部分" class="headerlink" title="常用 Linux命令( 部分 )"></a>常用 Linux命令( 部分 )</h4><ul>
+<li>mkdir xxx 新建文件夹</li>
+<li>vi x.txt 新建&#x2F;编辑一个名为 x 的 txt 文件<ul>
+<li>输入 i 进入编辑模式</li>
+<li>Esc + : +wq    保存并退出</li>
+<li>Esc + : + q!     不保存退出</li>
+</ul>
+</li>
+<li>cd xxx 进入一个名为 xxx 的文件夹</li>
+<li>cd .. 返回上一级目录</li>
+<li>ls 列出当前文件夹所有的文件</li>
+<li>pwd 显示当前目录</li>
+<li>cat x.txt 显示 名为 x 的 txt 文件的内容</li>
+<li>clear 清屏( 需要注意 : cmd 控制台中 cls 为清屏  )</li>
+</ul>
+<h4 id="工作区-版本区-暂存区"><a href="#工作区-版本区-暂存区" class="headerlink" title="工作区+版本区+暂存区"></a>工作区+版本区+暂存区</h4><ul>
+<li>工作区 ( working Directory ) : 简单的理解 —— 你在电脑中能看到的目录</li>
+<li>暂存区 ( stage ) : 介于 工作区 和 版本区 中间，是工作区到版本区的必经之路</li>
+<li>版本库 ( Repository ) : 工作区有一个隐藏目录 .git ,这个文件夹不算工作区，而是 Git 的版本库<ul>
+<li>第一步 : git add   把文件添加进暂存区</li>
+<li>第二步 : git commit  把暂存区的所有内容提交到当前版本库</li>
+</ul>
+</li>
+</ul>
+<h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><ul>
+<li><p><font color='pink' ><strong>git init</strong> </font>命令 : 初始化版本库</p>
+<ul>
+<li>创建成功会提示 : <font color='yellowgreen'><strong>Initialized empty Git repository in C:&#x2F;Users&#x2F;31195&#x2F;Desktop&#x2F;xxx&#x2F;.git&#x2F;</strong></font></li>
+<li>目录上会多一个 .git 的文件夹( 没有显示的请打开 显示隐藏文件 )，这个文件夹是 Git 来跟踪管理版本库的，不要去修改&#x2F;删除里面的内容</li>
+</ul>
+</li>
+<li><p><font color = 'pink'><strong>git add x.xx</strong></font> 命令 : 添加指定文件到暂存区</p>
+<ul>
+<li>没有任何提示，代表提交成功( Linux的设计理念 )</li>
+<li>若未初始化，则会提示: <font color='red'><strong>fatal: not a git repository (or any of the parent directories): .git</strong></font></li>
+<li>失败则会提示 : <font color='red'><strong>fatal: pathspec ‘x.xx’ did not match any files</strong></font></li>
+<li>可能出现：<font color='red'><strong>warning: LF will be replaced by CRLF in xxxx</strong></font><ul>
+<li>原因 : Linux和Windows的换行符不一致导致</li>
+<li>解决方法 :执行 <font color='blue'><strong>git config –global core.autocrlf false</strong></font></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>怎么查看文件有没有添加成功</p>
+<ul>
+<li><font color='blue'><strong>git status</strong></font><ul>
+<li>显示<font color='red'> 红色 </font>则未提交到暂存区</li>
+<li>显示<font color='green'> 绿色 </font>则已经提交到暂存区</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><font color='pink'><strong>git commit -m ‘对本次提交的描述’</strong></font></p>
+<ul>
+<li><p>显示则代表 已经成功提交到版本库中</p>
+</li>
+<li><p>如果只输入<font color='red'><strong>git commit</strong></font>会出问题，这时需要 ESC + : + q! 退出即可</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="差异对比"><a href="#差异对比" class="headerlink" title="差异对比"></a>差异对比</h4><ul>
+<li><p><font color='pink'><strong>git diff</strong></font> : 比较暂存区和工作区</p>
+</li>
+<li><p><font color='pink'><strong>git diff –cached</strong></font> : 比较版本库与暂存区 </p>
+</li>
+<li><p><font color='pink'><strong>git diff master</strong></font> : 比较版本库和工作区</p>
+</li>
+</ul>
+<h4 id="日志-版本号"><a href="#日志-版本号" class="headerlink" title="日志 + 版本号"></a>日志 + 版本号</h4><ul>
+<li><p><font color='pink'><strong>git log</strong></font> : 显示从最近到最远的所有提交日志</p>
+</li>
+<li><p><font color='pink'><strong>git reflog</strong></font> : 显示每次提交 ( commit ) 的 commit id</p>
+</li>
+</ul>
+<h4 id="版本回退-版本穿梭-版本撤销"><a href="#版本回退-版本穿梭-版本撤销" class="headerlink" title="版本回退 + 版本穿梭 + 版本撤销"></a>版本回退 + 版本穿梭 + 版本撤销</h4><ul>
+<li><p><font color='pink'><strong>git reset –hard HEAD^</strong></font> 	版本回退( 回退一次提交 )</p>
+</li>
+<li><p><font color='pink'><strong>git reset –hard 版本号</strong></font>	回退到指定<font color='red'>版本号</font>的 commit id 版本</p>
+</li>
+<li><p><font color='pink'><strong>git reset HEAD</strong></font> 	用<code>版本库</code>中的文件去替换<code>暂存区</code>的全部文件</p>
+</li>
+<li><p><font color='pink'><strong>git checkout –x.xxx</strong></font>	用<code>暂存区的指定文件</code>去替换<code>工作区的指定文件</code>		<font color ='red'><strong>危险</strong></font></p>
+</li>
+<li><p><font color='pink'><strong>git checkout HEAD x.xxx</strong></font>	用<code>版本库中的文件</code>替换<code>暂存区</code>和<code>工作区</code>的文件		<font color ='red'><strong>危险</strong></font></p>
+</li>
+<li><p><font color='pink'><strong>git rm –cached x.xxx</strong></font>	从<code>暂存区</code>删除文件</p>
+</li>
+</ul>
+<h4 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h4><ul>
+<li><font color ='pink'><strong>git rm x.xxx</strong></font> 删除文件</li>
+<li><font color ='pink'><strong>git rm -r xxxx</strong></font> 删除文件夹</li>
+<li><strong>常见问题</strong></li>
+</ul>
+<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><ul>
+<li><font color='pink'><strong>git checkout -b dev</strong></font> 		创建 dev 分支，并切换到 dev 分支</li>
+<li><font color='pink'><strong>git branch</strong></font> 		查看当前分支</li>
+<li><font color='pink'><strong>git checkout master</strong></font>		切换到主分支</li>
+<li><font color='pink'><strong>git merge dev</strong></font>		合并 dev 分支到当前分支</li>
+<li><font color='pink'><strong>git branch -d dev</strong></font>		删除指定分支</li>
+<li><font color='pink'><strong>git diff 分支1 分支2</strong></font>		显示出两个分支之间所有差异文件的详细差异</li>
+<li><font color='pink'><strong>git diff 分支1 分支2 –stat</strong></font>		显示出两个分支之间所有差异文件列表</li>
+<li><font color='pink'><strong>git diff 分支1 分支2 x.xxx</strong></font>		显示指定文件的详细差异</li>
+</ul>
+<h4 id="版本冲突"><a href="#版本冲突" class="headerlink" title="版本冲突"></a>版本冲突</h4><ul>
+<li>合并分支时，如果在<font color ='red'>同一个文件的同一个地方，都修改了或新增内容</font>会引起版本冲突</li>
+<li>解决版本冲突最好的办法是借助 Webstorm ( 或 VS Code ) 解决，简单且高效</li>
+</ul>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><h4 id="GitHub-是什么？"><a href="#GitHub-是什么？" class="headerlink" title="GitHub 是什么？"></a>GitHub 是什么？</h4><ul>
+<li>GitHub 是一个 Git 项目托管网站</li>
+</ul>
+<h4 id="GitHub-能做什么？"><a href="#GitHub-能做什么？" class="headerlink" title="GitHub 能做什么？"></a>GitHub 能做什么？</h4><ul>
+<li><p>能够分享你的代码或其他开发人员配合一起开发</p>
+</li>
+<li><p>GitHub 是一个基于 Git 的代码托管平台，Git 并不像 SVN 那样有一个中心服务器。目前我们使用到的 Git 命令都是在本地执行，需要将数据放到一台其他开发人员能够连接的服务器上</p>
+</li>
+</ul>
+<h4 id="GitHub-远程仓库的使用"><a href="#GitHub-远程仓库的使用" class="headerlink" title="GitHub 远程仓库的使用"></a>GitHub 远程仓库的使用</h4><h6 id="关联-本地有仓库，要和远程仓库做关联"><a href="#关联-本地有仓库，要和远程仓库做关联" class="headerlink" title="关联 : 本地有仓库，要和远程仓库做关联"></a>关联 : 本地有仓库，要和远程仓库做关联</h6><ul>
+<li><font color ='pink'><strong>git init</strong></font>	</li>
+<li><font color ='pink'>**git add ***</font></li>
+<li><font color ='pink'><strong>git commit -m ‘this is NO.1 commit’</strong></font></li>
+<li><font color ='pink'><strong>在 GitHub 上创建一个远程仓库</strong></font></li>
+<li><font color ='purple'><strong>git remote add origin https:&#x2F;&#x2F;&lt;token令牌&gt;@github.com&#x2F;&lt;GitHub用户名&gt;&#x2F;&lt;仓库名&gt;</strong></font></li>
+</ul>
+<h6 id="推送-本地有仓库有内容，要推送给远程库"><a href="#推送-本地有仓库有内容，要推送给远程库" class="headerlink" title="推送 : 本地有仓库有内容，要推送给远程库"></a>推送 : 本地有仓库有内容，要推送给远程库</h6><ul>
+<li><font color ='pink'><strong>git push -u origin master</strong></font></li>
+<li>第一次推送的时候 需要加上 -u 参数，Git 不但会把本地的 master 分支内容推送到远程新的 master 分支，还会把本地 master 分支和远程的 master 分支关联起来，在以后推送时可以简化命令 <font color='pink'><strong>git push origin master</strong></font></li>
+<li><strong>备注</strong> :  正常情况下，成功推送一次后，电脑会记住相关信息。下次推送时不会再提示输入。若电脑不能自动记住相关信息，需要执行命令 : <font color='blue'><strong>git config –global credential.helper store</strong></font></li>
+</ul>
+<h6 id="拉取-本地仓库有内容，获取远程库的新内容"><a href="#拉取-本地仓库有内容，获取远程库的新内容" class="headerlink" title="拉取 : 本地仓库有内容，获取远程库的新内容"></a>拉取 : 本地仓库有内容，获取远程库的新内容</h6><ul>
+<li><font color='pink'><strong>git pull origin master</strong></font>		将远程仓库的 master 分支上的代码版本复制&#x2F;合并到本地 master 分支上</li>
+<li><font color='pink'><strong>git fetch origin master:tmp</strong></font>		新建一个tmp分支，将远程仓库的 master 分支上代码版本复制到本地 tmp 分支上，不会自动合并</li>
+</ul>
+<h6 id="克隆-本地无仓库，要获取一个完整的远程库"><a href="#克隆-本地无仓库，要获取一个完整的远程库" class="headerlink" title="克隆 : 本地无仓库，要获取一个完整的远程库"></a>克隆 : 本地无仓库，要获取一个完整的远程库</h6><ul>
+<li><p><font color ='pink'><strong>git clone 远程仓库地址</strong></font></p>
+</li>
+<li><p><strong>备注：</strong>只在第一次获取远程库时，才需要克隆</p>
+</li>
+</ul>
+<h1 id="Git-常用命令总结"><a href="#Git-常用命令总结" class="headerlink" title="Git 常用命令总结"></a>Git 常用命令总结</h1><ul>
+<li><p><strong>mkdir XXX		创建一个空目录  XXX指目录名</strong>		</p>
+</li>
+<li><p><strong>pwd		显示当前目录的路径</strong></p>
+</li>
+<li><p><strong>cat xxx		查看xxx文件内容</strong></p>
+</li>
+<li><p><font color='red'><strong>git init		把当前的目录变成可以管理的 git 仓库，生成隐藏的.git 文件夹</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git add xxx		把xxx文件添加到暂存区</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git commit -m ‘xxx’		提交文件 -m后面是注释 必须写</strong></font></p>
+</li>
+<li><p><strong>git status		查看仓库状态</strong></p>
+</li>
+<li><p><strong>git log		查看提交历史记录</strong></p>
+</li>
+<li><p><strong>git reset –hard HEAD^		往上回退一个版本</strong></p>
+</li>
+<li><p><strong>git reflog		查看提交历史记录的版本号id</strong></p>
+</li>
+<li><p><strong>git checkout –xxx		把xxx文件在工作区的修改全部撤销</strong></p>
+</li>
+<li><p><strong>git rm xxx		删除xxx文件</strong></p>
+</li>
+<li><p><font color='red'><strong>git remote add origin https:&#x2F;&#x2F;&lt;token令牌&gt;@github.com&#x2F;&lt;GitHub用户名&gt;&#x2F;&lt;仓库名&gt; 		关联一个远程库</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git push -u ( 第一次加上 -u ，以后不用 ) origin master		把当前master分支推送到远程库</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git clone 远程仓库地址		从远程库克隆</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git checkout -b dev		创建dev分支，并切换到dev分支</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git branch		查看当前所有的分支</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git checkout master		切换回master分支</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git merge dev		在当前分支合并dev分支</strong></font></p>
+</li>
+<li><p><strong>git branch -d dev		删除dev分支</strong></p>
+</li>
+<li><p><font color='red'><strong>git branch xxx		创建分支xxx</strong></font></p>
+</li>
+<li><p><strong>git remote		查看远程库信息</strong></p>
+</li>
+<li><p><strong>git remote -v		查看远程库的详细信息</strong></p>
+</li>
+<li><p><font color='red'><strong>git pull origin master		将远程库的更新拉取到本地并自动合并</strong></font></p>
+</li>
+</ul>
+<h1 id="提交代码的规范"><a href="#提交代码的规范" class="headerlink" title="提交代码的规范"></a>提交代码的规范</h1><ul>
+<li><strong>每次提交之前：先更新，再提交</strong></li>
+<li><strong>敏感时间点，一定要及时更新文件</strong></li>
+<li><strong>多提交，避免 “只关注写代码，不关注提交” 的现象</strong></li>
+<li><strong>每次提交必须写清晰明了的提交说明</strong></li>
+<li><strong>不要提交不能通过编译的代码</strong></li>
+<li><strong>不要提交自己不明白的代码</strong></li>
+<li><strong>慎用锁定功能( 尽量避免使用锁，不轻易解锁已上锁的文件 )</strong></li>
+<li><strong>不要提交本地自动生成的文件、文件夹</strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>IDM直装注册版（完美，不反弹！）</title>
     <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
     <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
@@ -299,246 +542,71 @@
       </tags>
   </entry>
   <entry>
-    <title>Git的使用</title>
-    <url>/2024/07/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="Git-与-GitHub"><a href="#Git-与-GitHub" class="headerlink" title="Git 与 GitHub"></a>Git 与 GitHub</h1><h2 id="Git-的起源"><a href="#Git-的起源" class="headerlink" title="Git 的起源"></a>Git 的起源</h2><h4 id="“自由主义-开源-教皇”-林纳斯·托瓦兹"><a href="#“自由主义-开源-教皇”-林纳斯·托瓦兹" class="headerlink" title="“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹"></a>“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹</h4><ul>
-<li>Linux</li>
-<li>Git</li>
+    <title>Windows右键菜单管理软件</title>
+    <url>/2024/08/01/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h4 id="ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"><a href="#ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁" class="headerlink" title="ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"></a>ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁</h4><h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
+<li>启用或禁用文件、文件夹、新建、发送到、打开方式、自定义文件格式、IE浏览器、WinX等右键菜单项目</li>
+<li>对上述场景右键菜单项目进行修改名称、修改图标、导航注册表位置、导航文件位置、永久删除等操作</li>
+<li>对上述场景右键菜单自定义添加项目，自定义菜单命令</li>
 </ul>
-<h4 id="Git-是什么？"><a href="#Git-是什么？" class="headerlink" title="Git 是什么？"></a>Git 是什么？</h4><ul>
-<li>Git 是目前世界上最先进的<font color='red'>分布式</font>版本控制工具( 没有之一 )</li>
+<h2 id="兼容性能"><a href="#兼容性能" class="headerlink" title="兼容性能"></a>兼容性能</h2><ul>
+<li>适用于Win 11、Win10、8.1、8、7、Vista</li>
+<li>适用于 64bit、32bit CPU 操作系统</li>
+<li>适用于高分屏，最佳显示缩放比为150%</li>
+<li>程序支持国际化多语言显示，欢迎为此程序制作语言字典</li>
 </ul>
-<h2 id="Git-的使用"><a href="#Git-的使用" class="headerlink" title="Git 的使用"></a>Git 的使用</h2><h4 id="Git-的安装"><a href="#Git-的安装" class="headerlink" title="Git 的安装"></a>Git 的安装</h4><ul>
-<li><p>Windows git 下载地址 :</p>
-<ol>
-<li><a href="https://git-scm.com/download/win">Git - Downloading Package (git-scm.com)</a></li>
-<li>下载 -&gt; 默认选项安装</li>
-<li>桌面右键 点击 <code>Git Bash Here</code>  即可看到一个终端窗口</li>
-<li>在终端内输入 git –version 如果看到版本信息即安装成功</li>
-</ol>
-</li>
-<li><p>安装完成后，需要最后一步设置，在终端内输入(<font color='red'><strong>不要复制 英文输入法下手打</strong></font>)</p>
-<ol>
-<li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
-</li>
-<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#x65;&#x6d;&#x61;&#x69;&#x6c;&#64;&#x78;&#120;&#120;&#46;&#99;&#x6f;&#109;">&#x65;&#x6d;&#x61;&#x69;&#x6c;&#64;&#x78;&#120;&#120;&#46;&#99;&#x6f;&#109;</a></strong></font>“</p>
-<p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
-</li>
-<li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
-</li>
-<li><p><font color='blue'><strong>git config user.email</strong></font> 用于查看配置的邮箱</p>
-</li>
-<li><p>因为 Git 是分布式版本控制系统，所以每个机器必须配置：用户名和email地址</p>
-</li>
-</ol>
-</li>
+<h2 id="开源程序：【点击下载】"><a href="#开源程序：【点击下载】" class="headerlink" title="开源程序：【点击下载】"></a>开源程序：【<a href="https://github.com/BluePointLilac/ContextMenuManager">点击下载</a>】</h2><h2 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h2><img src="https://www.pnglog.com/QlrEV3.png" style="zoom: 50%;" />
+
+
+
+<h2 id="程序下载"><a href="#程序下载" class="headerlink" title="程序下载"></a>程序下载</h2><ul>
+<li><a href="https://github.com/BluePointLilac/ContextMenuManager/releases/latest">最新版本</a><br>  <a href="https://github.com/BluePointLilac/ContextMenuManager/releases">GitHub Releases</a><br>  <a href="https://gitee.com/BluePointLilac/ContextMenuManager/releases">Gitee Releases</a></li>
+<li>下载说明：在Assets文件列表里面下载zip（建议）或者直接下载exe</li>
+<li>.NET版本说明：程序分为.NET3.5版和.NET4.0版，均适用于Win10、8.1、8、7、Vista系统<br>  win7自带.NET3.5，win8、win8.1、win10自带.NET4.0以上版本，Vista系统既不自带.NET3.5也不自带4.0以上版本<br>  自带.NET可直接运行程序，不自带则需要安装对应版本的<a href="https://dotnet.microsoft.com/download/dotnet-framework">.NET Framework运行库</a></li>
 </ul>
-<h4 id="常用-Linux命令-部分"><a href="#常用-Linux命令-部分" class="headerlink" title="常用 Linux命令( 部分 )"></a>常用 Linux命令( 部分 )</h4><ul>
-<li>mkdir xxx 新建文件夹</li>
-<li>vi x.txt 新建&#x2F;编辑一个名为 x 的 txt 文件<ul>
-<li>输入 i 进入编辑模式</li>
-<li>Esc + : +wq    保存并退出</li>
-<li>Esc + : + q!     不保存退出</li>
-</ul>
-</li>
-<li>cd xxx 进入一个名为 xxx 的文件夹</li>
-<li>cd .. 返回上一级目录</li>
-<li>ls 列出当前文件夹所有的文件</li>
-<li>pwd 显示当前目录</li>
-<li>cat x.txt 显示 名为 x 的 txt 文件的内容</li>
-<li>clear 清屏( 需要注意 : cmd 控制台中 cls 为清屏  )</li>
-</ul>
-<h4 id="工作区-版本区-暂存区"><a href="#工作区-版本区-暂存区" class="headerlink" title="工作区+版本区+暂存区"></a>工作区+版本区+暂存区</h4><ul>
-<li>工作区 ( working Directory ) : 简单的理解 —— 你在电脑中能看到的目录</li>
-<li>暂存区 ( stage ) : 介于 工作区 和 版本区 中间，是工作区到版本区的必经之路</li>
-<li>版本库 ( Repository ) : 工作区有一个隐藏目录 .git ,这个文件夹不算工作区，而是 Git 的版本库<ul>
-<li>第一步 : git add   把文件添加进暂存区</li>
-<li>第二步 : git commit  把暂存区的所有内容提交到当前版本库</li>
-</ul>
-</li>
-</ul>
-<h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><ul>
-<li><p><font color='pink' ><strong>git init</strong> </font>命令 : 初始化版本库</p>
-<ul>
-<li>创建成功会提示 : <font color='yellowgreen'><strong>Initialized empty Git repository in C:&#x2F;Users&#x2F;31195&#x2F;Desktop&#x2F;xxx&#x2F;.git&#x2F;</strong></font></li>
-<li>目录上会多一个 .git 的文件夹( 没有显示的请打开 显示隐藏文件 )，这个文件夹是 Git 来跟踪管理版本库的，不要去修改&#x2F;删除里面的内容</li>
-</ul>
-</li>
-<li><p><font color = 'pink'><strong>git add x.xx</strong></font> 命令 : 添加指定文件到暂存区</p>
-<ul>
-<li>没有任何提示，代表提交成功( Linux的设计理念 )</li>
-<li>若未初始化，则会提示: <font color='red'><strong>fatal: not a git repository (or any of the parent directories): .git</strong></font></li>
-<li>失败则会提示 : <font color='red'><strong>fatal: pathspec ‘x.xx’ did not match any files</strong></font></li>
-<li>可能出现：<font color='red'><strong>warning: LF will be replaced by CRLF in xxxx</strong></font><ul>
-<li>原因 : Linux和Windows的换行符不一致导致</li>
-<li>解决方法 :执行 <font color='blue'><strong>git config –global core.autocrlf false</strong></font></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>怎么查看文件有没有添加成功</p>
-<ul>
-<li><font color='blue'><strong>git status</strong></font><ul>
-<li>显示<font color='red'> 红色 </font>则未提交到暂存区</li>
-<li>显示<font color='green'> 绿色 </font>则已经提交到暂存区</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><font color='pink'><strong>git commit -m ‘对本次提交的描述’</strong></font></p>
-<ul>
-<li><p>显示则代表 已经成功提交到版本库中</p>
-</li>
-<li><p>如果只输入<font color='red'><strong>git commit</strong></font>会出问题，这时需要 ESC + : + q! 退出即可</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="差异对比"><a href="#差异对比" class="headerlink" title="差异对比"></a>差异对比</h4><ul>
-<li><p><font color='pink'><strong>git diff</strong></font> : 比较暂存区和工作区</p>
-</li>
-<li><p><font color='pink'><strong>git diff –cached</strong></font> : 比较版本库与暂存区 </p>
-</li>
-<li><p><font color='pink'><strong>git diff master</strong></font> : 比较版本库和工作区</p>
-</li>
-</ul>
-<h4 id="日志-版本号"><a href="#日志-版本号" class="headerlink" title="日志 + 版本号"></a>日志 + 版本号</h4><ul>
-<li><p><font color='pink'><strong>git log</strong></font> : 显示从最近到最远的所有提交日志</p>
-</li>
-<li><p><font color='pink'><strong>git reflog</strong></font> : 显示每次提交 ( commit ) 的 commit id</p>
-</li>
-</ul>
-<h4 id="版本回退-版本穿梭-版本撤销"><a href="#版本回退-版本穿梭-版本撤销" class="headerlink" title="版本回退 + 版本穿梭 + 版本撤销"></a>版本回退 + 版本穿梭 + 版本撤销</h4><ul>
-<li><p><font color='pink'><strong>git reset –hard HEAD^</strong></font> 	版本回退( 回退一次提交 )</p>
-</li>
-<li><p><font color='pink'><strong>git reset –hard 版本号</strong></font>	回退到指定<font color='red'>版本号</font>的 commit id 版本</p>
-</li>
-<li><p><font color='pink'><strong>git reset HEAD</strong></font> 	用<code>版本库</code>中的文件去替换<code>暂存区</code>的全部文件</p>
-</li>
-<li><p><font color='pink'><strong>git checkout –x.xxx</strong></font>	用<code>暂存区的指定文件</code>去替换<code>工作区的指定文件</code>		<font color ='red'><strong>危险</strong></font></p>
-</li>
-<li><p><font color='pink'><strong>git checkout HEAD x.xxx</strong></font>	用<code>版本库中的文件</code>替换<code>暂存区</code>和<code>工作区</code>的文件		<font color ='red'><strong>危险</strong></font></p>
-</li>
-<li><p><font color='pink'><strong>git rm –cached x.xxx</strong></font>	从<code>暂存区</code>删除文件</p>
-</li>
-</ul>
-<h4 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h4><ul>
-<li><font color ='pink'><strong>git rm x.xxx</strong></font> 删除文件</li>
-<li><font color ='pink'><strong>git rm -r xxxx</strong></font> 删除文件夹</li>
-<li><strong>常见问题</strong></li>
-</ul>
-<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><ul>
-<li><font color='pink'><strong>git checkout -b dev</strong></font> 		创建 dev 分支，并切换到 dev 分支</li>
-<li><font color='pink'><strong>git branch</strong></font> 		查看当前分支</li>
-<li><font color='pink'><strong>git checkout master</strong></font>		切换到主分支</li>
-<li><font color='pink'><strong>git merge dev</strong></font>		合并 dev 分支到当前分支</li>
-<li><font color='pink'><strong>git branch -d dev</strong></font>		删除指定分支</li>
-<li><font color='pink'><strong>git diff 分支1 分支2</strong></font>		显示出两个分支之间所有差异文件的详细差异</li>
-<li><font color='pink'><strong>git diff 分支1 分支2 –stat</strong></font>		显示出两个分支之间所有差异文件列表</li>
-<li><font color='pink'><strong>git diff 分支1 分支2 x.xxx</strong></font>		显示指定文件的详细差异</li>
-</ul>
-<h4 id="版本冲突"><a href="#版本冲突" class="headerlink" title="版本冲突"></a>版本冲突</h4><ul>
-<li>合并分支时，如果在<font color ='red'>同一个文件的同一个地方，都修改了或新增内容</font>会引起版本冲突</li>
-<li>解决版本冲突最好的办法是借助 Webstorm ( 或 VS Code ) 解决，简单且高效</li>
-</ul>
-<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><h4 id="GitHub-是什么？"><a href="#GitHub-是什么？" class="headerlink" title="GitHub 是什么？"></a>GitHub 是什么？</h4><ul>
-<li>GitHub 是一个 Git 项目托管网站</li>
-</ul>
-<h4 id="GitHub-能做什么？"><a href="#GitHub-能做什么？" class="headerlink" title="GitHub 能做什么？"></a>GitHub 能做什么？</h4><ul>
-<li><p>能够分享你的代码或其他开发人员配合一起开发</p>
-</li>
-<li><p>GitHub 是一个基于 Git 的代码托管平台，Git 并不像 SVN 那样有一个中心服务器。目前我们使用到的 Git 命令都是在本地执行，需要将数据放到一台其他开发人员能够连接的服务器上</p>
-</li>
-</ul>
-<h4 id="GitHub-远程仓库的使用"><a href="#GitHub-远程仓库的使用" class="headerlink" title="GitHub 远程仓库的使用"></a>GitHub 远程仓库的使用</h4><h6 id="关联-本地有仓库，要和远程仓库做关联"><a href="#关联-本地有仓库，要和远程仓库做关联" class="headerlink" title="关联 : 本地有仓库，要和远程仓库做关联"></a>关联 : 本地有仓库，要和远程仓库做关联</h6><ul>
-<li><font color ='pink'><strong>git init</strong></font>	</li>
-<li><font color ='pink'>**git add ***</font></li>
-<li><font color ='pink'><strong>git commit -m ‘this is NO.1 commit’</strong></font></li>
-<li><font color ='pink'><strong>在 GitHub 上创建一个远程仓库</strong></font></li>
-<li><font color ='purple'><strong>git remote add origin https:&#x2F;&#x2F;&lt;token令牌&gt;@github.com&#x2F;&lt;GitHub用户名&gt;&#x2F;&lt;仓库名&gt;</strong></font></li>
-</ul>
-<h6 id="推送-本地有仓库有内容，要推送给远程库"><a href="#推送-本地有仓库有内容，要推送给远程库" class="headerlink" title="推送 : 本地有仓库有内容，要推送给远程库"></a>推送 : 本地有仓库有内容，要推送给远程库</h6><ul>
-<li><font color ='pink'><strong>git push -u origin master</strong></font></li>
-<li>第一次推送的时候 需要加上 -u 参数，Git 不但会把本地的 master 分支内容推送到远程新的 master 分支，还会把本地 master 分支和远程的 master 分支关联起来，在以后推送时可以简化命令 <font color='pink'><strong>git push origin master</strong></font></li>
-<li><strong>备注</strong> :  正常情况下，成功推送一次后，电脑会记住相关信息。下次推送时不会再提示输入。若电脑不能自动记住相关信息，需要执行命令 : <font color='blue'><strong>git config –global credential.helper store</strong></font></li>
-</ul>
-<h6 id="拉取-本地仓库有内容，获取远程库的新内容"><a href="#拉取-本地仓库有内容，获取远程库的新内容" class="headerlink" title="拉取 : 本地仓库有内容，获取远程库的新内容"></a>拉取 : 本地仓库有内容，获取远程库的新内容</h6><ul>
-<li><font color='pink'><strong>git pull origin master</strong></font>		将远程仓库的 master 分支上的代码版本复制&#x2F;合并到本地 master 分支上</li>
-<li><font color='pink'><strong>git fetch origin master:tmp</strong></font>		新建一个tmp分支，将远程仓库的 master 分支上代码版本复制到本地 tmp 分支上，不会自动合并</li>
-</ul>
-<h6 id="克隆-本地无仓库，要获取一个完整的远程库"><a href="#克隆-本地无仓库，要获取一个完整的远程库" class="headerlink" title="克隆 : 本地无仓库，要获取一个完整的远程库"></a>克隆 : 本地无仓库，要获取一个完整的远程库</h6><ul>
-<li><p><font color ='pink'><strong>git clone 远程仓库地址</strong></font></p>
-</li>
-<li><p><strong>备注：</strong>只在第一次获取远程库时，才需要克隆</p>
-</li>
-</ul>
-<h1 id="Git-常用命令总结"><a href="#Git-常用命令总结" class="headerlink" title="Git 常用命令总结"></a>Git 常用命令总结</h1><ul>
-<li><p><strong>mkdir XXX		创建一个空目录  XXX指目录名</strong>		</p>
-</li>
-<li><p><strong>pwd		显示当前目录的路径</strong></p>
-</li>
-<li><p><strong>cat xxx		查看xxx文件内容</strong></p>
-</li>
-<li><p><font color='red'><strong>git init		把当前的目录变成可以管理的 git 仓库，生成隐藏的.git 文件夹</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git add xxx		把xxx文件添加到暂存区</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git commit -m ‘xxx’		提交文件 -m后面是注释 必须写</strong></font></p>
-</li>
-<li><p><strong>git status		查看仓库状态</strong></p>
-</li>
-<li><p><strong>git log		查看提交历史记录</strong></p>
-</li>
-<li><p><strong>git reset –hard HEAD^		往上回退一个版本</strong></p>
-</li>
-<li><p><strong>git reflog		查看提交历史记录的版本号id</strong></p>
-</li>
-<li><p><strong>git checkout –xxx		把xxx文件在工作区的修改全部撤销</strong></p>
-</li>
-<li><p><strong>git rm xxx		删除xxx文件</strong></p>
-</li>
-<li><p><font color='red'><strong>git remote add origin https:&#x2F;&#x2F;&lt;token令牌&gt;@github.com&#x2F;&lt;GitHub用户名&gt;&#x2F;&lt;仓库名&gt; 		关联一个远程库</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git push -u ( 第一次加上 -u ，以后不用 ) origin master		把当前master分支推送到远程库</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git clone 远程仓库地址		从远程库克隆</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git checkout -b dev		创建dev分支，并切换到dev分支</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git branch		查看当前所有的分支</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git checkout master		切换回master分支</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git merge dev		在当前分支合并dev分支</strong></font></p>
-</li>
-<li><p><strong>git branch -d dev		删除dev分支</strong></p>
-</li>
-<li><p><font color='red'><strong>git branch xxx		创建分支xxx</strong></font></p>
-</li>
-<li><p><strong>git remote		查看远程库信息</strong></p>
-</li>
-<li><p><strong>git remote -v		查看远程库的详细信息</strong></p>
-</li>
-<li><p><font color='red'><strong>git pull origin master		将远程库的更新拉取到本地并自动合并</strong></font></p>
-</li>
-</ul>
-<h1 id="提交代码的规范"><a href="#提交代码的规范" class="headerlink" title="提交代码的规范"></a>提交代码的规范</h1><ul>
-<li><strong>每次提交之前：先更新，再提交</strong></li>
-<li><strong>敏感时间点，一定要及时更新文件</strong></li>
-<li><strong>多提交，避免 “只关注写代码，不关注提交” 的现象</strong></li>
-<li><strong>每次提交必须写清晰明了的提交说明</strong></li>
-<li><strong>不要提交不能通过编译的代码</strong></li>
-<li><strong>不要提交自己不明白的代码</strong></li>
-<li><strong>慎用锁定功能( 尽量避免使用锁，不轻易解锁已上锁的文件 )</strong></li>
-<li><strong>不要提交本地自动生成的文件、文件夹</strong></li>
+<h2 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h2><ul>
+<li>程序需要对注册表项和文件进行读写删改操作，这些行为比较敏感，可能会被 Windows Defender 等误报为病毒，如发生此情况请自行添加进白名单。</li>
+<li>一些特殊菜单项可能会受到其他因素影响导致不会直接显示在右键菜单中，但是按照程序使用的通用规则在此程序中仍会显示为启用，这是正常的现象。</li>
+<li>每个右键管理程序禁用菜单方法可能不同，建议不要同时使用多个右键菜单管理程序，大部分程序使用简单暴力的备份删除法，此程序尽可能使用了系统提供的键值进行隐藏，通过其他程序禁用的菜单项目。请先使用对应程序还原，不然可能无法在此程序中看到它。</li>
+<li>此程序不用于清理未卸载干净的程序，但是可以帮助你快速定位菜单项相关注册表位置和文件位置，你可以根据相关内容进行你的操作。如果你是一个电脑小白，建议只使用启用或者禁用功能。</li>
 </ul>
 ]]></content>
       <categories>
-        <category>笔记</category>
+        <category>软件</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-        <tag>Github</tag>
+        <tag>效率工具</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>三数之和:排序+双指针</title>
+    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
+    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
+<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 3：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
+<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
+<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -620,68 +688,6 @@
       <tags>
         <tag>数据结构</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>三数之和:排序+双指针</title>
-    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
-    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
-<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
-<p><strong>示例 1：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 2：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 3：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>提示：</strong></p>
-<ul>
-<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
-<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
-</ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
-<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>主流大语言模型评测与选择</title>
-    <url>/2024/07/24/%E4%B8%BB%E6%B5%81%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%B8%8E%E9%80%89%E6%8B%A9/</url>
-    <content><![CDATA[<h1 id="主流大语言模型评测与选择"><a href="#主流大语言模型评测与选择" class="headerlink" title="主流大语言模型评测与选择"></a>主流大语言模型评测与选择</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>近年来，人工智能技术迅猛发展，大语言模型作为其中的重要组成部分，在各个领域展示了其强大的能力和广泛的应用前景。本文将详细评测目前市面上的几款主流大语言模型，包括OpenAI的ChatGPT，Google的Gemini，Anthropic的Claude，百度的文心一言，月之暗面的Kimi，字节跳动的豆包，以及科大讯飞的讯飞星火。我们将从模型性能、应用场景、用户体验、创新性及可扩展性等方面进行深入分析，以帮助用户在选择合适的大语言模型时提供参考。</p>
-<h2 id="模型简介"><a href="#模型简介" class="headerlink" title="模型简介"></a>模型简介</h2><h3 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a><a href="https://chatgpt.com/">ChatGPT</a></h3><p>ChatGPT是OpenAI推出的一款强大大语言模型，凭借其出色的自然语言处理能力和多样化的应用场景，迅速成为业界翘楚。ChatGPT能够流畅地理解和生成人类语言，并在对话系统、内容生成、编程辅助等方面表现优异。</p>
-<h3 id="Google-Gemini"><a href="#Google-Gemini" class="headerlink" title="Google Gemini"></a><a href="https://gemini.google.com/">Google Gemini</a></h3><p>Google Gemini是Google开发的一款新型大语言模型，融合了Google在自然语言处理和机器学习领域的前沿技术。Gemini的独特之处在于其强大的多任务处理能力和高度定制化的应用方案，适用于从信息检索到创意生成的广泛领域。</p>
-<h3 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a><a href="https://claude.ai/">Claude</a></h3><p>Claude是Anthropic推出的大语言模型，以其在安全性和伦理方面的创新性设计著称。Claude旨在在保持强大生成能力的同时，最大限度地减少有害输出，其在内容生成和对话系统中的表现非常出色。</p>
-<h3 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a><a href="https://yiyan.baidu.com/">文心一言</a></h3><p>文心一言是百度推出的一款大语言模型，专注于中文语境下的自然语言处理和生成。文心一言在中文理解和生成方面具有很高的精度，广泛应用于中文对话系统、自动翻译和内容生成等领域。</p>
-<h3 id="Kimi"><a href="#Kimi" class="headerlink" title="Kimi"></a><a href="https://kimi.moonshot.cn/">Kimi</a></h3><p>Kimi是由年轻的公司月之暗面推出的一款新兴大语言模型。虽然市场知名度较低，但其在特定领域如技术文档生成和代码辅助编写方面表现不俗。Kimi致力于提供高效、精准的技术解决方案。</p>
-<h3 id="豆包"><a href="#豆包" class="headerlink" title="豆包"></a><a href="https://www.doubao.com/">豆包</a></h3><p>豆包是字节跳动推出的大语言模型，专注于内容生成和创意写作。豆包利用字节跳动在内容平台上的数据优势，在生成自然且富有创意的文本方面表现出色。</p>
-<h3 id="讯飞星火"><a href="#讯飞星火" class="headerlink" title="讯飞星火"></a><a href="https://xinghuo.xfyun.cn/">讯飞星火</a></h3><p>讯飞星火是科大讯飞推出的智能语言模型，特别擅长语音识别和自然语言理解。讯飞星火在智能助手、教育和客服系统中有着广泛应用。</p>
-<h2 id="模型性能对比"><a href="#模型性能对比" class="headerlink" title="模型性能对比"></a>模型性能对比</h2><h3 id="1-语言理解能力"><a href="#1-语言理解能力" class="headerlink" title="1. 语言理解能力"></a>1. 语言理解能力</h3><p>在语言理解能力方面，ChatGPT和Google Gemini表现尤为突出。ChatGPT在多语言环境中的表现非常稳定，能够处理复杂的语法结构和上下文信息。Google Gemini则凭借其强大的数据支持和算法优化，在处理自然语言任务时展现出卓越的性能。</p>
-<p>文心一言在中文语言处理方面具有明显优势，特别是在处理汉语特有的语法和词汇时，表现出色。豆包在生成富有创意的文本方面表现优异，但在复杂的语言理解任务中稍显不足。Claude以其对安全性和伦理问题的重视，确保了在生成内容时尽量减少不良信息的输出。讯飞星火则在语音识别和自然语言理解方面具有独特优势，特别适合语音交互场景。</p>
-<h3 id="2-生成能力"><a href="#2-生成能力" class="headerlink" title="2. 生成能力"></a>2. 生成能力</h3><p>在文本生成能力方面，ChatGPT和豆包表现最佳。ChatGPT生成的文本流畅自然，适用于多种应用场景。豆包凭借其在内容平台上的数据积累，能够生成极具创意和吸引力的内容。Google Gemini和Claude在生成任务中也表现不俗，能够根据输入生成高质量的文本。</p>
-<p>文心一言在生成中文文本方面具有优势，特别是在处理中文对话和自动翻译任务时，表现优异。Kimi在技术文档生成方面表现突出，适合用于代码辅助编写和技术文档生成。讯飞星火则在语音到文本的转换中表现出色，适用于语音助手和客服系统。</p>
-<h3 id="3-应用场景"><a href="#3-应用场景" class="headerlink" title="3. 应用场景"></a>3. 应用场景</h3><p>不同的大语言模型在应用场景上各有所长。ChatGPT适用于对话系统、内容生成、编程辅助等多种场景。Google Gemini凭借其多任务处理能力，适用于信息检索、创意生成等广泛领域。Claude在内容生成和对话系统中表现出色，同时其在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。</p>
-<p>文心一言专注于中文语言处理，适用于中文对话系统、自动翻译和内容生成等领域。Kimi在技术文档生成和代码辅助编写方面表现突出。豆包在内容生成和创意写作方面具有优势，适用于需要生成自然且富有创意文本的场景。讯飞星火在语音识别和自然语言理解方面具有独特优势，适用于语音助手、教育和客服系统。</p>
-<h2 id="用户体验"><a href="#用户体验" class="headerlink" title="用户体验"></a>用户体验</h2><p>在用户体验方面，ChatGPT和Google Gemini表现最佳。ChatGPT以其高效的响应速度和自然的对话体验，获得了广泛好评。Google Gemini则凭借其强大的多任务处理能力和高度定制化的应用方案，提供了极佳的用户体验。</p>
-<p>文心一言在中文语言处理方面具有优势，能够提供精准的中文对话和文本生成体验。Claude以其对安全性和伦理问题的重视，确保用户在使用过程中获得安全可靠的体验。豆包在生成创意文本方面表现出色，特别适合需要高质量内容生成的用户。讯飞星火在语音识别和自然语言理解方面表现优异，为用户提供了便捷的语音交互体验。</p>
-<h2 id="创新性及可扩展性"><a href="#创新性及可扩展性" class="headerlink" title="创新性及可扩展性"></a>创新性及可扩展性</h2><p>在创新性和可扩展性方面，ChatGPT和Google Gemini同样表现出色。ChatGPT不断更新和优化其模型，推出了多个版本，持续提升其性能和应用范围。Google Gemini则利用其在机器学习和自然语言处理领域的前沿技术，推出了高度定制化和多任务处理能力的解决方案。</p>
-<p>Claude在安全性和伦理方面的创新设计，使其在生成内容时能够最大限度地减少有害输出。文心一言在中文语言处理方面的创新性，使其在中文语境下具有很高的应用价值。Kimi虽然市场知名度较低，但其在技术文档生成和代码辅助编写方面的独特功能，使其在特定领域具有优势。豆包利用字节跳动在内容平台上的数据优势，在内容生成和创意写作方面具有独特的创新性。讯飞星火在语音识别和自然语言理解方面的技术创新，使其在语音交互场景中具有广泛的应用前景。</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>综上所述，不同的大语言模型在各自的应用场景中具有不同的优势。<strong>ChatGPT</strong>和<strong>Google Gemini</strong>在多任务处理和用户体验方面表现出色，适用于广泛的应用场景。<strong>Claude</strong>在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。<strong>文心一言</strong>在中文语言处理方面具有明显优势，特别适合中文对话系统和自动翻译等任务。<strong>Kimi</strong>在技术文档生成和代码辅助编写方面表现突出。<strong>豆包</strong>在内容生成和创意写作方面具有优势。<strong>讯飞星火</strong>在语音识别和自然语言理解方面表现优异，适用于语音交互场景。</p>
-<p>在选择合适的大语言模型时，用户应根据具体的应用需求和场景，综合考虑各个模型的性能、用户体验和创新性等因素，选择最符合自身需求的模型。希望本文的评测能够为用户在选择大语言模型时提供有价值的参考。</p>
-]]></content>
-      <categories>
-        <category>科技</category>
-      </categories>
-      <tags>
-        <tag>效率工具</tag>
-        <tag>AI</tag>
       </tags>
   </entry>
   <entry>
@@ -1086,27 +1092,6 @@
       </tags>
   </entry>
   <entry>
-    <title>搜索引擎搜索技巧</title>
-    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<ol>
-<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
-<li>限定标题：<code>intitle:标题内容</code></li>
-<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
-<li>限定内容关键词：<code>intext:内容关键词</code></li>
-<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
-<li>限定网址搜索来源：<code>site:具体的网址</code></li>
-<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
-</ol>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>效率工具</tag>
-        <tag>浏览器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
     <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
     <content><![CDATA[<img src="https://www.pnglog.com/FDPPbA.jpg" style="zoom: 33%;"/>
@@ -1146,6 +1131,59 @@
       </categories>
       <tags>
         <tag>时政</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>主流大语言模型评测与选择</title>
+    <url>/2024/07/24/%E4%B8%BB%E6%B5%81%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%B8%8E%E9%80%89%E6%8B%A9/</url>
+    <content><![CDATA[<h1 id="主流大语言模型评测与选择"><a href="#主流大语言模型评测与选择" class="headerlink" title="主流大语言模型评测与选择"></a>主流大语言模型评测与选择</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>近年来，人工智能技术迅猛发展，大语言模型作为其中的重要组成部分，在各个领域展示了其强大的能力和广泛的应用前景。本文将详细评测目前市面上的几款主流大语言模型，包括OpenAI的ChatGPT，Google的Gemini，Anthropic的Claude，百度的文心一言，月之暗面的Kimi，字节跳动的豆包，以及科大讯飞的讯飞星火。我们将从模型性能、应用场景、用户体验、创新性及可扩展性等方面进行深入分析，以帮助用户在选择合适的大语言模型时提供参考。</p>
+<h2 id="模型简介"><a href="#模型简介" class="headerlink" title="模型简介"></a>模型简介</h2><h3 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a><a href="https://chatgpt.com/">ChatGPT</a></h3><p>ChatGPT是OpenAI推出的一款强大大语言模型，凭借其出色的自然语言处理能力和多样化的应用场景，迅速成为业界翘楚。ChatGPT能够流畅地理解和生成人类语言，并在对话系统、内容生成、编程辅助等方面表现优异。</p>
+<h3 id="Google-Gemini"><a href="#Google-Gemini" class="headerlink" title="Google Gemini"></a><a href="https://gemini.google.com/">Google Gemini</a></h3><p>Google Gemini是Google开发的一款新型大语言模型，融合了Google在自然语言处理和机器学习领域的前沿技术。Gemini的独特之处在于其强大的多任务处理能力和高度定制化的应用方案，适用于从信息检索到创意生成的广泛领域。</p>
+<h3 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a><a href="https://claude.ai/">Claude</a></h3><p>Claude是Anthropic推出的大语言模型，以其在安全性和伦理方面的创新性设计著称。Claude旨在在保持强大生成能力的同时，最大限度地减少有害输出，其在内容生成和对话系统中的表现非常出色。</p>
+<h3 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a><a href="https://yiyan.baidu.com/">文心一言</a></h3><p>文心一言是百度推出的一款大语言模型，专注于中文语境下的自然语言处理和生成。文心一言在中文理解和生成方面具有很高的精度，广泛应用于中文对话系统、自动翻译和内容生成等领域。</p>
+<h3 id="Kimi"><a href="#Kimi" class="headerlink" title="Kimi"></a><a href="https://kimi.moonshot.cn/">Kimi</a></h3><p>Kimi是由年轻的公司月之暗面推出的一款新兴大语言模型。虽然市场知名度较低，但其在特定领域如技术文档生成和代码辅助编写方面表现不俗。Kimi致力于提供高效、精准的技术解决方案。</p>
+<h3 id="豆包"><a href="#豆包" class="headerlink" title="豆包"></a><a href="https://www.doubao.com/">豆包</a></h3><p>豆包是字节跳动推出的大语言模型，专注于内容生成和创意写作。豆包利用字节跳动在内容平台上的数据优势，在生成自然且富有创意的文本方面表现出色。</p>
+<h3 id="讯飞星火"><a href="#讯飞星火" class="headerlink" title="讯飞星火"></a><a href="https://xinghuo.xfyun.cn/">讯飞星火</a></h3><p>讯飞星火是科大讯飞推出的智能语言模型，特别擅长语音识别和自然语言理解。讯飞星火在智能助手、教育和客服系统中有着广泛应用。</p>
+<h2 id="模型性能对比"><a href="#模型性能对比" class="headerlink" title="模型性能对比"></a>模型性能对比</h2><h3 id="1-语言理解能力"><a href="#1-语言理解能力" class="headerlink" title="1. 语言理解能力"></a>1. 语言理解能力</h3><p>在语言理解能力方面，ChatGPT和Google Gemini表现尤为突出。ChatGPT在多语言环境中的表现非常稳定，能够处理复杂的语法结构和上下文信息。Google Gemini则凭借其强大的数据支持和算法优化，在处理自然语言任务时展现出卓越的性能。</p>
+<p>文心一言在中文语言处理方面具有明显优势，特别是在处理汉语特有的语法和词汇时，表现出色。豆包在生成富有创意的文本方面表现优异，但在复杂的语言理解任务中稍显不足。Claude以其对安全性和伦理问题的重视，确保了在生成内容时尽量减少不良信息的输出。讯飞星火则在语音识别和自然语言理解方面具有独特优势，特别适合语音交互场景。</p>
+<h3 id="2-生成能力"><a href="#2-生成能力" class="headerlink" title="2. 生成能力"></a>2. 生成能力</h3><p>在文本生成能力方面，ChatGPT和豆包表现最佳。ChatGPT生成的文本流畅自然，适用于多种应用场景。豆包凭借其在内容平台上的数据积累，能够生成极具创意和吸引力的内容。Google Gemini和Claude在生成任务中也表现不俗，能够根据输入生成高质量的文本。</p>
+<p>文心一言在生成中文文本方面具有优势，特别是在处理中文对话和自动翻译任务时，表现优异。Kimi在技术文档生成方面表现突出，适合用于代码辅助编写和技术文档生成。讯飞星火则在语音到文本的转换中表现出色，适用于语音助手和客服系统。</p>
+<h3 id="3-应用场景"><a href="#3-应用场景" class="headerlink" title="3. 应用场景"></a>3. 应用场景</h3><p>不同的大语言模型在应用场景上各有所长。ChatGPT适用于对话系统、内容生成、编程辅助等多种场景。Google Gemini凭借其多任务处理能力，适用于信息检索、创意生成等广泛领域。Claude在内容生成和对话系统中表现出色，同时其在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。</p>
+<p>文心一言专注于中文语言处理，适用于中文对话系统、自动翻译和内容生成等领域。Kimi在技术文档生成和代码辅助编写方面表现突出。豆包在内容生成和创意写作方面具有优势，适用于需要生成自然且富有创意文本的场景。讯飞星火在语音识别和自然语言理解方面具有独特优势，适用于语音助手、教育和客服系统。</p>
+<h2 id="用户体验"><a href="#用户体验" class="headerlink" title="用户体验"></a>用户体验</h2><p>在用户体验方面，ChatGPT和Google Gemini表现最佳。ChatGPT以其高效的响应速度和自然的对话体验，获得了广泛好评。Google Gemini则凭借其强大的多任务处理能力和高度定制化的应用方案，提供了极佳的用户体验。</p>
+<p>文心一言在中文语言处理方面具有优势，能够提供精准的中文对话和文本生成体验。Claude以其对安全性和伦理问题的重视，确保用户在使用过程中获得安全可靠的体验。豆包在生成创意文本方面表现出色，特别适合需要高质量内容生成的用户。讯飞星火在语音识别和自然语言理解方面表现优异，为用户提供了便捷的语音交互体验。</p>
+<h2 id="创新性及可扩展性"><a href="#创新性及可扩展性" class="headerlink" title="创新性及可扩展性"></a>创新性及可扩展性</h2><p>在创新性和可扩展性方面，ChatGPT和Google Gemini同样表现出色。ChatGPT不断更新和优化其模型，推出了多个版本，持续提升其性能和应用范围。Google Gemini则利用其在机器学习和自然语言处理领域的前沿技术，推出了高度定制化和多任务处理能力的解决方案。</p>
+<p>Claude在安全性和伦理方面的创新设计，使其在生成内容时能够最大限度地减少有害输出。文心一言在中文语言处理方面的创新性，使其在中文语境下具有很高的应用价值。Kimi虽然市场知名度较低，但其在技术文档生成和代码辅助编写方面的独特功能，使其在特定领域具有优势。豆包利用字节跳动在内容平台上的数据优势，在内容生成和创意写作方面具有独特的创新性。讯飞星火在语音识别和自然语言理解方面的技术创新，使其在语音交互场景中具有广泛的应用前景。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>综上所述，不同的大语言模型在各自的应用场景中具有不同的优势。<strong>ChatGPT</strong>和<strong>Google Gemini</strong>在多任务处理和用户体验方面表现出色，适用于广泛的应用场景。<strong>Claude</strong>在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。<strong>文心一言</strong>在中文语言处理方面具有明显优势，特别适合中文对话系统和自动翻译等任务。<strong>Kimi</strong>在技术文档生成和代码辅助编写方面表现突出。<strong>豆包</strong>在内容生成和创意写作方面具有优势。<strong>讯飞星火</strong>在语音识别和自然语言理解方面表现优异，适用于语音交互场景。</p>
+<p>在选择合适的大语言模型时，用户应根据具体的应用需求和场景，综合考虑各个模型的性能、用户体验和创新性等因素，选择最符合自身需求的模型。希望本文的评测能够为用户在选择大语言模型时提供有价值的参考。</p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搜索引擎搜索技巧</title>
+    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<ol>
+<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
+<li>限定标题：<code>intitle:标题内容</code></li>
+<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
+<li>限定内容关键词：<code>intext:内容关键词</code></li>
+<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
+<li>限定网址搜索来源：<code>site:具体的网址</code></li>
+<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
+</ol>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>浏览器</tag>
       </tags>
   </entry>
   <entry>
