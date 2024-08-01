@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+
+<html lang="zh CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="一个啥都写的个人博客" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>详尽指南：在VMware中安装和配置Ubuntu |  xuanz的博客</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    </head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-打造你的Ubuntu虚拟环境-从安装到精通的全面指南"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  详尽指南：在VMware中安装和配置Ubuntu
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2024/08/02/%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84Ubuntu%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E7%B2%BE%E9%80%9A%E7%9A%84%E5%85%A8%E9%9D%A2%E6%8C%87%E5%8D%97/" class="article-date">
+  <time datetime="2024-08-01T16:01:00.000Z" itemprop="datePublished">2024-08-02</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%96%B9%E6%B3%95/">方法</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">1.9k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">7 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="1-什么是Linux？"><a href="#1-什么是Linux？" class="headerlink" title="1. 什么是Linux？"></a>1. 什么是Linux？</h3><p>Linux是一种开源的操作系统，由Linus Torvalds于1991年首次发布。它基于Unix操作系统，并以其强大的稳定性、安全性和灵活性著称。Linux被广泛应用于服务器、桌面计算机、移动设备和嵌入式系统中。</p>
+<h3 id="2-常见的Linux发行版"><a href="#2-常见的Linux发行版" class="headerlink" title="2. 常见的Linux发行版"></a>2. 常见的Linux发行版</h3><p>Linux发行版是将Linux内核与其他软件（如系统工具、图形用户界面、应用程序等）打包在一起的操作系统。以下是几种常见的Linux发行版及其优缺点：</p>
+<h4 id="2-1-Ubuntu"><a href="#2-1-Ubuntu" class="headerlink" title="2.1 Ubuntu"></a>2.1 Ubuntu</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>易于使用</strong>：Ubuntu具有用户友好的图形界面，适合Linux初学者。</li>
+<li><strong>广泛的社区支持</strong>：拥有大量的用户和开发者，遇到问题时可以很容易地找到解决方案。</li>
+<li><strong>定期更新</strong>：每六个月发布一个新的版本，提供最新的软件和功能。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>系统资源占用</strong>：相比一些轻量级发行版，Ubuntu对系统资源的需求更高。</li>
+</ul>
+<h4 id="2-2-CentOS"><a href="#2-2-CentOS" class="headerlink" title="2.2 CentOS"></a>2.2 CentOS</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>稳定性高</strong>：基于Red Hat Enterprise Linux（RHEL），适用于企业级应用。</li>
+<li><strong>长期支持</strong>：每个版本都有长达十年的支持期，适合生产环境。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>软件包较旧</strong>：为了保证稳定性，CentOS的软件包版本较旧，不适合需要最新软件的用户。</li>
+</ul>
+<h4 id="2-3-Fedora"><a href="#2-3-Fedora" class="headerlink" title="2.3 Fedora"></a>2.3 Fedora</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>前沿技术</strong>：提供最新的技术和软件，适合开发者和技术爱好者。</li>
+<li><strong>社区驱动</strong>：由社区主导开发，开放性强。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>更新频繁</strong>：版本更新周期短（约六个月），可能不适合需要长期稳定的用户。</li>
+</ul>
+<h4 id="2-4-Debian"><a href="#2-4-Debian" class="headerlink" title="2.4 Debian"></a>2.4 Debian</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>稳定可靠</strong>：经过严格测试的软件包，适合服务器和生产环境。</li>
+<li><strong>丰富的软件库</strong>：拥有超过50000个软件包，几乎可以满足所有需求。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>安装和配置较复杂</strong>：相比Ubuntu，Debian的安装和配置过程对新手来说不够友好。</li>
+</ul>
+<h3 id="3-为什么选择Ubuntu？"><a href="#3-为什么选择Ubuntu？" class="headerlink" title="3. 为什么选择Ubuntu？"></a>3. 为什么选择Ubuntu？</h3><p>对于初学者和普通用户来说，Ubuntu是一个理想的选择。其易用性、广泛的社区支持以及定期的更新使其成为个人和企业用户的首选。此外，Ubuntu还提供了丰富的软件资源和文档支持，帮助用户更快地上手和解决问题。</p>
+<h2 id="1-在VMware中安装Ubuntu"><a href="#1-在VMware中安装Ubuntu" class="headerlink" title="1. 在VMware中安装Ubuntu"></a>1. 在VMware中安装Ubuntu</h2><h3 id="1-1-准备工作"><a href="#1-1-准备工作" class="headerlink" title="1.1 准备工作"></a>1.1 准备工作</h3><p>在开始之前，需要准备以下材料：</p>
+<ul>
+<li>VMware Workstation</li>
+<li>Ubuntu ISO镜像文件，可以从<a target="_blank" rel="noopener" href="https://ubuntu.com/download">Ubuntu官网</a>下载</li>
+<li>Xshell 7和Xftp 7</li>
+</ul>
+<h3 id="1-2-创建新的虚拟机"><a href="#1-2-创建新的虚拟机" class="headerlink" title="1.2 创建新的虚拟机"></a>1.2 创建新的虚拟机</h3><ol>
+<li>打开VMware Workstation，点击“新建虚拟机”（New Virtual Machine）。</li>
+<li>选择“典型（推荐）”（Typical (recommended)），点击“下一步”。</li>
+<li>选择“安装程序光盘映像文件（iso）”（Installer disc image file (iso)），然后点击“浏览”并选择之前下载的Ubuntu ISO文件，点击“下一步”。</li>
+<li>选择操作系统版本。一般来说，VMware会自动检测Ubuntu版本。如果未能自动检测，请手动选择对应版本。</li>
+<li>为虚拟机命名并选择安装位置，点击“下一步”。</li>
+<li>设置虚拟机的磁盘大小。默认值一般为20GB，可以根据需要调整。选择“将虚拟磁盘存储为单个文件”，点击“下一步”。</li>
+<li>点击“完成”，创建虚拟机。</li>
+</ol>
+<h3 id="1-3-安装Ubuntu"><a href="#1-3-安装Ubuntu" class="headerlink" title="1.3 安装Ubuntu"></a>1.3 安装Ubuntu</h3><ol>
+<li>启动新创建的虚拟机，Ubuntu安装程序将自动启动。</li>
+<li>选择安装语言，点击“安装Ubuntu”。</li>
+<li>选择键盘布局，点击“继续”。</li>
+<li>选择安装类型。可以选择“正常安装”或“最小安装”，根据需求选择即可。</li>
+<li>在“其他选项”中，选择是否下载更新和第三方软件，点击“继续”。</li>
+<li>选择安装类型。一般选择“擦除磁盘并安装Ubuntu”，点击“安装现在”。</li>
+<li>确认分区设置，点击“继续”。</li>
+<li>设置时区，点击“继续”。</li>
+<li>设置用户名、计算机名和密码，点击“继续”。</li>
+<li>等待安装完成，点击“重新启动”即可完成安装。</li>
+</ol>
+<h2 id="2-Ubuntu基本配置"><a href="#2-Ubuntu基本配置" class="headerlink" title="2. Ubuntu基本配置"></a>2. Ubuntu基本配置</h2><h3 id="2-1-更新系统"><a href="#2-1-更新系统" class="headerlink" title="2.1 更新系统"></a>2.1 更新系统</h3><p>安装完成后，首先需要更新系统软件包：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-安装常用软件"><a href="#2-2-安装常用软件" class="headerlink" title="2.2 安装常用软件"></a>2.2 安装常用软件</h3><p>可以根据需要安装一些常用的软件，如Git、Vim、Curl等：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install git vim curl -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3-配置SSH连接"><a href="#2-3-配置SSH连接" class="headerlink" title="2.3 配置SSH连接"></a>2.3 配置SSH连接</h3><p>使用Xshell 7和Xftp 7进行SSH连接和文件传输。</p>
+<h4 id="2-3-1-安装SSH服务"><a href="#2-3-1-安装SSH服务" class="headerlink" title="2.3.1 安装SSH服务"></a>2.3.1 安装SSH服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install openssh-server -y</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> ssh</span><br><span class="line"><span class="built_in">sudo</span> systemctl start ssh</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-3-2-使用Xshell-7连接"><a href="#2-3-2-使用Xshell-7连接" class="headerlink" title="2.3.2 使用Xshell 7连接"></a>2.3.2 使用Xshell 7连接</h4><ol>
+<li>打开Xshell 7，点击“新建会话”。</li>
+<li>输入会话名称，并在“主机”栏输入虚拟机的IP地址。</li>
+<li>在“用户身份验证”中输入用户名和密码，点击“连接”。</li>
+<li>成功连接后，可以在Xshell中管理和操作Ubuntu系统。</li>
+</ol>
+<h4 id="2-3-3-使用Xftp-7传输文件"><a href="#2-3-3-使用Xftp-7传输文件" class="headerlink" title="2.3.3 使用Xftp 7传输文件"></a>2.3.3 使用Xftp 7传输文件</h4><ol>
+<li>打开Xftp 7，点击“新建会话”。</li>
+<li>输入会话名称，并在“主机”栏输入虚拟机的IP地址。</li>
+<li>在“用户身份验证”中输入用户名和密码，点击“连接”。</li>
+<li>成功连接后，可以在Xftp中进行文件的上传和下载。</li>
+</ol>
+<h3 id="2-4-配置防火墙"><a href="#2-4-配置防火墙" class="headerlink" title="2.4 配置防火墙"></a>2.4 配置防火墙</h3><p>为了提高系统安全性，可以配置防火墙：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ufw -y</span><br><span class="line"><span class="built_in">sudo</span> ufw allow OpenSSH</span><br><span class="line"><span class="built_in">sudo</span> ufw <span class="built_in">enable</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-常用命令"><a href="#3-常用命令" class="headerlink" title="3. 常用命令"></a>3. 常用命令</h2><h3 id="3-1-文件和目录操作"><a href="#3-1-文件和目录操作" class="headerlink" title="3.1 文件和目录操作"></a>3.1 文件和目录操作</h3><ul>
+<li>列出目录内容：<code>ls</code></li>
+<li>切换目录：<code>cd</code></li>
+<li>创建目录：<code>mkdir</code></li>
+<li>删除文件或目录：<code>rm</code>（使用<code>rm -r</code>删除目录及其内容）</li>
+<li>复制文件或目录：<code>cp</code></li>
+<li>移动或重命名文件或目录：<code>mv</code></li>
+</ul>
+<h3 id="3-2-系统管理"><a href="#3-2-系统管理" class="headerlink" title="3.2 系统管理"></a>3.2 系统管理</h3><ul>
+<li>查看磁盘使用情况：<code>df -h</code></li>
+<li>查看内存使用情况：<code>free -h</code></li>
+<li>查看系统信息：<code>uname -a</code></li>
+<li>查看当前运行的进程：<code>ps aux</code></li>
+<li>杀死进程：<code>kill [PID]</code></li>
+</ul>
+<h3 id="3-3-网络操作"><a href="#3-3-网络操作" class="headerlink" title="3.3 网络操作"></a>3.3 网络操作</h3><ul>
+<li>查看网络接口信息：<code>ip a</code></li>
+<li>测试网络连通性：<code>ping [IP/域名]</code></li>
+<li>查看路由表：<code>ip route</code></li>
+<li>下载文件：<code>wget [URL]</code> 或 <code>curl -O [URL]</code></li>
+</ul>
+<h3 id="3-4-软件管理"><a href="#3-4-软件管理" class="headerlink" title="3.4 软件管理"></a>3.4 软件管理</h3><ul>
+<li>安装软件包：<code>sudo apt install [包名]</code></li>
+<li>卸载软件包：<code>sudo apt remove [包名]</code></li>
+<li>搜索软件包：<code>apt search [关键字]</code></li>
+<li>更新软件包列表：<code>sudo apt update</code></li>
+<li>升级已安装的软件包：<code>sudo apt upgrade</code></li>
+</ul>
+<h3 id="3-5-权限管理"><a href="#3-5-权限管理" class="headerlink" title="3.5 权限管理"></a>3.5 权限管理</h3><ul>
+<li>修改文件权限：<code>chmod [权限] [文件]</code></li>
+<li>修改文件所属用户和用户组：<code>chown [用户]:[用户组] [文件]</code></li>
+<li>查看文件权限：<code>ls -l</code></li>
+</ul>
+<h2 id="4-高级配置"><a href="#4-高级配置" class="headerlink" title="4. 高级配置"></a>4. 高级配置</h2><h3 id="4-1-配置静态IP"><a href="#4-1-配置静态IP" class="headerlink" title="4.1 配置静态IP"></a>4.1 配置静态IP</h3><p>编辑网络配置文件以配置静态IP：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/netplan/01-netcfg.yaml</span><br></pre></td></tr></table></figure>
+
+<p>在文件中添加以下内容：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">network:</span></span><br><span class="line">  <span class="attr">version:</span> <span class="number">2</span></span><br><span class="line">  <span class="attr">ethernets:</span></span><br><span class="line">    <span class="attr">ens33:</span></span><br><span class="line">      <span class="attr">dhcp4:</span> <span class="literal">no</span></span><br><span class="line">      <span class="attr">addresses:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.100</span><span class="string">/24</span></span><br><span class="line">      <span class="attr">gateway4:</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span></span><br><span class="line">      <span class="attr">nameservers:</span></span><br><span class="line">        <span class="attr">addresses:</span> [<span class="number">8.8</span><span class="number">.8</span><span class="number">.8</span>, <span class="number">8.8</span><span class="number">.4</span><span class="number">.4</span>]</span><br></pre></td></tr></table></figure>
+
+<p>保存并应用配置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> netplan apply</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-安装和配置防火墙"><a href="#4-2-安装和配置防火墙" class="headerlink" title="4.2 安装和配置防火墙"></a>4.2 安装和配置防火墙</h3><p>除了前面提到的UFW，可以选择更高级的防火墙如<code>iptables</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install iptables -y</span><br></pre></td></tr></table></figure>
+
+<p>配置规则（以下为示例规则）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -p tcp --dport 22 -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -p icmp -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -i lo -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -P INPUT DROP</span><br></pre></td></tr></table></figure>
+
+<p>保存规则：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> iptables-save &gt; /etc/iptables/rules.v4</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-常见问题和解决方法"><a href="#5-常见问题和解决方法" class="headerlink" title="5. 常见问题和解决方法"></a>5. 常见问题和解决方法</h2><h3 id="5-1-虚拟机网络连接问题"><a href="#5-1-虚拟机网络连接问题" class="headerlink" title="5.1 虚拟机网络连接问题"></a>5.1 虚拟机网络连接问题</h3><p>如果遇到虚拟机无法连接网络的问题，可以尝试以下步骤：</p>
+<ul>
+<li>检查虚拟机的网络适配器设置是否正确。</li>
+<li>尝试重启网络服务：<code>sudo systemctl restart networking</code></li>
+<li>确保VMware的虚拟网络编辑器配置正确。</li>
+</ul>
+<h3 id="5-2-无法启动虚拟机"><a href="#5-2-无法启动虚拟机" class="headerlink" title="5.2 无法启动虚拟机"></a>5.2 无法启动虚拟机</h3><p>如果虚拟机无法启动，可能是由于磁盘空间不足或配置文件损坏。可以尝试以下步骤：</p>
+<ul>
+<li>检查宿主机的磁盘空间是否足够。</li>
+<li>尝试修复虚拟机配置：打开VMware并选择“修复”（Repair）选项。</li>
+</ul>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xuanz54.github.io/2024/08/02/%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84Ubuntu%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E7%B2%BE%E9%80%9A%E7%9A%84%E5%85%A8%E9%9D%A2%E6%8C%87%E5%8D%97/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2024/08/01/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Windows右键菜单管理软件</div>
+      </a>
+    
+  </nav>
+
+  
+   
+  
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2024
+        <i class="ri-heart-fill heart_icon"></i> CodeBardPro
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="xuanz的博客"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://bz.zzzmh.cn/index">壁纸</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>
