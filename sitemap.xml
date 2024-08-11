@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xuanz54.github.io/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/</loc>
+    
+    <lastmod>2024-08-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xuanz54.github.io/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</loc>
     
     <lastmod>2024-08-07</lastmod>
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://xuanz54.github.io/2024/08/07/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Llama3-1%E6%9C%80%E5%BC%BA%E5%BC%80%E6%BA%90%E5%A4%A7%E6%A8%A1%E5%9E%8B-%E6%94%AF%E6%8C%81Windows%E3%80%81MacOS/</loc>
+    <loc>https://xuanz54.github.io/2024/08/07/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Llama3.1%E6%9C%80%E5%BC%BA%E5%BC%80%E6%BA%90%E5%A4%A7%E6%A8%A1%E5%9E%8B%EF%BC%9A%E6%94%AF%E6%8C%81Windows%E3%80%81MacOS/</loc>
     
     <lastmod>2024-08-07</lastmod>
     
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://xuanz54.github.io/2024/08/02/%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84Ubuntu%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E7%B2%BE%E9%80%9A%E7%9A%84%E5%85%A8%E9%9D%A2%E6%8C%87%E5%8D%97/</loc>
+    <loc>https://xuanz54.github.io/2024/08/02/%E8%AF%A6%E5%B0%BD%E6%8C%87%E5%8D%97%EF%BC%9A%E5%9C%A8VMware%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEUbuntu/</loc>
     
     <lastmod>2024-08-01</lastmod>
     
@@ -148,106 +157,106 @@
 
   <url>
     <loc>https://xuanz54.github.io/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://xuanz54.github.io/tags/Windows/</loc>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://xuanz54.github.io/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xuanz54.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/tags/Linux/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/tags/Github/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/tags/Windows/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/tags/Python/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/tags/Java/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xuanz54.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuanz54.github.io/tags/Python/</loc>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuanz54.github.io/tags/Linux/</loc>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuanz54.github.io/tags/Github/</loc>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xuanz54.github.io/tags/AI/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/tags/%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xuanz54.github.io/tags/%E6%97%B6%E6%94%BF/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuanz54.github.io/tags/%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuanz54.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuanz54.github.io/tags/Java/</loc>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuanz54.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xuanz54.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -256,49 +265,49 @@
   
   <url>
     <loc>https://xuanz54.github.io/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xuanz54.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xuanz54.github.io/categories/%E7%A7%91%E6%8A%80/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/categories/%E4%BD%9C%E5%93%81/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuanz54.github.io/categories/%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://xuanz54.github.io/categories/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2024-08-07</lastmod>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuanz54.github.io/categories/%E4%BD%9C%E5%93%81/</loc>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuanz54.github.io/categories/%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2024-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuanz54.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2024-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
