@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>Jupyter使用技巧+快捷键 |  xuanz的博客</title>
+      <title>自建Bitwarden密码管理器 |  xuanz的博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -55,7 +55,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Jupyter使用技巧-快捷键"
+  id="post-自建Bitwarden密码管理器"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -66,7 +66,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Jupyter使用技巧+快捷键
+  自建Bitwarden密码管理器
 </h1>
  
 
@@ -74,11 +74,11 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2024/09/01/Jupyter%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7-%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="article-date">
-  <time datetime="2024-08-31T16:14:00.000Z" itemprop="datePublished">2024-09-01</time>
+      <a href="/2024/10/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/" class="article-date">
+  <time datetime="2024-10-11T15:15:40.000Z" itemprop="datePublished">2024-10-11</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a>
   </div>
   
 <div class="word_count">
@@ -86,7 +86,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">1k</span>
+            <span class="post-count">808</span>
         </span>
     </span>
 
@@ -104,224 +104,55 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="一、编辑模式与命令行模式"><a href="#一、编辑模式与命令行模式" class="headerlink" title="一、编辑模式与命令行模式"></a>一、编辑模式与命令行模式</h2><p>在jupyter notebook中，分为编辑与命令行两种模式。实际上就是代码编辑模式与非代码编辑模式，一个是选中编辑框（Enter键&#x2F;鼠标点击输入框），框线为绿色<br> 一个是不选中编辑框（Esc键&#x2F;鼠标点击输入框外的空白处），框线为蓝色<br> 注意：在编辑状态下，可以在当前 cell 中写代码，但进行有些 jupyter 的快捷键操作就不管用。在命令模式下，可以进行 jupyter 相关的快捷操作。注意：仅对当前编辑框有效。</p>
-<h2 id="二、编辑模式快捷键"><a href="#二、编辑模式快捷键" class="headerlink" title="二、编辑模式快捷键"></a>二、编辑模式快捷键</h2><h3 id="（1）运行代码-命令模式也可用"><a href="#（1）运行代码-命令模式也可用" class="headerlink" title="（1）运行代码(命令模式也可用)"></a>（1）运行代码(命令模式也可用)</h3><table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ctrl + Enter</td>
-<td>运行本单元</td>
-</tr>
-<tr>
-<td>Shift + Enter</td>
-<td>运行本单元，选中下一单元</td>
-</tr>
-<tr>
-<td>Alt + Enter</td>
-<td>运行本单元，在下面插入一单元</td>
-</tr>
-</tbody></table>
-<h3 id="（2）光标跳转"><a href="#（2）光标跳转" class="headerlink" title="（2）光标跳转"></a>（2）光标跳转</h3><table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ctrl + Home</td>
-<td>跳到单元开头</td>
-</tr>
-<tr>
-<td>Ctrl + End</td>
-<td>跳到单元结尾</td>
-</tr>
-<tr>
-<td>Ctrl + Home</td>
-<td>跳到单元开头</td>
-</tr>
-<tr>
-<td>Ctrl + ← 或 →</td>
-<td>跳到行首&#x2F;行尾</td>
-</tr>
-</tbody></table>
-<h3 id="（3）提示和格式"><a href="#（3）提示和格式" class="headerlink" title="（3）提示和格式"></a>（3）提示和格式</h3><table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Shift + Tab</td>
-<td>提示输入详情（对于函数）</td>
-</tr>
-<tr>
-<td>Ctrl + &#x2F;</td>
-<td>注释或取消注释</td>
-</tr>
-<tr>
-<td>Shift+Tab</td>
-<td>添加&#x2F;取消缩进</td>
-</tr>
-</tbody></table>
-<p>在输入参数时按Tab 提示输入（而Shift+Tab是查看提示详情）<br> <em><strong>注意</strong>：很多人按Shift+Tab无法出现提示内容，主要解决方法如下：</em><br> 在安装库的位置输入：<code>pip3 install jedi==0.17.2</code>，也就是装一个jedi提示建议的库。</p>
-<h3 id="（4）操作"><a href="#（4）操作" class="headerlink" title="（4）操作"></a>（4）操作</h3><table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ctrl + A</td>
-<td>全选</td>
-</tr>
-<tr>
-<td>Ctrl + S</td>
-<td>保存</td>
-</tr>
-<tr>
-<td>Ctrl + Shift +‘-’</td>
-<td>分割单元</td>
-</tr>
-<tr>
-<td>ctrl + D</td>
-<td>删除该行内容</td>
-</tr>
-<tr>
-<td>Ctrl + U</td>
-<td>撤销操作</td>
-</tr>
-<tr>
-<td>Ctrl + Z</td>
-<td>撤销操作</td>
-</tr>
-</tbody></table>
-<p>Ctrl+Shift+’-‘将代码从光标处分割为两个单元</p>
-<h2 id="三、命令行模式快捷键"><a href="#三、命令行模式快捷键" class="headerlink" title="三、命令行模式快捷键"></a>三、命令行模式快捷键</h2><h3 id="（1）切换"><a href="#（1）切换" class="headerlink" title="（1）切换"></a>（1）切换</h3><table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Y</td>
-<td>把当前 cell 内容转换为代码形式</td>
-</tr>
-<tr>
-<td>M</td>
-<td>把当前 cell 内容转换为 markdown 形式</td>
-</tr>
-<tr>
-<td>R</td>
-<td>单元转入raw状态</td>
-</tr>
-<tr>
-<td>H</td>
-<td>显示快捷键帮助</td>
-</tr>
-<tr>
-<td>I</td>
-<td>中断Notebook内核</td>
-</tr>
-<tr>
-<td>0+0</td>
-<td>重启Notebook内核</td>
-</tr>
-</tbody></table>
-<p>在命令行模式按下M，则将代码编辑器转化成文本编辑器，也就是markdown</p>
-<p>再按下Y，又转化成代码编辑器</p>
-<p> <em><strong>注意</strong>：0+0是连续按两下数字0</em></p>
-<h3 id="（2）单元格选择"><a href="#（2）单元格选择" class="headerlink" title="（2）单元格选择"></a>（2）单元格选择</h3><table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>L</td>
-<td>显示&#x2F;隐藏行号</td>
-</tr>
-<tr>
-<td>↑&#x2F;K</td>
-<td>选中上方单元</td>
-</tr>
-<tr>
-<td>↓&#x2F;J</td>
-<td>选中下方单元</td>
-</tr>
-<tr>
-<td>Shift-↑&#x2F;↓</td>
-<td>扩大选中上&#x2F;下方单元</td>
-</tr>
-</tbody></table>
-<h3 id="（3）单元格操作"><a href="#（3）单元格操作" class="headerlink" title="（3）单元格操作"></a>（3）单元格操作</h3><table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>A</td>
-<td>在上方插入新单元</td>
-</tr>
-<tr>
-<td>B</td>
-<td>在下方插入新单元</td>
-</tr>
-<tr>
-<td>X</td>
-<td>剪切选中的单元</td>
-</tr>
-<tr>
-<td>C</td>
-<td>复制选中的单元</td>
-</tr>
-<tr>
-<td>Shift-V</td>
-<td>粘贴到上方单元</td>
-</tr>
-<tr>
-<td>V</td>
-<td>粘贴到下方单元</td>
-</tr>
-<tr>
-<td>D+D</td>
-<td>删除选中的单元</td>
-</tr>
-<tr>
-<td>Shift-M</td>
-<td>合并选中的单元</td>
-</tr>
-</tbody></table>
-<h3 id="（4）其他操作"><a href="#（4）其他操作" class="headerlink" title="（4）其他操作"></a>（4）其他操作</h3><ul>
-<li>在markdown下的在文本操作（若是代码，则自动转化成文本并设置标题）<br>  1-6 ：设定 1-6 级标题</li>
-<li>Ctr+Y： 撤销</li>
-<li>H：查看快捷键</li>
-<li>Z ：恢复删除的最后一个单元</li>
-<li>F：查找替换</li>
-<li>S：保存文档（注意：不是Ctrl+S）</li>
+  <p><strong>自建Bitwarden密码管理，推荐选择开源项目：<a target="_blank" rel="noopener" href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。</strong></p>
+<p><img src="https://pnglog.com/olRQjw.png"> </p>
+<p>部署非常简单，尤其是通过Docker，只需少量的配置就可以启动服务，安全稳定又可靠。而且 Bitwarden 大部分高级付费功能可以通过手动配置或第三方集成来免费实现。</p>
+<h2 id="安装教程："><a href="#安装教程：" class="headerlink" title="安装教程："></a>安装教程：</h2><h3 id="步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。"><a href="#步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。" class="headerlink" title="步骤 1：获取一台轻量级的VPS 【点击前往】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。"></a>步骤 1：获取一台轻量级的VPS 【<a target="_blank" rel="noopener" href="https://www.vultr.com/?ref=7045490">点击前往</a>】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。</h3><p>SSH远程连接工具，可以选择开源的WindTerm 【<a target="_blank" rel="noopener" href="https://github.com/kingToolbox/WindTerm">点击下载</a>】  </p>
+<h3 id="步骤-2-更新系统"><a href="#步骤-2-更新系统" class="headerlink" title="步骤 2: 更新系统"></a>步骤 2: 更新系统</h3><p>首先，更新你的系统以确保所有软件包都是最新的：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="步骤-3-安装-Docker-和-Docker-Compose"><a href="#步骤-3-安装-Docker-和-Docker-Compose" class="headerlink" title="步骤 3: 安装 Docker 和 Docker Compose"></a>步骤 3: 安装 Docker 和 Docker Compose</h3><p>Vaultwarden使用Docker来运行，因此我们需要安装Docker和Docker Compose。</p>
+<ol>
+<li>安装Docker 和 Docker Compose 命令：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com  | bash &amp;&amp; <span class="built_in">sudo</span> curl -L <span class="string">&quot;https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-<span class="subst">$(uname  -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose &amp;&amp; <span class="built_in">sudo</span> <span class="built_in">chmod</span> +x /usr/local/bin/docker-compose &amp;&amp; docker-compose --version</span><br></pre></td></tr></table></figure>
+
+<p><strong>完成安装后：</strong></p>
+<p>Docker和Docker Compose就都安装好了，你可以通过以下命令验证安装：</p>
+<ul>
+<li><strong>Docker版本检查</strong>：<code>docker --version</code></li>
+<li><strong>Docker Compose版本检查</strong>：<code>docker-compose --version</code></li>
 </ul>
-<h2 id="四、jupyter魔法函数（编辑模式下）"><a href="#四、jupyter魔法函数（编辑模式下）" class="headerlink" title="四、jupyter魔法函数（编辑模式下）"></a>四、jupyter魔法函数（编辑模式下）</h2><ul>
-<li>（1） <strong>%reset</strong> 删除当前 Jupyter 环境中的所有变量或名称。</li>
-<li>（2） <strong>%timeit</strong> 计算当前 cell 的代码运行时长。</li>
-<li>（3） <strong>%time</strong> 计算当前代码行的运行时长。</li>
-<li>（4） <strong>%timeit</strong> 计算当前代码行的平均运行时长（即在执行一个语句100000次(默认情况下)后，再给出运行最快3次的平均值。</li>
-<li>（5） <strong>%run</strong> 用于运行本地或网络中的 Python 文件，例如本地脚本文件的运行：%run ex.py。</li>
-<li>（6） <strong>%pwd</strong> 显示 Jupyter 当前的工作空间。</li>
-<li>（7） <strong>%matplotlib</strong> 显示绘图结果的风格，默认为 %matplotlib inline，是直接将图片显示在浏览器中，如果希望图片单独生成，可以使用 %matplotlib。</li>
-<li>（8）<strong>load</strong> 文件加载，例如本地脚本文件的加载：%load ex.py。</li>
-<li>（9） <strong>%hist</strong> 显示当前 Jupyter 中，所有运行过的历史代码。</li>
-<li>（10） <strong>%who</strong> 显示当前 Jupyter 环境中的所有变量或名称。</li>
+<h3 id="步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口"><a href="#步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口" class="headerlink" title="步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口"></a>步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p 8080:80 -p 3012:3012 vaultwarden/server:latest</span><br></pre></td></tr></table></figure>
+
+<p>安装以后，就可以通过ip:8080 访问你的 Bitwarden密码管理面板，ip:3012 是你的 WebSocket 通信链接 ,但现在它是http协议，为了更安全，我们需要部署下HTTPS加密的访问协议。 我们可以通过Nginx Proxy Manager进行配置SSL和Nginx反代</p>
+<h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
+
+<p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
+<p>用户：<a href="mailto:&#97;&#x64;&#x6d;&#x69;&#x6e;&#64;&#x65;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;">&#97;&#x64;&#x6d;&#x69;&#x6e;&#64;&#x65;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>密码：admin</p>
+<p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
+
+<h3 id="步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件："><a href="#步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件：" class="headerlink" title="步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 Bitwarden 的官方客户端和浏览器插件："></a>步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 <strong>Bitwarden</strong> 的官方客户端和浏览器插件：</h3><h4 id="1-Bitwarden-桌面客户端"><a href="#1-Bitwarden-桌面客户端" class="headerlink" title="1. Bitwarden 桌面客户端"></a>1. <strong>Bitwarden 桌面客户端</strong></h4><ul>
+<li><strong>Windows</strong>: <a target="_blank" rel="noopener" href="https://bitwarden.com/download/#downloads-desktop">点击下载</a> </li>
+<li><strong>macOS</strong>: <a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12&browser=macos">点击下载</a> </li>
+<li><strong>Linux</strong>: <a target="_blank" rel="noopener" href="https://bitwarden.com/download/#downloads-desktop">点击下载</a></li>
 </ul>
+<h4 id="2-Bitwarden-移动客户端"><a href="#2-Bitwarden-移动客户端" class="headerlink" title="2. Bitwarden 移动客户端"></a>2. <strong>Bitwarden 移动客户端</strong></h4><ul>
+<li><strong>iOS（App Store）</strong>: <a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744">点击下载</a> </li>
+<li><strong>Android（Google Play）</strong>: <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&pli=1">点击下载</a></li>
+</ul>
+<h4 id="3-Bitwarden-浏览器插件"><a href="#3-Bitwarden-浏览器插件" class="headerlink" title="3. Bitwarden 浏览器插件"></a>3. <strong>Bitwarden 浏览器插件</strong></h4><ul>
+<li><strong>Chrome</strong>: <a target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/bitwarden-%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/nngceckbapebfimnlniiiahkandclblb?browser=chrome">点击下载</a> </li>
+<li><strong>Firefox</strong>: <a target="_blank" rel="noopener" href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox">点击下载</a> </li>
+<li><strong>Microsoft Edge</strong>: <a target="_blank" rel="noopener" href="https://microsoftedge.microsoft.com/addons/detail/bitwarden-free-password-ma/cnjalbhlkpghadgdpnddpjlldadblomo">点击下载</a> </li>
+<li><strong>其它浏览器</strong>: <a target="_blank" rel="noopener" href="https://bitwarden.com/download/#downloads-web-browser">点击下载</a></li>
+</ul>
+<h4 id="4-Bitwarden-命令行工具-CLI"><a href="#4-Bitwarden-命令行工具-CLI" class="headerlink" title="4. Bitwarden 命令行工具 (CLI)"></a>4. <strong>Bitwarden 命令行工具 (CLI)</strong></h4><ul>
+<li><strong>CLI 下载</strong>: <a target="_blank" rel="noopener" href="https://bitwarden.com/download/#downloads-command-line-interface">点击下载</a></li>
+</ul>
+<p>你可以根据你的设备和浏览器选择相应的版本下载并安装。所有这些链接均为官方提供的下载链接，确保软件的安全和可靠性。</p>
  
       <!-- reward -->
       
@@ -380,12 +211,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xuanz54.github.io/2024/09/01/Jupyter%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7-%E5%BF%AB%E6%8D%B7%E9%94%AE/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xuanz54.github.io/2024/10/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/" rel="tag">效率工具</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li></ul>
 
     </footer>
   </div>
@@ -393,19 +224,19 @@
    
   <nav class="article-nav">
     
-      <a href="/2024/10/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/" class="article-nav-link">
+      <a href="/2024/10/13/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91VLAN/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            自建Bitwarden密码管理器
+            虚拟局域网VLAN
           
         </div>
       </a>
     
     
-      <a href="/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/" class="article-nav-link">
+      <a href="/2024/09/01/Jupyter%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7-%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">提升效率与稳定性:深入掌握conda环境与包管理</div>
+        <div class="article-nav-title">Jupyter使用技巧+快捷键</div>
       </a>
     
   </nav>
