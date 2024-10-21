@@ -23,7 +23,7 @@
 <ol>
 <li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
 </li>
-<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#x65;&#109;&#97;&#105;&#108;&#x40;&#120;&#x78;&#120;&#x2e;&#x63;&#111;&#x6d;">&#x65;&#109;&#97;&#105;&#108;&#x40;&#120;&#x78;&#120;&#x2e;&#x63;&#111;&#x6d;</a></strong></font>“</p>
+<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#x65;&#x6d;&#97;&#x69;&#108;&#64;&#120;&#120;&#120;&#46;&#x63;&#x6f;&#x6d;">&#x65;&#x6d;&#97;&#x69;&#108;&#64;&#120;&#120;&#120;&#46;&#x63;&#x6f;&#x6d;</a></strong></font>“</p>
 <p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
 </li>
 <li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
@@ -955,6 +955,43 @@
       </tags>
   </entry>
   <entry>
+    <title>三数之和:排序+双指针</title>
+    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
+    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
+<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 3：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
+<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
+<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
+<p><strong>Python:</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+
+<p><strong>Java:</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="literal">null</span> || n &lt; <span class="number">3</span>)</span><br><span class="line">            <span class="keyword">return</span> res;       </span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">return</span> res;           </span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;          </span><br><span class="line">            <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> i + <span class="number">1</span>, R = n - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (L &lt; R) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[L] + nums[R];</span><br><span class="line">        </span><br><span class="line">                <span class="keyword">if</span> (sum == <span class="number">0</span>) &#123;</span><br><span class="line">                    res.add(Arrays.asList(nums[i], nums[L], nums[R]));</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[L] == nums[L + <span class="number">1</span>]) L++;</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[R] == nums[R - <span class="number">1</span>]) R--;</span><br><span class="line">                    L++;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (sum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    L++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>算法</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一文带你深入理解CSMA/CD和CSMA/CA</title>
     <url>/2024/10/14/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3CSMA-CD%E5%92%8CCSMA-CA/</url>
     <content><![CDATA[<p>CSMA&#x2F;CD（Carrier Sense Multiple Access with Collision Detection）和CSMA&#x2F;CA（Carrier Sense Multiple Access with Collision Avoidance）都是网络通信中用来控制多个设备如何共享同一通信介质（比如以太网）的协议。它们都属于CSMA（Carrier Sense Multiple Access）家族，意思是“载波侦听多路访问”，但处理冲突的方式不同。</p>
@@ -1113,85 +1150,6 @@
       <tags>
         <tag>效率工具</tag>
         <tag>AI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>三数之和:排序+双指针</title>
-    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
-    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
-<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
-<p><strong>示例 1：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 2：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 3：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>提示：</strong></p>
-<ul>
-<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
-<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
-</ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
-<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
-<p><strong>Python:</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
-
-<p><strong>Java:</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="literal">null</span> || n &lt; <span class="number">3</span>)</span><br><span class="line">            <span class="keyword">return</span> res;       </span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">return</span> res;           </span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;          </span><br><span class="line">            <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> i + <span class="number">1</span>, R = n - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (L &lt; R) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[L] + nums[R];</span><br><span class="line">        </span><br><span class="line">                <span class="keyword">if</span> (sum == <span class="number">0</span>) &#123;</span><br><span class="line">                    res.add(Arrays.asList(nums[i], nums[L], nums[R]));</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[L] == nums[L + <span class="number">1</span>]) L++;</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[R] == nums[R - <span class="number">1</span>]) R--;</span><br><span class="line">                    L++;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (sum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    L++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>算法</tag>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
-    <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
-    <content><![CDATA[<img src="https://www.pnglog.com/FDPPbA.jpg" style="zoom: 33%;"/>
-
-<p>​	</p>
-<p>​	当地时间7月21日下午，美国总统拜登宣布，他不再谋求连任，并全力支持副总统哈里斯作为民主党总统候选人，参与2024年总统角逐。22日，哈里斯发表声明称，已获得足够支持成为民主党总统候选人。</p>
-<p>​	拜登“主动请辞”，让民主党总算松了口气。然而，临阵换帅怎么说也是兵家大忌。相比拜登，副总统哈里斯尽管有年龄、性别及少数族裔等诸多“优势”加持，但想在未来短短几个月内扭转颓势，给民主党带来好运，恐怕是“不可能完成的任务”。</p>
-<p><strong>临危受命，哈里斯手里有几张牌？</strong></p>
-<p>​	被推上风口浪尖的副总统哈里斯，在拜登宣布支持提名她作为党内总统候选人的第一时间，表达了对拜登的感谢之情，希望自己能够“赢得党内总统候选人的提名”，尽一切努力击败共和党总统候选人特朗普。</p>
-<p>​	临危受命的哈里斯，手里到底握有几张牌？</p>
-<p>​	首先，哈里斯的年龄优势。1964年出生的哈里斯，比拜登整整年轻了22岁，比特朗普年轻19岁，享有巨大的年龄优势。在拜登的年龄、健康状况和认知能力饱受质疑、成为特朗普竞选团队重要攻击把柄的情况下，选择年轻的哈里斯无疑是对特朗普竞选策略的釜底抽薪，让对手无法再将火力集中于民主党总统候选人的年龄和健康状况上。一个朝气蓬勃、充满活力的哈里斯将为民主党沉闷的竞选活动注入新鲜血液，相比之下，特朗普的年龄反而成了劣势和诟病对象。</p>
-<p>​	其次，哈里斯的女性身份。民调显示，特朗普在女性选民中的支持率一直低迷，远低于拜登在女性中的支持率。特朗普私生活的不检点和在堕胎问题上的首鼠两端立场，让很多女性选民对他望而却步。然而，拜登由于年龄、健康问题以及在堕胎问题上的不坚定立场，也无法激起女性选民、特别是年轻女性选民的热情。哈里斯在堕胎问题上“支持选择权”（支持女性有堕胎权利和自由）的坚定立场和对女性权利的坚强捍卫，无疑在情感上与女性、特别是年轻女性更能产生共鸣。特别是在面对特朗普时，哈里斯的女性身份和女权立场，更能赢得女性选民支持。</p>
-<p>​	再次，哈里斯的少数族裔身份。哈里斯的父母分别来自印度和牙买加，拥有亚裔和非裔双重少数族裔身份。这两大少数族裔身份的加持，相对于特朗普，哈里斯更能获得非裔和亚裔少数族裔的共情与共鸣。特朗普在对哈里斯进行“攻击”时，更可能投鼠忌器，担心一不小心被扣上种族主义的帽子。在拉美裔、非裔等少数族裔对拜登日益不满的节骨眼，作为少数族裔的哈里斯“出征”，或许能扭转不利于民主党的选情变化，逐步赢得少数族裔支持。</p>
-<p>​	最后，哈里斯担任检察官的经历。在进入华盛顿政坛以前，哈里斯长期在加州政治圈耕耘，先后在县检察官办公室和旧金山地方检察官办公室工作，并历任旧金山地区检察官和加州总检察长。长期担任检察官的经历，让哈里斯熟稔法律，思维敏捷，长于辩论，并善于抓住对手漏洞穷追猛打。哈里斯担任参议员期间，曾在司法部长塞申斯和联邦最高法院大法官卡瓦纳任命听证会上对其进行刨根问底式的“灵魂拷问”，给观众留下深刻印象。哈里斯的这些经历及雄辩口才，与拜登辩论时的卡壳、口吃和不知所云，将形成强烈反差，特朗普将遇到一个强劲的辩论对手。特别是，特朗普被定罪与哈里斯作为“检察官”的履历，如果进行辩论，很容易让人浮现起检察官“审判”犯人的画面。</p>
-<img src="https://www.pnglog.com/tOtZ5c.png" />
-
-
-
-<p><strong>哈里斯锁定党内提名已无悬念</strong></p>
-<p>​	哈里斯虽然得到拜登的全力支持，但是到目前为止，民主党内大佬、前总统奥巴马还没有明确表态。奥巴马在拜登退选后的一份声明中表示：“在接下来的几天里，我们将在未知的水域前行。但我非常有信心，我们党的领导人将能组织一个产生一位杰出候选人的过程。”显然，奥巴马对哈里斯并不满意。</p>
-<p>​	不过，好消息是，自拜登周日宣布退选后，民主党已经迅速集结在哈里斯周围，哈里斯也已获得了拜登的竞选资金，准备全力迎战特朗普。特别是没有在第一时间表态的民主党重量级人物——前议长佩洛西、参议院民主党领袖舒默和众议院民主党领袖杰弗里斯，已经在当地时间周一表态支持哈里斯。此外，所有民主党州长都已经表态支持哈里斯，密歇根州长惠特曼还自告奋勇担任哈里斯竞选团队的共同主席。</p>
-<p>​	鉴于民主党全国代表大会召开在即，留给民主党的时间已经不多了。特别是，俄亥俄州最早9月份就开始大选投票。根据该州法律，两党必须在8月7日前提交总统候选人名单。因此，民主党几乎没有时间就总统候选人进行内部详细讨论和公开角逐。果然，当地时间7月22日，哈里斯发表声明称已获得足够支持成为民主党总统候选人。</p>
-<img src="https://www.pnglog.com/vQyfIJ.png" style="zoom: 67%;" />
-
-
-
-<p><strong>哈里斯能否挽回民主党颓势？</strong></p>
-<p>​	哈里斯锁定党内总统候选人提名几无悬念，但是能否扭转民主党选举颓势，将是一个巨大的问号。实际上，从目前情况看，这似乎是一个无法完成的任务。</p>
-<p>​	首先，临阵换帅是兵家大忌。在距民主党全国代表大会召开不到一个月，距大选投票不足4个月之际，通过“逼宫”方式，迫使现任总统和党内总统候选人退选，无异于一场不流血的“政变”。这至少说明：第一，民主党对赢得此次大选几乎失去了信心，否则也不会铤而走险，出此下策。第二，民主党担心的不仅仅是失去白宫，更担心可能失去国会参议院多数席位及两院的控制权。</p>
-<p>​	逼退现任总统候选人，还会留下诸多“后遗症”。一是影响民主党内部团结。拜登在宣布退选的前一天还坚持不会退选，退选时声称是出于党派利益和国家利益退选，并对奥巴马等“幕后主使”心怀怨愤。奥巴马在拜登退选后特意没有选择公开支持哈里斯，以及佩洛西、舒默等人姗姗来迟的支持，都凸显民主党内部在这一问题上的分歧与矛盾。二是留给哈里斯的时间不多。哈里斯尽管位居副总统，但普遍认为她不在拜登的决策核心圈。哈里斯仓促上位，在短时间内团结本党、凝聚共识，组建竞选团队，提出竞选纲领，迎战特朗普，扭转民主党颓势，可谓时间紧、任务重，困难重重。</p>
-<p>​	其次，哈里斯是“矮子里面拔将军”。哈里斯近四年的副总统履历，并没有成为她的政治加分项，相反可能是负资产。哈里斯担任副总统期间，几乎没有拿得出手、哪怕是一项让美国民众能够印象深刻的政绩。相反，在美国民众的记忆里，满是哈里斯在公开场合不合时宜的“傻笑”、面对边境非法移民激增时的手足无措以及副总统办公室内“宫斗”的丑闻。就像特朗普在竞选集会上嘲讽的，近四年时间里，拜登只让哈里斯专注一件事，即应对边境非法移民问题，但她却完全搞砸了，非法移民长驱直入，让美国边境形同虚设。拿着这张成绩单的哈里斯，能否成为特朗普的“克星”和民主党的“救星”，让人捏把汗。</p>
-<p>​	最后，特朗普风头正健。至少自去年底以来，无论是全国性民调，还是在6-7个关键摇摆州的民调，特朗普都稳定领先拜登。特别是今年4月以来美国大学校园抗议运动、6月27日拜登与特朗普的首场大选电视辩论以及7月13日特朗普在竞选中的遇刺事件，更是进一步拖累了拜登的人气，让民主党忧心如焚。特朗普遇刺后的诸多民调显示，人们对特朗普的正面印象有了较大幅度提升。据美国广播公司新闻和益普索的民调，在未遂暗杀和共和党全国代表大会之后，特朗普的支持率稳步上升，达到40%，创下了该机构四年来民意调查的最高支持率，而大多数美国人则希望总统拜登退出竞选。很多美国政治评论家甚至认为，特朗普在竞选中遇袭，已经将特朗普变成了一种政治符号，完成了对他选举的“加冕仪式”。尽管有些夸张，但特朗普遇袭及遇袭后特朗普在特勤人员簇拥下高举拳头、高呼“战斗”的“定型照”，无疑是今年大选最具冲击力的画面。</p>
-<p>​	哈里斯要挽回民主党选情颓势，可能难于上青天。但是，这并不意味着哈里斯就无计可施。如果哈里斯将矛头对准特朗普的人品、集中于特朗普的道德瑕疵，聚焦特朗普对美国选举制度和法治的践踏与不尊重，强调特朗普代表了富人和大公司的利益，把大选再次变成对特朗普的“公投”，或许还能给特朗普竞选造成一定干扰，给民主党赢得一些喘息空间。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>时政</tag>
       </tags>
   </entry>
   <entry>
@@ -1596,6 +1554,48 @@
       </tags>
   </entry>
   <entry>
+    <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
+    <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
+    <content><![CDATA[<img src="https://www.pnglog.com/FDPPbA.jpg" style="zoom: 33%;"/>
+
+<p>​	</p>
+<p>​	当地时间7月21日下午，美国总统拜登宣布，他不再谋求连任，并全力支持副总统哈里斯作为民主党总统候选人，参与2024年总统角逐。22日，哈里斯发表声明称，已获得足够支持成为民主党总统候选人。</p>
+<p>​	拜登“主动请辞”，让民主党总算松了口气。然而，临阵换帅怎么说也是兵家大忌。相比拜登，副总统哈里斯尽管有年龄、性别及少数族裔等诸多“优势”加持，但想在未来短短几个月内扭转颓势，给民主党带来好运，恐怕是“不可能完成的任务”。</p>
+<p><strong>临危受命，哈里斯手里有几张牌？</strong></p>
+<p>​	被推上风口浪尖的副总统哈里斯，在拜登宣布支持提名她作为党内总统候选人的第一时间，表达了对拜登的感谢之情，希望自己能够“赢得党内总统候选人的提名”，尽一切努力击败共和党总统候选人特朗普。</p>
+<p>​	临危受命的哈里斯，手里到底握有几张牌？</p>
+<p>​	首先，哈里斯的年龄优势。1964年出生的哈里斯，比拜登整整年轻了22岁，比特朗普年轻19岁，享有巨大的年龄优势。在拜登的年龄、健康状况和认知能力饱受质疑、成为特朗普竞选团队重要攻击把柄的情况下，选择年轻的哈里斯无疑是对特朗普竞选策略的釜底抽薪，让对手无法再将火力集中于民主党总统候选人的年龄和健康状况上。一个朝气蓬勃、充满活力的哈里斯将为民主党沉闷的竞选活动注入新鲜血液，相比之下，特朗普的年龄反而成了劣势和诟病对象。</p>
+<p>​	其次，哈里斯的女性身份。民调显示，特朗普在女性选民中的支持率一直低迷，远低于拜登在女性中的支持率。特朗普私生活的不检点和在堕胎问题上的首鼠两端立场，让很多女性选民对他望而却步。然而，拜登由于年龄、健康问题以及在堕胎问题上的不坚定立场，也无法激起女性选民、特别是年轻女性选民的热情。哈里斯在堕胎问题上“支持选择权”（支持女性有堕胎权利和自由）的坚定立场和对女性权利的坚强捍卫，无疑在情感上与女性、特别是年轻女性更能产生共鸣。特别是在面对特朗普时，哈里斯的女性身份和女权立场，更能赢得女性选民支持。</p>
+<p>​	再次，哈里斯的少数族裔身份。哈里斯的父母分别来自印度和牙买加，拥有亚裔和非裔双重少数族裔身份。这两大少数族裔身份的加持，相对于特朗普，哈里斯更能获得非裔和亚裔少数族裔的共情与共鸣。特朗普在对哈里斯进行“攻击”时，更可能投鼠忌器，担心一不小心被扣上种族主义的帽子。在拉美裔、非裔等少数族裔对拜登日益不满的节骨眼，作为少数族裔的哈里斯“出征”，或许能扭转不利于民主党的选情变化，逐步赢得少数族裔支持。</p>
+<p>​	最后，哈里斯担任检察官的经历。在进入华盛顿政坛以前，哈里斯长期在加州政治圈耕耘，先后在县检察官办公室和旧金山地方检察官办公室工作，并历任旧金山地区检察官和加州总检察长。长期担任检察官的经历，让哈里斯熟稔法律，思维敏捷，长于辩论，并善于抓住对手漏洞穷追猛打。哈里斯担任参议员期间，曾在司法部长塞申斯和联邦最高法院大法官卡瓦纳任命听证会上对其进行刨根问底式的“灵魂拷问”，给观众留下深刻印象。哈里斯的这些经历及雄辩口才，与拜登辩论时的卡壳、口吃和不知所云，将形成强烈反差，特朗普将遇到一个强劲的辩论对手。特别是，特朗普被定罪与哈里斯作为“检察官”的履历，如果进行辩论，很容易让人浮现起检察官“审判”犯人的画面。</p>
+<img src="https://www.pnglog.com/tOtZ5c.png" />
+
+
+
+<p><strong>哈里斯锁定党内提名已无悬念</strong></p>
+<p>​	哈里斯虽然得到拜登的全力支持，但是到目前为止，民主党内大佬、前总统奥巴马还没有明确表态。奥巴马在拜登退选后的一份声明中表示：“在接下来的几天里，我们将在未知的水域前行。但我非常有信心，我们党的领导人将能组织一个产生一位杰出候选人的过程。”显然，奥巴马对哈里斯并不满意。</p>
+<p>​	不过，好消息是，自拜登周日宣布退选后，民主党已经迅速集结在哈里斯周围，哈里斯也已获得了拜登的竞选资金，准备全力迎战特朗普。特别是没有在第一时间表态的民主党重量级人物——前议长佩洛西、参议院民主党领袖舒默和众议院民主党领袖杰弗里斯，已经在当地时间周一表态支持哈里斯。此外，所有民主党州长都已经表态支持哈里斯，密歇根州长惠特曼还自告奋勇担任哈里斯竞选团队的共同主席。</p>
+<p>​	鉴于民主党全国代表大会召开在即，留给民主党的时间已经不多了。特别是，俄亥俄州最早9月份就开始大选投票。根据该州法律，两党必须在8月7日前提交总统候选人名单。因此，民主党几乎没有时间就总统候选人进行内部详细讨论和公开角逐。果然，当地时间7月22日，哈里斯发表声明称已获得足够支持成为民主党总统候选人。</p>
+<img src="https://www.pnglog.com/vQyfIJ.png" style="zoom: 67%;" />
+
+
+
+<p><strong>哈里斯能否挽回民主党颓势？</strong></p>
+<p>​	哈里斯锁定党内总统候选人提名几无悬念，但是能否扭转民主党选举颓势，将是一个巨大的问号。实际上，从目前情况看，这似乎是一个无法完成的任务。</p>
+<p>​	首先，临阵换帅是兵家大忌。在距民主党全国代表大会召开不到一个月，距大选投票不足4个月之际，通过“逼宫”方式，迫使现任总统和党内总统候选人退选，无异于一场不流血的“政变”。这至少说明：第一，民主党对赢得此次大选几乎失去了信心，否则也不会铤而走险，出此下策。第二，民主党担心的不仅仅是失去白宫，更担心可能失去国会参议院多数席位及两院的控制权。</p>
+<p>​	逼退现任总统候选人，还会留下诸多“后遗症”。一是影响民主党内部团结。拜登在宣布退选的前一天还坚持不会退选，退选时声称是出于党派利益和国家利益退选，并对奥巴马等“幕后主使”心怀怨愤。奥巴马在拜登退选后特意没有选择公开支持哈里斯，以及佩洛西、舒默等人姗姗来迟的支持，都凸显民主党内部在这一问题上的分歧与矛盾。二是留给哈里斯的时间不多。哈里斯尽管位居副总统，但普遍认为她不在拜登的决策核心圈。哈里斯仓促上位，在短时间内团结本党、凝聚共识，组建竞选团队，提出竞选纲领，迎战特朗普，扭转民主党颓势，可谓时间紧、任务重，困难重重。</p>
+<p>​	其次，哈里斯是“矮子里面拔将军”。哈里斯近四年的副总统履历，并没有成为她的政治加分项，相反可能是负资产。哈里斯担任副总统期间，几乎没有拿得出手、哪怕是一项让美国民众能够印象深刻的政绩。相反，在美国民众的记忆里，满是哈里斯在公开场合不合时宜的“傻笑”、面对边境非法移民激增时的手足无措以及副总统办公室内“宫斗”的丑闻。就像特朗普在竞选集会上嘲讽的，近四年时间里，拜登只让哈里斯专注一件事，即应对边境非法移民问题，但她却完全搞砸了，非法移民长驱直入，让美国边境形同虚设。拿着这张成绩单的哈里斯，能否成为特朗普的“克星”和民主党的“救星”，让人捏把汗。</p>
+<p>​	最后，特朗普风头正健。至少自去年底以来，无论是全国性民调，还是在6-7个关键摇摆州的民调，特朗普都稳定领先拜登。特别是今年4月以来美国大学校园抗议运动、6月27日拜登与特朗普的首场大选电视辩论以及7月13日特朗普在竞选中的遇刺事件，更是进一步拖累了拜登的人气，让民主党忧心如焚。特朗普遇刺后的诸多民调显示，人们对特朗普的正面印象有了较大幅度提升。据美国广播公司新闻和益普索的民调，在未遂暗杀和共和党全国代表大会之后，特朗普的支持率稳步上升，达到40%，创下了该机构四年来民意调查的最高支持率，而大多数美国人则希望总统拜登退出竞选。很多美国政治评论家甚至认为，特朗普在竞选中遇袭，已经将特朗普变成了一种政治符号，完成了对他选举的“加冕仪式”。尽管有些夸张，但特朗普遇袭及遇袭后特朗普在特勤人员簇拥下高举拳头、高呼“战斗”的“定型照”，无疑是今年大选最具冲击力的画面。</p>
+<p>​	哈里斯要挽回民主党选情颓势，可能难于上青天。但是，这并不意味着哈里斯就无计可施。如果哈里斯将矛头对准特朗普的人品、集中于特朗普的道德瑕疵，聚焦特朗普对美国选举制度和法治的践踏与不尊重，强调特朗普代表了富人和大公司的利益，把大选再次变成对特朗普的“公投”，或许还能给特朗普竞选造成一定干扰，给民主党赢得一些喘息空间。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>时政</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>提升效率与稳定性:深入掌握conda环境与包管理</title>
     <url>/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<h2 id="一、conda基础概念"><a href="#一、conda基础概念" class="headerlink" title="一、conda基础概念"></a>一、conda基础概念</h2><p>在深入使用<strong>conda</strong>命令之前，首先需要了解<strong>conda</strong>的基础概念。<strong>conda</strong> 是一个开源的包管理系统和环境管理系统，可以安装、更新和管理多种语言的依赖库（不仅限于<font color='Peach'>Python</font>）。它的强大之处在于将包管理与环境管理结合为一体，使得在项目开发中，无论是管理依赖包还是创建虚拟环境，<strong>conda</strong> 都能够提供完整的解决方案。</p>
@@ -1731,67 +1731,6 @@
       </tags>
   </entry>
   <entry>
-    <title>自建Bitwarden密码管理器</title>
-    <url>/2024/10/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/</url>
-    <content><![CDATA[<p><strong>自建Bitwarden密码管理，推荐选择开源项目：<a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。</strong></p>
-<p><img src="https://pnglog.com/olRQjw.png"> </p>
-<p>部署非常简单，尤其是通过Docker，只需少量的配置就可以启动服务，安全稳定又可靠。而且 Bitwarden 大部分高级付费功能可以通过手动配置或第三方集成来免费实现。</p>
-<h2 id="安装教程："><a href="#安装教程：" class="headerlink" title="安装教程："></a>安装教程：</h2><h3 id="步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。"><a href="#步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。" class="headerlink" title="步骤 1：获取一台轻量级的VPS 【点击前往】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。"></a>步骤 1：获取一台轻量级的VPS 【<a href="https://www.vultr.com/?ref=7045490">点击前往</a>】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。</h3><p>SSH远程连接工具，可以选择开源的WindTerm 【<a href="https://github.com/kingToolbox/WindTerm">点击下载</a>】  </p>
-<h3 id="步骤-2-更新系统"><a href="#步骤-2-更新系统" class="headerlink" title="步骤 2: 更新系统"></a>步骤 2: 更新系统</h3><p>首先，更新你的系统以确保所有软件包都是最新的：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="步骤-3-安装-Docker-和-Docker-Compose"><a href="#步骤-3-安装-Docker-和-Docker-Compose" class="headerlink" title="步骤 3: 安装 Docker 和 Docker Compose"></a>步骤 3: 安装 Docker 和 Docker Compose</h3><p>Vaultwarden使用Docker来运行，因此我们需要安装Docker和Docker Compose。</p>
-<ol>
-<li>安装Docker 和 Docker Compose 命令：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com  | bash &amp;&amp; <span class="built_in">sudo</span> curl -L <span class="string">&quot;https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-<span class="subst">$(uname  -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose &amp;&amp; <span class="built_in">sudo</span> <span class="built_in">chmod</span> +x /usr/local/bin/docker-compose &amp;&amp; docker-compose --version</span><br></pre></td></tr></table></figure>
-
-<p><strong>完成安装后：</strong></p>
-<p>Docker和Docker Compose就都安装好了，你可以通过以下命令验证安装：</p>
-<ul>
-<li><strong>Docker版本检查</strong>：<code>docker --version</code></li>
-<li><strong>Docker Compose版本检查</strong>：<code>docker-compose --version</code></li>
-</ul>
-<h3 id="步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口"><a href="#步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口" class="headerlink" title="步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口"></a>步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p 8080:80 -p 3012:3012 vaultwarden/server:latest</span><br></pre></td></tr></table></figure>
-
-<p>安装以后，就可以通过ip:8080 访问你的 Bitwarden密码管理面板，ip:3012 是你的 WebSocket 通信链接 ,但现在它是http协议，为了更安全，我们需要部署下HTTPS加密的访问协议。 我们可以通过Nginx Proxy Manager进行配置SSL和Nginx反代</p>
-<h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
-
-<p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
-<p>用户：<a href="mailto:&#x61;&#100;&#109;&#x69;&#x6e;&#64;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d;">&#x61;&#100;&#109;&#x69;&#x6e;&#64;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d;</a></p>
-<p>密码：admin</p>
-<p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
-
-<h3 id="步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件："><a href="#步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件：" class="headerlink" title="步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 Bitwarden 的官方客户端和浏览器插件："></a>步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 <strong>Bitwarden</strong> 的官方客户端和浏览器插件：</h3><h4 id="1-Bitwarden-桌面客户端"><a href="#1-Bitwarden-桌面客户端" class="headerlink" title="1. Bitwarden 桌面客户端"></a>1. <strong>Bitwarden 桌面客户端</strong></h4><ul>
-<li><strong>Windows</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a> </li>
-<li><strong>macOS</strong>: <a href="https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12&browser=macos">点击下载</a> </li>
-<li><strong>Linux</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a></li>
-</ul>
-<h4 id="2-Bitwarden-移动客户端"><a href="#2-Bitwarden-移动客户端" class="headerlink" title="2. Bitwarden 移动客户端"></a>2. <strong>Bitwarden 移动客户端</strong></h4><ul>
-<li><strong>iOS（App Store）</strong>: <a href="https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744">点击下载</a> </li>
-<li><strong>Android（Google Play）</strong>: <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&pli=1">点击下载</a></li>
-</ul>
-<h4 id="3-Bitwarden-浏览器插件"><a href="#3-Bitwarden-浏览器插件" class="headerlink" title="3. Bitwarden 浏览器插件"></a>3. <strong>Bitwarden 浏览器插件</strong></h4><ul>
-<li><strong>Chrome</strong>: <a href="https://chromewebstore.google.com/detail/bitwarden-%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/nngceckbapebfimnlniiiahkandclblb?browser=chrome">点击下载</a> </li>
-<li><strong>Firefox</strong>: <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox">点击下载</a> </li>
-<li><strong>Microsoft Edge</strong>: <a href="https://microsoftedge.microsoft.com/addons/detail/bitwarden-free-password-ma/cnjalbhlkpghadgdpnddpjlldadblomo">点击下载</a> </li>
-<li><strong>其它浏览器</strong>: <a href="https://bitwarden.com/download/#downloads-web-browser">点击下载</a></li>
-</ul>
-<h4 id="4-Bitwarden-命令行工具-CLI"><a href="#4-Bitwarden-命令行工具-CLI" class="headerlink" title="4. Bitwarden 命令行工具 (CLI)"></a>4. <strong>Bitwarden 命令行工具 (CLI)</strong></h4><ul>
-<li><strong>CLI 下载</strong>: <a href="https://bitwarden.com/download/#downloads-command-line-interface">点击下载</a></li>
-</ul>
-<p>你可以根据你的设备和浏览器选择相应的版本下载并安装。所有这些链接均为官方提供的下载链接，确保软件的安全和可靠性。</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>本地部署Llama3.1最强开源大模型！支持Windows、MacOS</title>
     <url>/2024/08/07/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Llama3.1%E6%9C%80%E5%BC%BA%E5%BC%80%E6%BA%90%E5%A4%A7%E6%A8%A1%E5%9E%8B%EF%BC%9A%E6%94%AF%E6%8C%81Windows%E3%80%81MacOS/</url>
     <content><![CDATA[<img src="https://www.pnglog.com/CaoCUc.png" style="zoom: 67%;" />
@@ -1824,83 +1763,64 @@
       </tags>
   </entry>
   <entry>
-    <title>虚拟局域网VLAN</title>
-    <url>/2024/10/13/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91VLAN/</url>
-    <content><![CDATA[<p>VLAN（Virtual Local Area Network，虚拟局域网）技术在现代网络中扮演着重要的角色，它提供了一种灵活的方式来划分网络，提高安全性和网络性能。以下是VLAN的一些优缺点：</p>
-<h3 id="VLAN的优点："><a href="#VLAN的优点：" class="headerlink" title="VLAN的优点："></a>VLAN的优点：</h3><ol>
-<li><strong>提高安全性</strong>：VLAN可以将网络划分为多个逻辑上的广播域，限制了不同VLAN间的直接通信，从而增强了网络的安全性。</li>
-<li><strong>减少广播流量</strong>：通过将大型的广播域划分为更小的部分，VLAN可以减少网络上的广播流量，提高网络效率。</li>
-<li><strong>网络管理更加灵活</strong>：VLAN允许网络管理员根据功能、部门或应用需求来组织网络，而不受物理位置的限制，使得网络管理更加灵活和高效。</li>
-<li><strong>成本节约</strong>：VLAN减少了对昂贵网络升级的需求，提高了现有带宽和上行链路的利用率，从而节约了成本。</li>
-<li><strong>提高网络性能</strong>：通过分割网络为多个逻辑工作组，VLAN可以减少网络上不必要的流量，提高网络性能。</li>
-<li><strong>灵活性和可扩展性</strong>：VLAN技术具有灵活性和可扩展性，方便网络维护和管理，适应网络规模和业务需求的变化。</li>
+    <title>自建Bitwarden密码管理器</title>
+    <url>/2024/10/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/</url>
+    <content><![CDATA[<p><strong>自建Bitwarden密码管理，推荐选择开源项目：<a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。</strong></p>
+<p><img src="https://pnglog.com/olRQjw.png"> </p>
+<p>部署非常简单，尤其是通过Docker，只需少量的配置就可以启动服务，安全稳定又可靠。而且 Bitwarden 大部分高级付费功能可以通过手动配置或第三方集成来免费实现。</p>
+<h2 id="安装教程："><a href="#安装教程：" class="headerlink" title="安装教程："></a>安装教程：</h2><h3 id="步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。"><a href="#步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。" class="headerlink" title="步骤 1：获取一台轻量级的VPS 【点击前往】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。"></a>步骤 1：获取一台轻量级的VPS 【<a href="https://www.vultr.com/?ref=7045490">点击前往</a>】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。</h3><p>SSH远程连接工具，可以选择开源的WindTerm 【<a href="https://github.com/kingToolbox/WindTerm">点击下载</a>】  </p>
+<h3 id="步骤-2-更新系统"><a href="#步骤-2-更新系统" class="headerlink" title="步骤 2: 更新系统"></a>步骤 2: 更新系统</h3><p>首先，更新你的系统以确保所有软件包都是最新的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="步骤-3-安装-Docker-和-Docker-Compose"><a href="#步骤-3-安装-Docker-和-Docker-Compose" class="headerlink" title="步骤 3: 安装 Docker 和 Docker Compose"></a>步骤 3: 安装 Docker 和 Docker Compose</h3><p>Vaultwarden使用Docker来运行，因此我们需要安装Docker和Docker Compose。</p>
+<ol>
+<li>安装Docker 和 Docker Compose 命令：</li>
 </ol>
-<h3 id="VLAN的缺点："><a href="#VLAN的缺点：" class="headerlink" title="VLAN的缺点："></a>VLAN的缺点：</h3><ol>
-<li><strong>管理复杂性</strong>：VLAN需要进行复杂的设置和管理，网络管理员必须精确地配置VLAN，以确保正确地分割广播域、引导数据流量、保持跨网络的通信并确保安全性。</li>
-<li><strong>配置错误可能导致安全风险</strong>：如果VLAN配置不当，可能会引起安全隐患，例如未授权的设备可能会接入到VLAN中，导致网络安全泄漏。</li>
-<li><strong>数据包延迟</strong>：使用VLAN可能会增加数据包的处理时间，从而增加延迟，因为每个数据包必须经过交换机上的额外处理。</li>
-<li><strong>对设备要求较高</strong>：尤其是在动态VLAN的配置中，对网络设备的要求较高，可能需要更多的处理能力和内存来维护VLAN信息。</li>
-<li><strong>VLAN数量限制</strong>：在标准定义中VLAN的数量只有4096个，无法满足大型数据中心的租户间隔离需求。</li>
-</ol>
-<p>总的来说，VLAN技术在提高网络的安全性、灵活性和性能方面提供了显著的优势，但也带来了一定的管理复杂性和潜在的配置挑战。网络管理员需要仔细规划和配置VLAN，以确保网络的高效和安全运行。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com  | bash &amp;&amp; <span class="built_in">sudo</span> curl -L <span class="string">&quot;https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-<span class="subst">$(uname  -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose &amp;&amp; <span class="built_in">sudo</span> <span class="built_in">chmod</span> +x /usr/local/bin/docker-compose &amp;&amp; docker-compose --version</span><br></pre></td></tr></table></figure>
+
+<p><strong>完成安装后：</strong></p>
+<p>Docker和Docker Compose就都安装好了，你可以通过以下命令验证安装：</p>
+<ul>
+<li><strong>Docker版本检查</strong>：<code>docker --version</code></li>
+<li><strong>Docker Compose版本检查</strong>：<code>docker-compose --version</code></li>
+</ul>
+<h3 id="步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口"><a href="#步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口" class="headerlink" title="步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口"></a>步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p 8080:80 -p 3012:3012 vaultwarden/server:latest</span><br></pre></td></tr></table></figure>
+
+<p>安装以后，就可以通过ip:8080 访问你的 Bitwarden密码管理面板，ip:3012 是你的 WebSocket 通信链接 ,但现在它是http协议，为了更安全，我们需要部署下HTTPS加密的访问协议。 我们可以通过Nginx Proxy Manager进行配置SSL和Nginx反代</p>
+<h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
+
+<p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
+<p>用户：<a href="mailto:&#x61;&#100;&#x6d;&#x69;&#x6e;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#x63;&#111;&#109;">&#x61;&#100;&#x6d;&#x69;&#x6e;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>密码：admin</p>
+<p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
+
+<h3 id="步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件："><a href="#步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件：" class="headerlink" title="步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 Bitwarden 的官方客户端和浏览器插件："></a>步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 <strong>Bitwarden</strong> 的官方客户端和浏览器插件：</h3><h4 id="1-Bitwarden-桌面客户端"><a href="#1-Bitwarden-桌面客户端" class="headerlink" title="1. Bitwarden 桌面客户端"></a>1. <strong>Bitwarden 桌面客户端</strong></h4><ul>
+<li><strong>Windows</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a> </li>
+<li><strong>macOS</strong>: <a href="https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12&browser=macos">点击下载</a> </li>
+<li><strong>Linux</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a></li>
+</ul>
+<h4 id="2-Bitwarden-移动客户端"><a href="#2-Bitwarden-移动客户端" class="headerlink" title="2. Bitwarden 移动客户端"></a>2. <strong>Bitwarden 移动客户端</strong></h4><ul>
+<li><strong>iOS（App Store）</strong>: <a href="https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744">点击下载</a> </li>
+<li><strong>Android（Google Play）</strong>: <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&pli=1">点击下载</a></li>
+</ul>
+<h4 id="3-Bitwarden-浏览器插件"><a href="#3-Bitwarden-浏览器插件" class="headerlink" title="3. Bitwarden 浏览器插件"></a>3. <strong>Bitwarden 浏览器插件</strong></h4><ul>
+<li><strong>Chrome</strong>: <a href="https://chromewebstore.google.com/detail/bitwarden-%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/nngceckbapebfimnlniiiahkandclblb?browser=chrome">点击下载</a> </li>
+<li><strong>Firefox</strong>: <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox">点击下载</a> </li>
+<li><strong>Microsoft Edge</strong>: <a href="https://microsoftedge.microsoft.com/addons/detail/bitwarden-free-password-ma/cnjalbhlkpghadgdpnddpjlldadblomo">点击下载</a> </li>
+<li><strong>其它浏览器</strong>: <a href="https://bitwarden.com/download/#downloads-web-browser">点击下载</a></li>
+</ul>
+<h4 id="4-Bitwarden-命令行工具-CLI"><a href="#4-Bitwarden-命令行工具-CLI" class="headerlink" title="4. Bitwarden 命令行工具 (CLI)"></a>4. <strong>Bitwarden 命令行工具 (CLI)</strong></h4><ul>
+<li><strong>CLI 下载</strong>: <a href="https://bitwarden.com/download/#downloads-command-line-interface">点击下载</a></li>
+</ul>
+<p>你可以根据你的设备和浏览器选择相应的版本下载并安装。所有这些链接均为官方提供的下载链接，确保软件的安全和可靠性。</p>
 ]]></content>
       <categories>
-        <category>杂谈</category>
+        <category>软件</category>
       </categories>
       <tags>
-        <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>马斯克开源Grok-1：史上最大3140亿参数模型，权重架构全面公开</title>
-    <url>/2024/10/19/%E9%A9%AC%E6%96%AF%E5%85%8B%E5%BC%80%E6%BA%90Grok-1%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A73140%E4%BA%BF%E5%8F%82%E6%95%B0%E6%A8%A1%E5%9E%8B%EF%BC%8C%E6%9D%83%E9%87%8D%E6%9E%B6%E6%9E%84%E5%85%A8%E9%9D%A2%E5%85%AC%E5%BC%80/</url>
-    <content><![CDATA[<p>马斯克的xAI公司正式开源了3140亿参数的大型语言模型Grok-1,包括权重和网络架构。这使Grok-1成为目前参数量最大的开源大语言模型。Grok-1采用混合专家(MoE)架构,在给定token上的激活权重为25%。xAI在2023年10月使用自定义训练堆栈从头训练了该模型,并遵守Apache 2.0许可证开源。</p>
-<p>1.Grok-1 开源模型下载：【<a href="magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">磁力链接</a>】 ，然后使用 【<a href="https://bbs.freedidi.com/t/topic/392">Torrent 客户端</a>】进行下载即可！</p>
-<p>2.Grok 开源项目：【<a href="https://github.com/xai-org/grok-1">Githubg 官方下载</a>】</p>
-<p>3.如果需要在云端安装Grok-1大模型，可以通过【<a href="https://www.vultr.com/?ref=7045490">租赁H100 云GPU</a>】进行云端搭建</p>
-<p>4.当然也可以直接调用HuggingFace 🤗 Hub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xai-org/grok-1.git &amp;&amp; <span class="built_in">cd</span> grok-1</span><br><span class="line">pip install huggingface_hub[hf_transfer]</span><br><span class="line">huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False</span><br></pre></td></tr></table></figure>
-
-
-<p>模型详情:</p>
-<ul>
-<li>基于大量文本数据训练,未针对任何特定任务微调</li>
-<li>3140亿参数MoE模型,激活权重25%</li>
-<li>使用旋转嵌入而非固定位置嵌入</li>
-<li>Tokenizer词汇大小131,072,嵌入大小6,144</li>
-<li>64层Transformer,每层解码器层包含多头注意力块和密集块</li>
-<li>多头注意力:48头查询,8头键&#x2F;值,键值大小128</li>
-<li>密集块:加宽因子8,隐藏层大小32768</li>
-<li>每个token从8个专家选择2个</li>
-<li>旋转位置嵌入大小6,144</li>
-<li>上下文长度8192 tokens,精度bf16</li>
-</ul>
-<p>模型能力:</p>
-<ul>
-<li>在标准LM基准测试中表现超过同等计算量模型</li>
-<li>HumanEval编码任务63.2%,MMLU 73%</li>
-<li>在匈牙利高中数学考试中获C级(59%)</li>
-<li>整体在推理和编码任务中表现出色</li>
-</ul>
-<p>局限性:</p>
-<ul>
-<li>缺少独立搜索网络能力,需结合搜索工具增强</li>
-<li>可能产生幻觉,需人工审查</li>
-<li>目前无法像X平台付费版实现实时获取信息</li>
-</ul>
-<p>开源意义:</p>
-<ul>
-<li>遵循Apache 2.0许可证,用户可自由使用修改分发</li>
-<li>体现了xAI追求透明化和社区开放的理念</li>
-<li>为进一步研究和创新提供了宝贵资源</li>
-</ul>
-<p>总的来说,Grok-1作为一款大规模开源语言模型,在模型能力和透明度方面都具有重要意义,值得业内外人士关注和探索。当然,模型的实际应用还需要结合其他工具和人工审查,以发挥其最大潜能。</p>
-]]></content>
-      <categories>
-        <category>科技</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
+        <tag>Linux</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -2065,6 +1985,88 @@
       </categories>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟局域网VLAN</title>
+    <url>/2024/10/13/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91VLAN/</url>
+    <content><![CDATA[<p>VLAN（Virtual Local Area Network，虚拟局域网）技术在现代网络中扮演着重要的角色，它提供了一种灵活的方式来划分网络，提高安全性和网络性能。以下是VLAN的一些优缺点：</p>
+<h3 id="VLAN的优点："><a href="#VLAN的优点：" class="headerlink" title="VLAN的优点："></a>VLAN的优点：</h3><ol>
+<li><strong>提高安全性</strong>：VLAN可以将网络划分为多个逻辑上的广播域，限制了不同VLAN间的直接通信，从而增强了网络的安全性。</li>
+<li><strong>减少广播流量</strong>：通过将大型的广播域划分为更小的部分，VLAN可以减少网络上的广播流量，提高网络效率。</li>
+<li><strong>网络管理更加灵活</strong>：VLAN允许网络管理员根据功能、部门或应用需求来组织网络，而不受物理位置的限制，使得网络管理更加灵活和高效。</li>
+<li><strong>成本节约</strong>：VLAN减少了对昂贵网络升级的需求，提高了现有带宽和上行链路的利用率，从而节约了成本。</li>
+<li><strong>提高网络性能</strong>：通过分割网络为多个逻辑工作组，VLAN可以减少网络上不必要的流量，提高网络性能。</li>
+<li><strong>灵活性和可扩展性</strong>：VLAN技术具有灵活性和可扩展性，方便网络维护和管理，适应网络规模和业务需求的变化。</li>
+</ol>
+<h3 id="VLAN的缺点："><a href="#VLAN的缺点：" class="headerlink" title="VLAN的缺点："></a>VLAN的缺点：</h3><ol>
+<li><strong>管理复杂性</strong>：VLAN需要进行复杂的设置和管理，网络管理员必须精确地配置VLAN，以确保正确地分割广播域、引导数据流量、保持跨网络的通信并确保安全性。</li>
+<li><strong>配置错误可能导致安全风险</strong>：如果VLAN配置不当，可能会引起安全隐患，例如未授权的设备可能会接入到VLAN中，导致网络安全泄漏。</li>
+<li><strong>数据包延迟</strong>：使用VLAN可能会增加数据包的处理时间，从而增加延迟，因为每个数据包必须经过交换机上的额外处理。</li>
+<li><strong>对设备要求较高</strong>：尤其是在动态VLAN的配置中，对网络设备的要求较高，可能需要更多的处理能力和内存来维护VLAN信息。</li>
+<li><strong>VLAN数量限制</strong>：在标准定义中VLAN的数量只有4096个，无法满足大型数据中心的租户间隔离需求。</li>
+</ol>
+<p>总的来说，VLAN技术在提高网络的安全性、灵活性和性能方面提供了显著的优势，但也带来了一定的管理复杂性和潜在的配置挑战。网络管理员需要仔细规划和配置VLAN，以确保网络的高效和安全运行。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>马斯克开源Grok-1：史上最大3140亿参数模型，权重架构全面公开</title>
+    <url>/2024/10/19/%E9%A9%AC%E6%96%AF%E5%85%8B%E5%BC%80%E6%BA%90Grok-1%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A73140%E4%BA%BF%E5%8F%82%E6%95%B0%E6%A8%A1%E5%9E%8B%EF%BC%8C%E6%9D%83%E9%87%8D%E6%9E%B6%E6%9E%84%E5%85%A8%E9%9D%A2%E5%85%AC%E5%BC%80/</url>
+    <content><![CDATA[<img src="https://pnglog.com/vwLnCG.png" alt="Snipaste_2024-10-21_16-08-09.png"  />
+
+<p>马斯克的xAI公司正式开源了3140亿参数的大型语言模型Grok-1,包括权重和网络架构。这使Grok-1成为目前参数量最大的开源大语言模型。Grok-1采用混合专家(MoE)架构,在给定token上的激活权重为25%。xAI在2023年10月使用自定义训练堆栈从头训练了该模型,并遵守Apache 2.0许可证开源。</p>
+<p>1.Grok-1 开源模型下载：【<a href="magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">磁力链接</a>】 ，然后使用 【<a href="https://bbs.freedidi.com/t/topic/392">Torrent 客户端</a>】进行下载即可！</p>
+<p>2.Grok 开源项目：【<a href="https://github.com/xai-org/grok-1">Githubg 官方下载</a>】</p>
+<p>3.如果需要在云端安装Grok-1大模型，可以通过【<a href="https://www.vultr.com/?ref=7045490">租赁H100 云GPU</a>】进行云端搭建</p>
+<p>4.当然也可以直接调用HuggingFace 🤗 Hub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xai-org/grok-1.git &amp;&amp; <span class="built_in">cd</span> grok-1</span><br><span class="line">pip install huggingface_hub[hf_transfer]</span><br><span class="line">huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False</span><br></pre></td></tr></table></figure>
+
+
+<p>模型详情:</p>
+<ul>
+<li>基于大量文本数据训练,未针对任何特定任务微调</li>
+<li>3140亿参数MoE模型,激活权重25%</li>
+<li>使用旋转嵌入而非固定位置嵌入</li>
+<li>Tokenizer词汇大小131,072,嵌入大小6,144</li>
+<li>64层Transformer,每层解码器层包含多头注意力块和密集块</li>
+<li>多头注意力:48头查询,8头键&#x2F;值,键值大小128</li>
+<li>密集块:加宽因子8,隐藏层大小32768</li>
+<li>每个token从8个专家选择2个</li>
+<li>旋转位置嵌入大小6,144</li>
+<li>上下文长度8192 tokens,精度bf16</li>
+</ul>
+<p>模型能力:</p>
+<ul>
+<li>在标准LM基准测试中表现超过同等计算量模型</li>
+<li>HumanEval编码任务63.2%,MMLU 73%</li>
+<li>在匈牙利高中数学考试中获C级(59%)</li>
+<li>整体在推理和编码任务中表现出色</li>
+</ul>
+<p>局限性:</p>
+<ul>
+<li>缺少独立搜索网络能力,需结合搜索工具增强</li>
+<li>可能产生幻觉,需人工审查</li>
+<li>目前无法像X平台付费版实现实时获取信息</li>
+</ul>
+<p>开源意义:</p>
+<ul>
+<li>遵循Apache 2.0许可证,用户可自由使用修改分发</li>
+<li>体现了xAI追求透明化和社区开放的理念</li>
+<li>为进一步研究和创新提供了宝贵资源</li>
+</ul>
+<p>总的来说,Grok-1作为一款大规模开源语言模型,在模型能力和透明度方面都具有重要意义,值得业内外人士关注和探索。当然,模型的实际应用还需要结合其他工具和人工审查,以发挥其最大潜能。</p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
       </tags>
   </entry>
 </search>
