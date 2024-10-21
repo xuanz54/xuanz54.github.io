@@ -23,7 +23,7 @@
 <ol>
 <li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
 </li>
-<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#x65;&#x6d;&#97;&#x69;&#108;&#64;&#120;&#120;&#120;&#46;&#x63;&#x6f;&#x6d;">&#x65;&#x6d;&#97;&#x69;&#108;&#64;&#120;&#120;&#120;&#46;&#x63;&#x6f;&#x6d;</a></strong></font>“</p>
+<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#101;&#x6d;&#97;&#x69;&#108;&#64;&#120;&#x78;&#x78;&#x2e;&#99;&#111;&#x6d;">&#101;&#x6d;&#97;&#x69;&#108;&#64;&#120;&#x78;&#x78;&#x2e;&#99;&#111;&#x6d;</a></strong></font>“</p>
 <p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
 </li>
 <li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
@@ -244,26 +244,11 @@
       </tags>
   </entry>
   <entry>
-    <title>IDM直装注册版（完美，不反弹！）</title>
-    <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
-    <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
-<p><strong>中文绿色特别版：【<a href="https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file">点击下载</a>】</strong></p>
-<p><strong>一定要安装IDM的浏览器插件，才可以自动调用下载！</strong></p>
-<p><strong>浏览器插件：</strong>【<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">进入安装</a>】</p>
-<p>再华丽的语言也无法表达IDM的牛C！</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>效率工具</tag>
-        <tag>浏览器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Jupyter使用技巧+快捷键</title>
     <url>/2024/09/01/Jupyter%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7-%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-    <content><![CDATA[<h2 id="一、编辑模式与命令行模式"><a href="#一、编辑模式与命令行模式" class="headerlink" title="一、编辑模式与命令行模式"></a>一、编辑模式与命令行模式</h2><p>在jupyter notebook中，分为编辑与命令行两种模式。实际上就是代码编辑模式与非代码编辑模式，一个是选中编辑框（Enter键&#x2F;鼠标点击输入框），框线为绿色<br> 一个是不选中编辑框（Esc键&#x2F;鼠标点击输入框外的空白处），框线为蓝色<br> 注意：在编辑状态下，可以在当前 cell 中写代码，但进行有些 jupyter 的快捷键操作就不管用。在命令模式下，可以进行 jupyter 相关的快捷操作。注意：仅对当前编辑框有效。</p>
+    <content><![CDATA[<img src="https://pnglog.com/R3Jscc.png" alt="" style="zoom:15%;" />
+
+<h2 id="一、编辑模式与命令行模式"><a href="#一、编辑模式与命令行模式" class="headerlink" title="一、编辑模式与命令行模式"></a>一、编辑模式与命令行模式</h2><p>在jupyter notebook中，分为编辑与命令行两种模式。实际上就是代码编辑模式与非代码编辑模式，一个是选中编辑框（Enter键&#x2F;鼠标点击输入框），框线为绿色<br> 一个是不选中编辑框（Esc键&#x2F;鼠标点击输入框外的空白处），框线为蓝色<br> 注意：在编辑状态下，可以在当前 cell 中写代码，但进行有些 jupyter 的快捷键操作就不管用。在命令模式下，可以进行 jupyter 相关的快捷操作。注意：仅对当前编辑框有效。</p>
 <h2 id="二、编辑模式快捷键"><a href="#二、编辑模式快捷键" class="headerlink" title="二、编辑模式快捷键"></a>二、编辑模式快捷键</h2><h3 id="（1）运行代码-命令模式也可用"><a href="#（1）运行代码-命令模式也可用" class="headerlink" title="（1）运行代码(命令模式也可用)"></a>（1）运行代码(命令模式也可用)</h3><table>
 <thead>
 <tr>
@@ -486,8 +471,63 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>效率工具</tag>
         <tag>Python</tag>
+        <tag>效率工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IDM直装注册版（完美，不反弹！）</title>
+    <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
+    <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
+<p><strong>中文绿色特别版：【<a href="https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file">点击下载</a>】</strong></p>
+<p><strong>一定要安装IDM的浏览器插件，才可以自动调用下载！</strong></p>
+<p><strong>浏览器插件：</strong>【<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">进入安装</a>】</p>
+<p>再华丽的语言也无法表达IDM的牛C！</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows右键菜单管理软件</title>
+    <url>/2024/08/01/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h4 id="ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"><a href="#ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁" class="headerlink" title="ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"></a>ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁</h4><h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
+<li>启用或禁用文件、文件夹、新建、发送到、打开方式、自定义文件格式、IE浏览器、WinX等右键菜单项目</li>
+<li>对上述场景右键菜单项目进行修改名称、修改图标、导航注册表位置、导航文件位置、永久删除等操作</li>
+<li>对上述场景右键菜单自定义添加项目，自定义菜单命令</li>
+</ul>
+<h2 id="兼容性能"><a href="#兼容性能" class="headerlink" title="兼容性能"></a>兼容性能</h2><ul>
+<li>适用于Win 11、Win10、8.1、8、7、Vista</li>
+<li>适用于 64bit、32bit CPU 操作系统</li>
+<li>适用于高分屏，最佳显示缩放比为150%</li>
+<li>程序支持国际化多语言显示，欢迎为此程序制作语言字典</li>
+</ul>
+<h2 id="开源程序：【点击下载】"><a href="#开源程序：【点击下载】" class="headerlink" title="开源程序：【点击下载】"></a>开源程序：【<a href="https://github.com/BluePointLilac/ContextMenuManager">点击下载</a>】</h2><h2 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h2><img src="https://www.pnglog.com/QlrEV3.png" style="zoom: 50%;" />
+
+
+
+<h2 id="程序下载"><a href="#程序下载" class="headerlink" title="程序下载"></a>程序下载</h2><ul>
+<li><a href="https://github.com/BluePointLilac/ContextMenuManager/releases/latest">最新版本</a><br>  <a href="https://github.com/BluePointLilac/ContextMenuManager/releases">GitHub Releases</a><br>  <a href="https://gitee.com/BluePointLilac/ContextMenuManager/releases">Gitee Releases</a></li>
+<li>下载说明：在Assets文件列表里面下载zip（建议）或者直接下载exe</li>
+<li>.NET版本说明：程序分为.NET3.5版和.NET4.0版，均适用于Win10、8.1、8、7、Vista系统<br>  win7自带.NET3.5，win8、win8.1、win10自带.NET4.0以上版本，Vista系统既不自带.NET3.5也不自带4.0以上版本<br>  自带.NET可直接运行程序，不自带则需要安装对应版本的<a href="https://dotnet.microsoft.com/download/dotnet-framework">.NET Framework运行库</a></li>
+</ul>
+<h2 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h2><ul>
+<li>程序需要对注册表项和文件进行读写删改操作，这些行为比较敏感，可能会被 Windows Defender 等误报为病毒，如发生此情况请自行添加进白名单。</li>
+<li>一些特殊菜单项可能会受到其他因素影响导致不会直接显示在右键菜单中，但是按照程序使用的通用规则在此程序中仍会显示为启用，这是正常的现象。</li>
+<li>每个右键管理程序禁用菜单方法可能不同，建议不要同时使用多个右键菜单管理程序，大部分程序使用简单暴力的备份删除法，此程序尽可能使用了系统提供的键值进行隐藏，通过其他程序禁用的菜单项目。请先使用对应程序还原，不然可能无法在此程序中看到它。</li>
+<li>此程序不用于清理未卸载干净的程序，但是可以帮助你快速定位菜单项相关注册表位置和文件位置，你可以根据相关内容进行你的操作。如果你是一个电脑小白，建议只使用启用或者禁用功能。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -772,44 +812,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Windows右键菜单管理软件</title>
-    <url>/2024/08/01/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h4 id="ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"><a href="#ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁" class="headerlink" title="ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"></a>ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁</h4><h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
-<li>启用或禁用文件、文件夹、新建、发送到、打开方式、自定义文件格式、IE浏览器、WinX等右键菜单项目</li>
-<li>对上述场景右键菜单项目进行修改名称、修改图标、导航注册表位置、导航文件位置、永久删除等操作</li>
-<li>对上述场景右键菜单自定义添加项目，自定义菜单命令</li>
-</ul>
-<h2 id="兼容性能"><a href="#兼容性能" class="headerlink" title="兼容性能"></a>兼容性能</h2><ul>
-<li>适用于Win 11、Win10、8.1、8、7、Vista</li>
-<li>适用于 64bit、32bit CPU 操作系统</li>
-<li>适用于高分屏，最佳显示缩放比为150%</li>
-<li>程序支持国际化多语言显示，欢迎为此程序制作语言字典</li>
-</ul>
-<h2 id="开源程序：【点击下载】"><a href="#开源程序：【点击下载】" class="headerlink" title="开源程序：【点击下载】"></a>开源程序：【<a href="https://github.com/BluePointLilac/ContextMenuManager">点击下载</a>】</h2><h2 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h2><img src="https://www.pnglog.com/QlrEV3.png" style="zoom: 50%;" />
-
-
-
-<h2 id="程序下载"><a href="#程序下载" class="headerlink" title="程序下载"></a>程序下载</h2><ul>
-<li><a href="https://github.com/BluePointLilac/ContextMenuManager/releases/latest">最新版本</a><br>  <a href="https://github.com/BluePointLilac/ContextMenuManager/releases">GitHub Releases</a><br>  <a href="https://gitee.com/BluePointLilac/ContextMenuManager/releases">Gitee Releases</a></li>
-<li>下载说明：在Assets文件列表里面下载zip（建议）或者直接下载exe</li>
-<li>.NET版本说明：程序分为.NET3.5版和.NET4.0版，均适用于Win10、8.1、8、7、Vista系统<br>  win7自带.NET3.5，win8、win8.1、win10自带.NET4.0以上版本，Vista系统既不自带.NET3.5也不自带4.0以上版本<br>  自带.NET可直接运行程序，不自带则需要安装对应版本的<a href="https://dotnet.microsoft.com/download/dotnet-framework">.NET Framework运行库</a></li>
-</ul>
-<h2 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h2><ul>
-<li>程序需要对注册表项和文件进行读写删改操作，这些行为比较敏感，可能会被 Windows Defender 等误报为病毒，如发生此情况请自行添加进白名单。</li>
-<li>一些特殊菜单项可能会受到其他因素影响导致不会直接显示在右键菜单中，但是按照程序使用的通用规则在此程序中仍会显示为启用，这是正常的现象。</li>
-<li>每个右键管理程序禁用菜单方法可能不同，建议不要同时使用多个右键菜单管理程序，大部分程序使用简单暴力的备份删除法，此程序尽可能使用了系统提供的键值进行隐藏，通过其他程序禁用的菜单项目。请先使用对应程序还原，不然可能无法在此程序中看到它。</li>
-<li>此程序不用于清理未卸载干净的程序，但是可以帮助你快速定位菜单项相关注册表位置和文件位置，你可以根据相关内容进行你的操作。如果你是一个电脑小白，建议只使用启用或者禁用功能。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>效率工具</tag>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>pandas数据结构</title>
     <url>/2024/07/23/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<p>构造 DataFrame 和 Series 的方法有多种。以下是一些常见的方法：</p>
@@ -893,7 +895,9 @@
   <entry>
     <title>一文带你光速入门Mathlab</title>
     <url>/2024/09/17/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E5%85%89%E9%80%9F%E5%85%A5%E9%97%A8Mathlab/</url>
-    <content><![CDATA[<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h2><p>Mathlab是一款功能强大的数学计算软件，广泛应用于工程、科学研究、数据分析等领域。它以其强大的矩阵运算和数据可视化能力，成为学术界和工业界的重要工具。本文将为你提供一个全面的入门指南，包括软件安装、基础操作、常用函数及实际应用示例，帮助你迅速上手Mathlab。</p>
+    <content><![CDATA[<img src="https://pnglog.com/gAfnjw.png" alt="" style="zoom: 80%;" />
+
+<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h2><p>Mathlab是一款功能强大的数学计算软件，广泛应用于工程、科学研究、数据分析等领域。它以其强大的矩阵运算和数据可视化能力，成为学术界和工业界的重要工具。本文将为你提供一个全面的入门指南，包括软件安装、基础操作、常用函数及实际应用示例，帮助你迅速上手Mathlab。</p>
 <h2 id="2-安装与环境配置"><a href="#2-安装与环境配置" class="headerlink" title="2. 安装与环境配置"></a>2. 安装与环境配置</h2><h3 id="2-1-下载与安装"><a href="#2-1-下载与安装" class="headerlink" title="2.1 下载与安装"></a>2.1 下载与安装</h3><p>首先，访问<a href="https://www.mathworks.com/">Mathlab官网</a>下载适合你操作系统的版本。安装过程中，你需要选择安装的组件，建议选择“Mathlab”及其相关工具箱，以获得更全面的功能支持。</p>
 <h3 id="2-2-界面介绍"><a href="#2-2-界面介绍" class="headerlink" title="2.2 界面介绍"></a>2.2 界面介绍</h3><p>启动Mathlab后，你会看到主界面包含以下几个部分：</p>
 <ul>
@@ -952,43 +956,6 @@
       <tags>
         <tag>效率工具</tag>
         <tag>设计</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>三数之和:排序+双指针</title>
-    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
-    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
-<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
-<p><strong>示例 1：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 2：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 3：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>提示：</strong></p>
-<ul>
-<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
-<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
-</ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
-<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
-<p><strong>Python:</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
-
-<p><strong>Java:</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="literal">null</span> || n &lt; <span class="number">3</span>)</span><br><span class="line">            <span class="keyword">return</span> res;       </span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">return</span> res;           </span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;          </span><br><span class="line">            <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> i + <span class="number">1</span>, R = n - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (L &lt; R) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[L] + nums[R];</span><br><span class="line">        </span><br><span class="line">                <span class="keyword">if</span> (sum == <span class="number">0</span>) &#123;</span><br><span class="line">                    res.add(Arrays.asList(nums[i], nums[L], nums[R]));</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[L] == nums[L + <span class="number">1</span>]) L++;</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[R] == nums[R - <span class="number">1</span>]) R--;</span><br><span class="line">                    L++;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (sum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    L++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>算法</tag>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -1118,6 +1085,43 @@
       </categories>
       <tags>
         <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>三数之和:排序+双指针</title>
+    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
+    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
+<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 3：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
+<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
+<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
+<p><strong>Python:</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+
+<p><strong>Java:</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="literal">null</span> || n &lt; <span class="number">3</span>)</span><br><span class="line">            <span class="keyword">return</span> res;       </span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">return</span> res;           </span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;          </span><br><span class="line">            <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> i + <span class="number">1</span>, R = n - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (L &lt; R) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[L] + nums[R];</span><br><span class="line">        </span><br><span class="line">                <span class="keyword">if</span> (sum == <span class="number">0</span>) &#123;</span><br><span class="line">                    res.add(Arrays.asList(nums[i], nums[L], nums[R]));</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[L] == nums[L + <span class="number">1</span>]) L++;</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[R] == nums[R - <span class="number">1</span>]) R--;</span><br><span class="line">                    L++;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (sum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    L++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>算法</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -1598,7 +1602,9 @@
   <entry>
     <title>提升效率与稳定性:深入掌握conda环境与包管理</title>
     <url>/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<h2 id="一、conda基础概念"><a href="#一、conda基础概念" class="headerlink" title="一、conda基础概念"></a>一、conda基础概念</h2><p>在深入使用<strong>conda</strong>命令之前，首先需要了解<strong>conda</strong>的基础概念。<strong>conda</strong> 是一个开源的包管理系统和环境管理系统，可以安装、更新和管理多种语言的依赖库（不仅限于<font color='Peach'>Python</font>）。它的强大之处在于将包管理与环境管理结合为一体，使得在项目开发中，无论是管理依赖包还是创建虚拟环境，<strong>conda</strong> 都能够提供完整的解决方案。</p>
+    <content><![CDATA[<img src="https://pnglog.com/529mGH.png" style="zoom: 35%;" />
+
+<h2 id="一、conda基础概念"><a href="#一、conda基础概念" class="headerlink" title="一、conda基础概念"></a>一、conda基础概念</h2><p>在深入使用<strong>conda</strong>命令之前，首先需要了解<strong>conda</strong>的基础概念。<strong>conda</strong> 是一个开源的包管理系统和环境管理系统，可以安装、更新和管理多种语言的依赖库（不仅限于<font color='Peach'>Python</font>）。它的强大之处在于将包管理与环境管理结合为一体，使得在项目开发中，无论是管理依赖包还是创建虚拟环境，<strong>conda</strong> 都能够提供完整的解决方案。</p>
 <h3 id="conda与虚拟环境的区别"><a href="#conda与虚拟环境的区别" class="headerlink" title="conda与虚拟环境的区别"></a>conda与虚拟环境的区别</h3><p><strong>conda</strong> 与传统的虚拟环境工具（如<font color='Salmon'>venv、virtualenv</font>）不同，后者主要用于隔离项目的依赖，而  则同时管理包和环境。通过使用 <strong>conda</strong>，可以更方便地在不同项目之间切换环境，避免包之间的冲突。</p>
 <h2 id="二、必要准备：配置镜像源"><a href="#二、必要准备：配置镜像源" class="headerlink" title="二、必要准备：配置镜像源"></a>二、必要准备：配置镜像源</h2><p><font color='Bitersweet'>在使用Anaconda安装Python包时，系统会自动从默认源下载安装包，但是由于网络访问限制或网络连接速度较慢等原因，可能导致安装失败或速度较慢。为了解决这些问题，配置镜像源可以让用户从国内的服务器下载Python包，加快下载速度并减少下载失败的问题。</font></p>
 <h3 id="添加镜像源"><a href="#添加镜像源" class="headerlink" title="添加镜像源"></a>添加镜像源</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line"><span class="comment">#显示检索路径</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br><span class="line"><span class="comment">#显示镜像通道</span></span><br><span class="line">conda config --show channels</span><br></pre></td></tr></table></figure>
@@ -1790,7 +1796,7 @@
 <h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
 
 <p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
-<p>用户：<a href="mailto:&#x61;&#100;&#x6d;&#x69;&#x6e;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#x63;&#111;&#109;">&#x61;&#100;&#x6d;&#x69;&#x6e;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>用户：<a href="mailto:&#x61;&#100;&#109;&#105;&#x6e;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#x61;&#100;&#109;&#105;&#x6e;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 <p>密码：admin</p>
 <p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
@@ -1824,9 +1830,510 @@
       </tags>
   </entry>
   <entry>
+    <title>虚拟局域网VLAN</title>
+    <url>/2024/10/13/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91VLAN/</url>
+    <content><![CDATA[<p>VLAN（Virtual Local Area Network，虚拟局域网）技术在现代网络中扮演着重要的角色，它提供了一种灵活的方式来划分网络，提高安全性和网络性能。以下是VLAN的一些优缺点：</p>
+<h3 id="VLAN的优点："><a href="#VLAN的优点：" class="headerlink" title="VLAN的优点："></a>VLAN的优点：</h3><ol>
+<li><strong>提高安全性</strong>：VLAN可以将网络划分为多个逻辑上的广播域，限制了不同VLAN间的直接通信，从而增强了网络的安全性。</li>
+<li><strong>减少广播流量</strong>：通过将大型的广播域划分为更小的部分，VLAN可以减少网络上的广播流量，提高网络效率。</li>
+<li><strong>网络管理更加灵活</strong>：VLAN允许网络管理员根据功能、部门或应用需求来组织网络，而不受物理位置的限制，使得网络管理更加灵活和高效。</li>
+<li><strong>成本节约</strong>：VLAN减少了对昂贵网络升级的需求，提高了现有带宽和上行链路的利用率，从而节约了成本。</li>
+<li><strong>提高网络性能</strong>：通过分割网络为多个逻辑工作组，VLAN可以减少网络上不必要的流量，提高网络性能。</li>
+<li><strong>灵活性和可扩展性</strong>：VLAN技术具有灵活性和可扩展性，方便网络维护和管理，适应网络规模和业务需求的变化。</li>
+</ol>
+<h3 id="VLAN的缺点："><a href="#VLAN的缺点：" class="headerlink" title="VLAN的缺点："></a>VLAN的缺点：</h3><ol>
+<li><strong>管理复杂性</strong>：VLAN需要进行复杂的设置和管理，网络管理员必须精确地配置VLAN，以确保正确地分割广播域、引导数据流量、保持跨网络的通信并确保安全性。</li>
+<li><strong>配置错误可能导致安全风险</strong>：如果VLAN配置不当，可能会引起安全隐患，例如未授权的设备可能会接入到VLAN中，导致网络安全泄漏。</li>
+<li><strong>数据包延迟</strong>：使用VLAN可能会增加数据包的处理时间，从而增加延迟，因为每个数据包必须经过交换机上的额外处理。</li>
+<li><strong>对设备要求较高</strong>：尤其是在动态VLAN的配置中，对网络设备的要求较高，可能需要更多的处理能力和内存来维护VLAN信息。</li>
+<li><strong>VLAN数量限制</strong>：在标准定义中VLAN的数量只有4096个，无法满足大型数据中心的租户间隔离需求。</li>
+</ol>
+<p>总的来说，VLAN技术在提高网络的安全性、灵活性和性能方面提供了显著的优势，但也带来了一定的管理复杂性和潜在的配置挑战。网络管理员需要仔细规划和配置VLAN，以确保网络的高效和安全运行。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>详解Python的66个内置函数</title>
+    <url>/2024/10/21/%E8%AF%A6%E8%A7%A3Python%E7%9A%8466%E4%B8%AA%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<img src="https://pnglog.com/lDYR3Z.png" alt="" style="zoom: 15%;" />
+
+<p>Python 之所以被称为强大且易用，离不开其丰富的内置函数。这些函数可以大大简化我们日常的编程任务，无需额外安装任何库即可使用。</p>
+<p>Python 共有 66 个内置函数，本文将通过直观的解释和示例代码，带你逐个了解它们的功能和用法。</p>
+<h2 id="一、数学与数值处理"><a href="#一、数学与数值处理" class="headerlink" title="一、数学与数值处理"></a><strong>一、数学与数值处理</strong></h2><h4 id="1-abs-x"><a href="#1-abs-x" class="headerlink" title="1. abs(x)"></a><strong>1. <code>abs(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回数值的绝对值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = -<span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">abs</span>(x))  <span class="comment"># 输出：10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="2-all-iterable"><a href="#2-all-iterable" class="headerlink" title="2. all(iterable)"></a><strong>2. <code>all(iterable)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：若可迭代对象中的所有元素都为真，返回 <code>True</code>，否则返回 <code>False</code>。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">iterable = [<span class="literal">True</span>, <span class="literal">True</span>, <span class="literal">False</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">all</span>(iterable))  <span class="comment"># 输出：False</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="3-any-iterable"><a href="#3-any-iterable" class="headerlink" title="3. any(iterable)"></a><strong>3. <code>any(iterable)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：若可迭代对象中至少有一个元素为真，返回 <code>True</code>，否则返回 <code>False</code>。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">iterable = [<span class="literal">False</span>, <span class="literal">False</span>, <span class="literal">True</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">any</span>(iterable))  <span class="comment"># 输出：True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="4-bin-x"><a href="#4-bin-x" class="headerlink" title="4. bin(x)"></a><strong>4. <code>bin(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将整数转换为二进制字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">bin</span>(x))  <span class="comment"># 输出：0b1010</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="5-bool-x"><a href="#5-bool-x" class="headerlink" title="5. bool(x)"></a><strong>5. <code>bool(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将值转换为布尔类型。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">0</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">bool</span>(x))  <span class="comment"># 输出：False</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="6-divmod-a-b"><a href="#6-divmod-a-b" class="headerlink" title="6. divmod(a, b)"></a><strong>6. <code>divmod(a, b)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回两个数的商和余数。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a, b = <span class="number">10</span>, <span class="number">3</span></span><br><span class="line">result = <span class="built_in">divmod</span>(a, b)</span><br><span class="line"><span class="built_in">print</span>(result)  <span class="comment"># 输出：(3, 1)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="7-float-x"><a href="#7-float-x" class="headerlink" title="7. float(x)"></a><strong>7. <code>float(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将一个数转换为浮点数。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">float</span>(x))  <span class="comment"># 输出：10.0</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="8-int-x"><a href="#8-int-x" class="headerlink" title="8. int(x)"></a><strong>8. <code>int(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将值转换为整数。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">3.14</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(x))  <span class="comment"># 输出：3</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="9-max-iterable-key"><a href="#9-max-iterable-key" class="headerlink" title="9. max(iterable[, key])"></a><strong>9. <code>max(iterable[, key])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回可迭代对象中的最大值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = [<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">max</span>(numbers))  <span class="comment"># 输出：5</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="10-min-iterable-key"><a href="#10-min-iterable-key" class="headerlink" title="10. min(iterable[, key])"></a><strong>10. <code>min(iterable[, key])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回可迭代对象中的最小值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = [<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">min</span>(numbers))  <span class="comment"># 输出：1</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="11-pow-x-y-z"><a href="#11-pow-x-y-z" class="headerlink" title="11. pow(x, y[, z])"></a><strong>11. <code>pow(x, y[, z])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回 <code>x</code> 的 <code>y</code> 次幂，如果提供了 <code>z</code>，则返回结果对 <code>z</code> 取模。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x, y, z = <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span></span><br><span class="line">result = <span class="built_in">pow</span>(x, y, z)</span><br><span class="line"><span class="built_in">print</span>(result)  <span class="comment"># 输出：3</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="12-round-number-ndigits"><a href="#12-round-number-ndigits" class="headerlink" title="12. round(number[, ndigits])"></a><strong>12. <code>round(number[, ndigits])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：对数值进行四舍五入。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">3.14159</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">round</span>(x, <span class="number">2</span>))  <span class="comment"># 输出：3.14</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="13-sum-iterable-start"><a href="#13-sum-iterable-start" class="headerlink" title="13. sum(iterable[, start])"></a><strong>13. <code>sum(iterable[, start])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回可迭代对象中元素的总和。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">sum</span>(numbers))  <span class="comment"># 输出：15</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="二、字符串与字符处理"><a href="#二、字符串与字符处理" class="headerlink" title="二、字符串与字符处理"></a><strong>二、字符串与字符处理</strong></h2><h4 id="14-chr-i"><a href="#14-chr-i" class="headerlink" title="14. chr(i)"></a><strong>14. <code>chr(i)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回整数 <code>i</code> 对应的 Unicode 字符。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">i = <span class="number">65</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">chr</span>(i))  <span class="comment"># 输出：A</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="15-ord-c"><a href="#15-ord-c" class="headerlink" title="15. ord(c)"></a><strong>15. <code>ord(c)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回字符的 Unicode 编码。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="string">&#x27;A&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">ord</span>(c))  <span class="comment"># 输出：65</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="16-repr-object"><a href="#16-repr-object" class="headerlink" title="16. repr(object)"></a><strong>16. <code>repr(object)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回对象的字符串表示，通常用于调试。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&quot;Hello&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>(s))  <span class="comment"># 输出：&#x27;Hello&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="17-str-object"><a href="#17-str-object" class="headerlink" title="17. str(object=&#39;&#39;)"></a><strong>17. <code>str(object=&#39;&#39;)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将对象转换为字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">str</span>(x))  <span class="comment"># 输出：&#x27;10&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="三、序列操作"><a href="#三、序列操作" class="headerlink" title="三、序列操作"></a><strong>三、序列操作</strong></h2><h4 id="18-list-iterable"><a href="#18-list-iterable" class="headerlink" title="18. list([iterable])"></a><strong>18. <code>list([iterable])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将可迭代对象转换为列表。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">iterable = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">lst = <span class="built_in">list</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(lst)  <span class="comment"># 输出：[1, 2, 3]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="19-tuple-iterable"><a href="#19-tuple-iterable" class="headerlink" title="19. tuple([iterable])"></a><strong>19. <code>tuple([iterable])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将可迭代对象转换为元组。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">iterable = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">t = <span class="built_in">tuple</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(t)  <span class="comment"># 输出：(1, 2, 3)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="20-set-iterable"><a href="#20-set-iterable" class="headerlink" title="20. set([iterable])"></a><strong>20. <code>set([iterable])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将可迭代对象转换为集合。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">iterable = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">s = <span class="built_in">set</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(s)  <span class="comment"># 输出：&#123;1, 2, 3&#125;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="21-frozenset-iterable"><a href="#21-frozenset-iterable" class="headerlink" title="21. frozenset([iterable])"></a><strong>21. <code>frozenset([iterable])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个不可变集合。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">iterable = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">fs = <span class="built_in">frozenset</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(fs)  <span class="comment"># 输出：frozenset(&#123;1, 2, 3&#125;)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="22-sorted-iterable-key-reverse"><a href="#22-sorted-iterable-key-reverse" class="headerlink" title="22. sorted(iterable[, key][, reverse])"></a><strong>22. <code>sorted(iterable[, key][, reverse])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回排序后的列表。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = [<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>]</span><br><span class="line">sorted_numbers = <span class="built_in">sorted</span>(numbers)</span><br><span class="line"><span class="built_in">print</span>(sorted_numbers)  <span class="comment"># 输出：[1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="23-zip-iterables"><a href="#23-zip-iterables" class="headerlink" title="23. zip(*iterables)"></a><strong>23. <code>zip(*iterables)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将多个可迭代对象中的元素打包成元组。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">letters = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>]</span><br><span class="line">zipped = <span class="built_in">zip</span>(numbers, letters)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(zipped))  <span class="comment"># 输出：[(1, &#x27;a&#x27;), (2, &#x27;b&#x27;), (3, &#x27;c&#x27;)]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="24-input-prompt"><a href="#24-input-prompt" class="headerlink" title="24. input([prompt])"></a><strong>24. <code>input([prompt])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：从用户处接收输入，返回一个字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name = <span class="built_in">input</span>(<span class="string">&quot;请输入您的姓名：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;您好，&quot;</span> + name + <span class="string">&quot;！&quot;</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="25-print-objects-sep-end-n-file-sys-stdout-flush-False"><a href="#25-print-objects-sep-end-n-file-sys-stdout-flush-False" class="headerlink" title="25. print(*objects, sep=&#39; &#39;, end=&#39;\n&#39;, file=sys.stdout, flush=False)"></a><strong>25. <code>print(*objects, sep=&#39; &#39;, end=&#39;\n&#39;, file=sys.stdout, flush=False)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：输出到控制台。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name = <span class="string">&quot;xuanz&quot;</span></span><br><span class="line">age = <span class="number">20</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;My name is&quot;</span>, name, <span class="string">&quot;and I am&quot;</span>, age, <span class="string">&quot;years old.&quot;</span>)</span><br><span class="line"><span class="comment"># 输出：My name is xuanz and I am 20 years old.</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="26-open-file-mode-r-buffering-1-encoding-None-errors-None-newline-None-closefd-True-opener-None"><a href="#26-open-file-mode-r-buffering-1-encoding-None-errors-None-newline-None-closefd-True-opener-None" class="headerlink" title="26. open(file, mode=&#39;r&#39;, buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)"></a><strong>26. <code>open(file, mode=&#39;r&#39;, buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：打开文件并返回文件对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">file = <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;w&quot;</span>)</span><br><span class="line">file.write(<span class="string">&quot;Hello, World!&quot;</span>)</span><br><span class="line">file.close()</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="五、反射与动态执行"><a href="#五、反射与动态执行" class="headerlink" title="五、反射与动态执行"></a><strong>五、反射与动态执行</strong></h2><h4 id="27-eval-expression-globals-locals"><a href="#27-eval-expression-globals-locals" class="headerlink" title="27. eval(expression[, globals[, locals]])"></a><strong>27. <code>eval(expression[, globals[, locals]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：执行字符串表达式并返回结果。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">expression = <span class="string">&quot;2 + 3&quot;</span></span><br><span class="line">result = <span class="built_in">eval</span>(expression)</span><br><span class="line"><span class="built_in">print</span>(result)  <span class="comment"># 输出：5</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="28-exec-object-globals-locals"><a href="#28-exec-object-globals-locals" class="headerlink" title="28. exec(object[, globals[, locals]])"></a><strong>28. <code>exec(object[, globals[, locals]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：执行 Python 代码。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">code = <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">x = 5</span></span><br><span class="line"><span class="string">if x &gt; 0:</span></span><br><span class="line"><span class="string">    print(&quot;Positive&quot;)</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="built_in">exec</span>(code)  <span class="comment"># 输出：Positive</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="六、面向对象与反射"><a href="#六、面向对象与反射" class="headerlink" title="六、面向对象与反射"></a><strong>六、面向对象与反射</strong></h2><h4 id="29-callable-object"><a href="#29-callable-object" class="headerlink" title="29. callable(object)"></a><strong>29. <code>callable(object)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：检查对象是否可调用（如函数或方法）。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>():</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">callable</span>(func))  <span class="comment"># 输出：True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="30-classmethod-function"><a href="#30-classmethod-function" class="headerlink" title="30. classmethod(function)"></a><strong>30. <code>classmethod(function)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将一个函数转换为类方法。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">class_method</span>(<span class="params">cls</span>):</span><br><span class="line">        <span class="keyword">return</span> cls.attr</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(MyClass.class_method())  <span class="comment"># 输出：10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="31-delattr-object-name"><a href="#31-delattr-object-name" class="headerlink" title="31. delattr(object, name)"></a><strong>31. <code>delattr(object, name)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：删除对象的属性。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">delattr</span>(obj, <span class="string">&#x27;attr&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hasattr</span>(obj, <span class="string">&#x27;attr&#x27;</span>))  <span class="comment"># 输出：False</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="32-getattr-object-name-default"><a href="#32-getattr-object-name-default" class="headerlink" title="32. getattr(object, name[, default])"></a><strong>32. <code>getattr(object, name[, default])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回对象属性的值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">getattr</span>(obj, <span class="string">&#x27;attr&#x27;</span>))  <span class="comment"># 输出：10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="33-setattr-object-name-value"><a href="#33-setattr-object-name-value" class="headerlink" title="33. setattr(object, name, value)"></a><strong>33. <code>setattr(object, name, value)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：设置对象的属性值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">setattr</span>(obj, <span class="string">&#x27;attr&#x27;</span>, <span class="number">20</span>)</span><br><span class="line"><span class="built_in">print</span>(obj.attr)  <span class="comment"># 输出：20</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="34-hasattr-object-name"><a href="#34-hasattr-object-name" class="headerlink" title="34. hasattr(object, name)"></a><strong>34. <code>hasattr(object, name)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：检查对象是否有指定属性。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hasattr</span>(obj, <span class="string">&#x27;attr&#x27;</span>))  <span class="comment"># 输出：True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="35-property-fget-None-fset-None-fdel-None-doc-None"><a href="#35-property-fget-None-fset-None-fdel-None-doc-None" class="headerlink" title="35. property(fget=None, fset=None, fdel=None, doc=None)"></a><strong>35. <code>property(fget=None, fset=None, fdel=None, doc=None)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建对象的属性。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="variable language_">self</span>._attr = <span class="number">0</span></span><br><span class="line">    </span><br><span class="line"><span class="meta">    @property</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">attr</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">self</span>._attr</span><br><span class="line">    </span><br><span class="line"><span class="meta">    @attr.setter</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">attr</span>(<span class="params">self, value</span>):</span><br><span class="line">        <span class="variable language_">self</span>._attr = value</span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line">obj.attr = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(obj.attr)  <span class="comment"># 输出：10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="36-staticmethod-function"><a href="#36-staticmethod-function" class="headerlink" title="36. staticmethod(function)"></a><strong>36. <code>staticmethod(function)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将函数转换为静态方法。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">my_method</span>():</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;This is a static method.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(MyClass.my_method())  <span class="comment"># 输出：This is a static method.</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="37-super-type-object-or-type"><a href="#37-super-type-object-or-type" class="headerlink" title="37. super([type[, object-or-type]])"></a><strong>37. <code>super([type[, object-or-type]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回父类的对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Parent</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="variable language_">self</span>.attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Child</span>(<span class="title class_ inherited__">Parent</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line"></span><br><span class="line">child = Child()</span><br><span class="line"><span class="built_in">print</span>(child.attr)  <span class="comment"># 输出：10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="38-vars-object"><a href="#38-vars-object" class="headerlink" title="38. vars([object])"></a><strong>38. <code>vars([object])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回对象属性及属性值的字典。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">vars</span>(obj))  <span class="comment"># 输出：&#123;&#x27;attr&#x27;: 10&#125;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="39-type-object"><a href="#39-type-object" class="headerlink" title="39. type(object)"></a><strong>39. <code>type(object)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回对象的类型。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(x))  <span class="comment"># 输出：&lt;class &#x27;int&#x27;&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="40-isinstance-object-classinfo"><a href="#40-isinstance-object-classinfo" class="headerlink" title="40. isinstance(object, classinfo)"></a><strong>40. <code>isinstance(object, classinfo)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：检查对象是否是指定类或类型的实例。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">isinstance</span>(obj, MyClass))  <span class="comment"># 输出：True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="41-issubclass-class-classinfo"><a href="#41-issubclass-class-classinfo" class="headerlink" title="41. issubclass(class, classinfo)"></a><strong>41. <code>issubclass(class, classinfo)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：检查一个类是否是另一个类的子类。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Parent</span>:</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Child</span>(<span class="title class_ inherited__">Parent</span>):</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">issubclass</span>(Child, Parent))  <span class="comment"># 输出：True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="七、数据结构操作"><a href="#七、数据结构操作" class="headerlink" title="七、数据结构操作"></a><strong>七、数据结构操作</strong></h2><h4 id="42-bytearray-source-encoding-errors"><a href="#42-bytearray-source-encoding-errors" class="headerlink" title="42. bytearray([source[, encoding[, errors]]])"></a><strong>42. <code>bytearray([source[, encoding[, errors]]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个可变字节数组对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">source = <span class="string">b&#x27;Hello&#x27;</span></span><br><span class="line">arr = <span class="built_in">bytearray</span>(source)</span><br><span class="line"><span class="built_in">print</span>(arr)  <span class="comment"># 输出：bytearray(b&#x27;Hello&#x27;)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="43-bytes-source-encoding-errors"><a href="#43-bytes-source-encoding-errors" class="headerlink" title="43. bytes([source[, encoding[, errors]]])"></a><strong>43. <code>bytes([source[, encoding[, errors]]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个不可变字节对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">source = <span class="string">&#x27;Hello&#x27;</span></span><br><span class="line">b = <span class="built_in">bytes</span>(source, encoding=<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(b)  <span class="comment"># 输出：b&#x27;Hello&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="44-dict-arg"><a href="#44-dict-arg" class="headerlink" title="44. dict([arg])"></a><strong>44. <code>dict([arg])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个字典。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">d = <span class="built_in">dict</span>(a=<span class="number">1</span>, b=<span class="number">2</span>, c=<span class="number">3</span>)</span><br><span class="line"><span class="built_in">print</span>(d)  <span class="comment"># 输出：&#123;&#x27;a&#x27;: 1, &#x27;b&#x27;: 2, &#x27;c&#x27;: 3&#125;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="45-slice-stop"><a href="#45-slice-stop" class="headerlink" title="45. slice(stop)"></a><strong>45. <code>slice(stop)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个切片对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">s = <span class="built_in">slice</span>(<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(numbers[s])  <span class="comment"># 输出：[1, 2]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="46-enumerate-iterable-start-0"><a href="#46-enumerate-iterable-start-0" class="headerlink" title="46. enumerate(iterable, start=0)"></a><strong>46. <code>enumerate(iterable, start=0)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回一个枚举对象，包含索引和值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">iterable = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>]</span><br><span class="line"><span class="keyword">for</span> i, value <span class="keyword">in</span> <span class="built_in">enumerate</span>(iterable):</span><br><span class="line">    <span class="built_in">print</span>(i, value)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="47-filter-function-iterable"><a href="#47-filter-function-iterable" class="headerlink" title="47. filter(function, iterable)"></a><strong>47. <code>filter(function, iterable)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：过滤可迭代对象中的元素。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">is_positive</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> x &gt; <span class="number">0</span></span><br><span class="line"></span><br><span class="line">numbers = [<span class="number">1</span>, -<span class="number">2</span>, <span class="number">3</span>, -<span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">result = <span class="built_in">filter</span>(is_positive, numbers)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result))  <span class="comment"># 输出：[1, 3, 5]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="48-map-function-iterable"><a href="#48-map-function-iterable" class="headerlink" title="48. map(function, iterable, ...)"></a><strong>48. <code>map(function, iterable, ...)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：对可迭代对象中的每个元素应用函数。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">square</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> x ** <span class="number">2</span></span><br><span class="line"></span><br><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">result = <span class="built_in">map</span>(square, numbers)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result))  <span class="comment"># 输出：[1, 4, 9, 16, 25]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="49-iter-object-sentinel"><a href="#49-iter-object-sentinel" class="headerlink" title="49. iter(object[, sentinel])"></a><strong>49. <code>iter(object[, sentinel])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个迭代器对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">iterable = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">iterator = <span class="built_in">iter</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(iterator))  <span class="comment"># 输出：1</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="50-next-iterator-default"><a href="#50-next-iterator-default" class="headerlink" title="50. next(iterator[, default])"></a><strong>50. <code>next(iterator[, default])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回迭代器中的下一个元素。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">iterable = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">iterator = <span class="built_in">iter</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(iterator))  <span class="comment"># 输出：1</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="51-reversed-seq"><a href="#51-reversed-seq" class="headerlink" title="51. reversed(seq)"></a><strong>51. <code>reversed(seq)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回一个反向的迭代器对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">seq = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">rev_seq = <span class="built_in">reversed</span>(seq)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(rev_seq))  <span class="comment"># 输出：[3, 2, 1]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="52-memoryview-obj"><a href="#52-memoryview-obj" class="headerlink" title="52. memoryview(obj)"></a><strong>52. <code>memoryview(obj)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个内存视图对象，用于访问其他对象的内存。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="built_in">bytes</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line">mv = <span class="built_in">memoryview</span>(b)</span><br><span class="line"><span class="built_in">print</span>(mv[<span class="number">0</span>])  <span class="comment"># 输出：1</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="八、其他内置函数"><a href="#八、其他内置函数" class="headerlink" title="八、其他内置函数"></a><strong>八、其他内置函数</strong></h2><h4 id="53-oct-x"><a href="#53-oct-x" class="headerlink" title="53. oct(x)"></a><strong>53. <code>oct(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将整数转换为八进制字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">8</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">oct</span>(x))  <span class="comment"># 输出：0o10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="54-hex-x"><a href="#54-hex-x" class="headerlink" title="54. hex(x)"></a><strong>54. <code>hex(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将整数转换为十六进制字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">255</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hex</span>(x))  <span class="comment"># 输出：0xff</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="55-globals"><a href="#55-globals" class="headerlink" title="55. globals()"></a><strong>55. <code>globals()</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回当前全局作用域的字典。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">globals</span>())</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="56-locals"><a href="#56-locals" class="headerlink" title="56. locals()"></a><strong>56. <code>locals()</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回当前局部作用域的字典。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">locals</span>())</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="57-id-object"><a href="#57-id-object" class="headerlink" title="57. id(object)"></a><strong>57. <code>id(object)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回对象的唯一标识符。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">id</span>(x))</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="58-range-stop"><a href="#58-range-stop" class="headerlink" title="58. range(stop)"></a><strong>58. <code>range(stop)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回一个包含从 0 到 stop-1 的整数序列的可迭代对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="59-open-file-mode-r"><a href="#59-open-file-mode-r" class="headerlink" title="59. open(file, mode=&#39;r&#39;, ...)"></a><strong>59. <code>open(file, mode=&#39;r&#39;, ...)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：打开文件并返回文件对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;w&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    file.write(<span class="string">&quot;Hello, World!&quot;</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="60-eval-expression"><a href="#60-eval-expression" class="headerlink" title="60. eval(expression)"></a><strong>60. <code>eval(expression)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：执行字符串表达式并返回结果。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">expression = <span class="string">&quot;2 + 3&quot;</span></span><br><span class="line">result = <span class="built_in">eval</span>(expression)</span><br><span class="line"><span class="built_in">print</span>(result)  <span class="comment"># 输出：5</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="61-exec-object"><a href="#61-exec-object" class="headerlink" title="61. exec(object)"></a><strong>61. <code>exec(object)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：执行 Python 代码。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">code = <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">x = 5</span></span><br><span class="line"><span class="string">if x &gt; 0:</span></span><br><span class="line"><span class="string">    print(&quot;Positive&quot;)</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="built_in">exec</span>(code)  <span class="comment"># 输出：Positive</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="62-compile-source-filename-mode"><a href="#62-compile-source-filename-mode" class="headerlink" title="62. compile(source, filename, mode)"></a><strong>62. <code>compile(source, filename, mode)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：编译源代码为代码或 AST 对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">source = <span class="string">&quot;print(&#x27;Hello, World!&#x27;)&quot;</span></span><br><span class="line">code = <span class="built_in">compile</span>(source, filename=<span class="string">&quot;&quot;</span>, mode=<span class="string">&quot;exec&quot;</span>)</span><br><span class="line"><span class="built_in">exec</span>(code)  <span class="comment"># 输出：Hello, World!</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="63-input-prompt"><a href="#63-input-prompt" class="headerlink" title="63. input([prompt])"></a><strong>63. <code>input([prompt])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：从用户处接收输入，返回字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name = <span class="built_in">input</span>(<span class="string">&quot;请输入您的姓名：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;您好，&quot;</span> + name + <span class="string">&quot;！&quot;</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="64-object"><a href="#64-object" class="headerlink" title="64. object()"></a><strong>64. <code>object()</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回一个新的空对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">obj = <span class="built_in">object</span>()</span><br><span class="line"><span class="built_in">print</span>(obj)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="65-help-object"><a href="#65-help-object" class="headerlink" title="65. help([object])"></a><strong>65. <code>help([object])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：获取对象的帮助信息。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">help</span>(<span class="built_in">list</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="66-complex-real-imag"><a href="#66-complex-real-imag" class="headerlink" title="66. complex([real[, imag]])"></a><strong>66. <code>complex([real[, imag]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个复数。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="built_in">complex</span>(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"><span class="built_in">print</span>(c)  <span class="comment"># 输出：(3+4j)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>Python 的 66 个内置函数是编程的基础工具，可以简化代码编写，提升开发效率。掌握这些函数后，你将能够更轻松地完成各种编程任务。</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>马斯克开源Grok-1：史上最大3140亿参数模型，权重架构全面公开</title>
+    <url>/2024/10/19/%E9%A9%AC%E6%96%AF%E5%85%8B%E5%BC%80%E6%BA%90Grok-1%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A73140%E4%BA%BF%E5%8F%82%E6%95%B0%E6%A8%A1%E5%9E%8B%EF%BC%8C%E6%9D%83%E9%87%8D%E6%9E%B6%E6%9E%84%E5%85%A8%E9%9D%A2%E5%85%AC%E5%BC%80/</url>
+    <content><![CDATA[<img src="https://pnglog.com/vwLnCG.png" alt=""  />
+
+<p>马斯克的xAI公司正式开源了3140亿参数的大型语言模型Grok-1,包括权重和网络架构。这使Grok-1成为目前参数量最大的开源大语言模型。Grok-1采用混合专家(MoE)架构,在给定token上的激活权重为25%。xAI在2023年10月使用自定义训练堆栈从头训练了该模型,并遵守Apache 2.0许可证开源。</p>
+<p>1.Grok-1 开源模型下载：【<a href="magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">磁力链接</a>】 ，然后使用 【<a href="https://bbs.freedidi.com/t/topic/392">Torrent 客户端</a>】进行下载即可！</p>
+<p>2.Grok 开源项目：【<a href="https://github.com/xai-org/grok-1">Githubg 官方下载</a>】</p>
+<p>3.如果需要在云端安装Grok-1大模型，可以通过【<a href="https://www.vultr.com/?ref=7045490">租赁H100 云GPU</a>】进行云端搭建</p>
+<p>4.当然也可以直接调用HuggingFace 🤗 Hub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xai-org/grok-1.git &amp;&amp; <span class="built_in">cd</span> grok-1</span><br><span class="line">pip install huggingface_hub[hf_transfer]</span><br><span class="line">huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False</span><br></pre></td></tr></table></figure>
+
+
+<p>模型详情:</p>
+<ul>
+<li>基于大量文本数据训练,未针对任何特定任务微调</li>
+<li>3140亿参数MoE模型,激活权重25%</li>
+<li>使用旋转嵌入而非固定位置嵌入</li>
+<li>Tokenizer词汇大小131,072,嵌入大小6,144</li>
+<li>64层Transformer,每层解码器层包含多头注意力块和密集块</li>
+<li>多头注意力:48头查询,8头键&#x2F;值,键值大小128</li>
+<li>密集块:加宽因子8,隐藏层大小32768</li>
+<li>每个token从8个专家选择2个</li>
+<li>旋转位置嵌入大小6,144</li>
+<li>上下文长度8192 tokens,精度bf16</li>
+</ul>
+<p>模型能力:</p>
+<ul>
+<li>在标准LM基准测试中表现超过同等计算量模型</li>
+<li>HumanEval编码任务63.2%,MMLU 73%</li>
+<li>在匈牙利高中数学考试中获C级(59%)</li>
+<li>整体在推理和编码任务中表现出色</li>
+</ul>
+<p>局限性:</p>
+<ul>
+<li>缺少独立搜索网络能力,需结合搜索工具增强</li>
+<li>可能产生幻觉,需人工审查</li>
+<li>目前无法像X平台付费版实现实时获取信息</li>
+</ul>
+<p>开源意义:</p>
+<ul>
+<li>遵循Apache 2.0许可证,用户可自由使用修改分发</li>
+<li>体现了xAI追求透明化和社区开放的理念</li>
+<li>为进一步研究和创新提供了宝贵资源</li>
+</ul>
+<p>总的来说,Grok-1作为一款大规模开源语言模型,在模型能力和透明度方面都具有重要意义,值得业内外人士关注和探索。当然,模型的实际应用还需要结合其他工具和人工审查,以发挥其最大潜能。</p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>详尽指南：在VMware中安装和配置Ubuntu</title>
     <url>/2024/08/02/%E8%AF%A6%E5%B0%BD%E6%8C%87%E5%8D%97%EF%BC%9A%E5%9C%A8VMware%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEUbuntu/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="1-什么是Linux？"><a href="#1-什么是Linux？" class="headerlink" title="1. 什么是Linux？"></a>1. 什么是Linux？</h3><p>Linux是一种开源的操作系统，由Linus Torvalds于1991年首次发布。它基于Unix操作系统，并以其强大的稳定性、安全性和灵活性著称。Linux被广泛应用于服务器、桌面计算机、移动设备和嵌入式系统中。</p>
+    <content><![CDATA[<img src="https://pnglog.com/ZkLngk.jpg" style="zoom: 25%;" />
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="1-什么是Linux？"><a href="#1-什么是Linux？" class="headerlink" title="1. 什么是Linux？"></a>1. 什么是Linux？</h3><p>Linux是一种开源的操作系统，由Linus Torvalds于1991年首次发布。它基于Unix操作系统，并以其强大的稳定性、安全性和灵活性著称。Linux被广泛应用于服务器、桌面计算机、移动设备和嵌入式系统中。</p>
 <h3 id="2-常见的Linux发行版"><a href="#2-常见的Linux发行版" class="headerlink" title="2. 常见的Linux发行版"></a>2. 常见的Linux发行版</h3><p>Linux发行版是将Linux内核与其他软件（如系统工具、图形用户界面、应用程序等）打包在一起的操作系统。以下是几种常见的Linux发行版及其优缺点：</p>
 <h4 id="2-1-Ubuntu"><a href="#2-1-Ubuntu" class="headerlink" title="2.1 Ubuntu"></a>2.1 Ubuntu</h4><p><strong>优点：</strong></p>
 <ul>
@@ -1985,88 +2492,6 @@
       </categories>
       <tags>
         <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚拟局域网VLAN</title>
-    <url>/2024/10/13/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91VLAN/</url>
-    <content><![CDATA[<p>VLAN（Virtual Local Area Network，虚拟局域网）技术在现代网络中扮演着重要的角色，它提供了一种灵活的方式来划分网络，提高安全性和网络性能。以下是VLAN的一些优缺点：</p>
-<h3 id="VLAN的优点："><a href="#VLAN的优点：" class="headerlink" title="VLAN的优点："></a>VLAN的优点：</h3><ol>
-<li><strong>提高安全性</strong>：VLAN可以将网络划分为多个逻辑上的广播域，限制了不同VLAN间的直接通信，从而增强了网络的安全性。</li>
-<li><strong>减少广播流量</strong>：通过将大型的广播域划分为更小的部分，VLAN可以减少网络上的广播流量，提高网络效率。</li>
-<li><strong>网络管理更加灵活</strong>：VLAN允许网络管理员根据功能、部门或应用需求来组织网络，而不受物理位置的限制，使得网络管理更加灵活和高效。</li>
-<li><strong>成本节约</strong>：VLAN减少了对昂贵网络升级的需求，提高了现有带宽和上行链路的利用率，从而节约了成本。</li>
-<li><strong>提高网络性能</strong>：通过分割网络为多个逻辑工作组，VLAN可以减少网络上不必要的流量，提高网络性能。</li>
-<li><strong>灵活性和可扩展性</strong>：VLAN技术具有灵活性和可扩展性，方便网络维护和管理，适应网络规模和业务需求的变化。</li>
-</ol>
-<h3 id="VLAN的缺点："><a href="#VLAN的缺点：" class="headerlink" title="VLAN的缺点："></a>VLAN的缺点：</h3><ol>
-<li><strong>管理复杂性</strong>：VLAN需要进行复杂的设置和管理，网络管理员必须精确地配置VLAN，以确保正确地分割广播域、引导数据流量、保持跨网络的通信并确保安全性。</li>
-<li><strong>配置错误可能导致安全风险</strong>：如果VLAN配置不当，可能会引起安全隐患，例如未授权的设备可能会接入到VLAN中，导致网络安全泄漏。</li>
-<li><strong>数据包延迟</strong>：使用VLAN可能会增加数据包的处理时间，从而增加延迟，因为每个数据包必须经过交换机上的额外处理。</li>
-<li><strong>对设备要求较高</strong>：尤其是在动态VLAN的配置中，对网络设备的要求较高，可能需要更多的处理能力和内存来维护VLAN信息。</li>
-<li><strong>VLAN数量限制</strong>：在标准定义中VLAN的数量只有4096个，无法满足大型数据中心的租户间隔离需求。</li>
-</ol>
-<p>总的来说，VLAN技术在提高网络的安全性、灵活性和性能方面提供了显著的优势，但也带来了一定的管理复杂性和潜在的配置挑战。网络管理员需要仔细规划和配置VLAN，以确保网络的高效和安全运行。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>马斯克开源Grok-1：史上最大3140亿参数模型，权重架构全面公开</title>
-    <url>/2024/10/19/%E9%A9%AC%E6%96%AF%E5%85%8B%E5%BC%80%E6%BA%90Grok-1%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A73140%E4%BA%BF%E5%8F%82%E6%95%B0%E6%A8%A1%E5%9E%8B%EF%BC%8C%E6%9D%83%E9%87%8D%E6%9E%B6%E6%9E%84%E5%85%A8%E9%9D%A2%E5%85%AC%E5%BC%80/</url>
-    <content><![CDATA[<img src="https://pnglog.com/vwLnCG.png" alt="Snipaste_2024-10-21_16-08-09.png"  />
-
-<p>马斯克的xAI公司正式开源了3140亿参数的大型语言模型Grok-1,包括权重和网络架构。这使Grok-1成为目前参数量最大的开源大语言模型。Grok-1采用混合专家(MoE)架构,在给定token上的激活权重为25%。xAI在2023年10月使用自定义训练堆栈从头训练了该模型,并遵守Apache 2.0许可证开源。</p>
-<p>1.Grok-1 开源模型下载：【<a href="magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">磁力链接</a>】 ，然后使用 【<a href="https://bbs.freedidi.com/t/topic/392">Torrent 客户端</a>】进行下载即可！</p>
-<p>2.Grok 开源项目：【<a href="https://github.com/xai-org/grok-1">Githubg 官方下载</a>】</p>
-<p>3.如果需要在云端安装Grok-1大模型，可以通过【<a href="https://www.vultr.com/?ref=7045490">租赁H100 云GPU</a>】进行云端搭建</p>
-<p>4.当然也可以直接调用HuggingFace 🤗 Hub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xai-org/grok-1.git &amp;&amp; <span class="built_in">cd</span> grok-1</span><br><span class="line">pip install huggingface_hub[hf_transfer]</span><br><span class="line">huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False</span><br></pre></td></tr></table></figure>
-
-
-<p>模型详情:</p>
-<ul>
-<li>基于大量文本数据训练,未针对任何特定任务微调</li>
-<li>3140亿参数MoE模型,激活权重25%</li>
-<li>使用旋转嵌入而非固定位置嵌入</li>
-<li>Tokenizer词汇大小131,072,嵌入大小6,144</li>
-<li>64层Transformer,每层解码器层包含多头注意力块和密集块</li>
-<li>多头注意力:48头查询,8头键&#x2F;值,键值大小128</li>
-<li>密集块:加宽因子8,隐藏层大小32768</li>
-<li>每个token从8个专家选择2个</li>
-<li>旋转位置嵌入大小6,144</li>
-<li>上下文长度8192 tokens,精度bf16</li>
-</ul>
-<p>模型能力:</p>
-<ul>
-<li>在标准LM基准测试中表现超过同等计算量模型</li>
-<li>HumanEval编码任务63.2%,MMLU 73%</li>
-<li>在匈牙利高中数学考试中获C级(59%)</li>
-<li>整体在推理和编码任务中表现出色</li>
-</ul>
-<p>局限性:</p>
-<ul>
-<li>缺少独立搜索网络能力,需结合搜索工具增强</li>
-<li>可能产生幻觉,需人工审查</li>
-<li>目前无法像X平台付费版实现实时获取信息</li>
-</ul>
-<p>开源意义:</p>
-<ul>
-<li>遵循Apache 2.0许可证,用户可自由使用修改分发</li>
-<li>体现了xAI追求透明化和社区开放的理念</li>
-<li>为进一步研究和创新提供了宝贵资源</li>
-</ul>
-<p>总的来说,Grok-1作为一款大规模开源语言模型,在模型能力和透明度方面都具有重要意义,值得业内外人士关注和探索。当然,模型的实际应用还需要结合其他工具和人工审查,以发挥其最大潜能。</p>
-]]></content>
-      <categories>
-        <category>科技</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
       </tags>
   </entry>
 </search>
