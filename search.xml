@@ -23,7 +23,7 @@
 <ol>
 <li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
 </li>
-<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#101;&#x6d;&#x61;&#x69;&#x6c;&#64;&#120;&#120;&#120;&#x2e;&#99;&#111;&#109;">&#101;&#x6d;&#x61;&#x69;&#x6c;&#64;&#120;&#120;&#120;&#x2e;&#99;&#111;&#109;</a></strong></font>“</p>
+<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#101;&#x6d;&#x61;&#105;&#108;&#64;&#120;&#120;&#120;&#46;&#x63;&#x6f;&#x6d;">&#101;&#x6d;&#x61;&#105;&#108;&#64;&#120;&#120;&#120;&#46;&#x63;&#x6f;&#x6d;</a></strong></font>“</p>
 <p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
 </li>
 <li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
@@ -241,58 +241,6 @@
       <tags>
         <tag>Linux</tag>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IDM直装注册版（完美，不反弹！）</title>
-    <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
-    <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
-<p><strong>中文绿色特别版：【<a href="https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file">点击下载</a>】</strong></p>
-<p><strong>一定要安装IDM的浏览器插件，才可以自动调用下载！</strong></p>
-<p><strong>浏览器插件：</strong>【<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">进入安装</a>】</p>
-<p>再华丽的语言也无法表达IDM的牛C！</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>效率工具</tag>
-        <tag>浏览器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Omakub专为开发者设计的Ubuntu环境配置项目</title>
-    <url>/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<p>Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。</p>
-<p>提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。</p>
-<img src="https://pnglog.com/aR3xii.png" style="zoom: 50%;" />
-
- 
-
-<h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><ol>
-<li>一键式配置：通过一条命令即可完成所有配置。</li>
-<li>预装工具：包括浏览器、终端、编辑器、通讯工具（如 WhatsApp、Signal、Spotify、Zoom、1Password）等。</li>
-<li>版本控制：内置 GitHub CLI，方便进行版本控制和代码管理。</li>
-<li>容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。</li>
-<li>语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。</li>
-<li>系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。</li>
-</ol>
-<h4 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h4><p>安装 Omakub 只需以下步骤：</p>
-<ol>
-<li><p>在计算机上安装 Ubuntu 24.04+。</p>
-</li>
-<li><p>打开终端（Ctrl+Alt+T），运行以下命令：</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://omakub.org/install | bash</span><br></pre></td></tr></table></figure>
-
-<p> 整个安装过程大约需要 30 分钟，具体时间取决于网络状况。安装完成后，系统会自动配置所有工具和设置。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -523,8 +471,60 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>效率工具</tag>
         <tag>Python</tag>
+        <tag>效率工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IDM直装注册版（完美，不反弹！）</title>
+    <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
+    <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
+<p><strong>中文绿色特别版：【<a href="https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file">点击下载</a>】</strong></p>
+<p><strong>一定要安装IDM的浏览器插件，才可以自动调用下载！</strong></p>
+<p><strong>浏览器插件：</strong>【<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">进入安装</a>】</p>
+<p>再华丽的语言也无法表达IDM的牛C！</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Omakub专为开发者设计的Ubuntu环境配置项目</title>
+    <url>/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<p>Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。</p>
+<p>提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。</p>
+<img src="https://pnglog.com/aR3xii.png" style="zoom: 50%;" />
+
+ 
+
+<h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><ol>
+<li>一键式配置：通过一条命令即可完成所有配置。</li>
+<li>预装工具：包括浏览器、终端、编辑器、通讯工具（如 WhatsApp、Signal、Spotify、Zoom、1Password）等。</li>
+<li>版本控制：内置 GitHub CLI，方便进行版本控制和代码管理。</li>
+<li>容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。</li>
+<li>语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。</li>
+<li>系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。</li>
+</ol>
+<h4 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h4><p>安装 Omakub 只需以下步骤：</p>
+<ol>
+<li><p>在计算机上安装 Ubuntu 24.04+。</p>
+</li>
+<li><p>打开终端（Ctrl+Alt+T），运行以下命令：</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://omakub.org/install | bash</span><br></pre></td></tr></table></figure>
+
+<p> 整个安装过程大约需要 30 分钟，具体时间取决于网络状况。安装完成后，系统会自动配置所有工具和设置。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1028,43 +1028,6 @@
       </tags>
   </entry>
   <entry>
-    <title>三数之和:排序+双指针</title>
-    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
-    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
-<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
-<p><strong>示例 1：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 2：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 3：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>提示：</strong></p>
-<ul>
-<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
-<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
-</ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
-<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
-<p><strong>Python:</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
-
-<p><strong>Java:</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="literal">null</span> || n &lt; <span class="number">3</span>)</span><br><span class="line">            <span class="keyword">return</span> res;       </span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">return</span> res;           </span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;          </span><br><span class="line">            <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> i + <span class="number">1</span>, R = n - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (L &lt; R) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[L] + nums[R];</span><br><span class="line">        </span><br><span class="line">                <span class="keyword">if</span> (sum == <span class="number">0</span>) &#123;</span><br><span class="line">                    res.add(Arrays.asList(nums[i], nums[L], nums[R]));</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[L] == nums[L + <span class="number">1</span>]) L++;</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[R] == nums[R - <span class="number">1</span>]) R--;</span><br><span class="line">                    L++;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (sum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    L++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>算法</tag>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一文带你深入理解MAC地址和IP地址</title>
     <url>/2024/10/14/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3MAC%E5%9C%B0%E5%9D%80%E5%92%8CIP%E5%9C%B0%E5%9D%80/</url>
     <content><![CDATA[<p>从计算机网络课本的角度来看，MAC地址和IP地址在网络通信中扮演着不同但互补的角色。下面将从更深入的层面对比二者：</p>
@@ -1160,35 +1123,40 @@
       </tags>
   </entry>
   <entry>
-    <title>主流大语言模型评测与选择</title>
-    <url>/2024/07/24/%E4%B8%BB%E6%B5%81%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%B8%8E%E9%80%89%E6%8B%A9/</url>
-    <content><![CDATA[<h1 id="主流大语言模型评测与选择"><a href="#主流大语言模型评测与选择" class="headerlink" title="主流大语言模型评测与选择"></a>主流大语言模型评测与选择</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>近年来，人工智能技术迅猛发展，大语言模型作为其中的重要组成部分，在各个领域展示了其强大的能力和广泛的应用前景。本文将详细评测目前市面上的几款主流大语言模型，包括OpenAI的ChatGPT，Google的Gemini，Anthropic的Claude，百度的文心一言，月之暗面的Kimi，字节跳动的豆包，以及科大讯飞的讯飞星火。我们将从模型性能、应用场景、用户体验、创新性及可扩展性等方面进行深入分析，以帮助用户在选择合适的大语言模型时提供参考。</p>
-<h2 id="模型简介"><a href="#模型简介" class="headerlink" title="模型简介"></a>模型简介</h2><h3 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a><a href="https://chatgpt.com/">ChatGPT</a></h3><p>ChatGPT是OpenAI推出的一款强大大语言模型，凭借其出色的自然语言处理能力和多样化的应用场景，迅速成为业界翘楚。ChatGPT能够流畅地理解和生成人类语言，并在对话系统、内容生成、编程辅助等方面表现优异。</p>
-<h3 id="Google-Gemini"><a href="#Google-Gemini" class="headerlink" title="Google Gemini"></a><a href="https://gemini.google.com/">Google Gemini</a></h3><p>Google Gemini是Google开发的一款新型大语言模型，融合了Google在自然语言处理和机器学习领域的前沿技术。Gemini的独特之处在于其强大的多任务处理能力和高度定制化的应用方案，适用于从信息检索到创意生成的广泛领域。</p>
-<h3 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a><a href="https://claude.ai/">Claude</a></h3><p>Claude是Anthropic推出的大语言模型，以其在安全性和伦理方面的创新性设计著称。Claude旨在在保持强大生成能力的同时，最大限度地减少有害输出，其在内容生成和对话系统中的表现非常出色。</p>
-<h3 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a><a href="https://yiyan.baidu.com/">文心一言</a></h3><p>文心一言是百度推出的一款大语言模型，专注于中文语境下的自然语言处理和生成。文心一言在中文理解和生成方面具有很高的精度，广泛应用于中文对话系统、自动翻译和内容生成等领域。</p>
-<h3 id="Kimi"><a href="#Kimi" class="headerlink" title="Kimi"></a><a href="https://kimi.moonshot.cn/">Kimi</a></h3><p>Kimi是由年轻的公司月之暗面推出的一款新兴大语言模型。虽然市场知名度较低，但其在特定领域如技术文档生成和代码辅助编写方面表现不俗。Kimi致力于提供高效、精准的技术解决方案。</p>
-<h3 id="豆包"><a href="#豆包" class="headerlink" title="豆包"></a><a href="https://www.doubao.com/">豆包</a></h3><p>豆包是字节跳动推出的大语言模型，专注于内容生成和创意写作。豆包利用字节跳动在内容平台上的数据优势，在生成自然且富有创意的文本方面表现出色。</p>
-<h3 id="讯飞星火"><a href="#讯飞星火" class="headerlink" title="讯飞星火"></a><a href="https://xinghuo.xfyun.cn/">讯飞星火</a></h3><p>讯飞星火是科大讯飞推出的智能语言模型，特别擅长语音识别和自然语言理解。讯飞星火在智能助手、教育和客服系统中有着广泛应用。</p>
-<h2 id="模型性能对比"><a href="#模型性能对比" class="headerlink" title="模型性能对比"></a>模型性能对比</h2><h3 id="1-语言理解能力"><a href="#1-语言理解能力" class="headerlink" title="1. 语言理解能力"></a>1. 语言理解能力</h3><p>在语言理解能力方面，ChatGPT和Google Gemini表现尤为突出。ChatGPT在多语言环境中的表现非常稳定，能够处理复杂的语法结构和上下文信息。Google Gemini则凭借其强大的数据支持和算法优化，在处理自然语言任务时展现出卓越的性能。</p>
-<p>文心一言在中文语言处理方面具有明显优势，特别是在处理汉语特有的语法和词汇时，表现出色。豆包在生成富有创意的文本方面表现优异，但在复杂的语言理解任务中稍显不足。Claude以其对安全性和伦理问题的重视，确保了在生成内容时尽量减少不良信息的输出。讯飞星火则在语音识别和自然语言理解方面具有独特优势，特别适合语音交互场景。</p>
-<h3 id="2-生成能力"><a href="#2-生成能力" class="headerlink" title="2. 生成能力"></a>2. 生成能力</h3><p>在文本生成能力方面，ChatGPT和豆包表现最佳。ChatGPT生成的文本流畅自然，适用于多种应用场景。豆包凭借其在内容平台上的数据积累，能够生成极具创意和吸引力的内容。Google Gemini和Claude在生成任务中也表现不俗，能够根据输入生成高质量的文本。</p>
-<p>文心一言在生成中文文本方面具有优势，特别是在处理中文对话和自动翻译任务时，表现优异。Kimi在技术文档生成方面表现突出，适合用于代码辅助编写和技术文档生成。讯飞星火则在语音到文本的转换中表现出色，适用于语音助手和客服系统。</p>
-<h3 id="3-应用场景"><a href="#3-应用场景" class="headerlink" title="3. 应用场景"></a>3. 应用场景</h3><p>不同的大语言模型在应用场景上各有所长。ChatGPT适用于对话系统、内容生成、编程辅助等多种场景。Google Gemini凭借其多任务处理能力，适用于信息检索、创意生成等广泛领域。Claude在内容生成和对话系统中表现出色，同时其在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。</p>
-<p>文心一言专注于中文语言处理，适用于中文对话系统、自动翻译和内容生成等领域。Kimi在技术文档生成和代码辅助编写方面表现突出。豆包在内容生成和创意写作方面具有优势，适用于需要生成自然且富有创意文本的场景。讯飞星火在语音识别和自然语言理解方面具有独特优势，适用于语音助手、教育和客服系统。</p>
-<h2 id="用户体验"><a href="#用户体验" class="headerlink" title="用户体验"></a>用户体验</h2><p>在用户体验方面，ChatGPT和Google Gemini表现最佳。ChatGPT以其高效的响应速度和自然的对话体验，获得了广泛好评。Google Gemini则凭借其强大的多任务处理能力和高度定制化的应用方案，提供了极佳的用户体验。</p>
-<p>文心一言在中文语言处理方面具有优势，能够提供精准的中文对话和文本生成体验。Claude以其对安全性和伦理问题的重视，确保用户在使用过程中获得安全可靠的体验。豆包在生成创意文本方面表现出色，特别适合需要高质量内容生成的用户。讯飞星火在语音识别和自然语言理解方面表现优异，为用户提供了便捷的语音交互体验。</p>
-<h2 id="创新性及可扩展性"><a href="#创新性及可扩展性" class="headerlink" title="创新性及可扩展性"></a>创新性及可扩展性</h2><p>在创新性和可扩展性方面，ChatGPT和Google Gemini同样表现出色。ChatGPT不断更新和优化其模型，推出了多个版本，持续提升其性能和应用范围。Google Gemini则利用其在机器学习和自然语言处理领域的前沿技术，推出了高度定制化和多任务处理能力的解决方案。</p>
-<p>Claude在安全性和伦理方面的创新设计，使其在生成内容时能够最大限度地减少有害输出。文心一言在中文语言处理方面的创新性，使其在中文语境下具有很高的应用价值。Kimi虽然市场知名度较低，但其在技术文档生成和代码辅助编写方面的独特功能，使其在特定领域具有优势。豆包利用字节跳动在内容平台上的数据优势，在内容生成和创意写作方面具有独特的创新性。讯飞星火在语音识别和自然语言理解方面的技术创新，使其在语音交互场景中具有广泛的应用前景。</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>综上所述，不同的大语言模型在各自的应用场景中具有不同的优势。<strong>ChatGPT</strong>和<strong>Google Gemini</strong>在多任务处理和用户体验方面表现出色，适用于广泛的应用场景。<strong>Claude</strong>在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。<strong>文心一言</strong>在中文语言处理方面具有明显优势，特别适合中文对话系统和自动翻译等任务。<strong>Kimi</strong>在技术文档生成和代码辅助编写方面表现突出。<strong>豆包</strong>在内容生成和创意写作方面具有优势。<strong>讯飞星火</strong>在语音识别和自然语言理解方面表现优异，适用于语音交互场景。</p>
-<p>在选择合适的大语言模型时，用户应根据具体的应用需求和场景，综合考虑各个模型的性能、用户体验和创新性等因素，选择最符合自身需求的模型。希望本文的评测能够为用户在选择大语言模型时提供有价值的参考。</p>
+    <title>三数之和:排序+双指针</title>
+    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
+    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
+<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 3：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
+<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
+<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
+<p><strong>Python:</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+
+<p><strong>Java:</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="literal">null</span> || n &lt; <span class="number">3</span>)</span><br><span class="line">            <span class="keyword">return</span> res;       </span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">return</span> res;           </span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;          </span><br><span class="line">            <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> i + <span class="number">1</span>, R = n - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (L &lt; R) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[L] + nums[R];</span><br><span class="line">        </span><br><span class="line">                <span class="keyword">if</span> (sum == <span class="number">0</span>) &#123;</span><br><span class="line">                    res.add(Arrays.asList(nums[i], nums[L], nums[R]));</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[L] == nums[L + <span class="number">1</span>]) L++;</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[R] == nums[R - <span class="number">1</span>]) R--;</span><br><span class="line">                    L++;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (sum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    L++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>科技</category>
+        <category>算法</category>
       </categories>
       <tags>
-        <tag>效率工具</tag>
-        <tag>AI</tag>
+        <tag>Python</tag>
+        <tag>算法</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -1593,6 +1561,38 @@
       </tags>
   </entry>
   <entry>
+    <title>主流大语言模型评测与选择</title>
+    <url>/2024/07/24/%E4%B8%BB%E6%B5%81%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%B8%8E%E9%80%89%E6%8B%A9/</url>
+    <content><![CDATA[<h1 id="主流大语言模型评测与选择"><a href="#主流大语言模型评测与选择" class="headerlink" title="主流大语言模型评测与选择"></a>主流大语言模型评测与选择</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>近年来，人工智能技术迅猛发展，大语言模型作为其中的重要组成部分，在各个领域展示了其强大的能力和广泛的应用前景。本文将详细评测目前市面上的几款主流大语言模型，包括OpenAI的ChatGPT，Google的Gemini，Anthropic的Claude，百度的文心一言，月之暗面的Kimi，字节跳动的豆包，以及科大讯飞的讯飞星火。我们将从模型性能、应用场景、用户体验、创新性及可扩展性等方面进行深入分析，以帮助用户在选择合适的大语言模型时提供参考。</p>
+<h2 id="模型简介"><a href="#模型简介" class="headerlink" title="模型简介"></a>模型简介</h2><h3 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a><a href="https://chatgpt.com/">ChatGPT</a></h3><p>ChatGPT是OpenAI推出的一款强大大语言模型，凭借其出色的自然语言处理能力和多样化的应用场景，迅速成为业界翘楚。ChatGPT能够流畅地理解和生成人类语言，并在对话系统、内容生成、编程辅助等方面表现优异。</p>
+<h3 id="Google-Gemini"><a href="#Google-Gemini" class="headerlink" title="Google Gemini"></a><a href="https://gemini.google.com/">Google Gemini</a></h3><p>Google Gemini是Google开发的一款新型大语言模型，融合了Google在自然语言处理和机器学习领域的前沿技术。Gemini的独特之处在于其强大的多任务处理能力和高度定制化的应用方案，适用于从信息检索到创意生成的广泛领域。</p>
+<h3 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a><a href="https://claude.ai/">Claude</a></h3><p>Claude是Anthropic推出的大语言模型，以其在安全性和伦理方面的创新性设计著称。Claude旨在在保持强大生成能力的同时，最大限度地减少有害输出，其在内容生成和对话系统中的表现非常出色。</p>
+<h3 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a><a href="https://yiyan.baidu.com/">文心一言</a></h3><p>文心一言是百度推出的一款大语言模型，专注于中文语境下的自然语言处理和生成。文心一言在中文理解和生成方面具有很高的精度，广泛应用于中文对话系统、自动翻译和内容生成等领域。</p>
+<h3 id="Kimi"><a href="#Kimi" class="headerlink" title="Kimi"></a><a href="https://kimi.moonshot.cn/">Kimi</a></h3><p>Kimi是由年轻的公司月之暗面推出的一款新兴大语言模型。虽然市场知名度较低，但其在特定领域如技术文档生成和代码辅助编写方面表现不俗。Kimi致力于提供高效、精准的技术解决方案。</p>
+<h3 id="豆包"><a href="#豆包" class="headerlink" title="豆包"></a><a href="https://www.doubao.com/">豆包</a></h3><p>豆包是字节跳动推出的大语言模型，专注于内容生成和创意写作。豆包利用字节跳动在内容平台上的数据优势，在生成自然且富有创意的文本方面表现出色。</p>
+<h3 id="讯飞星火"><a href="#讯飞星火" class="headerlink" title="讯飞星火"></a><a href="https://xinghuo.xfyun.cn/">讯飞星火</a></h3><p>讯飞星火是科大讯飞推出的智能语言模型，特别擅长语音识别和自然语言理解。讯飞星火在智能助手、教育和客服系统中有着广泛应用。</p>
+<h2 id="模型性能对比"><a href="#模型性能对比" class="headerlink" title="模型性能对比"></a>模型性能对比</h2><h3 id="1-语言理解能力"><a href="#1-语言理解能力" class="headerlink" title="1. 语言理解能力"></a>1. 语言理解能力</h3><p>在语言理解能力方面，ChatGPT和Google Gemini表现尤为突出。ChatGPT在多语言环境中的表现非常稳定，能够处理复杂的语法结构和上下文信息。Google Gemini则凭借其强大的数据支持和算法优化，在处理自然语言任务时展现出卓越的性能。</p>
+<p>文心一言在中文语言处理方面具有明显优势，特别是在处理汉语特有的语法和词汇时，表现出色。豆包在生成富有创意的文本方面表现优异，但在复杂的语言理解任务中稍显不足。Claude以其对安全性和伦理问题的重视，确保了在生成内容时尽量减少不良信息的输出。讯飞星火则在语音识别和自然语言理解方面具有独特优势，特别适合语音交互场景。</p>
+<h3 id="2-生成能力"><a href="#2-生成能力" class="headerlink" title="2. 生成能力"></a>2. 生成能力</h3><p>在文本生成能力方面，ChatGPT和豆包表现最佳。ChatGPT生成的文本流畅自然，适用于多种应用场景。豆包凭借其在内容平台上的数据积累，能够生成极具创意和吸引力的内容。Google Gemini和Claude在生成任务中也表现不俗，能够根据输入生成高质量的文本。</p>
+<p>文心一言在生成中文文本方面具有优势，特别是在处理中文对话和自动翻译任务时，表现优异。Kimi在技术文档生成方面表现突出，适合用于代码辅助编写和技术文档生成。讯飞星火则在语音到文本的转换中表现出色，适用于语音助手和客服系统。</p>
+<h3 id="3-应用场景"><a href="#3-应用场景" class="headerlink" title="3. 应用场景"></a>3. 应用场景</h3><p>不同的大语言模型在应用场景上各有所长。ChatGPT适用于对话系统、内容生成、编程辅助等多种场景。Google Gemini凭借其多任务处理能力，适用于信息检索、创意生成等广泛领域。Claude在内容生成和对话系统中表现出色，同时其在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。</p>
+<p>文心一言专注于中文语言处理，适用于中文对话系统、自动翻译和内容生成等领域。Kimi在技术文档生成和代码辅助编写方面表现突出。豆包在内容生成和创意写作方面具有优势，适用于需要生成自然且富有创意文本的场景。讯飞星火在语音识别和自然语言理解方面具有独特优势，适用于语音助手、教育和客服系统。</p>
+<h2 id="用户体验"><a href="#用户体验" class="headerlink" title="用户体验"></a>用户体验</h2><p>在用户体验方面，ChatGPT和Google Gemini表现最佳。ChatGPT以其高效的响应速度和自然的对话体验，获得了广泛好评。Google Gemini则凭借其强大的多任务处理能力和高度定制化的应用方案，提供了极佳的用户体验。</p>
+<p>文心一言在中文语言处理方面具有优势，能够提供精准的中文对话和文本生成体验。Claude以其对安全性和伦理问题的重视，确保用户在使用过程中获得安全可靠的体验。豆包在生成创意文本方面表现出色，特别适合需要高质量内容生成的用户。讯飞星火在语音识别和自然语言理解方面表现优异，为用户提供了便捷的语音交互体验。</p>
+<h2 id="创新性及可扩展性"><a href="#创新性及可扩展性" class="headerlink" title="创新性及可扩展性"></a>创新性及可扩展性</h2><p>在创新性和可扩展性方面，ChatGPT和Google Gemini同样表现出色。ChatGPT不断更新和优化其模型，推出了多个版本，持续提升其性能和应用范围。Google Gemini则利用其在机器学习和自然语言处理领域的前沿技术，推出了高度定制化和多任务处理能力的解决方案。</p>
+<p>Claude在安全性和伦理方面的创新设计，使其在生成内容时能够最大限度地减少有害输出。文心一言在中文语言处理方面的创新性，使其在中文语境下具有很高的应用价值。Kimi虽然市场知名度较低，但其在技术文档生成和代码辅助编写方面的独特功能，使其在特定领域具有优势。豆包利用字节跳动在内容平台上的数据优势，在内容生成和创意写作方面具有独特的创新性。讯飞星火在语音识别和自然语言理解方面的技术创新，使其在语音交互场景中具有广泛的应用前景。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>综上所述，不同的大语言模型在各自的应用场景中具有不同的优势。<strong>ChatGPT</strong>和<strong>Google Gemini</strong>在多任务处理和用户体验方面表现出色，适用于广泛的应用场景。<strong>Claude</strong>在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。<strong>文心一言</strong>在中文语言处理方面具有明显优势，特别适合中文对话系统和自动翻译等任务。<strong>Kimi</strong>在技术文档生成和代码辅助编写方面表现突出。<strong>豆包</strong>在内容生成和创意写作方面具有优势。<strong>讯飞星火</strong>在语音识别和自然语言理解方面表现优异，适用于语音交互场景。</p>
+<p>在选择合适的大语言模型时，用户应根据具体的应用需求和场景，综合考虑各个模型的性能、用户体验和创新性等因素，选择最符合自身需求的模型。希望本文的评测能够为用户在选择大语言模型时提供有价值的参考。</p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
     <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
     <content><![CDATA[<img src="https://www.pnglog.com/FDPPbA.jpg" style="zoom: 33%;"/>
@@ -1632,6 +1632,27 @@
       </categories>
       <tags>
         <tag>时政</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搜索引擎搜索技巧</title>
+    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<ol>
+<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
+<li>限定标题：<code>intitle:标题内容</code></li>
+<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
+<li>限定内容关键词：<code>intext:内容关键词</code></li>
+<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
+<li>限定网址搜索来源：<code>site:具体的网址</code></li>
+<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
+</ol>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>浏览器</tag>
       </tags>
   </entry>
   <entry>
@@ -1680,27 +1701,6 @@
       <tags>
         <tag>Python</tag>
         <tag>AI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搜索引擎搜索技巧</title>
-    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<ol>
-<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
-<li>限定标题：<code>intitle:标题内容</code></li>
-<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
-<li>限定内容关键词：<code>intext:内容关键词</code></li>
-<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
-<li>限定网址搜索来源：<code>site:具体的网址</code></li>
-<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
-</ol>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>效率工具</tag>
-        <tag>浏览器</tag>
       </tags>
   </entry>
   <entry>
@@ -1804,82 +1804,6 @@
       </tags>
   </entry>
   <entry>
-    <title>深入浅出XGBoost:从原理到实现</title>
-    <url>/2024/11/15/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAXGBoost-%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[<p><span style="color: #8080FF;">XGBoost 是一种高效的梯度提升算法，专为解决分类和回归问题而设计。本篇文章将通过核心原理、数学公式和代码实现，帮助您全面理解这一强大算法。</span></p>
-<h2 id="1-什么是XGBoost"><a href="#1-什么是XGBoost" class="headerlink" title="1. 什么是XGBoost"></a><strong>1. 什么是XGBoost</strong></h2><p>XGBoost 全称为 <strong>eXtreme Gradient Boosting</strong>，是一种基于梯度提升（Gradient Boosting）的优化算法。通过迭代地构建弱学习器（通常是决策树），逐步优化模型误差。</p>
-<hr>
-<h2 id="2-XGBoost的工作原理"><a href="#2-XGBoost的工作原理" class="headerlink" title="2. XGBoost的工作原理"></a>2. XGBoost的工作原理</h2><p>XGBoost 的目标是最小化损失函数，以下是核心数学公式及步骤：</p>
-<hr>
-<h3 id="2-1-损失函数"><a href="#2-1-损失函数" class="headerlink" title="2.1 损失函数"></a>2.1 损失函数</h3><p>XGBoost 的目标是最小化以下损失函数：</p>
-<p>$$<br>\mathcal{L} &#x3D; \sum_{i&#x3D;1}^n \ell(y_i, \hat{y}<em>i) + \sum</em>{k&#x3D;1}^K \Omega(f_k)<br>$$</p>
-<p>其中：</p>
-<ul>
-<li>$\ell(y_i, \hat{y}_i)$：预测误差（如平方误差），通过目标值 $y_i$ 与预测值 $\hat{y}_i$ 计算得出。</li>
-<li>$\Omega(f_k)$：正则化项，用于控制模型的复杂度，定义为：</li>
-</ul>
-<p>$$<br>\Omega(f_k) &#x3D; \gamma T + \frac{1}{2} \lambda \sum_{j&#x3D;1}^T w_j^2<br>$$</p>
-<ul>
-<li>$T$：叶子节点数。</li>
-<li>$w_j$：叶子节点权重。</li>
-<li>$\gamma, \lambda$：正则化参数。</li>
-</ul>
-<hr>
-<h3 id="2-2-二阶近似损失函数"><a href="#2-2-二阶近似损失函数" class="headerlink" title="2.2 二阶近似损失函数"></a>2.2 二阶近似损失函数</h3><p>对于第 $t$ 轮迭代，目标函数通过二阶泰勒展开得到：</p>
-<p>$$<br>\mathcal{L}^{(t)} \approx \sum_{i&#x3D;1}^n \left[ g_i f_t(x_i) + \frac{1}{2} h_i f_t^2(x_i) \right] + \Omega(f_t)<br>$$</p>
-<p>其中：</p>
-<ul>
-<li>$g_i &#x3D; \frac{\partial \ell(y_i, \hat{y}_i)}{\partial \hat{y}_i}$：一阶导数（梯度），表示损失函数的变化方向。</li>
-<li>$h_i &#x3D; \frac{\partial^2 \ell(y_i, \hat{y}_i)}{\partial \hat{y}_i^2}$：二阶导数（Hessian），表示损失函数的曲率。</li>
-</ul>
-<hr>
-<h3 id="2-3-增益公式"><a href="#2-3-增益公式" class="headerlink" title="2.3 增益公式"></a>2.3 增益公式</h3><p>在分裂节点时，增益公式用于评估分裂质量：</p>
-<p>$$<br>\text{Gain} &#x3D; \frac{1}{2} \left( \frac{G_L^2}{H_L + \lambda} + \frac{G_R^2}{H_R + \lambda} - \frac{G^2}{H + \lambda} \right) - \gamma<br>$$</p>
-<p>其中：</p>
-<ul>
-<li>$G, H$：当前节点的梯度和 Hessian 总和。</li>
-<li>$G_L, H_L$：左子节点的梯度和 Hessian 总和。</li>
-<li>$G_R, H_R$：右子节点的梯度和 Hessian 总和。</li>
-</ul>
-<hr>
-<h3 id="2-4-叶子节点权重"><a href="#2-4-叶子节点权重" class="headerlink" title="2.4 叶子节点权重"></a>2.4 叶子节点权重</h3><p>分裂结束后，叶子节点的权重可以通过以下公式计算：</p>
-<p>$$<br>w_j &#x3D; -\frac{G_j}{H_j + \lambda}<br>$$</p>
-<p>其中：</p>
-<ul>
-<li>$G_j, H_j$：对应叶子节点的梯度和 Hessian 总和。</li>
-</ul>
-<hr>
-<h2 id="3-从零实现XGBoost"><a href="#3-从零实现XGBoost" class="headerlink" title="3. 从零实现XGBoost"></a><strong>3. 从零实现XGBoost</strong></h2><p>以下为简化版 XGBoost 的核心实现，包括数据生成和树构建。</p>
-<h3 id="3-1-数据生成与处理"><a href="#3-1-数据生成与处理" class="headerlink" title="3.1 数据生成与处理"></a><strong>3.1 数据生成与处理</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置随机种子</span></span><br><span class="line">np.random.seed(<span class="number">42</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成虚拟数据集</span></span><br><span class="line">X = np.random.rand(<span class="number">1000</span>, <span class="number">5</span>)  <span class="comment"># 1000个样本，5个特征</span></span><br><span class="line">true_weights = np.array([<span class="number">2.5</span>, -<span class="number">1.7</span>, <span class="number">0.5</span>, <span class="number">1.2</span>, -<span class="number">0.9</span>])</span><br><span class="line">y = X.dot(true_weights) + np.random.randn(<span class="number">1000</span>) * <span class="number">0.5</span>  <span class="comment"># 线性关系加噪声</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建DataFrame以便后续处理</span></span><br><span class="line">data = pd.DataFrame(X, columns=[<span class="string">f&#x27;feature_<span class="subst">&#123;i&#125;</span>&#x27;</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">6</span>)])</span><br><span class="line">data[<span class="string">&#x27;target&#x27;</span>] = y</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印数据集前5行</span></span><br><span class="line"><span class="built_in">print</span>(data.head())</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-2-损失函数及梯度计算"><a href="#3-2-损失函数及梯度计算" class="headerlink" title="3.2 损失函数及梯度计算"></a><strong>3.2 损失函数及梯度计算</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 损失函数（平方损失）</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">squared_loss</span>(<span class="params">y_true, y_pred</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0.5</span> * np.mean((y_true - y_pred) ** <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 梯度和Hessian计算</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">gradient</span>(<span class="params">y_true, y_pred</span>):</span><br><span class="line">    <span class="keyword">return</span> -(y_true - y_pred)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hessian</span>(<span class="params">y_true, y_pred</span>):</span><br><span class="line">    <span class="keyword">return</span> np.ones_like(y_true)</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-3-XGBoost-核心训练流程"><a href="#3-3-XGBoost-核心训练流程" class="headerlink" title="3.3 XGBoost 核心训练流程"></a><strong>3.3 XGBoost 核心训练流程</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">XGBoostFromScratch</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, n_estimators=<span class="number">10</span>, learning_rate=<span class="number">0.1</span>, max_depth=<span class="number">3</span>, lambda_reg=<span class="number">1</span></span>):</span><br><span class="line">        <span class="variable language_">self</span>.n_estimators = n_estimators</span><br><span class="line">        <span class="variable language_">self</span>.learning_rate = learning_rate</span><br><span class="line">        <span class="variable language_">self</span>.max_depth = max_depth</span><br><span class="line">        <span class="variable language_">self</span>.lambda_reg = lambda_reg</span><br><span class="line">        <span class="variable language_">self</span>.trees = []</span><br><span class="line">        <span class="variable language_">self</span>.losses = []  <span class="comment"># 新增一个用于保存每轮损失的列表</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">fit</span>(<span class="params">self, X, y</span>):</span><br><span class="line">        n_samples = X.shape[<span class="number">0</span>]</span><br><span class="line">        <span class="comment"># 初始化预测值为0</span></span><br><span class="line">        y_pred = np.zeros(n_samples)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 迭代生成树</span></span><br><span class="line">        <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="variable language_">self</span>.n_estimators):</span><br><span class="line">            <span class="comment"># 计算梯度和Hessian</span></span><br><span class="line">            grad = gradient(y, y_pred)</span><br><span class="line">            hess = hessian(y, y_pred)</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 构建一颗树并拟合</span></span><br><span class="line">            tree = <span class="variable language_">self</span>.build_tree(X, grad, hess, depth=<span class="number">0</span>)</span><br><span class="line">            <span class="variable language_">self</span>.trees.append(tree)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 更新预测值</span></span><br><span class="line">            y_pred += <span class="variable language_">self</span>.learning_rate * <span class="variable language_">self</span>.predict_tree(tree, X)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 每轮迭代后计算当前的损失，并保存</span></span><br><span class="line">            current_loss = squared_loss(y, y_pred)</span><br><span class="line">            <span class="variable language_">self</span>.losses.append(current_loss)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">build_tree</span>(<span class="params">self, X, grad, hess, depth</span>):</span><br><span class="line">        <span class="comment"># 这里我们简单处理为单层分裂的树，后续可扩展为多层</span></span><br><span class="line">        n_samples, n_features = X.shape</span><br><span class="line">        best_split = <span class="literal">None</span></span><br><span class="line">        best_gain = -<span class="built_in">float</span>(<span class="string">&#x27;inf&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 遍历所有特征，找到最佳分裂点</span></span><br><span class="line">        <span class="keyword">for</span> feature_idx <span class="keyword">in</span> <span class="built_in">range</span>(n_features):</span><br><span class="line">            thresholds = np.unique(X[:, feature_idx])</span><br><span class="line">            <span class="keyword">for</span> threshold <span class="keyword">in</span> thresholds:</span><br><span class="line">                left_mask = X[:, feature_idx] &lt;= threshold</span><br><span class="line">                right_mask = ~left_mask</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">if</span> <span class="built_in">len</span>(left_mask) == <span class="number">0</span> <span class="keyword">or</span> <span class="built_in">len</span>(right_mask) == <span class="number">0</span>:</span><br><span class="line">                    <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line">                <span class="comment"># 计算增益</span></span><br><span class="line">                gain = <span class="variable language_">self</span>.compute_gain(grad, hess, left_mask, right_mask)</span><br><span class="line">                <span class="keyword">if</span> gain &gt; best_gain:</span><br><span class="line">                    best_gain = gain</span><br><span class="line">                    best_split = (feature_idx, threshold)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 计算叶子节点权重</span></span><br><span class="line">        <span class="keyword">if</span> best_split <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            feature_idx, threshold = best_split</span><br><span class="line">            left_mask = X[:, feature_idx] &lt;= threshold</span><br><span class="line">            right_mask = ~left_mask</span><br><span class="line">            left_weight = <span class="variable language_">self</span>.compute_leaf_weight(grad[left_mask], hess[left_mask])</span><br><span class="line">            right_weight = <span class="variable language_">self</span>.compute_leaf_weight(grad[right_mask], hess[right_mask])</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> &#123;<span class="string">&quot;split_feature&quot;</span>: feature_idx, <span class="string">&quot;threshold&quot;</span>: threshold,</span><br><span class="line">                    <span class="string">&quot;left_weight&quot;</span>: left_weight, <span class="string">&quot;right_weight&quot;</span>: right_weight&#125;</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">compute_gain</span>(<span class="params">self, grad, hess, left_mask, right_mask</span>):</span><br><span class="line">        G_L, H_L = np.<span class="built_in">sum</span>(grad[left_mask]), np.<span class="built_in">sum</span>(hess[left_mask])</span><br><span class="line">        G_R, H_R = np.<span class="built_in">sum</span>(grad[right_mask]), np.<span class="built_in">sum</span>(hess[right_mask])</span><br><span class="line">        gain = <span class="number">0.5</span> * (G_L**<span class="number">2</span> / (H_L + <span class="variable language_">self</span>.lambda_reg) + G_R**<span class="number">2</span> / (H_R + <span class="variable language_">self</span>.lambda_reg))</span><br><span class="line">        <span class="keyword">return</span> gain</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">compute_leaf_weight</span>(<span class="params">self, grad, hess</span>):</span><br><span class="line">        <span class="keyword">return</span> -np.<span class="built_in">sum</span>(grad) / (np.<span class="built_in">sum</span>(hess) + <span class="variable language_">self</span>.lambda_reg)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">predict_tree</span>(<span class="params">self, tree, X</span>):</span><br><span class="line">        predictions = np.zeros(X.shape[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">if</span> tree <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            feature_idx, threshold = tree[<span class="string">&quot;split_feature&quot;</span>], tree[<span class="string">&quot;threshold&quot;</span>]</span><br><span class="line">            left_mask = X[:, feature_idx] &lt;= threshold</span><br><span class="line">            right_mask = ~left_mask</span><br><span class="line">            predictions[left_mask] = tree[<span class="string">&quot;left_weight&quot;</span>]</span><br><span class="line">            predictions[right_mask] = tree[<span class="string">&quot;right_weight&quot;</span>]</span><br><span class="line">        <span class="keyword">return</span> predictions</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">predict</span>(<span class="params">self, X</span>):</span><br><span class="line">        y_pred = np.zeros(X.shape[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">for</span> tree <span class="keyword">in</span> <span class="variable language_">self</span>.trees:</span><br><span class="line">            y_pred += <span class="variable language_">self</span>.learning_rate * <span class="variable language_">self</span>.predict_tree(tree, X)</span><br><span class="line">        <span class="keyword">return</span> y_pred</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-4-训练与可视化分析"><a href="#3-4-训练与可视化分析" class="headerlink" title="3.4 训练与可视化分析"></a><strong>3.4 训练与可视化分析</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 训练模型</span></span><br><span class="line">model = XGBoostFromScratch(n_estimators=<span class="number">10</span>, learning_rate=<span class="number">0.1</span>)</span><br><span class="line">model.fit(X, y)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 预测结果</span></span><br><span class="line">y_pred = model.predict(X)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘制数据分析图形</span></span><br><span class="line">fig, axes = plt.subplots(<span class="number">2</span>, <span class="number">2</span>, figsize=(<span class="number">12</span>, <span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图1：实际值与预测值对比</span></span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].scatter(y, y_pred, color=<span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].set_title(<span class="string">&quot;Actual vs Predicted&quot;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].set_xlabel(<span class="string">&quot;Actual&quot;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].set_ylabel(<span class="string">&quot;Predicted&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图2：误差分布</span></span><br><span class="line">error = y - y_pred</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">1</span>].hist(error, bins=<span class="number">20</span>, color=<span class="string">&#x27;green&#x27;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">1</span>].set_title(<span class="string">&quot;Error Distribution&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图3：特征对目标值的相关性</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    axes[<span class="number">1</span>, <span class="number">0</span>].scatter(data[<span class="string">f&#x27;feature_<span class="subst">&#123;i+<span class="number">1</span>&#125;</span>&#x27;</span>], data[<span class="string">&#x27;target&#x27;</span>], label=<span class="string">f&#x27;Feature <span class="subst">&#123;i+<span class="number">1</span>&#125;</span>&#x27;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">0</span>].set_title(<span class="string">&quot;Feature vs Target&quot;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">0</span>].legend()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图4：损失随迭代次数的变化</span></span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].plot(<span class="built_in">range</span>(<span class="number">1</span>, <span class="built_in">len</span>(model.losses) + <span class="number">1</span>), model.losses, color=<span class="string">&#x27;red&#x27;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].set_title(<span class="string">&quot;Loss vs Iterations&quot;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].set_xlabel(<span class="string">&quot;Iterations&quot;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].set_ylabel(<span class="string">&quot;Loss&quot;</span>)</span><br><span class="line"></span><br><span class="line">plt.tight_layout()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-
-<p><strong>XGBoostFromScratch 类</strong>：实现了简单的 XGBoost 训练流程，包括梯度和 Hessian 计算、树的构建、叶子节点权重计算等。</p>
-<img src="https://pnglog.com/LK6GWI.png" style="zoom: 67%;" />
-
-<ul>
-<li>图1显示实际值与预测值的关系</li>
-<li>图2展示误差的分布情况</li>
-<li>图3展示各个特征与目标值的关系</li>
-<li>图4展示了迭代过程中损失的变化</li>
-</ul>
-<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a><strong>4. 总结</strong></h2><p>XGBoost 的强大之处在于其高效的计算、鲁棒性以及灵活性。本篇通过直观解释和代码实现，带您理解了其原理与实际操作。对于更复杂的场景，可以直接使用官方库 <a href="https://xgboost.readthedocs.io/en/latest/">XGBoost</a> 提供的高级功能。</p>
-<p><span style="color: #FFA8FF;">希望这篇文章能让您对 XGBoost 有更深入的理解！</span></p>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>算法</tag>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>自建Bitwarden密码管理器</title>
     <url>/2024/10/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/</url>
     <content><![CDATA[<p><strong>自建Bitwarden密码管理，推荐选择开源项目：<a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。</strong></p>
@@ -1907,7 +1831,7 @@
 <h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
 
 <p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
-<p>用户：<a href="mailto:&#97;&#100;&#109;&#105;&#110;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#99;&#111;&#109;">&#97;&#100;&#109;&#105;&#110;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#99;&#111;&#109;</a></p>
+<p>用户：<a href="mailto:&#x61;&#100;&#109;&#x69;&#x6e;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;">&#x61;&#100;&#109;&#x69;&#x6e;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;</a></p>
 <p>密码：admin</p>
 <p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
@@ -1938,6 +1862,34 @@
       <tags>
         <tag>Linux</tag>
         <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟局域网VLAN</title>
+    <url>/2024/10/13/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91VLAN/</url>
+    <content><![CDATA[<p>VLAN（Virtual Local Area Network，虚拟局域网）技术在现代网络中扮演着重要的角色，它提供了一种灵活的方式来划分网络，提高安全性和网络性能。以下是VLAN的一些优缺点：</p>
+<h3 id="VLAN的优点："><a href="#VLAN的优点：" class="headerlink" title="VLAN的优点："></a>VLAN的优点：</h3><ol>
+<li><strong>提高安全性</strong>：VLAN可以将网络划分为多个逻辑上的广播域，限制了不同VLAN间的直接通信，从而增强了网络的安全性。</li>
+<li><strong>减少广播流量</strong>：通过将大型的广播域划分为更小的部分，VLAN可以减少网络上的广播流量，提高网络效率。</li>
+<li><strong>网络管理更加灵活</strong>：VLAN允许网络管理员根据功能、部门或应用需求来组织网络，而不受物理位置的限制，使得网络管理更加灵活和高效。</li>
+<li><strong>成本节约</strong>：VLAN减少了对昂贵网络升级的需求，提高了现有带宽和上行链路的利用率，从而节约了成本。</li>
+<li><strong>提高网络性能</strong>：通过分割网络为多个逻辑工作组，VLAN可以减少网络上不必要的流量，提高网络性能。</li>
+<li><strong>灵活性和可扩展性</strong>：VLAN技术具有灵活性和可扩展性，方便网络维护和管理，适应网络规模和业务需求的变化。</li>
+</ol>
+<h3 id="VLAN的缺点："><a href="#VLAN的缺点：" class="headerlink" title="VLAN的缺点："></a>VLAN的缺点：</h3><ol>
+<li><strong>管理复杂性</strong>：VLAN需要进行复杂的设置和管理，网络管理员必须精确地配置VLAN，以确保正确地分割广播域、引导数据流量、保持跨网络的通信并确保安全性。</li>
+<li><strong>配置错误可能导致安全风险</strong>：如果VLAN配置不当，可能会引起安全隐患，例如未授权的设备可能会接入到VLAN中，导致网络安全泄漏。</li>
+<li><strong>数据包延迟</strong>：使用VLAN可能会增加数据包的处理时间，从而增加延迟，因为每个数据包必须经过交换机上的额外处理。</li>
+<li><strong>对设备要求较高</strong>：尤其是在动态VLAN的配置中，对网络设备的要求较高，可能需要更多的处理能力和内存来维护VLAN信息。</li>
+<li><strong>VLAN数量限制</strong>：在标准定义中VLAN的数量只有4096个，无法满足大型数据中心的租户间隔离需求。</li>
+</ol>
+<p>总的来说，VLAN技术在提高网络的安全性、灵活性和性能方面提供了显著的优势，但也带来了一定的管理复杂性和潜在的配置挑战。网络管理员需要仔细规划和配置VLAN，以确保网络的高效和安全运行。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
       </tags>
   </entry>
   <entry>
@@ -2104,34 +2056,6 @@
       </categories>
       <tags>
         <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚拟局域网VLAN</title>
-    <url>/2024/10/13/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91VLAN/</url>
-    <content><![CDATA[<p>VLAN（Virtual Local Area Network，虚拟局域网）技术在现代网络中扮演着重要的角色，它提供了一种灵活的方式来划分网络，提高安全性和网络性能。以下是VLAN的一些优缺点：</p>
-<h3 id="VLAN的优点："><a href="#VLAN的优点：" class="headerlink" title="VLAN的优点："></a>VLAN的优点：</h3><ol>
-<li><strong>提高安全性</strong>：VLAN可以将网络划分为多个逻辑上的广播域，限制了不同VLAN间的直接通信，从而增强了网络的安全性。</li>
-<li><strong>减少广播流量</strong>：通过将大型的广播域划分为更小的部分，VLAN可以减少网络上的广播流量，提高网络效率。</li>
-<li><strong>网络管理更加灵活</strong>：VLAN允许网络管理员根据功能、部门或应用需求来组织网络，而不受物理位置的限制，使得网络管理更加灵活和高效。</li>
-<li><strong>成本节约</strong>：VLAN减少了对昂贵网络升级的需求，提高了现有带宽和上行链路的利用率，从而节约了成本。</li>
-<li><strong>提高网络性能</strong>：通过分割网络为多个逻辑工作组，VLAN可以减少网络上不必要的流量，提高网络性能。</li>
-<li><strong>灵活性和可扩展性</strong>：VLAN技术具有灵活性和可扩展性，方便网络维护和管理，适应网络规模和业务需求的变化。</li>
-</ol>
-<h3 id="VLAN的缺点："><a href="#VLAN的缺点：" class="headerlink" title="VLAN的缺点："></a>VLAN的缺点：</h3><ol>
-<li><strong>管理复杂性</strong>：VLAN需要进行复杂的设置和管理，网络管理员必须精确地配置VLAN，以确保正确地分割广播域、引导数据流量、保持跨网络的通信并确保安全性。</li>
-<li><strong>配置错误可能导致安全风险</strong>：如果VLAN配置不当，可能会引起安全隐患，例如未授权的设备可能会接入到VLAN中，导致网络安全泄漏。</li>
-<li><strong>数据包延迟</strong>：使用VLAN可能会增加数据包的处理时间，从而增加延迟，因为每个数据包必须经过交换机上的额外处理。</li>
-<li><strong>对设备要求较高</strong>：尤其是在动态VLAN的配置中，对网络设备的要求较高，可能需要更多的处理能力和内存来维护VLAN信息。</li>
-<li><strong>VLAN数量限制</strong>：在标准定义中VLAN的数量只有4096个，无法满足大型数据中心的租户间隔离需求。</li>
-</ol>
-<p>总的来说，VLAN技术在提高网络的安全性、灵活性和性能方面提供了显著的优势，但也带来了一定的管理复杂性和潜在的配置挑战。网络管理员需要仔细规划和配置VLAN，以确保网络的高效和安全运行。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
       </tags>
   </entry>
   <entry>
