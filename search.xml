@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>IDM直装注册版（完美，不反弹！）</title>
-    <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
-    <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
-<p><strong>中文绿色特别版：【<a href="https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file">点击下载</a>】</strong></p>
-<p><strong>一定要安装IDM的浏览器插件，才可以自动调用下载！</strong></p>
-<p><strong>浏览器插件：</strong>【<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">进入安装</a>】</p>
-<p>再华丽的语言也无法表达IDM的牛C！</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>效率工具</tag>
-        <tag>浏览器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git的使用</title>
     <url>/2024/07/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="Git-与-GitHub"><a href="#Git-与-GitHub" class="headerlink" title="Git 与 GitHub"></a>Git 与 GitHub</h1><h2 id="Git-的起源"><a href="#Git-的起源" class="headerlink" title="Git 的起源"></a>Git 的起源</h2><h4 id="“自由主义-开源-教皇”-林纳斯·托瓦兹"><a href="#“自由主义-开源-教皇”-林纳斯·托瓦兹" class="headerlink" title="“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹"></a>“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹</h4><ul>
@@ -40,7 +23,7 @@
 <ol>
 <li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
 </li>
-<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#101;&#x6d;&#97;&#x69;&#x6c;&#x40;&#x78;&#120;&#x78;&#x2e;&#x63;&#x6f;&#109;">&#101;&#x6d;&#97;&#x69;&#x6c;&#x40;&#x78;&#120;&#x78;&#x2e;&#x63;&#x6f;&#109;</a></strong></font>“</p>
+<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#101;&#x6d;&#x61;&#x69;&#x6c;&#64;&#120;&#120;&#120;&#x2e;&#99;&#111;&#109;">&#101;&#x6d;&#x61;&#x69;&#x6c;&#64;&#120;&#120;&#120;&#x2e;&#99;&#111;&#109;</a></strong></font>“</p>
 <p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
 </li>
 <li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
@@ -258,6 +241,58 @@
       <tags>
         <tag>Linux</tag>
         <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IDM直装注册版（完美，不反弹！）</title>
+    <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
+    <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
+<p><strong>中文绿色特别版：【<a href="https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file">点击下载</a>】</strong></p>
+<p><strong>一定要安装IDM的浏览器插件，才可以自动调用下载！</strong></p>
+<p><strong>浏览器插件：</strong>【<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">进入安装</a>】</p>
+<p>再华丽的语言也无法表达IDM的牛C！</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Omakub专为开发者设计的Ubuntu环境配置项目</title>
+    <url>/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<p>Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。</p>
+<p>提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。</p>
+<img src="https://pnglog.com/aR3xii.png" style="zoom: 50%;" />
+
+ 
+
+<h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><ol>
+<li>一键式配置：通过一条命令即可完成所有配置。</li>
+<li>预装工具：包括浏览器、终端、编辑器、通讯工具（如 WhatsApp、Signal、Spotify、Zoom、1Password）等。</li>
+<li>版本控制：内置 GitHub CLI，方便进行版本控制和代码管理。</li>
+<li>容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。</li>
+<li>语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。</li>
+<li>系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。</li>
+</ol>
+<h4 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h4><p>安装 Omakub 只需以下步骤：</p>
+<ol>
+<li><p>在计算机上安装 Ubuntu 24.04+。</p>
+</li>
+<li><p>打开终端（Ctrl+Alt+T），运行以下命令：</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://omakub.org/install | bash</span><br></pre></td></tr></table></figure>
+
+<p> 整个安装过程大约需要 30 分钟，具体时间取决于网络状况。安装完成后，系统会自动配置所有工具和设置。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -490,41 +525,6 @@
       <tags>
         <tag>效率工具</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Omakub专为开发者设计的Ubuntu环境配置项目</title>
-    <url>/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<p>Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。</p>
-<p>提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。</p>
-<img src="https://pnglog.com/aR3xii.png" style="zoom: 50%;" />
-
- 
-
-<h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><ol>
-<li>一键式配置：通过一条命令即可完成所有配置。</li>
-<li>预装工具：包括浏览器、终端、编辑器、通讯工具（如 WhatsApp、Signal、Spotify、Zoom、1Password）等。</li>
-<li>版本控制：内置 GitHub CLI，方便进行版本控制和代码管理。</li>
-<li>容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。</li>
-<li>语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。</li>
-<li>系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。</li>
-</ol>
-<h4 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h4><p>安装 Omakub 只需以下步骤：</p>
-<ol>
-<li><p>在计算机上安装 Ubuntu 24.04+。</p>
-</li>
-<li><p>打开终端（Ctrl+Alt+T），运行以下命令：</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://omakub.org/install | bash</span><br></pre></td></tr></table></figure>
-
-<p> 整个安装过程大约需要 30 分钟，具体时间取决于网络状况。安装完成后，系统会自动配置所有工具和设置。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -847,72 +847,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一文带你光速入门Mathlab</title>
-    <url>/2024/09/17/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E5%85%89%E9%80%9F%E5%85%A5%E9%97%A8Mathlab/</url>
-    <content><![CDATA[<img src="https://pnglog.com/gAfnjw.png" alt="" style="zoom: 80%;" />
-
-<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h2><p>Mathlab是一款功能强大的数学计算软件，广泛应用于工程、科学研究、数据分析等领域。它以其强大的矩阵运算和数据可视化能力，成为学术界和工业界的重要工具。本文将为你提供一个全面的入门指南，包括软件安装、基础操作、常用函数及实际应用示例，帮助你迅速上手Mathlab。</p>
-<h2 id="2-安装与环境配置"><a href="#2-安装与环境配置" class="headerlink" title="2. 安装与环境配置"></a>2. 安装与环境配置</h2><h3 id="2-1-下载与安装"><a href="#2-1-下载与安装" class="headerlink" title="2.1 下载与安装"></a>2.1 下载与安装</h3><p>首先，访问<a href="https://www.mathworks.com/">Mathlab官网</a>下载适合你操作系统的版本。安装过程中，你需要选择安装的组件，建议选择“Mathlab”及其相关工具箱，以获得更全面的功能支持。</p>
-<h3 id="2-2-界面介绍"><a href="#2-2-界面介绍" class="headerlink" title="2.2 界面介绍"></a>2.2 界面介绍</h3><p>启动Mathlab后，你会看到主界面包含以下几个部分：</p>
-<ul>
-<li><strong>命令窗口</strong>：用于输入命令并显示输出。</li>
-<li><strong>编辑器</strong>：用于编写和保存脚本文件。</li>
-<li><strong>工作区</strong>：显示当前工作环境中的变量。</li>
-<li><strong>当前文件夹</strong>：显示当前路径下的文件和文件夹。</li>
-</ul>
-<h2 id="3-基础操作"><a href="#3-基础操作" class="headerlink" title="3. 基础操作"></a>3. 基础操作</h2><h3 id="3-1-变量与数据类型"><a href="#3-1-变量与数据类型" class="headerlink" title="3.1 变量与数据类型"></a>3.1 变量与数据类型</h3><p>在Mathlab中，变量赋值使用“&#x3D;”符号。例如：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span>; <span class="comment">% 整数</span></span><br><span class="line">y = <span class="number">3.14</span>; <span class="comment">% 浮点数</span></span><br><span class="line">z = <span class="string">&#x27;Mathlab&#x27;</span>; <span class="comment">% 字符串</span></span><br></pre></td></tr></table></figure>
-<p>Mathlab支持多种数据类型，包括标量、向量、矩阵和字符串等。</p>
-<h3 id="3-2-数组与矩阵"><a href="#3-2-数组与矩阵" class="headerlink" title="3.2 数组与矩阵"></a>3.2 数组与矩阵</h3><p>数组和矩阵是Mathlab的核心数据结构。可以通过方括号创建：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">A = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>; <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]; <span class="comment">% 创建一个2x3矩阵</span></span><br></pre></td></tr></table></figure>
-<p>数组的索引从1开始，可以使用冒号运算符生成序列：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">v = <span class="number">1</span>:<span class="number">10</span>; <span class="comment">% 生成1到10的行向量</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-3-控制结构"><a href="#3-3-控制结构" class="headerlink" title="3.3 控制结构"></a>3.3 控制结构</h3><p>Mathlab支持常见的控制结构，如条件语句和循环语句：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> x &gt; <span class="number">0</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是正数&#x27;</span>);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是负数或零&#x27;</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="built_in">i</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="4-常用函数"><a href="#4-常用函数" class="headerlink" title="4. 常用函数"></a>4. 常用函数</h2><h3 id="4-1-数学函数"><a href="#4-1-数学函数" class="headerlink" title="4.1 数学函数"></a>4.1 数学函数</h3><p>Mathlab提供丰富的数学函数，以下是一些常用的：</p>
-<ul>
-<li><code>sin(x)</code>: 计算正弦值。</li>
-<li><code>cos(x)</code>: 计算余弦值。</li>
-<li><code>exp(x)</code>: 计算自然指数。</li>
-</ul>
-<h3 id="4-2-统计函数"><a href="#4-2-统计函数" class="headerlink" title="4.2 统计函数"></a>4.2 统计函数</h3><p>在数据分析中，常用的统计函数包括：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line">meanValue = <span class="built_in">mean</span>(data); <span class="comment">% 计算均值</span></span><br><span class="line">stdValue = std(data); <span class="comment">% 计算标准差</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-3-绘图函数"><a href="#4-3-绘图函数" class="headerlink" title="4.3 绘图函数"></a>4.3 绘图函数</h3><p>Mathlab的绘图功能强大，可以绘制多种类型的图形：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">100</span>); <span class="comment">% 生成0到2π的100个点</span></span><br><span class="line">y = <span class="built_in">sin</span>(x);</span><br><span class="line"><span class="built_in">figure</span>; <span class="comment">% 创建新图形窗口</span></span><br><span class="line"><span class="built_in">plot</span>(x, y, <span class="string">&#x27;r-&#x27;</span>, <span class="string">&#x27;LineWidth&#x27;</span>, <span class="number">2</span>); <span class="comment">% 绘制sin(x)曲线</span></span><br><span class="line">xlabel(<span class="string">&#x27;x (弧度)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;sin(x)&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;正弦函数图&#x27;</span>);</span><br><span class="line">grid on; <span class="comment">% 添加网格</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="5-实例应用"><a href="#5-实例应用" class="headerlink" title="5. 实例应用"></a>5. 实例应用</h2><h3 id="5-1-数据分析"><a href="#5-1-数据分析" class="headerlink" title="5.1 数据分析"></a>5.1 数据分析</h3><p>假设我们有一组随机生成的数据，需要计算其均值和标准差，并进行可视化：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = <span class="built_in">randn</span>(<span class="number">1</span>, <span class="number">1000</span>); <span class="comment">% 生成1000个随机数</span></span><br><span class="line">meanValue = <span class="built_in">mean</span>(data);</span><br><span class="line">stdValue = std(data);</span><br><span class="line"></span><br><span class="line"><span class="built_in">figure</span>;</span><br><span class="line">histogram(data, <span class="number">30</span>); <span class="comment">% 绘制直方图</span></span><br><span class="line">xlabel(<span class="string">&#x27;值&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;频率&#x27;</span>);</span><br><span class="line">title([<span class="string">&#x27;数据的均值：&#x27;</span>, num2str(meanValue), <span class="string">&#x27; 标准差：&#x27;</span>, num2str(stdValue)]);</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-2-信号处理"><a href="#5-2-信号处理" class="headerlink" title="5.2 信号处理"></a>5.2 信号处理</h3><p>在信号处理中，我们可以生成和分析不同频率的信号：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">Fs = <span class="number">1000</span>; <span class="comment">% 采样频率</span></span><br><span class="line">t = <span class="number">0</span>:<span class="number">1</span>/Fs:<span class="number">1</span>; <span class="comment">% 时间向量</span></span><br><span class="line">y1 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">50</span>*t); <span class="comment">% 50Hz信号</span></span><br><span class="line">y2 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">120</span>*t); <span class="comment">% 120Hz信号</span></span><br><span class="line">y = y1 + y2; <span class="comment">% 合成信号</span></span><br><span class="line"><span class="built_in">plot</span>(t, y); <span class="comment">% 绘制信号</span></span><br><span class="line">xlabel(<span class="string">&#x27;时间 (秒)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;幅度&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;合成信号&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-3-图像处理"><a href="#5-3-图像处理" class="headerlink" title="5.3 图像处理"></a>5.3 图像处理</h3><p>Mathlab也支持图像处理，可以用以下代码读取和显示图像：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">img = imread(<span class="string">&#x27;image.jpg&#x27;</span>); <span class="comment">% 读取图像</span></span><br><span class="line">imshow(img); <span class="comment">% 显示图像</span></span><br><span class="line">title(<span class="string">&#x27;原始图像&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-进阶功能"><a href="#6-进阶功能" class="headerlink" title="6. 进阶功能"></a>6. 进阶功能</h2><h3 id="6-1-脚本与函数"><a href="#6-1-脚本与函数" class="headerlink" title="6.1 脚本与函数"></a>6.1 脚本与函数</h3><p>通过编写脚本文件（.m文件），可以将多个命令组织在一起，方便重用。此外，还可以自定义函数，增强代码的可读性和可维护性。</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">result</span> = <span class="title">addNumbers</span><span class="params">(a, b)</span></span></span><br><span class="line">    <span class="comment">% 此函数返回两个数字的和</span></span><br><span class="line">    result = a + b;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="6-2-工具箱扩展"><a href="#6-2-工具箱扩展" class="headerlink" title="6.2 工具箱扩展"></a>6.2 工具箱扩展</h3><p>Mathlab提供多种工具箱，如<a href="https://www.mathworks.com/products/image.html">图像处理工具箱</a>、<a href="https://www.mathworks.com/products/signal.html">信号处理工具箱</a>等，安装这些工具箱可以扩展Mathlab的功能。你可以通过Mathlab命令窗口中的<code>ver</code>命令查看已安装的工具箱。</p>
-<h2 id="7-学习资源"><a href="#7-学习资源" class="headerlink" title="7. 学习资源"></a>7. 学习资源</h2><p>以下是一些推荐的学习资源，可以帮助你进一步深入学习Mathlab：</p>
-<ul>
-<li><a href="https://www.mathworks.com/help/matlab/">Mathlab文档</a></li>
-<li><a href="https://www.mathworks.com/learn/tutorials/matlab-onramp.html">Mathlab视频教程</a></li>
-<li><a href="https://www.mathworks.com/matlabcentral/">Mathlab中央论坛</a></li>
-</ul>
-<h2 id="8-结论"><a href="#8-结论" class="headerlink" title="8. 结论"></a>8. 结论</h2><p>通过本教程，你已经全面了解了Mathlab的基本操作、常用函数及实际应用示例。无论是在学术研究、工程设计还是数据分析中，Mathlab都能为你提供强有力的支持。继续深入学习Mathlab的各项功能，将帮助你在各领域中实现更高效的工作。</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>效率工具</tag>
-        <tag>设计</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>pandas数据结构</title>
     <url>/2024/07/23/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<p>构造 DataFrame 和 Series 的方法有多种。以下是一些常见的方法：</p>
@@ -991,6 +925,143 @@
       <tags>
         <tag>Python</tag>
         <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一文带你光速入门Mathlab</title>
+    <url>/2024/09/17/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E5%85%89%E9%80%9F%E5%85%A5%E9%97%A8Mathlab/</url>
+    <content><![CDATA[<img src="https://pnglog.com/gAfnjw.png" alt="" style="zoom: 80%;" />
+
+<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h2><p>Mathlab是一款功能强大的数学计算软件，广泛应用于工程、科学研究、数据分析等领域。它以其强大的矩阵运算和数据可视化能力，成为学术界和工业界的重要工具。本文将为你提供一个全面的入门指南，包括软件安装、基础操作、常用函数及实际应用示例，帮助你迅速上手Mathlab。</p>
+<h2 id="2-安装与环境配置"><a href="#2-安装与环境配置" class="headerlink" title="2. 安装与环境配置"></a>2. 安装与环境配置</h2><h3 id="2-1-下载与安装"><a href="#2-1-下载与安装" class="headerlink" title="2.1 下载与安装"></a>2.1 下载与安装</h3><p>首先，访问<a href="https://www.mathworks.com/">Mathlab官网</a>下载适合你操作系统的版本。安装过程中，你需要选择安装的组件，建议选择“Mathlab”及其相关工具箱，以获得更全面的功能支持。</p>
+<h3 id="2-2-界面介绍"><a href="#2-2-界面介绍" class="headerlink" title="2.2 界面介绍"></a>2.2 界面介绍</h3><p>启动Mathlab后，你会看到主界面包含以下几个部分：</p>
+<ul>
+<li><strong>命令窗口</strong>：用于输入命令并显示输出。</li>
+<li><strong>编辑器</strong>：用于编写和保存脚本文件。</li>
+<li><strong>工作区</strong>：显示当前工作环境中的变量。</li>
+<li><strong>当前文件夹</strong>：显示当前路径下的文件和文件夹。</li>
+</ul>
+<h2 id="3-基础操作"><a href="#3-基础操作" class="headerlink" title="3. 基础操作"></a>3. 基础操作</h2><h3 id="3-1-变量与数据类型"><a href="#3-1-变量与数据类型" class="headerlink" title="3.1 变量与数据类型"></a>3.1 变量与数据类型</h3><p>在Mathlab中，变量赋值使用“&#x3D;”符号。例如：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span>; <span class="comment">% 整数</span></span><br><span class="line">y = <span class="number">3.14</span>; <span class="comment">% 浮点数</span></span><br><span class="line">z = <span class="string">&#x27;Mathlab&#x27;</span>; <span class="comment">% 字符串</span></span><br></pre></td></tr></table></figure>
+<p>Mathlab支持多种数据类型，包括标量、向量、矩阵和字符串等。</p>
+<h3 id="3-2-数组与矩阵"><a href="#3-2-数组与矩阵" class="headerlink" title="3.2 数组与矩阵"></a>3.2 数组与矩阵</h3><p>数组和矩阵是Mathlab的核心数据结构。可以通过方括号创建：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">A = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>; <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]; <span class="comment">% 创建一个2x3矩阵</span></span><br></pre></td></tr></table></figure>
+<p>数组的索引从1开始，可以使用冒号运算符生成序列：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">v = <span class="number">1</span>:<span class="number">10</span>; <span class="comment">% 生成1到10的行向量</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-3-控制结构"><a href="#3-3-控制结构" class="headerlink" title="3.3 控制结构"></a>3.3 控制结构</h3><p>Mathlab支持常见的控制结构，如条件语句和循环语句：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> x &gt; <span class="number">0</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是正数&#x27;</span>);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是负数或零&#x27;</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="built_in">i</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-常用函数"><a href="#4-常用函数" class="headerlink" title="4. 常用函数"></a>4. 常用函数</h2><h3 id="4-1-数学函数"><a href="#4-1-数学函数" class="headerlink" title="4.1 数学函数"></a>4.1 数学函数</h3><p>Mathlab提供丰富的数学函数，以下是一些常用的：</p>
+<ul>
+<li><code>sin(x)</code>: 计算正弦值。</li>
+<li><code>cos(x)</code>: 计算余弦值。</li>
+<li><code>exp(x)</code>: 计算自然指数。</li>
+</ul>
+<h3 id="4-2-统计函数"><a href="#4-2-统计函数" class="headerlink" title="4.2 统计函数"></a>4.2 统计函数</h3><p>在数据分析中，常用的统计函数包括：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line">meanValue = <span class="built_in">mean</span>(data); <span class="comment">% 计算均值</span></span><br><span class="line">stdValue = std(data); <span class="comment">% 计算标准差</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-3-绘图函数"><a href="#4-3-绘图函数" class="headerlink" title="4.3 绘图函数"></a>4.3 绘图函数</h3><p>Mathlab的绘图功能强大，可以绘制多种类型的图形：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">100</span>); <span class="comment">% 生成0到2π的100个点</span></span><br><span class="line">y = <span class="built_in">sin</span>(x);</span><br><span class="line"><span class="built_in">figure</span>; <span class="comment">% 创建新图形窗口</span></span><br><span class="line"><span class="built_in">plot</span>(x, y, <span class="string">&#x27;r-&#x27;</span>, <span class="string">&#x27;LineWidth&#x27;</span>, <span class="number">2</span>); <span class="comment">% 绘制sin(x)曲线</span></span><br><span class="line">xlabel(<span class="string">&#x27;x (弧度)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;sin(x)&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;正弦函数图&#x27;</span>);</span><br><span class="line">grid on; <span class="comment">% 添加网格</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-实例应用"><a href="#5-实例应用" class="headerlink" title="5. 实例应用"></a>5. 实例应用</h2><h3 id="5-1-数据分析"><a href="#5-1-数据分析" class="headerlink" title="5.1 数据分析"></a>5.1 数据分析</h3><p>假设我们有一组随机生成的数据，需要计算其均值和标准差，并进行可视化：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = <span class="built_in">randn</span>(<span class="number">1</span>, <span class="number">1000</span>); <span class="comment">% 生成1000个随机数</span></span><br><span class="line">meanValue = <span class="built_in">mean</span>(data);</span><br><span class="line">stdValue = std(data);</span><br><span class="line"></span><br><span class="line"><span class="built_in">figure</span>;</span><br><span class="line">histogram(data, <span class="number">30</span>); <span class="comment">% 绘制直方图</span></span><br><span class="line">xlabel(<span class="string">&#x27;值&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;频率&#x27;</span>);</span><br><span class="line">title([<span class="string">&#x27;数据的均值：&#x27;</span>, num2str(meanValue), <span class="string">&#x27; 标准差：&#x27;</span>, num2str(stdValue)]);</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-2-信号处理"><a href="#5-2-信号处理" class="headerlink" title="5.2 信号处理"></a>5.2 信号处理</h3><p>在信号处理中，我们可以生成和分析不同频率的信号：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">Fs = <span class="number">1000</span>; <span class="comment">% 采样频率</span></span><br><span class="line">t = <span class="number">0</span>:<span class="number">1</span>/Fs:<span class="number">1</span>; <span class="comment">% 时间向量</span></span><br><span class="line">y1 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">50</span>*t); <span class="comment">% 50Hz信号</span></span><br><span class="line">y2 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">120</span>*t); <span class="comment">% 120Hz信号</span></span><br><span class="line">y = y1 + y2; <span class="comment">% 合成信号</span></span><br><span class="line"><span class="built_in">plot</span>(t, y); <span class="comment">% 绘制信号</span></span><br><span class="line">xlabel(<span class="string">&#x27;时间 (秒)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;幅度&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;合成信号&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-3-图像处理"><a href="#5-3-图像处理" class="headerlink" title="5.3 图像处理"></a>5.3 图像处理</h3><p>Mathlab也支持图像处理，可以用以下代码读取和显示图像：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">img = imread(<span class="string">&#x27;image.jpg&#x27;</span>); <span class="comment">% 读取图像</span></span><br><span class="line">imshow(img); <span class="comment">% 显示图像</span></span><br><span class="line">title(<span class="string">&#x27;原始图像&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-进阶功能"><a href="#6-进阶功能" class="headerlink" title="6. 进阶功能"></a>6. 进阶功能</h2><h3 id="6-1-脚本与函数"><a href="#6-1-脚本与函数" class="headerlink" title="6.1 脚本与函数"></a>6.1 脚本与函数</h3><p>通过编写脚本文件（.m文件），可以将多个命令组织在一起，方便重用。此外，还可以自定义函数，增强代码的可读性和可维护性。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">result</span> = <span class="title">addNumbers</span><span class="params">(a, b)</span></span></span><br><span class="line">    <span class="comment">% 此函数返回两个数字的和</span></span><br><span class="line">    result = a + b;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-2-工具箱扩展"><a href="#6-2-工具箱扩展" class="headerlink" title="6.2 工具箱扩展"></a>6.2 工具箱扩展</h3><p>Mathlab提供多种工具箱，如<a href="https://www.mathworks.com/products/image.html">图像处理工具箱</a>、<a href="https://www.mathworks.com/products/signal.html">信号处理工具箱</a>等，安装这些工具箱可以扩展Mathlab的功能。你可以通过Mathlab命令窗口中的<code>ver</code>命令查看已安装的工具箱。</p>
+<h2 id="7-学习资源"><a href="#7-学习资源" class="headerlink" title="7. 学习资源"></a>7. 学习资源</h2><p>以下是一些推荐的学习资源，可以帮助你进一步深入学习Mathlab：</p>
+<ul>
+<li><a href="https://www.mathworks.com/help/matlab/">Mathlab文档</a></li>
+<li><a href="https://www.mathworks.com/learn/tutorials/matlab-onramp.html">Mathlab视频教程</a></li>
+<li><a href="https://www.mathworks.com/matlabcentral/">Mathlab中央论坛</a></li>
+</ul>
+<h2 id="8-结论"><a href="#8-结论" class="headerlink" title="8. 结论"></a>8. 结论</h2><p>通过本教程，你已经全面了解了Mathlab的基本操作、常用函数及实际应用示例。无论是在学术研究、工程设计还是数据分析中，Mathlab都能为你提供强有力的支持。继续深入学习Mathlab的各项功能，将帮助你在各领域中实现更高效的工作。</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一文带你深入理解CSMA/CD和CSMA/CA</title>
+    <url>/2024/10/14/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3CSMA-CD%E5%92%8CCSMA-CA/</url>
+    <content><![CDATA[<p>CSMA&#x2F;CD（Carrier Sense Multiple Access with Collision Detection）和CSMA&#x2F;CA（Carrier Sense Multiple Access with Collision Avoidance）都是网络通信中用来控制多个设备如何共享同一通信介质（比如以太网）的协议。它们都属于CSMA（Carrier Sense Multiple Access）家族，意思是“载波侦听多路访问”，但处理冲突的方式不同。</p>
+<h3 id="CSMA-CD（以太网常用）"><a href="#CSMA-CD（以太网常用）" class="headerlink" title="CSMA&#x2F;CD（以太网常用）"></a>CSMA&#x2F;CD（以太网常用）</h3><p><strong>通俗解释：</strong><br>想象一下，你在一个嘈杂的咖啡馆里，想要和朋友聊天。你先看看周围（载波侦听），如果没人在说话（没有信号），你就开口说话。但如果你发现有人在说话（检测到信号），你就等他们说完再开口。如果在你说话的时候，你发现有人也在说话（冲突检测），你就停下来，等一会儿再试。</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li><strong>冲突检测：</strong> 如果两个设备同时发送数据，它们会检测到冲突，然后停止发送，等待随机时间后再次尝试。</li>
+<li><strong>使用场景：</strong> 适用于有线网络，如以太网。在有线网络中，电信号的传播速度快，所以即使发生冲突，也能很快检测到并处理。</li>
+</ul>
+<h3 id="CSMA-CA（无线网络常用）"><a href="#CSMA-CA（无线网络常用）" class="headerlink" title="CSMA&#x2F;CA（无线网络常用）"></a>CSMA&#x2F;CA（无线网络常用）</h3><p><strong>通俗解释：</strong><br>现在想象你在同一个咖啡馆里，但这次你和朋友通过手语交流。在你开始“说话”之前，你先看看周围有没有人也在用手语（载波侦听）。如果没有，你就开始。如果你发现有人开始“说话”了，你就等他们说完（冲突避免）。你不会等到冲突发生后才停止，而是通过一些策略来避免它。</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li><strong>冲突避免：</strong> 在发送数据之前，设备会使用一种称为“退避算法”的机制来避免冲突。如果检测到信道忙，它会等待一段时间再尝试。</li>
+<li><strong>使用场景：</strong> 适用于无线网络，如Wi-Fi。无线信号的传播速度比有线慢，所以冲突检测不太实用。CSMA&#x2F;CA通过避免冲突来提高效率。</li>
+</ul>
+<h3 id="异同点："><a href="#异同点：" class="headerlink" title="异同点："></a>异同点：</h3><ul>
+<li><strong>相同点：</strong> 两者都是CSMA的变体，都需要在发送数据前先检测信道是否空闲。</li>
+<li><strong>不同点：</strong><ul>
+<li><strong>冲突处理：</strong> CSMA&#x2F;CD在冲突发生后处理，而CSMA&#x2F;CA在冲突可能发生前就采取措施避免。</li>
+<li><strong>适用场景：</strong> CSMA&#x2F;CD适用于有线网络，CSMA&#x2F;CA适用于无线网络。</li>
+<li><strong>效率：</strong> 在无线网络中，CSMA&#x2F;CA通常比CSMA&#x2F;CD更有效，因为它减少了因冲突导致的重传。</li>
+</ul>
+</li>
+</ul>
+<p>简单来说，CSMA&#x2F;CD像是在咖啡馆里大声说话，如果撞上了就停下来，等会儿再说；而CSMA&#x2F;CA像是用手语交流，如果看到别人也在“说话”，就等他们说完再说。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>三数之和:排序+双指针</title>
+    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
+    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
+<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 3：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
+<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
+<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
+<p><strong>Python:</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+
+<p><strong>Java:</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="literal">null</span> || n &lt; <span class="number">3</span>)</span><br><span class="line">            <span class="keyword">return</span> res;       </span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">return</span> res;           </span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;          </span><br><span class="line">            <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> i + <span class="number">1</span>, R = n - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (L &lt; R) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[L] + nums[R];</span><br><span class="line">        </span><br><span class="line">                <span class="keyword">if</span> (sum == <span class="number">0</span>) &#123;</span><br><span class="line">                    res.add(Arrays.asList(nums[i], nums[L], nums[R]));</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[L] == nums[L + <span class="number">1</span>]) L++;</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[R] == nums[R - <span class="number">1</span>]) R--;</span><br><span class="line">                    L++;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (sum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    L++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>算法</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -1086,77 +1157,6 @@
       </categories>
       <tags>
         <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一文带你深入理解CSMA/CD和CSMA/CA</title>
-    <url>/2024/10/14/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3CSMA-CD%E5%92%8CCSMA-CA/</url>
-    <content><![CDATA[<p>CSMA&#x2F;CD（Carrier Sense Multiple Access with Collision Detection）和CSMA&#x2F;CA（Carrier Sense Multiple Access with Collision Avoidance）都是网络通信中用来控制多个设备如何共享同一通信介质（比如以太网）的协议。它们都属于CSMA（Carrier Sense Multiple Access）家族，意思是“载波侦听多路访问”，但处理冲突的方式不同。</p>
-<h3 id="CSMA-CD（以太网常用）"><a href="#CSMA-CD（以太网常用）" class="headerlink" title="CSMA&#x2F;CD（以太网常用）"></a>CSMA&#x2F;CD（以太网常用）</h3><p><strong>通俗解释：</strong><br>想象一下，你在一个嘈杂的咖啡馆里，想要和朋友聊天。你先看看周围（载波侦听），如果没人在说话（没有信号），你就开口说话。但如果你发现有人在说话（检测到信号），你就等他们说完再开口。如果在你说话的时候，你发现有人也在说话（冲突检测），你就停下来，等一会儿再试。</p>
-<p><strong>特点：</strong></p>
-<ul>
-<li><strong>冲突检测：</strong> 如果两个设备同时发送数据，它们会检测到冲突，然后停止发送，等待随机时间后再次尝试。</li>
-<li><strong>使用场景：</strong> 适用于有线网络，如以太网。在有线网络中，电信号的传播速度快，所以即使发生冲突，也能很快检测到并处理。</li>
-</ul>
-<h3 id="CSMA-CA（无线网络常用）"><a href="#CSMA-CA（无线网络常用）" class="headerlink" title="CSMA&#x2F;CA（无线网络常用）"></a>CSMA&#x2F;CA（无线网络常用）</h3><p><strong>通俗解释：</strong><br>现在想象你在同一个咖啡馆里，但这次你和朋友通过手语交流。在你开始“说话”之前，你先看看周围有没有人也在用手语（载波侦听）。如果没有，你就开始。如果你发现有人开始“说话”了，你就等他们说完（冲突避免）。你不会等到冲突发生后才停止，而是通过一些策略来避免它。</p>
-<p><strong>特点：</strong></p>
-<ul>
-<li><strong>冲突避免：</strong> 在发送数据之前，设备会使用一种称为“退避算法”的机制来避免冲突。如果检测到信道忙，它会等待一段时间再尝试。</li>
-<li><strong>使用场景：</strong> 适用于无线网络，如Wi-Fi。无线信号的传播速度比有线慢，所以冲突检测不太实用。CSMA&#x2F;CA通过避免冲突来提高效率。</li>
-</ul>
-<h3 id="异同点："><a href="#异同点：" class="headerlink" title="异同点："></a>异同点：</h3><ul>
-<li><strong>相同点：</strong> 两者都是CSMA的变体，都需要在发送数据前先检测信道是否空闲。</li>
-<li><strong>不同点：</strong><ul>
-<li><strong>冲突处理：</strong> CSMA&#x2F;CD在冲突发生后处理，而CSMA&#x2F;CA在冲突可能发生前就采取措施避免。</li>
-<li><strong>适用场景：</strong> CSMA&#x2F;CD适用于有线网络，CSMA&#x2F;CA适用于无线网络。</li>
-<li><strong>效率：</strong> 在无线网络中，CSMA&#x2F;CA通常比CSMA&#x2F;CD更有效，因为它减少了因冲突导致的重传。</li>
-</ul>
-</li>
-</ul>
-<p>简单来说，CSMA&#x2F;CD像是在咖啡馆里大声说话，如果撞上了就停下来，等会儿再说；而CSMA&#x2F;CA像是用手语交流，如果看到别人也在“说话”，就等他们说完再说。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>三数之和:排序+双指针</title>
-    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
-    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
-<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
-<p><strong>示例 1：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 2：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 3：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>提示：</strong></p>
-<ul>
-<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
-<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
-</ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
-<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
-<p><strong>Python:</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
-
-<p><strong>Java:</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="literal">null</span> || n &lt; <span class="number">3</span>)</span><br><span class="line">            <span class="keyword">return</span> res;       </span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">return</span> res;           </span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;          </span><br><span class="line">            <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> i + <span class="number">1</span>, R = n - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (L &lt; R) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[L] + nums[R];</span><br><span class="line">        </span><br><span class="line">                <span class="keyword">if</span> (sum == <span class="number">0</span>) &#123;</span><br><span class="line">                    res.add(Arrays.asList(nums[i], nums[L], nums[R]));</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[L] == nums[L + <span class="number">1</span>]) L++;</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[R] == nums[R - <span class="number">1</span>]) R--;</span><br><span class="line">                    L++;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (sum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    L++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>算法</tag>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -1804,6 +1804,82 @@
       </tags>
   </entry>
   <entry>
+    <title>深入浅出XGBoost:从原理到实现</title>
+    <url>/2024/11/15/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAXGBoost-%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<p><span style="color: #8080FF;">XGBoost 是一种高效的梯度提升算法，专为解决分类和回归问题而设计。本篇文章将通过核心原理、数学公式和代码实现，帮助您全面理解这一强大算法。</span></p>
+<h2 id="1-什么是XGBoost"><a href="#1-什么是XGBoost" class="headerlink" title="1. 什么是XGBoost"></a><strong>1. 什么是XGBoost</strong></h2><p>XGBoost 全称为 <strong>eXtreme Gradient Boosting</strong>，是一种基于梯度提升（Gradient Boosting）的优化算法。通过迭代地构建弱学习器（通常是决策树），逐步优化模型误差。</p>
+<hr>
+<h2 id="2-XGBoost的工作原理"><a href="#2-XGBoost的工作原理" class="headerlink" title="2. XGBoost的工作原理"></a>2. XGBoost的工作原理</h2><p>XGBoost 的目标是最小化损失函数，以下是核心数学公式及步骤：</p>
+<hr>
+<h3 id="2-1-损失函数"><a href="#2-1-损失函数" class="headerlink" title="2.1 损失函数"></a>2.1 损失函数</h3><p>XGBoost 的目标是最小化以下损失函数：</p>
+<p>$$<br>\mathcal{L} &#x3D; \sum_{i&#x3D;1}^n \ell(y_i, \hat{y}<em>i) + \sum</em>{k&#x3D;1}^K \Omega(f_k)<br>$$</p>
+<p>其中：</p>
+<ul>
+<li>$\ell(y_i, \hat{y}_i)$：预测误差（如平方误差），通过目标值 $y_i$ 与预测值 $\hat{y}_i$ 计算得出。</li>
+<li>$\Omega(f_k)$：正则化项，用于控制模型的复杂度，定义为：</li>
+</ul>
+<p>$$<br>\Omega(f_k) &#x3D; \gamma T + \frac{1}{2} \lambda \sum_{j&#x3D;1}^T w_j^2<br>$$</p>
+<ul>
+<li>$T$：叶子节点数。</li>
+<li>$w_j$：叶子节点权重。</li>
+<li>$\gamma, \lambda$：正则化参数。</li>
+</ul>
+<hr>
+<h3 id="2-2-二阶近似损失函数"><a href="#2-2-二阶近似损失函数" class="headerlink" title="2.2 二阶近似损失函数"></a>2.2 二阶近似损失函数</h3><p>对于第 $t$ 轮迭代，目标函数通过二阶泰勒展开得到：</p>
+<p>$$<br>\mathcal{L}^{(t)} \approx \sum_{i&#x3D;1}^n \left[ g_i f_t(x_i) + \frac{1}{2} h_i f_t^2(x_i) \right] + \Omega(f_t)<br>$$</p>
+<p>其中：</p>
+<ul>
+<li>$g_i &#x3D; \frac{\partial \ell(y_i, \hat{y}_i)}{\partial \hat{y}_i}$：一阶导数（梯度），表示损失函数的变化方向。</li>
+<li>$h_i &#x3D; \frac{\partial^2 \ell(y_i, \hat{y}_i)}{\partial \hat{y}_i^2}$：二阶导数（Hessian），表示损失函数的曲率。</li>
+</ul>
+<hr>
+<h3 id="2-3-增益公式"><a href="#2-3-增益公式" class="headerlink" title="2.3 增益公式"></a>2.3 增益公式</h3><p>在分裂节点时，增益公式用于评估分裂质量：</p>
+<p>$$<br>\text{Gain} &#x3D; \frac{1}{2} \left( \frac{G_L^2}{H_L + \lambda} + \frac{G_R^2}{H_R + \lambda} - \frac{G^2}{H + \lambda} \right) - \gamma<br>$$</p>
+<p>其中：</p>
+<ul>
+<li>$G, H$：当前节点的梯度和 Hessian 总和。</li>
+<li>$G_L, H_L$：左子节点的梯度和 Hessian 总和。</li>
+<li>$G_R, H_R$：右子节点的梯度和 Hessian 总和。</li>
+</ul>
+<hr>
+<h3 id="2-4-叶子节点权重"><a href="#2-4-叶子节点权重" class="headerlink" title="2.4 叶子节点权重"></a>2.4 叶子节点权重</h3><p>分裂结束后，叶子节点的权重可以通过以下公式计算：</p>
+<p>$$<br>w_j &#x3D; -\frac{G_j}{H_j + \lambda}<br>$$</p>
+<p>其中：</p>
+<ul>
+<li>$G_j, H_j$：对应叶子节点的梯度和 Hessian 总和。</li>
+</ul>
+<hr>
+<h2 id="3-从零实现XGBoost"><a href="#3-从零实现XGBoost" class="headerlink" title="3. 从零实现XGBoost"></a><strong>3. 从零实现XGBoost</strong></h2><p>以下为简化版 XGBoost 的核心实现，包括数据生成和树构建。</p>
+<h3 id="3-1-数据生成与处理"><a href="#3-1-数据生成与处理" class="headerlink" title="3.1 数据生成与处理"></a><strong>3.1 数据生成与处理</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置随机种子</span></span><br><span class="line">np.random.seed(<span class="number">42</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成虚拟数据集</span></span><br><span class="line">X = np.random.rand(<span class="number">1000</span>, <span class="number">5</span>)  <span class="comment"># 1000个样本，5个特征</span></span><br><span class="line">true_weights = np.array([<span class="number">2.5</span>, -<span class="number">1.7</span>, <span class="number">0.5</span>, <span class="number">1.2</span>, -<span class="number">0.9</span>])</span><br><span class="line">y = X.dot(true_weights) + np.random.randn(<span class="number">1000</span>) * <span class="number">0.5</span>  <span class="comment"># 线性关系加噪声</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建DataFrame以便后续处理</span></span><br><span class="line">data = pd.DataFrame(X, columns=[<span class="string">f&#x27;feature_<span class="subst">&#123;i&#125;</span>&#x27;</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">6</span>)])</span><br><span class="line">data[<span class="string">&#x27;target&#x27;</span>] = y</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印数据集前5行</span></span><br><span class="line"><span class="built_in">print</span>(data.head())</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-损失函数及梯度计算"><a href="#3-2-损失函数及梯度计算" class="headerlink" title="3.2 损失函数及梯度计算"></a><strong>3.2 损失函数及梯度计算</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 损失函数（平方损失）</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">squared_loss</span>(<span class="params">y_true, y_pred</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0.5</span> * np.mean((y_true - y_pred) ** <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 梯度和Hessian计算</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">gradient</span>(<span class="params">y_true, y_pred</span>):</span><br><span class="line">    <span class="keyword">return</span> -(y_true - y_pred)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hessian</span>(<span class="params">y_true, y_pred</span>):</span><br><span class="line">    <span class="keyword">return</span> np.ones_like(y_true)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-3-XGBoost-核心训练流程"><a href="#3-3-XGBoost-核心训练流程" class="headerlink" title="3.3 XGBoost 核心训练流程"></a><strong>3.3 XGBoost 核心训练流程</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">XGBoostFromScratch</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, n_estimators=<span class="number">10</span>, learning_rate=<span class="number">0.1</span>, max_depth=<span class="number">3</span>, lambda_reg=<span class="number">1</span></span>):</span><br><span class="line">        <span class="variable language_">self</span>.n_estimators = n_estimators</span><br><span class="line">        <span class="variable language_">self</span>.learning_rate = learning_rate</span><br><span class="line">        <span class="variable language_">self</span>.max_depth = max_depth</span><br><span class="line">        <span class="variable language_">self</span>.lambda_reg = lambda_reg</span><br><span class="line">        <span class="variable language_">self</span>.trees = []</span><br><span class="line">        <span class="variable language_">self</span>.losses = []  <span class="comment"># 新增一个用于保存每轮损失的列表</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">fit</span>(<span class="params">self, X, y</span>):</span><br><span class="line">        n_samples = X.shape[<span class="number">0</span>]</span><br><span class="line">        <span class="comment"># 初始化预测值为0</span></span><br><span class="line">        y_pred = np.zeros(n_samples)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 迭代生成树</span></span><br><span class="line">        <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="variable language_">self</span>.n_estimators):</span><br><span class="line">            <span class="comment"># 计算梯度和Hessian</span></span><br><span class="line">            grad = gradient(y, y_pred)</span><br><span class="line">            hess = hessian(y, y_pred)</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 构建一颗树并拟合</span></span><br><span class="line">            tree = <span class="variable language_">self</span>.build_tree(X, grad, hess, depth=<span class="number">0</span>)</span><br><span class="line">            <span class="variable language_">self</span>.trees.append(tree)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 更新预测值</span></span><br><span class="line">            y_pred += <span class="variable language_">self</span>.learning_rate * <span class="variable language_">self</span>.predict_tree(tree, X)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 每轮迭代后计算当前的损失，并保存</span></span><br><span class="line">            current_loss = squared_loss(y, y_pred)</span><br><span class="line">            <span class="variable language_">self</span>.losses.append(current_loss)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">build_tree</span>(<span class="params">self, X, grad, hess, depth</span>):</span><br><span class="line">        <span class="comment"># 这里我们简单处理为单层分裂的树，后续可扩展为多层</span></span><br><span class="line">        n_samples, n_features = X.shape</span><br><span class="line">        best_split = <span class="literal">None</span></span><br><span class="line">        best_gain = -<span class="built_in">float</span>(<span class="string">&#x27;inf&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 遍历所有特征，找到最佳分裂点</span></span><br><span class="line">        <span class="keyword">for</span> feature_idx <span class="keyword">in</span> <span class="built_in">range</span>(n_features):</span><br><span class="line">            thresholds = np.unique(X[:, feature_idx])</span><br><span class="line">            <span class="keyword">for</span> threshold <span class="keyword">in</span> thresholds:</span><br><span class="line">                left_mask = X[:, feature_idx] &lt;= threshold</span><br><span class="line">                right_mask = ~left_mask</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">if</span> <span class="built_in">len</span>(left_mask) == <span class="number">0</span> <span class="keyword">or</span> <span class="built_in">len</span>(right_mask) == <span class="number">0</span>:</span><br><span class="line">                    <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line">                <span class="comment"># 计算增益</span></span><br><span class="line">                gain = <span class="variable language_">self</span>.compute_gain(grad, hess, left_mask, right_mask)</span><br><span class="line">                <span class="keyword">if</span> gain &gt; best_gain:</span><br><span class="line">                    best_gain = gain</span><br><span class="line">                    best_split = (feature_idx, threshold)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 计算叶子节点权重</span></span><br><span class="line">        <span class="keyword">if</span> best_split <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            feature_idx, threshold = best_split</span><br><span class="line">            left_mask = X[:, feature_idx] &lt;= threshold</span><br><span class="line">            right_mask = ~left_mask</span><br><span class="line">            left_weight = <span class="variable language_">self</span>.compute_leaf_weight(grad[left_mask], hess[left_mask])</span><br><span class="line">            right_weight = <span class="variable language_">self</span>.compute_leaf_weight(grad[right_mask], hess[right_mask])</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> &#123;<span class="string">&quot;split_feature&quot;</span>: feature_idx, <span class="string">&quot;threshold&quot;</span>: threshold,</span><br><span class="line">                    <span class="string">&quot;left_weight&quot;</span>: left_weight, <span class="string">&quot;right_weight&quot;</span>: right_weight&#125;</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">compute_gain</span>(<span class="params">self, grad, hess, left_mask, right_mask</span>):</span><br><span class="line">        G_L, H_L = np.<span class="built_in">sum</span>(grad[left_mask]), np.<span class="built_in">sum</span>(hess[left_mask])</span><br><span class="line">        G_R, H_R = np.<span class="built_in">sum</span>(grad[right_mask]), np.<span class="built_in">sum</span>(hess[right_mask])</span><br><span class="line">        gain = <span class="number">0.5</span> * (G_L**<span class="number">2</span> / (H_L + <span class="variable language_">self</span>.lambda_reg) + G_R**<span class="number">2</span> / (H_R + <span class="variable language_">self</span>.lambda_reg))</span><br><span class="line">        <span class="keyword">return</span> gain</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">compute_leaf_weight</span>(<span class="params">self, grad, hess</span>):</span><br><span class="line">        <span class="keyword">return</span> -np.<span class="built_in">sum</span>(grad) / (np.<span class="built_in">sum</span>(hess) + <span class="variable language_">self</span>.lambda_reg)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">predict_tree</span>(<span class="params">self, tree, X</span>):</span><br><span class="line">        predictions = np.zeros(X.shape[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">if</span> tree <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            feature_idx, threshold = tree[<span class="string">&quot;split_feature&quot;</span>], tree[<span class="string">&quot;threshold&quot;</span>]</span><br><span class="line">            left_mask = X[:, feature_idx] &lt;= threshold</span><br><span class="line">            right_mask = ~left_mask</span><br><span class="line">            predictions[left_mask] = tree[<span class="string">&quot;left_weight&quot;</span>]</span><br><span class="line">            predictions[right_mask] = tree[<span class="string">&quot;right_weight&quot;</span>]</span><br><span class="line">        <span class="keyword">return</span> predictions</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">predict</span>(<span class="params">self, X</span>):</span><br><span class="line">        y_pred = np.zeros(X.shape[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">for</span> tree <span class="keyword">in</span> <span class="variable language_">self</span>.trees:</span><br><span class="line">            y_pred += <span class="variable language_">self</span>.learning_rate * <span class="variable language_">self</span>.predict_tree(tree, X)</span><br><span class="line">        <span class="keyword">return</span> y_pred</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-4-训练与可视化分析"><a href="#3-4-训练与可视化分析" class="headerlink" title="3.4 训练与可视化分析"></a><strong>3.4 训练与可视化分析</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 训练模型</span></span><br><span class="line">model = XGBoostFromScratch(n_estimators=<span class="number">10</span>, learning_rate=<span class="number">0.1</span>)</span><br><span class="line">model.fit(X, y)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 预测结果</span></span><br><span class="line">y_pred = model.predict(X)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘制数据分析图形</span></span><br><span class="line">fig, axes = plt.subplots(<span class="number">2</span>, <span class="number">2</span>, figsize=(<span class="number">12</span>, <span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图1：实际值与预测值对比</span></span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].scatter(y, y_pred, color=<span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].set_title(<span class="string">&quot;Actual vs Predicted&quot;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].set_xlabel(<span class="string">&quot;Actual&quot;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].set_ylabel(<span class="string">&quot;Predicted&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图2：误差分布</span></span><br><span class="line">error = y - y_pred</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">1</span>].hist(error, bins=<span class="number">20</span>, color=<span class="string">&#x27;green&#x27;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">1</span>].set_title(<span class="string">&quot;Error Distribution&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图3：特征对目标值的相关性</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    axes[<span class="number">1</span>, <span class="number">0</span>].scatter(data[<span class="string">f&#x27;feature_<span class="subst">&#123;i+<span class="number">1</span>&#125;</span>&#x27;</span>], data[<span class="string">&#x27;target&#x27;</span>], label=<span class="string">f&#x27;Feature <span class="subst">&#123;i+<span class="number">1</span>&#125;</span>&#x27;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">0</span>].set_title(<span class="string">&quot;Feature vs Target&quot;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">0</span>].legend()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图4：损失随迭代次数的变化</span></span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].plot(<span class="built_in">range</span>(<span class="number">1</span>, <span class="built_in">len</span>(model.losses) + <span class="number">1</span>), model.losses, color=<span class="string">&#x27;red&#x27;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].set_title(<span class="string">&quot;Loss vs Iterations&quot;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].set_xlabel(<span class="string">&quot;Iterations&quot;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].set_ylabel(<span class="string">&quot;Loss&quot;</span>)</span><br><span class="line"></span><br><span class="line">plt.tight_layout()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p><strong>XGBoostFromScratch 类</strong>：实现了简单的 XGBoost 训练流程，包括梯度和 Hessian 计算、树的构建、叶子节点权重计算等。</p>
+<img src="https://pnglog.com/LK6GWI.png" style="zoom: 67%;" />
+
+<ul>
+<li>图1显示实际值与预测值的关系</li>
+<li>图2展示误差的分布情况</li>
+<li>图3展示各个特征与目标值的关系</li>
+<li>图4展示了迭代过程中损失的变化</li>
+</ul>
+<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a><strong>4. 总结</strong></h2><p>XGBoost 的强大之处在于其高效的计算、鲁棒性以及灵活性。本篇通过直观解释和代码实现，带您理解了其原理与实际操作。对于更复杂的场景，可以直接使用官方库 <a href="https://xgboost.readthedocs.io/en/latest/">XGBoost</a> 提供的高级功能。</p>
+<p><span style="color: #FFA8FF;">希望这篇文章能让您对 XGBoost 有更深入的理解！</span></p>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>算法</tag>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>自建Bitwarden密码管理器</title>
     <url>/2024/10/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/</url>
     <content><![CDATA[<p><strong>自建Bitwarden密码管理，推荐选择开源项目：<a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。</strong></p>
@@ -1831,7 +1907,7 @@
 <h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
 
 <p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
-<p>用户：<a href="mailto:&#x61;&#x64;&#x6d;&#105;&#110;&#x40;&#101;&#120;&#97;&#x6d;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;">&#x61;&#x64;&#x6d;&#105;&#110;&#x40;&#101;&#120;&#97;&#x6d;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;</a></p>
+<p>用户：<a href="mailto:&#97;&#100;&#109;&#105;&#110;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#99;&#111;&#109;">&#97;&#100;&#109;&#105;&#110;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#99;&#111;&#109;</a></p>
 <p>密码：admin</p>
 <p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>

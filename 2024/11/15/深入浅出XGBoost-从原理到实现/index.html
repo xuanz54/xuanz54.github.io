@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+
+<html lang="zh CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="一个啥都写的个人博客" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>深入浅出XGBoost:从原理到实现 |  xuanz的博客</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    </head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-深入浅出XGBoost-从原理到实现"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  深入浅出XGBoost:从原理到实现
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2024/11/15/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAXGBoost-%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E7%8E%B0/" class="article-date">
+  <time datetime="2024-11-15T05:12:00.000Z" itemprop="datePublished">2024-11-15</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">1.6k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">7 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><span style="color: #8080FF;">XGBoost 是一种高效的梯度提升算法，专为解决分类和回归问题而设计。本篇文章将通过核心原理、数学公式和代码实现，帮助您全面理解这一强大算法。</span></p>
+<h2 id="1-什么是XGBoost"><a href="#1-什么是XGBoost" class="headerlink" title="1. 什么是XGBoost"></a><strong>1. 什么是XGBoost</strong></h2><p>XGBoost 全称为 <strong>eXtreme Gradient Boosting</strong>，是一种基于梯度提升（Gradient Boosting）的优化算法。通过迭代地构建弱学习器（通常是决策树），逐步优化模型误差。</p>
+<hr>
+<h2 id="2-XGBoost的工作原理"><a href="#2-XGBoost的工作原理" class="headerlink" title="2. XGBoost的工作原理"></a>2. XGBoost的工作原理</h2><p>XGBoost 的目标是最小化损失函数，以下是核心数学公式及步骤：</p>
+<hr>
+<h3 id="2-1-损失函数"><a href="#2-1-损失函数" class="headerlink" title="2.1 损失函数"></a>2.1 损失函数</h3><p>XGBoost 的目标是最小化以下损失函数：</p>
+<p>$$<br>\mathcal{L} &#x3D; \sum_{i&#x3D;1}^n \ell(y_i, \hat{y}<em>i) + \sum</em>{k&#x3D;1}^K \Omega(f_k)<br>$$</p>
+<p>其中：</p>
+<ul>
+<li>$\ell(y_i, \hat{y}_i)$：预测误差（如平方误差），通过目标值 $y_i$ 与预测值 $\hat{y}_i$ 计算得出。</li>
+<li>$\Omega(f_k)$：正则化项，用于控制模型的复杂度，定义为：</li>
+</ul>
+<p>$$<br>\Omega(f_k) &#x3D; \gamma T + \frac{1}{2} \lambda \sum_{j&#x3D;1}^T w_j^2<br>$$</p>
+<ul>
+<li>$T$：叶子节点数。</li>
+<li>$w_j$：叶子节点权重。</li>
+<li>$\gamma, \lambda$：正则化参数。</li>
+</ul>
+<hr>
+<h3 id="2-2-二阶近似损失函数"><a href="#2-2-二阶近似损失函数" class="headerlink" title="2.2 二阶近似损失函数"></a>2.2 二阶近似损失函数</h3><p>对于第 $t$ 轮迭代，目标函数通过二阶泰勒展开得到：</p>
+<p>$$<br>\mathcal{L}^{(t)} \approx \sum_{i&#x3D;1}^n \left[ g_i f_t(x_i) + \frac{1}{2} h_i f_t^2(x_i) \right] + \Omega(f_t)<br>$$</p>
+<p>其中：</p>
+<ul>
+<li>$g_i &#x3D; \frac{\partial \ell(y_i, \hat{y}_i)}{\partial \hat{y}_i}$：一阶导数（梯度），表示损失函数的变化方向。</li>
+<li>$h_i &#x3D; \frac{\partial^2 \ell(y_i, \hat{y}_i)}{\partial \hat{y}_i^2}$：二阶导数（Hessian），表示损失函数的曲率。</li>
+</ul>
+<hr>
+<h3 id="2-3-增益公式"><a href="#2-3-增益公式" class="headerlink" title="2.3 增益公式"></a>2.3 增益公式</h3><p>在分裂节点时，增益公式用于评估分裂质量：</p>
+<p>$$<br>\text{Gain} &#x3D; \frac{1}{2} \left( \frac{G_L^2}{H_L + \lambda} + \frac{G_R^2}{H_R + \lambda} - \frac{G^2}{H + \lambda} \right) - \gamma<br>$$</p>
+<p>其中：</p>
+<ul>
+<li>$G, H$：当前节点的梯度和 Hessian 总和。</li>
+<li>$G_L, H_L$：左子节点的梯度和 Hessian 总和。</li>
+<li>$G_R, H_R$：右子节点的梯度和 Hessian 总和。</li>
+</ul>
+<hr>
+<h3 id="2-4-叶子节点权重"><a href="#2-4-叶子节点权重" class="headerlink" title="2.4 叶子节点权重"></a>2.4 叶子节点权重</h3><p>分裂结束后，叶子节点的权重可以通过以下公式计算：</p>
+<p>$$<br>w_j &#x3D; -\frac{G_j}{H_j + \lambda}<br>$$</p>
+<p>其中：</p>
+<ul>
+<li>$G_j, H_j$：对应叶子节点的梯度和 Hessian 总和。</li>
+</ul>
+<hr>
+<h2 id="3-从零实现XGBoost"><a href="#3-从零实现XGBoost" class="headerlink" title="3. 从零实现XGBoost"></a><strong>3. 从零实现XGBoost</strong></h2><p>以下为简化版 XGBoost 的核心实现，包括数据生成和树构建。</p>
+<h3 id="3-1-数据生成与处理"><a href="#3-1-数据生成与处理" class="headerlink" title="3.1 数据生成与处理"></a><strong>3.1 数据生成与处理</strong></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置随机种子</span></span><br><span class="line">np.random.seed(<span class="number">42</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成虚拟数据集</span></span><br><span class="line">X = np.random.rand(<span class="number">1000</span>, <span class="number">5</span>)  <span class="comment"># 1000个样本，5个特征</span></span><br><span class="line">true_weights = np.array([<span class="number">2.5</span>, -<span class="number">1.7</span>, <span class="number">0.5</span>, <span class="number">1.2</span>, -<span class="number">0.9</span>])</span><br><span class="line">y = X.dot(true_weights) + np.random.randn(<span class="number">1000</span>) * <span class="number">0.5</span>  <span class="comment"># 线性关系加噪声</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建DataFrame以便后续处理</span></span><br><span class="line">data = pd.DataFrame(X, columns=[<span class="string">f&#x27;feature_<span class="subst">&#123;i&#125;</span>&#x27;</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">6</span>)])</span><br><span class="line">data[<span class="string">&#x27;target&#x27;</span>] = y</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印数据集前5行</span></span><br><span class="line"><span class="built_in">print</span>(data.head())</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-损失函数及梯度计算"><a href="#3-2-损失函数及梯度计算" class="headerlink" title="3.2 损失函数及梯度计算"></a><strong>3.2 损失函数及梯度计算</strong></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 损失函数（平方损失）</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">squared_loss</span>(<span class="params">y_true, y_pred</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0.5</span> * np.mean((y_true - y_pred) ** <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 梯度和Hessian计算</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">gradient</span>(<span class="params">y_true, y_pred</span>):</span><br><span class="line">    <span class="keyword">return</span> -(y_true - y_pred)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hessian</span>(<span class="params">y_true, y_pred</span>):</span><br><span class="line">    <span class="keyword">return</span> np.ones_like(y_true)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-3-XGBoost-核心训练流程"><a href="#3-3-XGBoost-核心训练流程" class="headerlink" title="3.3 XGBoost 核心训练流程"></a><strong>3.3 XGBoost 核心训练流程</strong></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">XGBoostFromScratch</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, n_estimators=<span class="number">10</span>, learning_rate=<span class="number">0.1</span>, max_depth=<span class="number">3</span>, lambda_reg=<span class="number">1</span></span>):</span><br><span class="line">        <span class="variable language_">self</span>.n_estimators = n_estimators</span><br><span class="line">        <span class="variable language_">self</span>.learning_rate = learning_rate</span><br><span class="line">        <span class="variable language_">self</span>.max_depth = max_depth</span><br><span class="line">        <span class="variable language_">self</span>.lambda_reg = lambda_reg</span><br><span class="line">        <span class="variable language_">self</span>.trees = []</span><br><span class="line">        <span class="variable language_">self</span>.losses = []  <span class="comment"># 新增一个用于保存每轮损失的列表</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">fit</span>(<span class="params">self, X, y</span>):</span><br><span class="line">        n_samples = X.shape[<span class="number">0</span>]</span><br><span class="line">        <span class="comment"># 初始化预测值为0</span></span><br><span class="line">        y_pred = np.zeros(n_samples)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 迭代生成树</span></span><br><span class="line">        <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="variable language_">self</span>.n_estimators):</span><br><span class="line">            <span class="comment"># 计算梯度和Hessian</span></span><br><span class="line">            grad = gradient(y, y_pred)</span><br><span class="line">            hess = hessian(y, y_pred)</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 构建一颗树并拟合</span></span><br><span class="line">            tree = <span class="variable language_">self</span>.build_tree(X, grad, hess, depth=<span class="number">0</span>)</span><br><span class="line">            <span class="variable language_">self</span>.trees.append(tree)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 更新预测值</span></span><br><span class="line">            y_pred += <span class="variable language_">self</span>.learning_rate * <span class="variable language_">self</span>.predict_tree(tree, X)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 每轮迭代后计算当前的损失，并保存</span></span><br><span class="line">            current_loss = squared_loss(y, y_pred)</span><br><span class="line">            <span class="variable language_">self</span>.losses.append(current_loss)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">build_tree</span>(<span class="params">self, X, grad, hess, depth</span>):</span><br><span class="line">        <span class="comment"># 这里我们简单处理为单层分裂的树，后续可扩展为多层</span></span><br><span class="line">        n_samples, n_features = X.shape</span><br><span class="line">        best_split = <span class="literal">None</span></span><br><span class="line">        best_gain = -<span class="built_in">float</span>(<span class="string">&#x27;inf&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 遍历所有特征，找到最佳分裂点</span></span><br><span class="line">        <span class="keyword">for</span> feature_idx <span class="keyword">in</span> <span class="built_in">range</span>(n_features):</span><br><span class="line">            thresholds = np.unique(X[:, feature_idx])</span><br><span class="line">            <span class="keyword">for</span> threshold <span class="keyword">in</span> thresholds:</span><br><span class="line">                left_mask = X[:, feature_idx] &lt;= threshold</span><br><span class="line">                right_mask = ~left_mask</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">if</span> <span class="built_in">len</span>(left_mask) == <span class="number">0</span> <span class="keyword">or</span> <span class="built_in">len</span>(right_mask) == <span class="number">0</span>:</span><br><span class="line">                    <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line">                <span class="comment"># 计算增益</span></span><br><span class="line">                gain = <span class="variable language_">self</span>.compute_gain(grad, hess, left_mask, right_mask)</span><br><span class="line">                <span class="keyword">if</span> gain &gt; best_gain:</span><br><span class="line">                    best_gain = gain</span><br><span class="line">                    best_split = (feature_idx, threshold)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 计算叶子节点权重</span></span><br><span class="line">        <span class="keyword">if</span> best_split <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            feature_idx, threshold = best_split</span><br><span class="line">            left_mask = X[:, feature_idx] &lt;= threshold</span><br><span class="line">            right_mask = ~left_mask</span><br><span class="line">            left_weight = <span class="variable language_">self</span>.compute_leaf_weight(grad[left_mask], hess[left_mask])</span><br><span class="line">            right_weight = <span class="variable language_">self</span>.compute_leaf_weight(grad[right_mask], hess[right_mask])</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> &#123;<span class="string">&quot;split_feature&quot;</span>: feature_idx, <span class="string">&quot;threshold&quot;</span>: threshold,</span><br><span class="line">                    <span class="string">&quot;left_weight&quot;</span>: left_weight, <span class="string">&quot;right_weight&quot;</span>: right_weight&#125;</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">compute_gain</span>(<span class="params">self, grad, hess, left_mask, right_mask</span>):</span><br><span class="line">        G_L, H_L = np.<span class="built_in">sum</span>(grad[left_mask]), np.<span class="built_in">sum</span>(hess[left_mask])</span><br><span class="line">        G_R, H_R = np.<span class="built_in">sum</span>(grad[right_mask]), np.<span class="built_in">sum</span>(hess[right_mask])</span><br><span class="line">        gain = <span class="number">0.5</span> * (G_L**<span class="number">2</span> / (H_L + <span class="variable language_">self</span>.lambda_reg) + G_R**<span class="number">2</span> / (H_R + <span class="variable language_">self</span>.lambda_reg))</span><br><span class="line">        <span class="keyword">return</span> gain</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">compute_leaf_weight</span>(<span class="params">self, grad, hess</span>):</span><br><span class="line">        <span class="keyword">return</span> -np.<span class="built_in">sum</span>(grad) / (np.<span class="built_in">sum</span>(hess) + <span class="variable language_">self</span>.lambda_reg)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">predict_tree</span>(<span class="params">self, tree, X</span>):</span><br><span class="line">        predictions = np.zeros(X.shape[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">if</span> tree <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            feature_idx, threshold = tree[<span class="string">&quot;split_feature&quot;</span>], tree[<span class="string">&quot;threshold&quot;</span>]</span><br><span class="line">            left_mask = X[:, feature_idx] &lt;= threshold</span><br><span class="line">            right_mask = ~left_mask</span><br><span class="line">            predictions[left_mask] = tree[<span class="string">&quot;left_weight&quot;</span>]</span><br><span class="line">            predictions[right_mask] = tree[<span class="string">&quot;right_weight&quot;</span>]</span><br><span class="line">        <span class="keyword">return</span> predictions</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">predict</span>(<span class="params">self, X</span>):</span><br><span class="line">        y_pred = np.zeros(X.shape[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">for</span> tree <span class="keyword">in</span> <span class="variable language_">self</span>.trees:</span><br><span class="line">            y_pred += <span class="variable language_">self</span>.learning_rate * <span class="variable language_">self</span>.predict_tree(tree, X)</span><br><span class="line">        <span class="keyword">return</span> y_pred</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-4-训练与可视化分析"><a href="#3-4-训练与可视化分析" class="headerlink" title="3.4 训练与可视化分析"></a><strong>3.4 训练与可视化分析</strong></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 训练模型</span></span><br><span class="line">model = XGBoostFromScratch(n_estimators=<span class="number">10</span>, learning_rate=<span class="number">0.1</span>)</span><br><span class="line">model.fit(X, y)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 预测结果</span></span><br><span class="line">y_pred = model.predict(X)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘制数据分析图形</span></span><br><span class="line">fig, axes = plt.subplots(<span class="number">2</span>, <span class="number">2</span>, figsize=(<span class="number">12</span>, <span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图1：实际值与预测值对比</span></span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].scatter(y, y_pred, color=<span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].set_title(<span class="string">&quot;Actual vs Predicted&quot;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].set_xlabel(<span class="string">&quot;Actual&quot;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">0</span>].set_ylabel(<span class="string">&quot;Predicted&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图2：误差分布</span></span><br><span class="line">error = y - y_pred</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">1</span>].hist(error, bins=<span class="number">20</span>, color=<span class="string">&#x27;green&#x27;</span>)</span><br><span class="line">axes[<span class="number">0</span>, <span class="number">1</span>].set_title(<span class="string">&quot;Error Distribution&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图3：特征对目标值的相关性</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    axes[<span class="number">1</span>, <span class="number">0</span>].scatter(data[<span class="string">f&#x27;feature_<span class="subst">&#123;i+<span class="number">1</span>&#125;</span>&#x27;</span>], data[<span class="string">&#x27;target&#x27;</span>], label=<span class="string">f&#x27;Feature <span class="subst">&#123;i+<span class="number">1</span>&#125;</span>&#x27;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">0</span>].set_title(<span class="string">&quot;Feature vs Target&quot;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">0</span>].legend()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图4：损失随迭代次数的变化</span></span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].plot(<span class="built_in">range</span>(<span class="number">1</span>, <span class="built_in">len</span>(model.losses) + <span class="number">1</span>), model.losses, color=<span class="string">&#x27;red&#x27;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].set_title(<span class="string">&quot;Loss vs Iterations&quot;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].set_xlabel(<span class="string">&quot;Iterations&quot;</span>)</span><br><span class="line">axes[<span class="number">1</span>, <span class="number">1</span>].set_ylabel(<span class="string">&quot;Loss&quot;</span>)</span><br><span class="line"></span><br><span class="line">plt.tight_layout()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p><strong>XGBoostFromScratch 类</strong>：实现了简单的 XGBoost 训练流程，包括梯度和 Hessian 计算、树的构建、叶子节点权重计算等。</p>
+<img src="https://pnglog.com/LK6GWI.png" style="zoom: 67%;" />
+
+<ul>
+<li>图1显示实际值与预测值的关系</li>
+<li>图2展示误差的分布情况</li>
+<li>图3展示各个特征与目标值的关系</li>
+<li>图4展示了迭代过程中损失的变化</li>
+</ul>
+<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a><strong>4. 总结</strong></h2><p>XGBoost 的强大之处在于其高效的计算、鲁棒性以及灵活性。本篇通过直观解释和代码实现，带您理解了其原理与实际操作。对于更复杂的场景，可以直接使用官方库 <a target="_blank" rel="noopener" href="https://xgboost.readthedocs.io/en/latest/">XGBoost</a> 提供的高级功能。</p>
+<p><span style="color: #FFA8FF;">希望这篇文章能让您对 XGBoost 有更深入的理解！</span></p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xuanz54.github.io/2024/11/15/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAXGBoost-%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E7%8E%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Omakub专为开发者设计的Ubuntu环境配置项目</div>
+      </a>
+    
+  </nav>
+
+  
+   
+  
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2024
+        <i class="ri-heart-fill heart_icon"></i> CodeBardPro
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="xuanz的博客"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://bz.zzzmh.cn/index">壁纸</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>
