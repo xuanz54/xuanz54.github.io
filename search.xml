@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>DeepSeek 多模态大模型Janus-Pro-7B本地部署教程</title>
+    <url>/2025/02/01/DeepSeek-%E5%A4%9A%E6%A8%A1%E6%80%81%E5%A4%A7%E6%A8%A1%E5%9E%8BJanus-Pro-7B%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>DeepSeek 又深夜发大招！开源了多模态大模型Janus-Pro-7B，普通电脑可以直接安装使用，现在我们就来本地部署！支持图像识别和图像生成，性能非常强悍！</p>
+<img src="https://www.pnglog.com/iQKeC5.png" />
+
+<p>1、检查自己是否安装了 Git 和 conda ，如果没有安装，请点击前往下载【<a href="https://git-scm.com/">Git</a>】和 【<a href="https://www.anaconda.com/download">Conda</a>】</p>
+<p>2、创建虚拟环境</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n myenvp python=3.10 -y</span><br></pre></td></tr></table></figure>
+
+<p>3、激活 Conda 环境</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate myenvp</span><br></pre></td></tr></table></figure>
+
+<p>4、克隆 Janus 项目</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/deepseek-ai/Janus.git</span><br></pre></td></tr></table></figure>
+
+<p>5、进入 Janus 目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> Janus</span><br></pre></td></tr></table></figure>
+
+<p>6、安装 Janus 依赖</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install -e .</span><br></pre></td></tr></table></figure>
+
+<p>7、安装 Gradio（UI）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install gradio</span><br><span class="line"></span><br><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line"></span><br><span class="line">pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
+
+<p>8、运行 Janus Pro UI</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python demo/app_januspro.py</span><br></pre></td></tr></table></figure>
+
+<p>或强行调用GPU运行（速度更快）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python demo/app_januspro.py --device cuda</span><br></pre></td></tr></table></figure>
+
+<p>安装完成以后，根据提示打开本地链接：<a href="http://127.0.0.1:7860/">http://127.0.0.1:7860</a> 即可进入到使用面板</p>
+<img src="https://www.pnglog.com/haprzz.png"/>
+
+<p>下方就是文生图功能：</p>
+<img src="https://www.pnglog.com/z7ait8.png" />
+
+<p><strong>退出以后该如何启动？ 按下方的步骤即可：</strong></p>
+<p>1、激活 Conda 虚拟环境</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate myenvp</span><br></pre></td></tr></table></figure>
+
+<p>2、进入安装目录：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> Janus</span><br></pre></td></tr></table></figure>
+
+<p>3、运行 Janus UI：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python demo/app_januspro.py</span><br></pre></td></tr></table></figure>
+
+<p>如果需要指定 GPU：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python demo/app_januspro.py --device cuda</span><br></pre></td></tr></table></figure>
+
+<p>当然如果你的电脑硬件过低，或者显卡不支持，那么可以使用免费的在线平台进行使用</p>
+<p>【<a href="https://huggingface.co/spaces/deepseek-ai/Janus-1.3B">点击前往</a>】</p>
+<p>免费的在线平台是托管在Huggingface上的，使用的是共享GPU，在线人多的时候，可能会比较卡！</p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git的使用</title>
     <url>/2024/07/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="Git-与-GitHub"><a href="#Git-与-GitHub" class="headerlink" title="Git 与 GitHub"></a>Git 与 GitHub</h1><h2 id="Git-的起源"><a href="#Git-的起源" class="headerlink" title="Git 的起源"></a>Git 的起源</h2><h4 id="“自由主义-开源-教皇”-林纳斯·托瓦兹"><a href="#“自由主义-开源-教皇”-林纳斯·托瓦兹" class="headerlink" title="“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹"></a>“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹</h4><ul>
@@ -23,7 +84,7 @@
 <ol>
 <li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
 </li>
-<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#101;&#109;&#x61;&#x69;&#108;&#x40;&#120;&#120;&#x78;&#x2e;&#99;&#111;&#109;">&#101;&#109;&#x61;&#x69;&#108;&#x40;&#120;&#120;&#x78;&#x2e;&#99;&#111;&#109;</a></strong></font>“</p>
+<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#x65;&#x6d;&#x61;&#105;&#108;&#64;&#x78;&#120;&#x78;&#46;&#99;&#x6f;&#109;">&#x65;&#x6d;&#x61;&#105;&#108;&#64;&#x78;&#120;&#x78;&#46;&#99;&#x6f;&#109;</a></strong></font>“</p>
 <p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
 </li>
 <li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
@@ -258,6 +319,41 @@
       <tags>
         <tag>效率工具</tag>
         <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Omakub专为开发者设计的Ubuntu环境配置项目</title>
+    <url>/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<p>Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。</p>
+<p>提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。</p>
+<img src="https://pnglog.com/aR3xii.png" style="zoom: 50%;" />
+
+ 
+
+<h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><ol>
+<li>一键式配置：通过一条命令即可完成所有配置。</li>
+<li>预装工具：包括浏览器、终端、编辑器、通讯工具（如 WhatsApp、Signal、Spotify、Zoom、1Password）等。</li>
+<li>版本控制：内置 GitHub CLI，方便进行版本控制和代码管理。</li>
+<li>容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。</li>
+<li>语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。</li>
+<li>系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。</li>
+</ol>
+<h4 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h4><p>安装 Omakub 只需以下步骤：</p>
+<ol>
+<li><p>在计算机上安装 Ubuntu 24.04+。</p>
+</li>
+<li><p>打开终端（Ctrl+Alt+T），运行以下命令：</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://omakub.org/install | bash</span><br></pre></td></tr></table></figure>
+
+<p> 整个安装过程大约需要 30 分钟，具体时间取决于网络状况。安装完成后，系统会自动配置所有工具和设置。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -528,41 +624,6 @@
       <tags>
         <tag>效率工具</tag>
         <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Omakub专为开发者设计的Ubuntu环境配置项目</title>
-    <url>/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<p>Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。</p>
-<p>提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。</p>
-<img src="https://pnglog.com/aR3xii.png" style="zoom: 50%;" />
-
- 
-
-<h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><ol>
-<li>一键式配置：通过一条命令即可完成所有配置。</li>
-<li>预装工具：包括浏览器、终端、编辑器、通讯工具（如 WhatsApp、Signal、Spotify、Zoom、1Password）等。</li>
-<li>版本控制：内置 GitHub CLI，方便进行版本控制和代码管理。</li>
-<li>容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。</li>
-<li>语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。</li>
-<li>系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。</li>
-</ol>
-<h4 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h4><p>安装 Omakub 只需以下步骤：</p>
-<ol>
-<li><p>在计算机上安装 Ubuntu 24.04+。</p>
-</li>
-<li><p>打开终端（Ctrl+Alt+T），运行以下命令：</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://omakub.org/install | bash</span><br></pre></td></tr></table></figure>
-
-<p> 整个安装过程大约需要 30 分钟，具体时间取决于网络状况。安装完成后，系统会自动配置所有工具和设置。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1187,8 +1248,367 @@
         <category>科技</category>
       </categories>
       <tags>
-        <tag>效率工具</tag>
         <tag>AI</tag>
+        <tag>效率工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在废墟上跳舞：论当代青年的生存美学革命</title>
+    <url>/2025/01/07/%E5%9C%A8%E5%BA%9F%E5%A2%9F%E4%B8%8A%E8%B7%B3%E8%88%9E%EF%BC%9A%E8%AE%BA%E5%BD%93%E4%BB%A3%E9%9D%92%E5%B9%B4%E7%9A%84%E7%94%9F%E5%AD%98%E7%BE%8E%E5%AD%A6%E9%9D%A9%E5%91%BD/</url>
+    <content><![CDATA[<p>​	在深圳某科技园区的格子间里，25岁的程序员李明在完成当天第12次代码提交后，平静地关闭了价值两万元的顶配笔记本电脑。这个动作的仪式感不亚于中世纪修士合上羊皮经卷——前者结束的是对数字世界的虔诚侍奉，后者终止的是对神圣彼岸的永恒追求。当996工作制的机械循环成为新时代的苦修，当婚恋市场的估值体系异化为情感交易所的K线图，中国Z世代正在用”躺平”构建抵抗异化的精神堡垒，以”单身”书写拒绝被规训的生命宣言。这不是颓废的溃败，而是一场静默的革命，是后现代语境下青年群体对生命政治最深刻的哲学回应。</p>
+<h3 id="一、规训社会的全景敞视与自我放逐"><a href="#一、规训社会的全景敞视与自我放逐" class="headerlink" title="一、规训社会的全景敞视与自我放逐"></a>一、规训社会的全景敞视与自我放逐</h3><p>​	福柯笔下的”全景敞视监狱”在数字时代获得了终极进化形态。算法推荐系统比任何狱卒都更精于心理操控，社交媒体的点赞机制重构了人的奖赏回路，绩效社会的KPI体系将存在价值量化为Excel表格里的数字。上海某高校调查显示，93%的大学生手机日均使用时间超过8小时，其中67%承认会因未及时回复消息产生焦虑。这种自我规训的完成度，甚至超越了边沁圆形监狱设计者的想象。</p>
+<p>​	当北京五道口的创业咖啡馆里仍在上演”三年上市”的资本神话时，城中村的出租屋里正滋长着新型生活哲学。广州”三和大神”现象绝非简单的堕落叙事，那些日结工资、网吧过夜的青年，用身体实践解构着”勤劳致富”的资本主义伦理。就像本雅明在《历史哲学论纲》中描绘的”新天使”，他们背对未来进步的风暴，凝视着堆积如山的现代性废墟。</p>
+<p>​	深圳”数字游民”社群的出现，标志着抵抗形式从消极逃避转向主动建构。这些精通Python和区块链技术的年轻人，拒绝成为科技巨头的人肉电池，转而用去中心化工具搭建分布式协作网络。他们在GitHub上开源自己的人生代码，用DAO（去中心化自治组织）重构劳动伦理，将马克思的”自由人联合体”构想写入智能合约。</p>
+<h3 id="二、亲密关系的祛魅与孤独美学"><a href="#二、亲密关系的祛魅与孤独美学" class="headerlink" title="二、亲密关系的祛魅与孤独美学"></a>二、亲密关系的祛魅与孤独美学</h3><p>​	上海人民公园相亲角的价目表，量化着从学区房到生肖属相的婚恋估值体系。当情感被异化为资产负债表上的待合并项目，年轻人开始用”母胎solo”的黑色幽默解构婚恋市场的荒谬。北京某985高校调查显示，68%的95后认为”婚姻不是人生必选项”，这个数字较十年前翻了三倍。这不是爱的消亡，而是对情感商品化的集体罢工。</p>
+<p>​	日本”无缘社会”的预言在中国显影为新型社交图谱。重庆的剧本杀门店里，陌生人通过角色扮演建构临时亲密关系；B站的弹幕池中，孤独的个体用段子代码完成情感共振。这些瞬息即逝的联结，恰似德里达笔下的”延异”游戏——在能指链的滑动中，我们获得的不是稳定的意义，而是在场与缺席的永恒嬉戏。</p>
+<p>​	广州城中村的”一人食”餐厅里，年轻食客们用食物语系重构存在仪式。从《孤独的美食家》到《小森林》，独处美学正在解构”团圆饭”的集体主义叙事。这种对孤独的审美化处理，暗合海德格尔”向死而生”的存在主义哲思——在彻底个体化的生存境遇中，每个灵魂都是自我宇宙的立法者。</p>
+<h3 id="三、意义重构的星丛与游牧主体"><a href="#三、意义重构的星丛与游牧主体" class="headerlink" title="三、意义重构的星丛与游牧主体"></a>三、意义重构的星丛与游牧主体</h3><p>​	当海淀家长还在为”鸡娃”策略争论不休时，大理的数字游民社区正上演着教育革命。区块链技术支持的”分布式大学”里，知识以NFT形式确权，慕课（MOOC）系统演化成DAO治理的学习共同体。这些逃离”内卷”的青年，用Web3.0技术将福柯的”自我技术”推向新维度。他们不再是规训社会的产物，而是成为自己存在的创作者。</p>
+<p>​	西安古城墙下的后备箱市集，流动着后现代消费主义的诗学。手冲咖啡的香气与3D打印机的嗡鸣交织，汉服少女的团扇轻拂过无人机操作屏。这些看似违和的拼贴，实则是本雅明”辩证意象”的当代显形——在商品拜物教的废墟上，青年文化正进行着本真性的考古发掘。</p>
+<p>​	郑州”7·20”暴雨中的”救命文档”，意外揭示了数字原住民的时代精神。这个由95后创建的在线协作表格，在24小时内迭代出487个版本，拯救了无数生命。当技术从异化工具转变为救赎媒介，齐泽克预言的”意识形态崇高客体”获得了革命性反转——云端的比特洪流中，闪耀着共产主义幽灵的当代形态。</p>
+<p>​	在这个加速主义与末日情结并置的时代，中国青年正在发明新的生存语法。他们不是垮掉的一代，而是清醒的漫游者；不是犬儒主义的俘虏，而是辩证法的魔术师。当存在主义危机转化为创造性能量，当原子化个体重组为数字共产主义细胞，这场静默的革命终将在现代性废墟上绽放出异样的花朵。或许正如阿多诺所说，在错误的生活中不存在正确的生活——但总有舞者能在铁屋的阴影里，踩出自由的节拍。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>增长漏斗模型：从流量到留量的底层逻辑（理论+实操）</title>
+    <url>/2025/11/19/%E5%A2%9E%E9%95%BF%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B%EF%BC%9A%E4%BB%8E%E6%B5%81%E9%87%8F%E5%88%B0%E7%95%99%E9%87%8F%E7%9A%84%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%EF%BC%88%E7%90%86%E8%AE%BA-%E5%AE%9E%E6%93%8D%EF%BC%89/</url>
+    <content><![CDATA[<p>老板最关心的问题永远只有两个：</p>
+<ol>
+<li>今天的用户从哪儿来？</li>
+<li>明天的钱从哪儿来？</li>
+</ol>
+<p>增长漏斗就是回答这两个问题的万能框架。它把“用户旅程”拆成可度量、可干预、可复盘的阶段，让业务不再拍脑袋。</p>
+<p>增长漏斗模型（Growth Funnel Model）不仅是数据分析的框架，更是一种以用户为中心、以转化为目标的增长思维方式。</p>
+<p><strong>1</strong>.<strong>什么是增长漏斗模型？</strong> </p>
+<p>增长漏斗模型是一种通过可视化用户在产品中关键行为路径，来<strong>量化转化效率、定位流失环节</strong>的分析模型，其核心思想是：<strong>并非所有触达用户的都会转化为客户，你需要跟踪他们在每一步的动向，并优化整个流程。</strong></p>
+<p>增长漏斗 &#x3D; 把用户旅程拆成若干关键节点，通过数据看流失、通过实验提转化，最终让每一层都更“宽”或更“深”。</p>
+<ul>
+<li><strong>漏斗（Funnel）</strong>：形象地比喻了用户从接触产品到完成最终目标（如付费）的过程中，数量逐层减少的现象。</li>
+<li><strong>增长（Growth）</strong>：意味着这个模型的最终目的是<strong>优化漏斗，减少不必要的流失，提升整体转化率</strong>，从而实现用户和业务的增长。</li>
+</ul>
+<p><strong>经典 5 级漏斗（AARRR）：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">阶段</th>
+<th align="left">核心目标</th>
+<th align="left">关键问题</th>
+<th align="left">典型指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>1. 获取</strong>Acquisition</td>
+<td align="left">如何让用户发现并接触产品？</td>
+<td align="left">用户从哪里来？ （流量贵不贵？渠道好不好？）</td>
+<td align="left"><strong>新增用户数</strong>、UV、CTR、CPC、渠道流量、CAC（用户获取成本）</td>
+</tr>
+<tr>
+<td align="left"><strong>2. 激活</strong>Activation</td>
+<td align="left">如何让用户首次体验到产品核心价值？</td>
+<td align="left">用户的“Aha! Moment”（爽点）是什么？</td>
+<td align="left"><strong>激活率</strong>、新手引导完成率、关键行为完成率、注册率、首单率</td>
+</tr>
+<tr>
+<td align="left"><strong>3. 留存</strong>Retention</td>
+<td align="left">如何让用户回来并持续使用？</td>
+<td align="left">用户是否养成了使用习惯？</td>
+<td align="left"><strong>留存率</strong>（次日&#x2F;7日&#x2F;30日）、DAU&#x2F;MAU</td>
+</tr>
+<tr>
+<td align="left"><strong>4. 变现</strong>Revenue</td>
+<td align="left">如何从用户身上获取收入？</td>
+<td align="left">我们的商业模式如何运作？</td>
+<td align="left"><strong>转化率（付费率）</strong>、客单价（ARPU）、LTV（用户终身价值）、毛利率</td>
+</tr>
+<tr>
+<td align="left"><strong>5. 推荐</strong>Referral</td>
+<td align="left">如何让用户推荐更多新用户？</td>
+<td align="left">用户是否愿意推荐产品是否值得推荐？</td>
+<td align="left">**NPS（净推荐值）、*<em>K因子*<em>（病毒系数）、邀请分享数</em></em></td>
+</tr>
+</tbody></table>
+<p><strong>2 .为什么需要增长漏斗模型？</strong></p>
+<p><strong>（1）可视化用户旅程</strong>：将抽象的“用户路径”转化为清晰、可量化的阶段。</p>
+<p><strong>（2）精准定位问题</strong>：快速发现用户在哪个环节流失最严重，从而集中资源解决最关键的问题。</p>
+<p><strong>（3）量化改进效果</strong>：任何产品优化或运营策略上线后，都可以通过对比漏斗转化率的变化来评估其效果。</p>
+<p><strong>（4）统一团队认知</strong>：为产品、运营、市场团队提供一个共同的“地图”，对齐目标，协同优化。</p>
+<p><strong>3</strong>.<strong>怎么做？四步落地法</strong></p>
+<h4 id="Step-1-画地图：定义关键路径与转化目标"><a href="#Step-1-画地图：定义关键路径与转化目标" class="headerlink" title="Step 1 画地图：定义关键路径与转化目标"></a>Step 1 画地图：定义关键路径与转化目标</h4><ul>
+<li><p><strong>明确最终目标</strong>：你希望用户最终做什么？（例如：成功支付、发布第一条内容、完成首次投资）。</p>
+</li>
+<li><p><strong>描绘用户路径</strong>：回溯用户为完成这个目标需要经历哪些关键步骤（通常4-7步为宜，过多会过于复杂）。</p>
+</li>
+</ul>
+<p><strong>示例：电商购买的微观漏斗</strong><br>最终目标：<strong>支付成功</strong><br>关键路径：广告曝光 -&gt; 点击进入商品页 -&gt; 浏览详情 -&gt; 添加购物车 -&gt; 点击结算 -&gt; 填写订单 -&gt; 支付成功</p>
+<h4 id="Step-2-算漏斗：数据采集-可视化-流失点"><a href="#Step-2-算漏斗：数据采集-可视化-流失点" class="headerlink" title="Step 2 算漏斗：数据采集+可视化 + 流失点"></a>Step 2 算漏斗：数据采集+可视化 + 流失点</h4><ul>
+<li><p><strong>数据采集</strong>：通过埋点等技术手段，采集每个步骤的用户行为数据（如页面浏览、按钮点击事件）。</p>
+<p>  如：<strong>用「事件-属性」思维埋点：</strong>事件&#x3D;动作，属性&#x3D;动作细节（如渠道&#x3D;抖音，版本&#x3D;8.3.1）</p>
+</li>
+<li><p><strong>构建漏斗</strong>：在数据分析平台（如GA、GrowingIO、Amplitude）或BI工具中，按步骤配置漏斗，并选择要分析的时间范围、用户分群等。</p>
+<p>  <strong>指标：</strong>转化率（CVR）、流失率（1-CVR）。</p>
+<p>  <strong>输出</strong>：漏斗图 + 热力图（分渠道&#x2F;版本对比）。</p>
+</li>
+</ul>
+<h4 id="Step-3-找杠杆：漏斗分析与问题诊断（ICE-优先级）"><a href="#Step-3-找杠杆：漏斗分析与问题诊断（ICE-优先级）" class="headerlink" title="Step 3 找杠杆：漏斗分析与问题诊断（ICE 优先级）"></a>Step 3 找杠杆：漏斗分析与问题诊断（ICE 优先级）</h4><p>这是最关键的一步。看一个漏斗不仅要看最终转化率，更要<strong>深度分析每一步的转化和流失情况</strong>。</p>
+<ul>
+<li><strong>计算转化率</strong>：</li>
+</ul>
+<ol>
+<li><ul>
+<li><strong>每一步转化率</strong> &#x3D; 进入本步骤的用户数 &#x2F; 上一步的用户数；</li>
+<li><strong>总体转化率</strong> &#x3D; 完成最终目标的用户数 &#x2F; 进入第一步的用户数。</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>定位核心流失点：</li>
+</ul>
+<ol>
+<li><ul>
+<li>找到<strong>绝对流失人数最多</strong>和<strong>相对转化率最低</strong>的步骤。这里就是需要优先优化的“瓶颈”；</li>
+<li>对每一层流失，列 3 个候选实验，用 ICE（Impact 影响面 × Confidence 信心 × Ease 易实施）打分，只做前 20% 高杠杆实验。</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><strong>多维度分解分析</strong>：</li>
+</ul>
+<ol>
+<li><ul>
+<li><strong>分渠道</strong>：不同广告来源的用户，漏斗表现有何差异？哪个渠道的用户质量更高？</li>
+<li><strong>分用户</strong>：新用户和老用户的漏斗路径有何不同？流失点是否一致？</li>
+<li><strong>分设备&#x2F;平台</strong>：App端和Web端的转化效率哪个更高？</li>
+<li><strong>分时间</strong>：节假日和平时的漏斗数据是否有波动？</li>
+</ul>
+</li>
+</ol>
+<h4 id="Step-4-跑实验：提出假设A-B-实验-迭代优化"><a href="#Step-4-跑实验：提出假设A-B-实验-迭代优化" class="headerlink" title="Step 4 跑实验：提出假设A&#x2F;B 实验&amp; 迭代优化"></a>Step 4 跑实验：提出假设A&#x2F;B 实验&amp; 迭代优化</h4><ul>
+<li>每次只改 1 个变量（如落地页标题）。</li>
+<li>运行到统计显著（p&lt;0.05）再全量发布。</li>
+<li>把结论沉淀成“实验知识库”，避免重复踩坑。</li>
+</ul>
+<p><strong>4</strong>.<strong>实战案例：某 DTC 咖啡订阅的 30 天增长战役<br>————————————————-</strong><br><strong>背景</strong></p>
+<ul>
+<li>产品：按月寄送精品咖啡豆。</li>
+<li>目标：30 天内把 GMV 提升 50%。</li>
+<li>现状：投放 100w UV → 注册 10w → 首单 1w → 续订 2k，整体付费率仅 2‰。</li>
+</ul>
+<p>该案例中已经确定了目标和转化漏斗，因此下面从绘制转化地图&amp;计算漏斗开始。</p>
+<h4 id="（1）画地图-算漏斗"><a href="#（1）画地图-算漏斗" class="headerlink" title="（1）画地图 &amp; 算漏斗"></a>（1）画地图 &amp; 算漏斗</h4><p>用 Amplitude 跑出漏斗（数据已脱敏）：</p>
+<table>
+<thead>
+<tr>
+<th align="left">阶段</th>
+<th align="left">人数</th>
+<th align="left">转化率</th>
+<th align="left">流失率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">访问落地页</td>
+<td align="left">100w</td>
+<td align="left">100%</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">注册</td>
+<td align="left">20w</td>
+<td align="left">20%</td>
+<td align="left">80%</td>
+</tr>
+<tr>
+<td align="left">首单</td>
+<td align="left">1w</td>
+<td align="left">5%</td>
+<td align="left">95%</td>
+</tr>
+<tr>
+<td align="left">次月续订</td>
+<td align="left">2k</td>
+<td align="left">20%</td>
+<td align="left">80%</td>
+</tr>
+</tbody></table>
+<p>发现：</p>
+<ul>
+<li>最大流失在 <strong>注册→首单</strong>（该步骤流失率95%）。</li>
+<li>注册率、次月续订率也低，但首单率更低，优先解决首单。</li>
+</ul>
+<h4 id="（2）找杠杆"><a href="#（2）找杠杆" class="headerlink" title="（2）找杠杆"></a>（2）找杠杆</h4><p>团队头脑风暴 + 用户访谈，列出 3 个假设：</p>
+<ul>
+<li><p>H1 价格敏感：首次门槛太高（¥128&#x2F;月）。</p>
+</li>
+<li><p>H2 信任不足：没喝过，怕踩雷。</p>
+</li>
+<li><p>H3 选择困难：12 款豆子不知道选哪款。</p>
+</li>
+</ul>
+<p>用ICE方法打分后，先做 <strong>H2 信任不足</strong>（得分 72&#x2F;100）。</p>
+<h4 id="（3）跑实验"><a href="#（3）跑实验" class="headerlink" title="（3）跑实验"></a>（3）跑实验</h4><ul>
+<li>实验组：落地页增加「9.9 体验包（3 包挂耳+¥30 代金券）」。</li>
+<li>对照组：保持原落地页。</li>
+<li>运行 7 天，样本 2w UV&#x2F;组。</li>
+</ul>
+<h4 id="（4）-结果"><a href="#（4）-结果" class="headerlink" title="（4） 结果"></a>（4） 结果</h4><table>
+<thead>
+<tr>
+<th align="left">指标</th>
+<th align="left">实验组</th>
+<th align="left">对照组</th>
+<th align="left">提升</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">首单率</td>
+<td align="left">18%</td>
+<td align="left">5%</td>
+<td align="left">+40%</td>
+</tr>
+<tr>
+<td align="left">CAC</td>
+<td align="left">¥35</td>
+<td align="left">¥38</td>
+<td align="left">-8%</td>
+</tr>
+<tr>
+<td align="left">30 天 GMV</td>
+<td align="left">+55%</td>
+<td align="left">—</td>
+<td align="left">达成目标</td>
+</tr>
+</tbody></table>
+<p><strong>5</strong>.<strong>注意事项（常见坑 &amp; 对策）</strong><br>-——————————-<br><strong>注意事项：</strong></p>
+<p><strong>（1）不要盲目追求步骤数</strong>：漏斗不是步骤越多越好，应聚焦于最核心的关键行为。</p>
+<p><strong>（2）关注“流失用户”的去向</strong>：他们是真的离开了，还是去了其他路径？（例如，从购物车流失的用户可能去了客服页面咨询问题）。</p>
+<p><strong>（3）分群分析（Segmentation）</strong>：整体的漏斗会掩盖不同用户群体的差异。一定要进行分群分析。</p>
+<p><strong>（4）并非所有业务都是线性漏斗</strong>：一些复杂的业务（如内容平台、双边市场）的用户路径可能是<strong>网状</strong>或<strong>循环</strong>的，需要更灵活的模型（如循环漏斗）来补充。</p>
+<table>
+<thead>
+<tr>
+<th align="left">坑</th>
+<th align="left">症状</th>
+<th align="left">对策</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">漏斗断层</td>
+<td align="left">埋点缺失，漏斗中间“跳崖”</td>
+<td align="left">做“埋点评审”+ 日常自动化校验</td>
+</tr>
+<tr>
+<td align="left">虚荣指标</td>
+<td align="left">只盯 CTR、不盯 ROI</td>
+<td align="left">用北极星指标（如 LTV、CAC）</td>
+</tr>
+<tr>
+<td align="left">实验污染</td>
+<td align="left">不同版本串线、样本不均</td>
+<td align="left">使用唯一用户 ID + 分层抽样</td>
+</tr>
+</tbody></table>
+<p><strong>6.小结&amp;行动清单<br>——————</strong> </p>
+<p><strong>增长漏斗模型</strong>是将宏观增长目标（AARRR）拆解为微观可行动洞见的强大工具。它的工作流是一个清晰的闭环：</p>
+<p><strong>构建漏斗 -&gt; 测量转化 -&gt; 定位流失 -&gt; 提出假设 -&gt; A&#x2F;B测试 -&gt; 迭代优化 -&gt; 再次测量</strong></p>
+<p>掌握这个模型，意味着你能够用数据精准地诊断增长问题，并用实验科学地驱动增长。</p>
+<p>注意：把增长漏斗当“体检报告”，而不是“一次性项目”。</p>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
+    <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
+    <content><![CDATA[<img src="https://www.pnglog.com/FDPPbA.jpg" style="zoom: 33%;"/>
+
+<p>​	</p>
+<p>​	当地时间7月21日下午，美国总统拜登宣布，他不再谋求连任，并全力支持副总统哈里斯作为民主党总统候选人，参与2024年总统角逐。22日，哈里斯发表声明称，已获得足够支持成为民主党总统候选人。</p>
+<p>​	拜登“主动请辞”，让民主党总算松了口气。然而，临阵换帅怎么说也是兵家大忌。相比拜登，副总统哈里斯尽管有年龄、性别及少数族裔等诸多“优势”加持，但想在未来短短几个月内扭转颓势，给民主党带来好运，恐怕是“不可能完成的任务”。</p>
+<p><strong>临危受命，哈里斯手里有几张牌？</strong></p>
+<p>​	被推上风口浪尖的副总统哈里斯，在拜登宣布支持提名她作为党内总统候选人的第一时间，表达了对拜登的感谢之情，希望自己能够“赢得党内总统候选人的提名”，尽一切努力击败共和党总统候选人特朗普。</p>
+<p>​	临危受命的哈里斯，手里到底握有几张牌？</p>
+<p>​	首先，哈里斯的年龄优势。1964年出生的哈里斯，比拜登整整年轻了22岁，比特朗普年轻19岁，享有巨大的年龄优势。在拜登的年龄、健康状况和认知能力饱受质疑、成为特朗普竞选团队重要攻击把柄的情况下，选择年轻的哈里斯无疑是对特朗普竞选策略的釜底抽薪，让对手无法再将火力集中于民主党总统候选人的年龄和健康状况上。一个朝气蓬勃、充满活力的哈里斯将为民主党沉闷的竞选活动注入新鲜血液，相比之下，特朗普的年龄反而成了劣势和诟病对象。</p>
+<p>​	其次，哈里斯的女性身份。民调显示，特朗普在女性选民中的支持率一直低迷，远低于拜登在女性中的支持率。特朗普私生活的不检点和在堕胎问题上的首鼠两端立场，让很多女性选民对他望而却步。然而，拜登由于年龄、健康问题以及在堕胎问题上的不坚定立场，也无法激起女性选民、特别是年轻女性选民的热情。哈里斯在堕胎问题上“支持选择权”（支持女性有堕胎权利和自由）的坚定立场和对女性权利的坚强捍卫，无疑在情感上与女性、特别是年轻女性更能产生共鸣。特别是在面对特朗普时，哈里斯的女性身份和女权立场，更能赢得女性选民支持。</p>
+<p>​	再次，哈里斯的少数族裔身份。哈里斯的父母分别来自印度和牙买加，拥有亚裔和非裔双重少数族裔身份。这两大少数族裔身份的加持，相对于特朗普，哈里斯更能获得非裔和亚裔少数族裔的共情与共鸣。特朗普在对哈里斯进行“攻击”时，更可能投鼠忌器，担心一不小心被扣上种族主义的帽子。在拉美裔、非裔等少数族裔对拜登日益不满的节骨眼，作为少数族裔的哈里斯“出征”，或许能扭转不利于民主党的选情变化，逐步赢得少数族裔支持。</p>
+<p>​	最后，哈里斯担任检察官的经历。在进入华盛顿政坛以前，哈里斯长期在加州政治圈耕耘，先后在县检察官办公室和旧金山地方检察官办公室工作，并历任旧金山地区检察官和加州总检察长。长期担任检察官的经历，让哈里斯熟稔法律，思维敏捷，长于辩论，并善于抓住对手漏洞穷追猛打。哈里斯担任参议员期间，曾在司法部长塞申斯和联邦最高法院大法官卡瓦纳任命听证会上对其进行刨根问底式的“灵魂拷问”，给观众留下深刻印象。哈里斯的这些经历及雄辩口才，与拜登辩论时的卡壳、口吃和不知所云，将形成强烈反差，特朗普将遇到一个强劲的辩论对手。特别是，特朗普被定罪与哈里斯作为“检察官”的履历，如果进行辩论，很容易让人浮现起检察官“审判”犯人的画面。</p>
+<img src="https://www.pnglog.com/tOtZ5c.png" />
+
+
+
+<p><strong>哈里斯锁定党内提名已无悬念</strong></p>
+<p>​	哈里斯虽然得到拜登的全力支持，但是到目前为止，民主党内大佬、前总统奥巴马还没有明确表态。奥巴马在拜登退选后的一份声明中表示：“在接下来的几天里，我们将在未知的水域前行。但我非常有信心，我们党的领导人将能组织一个产生一位杰出候选人的过程。”显然，奥巴马对哈里斯并不满意。</p>
+<p>​	不过，好消息是，自拜登周日宣布退选后，民主党已经迅速集结在哈里斯周围，哈里斯也已获得了拜登的竞选资金，准备全力迎战特朗普。特别是没有在第一时间表态的民主党重量级人物——前议长佩洛西、参议院民主党领袖舒默和众议院民主党领袖杰弗里斯，已经在当地时间周一表态支持哈里斯。此外，所有民主党州长都已经表态支持哈里斯，密歇根州长惠特曼还自告奋勇担任哈里斯竞选团队的共同主席。</p>
+<p>​	鉴于民主党全国代表大会召开在即，留给民主党的时间已经不多了。特别是，俄亥俄州最早9月份就开始大选投票。根据该州法律，两党必须在8月7日前提交总统候选人名单。因此，民主党几乎没有时间就总统候选人进行内部详细讨论和公开角逐。果然，当地时间7月22日，哈里斯发表声明称已获得足够支持成为民主党总统候选人。</p>
+<img src="https://www.pnglog.com/vQyfIJ.png" style="zoom: 67%;" />
+
+
+
+<p><strong>哈里斯能否挽回民主党颓势？</strong></p>
+<p>​	哈里斯锁定党内总统候选人提名几无悬念，但是能否扭转民主党选举颓势，将是一个巨大的问号。实际上，从目前情况看，这似乎是一个无法完成的任务。</p>
+<p>​	首先，临阵换帅是兵家大忌。在距民主党全国代表大会召开不到一个月，距大选投票不足4个月之际，通过“逼宫”方式，迫使现任总统和党内总统候选人退选，无异于一场不流血的“政变”。这至少说明：第一，民主党对赢得此次大选几乎失去了信心，否则也不会铤而走险，出此下策。第二，民主党担心的不仅仅是失去白宫，更担心可能失去国会参议院多数席位及两院的控制权。</p>
+<p>​	逼退现任总统候选人，还会留下诸多“后遗症”。一是影响民主党内部团结。拜登在宣布退选的前一天还坚持不会退选，退选时声称是出于党派利益和国家利益退选，并对奥巴马等“幕后主使”心怀怨愤。奥巴马在拜登退选后特意没有选择公开支持哈里斯，以及佩洛西、舒默等人姗姗来迟的支持，都凸显民主党内部在这一问题上的分歧与矛盾。二是留给哈里斯的时间不多。哈里斯尽管位居副总统，但普遍认为她不在拜登的决策核心圈。哈里斯仓促上位，在短时间内团结本党、凝聚共识，组建竞选团队，提出竞选纲领，迎战特朗普，扭转民主党颓势，可谓时间紧、任务重，困难重重。</p>
+<p>​	其次，哈里斯是“矮子里面拔将军”。哈里斯近四年的副总统履历，并没有成为她的政治加分项，相反可能是负资产。哈里斯担任副总统期间，几乎没有拿得出手、哪怕是一项让美国民众能够印象深刻的政绩。相反，在美国民众的记忆里，满是哈里斯在公开场合不合时宜的“傻笑”、面对边境非法移民激增时的手足无措以及副总统办公室内“宫斗”的丑闻。就像特朗普在竞选集会上嘲讽的，近四年时间里，拜登只让哈里斯专注一件事，即应对边境非法移民问题，但她却完全搞砸了，非法移民长驱直入，让美国边境形同虚设。拿着这张成绩单的哈里斯，能否成为特朗普的“克星”和民主党的“救星”，让人捏把汗。</p>
+<p>​	最后，特朗普风头正健。至少自去年底以来，无论是全国性民调，还是在6-7个关键摇摆州的民调，特朗普都稳定领先拜登。特别是今年4月以来美国大学校园抗议运动、6月27日拜登与特朗普的首场大选电视辩论以及7月13日特朗普在竞选中的遇刺事件，更是进一步拖累了拜登的人气，让民主党忧心如焚。特朗普遇刺后的诸多民调显示，人们对特朗普的正面印象有了较大幅度提升。据美国广播公司新闻和益普索的民调，在未遂暗杀和共和党全国代表大会之后，特朗普的支持率稳步上升，达到40%，创下了该机构四年来民意调查的最高支持率，而大多数美国人则希望总统拜登退出竞选。很多美国政治评论家甚至认为，特朗普在竞选中遇袭，已经将特朗普变成了一种政治符号，完成了对他选举的“加冕仪式”。尽管有些夸张，但特朗普遇袭及遇袭后特朗普在特勤人员簇拥下高举拳头、高呼“战斗”的“定型照”，无疑是今年大选最具冲击力的画面。</p>
+<p>​	哈里斯要挽回民主党选情颓势，可能难于上青天。但是，这并不意味着哈里斯就无计可施。如果哈里斯将矛头对准特朗普的人品、集中于特朗普的道德瑕疵，聚焦特朗普对美国选举制度和法治的践踏与不尊重，强调特朗普代表了富人和大公司的利益，把大选再次变成对特朗普的“公投”，或许还能给特朗普竞选造成一定干扰，给民主党赢得一些喘息空间。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>时政</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>提升效率与稳定性:深入掌握conda环境与包管理</title>
+    <url>/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<img src="https://pnglog.com/529mGH.png" style="zoom: 35%;" />
+
+<h2 id="一、conda基础概念"><a href="#一、conda基础概念" class="headerlink" title="一、conda基础概念"></a>一、conda基础概念</h2><p>在深入使用<strong>conda</strong>命令之前，首先需要了解<strong>conda</strong>的基础概念。<strong>conda</strong> 是一个开源的包管理系统和环境管理系统，可以安装、更新和管理多种语言的依赖库（不仅限于<font color='Peach'>Python</font>）。它的强大之处在于将包管理与环境管理结合为一体，使得在项目开发中，无论是管理依赖包还是创建虚拟环境，<strong>conda</strong> 都能够提供完整的解决方案。</p>
+<h3 id="conda与虚拟环境的区别"><a href="#conda与虚拟环境的区别" class="headerlink" title="conda与虚拟环境的区别"></a>conda与虚拟环境的区别</h3><p><strong>conda</strong> 与传统的虚拟环境工具（如<font color='Salmon'>venv、virtualenv</font>）不同，后者主要用于隔离项目的依赖，而  则同时管理包和环境。通过使用 <strong>conda</strong>，可以更方便地在不同项目之间切换环境，避免包之间的冲突。</p>
+<h2 id="二、必要准备：配置镜像源"><a href="#二、必要准备：配置镜像源" class="headerlink" title="二、必要准备：配置镜像源"></a>二、必要准备：配置镜像源</h2><p><font color='Bitersweet'>在使用Anaconda安装Python包时，系统会自动从默认源下载安装包，但是由于网络访问限制或网络连接速度较慢等原因，可能导致安装失败或速度较慢。为了解决这些问题，配置镜像源可以让用户从国内的服务器下载Python包，加快下载速度并减少下载失败的问题。</font></p>
+<h3 id="添加镜像源"><a href="#添加镜像源" class="headerlink" title="添加镜像源"></a>添加镜像源</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line"><span class="comment">#显示检索路径</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br><span class="line"><span class="comment">#显示镜像通道</span></span><br><span class="line">conda config --show channels</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="三、环境命令"><a href="#三、环境命令" class="headerlink" title="三、环境命令"></a>三、环境命令</h2><h3 id="1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本"><a href="#1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本" class="headerlink" title="1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本"></a>1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create --prefix D:\Python\Enviroment\myenv python=3.10.6</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-查看虚拟环境-conda-env-list"><a href="#2-查看虚拟环境-conda-env-list" class="headerlink" title="2.查看虚拟环境:conda env list"></a>2.查看虚拟环境:conda env list</h3><p><font color='Magenta'>其中<code>*</code>表示当前所在的环境</font></p>
+<img src="https://www.pnglog.com/JNoEOF.png"/>
+
+<h3 id="3-切换、退出和删除环境"><a href="#3-切换、退出和删除环境" class="headerlink" title="3.切换、退出和删除环境:"></a>3.切换、退出和删除环境:</h3><blockquote>
+<p>切换环境:conda activate+路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
+
+<img src="https://www.pnglog.com/sDXtxA.png"/>
+</blockquote>
+<blockquote>
+<p>退出环境</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;conda deactivate</span><br></pre></td></tr></table></figure>
+
+<img src="https://www.pnglog.com/7Tk0CH.png"/>
+</blockquote>
+<blockquote>
+<p>删除环境:conda env remove -p+路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> remove -p D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
+
+<img src="https://www.pnglog.com/aZx6Za.png"/>
+</blockquote>
+<h2 id="四、包命令-先进入某一虚拟环境后使用"><a href="#四、包命令-先进入某一虚拟环境后使用" class="headerlink" title="四、包命令(先进入某一虚拟环境后使用)"></a>四、包命令(先进入某一虚拟环境后使用)</h2><h3 id="1-查找包-conda-search-包名"><a href="#1-查找包-conda-search-包名" class="headerlink" title="1.查找包:conda search+包名"></a>1.查找包:conda search+包名</h3><p> <font color='Magenta'>使用该命令会显示不同版本的python所支持的该包的版本</font></p>
+<h3 id="2-安装包-conda-install-包名"><a href="#2-安装包-conda-install-包名" class="headerlink" title="2.安装包:conda install+包名"></a>2.安装包:conda install+包名</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install seaborn </span><br></pre></td></tr></table></figure>
+
+<p><font color='Magenta'>也可以使用 conda install seaborn&#x3D;xxxx 下载指定版本的包</font></p>
+<h3 id="3-查看已下载的包-conda-list"><a href="#3-查看已下载的包-conda-list" class="headerlink" title="3.查看已下载的包:conda list"></a>3.查看已下载的包:conda list</h3><h3 id="4-更新包-conda-update-包名"><a href="#4-更新包-conda-update-包名" class="headerlink" title="4.更新包:conda update+包名"></a>4.更新包:conda update+包名</h3><h3 id="5-删除包-conda-remove-包名"><a href="#5-删除包-conda-remove-包名" class="headerlink" title="5.删除包:conda remove+包名"></a>5.删除包:conda remove+包名</h3>]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1593,96 +2013,6 @@
       </tags>
   </entry>
   <entry>
-    <title>提升效率与稳定性:深入掌握conda环境与包管理</title>
-    <url>/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<img src="https://pnglog.com/529mGH.png" style="zoom: 35%;" />
-
-<h2 id="一、conda基础概念"><a href="#一、conda基础概念" class="headerlink" title="一、conda基础概念"></a>一、conda基础概念</h2><p>在深入使用<strong>conda</strong>命令之前，首先需要了解<strong>conda</strong>的基础概念。<strong>conda</strong> 是一个开源的包管理系统和环境管理系统，可以安装、更新和管理多种语言的依赖库（不仅限于<font color='Peach'>Python</font>）。它的强大之处在于将包管理与环境管理结合为一体，使得在项目开发中，无论是管理依赖包还是创建虚拟环境，<strong>conda</strong> 都能够提供完整的解决方案。</p>
-<h3 id="conda与虚拟环境的区别"><a href="#conda与虚拟环境的区别" class="headerlink" title="conda与虚拟环境的区别"></a>conda与虚拟环境的区别</h3><p><strong>conda</strong> 与传统的虚拟环境工具（如<font color='Salmon'>venv、virtualenv</font>）不同，后者主要用于隔离项目的依赖，而  则同时管理包和环境。通过使用 <strong>conda</strong>，可以更方便地在不同项目之间切换环境，避免包之间的冲突。</p>
-<h2 id="二、必要准备：配置镜像源"><a href="#二、必要准备：配置镜像源" class="headerlink" title="二、必要准备：配置镜像源"></a>二、必要准备：配置镜像源</h2><p><font color='Bitersweet'>在使用Anaconda安装Python包时，系统会自动从默认源下载安装包，但是由于网络访问限制或网络连接速度较慢等原因，可能导致安装失败或速度较慢。为了解决这些问题，配置镜像源可以让用户从国内的服务器下载Python包，加快下载速度并减少下载失败的问题。</font></p>
-<h3 id="添加镜像源"><a href="#添加镜像源" class="headerlink" title="添加镜像源"></a>添加镜像源</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line"><span class="comment">#显示检索路径</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br><span class="line"><span class="comment">#显示镜像通道</span></span><br><span class="line">conda config --show channels</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="三、环境命令"><a href="#三、环境命令" class="headerlink" title="三、环境命令"></a>三、环境命令</h2><h3 id="1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本"><a href="#1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本" class="headerlink" title="1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本"></a>1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create --prefix D:\Python\Enviroment\myenv python=3.10.6</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-查看虚拟环境-conda-env-list"><a href="#2-查看虚拟环境-conda-env-list" class="headerlink" title="2.查看虚拟环境:conda env list"></a>2.查看虚拟环境:conda env list</h3><p><font color='Magenta'>其中<code>*</code>表示当前所在的环境</font></p>
-<img src="https://www.pnglog.com/JNoEOF.png"/>
-
-<h3 id="3-切换、退出和删除环境"><a href="#3-切换、退出和删除环境" class="headerlink" title="3.切换、退出和删除环境:"></a>3.切换、退出和删除环境:</h3><blockquote>
-<p>切换环境:conda activate+路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
-
-<img src="https://www.pnglog.com/sDXtxA.png"/>
-</blockquote>
-<blockquote>
-<p>退出环境</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;conda deactivate</span><br></pre></td></tr></table></figure>
-
-<img src="https://www.pnglog.com/7Tk0CH.png"/>
-</blockquote>
-<blockquote>
-<p>删除环境:conda env remove -p+路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> remove -p D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
-
-<img src="https://www.pnglog.com/aZx6Za.png"/>
-</blockquote>
-<h2 id="四、包命令-先进入某一虚拟环境后使用"><a href="#四、包命令-先进入某一虚拟环境后使用" class="headerlink" title="四、包命令(先进入某一虚拟环境后使用)"></a>四、包命令(先进入某一虚拟环境后使用)</h2><h3 id="1-查找包-conda-search-包名"><a href="#1-查找包-conda-search-包名" class="headerlink" title="1.查找包:conda search+包名"></a>1.查找包:conda search+包名</h3><p> <font color='Magenta'>使用该命令会显示不同版本的python所支持的该包的版本</font></p>
-<h3 id="2-安装包-conda-install-包名"><a href="#2-安装包-conda-install-包名" class="headerlink" title="2.安装包:conda install+包名"></a>2.安装包:conda install+包名</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install seaborn </span><br></pre></td></tr></table></figure>
-
-<p><font color='Magenta'>也可以使用 conda install seaborn&#x3D;xxxx 下载指定版本的包</font></p>
-<h3 id="3-查看已下载的包-conda-list"><a href="#3-查看已下载的包-conda-list" class="headerlink" title="3.查看已下载的包:conda list"></a>3.查看已下载的包:conda list</h3><h3 id="4-更新包-conda-update-包名"><a href="#4-更新包-conda-update-包名" class="headerlink" title="4.更新包:conda update+包名"></a>4.更新包:conda update+包名</h3><h3 id="5-删除包-conda-remove-包名"><a href="#5-删除包-conda-remove-包名" class="headerlink" title="5.删除包:conda remove+包名"></a>5.删除包:conda remove+包名</h3>]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>AI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
-    <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
-    <content><![CDATA[<img src="https://www.pnglog.com/FDPPbA.jpg" style="zoom: 33%;"/>
-
-<p>​	</p>
-<p>​	当地时间7月21日下午，美国总统拜登宣布，他不再谋求连任，并全力支持副总统哈里斯作为民主党总统候选人，参与2024年总统角逐。22日，哈里斯发表声明称，已获得足够支持成为民主党总统候选人。</p>
-<p>​	拜登“主动请辞”，让民主党总算松了口气。然而，临阵换帅怎么说也是兵家大忌。相比拜登，副总统哈里斯尽管有年龄、性别及少数族裔等诸多“优势”加持，但想在未来短短几个月内扭转颓势，给民主党带来好运，恐怕是“不可能完成的任务”。</p>
-<p><strong>临危受命，哈里斯手里有几张牌？</strong></p>
-<p>​	被推上风口浪尖的副总统哈里斯，在拜登宣布支持提名她作为党内总统候选人的第一时间，表达了对拜登的感谢之情，希望自己能够“赢得党内总统候选人的提名”，尽一切努力击败共和党总统候选人特朗普。</p>
-<p>​	临危受命的哈里斯，手里到底握有几张牌？</p>
-<p>​	首先，哈里斯的年龄优势。1964年出生的哈里斯，比拜登整整年轻了22岁，比特朗普年轻19岁，享有巨大的年龄优势。在拜登的年龄、健康状况和认知能力饱受质疑、成为特朗普竞选团队重要攻击把柄的情况下，选择年轻的哈里斯无疑是对特朗普竞选策略的釜底抽薪，让对手无法再将火力集中于民主党总统候选人的年龄和健康状况上。一个朝气蓬勃、充满活力的哈里斯将为民主党沉闷的竞选活动注入新鲜血液，相比之下，特朗普的年龄反而成了劣势和诟病对象。</p>
-<p>​	其次，哈里斯的女性身份。民调显示，特朗普在女性选民中的支持率一直低迷，远低于拜登在女性中的支持率。特朗普私生活的不检点和在堕胎问题上的首鼠两端立场，让很多女性选民对他望而却步。然而，拜登由于年龄、健康问题以及在堕胎问题上的不坚定立场，也无法激起女性选民、特别是年轻女性选民的热情。哈里斯在堕胎问题上“支持选择权”（支持女性有堕胎权利和自由）的坚定立场和对女性权利的坚强捍卫，无疑在情感上与女性、特别是年轻女性更能产生共鸣。特别是在面对特朗普时，哈里斯的女性身份和女权立场，更能赢得女性选民支持。</p>
-<p>​	再次，哈里斯的少数族裔身份。哈里斯的父母分别来自印度和牙买加，拥有亚裔和非裔双重少数族裔身份。这两大少数族裔身份的加持，相对于特朗普，哈里斯更能获得非裔和亚裔少数族裔的共情与共鸣。特朗普在对哈里斯进行“攻击”时，更可能投鼠忌器，担心一不小心被扣上种族主义的帽子。在拉美裔、非裔等少数族裔对拜登日益不满的节骨眼，作为少数族裔的哈里斯“出征”，或许能扭转不利于民主党的选情变化，逐步赢得少数族裔支持。</p>
-<p>​	最后，哈里斯担任检察官的经历。在进入华盛顿政坛以前，哈里斯长期在加州政治圈耕耘，先后在县检察官办公室和旧金山地方检察官办公室工作，并历任旧金山地区检察官和加州总检察长。长期担任检察官的经历，让哈里斯熟稔法律，思维敏捷，长于辩论，并善于抓住对手漏洞穷追猛打。哈里斯担任参议员期间，曾在司法部长塞申斯和联邦最高法院大法官卡瓦纳任命听证会上对其进行刨根问底式的“灵魂拷问”，给观众留下深刻印象。哈里斯的这些经历及雄辩口才，与拜登辩论时的卡壳、口吃和不知所云，将形成强烈反差，特朗普将遇到一个强劲的辩论对手。特别是，特朗普被定罪与哈里斯作为“检察官”的履历，如果进行辩论，很容易让人浮现起检察官“审判”犯人的画面。</p>
-<img src="https://www.pnglog.com/tOtZ5c.png" />
-
-
-
-<p><strong>哈里斯锁定党内提名已无悬念</strong></p>
-<p>​	哈里斯虽然得到拜登的全力支持，但是到目前为止，民主党内大佬、前总统奥巴马还没有明确表态。奥巴马在拜登退选后的一份声明中表示：“在接下来的几天里，我们将在未知的水域前行。但我非常有信心，我们党的领导人将能组织一个产生一位杰出候选人的过程。”显然，奥巴马对哈里斯并不满意。</p>
-<p>​	不过，好消息是，自拜登周日宣布退选后，民主党已经迅速集结在哈里斯周围，哈里斯也已获得了拜登的竞选资金，准备全力迎战特朗普。特别是没有在第一时间表态的民主党重量级人物——前议长佩洛西、参议院民主党领袖舒默和众议院民主党领袖杰弗里斯，已经在当地时间周一表态支持哈里斯。此外，所有民主党州长都已经表态支持哈里斯，密歇根州长惠特曼还自告奋勇担任哈里斯竞选团队的共同主席。</p>
-<p>​	鉴于民主党全国代表大会召开在即，留给民主党的时间已经不多了。特别是，俄亥俄州最早9月份就开始大选投票。根据该州法律，两党必须在8月7日前提交总统候选人名单。因此，民主党几乎没有时间就总统候选人进行内部详细讨论和公开角逐。果然，当地时间7月22日，哈里斯发表声明称已获得足够支持成为民主党总统候选人。</p>
-<img src="https://www.pnglog.com/vQyfIJ.png" style="zoom: 67%;" />
-
-
-
-<p><strong>哈里斯能否挽回民主党颓势？</strong></p>
-<p>​	哈里斯锁定党内总统候选人提名几无悬念，但是能否扭转民主党选举颓势，将是一个巨大的问号。实际上，从目前情况看，这似乎是一个无法完成的任务。</p>
-<p>​	首先，临阵换帅是兵家大忌。在距民主党全国代表大会召开不到一个月，距大选投票不足4个月之际，通过“逼宫”方式，迫使现任总统和党内总统候选人退选，无异于一场不流血的“政变”。这至少说明：第一，民主党对赢得此次大选几乎失去了信心，否则也不会铤而走险，出此下策。第二，民主党担心的不仅仅是失去白宫，更担心可能失去国会参议院多数席位及两院的控制权。</p>
-<p>​	逼退现任总统候选人，还会留下诸多“后遗症”。一是影响民主党内部团结。拜登在宣布退选的前一天还坚持不会退选，退选时声称是出于党派利益和国家利益退选，并对奥巴马等“幕后主使”心怀怨愤。奥巴马在拜登退选后特意没有选择公开支持哈里斯，以及佩洛西、舒默等人姗姗来迟的支持，都凸显民主党内部在这一问题上的分歧与矛盾。二是留给哈里斯的时间不多。哈里斯尽管位居副总统，但普遍认为她不在拜登的决策核心圈。哈里斯仓促上位，在短时间内团结本党、凝聚共识，组建竞选团队，提出竞选纲领，迎战特朗普，扭转民主党颓势，可谓时间紧、任务重，困难重重。</p>
-<p>​	其次，哈里斯是“矮子里面拔将军”。哈里斯近四年的副总统履历，并没有成为她的政治加分项，相反可能是负资产。哈里斯担任副总统期间，几乎没有拿得出手、哪怕是一项让美国民众能够印象深刻的政绩。相反，在美国民众的记忆里，满是哈里斯在公开场合不合时宜的“傻笑”、面对边境非法移民激增时的手足无措以及副总统办公室内“宫斗”的丑闻。就像特朗普在竞选集会上嘲讽的，近四年时间里，拜登只让哈里斯专注一件事，即应对边境非法移民问题，但她却完全搞砸了，非法移民长驱直入，让美国边境形同虚设。拿着这张成绩单的哈里斯，能否成为特朗普的“克星”和民主党的“救星”，让人捏把汗。</p>
-<p>​	最后，特朗普风头正健。至少自去年底以来，无论是全国性民调，还是在6-7个关键摇摆州的民调，特朗普都稳定领先拜登。特别是今年4月以来美国大学校园抗议运动、6月27日拜登与特朗普的首场大选电视辩论以及7月13日特朗普在竞选中的遇刺事件，更是进一步拖累了拜登的人气，让民主党忧心如焚。特朗普遇刺后的诸多民调显示，人们对特朗普的正面印象有了较大幅度提升。据美国广播公司新闻和益普索的民调，在未遂暗杀和共和党全国代表大会之后，特朗普的支持率稳步上升，达到40%，创下了该机构四年来民意调查的最高支持率，而大多数美国人则希望总统拜登退出竞选。很多美国政治评论家甚至认为，特朗普在竞选中遇袭，已经将特朗普变成了一种政治符号，完成了对他选举的“加冕仪式”。尽管有些夸张，但特朗普遇袭及遇袭后特朗普在特勤人员簇拥下高举拳头、高呼“战斗”的“定型照”，无疑是今年大选最具冲击力的画面。</p>
-<p>​	哈里斯要挽回民主党选情颓势，可能难于上青天。但是，这并不意味着哈里斯就无计可施。如果哈里斯将矛头对准特朗普的人品、集中于特朗普的道德瑕疵，聚焦特朗普对美国选举制度和法治的践踏与不尊重，强调特朗普代表了富人和大公司的利益，把大选再次变成对特朗普的“公投”，或许还能给特朗普竞选造成一定干扰，给民主党赢得一些喘息空间。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>时政</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搜索引擎搜索技巧</title>
     <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<ol>
@@ -1710,8 +2040,9 @@
   <span style="color:#0077cc; font-weight:bold;">作者: 戴暄哲</span><br>
   日期: 2024年6月
 </p>
+### 一、设计目标
 
-<h3 id="一、设计目标"><a href="#一、设计目标" class="headerlink" title="一、设计目标"></a>一、设计目标</h3><p>设计一个密码锁系统，包含以下功能：</p>
+<p>设计一个密码锁系统，包含以下功能：</p>
 <ol>
 <li><strong>初始化密码</strong> - 使用74LS138设置初始化密码。</li>
 <li><strong>用户输入密码</strong> - 使用74LS151选择用户输入的密码。</li>
@@ -1831,7 +2162,7 @@
 <h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
 
 <p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
-<p>用户：<a href="mailto:&#97;&#x64;&#109;&#105;&#110;&#x40;&#x65;&#x78;&#97;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#109;">&#97;&#x64;&#109;&#105;&#110;&#x40;&#x65;&#x78;&#97;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>用户：<a href="mailto:&#97;&#x64;&#x6d;&#105;&#x6e;&#64;&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;">&#97;&#x64;&#x6d;&#105;&#x6e;&#64;&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;</a></p>
 <p>密码：admin</p>
 <p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
@@ -1890,6 +2221,172 @@
       </categories>
       <tags>
         <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>详尽指南：在VMware中安装和配置Ubuntu</title>
+    <url>/2024/08/02/%E8%AF%A6%E5%B0%BD%E6%8C%87%E5%8D%97%EF%BC%9A%E5%9C%A8VMware%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEUbuntu/</url>
+    <content><![CDATA[<img src="https://pnglog.com/ZkLngk.jpg" style="zoom: 25%;" />
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="1-什么是Linux？"><a href="#1-什么是Linux？" class="headerlink" title="1. 什么是Linux？"></a>1. 什么是Linux？</h3><p>Linux是一种开源的操作系统，由Linus Torvalds于1991年首次发布。它基于Unix操作系统，并以其强大的稳定性、安全性和灵活性著称。Linux被广泛应用于服务器、桌面计算机、移动设备和嵌入式系统中。</p>
+<h3 id="2-常见的Linux发行版"><a href="#2-常见的Linux发行版" class="headerlink" title="2. 常见的Linux发行版"></a>2. 常见的Linux发行版</h3><p>Linux发行版是将Linux内核与其他软件（如系统工具、图形用户界面、应用程序等）打包在一起的操作系统。以下是几种常见的Linux发行版及其优缺点：</p>
+<h4 id="2-1-Ubuntu"><a href="#2-1-Ubuntu" class="headerlink" title="2.1 Ubuntu"></a>2.1 Ubuntu</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>易于使用</strong>：Ubuntu具有用户友好的图形界面，适合Linux初学者。</li>
+<li><strong>广泛的社区支持</strong>：拥有大量的用户和开发者，遇到问题时可以很容易地找到解决方案。</li>
+<li><strong>定期更新</strong>：每六个月发布一个新的版本，提供最新的软件和功能。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>系统资源占用</strong>：相比一些轻量级发行版，Ubuntu对系统资源的需求更高。</li>
+</ul>
+<h4 id="2-2-CentOS"><a href="#2-2-CentOS" class="headerlink" title="2.2 CentOS"></a>2.2 CentOS</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>稳定性高</strong>：基于Red Hat Enterprise Linux（RHEL），适用于企业级应用。</li>
+<li><strong>长期支持</strong>：每个版本都有长达十年的支持期，适合生产环境。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>软件包较旧</strong>：为了保证稳定性，CentOS的软件包版本较旧，不适合需要最新软件的用户。</li>
+</ul>
+<h4 id="2-3-Fedora"><a href="#2-3-Fedora" class="headerlink" title="2.3 Fedora"></a>2.3 Fedora</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>前沿技术</strong>：提供最新的技术和软件，适合开发者和技术爱好者。</li>
+<li><strong>社区驱动</strong>：由社区主导开发，开放性强。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>更新频繁</strong>：版本更新周期短（约六个月），可能不适合需要长期稳定的用户。</li>
+</ul>
+<h4 id="2-4-Debian"><a href="#2-4-Debian" class="headerlink" title="2.4 Debian"></a>2.4 Debian</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>稳定可靠</strong>：经过严格测试的软件包，适合服务器和生产环境。</li>
+<li><strong>丰富的软件库</strong>：拥有超过50000个软件包，几乎可以满足所有需求。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>安装和配置较复杂</strong>：相比Ubuntu，Debian的安装和配置过程对新手来说不够友好。</li>
+</ul>
+<h3 id="3-为什么选择Ubuntu？"><a href="#3-为什么选择Ubuntu？" class="headerlink" title="3. 为什么选择Ubuntu？"></a>3. 为什么选择Ubuntu？</h3><p>对于初学者和普通用户来说，Ubuntu是一个理想的选择。其易用性、广泛的社区支持以及定期的更新使其成为个人和企业用户的首选。此外，Ubuntu还提供了丰富的软件资源和文档支持，帮助用户更快地上手和解决问题。</p>
+<h2 id="1-在VMware中安装Ubuntu"><a href="#1-在VMware中安装Ubuntu" class="headerlink" title="1. 在VMware中安装Ubuntu"></a>1. 在VMware中安装Ubuntu</h2><h3 id="1-1-准备工作"><a href="#1-1-准备工作" class="headerlink" title="1.1 准备工作"></a>1.1 准备工作</h3><p>在开始之前，需要准备以下材料：</p>
+<ul>
+<li>VMware Workstation</li>
+<li>Ubuntu ISO镜像文件，可以从<a href="https://ubuntu.com/download">Ubuntu官网</a>下载</li>
+<li>Xshell 7和Xftp 7</li>
+</ul>
+<h3 id="1-2-创建新的虚拟机"><a href="#1-2-创建新的虚拟机" class="headerlink" title="1.2 创建新的虚拟机"></a>1.2 创建新的虚拟机</h3><ol>
+<li>打开VMware Workstation，点击“新建虚拟机”（New Virtual Machine）。</li>
+<li>选择“典型（推荐）”（Typical (recommended)），点击“下一步”。</li>
+<li>选择“安装程序光盘映像文件（iso）”（Installer disc image file (iso)），然后点击“浏览”并选择之前下载的Ubuntu ISO文件，点击“下一步”。</li>
+<li>选择操作系统版本。一般来说，VMware会自动检测Ubuntu版本。如果未能自动检测，请手动选择对应版本。</li>
+<li>为虚拟机命名并选择安装位置，点击“下一步”。</li>
+<li>设置虚拟机的磁盘大小。默认值一般为20GB，可以根据需要调整。选择“将虚拟磁盘存储为单个文件”，点击“下一步”。</li>
+<li>点击“完成”，创建虚拟机。</li>
+</ol>
+<h3 id="1-3-安装Ubuntu"><a href="#1-3-安装Ubuntu" class="headerlink" title="1.3 安装Ubuntu"></a>1.3 安装Ubuntu</h3><ol>
+<li>启动新创建的虚拟机，Ubuntu安装程序将自动启动。</li>
+<li>选择安装语言，点击“安装Ubuntu”。</li>
+<li>选择键盘布局，点击“继续”。</li>
+<li>选择安装类型。可以选择“正常安装”或“最小安装”，根据需求选择即可。</li>
+<li>在“其他选项”中，选择是否下载更新和第三方软件，点击“继续”。</li>
+<li>选择安装类型。一般选择“擦除磁盘并安装Ubuntu”，点击“安装现在”。</li>
+<li>确认分区设置，点击“继续”。</li>
+<li>设置时区，点击“继续”。</li>
+<li>设置用户名、计算机名和密码，点击“继续”。</li>
+<li>等待安装完成，点击“重新启动”即可完成安装。</li>
+</ol>
+<h2 id="2-Ubuntu基本配置"><a href="#2-Ubuntu基本配置" class="headerlink" title="2. Ubuntu基本配置"></a>2. Ubuntu基本配置</h2><h3 id="2-1-更新系统"><a href="#2-1-更新系统" class="headerlink" title="2.1 更新系统"></a>2.1 更新系统</h3><p>安装完成后，首先需要更新系统软件包：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-安装常用软件"><a href="#2-2-安装常用软件" class="headerlink" title="2.2 安装常用软件"></a>2.2 安装常用软件</h3><p>可以根据需要安装一些常用的软件，如Git、Vim、Curl等：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install git vim curl -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3-配置SSH连接"><a href="#2-3-配置SSH连接" class="headerlink" title="2.3 配置SSH连接"></a>2.3 配置SSH连接</h3><p>使用Xshell 7和Xftp 7进行SSH连接和文件传输。</p>
+<h4 id="2-3-1-安装SSH服务"><a href="#2-3-1-安装SSH服务" class="headerlink" title="2.3.1 安装SSH服务"></a>2.3.1 安装SSH服务</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install openssh-server -y</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> ssh</span><br><span class="line"><span class="built_in">sudo</span> systemctl start ssh</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-3-2-使用Xshell-7连接"><a href="#2-3-2-使用Xshell-7连接" class="headerlink" title="2.3.2 使用Xshell 7连接"></a>2.3.2 使用Xshell 7连接</h4><ol>
+<li>打开Xshell 7，点击“新建会话”。</li>
+<li>输入会话名称，并在“主机”栏输入虚拟机的IP地址。</li>
+<li>在“用户身份验证”中输入用户名和密码，点击“连接”。</li>
+<li>成功连接后，可以在Xshell中管理和操作Ubuntu系统。</li>
+</ol>
+<h4 id="2-3-3-使用Xftp-7传输文件"><a href="#2-3-3-使用Xftp-7传输文件" class="headerlink" title="2.3.3 使用Xftp 7传输文件"></a>2.3.3 使用Xftp 7传输文件</h4><ol>
+<li>打开Xftp 7，点击“新建会话”。</li>
+<li>输入会话名称，并在“主机”栏输入虚拟机的IP地址。</li>
+<li>在“用户身份验证”中输入用户名和密码，点击“连接”。</li>
+<li>成功连接后，可以在Xftp中进行文件的上传和下载。</li>
+</ol>
+<h3 id="2-4-配置防火墙"><a href="#2-4-配置防火墙" class="headerlink" title="2.4 配置防火墙"></a>2.4 配置防火墙</h3><p>为了提高系统安全性，可以配置防火墙：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ufw -y</span><br><span class="line"><span class="built_in">sudo</span> ufw allow OpenSSH</span><br><span class="line"><span class="built_in">sudo</span> ufw <span class="built_in">enable</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-常用命令"><a href="#3-常用命令" class="headerlink" title="3. 常用命令"></a>3. 常用命令</h2><h3 id="3-1-文件和目录操作"><a href="#3-1-文件和目录操作" class="headerlink" title="3.1 文件和目录操作"></a>3.1 文件和目录操作</h3><ul>
+<li>列出目录内容：<code>ls</code></li>
+<li>切换目录：<code>cd</code></li>
+<li>创建目录：<code>mkdir</code></li>
+<li>删除文件或目录：<code>rm</code>（使用<code>rm -r</code>删除目录及其内容）</li>
+<li>复制文件或目录：<code>cp</code></li>
+<li>移动或重命名文件或目录：<code>mv</code></li>
+</ul>
+<h3 id="3-2-系统管理"><a href="#3-2-系统管理" class="headerlink" title="3.2 系统管理"></a>3.2 系统管理</h3><ul>
+<li>查看磁盘使用情况：<code>df -h</code></li>
+<li>查看内存使用情况：<code>free -h</code></li>
+<li>查看系统信息：<code>uname -a</code></li>
+<li>查看当前运行的进程：<code>ps aux</code></li>
+<li>杀死进程：<code>kill [PID]</code></li>
+</ul>
+<h3 id="3-3-网络操作"><a href="#3-3-网络操作" class="headerlink" title="3.3 网络操作"></a>3.3 网络操作</h3><ul>
+<li>查看网络接口信息：<code>ip a</code></li>
+<li>测试网络连通性：<code>ping [IP/域名]</code></li>
+<li>查看路由表：<code>ip route</code></li>
+<li>下载文件：<code>wget [URL]</code> 或 <code>curl -O [URL]</code></li>
+</ul>
+<h3 id="3-4-软件管理"><a href="#3-4-软件管理" class="headerlink" title="3.4 软件管理"></a>3.4 软件管理</h3><ul>
+<li>安装软件包：<code>sudo apt install [包名]</code></li>
+<li>卸载软件包：<code>sudo apt remove [包名]</code></li>
+<li>搜索软件包：<code>apt search [关键字]</code></li>
+<li>更新软件包列表：<code>sudo apt update</code></li>
+<li>升级已安装的软件包：<code>sudo apt upgrade</code></li>
+</ul>
+<h3 id="3-5-权限管理"><a href="#3-5-权限管理" class="headerlink" title="3.5 权限管理"></a>3.5 权限管理</h3><ul>
+<li>修改文件权限：<code>chmod [权限] [文件]</code></li>
+<li>修改文件所属用户和用户组：<code>chown [用户]:[用户组] [文件]</code></li>
+<li>查看文件权限：<code>ls -l</code></li>
+</ul>
+<h2 id="4-高级配置"><a href="#4-高级配置" class="headerlink" title="4. 高级配置"></a>4. 高级配置</h2><h3 id="4-1-配置静态IP"><a href="#4-1-配置静态IP" class="headerlink" title="4.1 配置静态IP"></a>4.1 配置静态IP</h3><p>编辑网络配置文件以配置静态IP：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/netplan/01-netcfg.yaml</span><br></pre></td></tr></table></figure>
+
+<p>在文件中添加以下内容：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">network:</span></span><br><span class="line">  <span class="attr">version:</span> <span class="number">2</span></span><br><span class="line">  <span class="attr">ethernets:</span></span><br><span class="line">    <span class="attr">ens33:</span></span><br><span class="line">      <span class="attr">dhcp4:</span> <span class="literal">no</span></span><br><span class="line">      <span class="attr">addresses:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.100</span><span class="string">/24</span></span><br><span class="line">      <span class="attr">gateway4:</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span></span><br><span class="line">      <span class="attr">nameservers:</span></span><br><span class="line">        <span class="attr">addresses:</span> [<span class="number">8.8</span><span class="number">.8</span><span class="number">.8</span>, <span class="number">8.8</span><span class="number">.4</span><span class="number">.4</span>]</span><br></pre></td></tr></table></figure>
+
+<p>保存并应用配置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> netplan apply</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-安装和配置防火墙"><a href="#4-2-安装和配置防火墙" class="headerlink" title="4.2 安装和配置防火墙"></a>4.2 安装和配置防火墙</h3><p>除了前面提到的UFW，可以选择更高级的防火墙如<code>iptables</code>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install iptables -y</span><br></pre></td></tr></table></figure>
+
+<p>配置规则（以下为示例规则）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -p tcp --dport 22 -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -p icmp -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -i lo -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -P INPUT DROP</span><br></pre></td></tr></table></figure>
+
+<p>保存规则：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> iptables-save &gt; /etc/iptables/rules.v4</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-常见问题和解决方法"><a href="#5-常见问题和解决方法" class="headerlink" title="5. 常见问题和解决方法"></a>5. 常见问题和解决方法</h2><h3 id="5-1-虚拟机网络连接问题"><a href="#5-1-虚拟机网络连接问题" class="headerlink" title="5.1 虚拟机网络连接问题"></a>5.1 虚拟机网络连接问题</h3><p>如果遇到虚拟机无法连接网络的问题，可以尝试以下步骤：</p>
+<ul>
+<li>检查虚拟机的网络适配器设置是否正确。</li>
+<li>尝试重启网络服务：<code>sudo systemctl restart networking</code></li>
+<li>确保VMware的虚拟网络编辑器配置正确。</li>
+</ul>
+<h3 id="5-2-无法启动虚拟机"><a href="#5-2-无法启动虚拟机" class="headerlink" title="5.2 无法启动虚拟机"></a>5.2 无法启动虚拟机</h3><p>如果虚拟机无法启动，可能是由于磁盘空间不足或配置文件损坏。可以尝试以下步骤：</p>
+<ul>
+<li>检查宿主机的磁盘空间是否足够。</li>
+<li>尝试修复虚拟机配置：打开VMware并选择“修复”（Repair）选项。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -2310,169 +2807,35 @@
       </tags>
   </entry>
   <entry>
-    <title>详尽指南：在VMware中安装和配置Ubuntu</title>
-    <url>/2024/08/02/%E8%AF%A6%E5%B0%BD%E6%8C%87%E5%8D%97%EF%BC%9A%E5%9C%A8VMware%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEUbuntu/</url>
-    <content><![CDATA[<img src="https://pnglog.com/ZkLngk.jpg" style="zoom: 25%;" />
-
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="1-什么是Linux？"><a href="#1-什么是Linux？" class="headerlink" title="1. 什么是Linux？"></a>1. 什么是Linux？</h3><p>Linux是一种开源的操作系统，由Linus Torvalds于1991年首次发布。它基于Unix操作系统，并以其强大的稳定性、安全性和灵活性著称。Linux被广泛应用于服务器、桌面计算机、移动设备和嵌入式系统中。</p>
-<h3 id="2-常见的Linux发行版"><a href="#2-常见的Linux发行版" class="headerlink" title="2. 常见的Linux发行版"></a>2. 常见的Linux发行版</h3><p>Linux发行版是将Linux内核与其他软件（如系统工具、图形用户界面、应用程序等）打包在一起的操作系统。以下是几种常见的Linux发行版及其优缺点：</p>
-<h4 id="2-1-Ubuntu"><a href="#2-1-Ubuntu" class="headerlink" title="2.1 Ubuntu"></a>2.1 Ubuntu</h4><p><strong>优点：</strong></p>
-<ul>
-<li><strong>易于使用</strong>：Ubuntu具有用户友好的图形界面，适合Linux初学者。</li>
-<li><strong>广泛的社区支持</strong>：拥有大量的用户和开发者，遇到问题时可以很容易地找到解决方案。</li>
-<li><strong>定期更新</strong>：每六个月发布一个新的版本，提供最新的软件和功能。</li>
-</ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li><strong>系统资源占用</strong>：相比一些轻量级发行版，Ubuntu对系统资源的需求更高。</li>
-</ul>
-<h4 id="2-2-CentOS"><a href="#2-2-CentOS" class="headerlink" title="2.2 CentOS"></a>2.2 CentOS</h4><p><strong>优点：</strong></p>
-<ul>
-<li><strong>稳定性高</strong>：基于Red Hat Enterprise Linux（RHEL），适用于企业级应用。</li>
-<li><strong>长期支持</strong>：每个版本都有长达十年的支持期，适合生产环境。</li>
-</ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li><strong>软件包较旧</strong>：为了保证稳定性，CentOS的软件包版本较旧，不适合需要最新软件的用户。</li>
-</ul>
-<h4 id="2-3-Fedora"><a href="#2-3-Fedora" class="headerlink" title="2.3 Fedora"></a>2.3 Fedora</h4><p><strong>优点：</strong></p>
-<ul>
-<li><strong>前沿技术</strong>：提供最新的技术和软件，适合开发者和技术爱好者。</li>
-<li><strong>社区驱动</strong>：由社区主导开发，开放性强。</li>
-</ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li><strong>更新频繁</strong>：版本更新周期短（约六个月），可能不适合需要长期稳定的用户。</li>
-</ul>
-<h4 id="2-4-Debian"><a href="#2-4-Debian" class="headerlink" title="2.4 Debian"></a>2.4 Debian</h4><p><strong>优点：</strong></p>
-<ul>
-<li><strong>稳定可靠</strong>：经过严格测试的软件包，适合服务器和生产环境。</li>
-<li><strong>丰富的软件库</strong>：拥有超过50000个软件包，几乎可以满足所有需求。</li>
-</ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li><strong>安装和配置较复杂</strong>：相比Ubuntu，Debian的安装和配置过程对新手来说不够友好。</li>
-</ul>
-<h3 id="3-为什么选择Ubuntu？"><a href="#3-为什么选择Ubuntu？" class="headerlink" title="3. 为什么选择Ubuntu？"></a>3. 为什么选择Ubuntu？</h3><p>对于初学者和普通用户来说，Ubuntu是一个理想的选择。其易用性、广泛的社区支持以及定期的更新使其成为个人和企业用户的首选。此外，Ubuntu还提供了丰富的软件资源和文档支持，帮助用户更快地上手和解决问题。</p>
-<h2 id="1-在VMware中安装Ubuntu"><a href="#1-在VMware中安装Ubuntu" class="headerlink" title="1. 在VMware中安装Ubuntu"></a>1. 在VMware中安装Ubuntu</h2><h3 id="1-1-准备工作"><a href="#1-1-准备工作" class="headerlink" title="1.1 准备工作"></a>1.1 准备工作</h3><p>在开始之前，需要准备以下材料：</p>
-<ul>
-<li>VMware Workstation</li>
-<li>Ubuntu ISO镜像文件，可以从<a href="https://ubuntu.com/download">Ubuntu官网</a>下载</li>
-<li>Xshell 7和Xftp 7</li>
-</ul>
-<h3 id="1-2-创建新的虚拟机"><a href="#1-2-创建新的虚拟机" class="headerlink" title="1.2 创建新的虚拟机"></a>1.2 创建新的虚拟机</h3><ol>
-<li>打开VMware Workstation，点击“新建虚拟机”（New Virtual Machine）。</li>
-<li>选择“典型（推荐）”（Typical (recommended)），点击“下一步”。</li>
-<li>选择“安装程序光盘映像文件（iso）”（Installer disc image file (iso)），然后点击“浏览”并选择之前下载的Ubuntu ISO文件，点击“下一步”。</li>
-<li>选择操作系统版本。一般来说，VMware会自动检测Ubuntu版本。如果未能自动检测，请手动选择对应版本。</li>
-<li>为虚拟机命名并选择安装位置，点击“下一步”。</li>
-<li>设置虚拟机的磁盘大小。默认值一般为20GB，可以根据需要调整。选择“将虚拟磁盘存储为单个文件”，点击“下一步”。</li>
-<li>点击“完成”，创建虚拟机。</li>
+    <title>软件定义网络SDN</title>
+    <url>/2024/10/26/%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9CSDN/</url>
+    <content><![CDATA[<p>软件定义网络（SDN）就像是网络世界的大脑和神经系统。就像大脑控制我们的身体一样，SDN的控制器控制着网络中的交换机和路由器等设备。这种网络架构的核心思想是将控制平面（负责决策数据如何传输）和数据平面（实际传输数据）分离开来。这样做的好处是，我们可以像编写程序一样来控制网络的行为，而不需要去手动配置每一个网络设备。</p>
+<h3 id="SDN的工作原理"><a href="#SDN的工作原理" class="headerlink" title="SDN的工作原理"></a>SDN的工作原理</h3><p>想象一下，网络就像一个繁忙的机场，飞机（数据包）需要按照控制塔（控制器）的指令来起飞和降落。在SDN中，控制器就是那个控制塔，它告诉网络设备（相当于机场跑道和导航系统）如何处理飞机的流量。这样，网络管理员可以通过控制器来监控和调整整个网络的流量，就像空中交通管制员一样。</p>
+<h3 id="SDN的优点"><a href="#SDN的优点" class="headerlink" title="SDN的优点"></a>SDN的优点</h3><ol>
+<li><strong>集中管理</strong>：网络管理员可以通过一个中央控制器来管理整个网络，这比去每个设备上进行配置要简单得多。</li>
+<li><strong>灵活性</strong>：网络可以根据需要快速调整，就像你可以根据交通情况调整道路的通行规则一样。</li>
+<li><strong>成本效益</strong>：由于减少了对专用硬件的依赖，SDN可以降低网络的建设和维护成本。</li>
+<li><strong>创新</strong>：开发者可以通过编程接口创建新的网络应用和服务，这促进了网络技术的创新。</li>
 </ol>
-<h3 id="1-3-安装Ubuntu"><a href="#1-3-安装Ubuntu" class="headerlink" title="1.3 安装Ubuntu"></a>1.3 安装Ubuntu</h3><ol>
-<li>启动新创建的虚拟机，Ubuntu安装程序将自动启动。</li>
-<li>选择安装语言，点击“安装Ubuntu”。</li>
-<li>选择键盘布局，点击“继续”。</li>
-<li>选择安装类型。可以选择“正常安装”或“最小安装”，根据需求选择即可。</li>
-<li>在“其他选项”中，选择是否下载更新和第三方软件，点击“继续”。</li>
-<li>选择安装类型。一般选择“擦除磁盘并安装Ubuntu”，点击“安装现在”。</li>
-<li>确认分区设置，点击“继续”。</li>
-<li>设置时区，点击“继续”。</li>
-<li>设置用户名、计算机名和密码，点击“继续”。</li>
-<li>等待安装完成，点击“重新启动”即可完成安装。</li>
+<h3 id="SDN的缺点"><a href="#SDN的缺点" class="headerlink" title="SDN的缺点"></a>SDN的缺点</h3><ol>
+<li><strong>安全风险</strong>：由于控制器集中了大量的控制权，如果控制器受到攻击，整个网络都可能受到影响。</li>
+<li><strong>兼容性问题</strong>：SDN需要与传统网络设备兼容，这可能需要额外的适配工作。</li>
+<li><strong>技术成熟度</strong>：虽然SDN的概念已经提出一段时间了，但在市场上的广泛应用还需要时间来成熟。</li>
 </ol>
-<h2 id="2-Ubuntu基本配置"><a href="#2-Ubuntu基本配置" class="headerlink" title="2. Ubuntu基本配置"></a>2. Ubuntu基本配置</h2><h3 id="2-1-更新系统"><a href="#2-1-更新系统" class="headerlink" title="2.1 更新系统"></a>2.1 更新系统</h3><p>安装完成后，首先需要更新系统软件包：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-2-安装常用软件"><a href="#2-2-安装常用软件" class="headerlink" title="2.2 安装常用软件"></a>2.2 安装常用软件</h3><p>可以根据需要安装一些常用的软件，如Git、Vim、Curl等：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install git vim curl -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-配置SSH连接"><a href="#2-3-配置SSH连接" class="headerlink" title="2.3 配置SSH连接"></a>2.3 配置SSH连接</h3><p>使用Xshell 7和Xftp 7进行SSH连接和文件传输。</p>
-<h4 id="2-3-1-安装SSH服务"><a href="#2-3-1-安装SSH服务" class="headerlink" title="2.3.1 安装SSH服务"></a>2.3.1 安装SSH服务</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install openssh-server -y</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> ssh</span><br><span class="line"><span class="built_in">sudo</span> systemctl start ssh</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-3-2-使用Xshell-7连接"><a href="#2-3-2-使用Xshell-7连接" class="headerlink" title="2.3.2 使用Xshell 7连接"></a>2.3.2 使用Xshell 7连接</h4><ol>
-<li>打开Xshell 7，点击“新建会话”。</li>
-<li>输入会话名称，并在“主机”栏输入虚拟机的IP地址。</li>
-<li>在“用户身份验证”中输入用户名和密码，点击“连接”。</li>
-<li>成功连接后，可以在Xshell中管理和操作Ubuntu系统。</li>
+<h3 id="SDN的编程接口"><a href="#SDN的编程接口" class="headerlink" title="SDN的编程接口"></a>SDN的编程接口</h3><p>SDN提供了两种主要的编程接口：</p>
+<ol>
+<li><p><strong>南向接口</strong>：这是控制器和网络设备之间的通信接口。最著名的南向接口协议是OpenFlow，它允许控制器告诉网络设备如何处理经过的数据包。这就像是给机场的导航系统下达指令，告诉它们如何引导飞机。</p>
+</li>
+<li><p><strong>北向接口</strong>：这是应用程序和控制器之间的通信接口。通过北向接口，开发者可以编写程序来控制网络的行为，比如创建虚拟网络或者实施安全策略。这就像是给空中交通管制员一个新工具，让他们能更有效地管理交通流量。</p>
+</li>
 </ol>
-<h4 id="2-3-3-使用Xftp-7传输文件"><a href="#2-3-3-使用Xftp-7传输文件" class="headerlink" title="2.3.3 使用Xftp 7传输文件"></a>2.3.3 使用Xftp 7传输文件</h4><ol>
-<li>打开Xftp 7，点击“新建会话”。</li>
-<li>输入会话名称，并在“主机”栏输入虚拟机的IP地址。</li>
-<li>在“用户身份验证”中输入用户名和密码，点击“连接”。</li>
-<li>成功连接后，可以在Xftp中进行文件的上传和下载。</li>
-</ol>
-<h3 id="2-4-配置防火墙"><a href="#2-4-配置防火墙" class="headerlink" title="2.4 配置防火墙"></a>2.4 配置防火墙</h3><p>为了提高系统安全性，可以配置防火墙：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ufw -y</span><br><span class="line"><span class="built_in">sudo</span> ufw allow OpenSSH</span><br><span class="line"><span class="built_in">sudo</span> ufw <span class="built_in">enable</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-常用命令"><a href="#3-常用命令" class="headerlink" title="3. 常用命令"></a>3. 常用命令</h2><h3 id="3-1-文件和目录操作"><a href="#3-1-文件和目录操作" class="headerlink" title="3.1 文件和目录操作"></a>3.1 文件和目录操作</h3><ul>
-<li>列出目录内容：<code>ls</code></li>
-<li>切换目录：<code>cd</code></li>
-<li>创建目录：<code>mkdir</code></li>
-<li>删除文件或目录：<code>rm</code>（使用<code>rm -r</code>删除目录及其内容）</li>
-<li>复制文件或目录：<code>cp</code></li>
-<li>移动或重命名文件或目录：<code>mv</code></li>
-</ul>
-<h3 id="3-2-系统管理"><a href="#3-2-系统管理" class="headerlink" title="3.2 系统管理"></a>3.2 系统管理</h3><ul>
-<li>查看磁盘使用情况：<code>df -h</code></li>
-<li>查看内存使用情况：<code>free -h</code></li>
-<li>查看系统信息：<code>uname -a</code></li>
-<li>查看当前运行的进程：<code>ps aux</code></li>
-<li>杀死进程：<code>kill [PID]</code></li>
-</ul>
-<h3 id="3-3-网络操作"><a href="#3-3-网络操作" class="headerlink" title="3.3 网络操作"></a>3.3 网络操作</h3><ul>
-<li>查看网络接口信息：<code>ip a</code></li>
-<li>测试网络连通性：<code>ping [IP/域名]</code></li>
-<li>查看路由表：<code>ip route</code></li>
-<li>下载文件：<code>wget [URL]</code> 或 <code>curl -O [URL]</code></li>
-</ul>
-<h3 id="3-4-软件管理"><a href="#3-4-软件管理" class="headerlink" title="3.4 软件管理"></a>3.4 软件管理</h3><ul>
-<li>安装软件包：<code>sudo apt install [包名]</code></li>
-<li>卸载软件包：<code>sudo apt remove [包名]</code></li>
-<li>搜索软件包：<code>apt search [关键字]</code></li>
-<li>更新软件包列表：<code>sudo apt update</code></li>
-<li>升级已安装的软件包：<code>sudo apt upgrade</code></li>
-</ul>
-<h3 id="3-5-权限管理"><a href="#3-5-权限管理" class="headerlink" title="3.5 权限管理"></a>3.5 权限管理</h3><ul>
-<li>修改文件权限：<code>chmod [权限] [文件]</code></li>
-<li>修改文件所属用户和用户组：<code>chown [用户]:[用户组] [文件]</code></li>
-<li>查看文件权限：<code>ls -l</code></li>
-</ul>
-<h2 id="4-高级配置"><a href="#4-高级配置" class="headerlink" title="4. 高级配置"></a>4. 高级配置</h2><h3 id="4-1-配置静态IP"><a href="#4-1-配置静态IP" class="headerlink" title="4.1 配置静态IP"></a>4.1 配置静态IP</h3><p>编辑网络配置文件以配置静态IP：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/netplan/01-netcfg.yaml</span><br></pre></td></tr></table></figure>
-
-<p>在文件中添加以下内容：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">network:</span></span><br><span class="line">  <span class="attr">version:</span> <span class="number">2</span></span><br><span class="line">  <span class="attr">ethernets:</span></span><br><span class="line">    <span class="attr">ens33:</span></span><br><span class="line">      <span class="attr">dhcp4:</span> <span class="literal">no</span></span><br><span class="line">      <span class="attr">addresses:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.100</span><span class="string">/24</span></span><br><span class="line">      <span class="attr">gateway4:</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span></span><br><span class="line">      <span class="attr">nameservers:</span></span><br><span class="line">        <span class="attr">addresses:</span> [<span class="number">8.8</span><span class="number">.8</span><span class="number">.8</span>, <span class="number">8.8</span><span class="number">.4</span><span class="number">.4</span>]</span><br></pre></td></tr></table></figure>
-
-<p>保存并应用配置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> netplan apply</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-2-安装和配置防火墙"><a href="#4-2-安装和配置防火墙" class="headerlink" title="4.2 安装和配置防火墙"></a>4.2 安装和配置防火墙</h3><p>除了前面提到的UFW，可以选择更高级的防火墙如<code>iptables</code>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install iptables -y</span><br></pre></td></tr></table></figure>
-
-<p>配置规则（以下为示例规则）：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -p tcp --dport 22 -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -p icmp -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -i lo -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -P INPUT DROP</span><br></pre></td></tr></table></figure>
-
-<p>保存规则：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> iptables-save &gt; /etc/iptables/rules.v4</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-常见问题和解决方法"><a href="#5-常见问题和解决方法" class="headerlink" title="5. 常见问题和解决方法"></a>5. 常见问题和解决方法</h2><h3 id="5-1-虚拟机网络连接问题"><a href="#5-1-虚拟机网络连接问题" class="headerlink" title="5.1 虚拟机网络连接问题"></a>5.1 虚拟机网络连接问题</h3><p>如果遇到虚拟机无法连接网络的问题，可以尝试以下步骤：</p>
-<ul>
-<li>检查虚拟机的网络适配器设置是否正确。</li>
-<li>尝试重启网络服务：<code>sudo systemctl restart networking</code></li>
-<li>确保VMware的虚拟网络编辑器配置正确。</li>
-</ul>
-<h3 id="5-2-无法启动虚拟机"><a href="#5-2-无法启动虚拟机" class="headerlink" title="5.2 无法启动虚拟机"></a>5.2 无法启动虚拟机</h3><p>如果虚拟机无法启动，可能是由于磁盘空间不足或配置文件损坏。可以尝试以下步骤：</p>
-<ul>
-<li>检查宿主机的磁盘空间是否足够。</li>
-<li>尝试修复虚拟机配置：打开VMware并选择“修复”（Repair）选项。</li>
-</ul>
+<p>总的来说，SDN就像是给网络管理员和开发者提供了一套强大的工具，让他们能够更智能、更灵活地管理网络。虽然它还有一些挑战需要克服，但SDN的潜力是巨大的，它正在逐渐改变我们对网络的理解和使用方式。</p>
 ]]></content>
       <categories>
-        <category>方法</category>
+        <category>杂谈</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>计算机网络</tag>
       </tags>
   </entry>
   <entry>
@@ -2528,114 +2891,5 @@
       <tags>
         <tag>AI</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>软件定义网络SDN</title>
-    <url>/2024/10/26/%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9CSDN/</url>
-    <content><![CDATA[<p>软件定义网络（SDN）就像是网络世界的大脑和神经系统。就像大脑控制我们的身体一样，SDN的控制器控制着网络中的交换机和路由器等设备。这种网络架构的核心思想是将控制平面（负责决策数据如何传输）和数据平面（实际传输数据）分离开来。这样做的好处是，我们可以像编写程序一样来控制网络的行为，而不需要去手动配置每一个网络设备。</p>
-<h3 id="SDN的工作原理"><a href="#SDN的工作原理" class="headerlink" title="SDN的工作原理"></a>SDN的工作原理</h3><p>想象一下，网络就像一个繁忙的机场，飞机（数据包）需要按照控制塔（控制器）的指令来起飞和降落。在SDN中，控制器就是那个控制塔，它告诉网络设备（相当于机场跑道和导航系统）如何处理飞机的流量。这样，网络管理员可以通过控制器来监控和调整整个网络的流量，就像空中交通管制员一样。</p>
-<h3 id="SDN的优点"><a href="#SDN的优点" class="headerlink" title="SDN的优点"></a>SDN的优点</h3><ol>
-<li><strong>集中管理</strong>：网络管理员可以通过一个中央控制器来管理整个网络，这比去每个设备上进行配置要简单得多。</li>
-<li><strong>灵活性</strong>：网络可以根据需要快速调整，就像你可以根据交通情况调整道路的通行规则一样。</li>
-<li><strong>成本效益</strong>：由于减少了对专用硬件的依赖，SDN可以降低网络的建设和维护成本。</li>
-<li><strong>创新</strong>：开发者可以通过编程接口创建新的网络应用和服务，这促进了网络技术的创新。</li>
-</ol>
-<h3 id="SDN的缺点"><a href="#SDN的缺点" class="headerlink" title="SDN的缺点"></a>SDN的缺点</h3><ol>
-<li><strong>安全风险</strong>：由于控制器集中了大量的控制权，如果控制器受到攻击，整个网络都可能受到影响。</li>
-<li><strong>兼容性问题</strong>：SDN需要与传统网络设备兼容，这可能需要额外的适配工作。</li>
-<li><strong>技术成熟度</strong>：虽然SDN的概念已经提出一段时间了，但在市场上的广泛应用还需要时间来成熟。</li>
-</ol>
-<h3 id="SDN的编程接口"><a href="#SDN的编程接口" class="headerlink" title="SDN的编程接口"></a>SDN的编程接口</h3><p>SDN提供了两种主要的编程接口：</p>
-<ol>
-<li><p><strong>南向接口</strong>：这是控制器和网络设备之间的通信接口。最著名的南向接口协议是OpenFlow，它允许控制器告诉网络设备如何处理经过的数据包。这就像是给机场的导航系统下达指令，告诉它们如何引导飞机。</p>
-</li>
-<li><p><strong>北向接口</strong>：这是应用程序和控制器之间的通信接口。通过北向接口，开发者可以编写程序来控制网络的行为，比如创建虚拟网络或者实施安全策略。这就像是给空中交通管制员一个新工具，让他们能更有效地管理交通流量。</p>
-</li>
-</ol>
-<p>总的来说，SDN就像是给网络管理员和开发者提供了一套强大的工具，让他们能够更智能、更灵活地管理网络。虽然它还有一些挑战需要克服，但SDN的潜力是巨大的，它正在逐渐改变我们对网络的理解和使用方式。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DeepSeek 多模态大模型Janus-Pro-7B本地部署教程</title>
-    <url>/2025/02/01/DeepSeek-%E5%A4%9A%E6%A8%A1%E6%80%81%E5%A4%A7%E6%A8%A1%E5%9E%8BJanus-Pro-7B%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p>DeepSeek 又深夜发大招！开源了多模态大模型Janus-Pro-7B，普通电脑可以直接安装使用，现在我们就来本地部署！支持图像识别和图像生成，性能非常强悍！</p>
-<img src="https://www.pnglog.com/iQKeC5.png" />
-
-<p>1、检查自己是否安装了 Git 和 conda ，如果没有安装，请点击前往下载【<a href="https://git-scm.com/">Git</a>】和 【<a href="https://www.anaconda.com/download">Conda</a>】</p>
-<p>2、创建虚拟环境</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n myenvp python=3.10 -y</span><br></pre></td></tr></table></figure>
-
-<p>3、激活 Conda 环境</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate myenvp</span><br></pre></td></tr></table></figure>
-
-<p>4、克隆 Janus 项目</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/deepseek-ai/Janus.git</span><br></pre></td></tr></table></figure>
-
-<p>5、进入 Janus 目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> Janus</span><br></pre></td></tr></table></figure>
-
-<p>6、安装 Janus 依赖</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install -e .</span><br></pre></td></tr></table></figure>
-
-<p>7、安装 Gradio（UI）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install gradio</span><br><span class="line"></span><br><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line"></span><br><span class="line">pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
-
-<p>8、运行 Janus Pro UI</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python demo/app_januspro.py</span><br></pre></td></tr></table></figure>
-
-<p>或强行调用GPU运行（速度更快）：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python demo/app_januspro.py --device cuda</span><br></pre></td></tr></table></figure>
-
-<p>安装完成以后，根据提示打开本地链接：<a href="http://127.0.0.1:7860/">http://127.0.0.1:7860</a> 即可进入到使用面板</p>
-<img src="https://www.pnglog.com/haprzz.png"/>
-
-<p>下方就是文生图功能：</p>
-<img src="https://www.pnglog.com/z7ait8.png" />
-
-<p><strong>退出以后该如何启动？ 按下方的步骤即可：</strong></p>
-<p>1、激活 Conda 虚拟环境</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate myenvp</span><br></pre></td></tr></table></figure>
-
-<p>2、进入安装目录：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> Janus</span><br></pre></td></tr></table></figure>
-
-<p>3、运行 Janus UI：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python demo/app_januspro.py</span><br></pre></td></tr></table></figure>
-
-<p>如果需要指定 GPU：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python demo/app_januspro.py --device cuda</span><br></pre></td></tr></table></figure>
-
-<p>当然如果你的电脑硬件过低，或者显卡不支持，那么可以使用免费的在线平台进行使用</p>
-<p>【<a href="https://huggingface.co/spaces/deepseek-ai/Janus-1.3B">点击前往</a>】</p>
-<p>免费的在线平台是托管在Huggingface上的，使用的是共享GPU，在线人多的时候，可能会比较卡！</p>
-]]></content>
-      <categories>
-        <category>科技</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在废墟上跳舞：论当代青年的生存美学革命</title>
-    <url>/2025/01/17/%E5%9C%A8%E5%BA%9F%E5%A2%9F%E4%B8%8A%E8%B7%B3%E8%88%9E%EF%BC%9A%E8%AE%BA%E5%BD%93%E4%BB%A3%E9%9D%92%E5%B9%B4%E7%9A%84%E7%94%9F%E5%AD%98%E7%BE%8E%E5%AD%A6%E9%9D%A9%E5%91%BD/</url>
-    <content><![CDATA[<p>​	在深圳某科技园区的格子间里，25岁的程序员李明在完成当天第12次代码提交后，平静地关闭了价值两万元的顶配笔记本电脑。这个动作的仪式感不亚于中世纪修士合上羊皮经卷——前者结束的是对数字世界的虔诚侍奉，后者终止的是对神圣彼岸的永恒追求。当996工作制的机械循环成为新时代的苦修，当婚恋市场的估值体系异化为情感交易所的K线图，中国Z世代正在用”躺平”构建抵抗异化的精神堡垒，以”单身”书写拒绝被规训的生命宣言。这不是颓废的溃败，而是一场静默的革命，是后现代语境下青年群体对生命政治最深刻的哲学回应。</p>
-<h3 id="一、规训社会的全景敞视与自我放逐"><a href="#一、规训社会的全景敞视与自我放逐" class="headerlink" title="一、规训社会的全景敞视与自我放逐"></a>一、规训社会的全景敞视与自我放逐</h3><p>​	福柯笔下的”全景敞视监狱”在数字时代获得了终极进化形态。算法推荐系统比任何狱卒都更精于心理操控，社交媒体的点赞机制重构了人的奖赏回路，绩效社会的KPI体系将存在价值量化为Excel表格里的数字。上海某高校调查显示，93%的大学生手机日均使用时间超过8小时，其中67%承认会因未及时回复消息产生焦虑。这种自我规训的完成度，甚至超越了边沁圆形监狱设计者的想象。</p>
-<p>​	当北京五道口的创业咖啡馆里仍在上演”三年上市”的资本神话时，城中村的出租屋里正滋长着新型生活哲学。广州”三和大神”现象绝非简单的堕落叙事，那些日结工资、网吧过夜的青年，用身体实践解构着”勤劳致富”的资本主义伦理。就像本雅明在《历史哲学论纲》中描绘的”新天使”，他们背对未来进步的风暴，凝视着堆积如山的现代性废墟。</p>
-<p>​	深圳”数字游民”社群的出现，标志着抵抗形式从消极逃避转向主动建构。这些精通Python和区块链技术的年轻人，拒绝成为科技巨头的人肉电池，转而用去中心化工具搭建分布式协作网络。他们在GitHub上开源自己的人生代码，用DAO（去中心化自治组织）重构劳动伦理，将马克思的”自由人联合体”构想写入智能合约。</p>
-<h3 id="二、亲密关系的祛魅与孤独美学"><a href="#二、亲密关系的祛魅与孤独美学" class="headerlink" title="二、亲密关系的祛魅与孤独美学"></a>二、亲密关系的祛魅与孤独美学</h3><p>​	上海人民公园相亲角的价目表，量化着从学区房到生肖属相的婚恋估值体系。当情感被异化为资产负债表上的待合并项目，年轻人开始用”母胎solo”的黑色幽默解构婚恋市场的荒谬。北京某985高校调查显示，68%的95后认为”婚姻不是人生必选项”，这个数字较十年前翻了三倍。这不是爱的消亡，而是对情感商品化的集体罢工。</p>
-<p>​	日本”无缘社会”的预言在中国显影为新型社交图谱。重庆的剧本杀门店里，陌生人通过角色扮演建构临时亲密关系；B站的弹幕池中，孤独的个体用段子代码完成情感共振。这些瞬息即逝的联结，恰似德里达笔下的”延异”游戏——在能指链的滑动中，我们获得的不是稳定的意义，而是在场与缺席的永恒嬉戏。</p>
-<p>​	广州城中村的”一人食”餐厅里，年轻食客们用食物语系重构存在仪式。从《孤独的美食家》到《小森林》，独处美学正在解构”团圆饭”的集体主义叙事。这种对孤独的审美化处理，暗合海德格尔”向死而生”的存在主义哲思——在彻底个体化的生存境遇中，每个灵魂都是自我宇宙的立法者。</p>
-<h3 id="三、意义重构的星丛与游牧主体"><a href="#三、意义重构的星丛与游牧主体" class="headerlink" title="三、意义重构的星丛与游牧主体"></a>三、意义重构的星丛与游牧主体</h3><p>​	当海淀家长还在为”鸡娃”策略争论不休时，大理的数字游民社区正上演着教育革命。区块链技术支持的”分布式大学”里，知识以NFT形式确权，慕课（MOOC）系统演化成DAO治理的学习共同体。这些逃离”内卷”的青年，用Web3.0技术将福柯的”自我技术”推向新维度。他们不再是规训社会的产物，而是成为自己存在的创作者。</p>
-<p>​	西安古城墙下的后备箱市集，流动着后现代消费主义的诗学。手冲咖啡的香气与3D打印机的嗡鸣交织，汉服少女的团扇轻拂过无人机操作屏。这些看似违和的拼贴，实则是本雅明”辩证意象”的当代显形——在商品拜物教的废墟上，青年文化正进行着本真性的考古发掘。</p>
-<p>​	郑州”7·20”暴雨中的”救命文档”，意外揭示了数字原住民的时代精神。这个由95后创建的在线协作表格，在24小时内迭代出487个版本，拯救了无数生命。当技术从异化工具转变为救赎媒介，齐泽克预言的”意识形态崇高客体”获得了革命性反转——云端的比特洪流中，闪耀着共产主义幽灵的当代形态。</p>
-<p>​	在这个加速主义与末日情结并置的时代，中国青年正在发明新的生存语法。他们不是垮掉的一代，而是清醒的漫游者；不是犬儒主义的俘虏，而是辩证法的魔术师。当存在主义危机转化为创造性能量，当原子化个体重组为数字共产主义细胞，这场静默的革命终将在现代性废墟上绽放出异样的花朵。或许正如阿多诺所说，在错误的生活中不存在正确的生活——但总有舞者能在铁屋的阴影里，踩出自由的节拍。</p>
-]]></content>
   </entry>
 </search>
