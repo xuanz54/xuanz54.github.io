@@ -62,249 +62,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git的使用</title>
-    <url>/2024/07/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="Git-与-GitHub"><a href="#Git-与-GitHub" class="headerlink" title="Git 与 GitHub"></a>Git 与 GitHub</h1><h2 id="Git-的起源"><a href="#Git-的起源" class="headerlink" title="Git 的起源"></a>Git 的起源</h2><h4 id="“自由主义-开源-教皇”-林纳斯·托瓦兹"><a href="#“自由主义-开源-教皇”-林纳斯·托瓦兹" class="headerlink" title="“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹"></a>“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹</h4><ul>
-<li>Linux</li>
-<li>Git</li>
-</ul>
-<h4 id="Git-是什么？"><a href="#Git-是什么？" class="headerlink" title="Git 是什么？"></a>Git 是什么？</h4><ul>
-<li>Git 是目前世界上最先进的<font color='red'>分布式</font>版本控制工具( 没有之一 )</li>
-</ul>
-<h2 id="Git-的使用"><a href="#Git-的使用" class="headerlink" title="Git 的使用"></a>Git 的使用</h2><h4 id="Git-的安装"><a href="#Git-的安装" class="headerlink" title="Git 的安装"></a>Git 的安装</h4><ul>
-<li><p>Windows git 下载地址 :</p>
-<ol>
-<li><a href="https://git-scm.com/download/win">Git - Downloading Package (git-scm.com)</a></li>
-<li>下载 -&gt; 默认选项安装</li>
-<li>桌面右键 点击 <code>Git Bash Here</code>  即可看到一个终端窗口</li>
-<li>在终端内输入 git –version 如果看到版本信息即安装成功</li>
-</ol>
-</li>
-<li><p>安装完成后，需要最后一步设置，在终端内输入(<font color='red'><strong>不要复制 英文输入法下手打</strong></font>)</p>
-<ol>
-<li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
-</li>
-<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#x65;&#x6d;&#x61;&#105;&#108;&#64;&#x78;&#120;&#x78;&#46;&#99;&#x6f;&#109;">&#x65;&#x6d;&#x61;&#105;&#108;&#64;&#x78;&#120;&#x78;&#46;&#99;&#x6f;&#109;</a></strong></font>“</p>
-<p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
-</li>
-<li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
-</li>
-<li><p><font color='blue'><strong>git config user.email</strong></font> 用于查看配置的邮箱</p>
-</li>
-<li><p>因为 Git 是分布式版本控制系统，所以每个机器必须配置：用户名和email地址</p>
-</li>
-</ol>
-</li>
-</ul>
-<h4 id="常用-Linux命令-部分"><a href="#常用-Linux命令-部分" class="headerlink" title="常用 Linux命令( 部分 )"></a>常用 Linux命令( 部分 )</h4><ul>
-<li>mkdir xxx 新建文件夹</li>
-<li>vi x.txt 新建&#x2F;编辑一个名为 x 的 txt 文件<ul>
-<li>输入 i 进入编辑模式</li>
-<li>Esc + : +wq    保存并退出</li>
-<li>Esc + : + q!     不保存退出</li>
-</ul>
-</li>
-<li>cd xxx 进入一个名为 xxx 的文件夹</li>
-<li>cd .. 返回上一级目录</li>
-<li>ls 列出当前文件夹所有的文件</li>
-<li>pwd 显示当前目录</li>
-<li>cat x.txt 显示 名为 x 的 txt 文件的内容</li>
-<li>clear 清屏( 需要注意 : cmd 控制台中 cls 为清屏  )</li>
-</ul>
-<h4 id="工作区-版本区-暂存区"><a href="#工作区-版本区-暂存区" class="headerlink" title="工作区+版本区+暂存区"></a>工作区+版本区+暂存区</h4><ul>
-<li>工作区 ( working Directory ) : 简单的理解 —— 你在电脑中能看到的目录</li>
-<li>暂存区 ( stage ) : 介于 工作区 和 版本区 中间，是工作区到版本区的必经之路</li>
-<li>版本库 ( Repository ) : 工作区有一个隐藏目录 .git ,这个文件夹不算工作区，而是 Git 的版本库<ul>
-<li>第一步 : git add   把文件添加进暂存区</li>
-<li>第二步 : git commit  把暂存区的所有内容提交到当前版本库</li>
-</ul>
-</li>
-</ul>
-<h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><ul>
-<li><p><font color='pink' ><strong>git init</strong> </font>命令 : 初始化版本库</p>
-<ul>
-<li>创建成功会提示 : <font color='yellowgreen'><strong>Initialized empty Git repository in C:&#x2F;Users&#x2F;31195&#x2F;Desktop&#x2F;xxx&#x2F;.git&#x2F;</strong></font></li>
-<li>目录上会多一个 .git 的文件夹( 没有显示的请打开 显示隐藏文件 )，这个文件夹是 Git 来跟踪管理版本库的，不要去修改&#x2F;删除里面的内容</li>
-</ul>
-</li>
-<li><p><font color = 'pink'><strong>git add x.xx</strong></font> 命令 : 添加指定文件到暂存区</p>
-<ul>
-<li>没有任何提示，代表提交成功( Linux的设计理念 )</li>
-<li>若未初始化，则会提示: <font color='red'><strong>fatal: not a git repository (or any of the parent directories): .git</strong></font></li>
-<li>失败则会提示 : <font color='red'><strong>fatal: pathspec ‘x.xx’ did not match any files</strong></font></li>
-<li>可能出现：<font color='red'><strong>warning: LF will be replaced by CRLF in xxxx</strong></font><ul>
-<li>原因 : Linux和Windows的换行符不一致导致</li>
-<li>解决方法 :执行 <font color='blue'><strong>git config –global core.autocrlf false</strong></font></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>怎么查看文件有没有添加成功</p>
-<ul>
-<li><font color='blue'><strong>git status</strong></font><ul>
-<li>显示<font color='red'> 红色 </font>则未提交到暂存区</li>
-<li>显示<font color='green'> 绿色 </font>则已经提交到暂存区</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><font color='pink'><strong>git commit -m ‘对本次提交的描述’</strong></font></p>
-<ul>
-<li><p>显示则代表 已经成功提交到版本库中</p>
-</li>
-<li><p>如果只输入<font color='red'><strong>git commit</strong></font>会出问题，这时需要 ESC + : + q! 退出即可</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="差异对比"><a href="#差异对比" class="headerlink" title="差异对比"></a>差异对比</h4><ul>
-<li><p><font color='pink'><strong>git diff</strong></font> : 比较暂存区和工作区</p>
-</li>
-<li><p><font color='pink'><strong>git diff –cached</strong></font> : 比较版本库与暂存区 </p>
-</li>
-<li><p><font color='pink'><strong>git diff master</strong></font> : 比较版本库和工作区</p>
-</li>
-</ul>
-<h4 id="日志-版本号"><a href="#日志-版本号" class="headerlink" title="日志 + 版本号"></a>日志 + 版本号</h4><ul>
-<li><p><font color='pink'><strong>git log</strong></font> : 显示从最近到最远的所有提交日志</p>
-</li>
-<li><p><font color='pink'><strong>git reflog</strong></font> : 显示每次提交 ( commit ) 的 commit id</p>
-</li>
-</ul>
-<h4 id="版本回退-版本穿梭-版本撤销"><a href="#版本回退-版本穿梭-版本撤销" class="headerlink" title="版本回退 + 版本穿梭 + 版本撤销"></a>版本回退 + 版本穿梭 + 版本撤销</h4><ul>
-<li><p><font color='pink'><strong>git reset –hard HEAD^</strong></font> 	版本回退( 回退一次提交 )</p>
-</li>
-<li><p><font color='pink'><strong>git reset –hard 版本号</strong></font>	回退到指定<font color='red'>版本号</font>的 commit id 版本</p>
-</li>
-<li><p><font color='pink'><strong>git reset HEAD</strong></font> 	用<code>版本库</code>中的文件去替换<code>暂存区</code>的全部文件</p>
-</li>
-<li><p><font color='pink'><strong>git checkout –x.xxx</strong></font>	用<code>暂存区的指定文件</code>去替换<code>工作区的指定文件</code>		<font color ='red'><strong>危险</strong></font></p>
-</li>
-<li><p><font color='pink'><strong>git checkout HEAD x.xxx</strong></font>	用<code>版本库中的文件</code>替换<code>暂存区</code>和<code>工作区</code>的文件		<font color ='red'><strong>危险</strong></font></p>
-</li>
-<li><p><font color='pink'><strong>git rm –cached x.xxx</strong></font>	从<code>暂存区</code>删除文件</p>
-</li>
-</ul>
-<h4 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h4><ul>
-<li><font color ='pink'><strong>git rm x.xxx</strong></font> 删除文件</li>
-<li><font color ='pink'><strong>git rm -r xxxx</strong></font> 删除文件夹</li>
-<li><strong>常见问题</strong></li>
-</ul>
-<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><ul>
-<li><font color='pink'><strong>git checkout -b dev</strong></font> 		创建 dev 分支，并切换到 dev 分支</li>
-<li><font color='pink'><strong>git branch</strong></font> 		查看当前分支</li>
-<li><font color='pink'><strong>git checkout master</strong></font>		切换到主分支</li>
-<li><font color='pink'><strong>git merge dev</strong></font>		合并 dev 分支到当前分支</li>
-<li><font color='pink'><strong>git branch -d dev</strong></font>		删除指定分支</li>
-<li><font color='pink'><strong>git diff 分支1 分支2</strong></font>		显示出两个分支之间所有差异文件的详细差异</li>
-<li><font color='pink'><strong>git diff 分支1 分支2 –stat</strong></font>		显示出两个分支之间所有差异文件列表</li>
-<li><font color='pink'><strong>git diff 分支1 分支2 x.xxx</strong></font>		显示指定文件的详细差异</li>
-</ul>
-<h4 id="版本冲突"><a href="#版本冲突" class="headerlink" title="版本冲突"></a>版本冲突</h4><ul>
-<li>合并分支时，如果在<font color ='red'>同一个文件的同一个地方，都修改了或新增内容</font>会引起版本冲突</li>
-<li>解决版本冲突最好的办法是借助 Webstorm ( 或 VS Code ) 解决，简单且高效</li>
-</ul>
-<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><h4 id="GitHub-是什么？"><a href="#GitHub-是什么？" class="headerlink" title="GitHub 是什么？"></a>GitHub 是什么？</h4><ul>
-<li>GitHub 是一个 Git 项目托管网站</li>
-</ul>
-<h4 id="GitHub-能做什么？"><a href="#GitHub-能做什么？" class="headerlink" title="GitHub 能做什么？"></a>GitHub 能做什么？</h4><ul>
-<li><p>能够分享你的代码或其他开发人员配合一起开发</p>
-</li>
-<li><p>GitHub 是一个基于 Git 的代码托管平台，Git 并不像 SVN 那样有一个中心服务器。目前我们使用到的 Git 命令都是在本地执行，需要将数据放到一台其他开发人员能够连接的服务器上</p>
-</li>
-</ul>
-<h4 id="GitHub-远程仓库的使用"><a href="#GitHub-远程仓库的使用" class="headerlink" title="GitHub 远程仓库的使用"></a>GitHub 远程仓库的使用</h4><h6 id="关联-本地有仓库，要和远程仓库做关联"><a href="#关联-本地有仓库，要和远程仓库做关联" class="headerlink" title="关联 : 本地有仓库，要和远程仓库做关联"></a>关联 : 本地有仓库，要和远程仓库做关联</h6><ul>
-<li><font color ='pink'><strong>git init</strong></font>	</li>
-<li><font color ='pink'>**git add ***</font></li>
-<li><font color ='pink'><strong>git commit -m ‘this is NO.1 commit’</strong></font></li>
-<li><font color ='pink'><strong>在 GitHub 上创建一个远程仓库</strong></font></li>
-<li><font color ='purple'><strong>git remote add origin https:&#x2F;&#x2F;&lt;token令牌&gt;@github.com&#x2F;&lt;GitHub用户名&gt;&#x2F;&lt;仓库名&gt;</strong></font></li>
-</ul>
-<h6 id="推送-本地有仓库有内容，要推送给远程库"><a href="#推送-本地有仓库有内容，要推送给远程库" class="headerlink" title="推送 : 本地有仓库有内容，要推送给远程库"></a>推送 : 本地有仓库有内容，要推送给远程库</h6><ul>
-<li><font color ='pink'><strong>git push -u origin master</strong></font></li>
-<li>第一次推送的时候 需要加上 -u 参数，Git 不但会把本地的 master 分支内容推送到远程新的 master 分支，还会把本地 master 分支和远程的 master 分支关联起来，在以后推送时可以简化命令 <font color='pink'><strong>git push origin master</strong></font></li>
-<li><strong>备注</strong> :  正常情况下，成功推送一次后，电脑会记住相关信息。下次推送时不会再提示输入。若电脑不能自动记住相关信息，需要执行命令 : <font color='blue'><strong>git config –global credential.helper store</strong></font></li>
-</ul>
-<h6 id="拉取-本地仓库有内容，获取远程库的新内容"><a href="#拉取-本地仓库有内容，获取远程库的新内容" class="headerlink" title="拉取 : 本地仓库有内容，获取远程库的新内容"></a>拉取 : 本地仓库有内容，获取远程库的新内容</h6><ul>
-<li><font color='pink'><strong>git pull origin master</strong></font>		将远程仓库的 master 分支上的代码版本复制&#x2F;合并到本地 master 分支上</li>
-<li><font color='pink'><strong>git fetch origin master:tmp</strong></font>		新建一个tmp分支，将远程仓库的 master 分支上代码版本复制到本地 tmp 分支上，不会自动合并</li>
-</ul>
-<h6 id="克隆-本地无仓库，要获取一个完整的远程库"><a href="#克隆-本地无仓库，要获取一个完整的远程库" class="headerlink" title="克隆 : 本地无仓库，要获取一个完整的远程库"></a>克隆 : 本地无仓库，要获取一个完整的远程库</h6><ul>
-<li><p><font color ='pink'><strong>git clone 远程仓库地址</strong></font></p>
-</li>
-<li><p><strong>备注：</strong>只在第一次获取远程库时，才需要克隆</p>
-</li>
-</ul>
-<h1 id="Git-常用命令总结"><a href="#Git-常用命令总结" class="headerlink" title="Git 常用命令总结"></a>Git 常用命令总结</h1><ul>
-<li><p><strong>mkdir XXX		创建一个空目录  XXX指目录名</strong>		</p>
-</li>
-<li><p><strong>pwd		显示当前目录的路径</strong></p>
-</li>
-<li><p><strong>cat xxx		查看xxx文件内容</strong></p>
-</li>
-<li><p><font color='red'><strong>git init		把当前的目录变成可以管理的 git 仓库，生成隐藏的.git 文件夹</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git add xxx		把xxx文件添加到暂存区</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git commit -m ‘xxx’		提交文件 -m后面是注释 必须写</strong></font></p>
-</li>
-<li><p><strong>git status		查看仓库状态</strong></p>
-</li>
-<li><p><strong>git log		查看提交历史记录</strong></p>
-</li>
-<li><p><strong>git reset –hard HEAD^		往上回退一个版本</strong></p>
-</li>
-<li><p><strong>git reflog		查看提交历史记录的版本号id</strong></p>
-</li>
-<li><p><strong>git checkout –xxx		把xxx文件在工作区的修改全部撤销</strong></p>
-</li>
-<li><p><strong>git rm xxx		删除xxx文件</strong></p>
-</li>
-<li><p><font color='red'><strong>git remote add origin https:&#x2F;&#x2F;&lt;token令牌&gt;@github.com&#x2F;&lt;GitHub用户名&gt;&#x2F;&lt;仓库名&gt; 		关联一个远程库</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git push -u ( 第一次加上 -u ，以后不用 ) origin master		把当前master分支推送到远程库</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git clone 远程仓库地址		从远程库克隆</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git checkout -b dev		创建dev分支，并切换到dev分支</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git branch		查看当前所有的分支</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git checkout master		切换回master分支</strong></font></p>
-</li>
-<li><p><font color='red'><strong>git merge dev		在当前分支合并dev分支</strong></font></p>
-</li>
-<li><p><strong>git branch -d dev		删除dev分支</strong></p>
-</li>
-<li><p><font color='red'><strong>git branch xxx		创建分支xxx</strong></font></p>
-</li>
-<li><p><strong>git remote		查看远程库信息</strong></p>
-</li>
-<li><p><strong>git remote -v		查看远程库的详细信息</strong></p>
-</li>
-<li><p><font color='red'><strong>git pull origin master		将远程库的更新拉取到本地并自动合并</strong></font></p>
-</li>
-</ul>
-<h1 id="提交代码的规范"><a href="#提交代码的规范" class="headerlink" title="提交代码的规范"></a>提交代码的规范</h1><ul>
-<li><strong>每次提交之前：先更新，再提交</strong></li>
-<li><strong>敏感时间点，一定要及时更新文件</strong></li>
-<li><strong>多提交，避免 “只关注写代码，不关注提交” 的现象</strong></li>
-<li><strong>每次提交必须写清晰明了的提交说明</strong></li>
-<li><strong>不要提交不能通过编译的代码</strong></li>
-<li><strong>不要提交自己不明白的代码</strong></li>
-<li><strong>慎用锁定功能( 尽量避免使用锁，不轻易解锁已上锁的文件 )</strong></li>
-<li><strong>不要提交本地自动生成的文件、文件夹</strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>IDM直装注册版（完美，不反弹！）</title>
     <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
     <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
@@ -319,41 +76,6 @@
       <tags>
         <tag>效率工具</tag>
         <tag>浏览器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Omakub专为开发者设计的Ubuntu环境配置项目</title>
-    <url>/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<p>Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。</p>
-<p>提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。</p>
-<img src="https://pnglog.com/aR3xii.png" style="zoom: 50%;" />
-
- 
-
-<h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><ol>
-<li>一键式配置：通过一条命令即可完成所有配置。</li>
-<li>预装工具：包括浏览器、终端、编辑器、通讯工具（如 WhatsApp、Signal、Spotify、Zoom、1Password）等。</li>
-<li>版本控制：内置 GitHub CLI，方便进行版本控制和代码管理。</li>
-<li>容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。</li>
-<li>语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。</li>
-<li>系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。</li>
-</ol>
-<h4 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h4><p>安装 Omakub 只需以下步骤：</p>
-<ol>
-<li><p>在计算机上安装 Ubuntu 24.04+。</p>
-</li>
-<li><p>打开终端（Ctrl+Alt+T），运行以下命令：</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://omakub.org/install | bash</span><br></pre></td></tr></table></figure>
-
-<p> 整个安装过程大约需要 30 分钟，具体时间取决于网络状况。安装完成后，系统会自动配置所有工具和设置。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -589,6 +311,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Omakub专为开发者设计的Ubuntu环境配置项目</title>
+    <url>/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<p>Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。</p>
+<p>提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。</p>
+<img src="https://pnglog.com/aR3xii.png" style="zoom: 50%;" />
+
+ 
+
+<h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><ol>
+<li>一键式配置：通过一条命令即可完成所有配置。</li>
+<li>预装工具：包括浏览器、终端、编辑器、通讯工具（如 WhatsApp、Signal、Spotify、Zoom、1Password）等。</li>
+<li>版本控制：内置 GitHub CLI，方便进行版本控制和代码管理。</li>
+<li>容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。</li>
+<li>语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。</li>
+<li>系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。</li>
+</ol>
+<h4 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h4><p>安装 Omakub 只需以下步骤：</p>
+<ol>
+<li><p>在计算机上安装 Ubuntu 24.04+。</p>
+</li>
+<li><p>打开终端（Ctrl+Alt+T），运行以下命令：</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://omakub.org/install | bash</span><br></pre></td></tr></table></figure>
+
+<p> 整个安装过程大约需要 30 分钟，具体时间取决于网络状况。安装完成后，系统会自动配置所有工具和设置。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows右键菜单管理软件</title>
     <url>/2024/08/01/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<h4 id="ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"><a href="#ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁" class="headerlink" title="ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"></a>ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁</h4><h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
@@ -624,6 +381,330 @@
       <tags>
         <tag>效率工具</tag>
         <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git的使用</title>
+    <url>/2024/07/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Git-与-GitHub"><a href="#Git-与-GitHub" class="headerlink" title="Git 与 GitHub"></a>Git 与 GitHub</h1><h2 id="Git-的起源"><a href="#Git-的起源" class="headerlink" title="Git 的起源"></a>Git 的起源</h2><h4 id="“自由主义-开源-教皇”-林纳斯·托瓦兹"><a href="#“自由主义-开源-教皇”-林纳斯·托瓦兹" class="headerlink" title="“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹"></a>“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹</h4><ul>
+<li>Linux</li>
+<li>Git</li>
+</ul>
+<h4 id="Git-是什么？"><a href="#Git-是什么？" class="headerlink" title="Git 是什么？"></a>Git 是什么？</h4><ul>
+<li>Git 是目前世界上最先进的<font color='red'>分布式</font>版本控制工具( 没有之一 )</li>
+</ul>
+<h2 id="Git-的使用"><a href="#Git-的使用" class="headerlink" title="Git 的使用"></a>Git 的使用</h2><h4 id="Git-的安装"><a href="#Git-的安装" class="headerlink" title="Git 的安装"></a>Git 的安装</h4><ul>
+<li><p>Windows git 下载地址 :</p>
+<ol>
+<li><a href="https://git-scm.com/download/win">Git - Downloading Package (git-scm.com)</a></li>
+<li>下载 -&gt; 默认选项安装</li>
+<li>桌面右键 点击 <code>Git Bash Here</code>  即可看到一个终端窗口</li>
+<li>在终端内输入 git –version 如果看到版本信息即安装成功</li>
+</ol>
+</li>
+<li><p>安装完成后，需要最后一步设置，在终端内输入(<font color='red'><strong>不要复制 英文输入法下手打</strong></font>)</p>
+<ol>
+<li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
+</li>
+<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#101;&#x6d;&#x61;&#105;&#x6c;&#64;&#120;&#120;&#120;&#46;&#99;&#x6f;&#x6d;">&#101;&#x6d;&#x61;&#105;&#x6c;&#64;&#120;&#120;&#120;&#46;&#99;&#x6f;&#x6d;</a></strong></font>“</p>
+<p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
+</li>
+<li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
+</li>
+<li><p><font color='blue'><strong>git config user.email</strong></font> 用于查看配置的邮箱</p>
+</li>
+<li><p>因为 Git 是分布式版本控制系统，所以每个机器必须配置：用户名和email地址</p>
+</li>
+</ol>
+</li>
+</ul>
+<h4 id="常用-Linux命令-部分"><a href="#常用-Linux命令-部分" class="headerlink" title="常用 Linux命令( 部分 )"></a>常用 Linux命令( 部分 )</h4><ul>
+<li>mkdir xxx 新建文件夹</li>
+<li>vi x.txt 新建&#x2F;编辑一个名为 x 的 txt 文件<ul>
+<li>输入 i 进入编辑模式</li>
+<li>Esc + : +wq    保存并退出</li>
+<li>Esc + : + q!     不保存退出</li>
+</ul>
+</li>
+<li>cd xxx 进入一个名为 xxx 的文件夹</li>
+<li>cd .. 返回上一级目录</li>
+<li>ls 列出当前文件夹所有的文件</li>
+<li>pwd 显示当前目录</li>
+<li>cat x.txt 显示 名为 x 的 txt 文件的内容</li>
+<li>clear 清屏( 需要注意 : cmd 控制台中 cls 为清屏  )</li>
+</ul>
+<h4 id="工作区-版本区-暂存区"><a href="#工作区-版本区-暂存区" class="headerlink" title="工作区+版本区+暂存区"></a>工作区+版本区+暂存区</h4><ul>
+<li>工作区 ( working Directory ) : 简单的理解 —— 你在电脑中能看到的目录</li>
+<li>暂存区 ( stage ) : 介于 工作区 和 版本区 中间，是工作区到版本区的必经之路</li>
+<li>版本库 ( Repository ) : 工作区有一个隐藏目录 .git ,这个文件夹不算工作区，而是 Git 的版本库<ul>
+<li>第一步 : git add   把文件添加进暂存区</li>
+<li>第二步 : git commit  把暂存区的所有内容提交到当前版本库</li>
+</ul>
+</li>
+</ul>
+<h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><ul>
+<li><p><font color='pink' ><strong>git init</strong> </font>命令 : 初始化版本库</p>
+<ul>
+<li>创建成功会提示 : <font color='yellowgreen'><strong>Initialized empty Git repository in C:&#x2F;Users&#x2F;31195&#x2F;Desktop&#x2F;xxx&#x2F;.git&#x2F;</strong></font></li>
+<li>目录上会多一个 .git 的文件夹( 没有显示的请打开 显示隐藏文件 )，这个文件夹是 Git 来跟踪管理版本库的，不要去修改&#x2F;删除里面的内容</li>
+</ul>
+</li>
+<li><p><font color = 'pink'><strong>git add x.xx</strong></font> 命令 : 添加指定文件到暂存区</p>
+<ul>
+<li>没有任何提示，代表提交成功( Linux的设计理念 )</li>
+<li>若未初始化，则会提示: <font color='red'><strong>fatal: not a git repository (or any of the parent directories): .git</strong></font></li>
+<li>失败则会提示 : <font color='red'><strong>fatal: pathspec ‘x.xx’ did not match any files</strong></font></li>
+<li>可能出现：<font color='red'><strong>warning: LF will be replaced by CRLF in xxxx</strong></font><ul>
+<li>原因 : Linux和Windows的换行符不一致导致</li>
+<li>解决方法 :执行 <font color='blue'><strong>git config –global core.autocrlf false</strong></font></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>怎么查看文件有没有添加成功</p>
+<ul>
+<li><font color='blue'><strong>git status</strong></font><ul>
+<li>显示<font color='red'> 红色 </font>则未提交到暂存区</li>
+<li>显示<font color='green'> 绿色 </font>则已经提交到暂存区</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><font color='pink'><strong>git commit -m ‘对本次提交的描述’</strong></font></p>
+<ul>
+<li><p>显示则代表 已经成功提交到版本库中</p>
+</li>
+<li><p>如果只输入<font color='red'><strong>git commit</strong></font>会出问题，这时需要 ESC + : + q! 退出即可</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="差异对比"><a href="#差异对比" class="headerlink" title="差异对比"></a>差异对比</h4><ul>
+<li><p><font color='pink'><strong>git diff</strong></font> : 比较暂存区和工作区</p>
+</li>
+<li><p><font color='pink'><strong>git diff –cached</strong></font> : 比较版本库与暂存区 </p>
+</li>
+<li><p><font color='pink'><strong>git diff master</strong></font> : 比较版本库和工作区</p>
+</li>
+</ul>
+<h4 id="日志-版本号"><a href="#日志-版本号" class="headerlink" title="日志 + 版本号"></a>日志 + 版本号</h4><ul>
+<li><p><font color='pink'><strong>git log</strong></font> : 显示从最近到最远的所有提交日志</p>
+</li>
+<li><p><font color='pink'><strong>git reflog</strong></font> : 显示每次提交 ( commit ) 的 commit id</p>
+</li>
+</ul>
+<h4 id="版本回退-版本穿梭-版本撤销"><a href="#版本回退-版本穿梭-版本撤销" class="headerlink" title="版本回退 + 版本穿梭 + 版本撤销"></a>版本回退 + 版本穿梭 + 版本撤销</h4><ul>
+<li><p><font color='pink'><strong>git reset –hard HEAD^</strong></font> 	版本回退( 回退一次提交 )</p>
+</li>
+<li><p><font color='pink'><strong>git reset –hard 版本号</strong></font>	回退到指定<font color='red'>版本号</font>的 commit id 版本</p>
+</li>
+<li><p><font color='pink'><strong>git reset HEAD</strong></font> 	用<code>版本库</code>中的文件去替换<code>暂存区</code>的全部文件</p>
+</li>
+<li><p><font color='pink'><strong>git checkout –x.xxx</strong></font>	用<code>暂存区的指定文件</code>去替换<code>工作区的指定文件</code>		<font color ='red'><strong>危险</strong></font></p>
+</li>
+<li><p><font color='pink'><strong>git checkout HEAD x.xxx</strong></font>	用<code>版本库中的文件</code>替换<code>暂存区</code>和<code>工作区</code>的文件		<font color ='red'><strong>危险</strong></font></p>
+</li>
+<li><p><font color='pink'><strong>git rm –cached x.xxx</strong></font>	从<code>暂存区</code>删除文件</p>
+</li>
+</ul>
+<h4 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h4><ul>
+<li><font color ='pink'><strong>git rm x.xxx</strong></font> 删除文件</li>
+<li><font color ='pink'><strong>git rm -r xxxx</strong></font> 删除文件夹</li>
+<li><strong>常见问题</strong></li>
+</ul>
+<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><ul>
+<li><font color='pink'><strong>git checkout -b dev</strong></font> 		创建 dev 分支，并切换到 dev 分支</li>
+<li><font color='pink'><strong>git branch</strong></font> 		查看当前分支</li>
+<li><font color='pink'><strong>git checkout master</strong></font>		切换到主分支</li>
+<li><font color='pink'><strong>git merge dev</strong></font>		合并 dev 分支到当前分支</li>
+<li><font color='pink'><strong>git branch -d dev</strong></font>		删除指定分支</li>
+<li><font color='pink'><strong>git diff 分支1 分支2</strong></font>		显示出两个分支之间所有差异文件的详细差异</li>
+<li><font color='pink'><strong>git diff 分支1 分支2 –stat</strong></font>		显示出两个分支之间所有差异文件列表</li>
+<li><font color='pink'><strong>git diff 分支1 分支2 x.xxx</strong></font>		显示指定文件的详细差异</li>
+</ul>
+<h4 id="版本冲突"><a href="#版本冲突" class="headerlink" title="版本冲突"></a>版本冲突</h4><ul>
+<li>合并分支时，如果在<font color ='red'>同一个文件的同一个地方，都修改了或新增内容</font>会引起版本冲突</li>
+<li>解决版本冲突最好的办法是借助 Webstorm ( 或 VS Code ) 解决，简单且高效</li>
+</ul>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><h4 id="GitHub-是什么？"><a href="#GitHub-是什么？" class="headerlink" title="GitHub 是什么？"></a>GitHub 是什么？</h4><ul>
+<li>GitHub 是一个 Git 项目托管网站</li>
+</ul>
+<h4 id="GitHub-能做什么？"><a href="#GitHub-能做什么？" class="headerlink" title="GitHub 能做什么？"></a>GitHub 能做什么？</h4><ul>
+<li><p>能够分享你的代码或其他开发人员配合一起开发</p>
+</li>
+<li><p>GitHub 是一个基于 Git 的代码托管平台，Git 并不像 SVN 那样有一个中心服务器。目前我们使用到的 Git 命令都是在本地执行，需要将数据放到一台其他开发人员能够连接的服务器上</p>
+</li>
+</ul>
+<h4 id="GitHub-远程仓库的使用"><a href="#GitHub-远程仓库的使用" class="headerlink" title="GitHub 远程仓库的使用"></a>GitHub 远程仓库的使用</h4><h6 id="关联-本地有仓库，要和远程仓库做关联"><a href="#关联-本地有仓库，要和远程仓库做关联" class="headerlink" title="关联 : 本地有仓库，要和远程仓库做关联"></a>关联 : 本地有仓库，要和远程仓库做关联</h6><ul>
+<li><font color ='pink'><strong>git init</strong></font>	</li>
+<li><font color ='pink'>**git add ***</font></li>
+<li><font color ='pink'><strong>git commit -m ‘this is NO.1 commit’</strong></font></li>
+<li><font color ='pink'><strong>在 GitHub 上创建一个远程仓库</strong></font></li>
+<li><font color ='purple'><strong>git remote add origin https:&#x2F;&#x2F;&lt;token令牌&gt;@github.com&#x2F;&lt;GitHub用户名&gt;&#x2F;&lt;仓库名&gt;</strong></font></li>
+</ul>
+<h6 id="推送-本地有仓库有内容，要推送给远程库"><a href="#推送-本地有仓库有内容，要推送给远程库" class="headerlink" title="推送 : 本地有仓库有内容，要推送给远程库"></a>推送 : 本地有仓库有内容，要推送给远程库</h6><ul>
+<li><font color ='pink'><strong>git push -u origin master</strong></font></li>
+<li>第一次推送的时候 需要加上 -u 参数，Git 不但会把本地的 master 分支内容推送到远程新的 master 分支，还会把本地 master 分支和远程的 master 分支关联起来，在以后推送时可以简化命令 <font color='pink'><strong>git push origin master</strong></font></li>
+<li><strong>备注</strong> :  正常情况下，成功推送一次后，电脑会记住相关信息。下次推送时不会再提示输入。若电脑不能自动记住相关信息，需要执行命令 : <font color='blue'><strong>git config –global credential.helper store</strong></font></li>
+</ul>
+<h6 id="拉取-本地仓库有内容，获取远程库的新内容"><a href="#拉取-本地仓库有内容，获取远程库的新内容" class="headerlink" title="拉取 : 本地仓库有内容，获取远程库的新内容"></a>拉取 : 本地仓库有内容，获取远程库的新内容</h6><ul>
+<li><font color='pink'><strong>git pull origin master</strong></font>		将远程仓库的 master 分支上的代码版本复制&#x2F;合并到本地 master 分支上</li>
+<li><font color='pink'><strong>git fetch origin master:tmp</strong></font>		新建一个tmp分支，将远程仓库的 master 分支上代码版本复制到本地 tmp 分支上，不会自动合并</li>
+</ul>
+<h6 id="克隆-本地无仓库，要获取一个完整的远程库"><a href="#克隆-本地无仓库，要获取一个完整的远程库" class="headerlink" title="克隆 : 本地无仓库，要获取一个完整的远程库"></a>克隆 : 本地无仓库，要获取一个完整的远程库</h6><ul>
+<li><p><font color ='pink'><strong>git clone 远程仓库地址</strong></font></p>
+</li>
+<li><p><strong>备注：</strong>只在第一次获取远程库时，才需要克隆</p>
+</li>
+</ul>
+<h1 id="Git-常用命令总结"><a href="#Git-常用命令总结" class="headerlink" title="Git 常用命令总结"></a>Git 常用命令总结</h1><ul>
+<li><p><strong>mkdir XXX		创建一个空目录  XXX指目录名</strong>		</p>
+</li>
+<li><p><strong>pwd		显示当前目录的路径</strong></p>
+</li>
+<li><p><strong>cat xxx		查看xxx文件内容</strong></p>
+</li>
+<li><p><font color='red'><strong>git init		把当前的目录变成可以管理的 git 仓库，生成隐藏的.git 文件夹</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git add xxx		把xxx文件添加到暂存区</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git commit -m ‘xxx’		提交文件 -m后面是注释 必须写</strong></font></p>
+</li>
+<li><p><strong>git status		查看仓库状态</strong></p>
+</li>
+<li><p><strong>git log		查看提交历史记录</strong></p>
+</li>
+<li><p><strong>git reset –hard HEAD^		往上回退一个版本</strong></p>
+</li>
+<li><p><strong>git reflog		查看提交历史记录的版本号id</strong></p>
+</li>
+<li><p><strong>git checkout –xxx		把xxx文件在工作区的修改全部撤销</strong></p>
+</li>
+<li><p><strong>git rm xxx		删除xxx文件</strong></p>
+</li>
+<li><p><font color='red'><strong>git remote add origin https:&#x2F;&#x2F;&lt;token令牌&gt;@github.com&#x2F;&lt;GitHub用户名&gt;&#x2F;&lt;仓库名&gt; 		关联一个远程库</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git push -u ( 第一次加上 -u ，以后不用 ) origin master		把当前master分支推送到远程库</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git clone 远程仓库地址		从远程库克隆</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git checkout -b dev		创建dev分支，并切换到dev分支</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git branch		查看当前所有的分支</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git checkout master		切换回master分支</strong></font></p>
+</li>
+<li><p><font color='red'><strong>git merge dev		在当前分支合并dev分支</strong></font></p>
+</li>
+<li><p><strong>git branch -d dev		删除dev分支</strong></p>
+</li>
+<li><p><font color='red'><strong>git branch xxx		创建分支xxx</strong></font></p>
+</li>
+<li><p><strong>git remote		查看远程库信息</strong></p>
+</li>
+<li><p><strong>git remote -v		查看远程库的详细信息</strong></p>
+</li>
+<li><p><font color='red'><strong>git pull origin master		将远程库的更新拉取到本地并自动合并</strong></font></p>
+</li>
+</ul>
+<h1 id="提交代码的规范"><a href="#提交代码的规范" class="headerlink" title="提交代码的规范"></a>提交代码的规范</h1><ul>
+<li><strong>每次提交之前：先更新，再提交</strong></li>
+<li><strong>敏感时间点，一定要及时更新文件</strong></li>
+<li><strong>多提交，避免 “只关注写代码，不关注提交” 的现象</strong></li>
+<li><strong>每次提交必须写清晰明了的提交说明</strong></li>
+<li><strong>不要提交不能通过编译的代码</strong></li>
+<li><strong>不要提交自己不明白的代码</strong></li>
+<li><strong>慎用锁定功能( 尽量避免使用锁，不轻易解锁已上锁的文件 )</strong></li>
+<li><strong>不要提交本地自动生成的文件、文件夹</strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pandas数据结构</title>
+    <url>/2024/07/23/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>构造 DataFrame 和 Series 的方法有多种。以下是一些常见的方法：</p>
+<h3 id="构造-DataFrame："><a href="#构造-DataFrame：" class="headerlink" title="构造 DataFrame："></a>构造 DataFrame：</h3><ol>
+<li><strong>从字典构造</strong>：使用字典创建 DataFrame，字典的键是列名，值是列的数据。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;A&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="string">&#x27;B&#x27;</span>: [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]&#125;</span><br><span class="line">df = pd.DataFrame(data)</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>从列表构造</strong>：使用列表构造 DataFrame，每个子列表代表一行数据。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = [[<span class="number">1</span>, <span class="number">4</span>], [<span class="number">2</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">6</span>]]</span><br><span class="line">df = pd.DataFrame(data, columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>从 NumPy 数组构造</strong>：使用 NumPy 数组构造 DataFrame。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">data = np.array([[<span class="number">1</span>, <span class="number">4</span>], [<span class="number">2</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">6</span>]])</span><br><span class="line">df = pd.DataFrame(data, columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><strong>从 Series 构造</strong>：使用 Series 构造 DataFrame。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s1 = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">s2 = pd.Series([<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&#x27;A&#x27;</span>: s1, <span class="string">&#x27;B&#x27;</span>: s2&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="构造-Series："><a href="#构造-Series：" class="headerlink" title="构造 Series："></a>构造 Series：</h3><ol>
+<li><strong>从列表构造</strong>：使用列表构造 Series。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>从 NumPy 数组构造</strong>：使用 NumPy 数组构造 Series。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">arr = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br><span class="line">s = pd.Series(arr)</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>从字典构造</strong>：使用字典构造 Series，字典的键作为索引。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = &#123;<span class="string">&#x27;a&#x27;</span>: <span class="number">1</span>, <span class="string">&#x27;b&#x27;</span>: <span class="number">2</span>, <span class="string">&#x27;c&#x27;</span>: <span class="number">3</span>, <span class="string">&#x27;d&#x27;</span>: <span class="number">4</span>&#125;</span><br><span class="line">s = pd.Series(data)</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><strong>从标量值构造</strong>：使用标量值构造 Series，指定索引长度。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = pd.Series(<span class="number">5</span>, index=[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<p>这些是构造 DataFrame 和 Series 最常见的方法，根据数据的来源和形式选择合适的构造方式。</p>
+<hr>
+<p>在 Pandas 中，<code>iloc</code>、<code>loc</code>、<code>at</code> 和 <code>iat</code> 是用于访问数据的四种方法，它们之间的区别和使用方法如下：</p>
+<ol>
+<li><code>iloc</code>：通过整数位置来访问数据。你可以使用行号和列号来获取数据。行和列的编号都是从 0 开始的。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个示例 DataFrame</span></span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&#x27;A&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="string">&#x27;B&#x27;</span>: [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过整数位置访问数据</span></span><br><span class="line"><span class="built_in">print</span>(df.iloc[<span class="number">0</span>, <span class="number">1</span>])  <span class="comment"># 输出第 0 行、第 1 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><code>loc</code>：通过标签来访问数据。你可以使用行标签和列标签来获取数据。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 loc 访问数据</span></span><br><span class="line"><span class="built_in">print</span>(df.loc[<span class="number">0</span>, <span class="string">&#x27;B&#x27;</span>])  <span class="comment"># 输出第 0 行、&#x27;B&#x27; 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><code>at</code>：通过标签快速访问标量值。类似于 <code>loc</code>，但 <code>at</code> 只能用于获取单个元素，速度更快。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 at 访问单个元素</span></span><br><span class="line"><span class="built_in">print</span>(df.at[<span class="number">0</span>, <span class="string">&#x27;B&#x27;</span>])  <span class="comment"># 输出第 0 行、&#x27;B&#x27; 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><code>iat</code>：通过整数位置快速访问标量值。类似于 <code>iloc</code>，但 <code>iat</code> 只能用于获取单个元素，速度更快。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 iat 访问单个元素</span></span><br><span class="line"><span class="built_in">print</span>(df.iat[<span class="number">0</span>, <span class="number">1</span>])  <span class="comment"># 输出第 0 行、第 1 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<p>总结一下：</p>
+<ul>
+<li>当你知道你要访问的数据的位置时，使用 <code>iloc</code> 和 <code>iat</code>，它们更快。其中iat获取单个元素</li>
+<li>当你知道你要访问的数据的标签时，使用 <code>loc</code> 和 <code>at</code>，它们更直观。其中at获取单个元素</li>
+</ul>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -908,87 +989,6 @@
       </tags>
   </entry>
   <entry>
-    <title>pandas数据结构</title>
-    <url>/2024/07/23/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>构造 DataFrame 和 Series 的方法有多种。以下是一些常见的方法：</p>
-<h3 id="构造-DataFrame："><a href="#构造-DataFrame：" class="headerlink" title="构造 DataFrame："></a>构造 DataFrame：</h3><ol>
-<li><strong>从字典构造</strong>：使用字典创建 DataFrame，字典的键是列名，值是列的数据。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;A&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="string">&#x27;B&#x27;</span>: [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]&#125;</span><br><span class="line">df = pd.DataFrame(data)</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><strong>从列表构造</strong>：使用列表构造 DataFrame，每个子列表代表一行数据。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = [[<span class="number">1</span>, <span class="number">4</span>], [<span class="number">2</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">6</span>]]</span><br><span class="line">df = pd.DataFrame(data, columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><strong>从 NumPy 数组构造</strong>：使用 NumPy 数组构造 DataFrame。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">data = np.array([[<span class="number">1</span>, <span class="number">4</span>], [<span class="number">2</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">6</span>]])</span><br><span class="line">df = pd.DataFrame(data, columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li><strong>从 Series 构造</strong>：使用 Series 构造 DataFrame。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s1 = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">s2 = pd.Series([<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&#x27;A&#x27;</span>: s1, <span class="string">&#x27;B&#x27;</span>: s2&#125;)</span><br></pre></td></tr></table></figure>
-
-<h3 id="构造-Series："><a href="#构造-Series：" class="headerlink" title="构造 Series："></a>构造 Series：</h3><ol>
-<li><strong>从列表构造</strong>：使用列表构造 Series。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><strong>从 NumPy 数组构造</strong>：使用 NumPy 数组构造 Series。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">arr = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br><span class="line">s = pd.Series(arr)</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><strong>从字典构造</strong>：使用字典构造 Series，字典的键作为索引。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = &#123;<span class="string">&#x27;a&#x27;</span>: <span class="number">1</span>, <span class="string">&#x27;b&#x27;</span>: <span class="number">2</span>, <span class="string">&#x27;c&#x27;</span>: <span class="number">3</span>, <span class="string">&#x27;d&#x27;</span>: <span class="number">4</span>&#125;</span><br><span class="line">s = pd.Series(data)</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li><strong>从标量值构造</strong>：使用标量值构造 Series，指定索引长度。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = pd.Series(<span class="number">5</span>, index=[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>])</span><br></pre></td></tr></table></figure>
-
-<p>这些是构造 DataFrame 和 Series 最常见的方法，根据数据的来源和形式选择合适的构造方式。</p>
-<hr>
-<p>在 Pandas 中，<code>iloc</code>、<code>loc</code>、<code>at</code> 和 <code>iat</code> 是用于访问数据的四种方法，它们之间的区别和使用方法如下：</p>
-<ol>
-<li><code>iloc</code>：通过整数位置来访问数据。你可以使用行号和列号来获取数据。行和列的编号都是从 0 开始的。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个示例 DataFrame</span></span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&#x27;A&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="string">&#x27;B&#x27;</span>: [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过整数位置访问数据</span></span><br><span class="line"><span class="built_in">print</span>(df.iloc[<span class="number">0</span>, <span class="number">1</span>])  <span class="comment"># 输出第 0 行、第 1 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><code>loc</code>：通过标签来访问数据。你可以使用行标签和列标签来获取数据。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 loc 访问数据</span></span><br><span class="line"><span class="built_in">print</span>(df.loc[<span class="number">0</span>, <span class="string">&#x27;B&#x27;</span>])  <span class="comment"># 输出第 0 行、&#x27;B&#x27; 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><code>at</code>：通过标签快速访问标量值。类似于 <code>loc</code>，但 <code>at</code> 只能用于获取单个元素，速度更快。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 at 访问单个元素</span></span><br><span class="line"><span class="built_in">print</span>(df.at[<span class="number">0</span>, <span class="string">&#x27;B&#x27;</span>])  <span class="comment"># 输出第 0 行、&#x27;B&#x27; 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li><code>iat</code>：通过整数位置快速访问标量值。类似于 <code>iloc</code>，但 <code>iat</code> 只能用于获取单个元素，速度更快。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 iat 访问单个元素</span></span><br><span class="line"><span class="built_in">print</span>(df.iat[<span class="number">0</span>, <span class="number">1</span>])  <span class="comment"># 输出第 0 行、第 1 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
-
-<p>总结一下：</p>
-<ul>
-<li>当你知道你要访问的数据的位置时，使用 <code>iloc</code> 和 <code>iat</code>，它们更快。其中iat获取单个元素</li>
-<li>当你知道你要访问的数据的标签时，使用 <code>loc</code> 和 <code>at</code>，它们更直观。其中at获取单个元素</li>
-</ul>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一文带你光速入门Mathlab</title>
     <url>/2024/09/17/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E5%85%89%E9%80%9F%E5%85%A5%E9%97%A8Mathlab/</url>
     <content><![CDATA[<img src="https://pnglog.com/gAfnjw.png" alt="" style="zoom: 80%;" />
@@ -1221,6 +1221,25 @@
       </tags>
   </entry>
   <entry>
+    <title>在废墟上跳舞：论当代青年的生存美学革命</title>
+    <url>/2025/01/07/%E5%9C%A8%E5%BA%9F%E5%A2%9F%E4%B8%8A%E8%B7%B3%E8%88%9E%EF%BC%9A%E8%AE%BA%E5%BD%93%E4%BB%A3%E9%9D%92%E5%B9%B4%E7%9A%84%E7%94%9F%E5%AD%98%E7%BE%8E%E5%AD%A6%E9%9D%A9%E5%91%BD/</url>
+    <content><![CDATA[<p>​	在深圳某科技园区的格子间里，25岁的程序员李明在完成当天第12次代码提交后，平静地关闭了价值两万元的顶配笔记本电脑。这个动作的仪式感不亚于中世纪修士合上羊皮经卷——前者结束的是对数字世界的虔诚侍奉，后者终止的是对神圣彼岸的永恒追求。当996工作制的机械循环成为新时代的苦修，当婚恋市场的估值体系异化为情感交易所的K线图，中国Z世代正在用”躺平”构建抵抗异化的精神堡垒，以”单身”书写拒绝被规训的生命宣言。这不是颓废的溃败，而是一场静默的革命，是后现代语境下青年群体对生命政治最深刻的哲学回应。</p>
+<h3 id="一、规训社会的全景敞视与自我放逐"><a href="#一、规训社会的全景敞视与自我放逐" class="headerlink" title="一、规训社会的全景敞视与自我放逐"></a>一、规训社会的全景敞视与自我放逐</h3><p>​	福柯笔下的”全景敞视监狱”在数字时代获得了终极进化形态。算法推荐系统比任何狱卒都更精于心理操控，社交媒体的点赞机制重构了人的奖赏回路，绩效社会的KPI体系将存在价值量化为Excel表格里的数字。上海某高校调查显示，93%的大学生手机日均使用时间超过8小时，其中67%承认会因未及时回复消息产生焦虑。这种自我规训的完成度，甚至超越了边沁圆形监狱设计者的想象。</p>
+<p>​	当北京五道口的创业咖啡馆里仍在上演”三年上市”的资本神话时，城中村的出租屋里正滋长着新型生活哲学。广州”三和大神”现象绝非简单的堕落叙事，那些日结工资、网吧过夜的青年，用身体实践解构着”勤劳致富”的资本主义伦理。就像本雅明在《历史哲学论纲》中描绘的”新天使”，他们背对未来进步的风暴，凝视着堆积如山的现代性废墟。</p>
+<p>​	深圳”数字游民”社群的出现，标志着抵抗形式从消极逃避转向主动建构。这些精通Python和区块链技术的年轻人，拒绝成为科技巨头的人肉电池，转而用去中心化工具搭建分布式协作网络。他们在GitHub上开源自己的人生代码，用DAO（去中心化自治组织）重构劳动伦理，将马克思的”自由人联合体”构想写入智能合约。</p>
+<h3 id="二、亲密关系的祛魅与孤独美学"><a href="#二、亲密关系的祛魅与孤独美学" class="headerlink" title="二、亲密关系的祛魅与孤独美学"></a>二、亲密关系的祛魅与孤独美学</h3><p>​	上海人民公园相亲角的价目表，量化着从学区房到生肖属相的婚恋估值体系。当情感被异化为资产负债表上的待合并项目，年轻人开始用”母胎solo”的黑色幽默解构婚恋市场的荒谬。北京某985高校调查显示，68%的95后认为”婚姻不是人生必选项”，这个数字较十年前翻了三倍。这不是爱的消亡，而是对情感商品化的集体罢工。</p>
+<p>​	日本”无缘社会”的预言在中国显影为新型社交图谱。重庆的剧本杀门店里，陌生人通过角色扮演建构临时亲密关系；B站的弹幕池中，孤独的个体用段子代码完成情感共振。这些瞬息即逝的联结，恰似德里达笔下的”延异”游戏——在能指链的滑动中，我们获得的不是稳定的意义，而是在场与缺席的永恒嬉戏。</p>
+<p>​	广州城中村的”一人食”餐厅里，年轻食客们用食物语系重构存在仪式。从《孤独的美食家》到《小森林》，独处美学正在解构”团圆饭”的集体主义叙事。这种对孤独的审美化处理，暗合海德格尔”向死而生”的存在主义哲思——在彻底个体化的生存境遇中，每个灵魂都是自我宇宙的立法者。</p>
+<h3 id="三、意义重构的星丛与游牧主体"><a href="#三、意义重构的星丛与游牧主体" class="headerlink" title="三、意义重构的星丛与游牧主体"></a>三、意义重构的星丛与游牧主体</h3><p>​	当海淀家长还在为”鸡娃”策略争论不休时，大理的数字游民社区正上演着教育革命。区块链技术支持的”分布式大学”里，知识以NFT形式确权，慕课（MOOC）系统演化成DAO治理的学习共同体。这些逃离”内卷”的青年，用Web3.0技术将福柯的”自我技术”推向新维度。他们不再是规训社会的产物，而是成为自己存在的创作者。</p>
+<p>​	西安古城墙下的后备箱市集，流动着后现代消费主义的诗学。手冲咖啡的香气与3D打印机的嗡鸣交织，汉服少女的团扇轻拂过无人机操作屏。这些看似违和的拼贴，实则是本雅明”辩证意象”的当代显形——在商品拜物教的废墟上，青年文化正进行着本真性的考古发掘。</p>
+<p>​	郑州”7·20”暴雨中的”救命文档”，意外揭示了数字原住民的时代精神。这个由95后创建的在线协作表格，在24小时内迭代出487个版本，拯救了无数生命。当技术从异化工具转变为救赎媒介，齐泽克预言的”意识形态崇高客体”获得了革命性反转——云端的比特洪流中，闪耀着共产主义幽灵的当代形态。</p>
+<p>​	在这个加速主义与末日情结并置的时代，中国青年正在发明新的生存语法。他们不是垮掉的一代，而是清醒的漫游者；不是犬儒主义的俘虏，而是辩证法的魔术师。当存在主义危机转化为创造性能量，当原子化个体重组为数字共产主义细胞，这场静默的革命终将在现代性废墟上绽放出异样的花朵。或许正如阿多诺所说，在错误的生活中不存在正确的生活——但总有舞者能在铁屋的阴影里，踩出自由的节拍。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+  </entry>
+  <entry>
     <title>主流大语言模型评测与选择</title>
     <url>/2024/07/24/%E4%B8%BB%E6%B5%81%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%B8%8E%E9%80%89%E6%8B%A9/</url>
     <content><![CDATA[<h1 id="主流大语言模型评测与选择"><a href="#主流大语言模型评测与选择" class="headerlink" title="主流大语言模型评测与选择"></a>主流大语言模型评测与选择</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>近年来，人工智能技术迅猛发展，大语言模型作为其中的重要组成部分，在各个领域展示了其强大的能力和广泛的应用前景。本文将详细评测目前市面上的几款主流大语言模型，包括OpenAI的ChatGPT，Google的Gemini，Anthropic的Claude，百度的文心一言，月之暗面的Kimi，字节跳动的豆包，以及科大讯飞的讯飞星火。我们将从模型性能、应用场景、用户体验、创新性及可扩展性等方面进行深入分析，以帮助用户在选择合适的大语言模型时提供参考。</p>
@@ -1251,25 +1270,6 @@
         <tag>AI</tag>
         <tag>效率工具</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>在废墟上跳舞：论当代青年的生存美学革命</title>
-    <url>/2025/01/07/%E5%9C%A8%E5%BA%9F%E5%A2%9F%E4%B8%8A%E8%B7%B3%E8%88%9E%EF%BC%9A%E8%AE%BA%E5%BD%93%E4%BB%A3%E9%9D%92%E5%B9%B4%E7%9A%84%E7%94%9F%E5%AD%98%E7%BE%8E%E5%AD%A6%E9%9D%A9%E5%91%BD/</url>
-    <content><![CDATA[<p>​	在深圳某科技园区的格子间里，25岁的程序员李明在完成当天第12次代码提交后，平静地关闭了价值两万元的顶配笔记本电脑。这个动作的仪式感不亚于中世纪修士合上羊皮经卷——前者结束的是对数字世界的虔诚侍奉，后者终止的是对神圣彼岸的永恒追求。当996工作制的机械循环成为新时代的苦修，当婚恋市场的估值体系异化为情感交易所的K线图，中国Z世代正在用”躺平”构建抵抗异化的精神堡垒，以”单身”书写拒绝被规训的生命宣言。这不是颓废的溃败，而是一场静默的革命，是后现代语境下青年群体对生命政治最深刻的哲学回应。</p>
-<h3 id="一、规训社会的全景敞视与自我放逐"><a href="#一、规训社会的全景敞视与自我放逐" class="headerlink" title="一、规训社会的全景敞视与自我放逐"></a>一、规训社会的全景敞视与自我放逐</h3><p>​	福柯笔下的”全景敞视监狱”在数字时代获得了终极进化形态。算法推荐系统比任何狱卒都更精于心理操控，社交媒体的点赞机制重构了人的奖赏回路，绩效社会的KPI体系将存在价值量化为Excel表格里的数字。上海某高校调查显示，93%的大学生手机日均使用时间超过8小时，其中67%承认会因未及时回复消息产生焦虑。这种自我规训的完成度，甚至超越了边沁圆形监狱设计者的想象。</p>
-<p>​	当北京五道口的创业咖啡馆里仍在上演”三年上市”的资本神话时，城中村的出租屋里正滋长着新型生活哲学。广州”三和大神”现象绝非简单的堕落叙事，那些日结工资、网吧过夜的青年，用身体实践解构着”勤劳致富”的资本主义伦理。就像本雅明在《历史哲学论纲》中描绘的”新天使”，他们背对未来进步的风暴，凝视着堆积如山的现代性废墟。</p>
-<p>​	深圳”数字游民”社群的出现，标志着抵抗形式从消极逃避转向主动建构。这些精通Python和区块链技术的年轻人，拒绝成为科技巨头的人肉电池，转而用去中心化工具搭建分布式协作网络。他们在GitHub上开源自己的人生代码，用DAO（去中心化自治组织）重构劳动伦理，将马克思的”自由人联合体”构想写入智能合约。</p>
-<h3 id="二、亲密关系的祛魅与孤独美学"><a href="#二、亲密关系的祛魅与孤独美学" class="headerlink" title="二、亲密关系的祛魅与孤独美学"></a>二、亲密关系的祛魅与孤独美学</h3><p>​	上海人民公园相亲角的价目表，量化着从学区房到生肖属相的婚恋估值体系。当情感被异化为资产负债表上的待合并项目，年轻人开始用”母胎solo”的黑色幽默解构婚恋市场的荒谬。北京某985高校调查显示，68%的95后认为”婚姻不是人生必选项”，这个数字较十年前翻了三倍。这不是爱的消亡，而是对情感商品化的集体罢工。</p>
-<p>​	日本”无缘社会”的预言在中国显影为新型社交图谱。重庆的剧本杀门店里，陌生人通过角色扮演建构临时亲密关系；B站的弹幕池中，孤独的个体用段子代码完成情感共振。这些瞬息即逝的联结，恰似德里达笔下的”延异”游戏——在能指链的滑动中，我们获得的不是稳定的意义，而是在场与缺席的永恒嬉戏。</p>
-<p>​	广州城中村的”一人食”餐厅里，年轻食客们用食物语系重构存在仪式。从《孤独的美食家》到《小森林》，独处美学正在解构”团圆饭”的集体主义叙事。这种对孤独的审美化处理，暗合海德格尔”向死而生”的存在主义哲思——在彻底个体化的生存境遇中，每个灵魂都是自我宇宙的立法者。</p>
-<h3 id="三、意义重构的星丛与游牧主体"><a href="#三、意义重构的星丛与游牧主体" class="headerlink" title="三、意义重构的星丛与游牧主体"></a>三、意义重构的星丛与游牧主体</h3><p>​	当海淀家长还在为”鸡娃”策略争论不休时，大理的数字游民社区正上演着教育革命。区块链技术支持的”分布式大学”里，知识以NFT形式确权，慕课（MOOC）系统演化成DAO治理的学习共同体。这些逃离”内卷”的青年，用Web3.0技术将福柯的”自我技术”推向新维度。他们不再是规训社会的产物，而是成为自己存在的创作者。</p>
-<p>​	西安古城墙下的后备箱市集，流动着后现代消费主义的诗学。手冲咖啡的香气与3D打印机的嗡鸣交织，汉服少女的团扇轻拂过无人机操作屏。这些看似违和的拼贴，实则是本雅明”辩证意象”的当代显形——在商品拜物教的废墟上，青年文化正进行着本真性的考古发掘。</p>
-<p>​	郑州”7·20”暴雨中的”救命文档”，意外揭示了数字原住民的时代精神。这个由95后创建的在线协作表格，在24小时内迭代出487个版本，拯救了无数生命。当技术从异化工具转变为救赎媒介，齐泽克预言的”意识形态崇高客体”获得了革命性反转——云端的比特洪流中，闪耀着共产主义幽灵的当代形态。</p>
-<p>​	在这个加速主义与末日情结并置的时代，中国青年正在发明新的生存语法。他们不是垮掉的一代，而是清醒的漫游者；不是犬儒主义的俘虏，而是辩证法的魔术师。当存在主义危机转化为创造性能量，当原子化个体重组为数字共产主义细胞，这场静默的革命终将在现代性废墟上绽放出异样的花朵。或许正如阿多诺所说，在错误的生活中不存在正确的生活——但总有舞者能在铁屋的阴影里，踩出自由的节拍。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
   </entry>
   <entry>
     <title>增长漏斗模型：从流量到留量的底层逻辑（理论+实操）</title>
@@ -1519,96 +1519,6 @@
       </categories>
       <tags>
         <tag>设计</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
-    <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
-    <content><![CDATA[<img src="https://www.pnglog.com/FDPPbA.jpg" style="zoom: 33%;"/>
-
-<p>​	</p>
-<p>​	当地时间7月21日下午，美国总统拜登宣布，他不再谋求连任，并全力支持副总统哈里斯作为民主党总统候选人，参与2024年总统角逐。22日，哈里斯发表声明称，已获得足够支持成为民主党总统候选人。</p>
-<p>​	拜登“主动请辞”，让民主党总算松了口气。然而，临阵换帅怎么说也是兵家大忌。相比拜登，副总统哈里斯尽管有年龄、性别及少数族裔等诸多“优势”加持，但想在未来短短几个月内扭转颓势，给民主党带来好运，恐怕是“不可能完成的任务”。</p>
-<p><strong>临危受命，哈里斯手里有几张牌？</strong></p>
-<p>​	被推上风口浪尖的副总统哈里斯，在拜登宣布支持提名她作为党内总统候选人的第一时间，表达了对拜登的感谢之情，希望自己能够“赢得党内总统候选人的提名”，尽一切努力击败共和党总统候选人特朗普。</p>
-<p>​	临危受命的哈里斯，手里到底握有几张牌？</p>
-<p>​	首先，哈里斯的年龄优势。1964年出生的哈里斯，比拜登整整年轻了22岁，比特朗普年轻19岁，享有巨大的年龄优势。在拜登的年龄、健康状况和认知能力饱受质疑、成为特朗普竞选团队重要攻击把柄的情况下，选择年轻的哈里斯无疑是对特朗普竞选策略的釜底抽薪，让对手无法再将火力集中于民主党总统候选人的年龄和健康状况上。一个朝气蓬勃、充满活力的哈里斯将为民主党沉闷的竞选活动注入新鲜血液，相比之下，特朗普的年龄反而成了劣势和诟病对象。</p>
-<p>​	其次，哈里斯的女性身份。民调显示，特朗普在女性选民中的支持率一直低迷，远低于拜登在女性中的支持率。特朗普私生活的不检点和在堕胎问题上的首鼠两端立场，让很多女性选民对他望而却步。然而，拜登由于年龄、健康问题以及在堕胎问题上的不坚定立场，也无法激起女性选民、特别是年轻女性选民的热情。哈里斯在堕胎问题上“支持选择权”（支持女性有堕胎权利和自由）的坚定立场和对女性权利的坚强捍卫，无疑在情感上与女性、特别是年轻女性更能产生共鸣。特别是在面对特朗普时，哈里斯的女性身份和女权立场，更能赢得女性选民支持。</p>
-<p>​	再次，哈里斯的少数族裔身份。哈里斯的父母分别来自印度和牙买加，拥有亚裔和非裔双重少数族裔身份。这两大少数族裔身份的加持，相对于特朗普，哈里斯更能获得非裔和亚裔少数族裔的共情与共鸣。特朗普在对哈里斯进行“攻击”时，更可能投鼠忌器，担心一不小心被扣上种族主义的帽子。在拉美裔、非裔等少数族裔对拜登日益不满的节骨眼，作为少数族裔的哈里斯“出征”，或许能扭转不利于民主党的选情变化，逐步赢得少数族裔支持。</p>
-<p>​	最后，哈里斯担任检察官的经历。在进入华盛顿政坛以前，哈里斯长期在加州政治圈耕耘，先后在县检察官办公室和旧金山地方检察官办公室工作，并历任旧金山地区检察官和加州总检察长。长期担任检察官的经历，让哈里斯熟稔法律，思维敏捷，长于辩论，并善于抓住对手漏洞穷追猛打。哈里斯担任参议员期间，曾在司法部长塞申斯和联邦最高法院大法官卡瓦纳任命听证会上对其进行刨根问底式的“灵魂拷问”，给观众留下深刻印象。哈里斯的这些经历及雄辩口才，与拜登辩论时的卡壳、口吃和不知所云，将形成强烈反差，特朗普将遇到一个强劲的辩论对手。特别是，特朗普被定罪与哈里斯作为“检察官”的履历，如果进行辩论，很容易让人浮现起检察官“审判”犯人的画面。</p>
-<img src="https://www.pnglog.com/tOtZ5c.png" />
-
-
-
-<p><strong>哈里斯锁定党内提名已无悬念</strong></p>
-<p>​	哈里斯虽然得到拜登的全力支持，但是到目前为止，民主党内大佬、前总统奥巴马还没有明确表态。奥巴马在拜登退选后的一份声明中表示：“在接下来的几天里，我们将在未知的水域前行。但我非常有信心，我们党的领导人将能组织一个产生一位杰出候选人的过程。”显然，奥巴马对哈里斯并不满意。</p>
-<p>​	不过，好消息是，自拜登周日宣布退选后，民主党已经迅速集结在哈里斯周围，哈里斯也已获得了拜登的竞选资金，准备全力迎战特朗普。特别是没有在第一时间表态的民主党重量级人物——前议长佩洛西、参议院民主党领袖舒默和众议院民主党领袖杰弗里斯，已经在当地时间周一表态支持哈里斯。此外，所有民主党州长都已经表态支持哈里斯，密歇根州长惠特曼还自告奋勇担任哈里斯竞选团队的共同主席。</p>
-<p>​	鉴于民主党全国代表大会召开在即，留给民主党的时间已经不多了。特别是，俄亥俄州最早9月份就开始大选投票。根据该州法律，两党必须在8月7日前提交总统候选人名单。因此，民主党几乎没有时间就总统候选人进行内部详细讨论和公开角逐。果然，当地时间7月22日，哈里斯发表声明称已获得足够支持成为民主党总统候选人。</p>
-<img src="https://www.pnglog.com/vQyfIJ.png" style="zoom: 67%;" />
-
-
-
-<p><strong>哈里斯能否挽回民主党颓势？</strong></p>
-<p>​	哈里斯锁定党内总统候选人提名几无悬念，但是能否扭转民主党选举颓势，将是一个巨大的问号。实际上，从目前情况看，这似乎是一个无法完成的任务。</p>
-<p>​	首先，临阵换帅是兵家大忌。在距民主党全国代表大会召开不到一个月，距大选投票不足4个月之际，通过“逼宫”方式，迫使现任总统和党内总统候选人退选，无异于一场不流血的“政变”。这至少说明：第一，民主党对赢得此次大选几乎失去了信心，否则也不会铤而走险，出此下策。第二，民主党担心的不仅仅是失去白宫，更担心可能失去国会参议院多数席位及两院的控制权。</p>
-<p>​	逼退现任总统候选人，还会留下诸多“后遗症”。一是影响民主党内部团结。拜登在宣布退选的前一天还坚持不会退选，退选时声称是出于党派利益和国家利益退选，并对奥巴马等“幕后主使”心怀怨愤。奥巴马在拜登退选后特意没有选择公开支持哈里斯，以及佩洛西、舒默等人姗姗来迟的支持，都凸显民主党内部在这一问题上的分歧与矛盾。二是留给哈里斯的时间不多。哈里斯尽管位居副总统，但普遍认为她不在拜登的决策核心圈。哈里斯仓促上位，在短时间内团结本党、凝聚共识，组建竞选团队，提出竞选纲领，迎战特朗普，扭转民主党颓势，可谓时间紧、任务重，困难重重。</p>
-<p>​	其次，哈里斯是“矮子里面拔将军”。哈里斯近四年的副总统履历，并没有成为她的政治加分项，相反可能是负资产。哈里斯担任副总统期间，几乎没有拿得出手、哪怕是一项让美国民众能够印象深刻的政绩。相反，在美国民众的记忆里，满是哈里斯在公开场合不合时宜的“傻笑”、面对边境非法移民激增时的手足无措以及副总统办公室内“宫斗”的丑闻。就像特朗普在竞选集会上嘲讽的，近四年时间里，拜登只让哈里斯专注一件事，即应对边境非法移民问题，但她却完全搞砸了，非法移民长驱直入，让美国边境形同虚设。拿着这张成绩单的哈里斯，能否成为特朗普的“克星”和民主党的“救星”，让人捏把汗。</p>
-<p>​	最后，特朗普风头正健。至少自去年底以来，无论是全国性民调，还是在6-7个关键摇摆州的民调，特朗普都稳定领先拜登。特别是今年4月以来美国大学校园抗议运动、6月27日拜登与特朗普的首场大选电视辩论以及7月13日特朗普在竞选中的遇刺事件，更是进一步拖累了拜登的人气，让民主党忧心如焚。特朗普遇刺后的诸多民调显示，人们对特朗普的正面印象有了较大幅度提升。据美国广播公司新闻和益普索的民调，在未遂暗杀和共和党全国代表大会之后，特朗普的支持率稳步上升，达到40%，创下了该机构四年来民意调查的最高支持率，而大多数美国人则希望总统拜登退出竞选。很多美国政治评论家甚至认为，特朗普在竞选中遇袭，已经将特朗普变成了一种政治符号，完成了对他选举的“加冕仪式”。尽管有些夸张，但特朗普遇袭及遇袭后特朗普在特勤人员簇拥下高举拳头、高呼“战斗”的“定型照”，无疑是今年大选最具冲击力的画面。</p>
-<p>​	哈里斯要挽回民主党选情颓势，可能难于上青天。但是，这并不意味着哈里斯就无计可施。如果哈里斯将矛头对准特朗普的人品、集中于特朗普的道德瑕疵，聚焦特朗普对美国选举制度和法治的践踏与不尊重，强调特朗普代表了富人和大公司的利益，把大选再次变成对特朗普的“公投”，或许还能给特朗普竞选造成一定干扰，给民主党赢得一些喘息空间。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>时政</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>提升效率与稳定性:深入掌握conda环境与包管理</title>
-    <url>/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<img src="https://pnglog.com/529mGH.png" style="zoom: 35%;" />
-
-<h2 id="一、conda基础概念"><a href="#一、conda基础概念" class="headerlink" title="一、conda基础概念"></a>一、conda基础概念</h2><p>在深入使用<strong>conda</strong>命令之前，首先需要了解<strong>conda</strong>的基础概念。<strong>conda</strong> 是一个开源的包管理系统和环境管理系统，可以安装、更新和管理多种语言的依赖库（不仅限于<font color='Peach'>Python</font>）。它的强大之处在于将包管理与环境管理结合为一体，使得在项目开发中，无论是管理依赖包还是创建虚拟环境，<strong>conda</strong> 都能够提供完整的解决方案。</p>
-<h3 id="conda与虚拟环境的区别"><a href="#conda与虚拟环境的区别" class="headerlink" title="conda与虚拟环境的区别"></a>conda与虚拟环境的区别</h3><p><strong>conda</strong> 与传统的虚拟环境工具（如<font color='Salmon'>venv、virtualenv</font>）不同，后者主要用于隔离项目的依赖，而  则同时管理包和环境。通过使用 <strong>conda</strong>，可以更方便地在不同项目之间切换环境，避免包之间的冲突。</p>
-<h2 id="二、必要准备：配置镜像源"><a href="#二、必要准备：配置镜像源" class="headerlink" title="二、必要准备：配置镜像源"></a>二、必要准备：配置镜像源</h2><p><font color='Bitersweet'>在使用Anaconda安装Python包时，系统会自动从默认源下载安装包，但是由于网络访问限制或网络连接速度较慢等原因，可能导致安装失败或速度较慢。为了解决这些问题，配置镜像源可以让用户从国内的服务器下载Python包，加快下载速度并减少下载失败的问题。</font></p>
-<h3 id="添加镜像源"><a href="#添加镜像源" class="headerlink" title="添加镜像源"></a>添加镜像源</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line"><span class="comment">#显示检索路径</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br><span class="line"><span class="comment">#显示镜像通道</span></span><br><span class="line">conda config --show channels</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="三、环境命令"><a href="#三、环境命令" class="headerlink" title="三、环境命令"></a>三、环境命令</h2><h3 id="1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本"><a href="#1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本" class="headerlink" title="1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本"></a>1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create --prefix D:\Python\Enviroment\myenv python=3.10.6</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-查看虚拟环境-conda-env-list"><a href="#2-查看虚拟环境-conda-env-list" class="headerlink" title="2.查看虚拟环境:conda env list"></a>2.查看虚拟环境:conda env list</h3><p><font color='Magenta'>其中<code>*</code>表示当前所在的环境</font></p>
-<img src="https://www.pnglog.com/JNoEOF.png"/>
-
-<h3 id="3-切换、退出和删除环境"><a href="#3-切换、退出和删除环境" class="headerlink" title="3.切换、退出和删除环境:"></a>3.切换、退出和删除环境:</h3><blockquote>
-<p>切换环境:conda activate+路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
-
-<img src="https://www.pnglog.com/sDXtxA.png"/>
-</blockquote>
-<blockquote>
-<p>退出环境</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;conda deactivate</span><br></pre></td></tr></table></figure>
-
-<img src="https://www.pnglog.com/7Tk0CH.png"/>
-</blockquote>
-<blockquote>
-<p>删除环境:conda env remove -p+路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> remove -p D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
-
-<img src="https://www.pnglog.com/aZx6Za.png"/>
-</blockquote>
-<h2 id="四、包命令-先进入某一虚拟环境后使用"><a href="#四、包命令-先进入某一虚拟环境后使用" class="headerlink" title="四、包命令(先进入某一虚拟环境后使用)"></a>四、包命令(先进入某一虚拟环境后使用)</h2><h3 id="1-查找包-conda-search-包名"><a href="#1-查找包-conda-search-包名" class="headerlink" title="1.查找包:conda search+包名"></a>1.查找包:conda search+包名</h3><p> <font color='Magenta'>使用该命令会显示不同版本的python所支持的该包的版本</font></p>
-<h3 id="2-安装包-conda-install-包名"><a href="#2-安装包-conda-install-包名" class="headerlink" title="2.安装包:conda install+包名"></a>2.安装包:conda install+包名</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install seaborn </span><br></pre></td></tr></table></figure>
-
-<p><font color='Magenta'>也可以使用 conda install seaborn&#x3D;xxxx 下载指定版本的包</font></p>
-<h3 id="3-查看已下载的包-conda-list"><a href="#3-查看已下载的包-conda-list" class="headerlink" title="3.查看已下载的包:conda list"></a>3.查看已下载的包:conda list</h3><h3 id="4-更新包-conda-update-包名"><a href="#4-更新包-conda-update-包名" class="headerlink" title="4.更新包:conda update+包名"></a>4.更新包:conda update+包名</h3><h3 id="5-删除包-conda-remove-包名"><a href="#5-删除包-conda-remove-包名" class="headerlink" title="5.删除包:conda remove+包名"></a>5.删除包:conda remove+包名</h3>]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -2013,24 +1923,45 @@
       </tags>
   </entry>
   <entry>
-    <title>搜索引擎搜索技巧</title>
-    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<ol>
-<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
-<li>限定标题：<code>intitle:标题内容</code></li>
-<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
-<li>限定内容关键词：<code>intext:内容关键词</code></li>
-<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
-<li>限定网址搜索来源：<code>site:具体的网址</code></li>
-<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
-</ol>
+    <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
+    <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
+    <content><![CDATA[<img src="https://www.pnglog.com/FDPPbA.jpg" style="zoom: 33%;"/>
+
+<p>​	</p>
+<p>​	当地时间7月21日下午，美国总统拜登宣布，他不再谋求连任，并全力支持副总统哈里斯作为民主党总统候选人，参与2024年总统角逐。22日，哈里斯发表声明称，已获得足够支持成为民主党总统候选人。</p>
+<p>​	拜登“主动请辞”，让民主党总算松了口气。然而，临阵换帅怎么说也是兵家大忌。相比拜登，副总统哈里斯尽管有年龄、性别及少数族裔等诸多“优势”加持，但想在未来短短几个月内扭转颓势，给民主党带来好运，恐怕是“不可能完成的任务”。</p>
+<p><strong>临危受命，哈里斯手里有几张牌？</strong></p>
+<p>​	被推上风口浪尖的副总统哈里斯，在拜登宣布支持提名她作为党内总统候选人的第一时间，表达了对拜登的感谢之情，希望自己能够“赢得党内总统候选人的提名”，尽一切努力击败共和党总统候选人特朗普。</p>
+<p>​	临危受命的哈里斯，手里到底握有几张牌？</p>
+<p>​	首先，哈里斯的年龄优势。1964年出生的哈里斯，比拜登整整年轻了22岁，比特朗普年轻19岁，享有巨大的年龄优势。在拜登的年龄、健康状况和认知能力饱受质疑、成为特朗普竞选团队重要攻击把柄的情况下，选择年轻的哈里斯无疑是对特朗普竞选策略的釜底抽薪，让对手无法再将火力集中于民主党总统候选人的年龄和健康状况上。一个朝气蓬勃、充满活力的哈里斯将为民主党沉闷的竞选活动注入新鲜血液，相比之下，特朗普的年龄反而成了劣势和诟病对象。</p>
+<p>​	其次，哈里斯的女性身份。民调显示，特朗普在女性选民中的支持率一直低迷，远低于拜登在女性中的支持率。特朗普私生活的不检点和在堕胎问题上的首鼠两端立场，让很多女性选民对他望而却步。然而，拜登由于年龄、健康问题以及在堕胎问题上的不坚定立场，也无法激起女性选民、特别是年轻女性选民的热情。哈里斯在堕胎问题上“支持选择权”（支持女性有堕胎权利和自由）的坚定立场和对女性权利的坚强捍卫，无疑在情感上与女性、特别是年轻女性更能产生共鸣。特别是在面对特朗普时，哈里斯的女性身份和女权立场，更能赢得女性选民支持。</p>
+<p>​	再次，哈里斯的少数族裔身份。哈里斯的父母分别来自印度和牙买加，拥有亚裔和非裔双重少数族裔身份。这两大少数族裔身份的加持，相对于特朗普，哈里斯更能获得非裔和亚裔少数族裔的共情与共鸣。特朗普在对哈里斯进行“攻击”时，更可能投鼠忌器，担心一不小心被扣上种族主义的帽子。在拉美裔、非裔等少数族裔对拜登日益不满的节骨眼，作为少数族裔的哈里斯“出征”，或许能扭转不利于民主党的选情变化，逐步赢得少数族裔支持。</p>
+<p>​	最后，哈里斯担任检察官的经历。在进入华盛顿政坛以前，哈里斯长期在加州政治圈耕耘，先后在县检察官办公室和旧金山地方检察官办公室工作，并历任旧金山地区检察官和加州总检察长。长期担任检察官的经历，让哈里斯熟稔法律，思维敏捷，长于辩论，并善于抓住对手漏洞穷追猛打。哈里斯担任参议员期间，曾在司法部长塞申斯和联邦最高法院大法官卡瓦纳任命听证会上对其进行刨根问底式的“灵魂拷问”，给观众留下深刻印象。哈里斯的这些经历及雄辩口才，与拜登辩论时的卡壳、口吃和不知所云，将形成强烈反差，特朗普将遇到一个强劲的辩论对手。特别是，特朗普被定罪与哈里斯作为“检察官”的履历，如果进行辩论，很容易让人浮现起检察官“审判”犯人的画面。</p>
+<img src="https://www.pnglog.com/tOtZ5c.png" />
+
+
+
+<p><strong>哈里斯锁定党内提名已无悬念</strong></p>
+<p>​	哈里斯虽然得到拜登的全力支持，但是到目前为止，民主党内大佬、前总统奥巴马还没有明确表态。奥巴马在拜登退选后的一份声明中表示：“在接下来的几天里，我们将在未知的水域前行。但我非常有信心，我们党的领导人将能组织一个产生一位杰出候选人的过程。”显然，奥巴马对哈里斯并不满意。</p>
+<p>​	不过，好消息是，自拜登周日宣布退选后，民主党已经迅速集结在哈里斯周围，哈里斯也已获得了拜登的竞选资金，准备全力迎战特朗普。特别是没有在第一时间表态的民主党重量级人物——前议长佩洛西、参议院民主党领袖舒默和众议院民主党领袖杰弗里斯，已经在当地时间周一表态支持哈里斯。此外，所有民主党州长都已经表态支持哈里斯，密歇根州长惠特曼还自告奋勇担任哈里斯竞选团队的共同主席。</p>
+<p>​	鉴于民主党全国代表大会召开在即，留给民主党的时间已经不多了。特别是，俄亥俄州最早9月份就开始大选投票。根据该州法律，两党必须在8月7日前提交总统候选人名单。因此，民主党几乎没有时间就总统候选人进行内部详细讨论和公开角逐。果然，当地时间7月22日，哈里斯发表声明称已获得足够支持成为民主党总统候选人。</p>
+<img src="https://www.pnglog.com/vQyfIJ.png" style="zoom: 67%;" />
+
+
+
+<p><strong>哈里斯能否挽回民主党颓势？</strong></p>
+<p>​	哈里斯锁定党内总统候选人提名几无悬念，但是能否扭转民主党选举颓势，将是一个巨大的问号。实际上，从目前情况看，这似乎是一个无法完成的任务。</p>
+<p>​	首先，临阵换帅是兵家大忌。在距民主党全国代表大会召开不到一个月，距大选投票不足4个月之际，通过“逼宫”方式，迫使现任总统和党内总统候选人退选，无异于一场不流血的“政变”。这至少说明：第一，民主党对赢得此次大选几乎失去了信心，否则也不会铤而走险，出此下策。第二，民主党担心的不仅仅是失去白宫，更担心可能失去国会参议院多数席位及两院的控制权。</p>
+<p>​	逼退现任总统候选人，还会留下诸多“后遗症”。一是影响民主党内部团结。拜登在宣布退选的前一天还坚持不会退选，退选时声称是出于党派利益和国家利益退选，并对奥巴马等“幕后主使”心怀怨愤。奥巴马在拜登退选后特意没有选择公开支持哈里斯，以及佩洛西、舒默等人姗姗来迟的支持，都凸显民主党内部在这一问题上的分歧与矛盾。二是留给哈里斯的时间不多。哈里斯尽管位居副总统，但普遍认为她不在拜登的决策核心圈。哈里斯仓促上位，在短时间内团结本党、凝聚共识，组建竞选团队，提出竞选纲领，迎战特朗普，扭转民主党颓势，可谓时间紧、任务重，困难重重。</p>
+<p>​	其次，哈里斯是“矮子里面拔将军”。哈里斯近四年的副总统履历，并没有成为她的政治加分项，相反可能是负资产。哈里斯担任副总统期间，几乎没有拿得出手、哪怕是一项让美国民众能够印象深刻的政绩。相反，在美国民众的记忆里，满是哈里斯在公开场合不合时宜的“傻笑”、面对边境非法移民激增时的手足无措以及副总统办公室内“宫斗”的丑闻。就像特朗普在竞选集会上嘲讽的，近四年时间里，拜登只让哈里斯专注一件事，即应对边境非法移民问题，但她却完全搞砸了，非法移民长驱直入，让美国边境形同虚设。拿着这张成绩单的哈里斯，能否成为特朗普的“克星”和民主党的“救星”，让人捏把汗。</p>
+<p>​	最后，特朗普风头正健。至少自去年底以来，无论是全国性民调，还是在6-7个关键摇摆州的民调，特朗普都稳定领先拜登。特别是今年4月以来美国大学校园抗议运动、6月27日拜登与特朗普的首场大选电视辩论以及7月13日特朗普在竞选中的遇刺事件，更是进一步拖累了拜登的人气，让民主党忧心如焚。特朗普遇刺后的诸多民调显示，人们对特朗普的正面印象有了较大幅度提升。据美国广播公司新闻和益普索的民调，在未遂暗杀和共和党全国代表大会之后，特朗普的支持率稳步上升，达到40%，创下了该机构四年来民意调查的最高支持率，而大多数美国人则希望总统拜登退出竞选。很多美国政治评论家甚至认为，特朗普在竞选中遇袭，已经将特朗普变成了一种政治符号，完成了对他选举的“加冕仪式”。尽管有些夸张，但特朗普遇袭及遇袭后特朗普在特勤人员簇拥下高举拳头、高呼“战斗”的“定型照”，无疑是今年大选最具冲击力的画面。</p>
+<p>​	哈里斯要挽回民主党选情颓势，可能难于上青天。但是，这并不意味着哈里斯就无计可施。如果哈里斯将矛头对准特朗普的人品、集中于特朗普的道德瑕疵，聚焦特朗普对美国选举制度和法治的践踏与不尊重，强调特朗普代表了富人和大公司的利益，把大选再次变成对特朗普的“公投”，或许还能给特朗普竞选造成一定干扰，给民主党赢得一些喘息空间。</p>
 ]]></content>
       <categories>
-        <category>方法</category>
+        <category>杂谈</category>
       </categories>
       <tags>
-        <tag>效率工具</tag>
-        <tag>浏览器</tag>
+        <tag>时政</tag>
       </tags>
   </entry>
   <entry>
@@ -2103,6 +2034,75 @@
       </tags>
   </entry>
   <entry>
+    <title>提升效率与稳定性:深入掌握conda环境与包管理</title>
+    <url>/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<img src="https://pnglog.com/529mGH.png" style="zoom: 35%;" />
+
+<h2 id="一、conda基础概念"><a href="#一、conda基础概念" class="headerlink" title="一、conda基础概念"></a>一、conda基础概念</h2><p>在深入使用<strong>conda</strong>命令之前，首先需要了解<strong>conda</strong>的基础概念。<strong>conda</strong> 是一个开源的包管理系统和环境管理系统，可以安装、更新和管理多种语言的依赖库（不仅限于<font color='Peach'>Python</font>）。它的强大之处在于将包管理与环境管理结合为一体，使得在项目开发中，无论是管理依赖包还是创建虚拟环境，<strong>conda</strong> 都能够提供完整的解决方案。</p>
+<h3 id="conda与虚拟环境的区别"><a href="#conda与虚拟环境的区别" class="headerlink" title="conda与虚拟环境的区别"></a>conda与虚拟环境的区别</h3><p><strong>conda</strong> 与传统的虚拟环境工具（如<font color='Salmon'>venv、virtualenv</font>）不同，后者主要用于隔离项目的依赖，而  则同时管理包和环境。通过使用 <strong>conda</strong>，可以更方便地在不同项目之间切换环境，避免包之间的冲突。</p>
+<h2 id="二、必要准备：配置镜像源"><a href="#二、必要准备：配置镜像源" class="headerlink" title="二、必要准备：配置镜像源"></a>二、必要准备：配置镜像源</h2><p><font color='Bitersweet'>在使用Anaconda安装Python包时，系统会自动从默认源下载安装包，但是由于网络访问限制或网络连接速度较慢等原因，可能导致安装失败或速度较慢。为了解决这些问题，配置镜像源可以让用户从国内的服务器下载Python包，加快下载速度并减少下载失败的问题。</font></p>
+<h3 id="添加镜像源"><a href="#添加镜像源" class="headerlink" title="添加镜像源"></a>添加镜像源</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line"><span class="comment">#显示检索路径</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br><span class="line"><span class="comment">#显示镜像通道</span></span><br><span class="line">conda config --show channels</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="三、环境命令"><a href="#三、环境命令" class="headerlink" title="三、环境命令"></a>三、环境命令</h2><h3 id="1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本"><a href="#1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本" class="headerlink" title="1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本"></a>1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create --prefix D:\Python\Enviroment\myenv python=3.10.6</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-查看虚拟环境-conda-env-list"><a href="#2-查看虚拟环境-conda-env-list" class="headerlink" title="2.查看虚拟环境:conda env list"></a>2.查看虚拟环境:conda env list</h3><p><font color='Magenta'>其中<code>*</code>表示当前所在的环境</font></p>
+<img src="https://www.pnglog.com/JNoEOF.png"/>
+
+<h3 id="3-切换、退出和删除环境"><a href="#3-切换、退出和删除环境" class="headerlink" title="3.切换、退出和删除环境:"></a>3.切换、退出和删除环境:</h3><blockquote>
+<p>切换环境:conda activate+路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
+
+<img src="https://www.pnglog.com/sDXtxA.png"/>
+</blockquote>
+<blockquote>
+<p>退出环境</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;conda deactivate</span><br></pre></td></tr></table></figure>
+
+<img src="https://www.pnglog.com/7Tk0CH.png"/>
+</blockquote>
+<blockquote>
+<p>删除环境:conda env remove -p+路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> remove -p D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
+
+<img src="https://www.pnglog.com/aZx6Za.png"/>
+</blockquote>
+<h2 id="四、包命令-先进入某一虚拟环境后使用"><a href="#四、包命令-先进入某一虚拟环境后使用" class="headerlink" title="四、包命令(先进入某一虚拟环境后使用)"></a>四、包命令(先进入某一虚拟环境后使用)</h2><h3 id="1-查找包-conda-search-包名"><a href="#1-查找包-conda-search-包名" class="headerlink" title="1.查找包:conda search+包名"></a>1.查找包:conda search+包名</h3><p> <font color='Magenta'>使用该命令会显示不同版本的python所支持的该包的版本</font></p>
+<h3 id="2-安装包-conda-install-包名"><a href="#2-安装包-conda-install-包名" class="headerlink" title="2.安装包:conda install+包名"></a>2.安装包:conda install+包名</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install seaborn </span><br></pre></td></tr></table></figure>
+
+<p><font color='Magenta'>也可以使用 conda install seaborn&#x3D;xxxx 下载指定版本的包</font></p>
+<h3 id="3-查看已下载的包-conda-list"><a href="#3-查看已下载的包-conda-list" class="headerlink" title="3.查看已下载的包:conda list"></a>3.查看已下载的包:conda list</h3><h3 id="4-更新包-conda-update-包名"><a href="#4-更新包-conda-update-包名" class="headerlink" title="4.更新包:conda update+包名"></a>4.更新包:conda update+包名</h3><h3 id="5-删除包-conda-remove-包名"><a href="#5-删除包-conda-remove-包名" class="headerlink" title="5.删除包:conda remove+包名"></a>5.删除包:conda remove+包名</h3>]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搜索引擎搜索技巧</title>
+    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<ol>
+<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
+<li>限定标题：<code>intitle:标题内容</code></li>
+<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
+<li>限定内容关键词：<code>intext:内容关键词</code></li>
+<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
+<li>限定网址搜索来源：<code>site:具体的网址</code></li>
+<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
+</ol>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>效率工具</tag>
+        <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>本地部署Llama3.1最强开源大模型！支持Windows、MacOS</title>
     <url>/2024/08/07/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Llama3.1%E6%9C%80%E5%BC%BA%E5%BC%80%E6%BA%90%E5%A4%A7%E6%A8%A1%E5%9E%8B%EF%BC%9A%E6%94%AF%E6%8C%81Windows%E3%80%81MacOS/</url>
     <content><![CDATA[<img src="https://www.pnglog.com/CaoCUc.png" style="zoom: 67%;" />
@@ -2162,7 +2162,7 @@
 <h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
 
 <p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
-<p>用户：<a href="mailto:&#97;&#x64;&#x6d;&#105;&#x6e;&#64;&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;">&#97;&#x64;&#x6d;&#105;&#x6e;&#64;&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;</a></p>
+<p>用户：<a href="mailto:&#x61;&#x64;&#x6d;&#105;&#x6e;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#x65;&#46;&#x63;&#x6f;&#x6d;">&#x61;&#x64;&#x6d;&#105;&#x6e;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#x65;&#46;&#x63;&#x6f;&#x6d;</a></p>
 <p>密码：admin</p>
 <p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
