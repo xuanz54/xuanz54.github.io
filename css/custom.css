@@ -17,6 +17,42 @@ body {
 .search-form-wrap {
   right: 8rem;
 }
+.float_btns {
+  position: fixed;
+  right: 224px;
+  bottom: 24px;
+  z-index: 100001;
+  width: 40px;
+  float: none;
+  transform: none;
+}
+.float_btns .totop,
+.float_btns .todark {
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  line-height: 38px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  opacity: 0.82;
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.float_btns .totop:hover,
+.float_btns .todark:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+.float_btns .totop {
+  margin-bottom: 10px;
+}
+body.darkmode .float_btns .totop,
+body.darkmode .float_btns .todark {
+  background: rgba(45,45,45,0.92);
+  border-color: rgba(255,255,255,0.16);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
 @media (min-width: 768px) {
   .outer,
   .wrap {
@@ -24,6 +60,18 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .float_btns {
+    top: 16px;
+    right: 16px;
+    bottom: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: auto;
+  }
+  .float_btns .totop {
+    margin: 0;
+  }
   .tocbot {
     display: none !important;
   }
