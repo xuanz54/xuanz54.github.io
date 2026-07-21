@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>自建Bitwarden密码管理器 |  xuanz的博客</title>
+      <title>v2rayN 新手保姆级教程：从下载安装到节点配置全流程 |  xuanz的博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -55,7 +55,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-自建Bitwarden密码管理器"
+  id="post-v2rayN-新手保姆级教程：从下载安装到节点配置全流程"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -66,7 +66,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  自建Bitwarden密码管理器
+  v2rayN 新手保姆级教程：从下载安装到节点配置全流程
 </h1>
  
 
@@ -74,11 +74,11 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2024/10/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/" class="article-date">
-  <time datetime="2024-10-11T15:15:40.000Z" itemprop="datePublished">2024-10-11</time>
+      <a href="/2026/07/21/v2rayN-%E6%96%B0%E6%89%8B%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B%EF%BC%9A%E4%BB%8E%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%88%B0%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE%E5%85%A8%E6%B5%81%E7%A8%8B/" class="article-date">
+  <time datetime="2026-07-21T01:39:57.000Z" itemprop="datePublished">2026-07-21</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a>
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B/">软件教程</a>
   </div>
   
 <div class="word_count">
@@ -86,7 +86,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">808</span>
+            <span class="post-count">1.1k</span>
         </span>
     </span>
 
@@ -104,55 +104,61 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p><strong>自建Bitwarden密码管理，推荐选择开源项目：<a target="_blank" rel="noopener" href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。</strong></p>
-<p><img src="https://pnglog.com/olRQjw.png"> </p>
-<p>部署非常简单，尤其是通过Docker，只需少量的配置就可以启动服务，安全稳定又可靠。而且 Bitwarden 大部分高级付费功能可以通过手动配置或第三方集成来免费实现。</p>
-<h2 id="安装教程："><a href="#安装教程：" class="headerlink" title="安装教程："></a>安装教程：</h2><h3 id="步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。"><a href="#步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。" class="headerlink" title="步骤 1：获取一台轻量级的VPS 【点击前往】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。"></a>步骤 1：获取一台轻量级的VPS 【<a target="_blank" rel="noopener" href="https://www.vultr.com/?ref=7045490">点击前往</a>】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。</h3><p>SSH远程连接工具，可以选择开源的WindTerm 【<a target="_blank" rel="noopener" href="https://github.com/kingToolbox/WindTerm">点击下载</a>】  </p>
-<h3 id="步骤-2-更新系统"><a href="#步骤-2-更新系统" class="headerlink" title="步骤 2: 更新系统"></a>步骤 2: 更新系统</h3><p>首先，更新你的系统以确保所有软件包都是最新的：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="步骤-3-安装-Docker-和-Docker-Compose"><a href="#步骤-3-安装-Docker-和-Docker-Compose" class="headerlink" title="步骤 3: 安装 Docker 和 Docker Compose"></a>步骤 3: 安装 Docker 和 Docker Compose</h3><p>Vaultwarden使用Docker来运行，因此我们需要安装Docker和Docker Compose。</p>
-<ol>
-<li>安装Docker 和 Docker Compose 命令：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com  | bash &amp;&amp; <span class="built_in">sudo</span> curl -L <span class="string">&quot;https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-<span class="subst">$(uname  -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose &amp;&amp; <span class="built_in">sudo</span> <span class="built_in">chmod</span> +x /usr/local/bin/docker-compose &amp;&amp; docker-compose --version</span><br></pre></td></tr></table></figure>
-
-<p><strong>完成安装后：</strong></p>
-<p>Docker和Docker Compose就都安装好了，你可以通过以下命令验证安装：</p>
+  <h1 id="v2rayN-新手保姆级教程：从下载安装到节点配置全流程"><a href="#v2rayN-新手保姆级教程：从下载安装到节点配置全流程" class="headerlink" title="v2rayN 新手保姆级教程：从下载安装到节点配置全流程"></a>v2rayN 新手保姆级教程：从下载安装到节点配置全流程</h1><p>v2rayN 是目前功能最强大、最受欢迎的图形化代理客户端之一。随着 7.x 版本的发布，它不仅在 Windows 上表现卓越，更通过 Avalonia 框架完美支持了 macOS 和 Linux 系统。它支持多种协议，包括 VMess、VLESS (Reality)、Shadowsocks、Trojan 及 Hysteria2。</p>
+<p>如果你是第一次接触 v2rayN，本教程将手把手带你完成从下载到成功开启代理的全过程。</p>
+<p><img src="https://picui.ogmua.cn/s1/2026/07/20/6a5df7b54ba6b.webp"></p>
+<h2 id="第一步：下载与安装"><a href="#第一步：下载与安装" class="headerlink" title="第一步：下载与安装"></a>第一步：下载与安装</h2><h3 id="1-获取软件"><a href="#1-获取软件" class="headerlink" title="1. 获取软件"></a>1. 获取软件</h3><p>为了确保安全性与下载速度，建议通过以下渠道获取：</p>
 <ul>
-<li><strong>Docker版本检查</strong>：<code>docker --version</code></li>
-<li><strong>Docker Compose版本检查</strong>：<code>docker-compose --version</code></li>
+<li><strong>GitHub 官方发布页</strong>：<a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayN/releases">2dust&#x2F;v2rayN&#x2F;releases</a></li>
 </ul>
-<h3 id="步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口"><a href="#步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口" class="headerlink" title="步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口"></a>步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p 8080:80 -p 3012:3012 vaultwarden/server:latest</span><br></pre></td></tr></table></figure>
-
-<p>安装以后，就可以通过ip:8080 访问你的 Bitwarden密码管理面板，ip:3012 是你的 WebSocket 通信链接 ,但现在它是http协议，为了更安全，我们需要部署下HTTPS加密的访问协议。 我们可以通过Nginx Proxy Manager进行配置SSL和Nginx反代</p>
-<h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
-
-<p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
-<p>用户：<a href="mailto:&#x61;&#100;&#109;&#x69;&#110;&#x40;&#101;&#120;&#97;&#x6d;&#112;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x61;&#100;&#109;&#x69;&#110;&#x40;&#101;&#120;&#97;&#x6d;&#112;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
-<p>密码：admin</p>
-<p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
-
-<h3 id="步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件："><a href="#步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件：" class="headerlink" title="步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 Bitwarden 的官方客户端和浏览器插件："></a>步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 <strong>Bitwarden</strong> 的官方客户端和浏览器插件：</h3><h4 id="1-Bitwarden-桌面客户端"><a href="#1-Bitwarden-桌面客户端" class="headerlink" title="1. Bitwarden 桌面客户端"></a>1. <strong>Bitwarden 桌面客户端</strong></h4><ul>
-<li><strong>Windows</strong>: <a target="_blank" rel="noopener" href="https://bitwarden.com/download/#downloads-desktop">点击下载</a> </li>
-<li><strong>macOS</strong>: <a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12&browser=macos">点击下载</a> </li>
-<li><strong>Linux</strong>: <a target="_blank" rel="noopener" href="https://bitwarden.com/download/#downloads-desktop">点击下载</a></li>
+<h3 id="2-下载哪个文件？"><a href="#2-下载哪个文件？" class="headerlink" title="2. 下载哪个文件？"></a>2. 下载哪个文件？</h3><p>对于大多数 Windows 10&#x2F;11 用户，我们推荐下载： <strong><code>v2rayN-windows-64-SelfContained.zip</code></strong></p>
+<p>这个包的优势在于：</p>
+<ul>
+<li><strong>解压即用</strong>：内置了所有必需的核心组件。</li>
+<li><strong>环境免安装</strong>：无需手动安装 Microsoft .NET 运行环境。</li>
 </ul>
-<h4 id="2-Bitwarden-移动客户端"><a href="#2-Bitwarden-移动客户端" class="headerlink" title="2. Bitwarden 移动客户端"></a>2. <strong>Bitwarden 移动客户端</strong></h4><ul>
-<li><strong>iOS（App Store）</strong>: <a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744">点击下载</a> </li>
-<li><strong>Android（Google Play）</strong>: <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&pli=1">点击下载</a></li>
+<h3 id="3-安装与运行"><a href="#3-安装与运行" class="headerlink" title="3. 安装与运行"></a>3. 安装与运行</h3><p><img src="https://picui.ogmua.cn/s1/2026/07/20/6a5df7b55b691.webp" alt="v2rayN 安装步骤说明图"></p>
+<ol>
+<li>将下载的压缩包解压到一个固定的位置（建议不要放在桌面或 C 盘，推荐放在 D 盘或 E 盘文件夹中）。</li>
+<li>在解压后的文件夹中，找到 <strong>v2rayN.exe</strong> (Windows 用户) 或对应的运行图标。</li>
+<li><strong>重要</strong>：Windows 用户建议右键点击程序，选择 “以管理员身份运行”，以确保代理权限正常。</li>
+</ol>
+<p><em>注意：如果运行报错提示缺少组件，请根据提示安装 .NET 8.0 Desktop Runtime。</em></p>
+<h2 id="第二步：添加节点订阅"><a href="#第二步：添加节点订阅" class="headerlink" title="第二步：添加节点订阅"></a>第二步：添加节点订阅</h2><p>v2rayN 本身只是一个工具，你需要导入有效的服务器节点（订阅链接）才能访问网络。</p>
+<h3 id="1-获取订阅地址"><a href="#1-获取订阅地址" class="headerlink" title="1. 获取订阅地址"></a>1. 获取订阅地址</h3><p>通常你可以从自己购买的加速服务（机场）后台复制 V2Ray 订阅链接。</p>
+<p>我们以<a target="_blank" rel="noopener" href="https://go.v2rayn.co/yf">扬帆云机场</a>为例，购买订阅服务后登陆机场服务商的后台，点击订阅链接，复制订阅链接，如下图：<img src="https://picui.ogmua.cn/s1/2026/07/20/6a5df7b55fcf2.webp"></p>
+<h3 id="2-导入软件"><a href="#2-导入软件" class="headerlink" title="2. 导入软件"></a>2. 导入软件</h3><ol>
+<li>打开 v2rayN 主界面。<img src="https://picui.ogmua.cn/s1/2026/07/20/6a5df7b56d577.webp"></li>
+<li>点击顶部菜单栏的 <strong>订阅分组</strong>，选择 <strong>订阅分组设置</strong>。<img src="https://picui.ogmua.cn/s1/2026/07/20/6a5df7b59e575.webp"></li>
+<li>在弹出的窗口中点击 <strong>添加</strong>。</li>
+<li>在 <strong>别名</strong> 处随便填写，在 <strong>可选地址 (url)</strong> 处粘贴你刚才复制的订阅链接。</li>
+<li>点击 <strong>确定</strong> 保存。</li>
+<li>回到主界面，点击 <strong>订阅分组</strong> -&gt; **更新全部订阅 (不通过代理)**。<img src="https://picui.ogmua.cn/s1/2026/07/20/6a5df80007d08.webp"></li>
+</ol>
+<p>操作完成后，你应该能看到列表中出现了一排节点。</p>
+<h2 id="第三步：开启代理与模式选择"><a href="#第三步：开启代理与模式选择" class="headerlink" title="第三步：开启代理与模式选择"></a>第三步：开启代理与模式选择</h2><p>这是最关键的一步，决定了电脑是否已经处于代理加速状态。</p>
+<h3 id="1-选择节点"><a href="#1-选择节点" class="headerlink" title="1. 选择节点"></a>1. 选择节点</h3><p>在节点列表中，左键点击选中一个想使用的节点，然后按键盘上的 **Enter (回车)**。当节点的别名变色或显示“活动”状态时，表示已选中。</p>
+<h3 id="2-设置系统代理"><a href="#2-设置系统代理" class="headerlink" title="2. 设置系统代理"></a>2. 设置系统代理</h3><p>在软件界面的<strong>最底部图标栏</strong>，找到以下三项关键设置：</p>
+<ul>
+<li><strong>系统代理</strong>：将其设置为 <strong>自动配置系统代理</strong>。此时底部图标会变为红色。</li>
+<li><strong>路由</strong>：将其设置为 <strong>绕过大陆</strong>。这可以确保访问百度、淘宝等国内网站时不走代理，访问 YouTube、Google 时才加速。</li>
 </ul>
-<h4 id="3-Bitwarden-浏览器插件"><a href="#3-Bitwarden-浏览器插件" class="headerlink" title="3. Bitwarden 浏览器插件"></a>3. <strong>Bitwarden 浏览器插件</strong></h4><ul>
-<li><strong>Chrome</strong>: <a target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/bitwarden-%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/nngceckbapebfimnlniiiahkandclblb?browser=chrome">点击下载</a> </li>
-<li><strong>Firefox</strong>: <a target="_blank" rel="noopener" href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox">点击下载</a> </li>
-<li><strong>Microsoft Edge</strong>: <a target="_blank" rel="noopener" href="https://microsoftedge.microsoft.com/addons/detail/bitwarden-free-password-ma/cnjalbhlkpghadgdpnddpjlldadblomo">点击下载</a> </li>
-<li><strong>其它浏览器</strong>: <a target="_blank" rel="noopener" href="https://bitwarden.com/download/#downloads-web-browser">点击下载</a></li>
+<h3 id="3-测试网络"><a href="#3-测试网络" class="headerlink" title="3. 测试网络"></a>3. 测试网络</h3><p>打开浏览器，尝试访问 Google。如果能正常打开，恭喜，配置已成功。</p>
+<h2 id="高级设置说明"><a href="#高级设置说明" class="headerlink" title="高级设置说明"></a>高级设置说明</h2><h3 id="TUN-模式"><a href="#TUN-模式" class="headerlink" title="TUN 模式"></a>TUN 模式</h3><p>在软件底部可以找到 TUN 模式开关。</p>
+<ul>
+<li><strong>作用</strong>：接管整机流量。对于一些不遵循系统代理的浏览器插件、游戏或特定软件非常有用。</li>
+<li><strong>建议</strong>：普通网页浏览不需要开启，仅在某些软件无法正常代理时开启。</li>
 </ul>
-<h4 id="4-Bitwarden-命令行工具-CLI"><a href="#4-Bitwarden-命令行工具-CLI" class="headerlink" title="4. Bitwarden 命令行工具 (CLI)"></a>4. <strong>Bitwarden 命令行工具 (CLI)</strong></h4><ul>
-<li><strong>CLI 下载</strong>: <a target="_blank" rel="noopener" href="https://bitwarden.com/download/#downloads-command-line-interface">点击下载</a></li>
+<h3 id="核心选择"><a href="#核心选择" class="headerlink" title="核心选择"></a>核心选择</h3><p>v2rayN 支持切换 Xray-core、sing-box 等核心。目前大部分订阅链接都支持 Xray，保持默认即可。</p>
+<h2 id="常见问题排查-FAQ"><a href="#常见问题排查-FAQ" class="headerlink" title="常见问题排查 FAQ"></a>常见问题排查 FAQ</h2><h3 id="1-软件开启了但无法上网？"><a href="#1-软件开启了但无法上网？" class="headerlink" title="1. 软件开启了但无法上网？"></a>1. 软件开启了但无法上网？</h3><ul>
+<li>检查系统时间是否准确（误差不能超过 90 秒，否则无法连接）。</li>
+<li>确认系统代理是否已设为“自动配置系统代理”。</li>
+<li>尝试更换其他节点进行连接。</li>
 </ul>
-<p>你可以根据你的设备和浏览器选择相应的版本下载并安装。所有这些链接均为官方提供的下载链接，确保软件的安全和可靠性。</p>
+<h3 id="2-点击更新订阅失败？"><a href="#2-点击更新订阅失败？" class="headerlink" title="2. 点击更新订阅失败？"></a>2. 点击更新订阅失败？</h3><ul>
+<li>请确认你的网络能够访问订阅地址，或者尝试更换不同的网络环境。</li>
+<li>确认订阅链接是否过期或被服务商重置。</li>
+</ul>
  
       <!-- reward -->
       
@@ -211,12 +217,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xuanz54.github.io/2024/10/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xuanz54.github.io/2026/07/21/v2rayN-%E6%96%B0%E6%89%8B%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B%EF%BC%9A%E4%BB%8E%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%88%B0%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE%E5%85%A8%E6%B5%81%E7%A8%8B/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/V2Ray/" rel="tag">V2Ray</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/v2rayN/" rel="tag">v2rayN</a></li></ul>
 
     </footer>
   </div>
@@ -224,19 +230,10 @@
    
   <nav class="article-nav">
     
-      <a href="/2024/10/13/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91VLAN/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            虚拟局域网VLAN
-          
-        </div>
-      </a>
     
-    
-      <a href="/2024/09/17/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E5%85%89%E9%80%9F%E5%85%A5%E9%97%A8Mathlab/" class="article-nav-link">
+      <a href="/2026/07/20/%E7%8E%B0%E4%BB%A3Agent%E6%8A%80%E6%9C%AF%E6%A0%88%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">一文带你光速入门Mathlab</div>
+        <div class="article-nav-title">现代Agent技术栈学习笔记</div>
       </a>
     
   </nav>
