@@ -22,33 +22,33 @@
 
 ### 首页封面
 
-![博客首页封面](https://picui.ogmua.cn/s1/2026/07/21/6a5f0ab388974.webp)
+![博客首页封面](readme-assets/01-home.jpg)
 
 首页首屏由 Ayer 的 `cover` 模块生成。背景图来自主题静态资源，中央显示站点标题与循环打字副标题，左上角打开侧边栏，右上角切换明暗主题，底部箭头滚动到文章列表。Live2D 模型作为独立浮层固定在右下角。
 
 ### 文章归档
 
-![文章归档页面](https://picui.ogmua.cn/s1/2026/07/21/6a5f0ab388709.webp)
+![文章归档页面](readme-assets/02-archives.png)
 
 归档页按年份和发布日期组织文章。Hexo 在生成阶段读取每篇文章 Front Matter 中的 `date`，由 `hexo-generator-archive` 建立归档数据，再交给主题的归档模板渲染时间轴。
 
 ### 分类与标签
 
-![分类页面](https://picui.ogmua.cn/s1/2026/07/21/6a5f0ab31c1f7.webp)
+![分类页面](readme-assets/03-categories.png)
 
-![标签页面](https://picui.ogmua.cn/s1/2026/07/21/6a5f0ab35b09d.webp)
+![标签页面](readme-assets/04-tags.png)
 
 分类用于表达文章所属的主要内容领域，标签用于描述文章涉及的技术或主题。二者都来自 Markdown 文件头部的 Front Matter，由 Hexo 在构建时聚合并生成索引页、详情页和文章之间的关联链接。
 
 ### 文章详情
 
-![文章详情页面](https://picui.ogmua.cn/s1/2026/07/21/6a5f0ab41f66a.webp)
+![文章详情页面](readme-assets/05-article.png)
 
 文章详情页由标题、日期、分类、字数、预计阅读时间、正文、标签、分享与上下篇导航等区域组成。Markdown 在构建阶段转换为 HTML，浏览器只需加载静态文件，不依赖服务端数据库。
 
 ### 关于页面
 
-![关于页面](https://picui.ogmua.cn/s1/2026/07/21/6a5f0d2f68d2d.webp)
+![关于页面](readme-assets/06-about.png)
 
 关于页同样由 Markdown 编写，但使用独立 `page` 布局。页面中提供本项目 README 的入口，使读者可以从博客直接跳转到 GitHub 查看完整实现说明。
 
@@ -66,7 +66,7 @@
 | 动画 | Typed.js、Pace、Live2D | 实现打字副标题、加载进度条与桌面模型 |
 | 发布 | hexo-deployer-git | 将 `public/` 中的静态产物推送到 GitHub Pages |
 | 托管 | GitHub Pages | 通过 HTTPS 对外提供纯静态博客 |
-| 图床 | PicUI | 托管 README 和部分文章图片，Markdown 引用远程 URL |
+| 图片 | 仓库自托管 | README 截图和文章图片随 GitHub Pages 一起发布 |
 
 ## 整体工作原理
 
@@ -384,19 +384,19 @@ npm run deploy
 npx hexo new post "文章标题"
 ```
 
-## 图片使用与 PicUI
+## 图片使用与自托管
 
-本 README 的页面截图均上传至 PicUI，并使用返回的 WebP 地址：
+README 截图保存在仓库根目录的 `readme-assets/`，文章图片保存在 `source/images/posts/`。构建时，Hexo 会把文章图片复制到 `public/images/posts/`，自定义脚本会把 README 截图复制到 `public/readme-assets/`。
 
 ```markdown
-![图片说明](https://picui.ogmua.cn/.../image.webp)
+![图片说明](readme-assets/example.png)
 ```
 
 这种方式有三个特点：
 
-1. GitHub 与博客仓库只保存图片 URL，不保存截图二进制文件。
-2. WebP 通常比原始 PNG 更小，可降低 README 加载流量。
-3. 图片可用性依赖图床，因此应保留 PicUI 的删除链接或账号记录，并定期检查外链是否有效。
+1. 图片与站点代码一起版本化，不依赖第三方图床的生命周期。
+2. GitHub Pages 直接提供图片文件，文章和 README 使用站内或相对路径引用。
+3. 新增图片时应使用清晰的文件名，并在发布前检查生成目录中是否存在对应文件。
 
 文章图片的 `alt` 文本不要留空。Ayer 会把非链接图片的 `alt` 渲染成图片说明，同时它也有助于无障碍访问和搜索引擎理解图片内容。
 
@@ -427,7 +427,7 @@ npm run build
 
 ### 图片显示但无法点击放大
 
-确认 `image_viewer` 已开启，图片位于 `.article-entry` 内，图床允许 HTTPS 访问，并检查 PhotoSwipe 初始化脚本是否成功加载。
+确认 `image_viewer` 已开启，图片位于 `.article-entry` 内，生成目录中存在对应图片，并检查 PhotoSwipe 初始化脚本是否成功加载。
 
 ### 深色模式刷新后恢复
 
@@ -439,7 +439,7 @@ npm run build
 
 ## 安全与维护注意事项
 
-- 不要把 GitHub Token、图床 Token、SSH 私钥或评论系统密钥写入 Markdown、主题配置或构建产物。
+- 不要把 GitHub Token、SSH 私钥或评论系统密钥写入 Markdown、主题配置或构建产物。
 - 使用公开仓库时，发布前检查 `_config.yml` 中的管理口令、第三方统计标识和私人联系方式。
 - 外部脚本应优先使用 HTTPS，并定期确认 CDN 地址仍受维护。
 - `public/` 是生成产物，手工修改会在下一次构建时丢失；永久改动应写入 `source/`、主题模板或配置文件。
@@ -464,7 +464,6 @@ npm run build
 - [Hexo](https://hexo.io/)：静态博客生成框架
 - [Ayer](https://github.com/Shen-Yu/hexo-theme-ayer)：博客主题与主要界面组件
 - [GitHub Pages](https://pages.github.com/)：静态站点托管
-- [PicUI](https://picui.cn/)：README 截图托管
 
 ## 许可说明
 

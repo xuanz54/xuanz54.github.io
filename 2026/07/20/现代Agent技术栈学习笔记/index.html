@@ -109,10 +109,7 @@
   <h1 id="现代Agent技术栈学习笔记"><a href="#现代Agent技术栈学习笔记" class="headerlink" title="现代Agent技术栈学习笔记"></a>现代Agent技术栈学习笔记</h1><blockquote>
 <p>适用对象：想系统理解 Codex、AI Agent、Skills、MCP、工具调用、上下文工程和 Agent 工程化的人。<br>阅读目标：读完后能把这些概念放进同一张地图里，并知道下一步如何实践。</p>
 </blockquote>
-<img src="https://picui.ogmua.cn/s1/2026/07/20/6a5dc9cfc90cc.webp" />
-
-
-
+<p><img src="/images/posts/agent-stack/overview.svg" alt="现代 Agent 技术栈"></p>
 <h2 id="0-一句话总览"><a href="#0-一句话总览" class="headerlink" title="0. 一句话总览"></a>0. 一句话总览</h2><p>这一波 AI 工具的核心变化，不是“模型能聊天”，而是“模型能在受控环境里带着上下文使用工具完成任务”。  </p>
 <p>可以把整个体系理解成：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">用户目标</span><br><span class="line">  -&gt; 上下文工程</span><br><span class="line">  -&gt; Agent 推理与计划</span><br><span class="line">  -&gt; 工具调用 / 浏览器 / 代码 / 文件 / API</span><br><span class="line">  -&gt; MCP 等协议把外部能力标准化接入</span><br><span class="line">  -&gt; Skills 把可复用工作流沉淀下来</span><br><span class="line">  -&gt; 沙箱、审批、日志、评测保证可控</span><br><span class="line">  -&gt; 可验证的交付物</span><br></pre></td></tr></table></figure>
@@ -207,8 +204,7 @@
 </ul>
 <p>的 AI 系统。</p>
 <p>它的典型循环是：</p>
-<img src="https://picui.ogmua.cn/s1/2026/07/20/6a5dc9cf9fdb9.webp"/>
-
+<p><img src="/images/posts/agent-stack/agent-loop.svg" alt="Agent Loop"></p>
 <p>这个循环有时被称为 Agent Loop、ReAct、Plan-Act-Observe 等。名称不同，核心思想相同：<br><strong>模型要能在行动结果的反馈中继续推理。</strong></p>
 <h3 id="3-2-Agent-与-Chatbot-的区别"><a href="#3-2-Agent-与-Chatbot-的区别" class="headerlink" title="3.2 Agent 与 Chatbot 的区别"></a>3.2 Agent 与 Chatbot 的区别</h3><table>
 <thead>
