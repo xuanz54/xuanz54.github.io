@@ -80,7 +80,7 @@
 <ol>
 <li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
 </li>
-<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#x65;&#109;&#x61;&#105;&#108;&#64;&#x78;&#120;&#x78;&#46;&#99;&#x6f;&#x6d;">&#x65;&#109;&#x61;&#105;&#108;&#64;&#x78;&#120;&#x78;&#46;&#99;&#x6f;&#x6d;</a></strong></font>“</p>
+<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#x65;&#109;&#97;&#105;&#108;&#x40;&#120;&#x78;&#120;&#46;&#99;&#111;&#109;">&#x65;&#109;&#97;&#105;&#108;&#x40;&#120;&#x78;&#120;&#46;&#99;&#111;&#109;</a></strong></font>“</p>
 <p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
 </li>
 <li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
@@ -298,23 +298,6 @@
       <tags>
         <tag>Linux</tag>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IDM直装注册版（完美，不反弹！）</title>
-    <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
-    <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
-<p><strong>中文绿色特别版：【<a href="https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file">点击下载</a>】</strong></p>
-<p><strong>一定要安装IDM的浏览器插件，才可以自动调用下载！</strong></p>
-<p><strong>浏览器插件：</strong>【<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">进入安装</a>】</p>
-<p>再华丽的语言也无法表达IDM的牛C！</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>浏览器</tag>
       </tags>
   </entry>
   <entry>
@@ -544,8 +527,25 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>工具</tag>
         <tag>Python</tag>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IDM直装注册版（完美，不反弹！）</title>
+    <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
+    <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
+<p><strong>中文绿色特别版：【<a href="https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file">点击下载</a>】</strong></p>
+<p><strong>一定要安装IDM的浏览器插件，才可以自动调用下载！</strong></p>
+<p><strong>浏览器插件：</strong>【<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">进入安装</a>】</p>
+<p>再华丽的语言也无法表达IDM的牛C！</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>浏览器</tag>
       </tags>
   </entry>
   <entry>
@@ -581,38 +581,284 @@
       </tags>
   </entry>
   <entry>
-    <title>Windows右键菜单管理软件</title>
-    <url>/2025/08/01/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h4 id="ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"><a href="#ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁" class="headerlink" title="ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"></a>ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁</h4><h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
-<li>启用或禁用文件、文件夹、新建、发送到、打开方式、自定义文件格式、IE浏览器、WinX等右键菜单项目</li>
-<li>对上述场景右键菜单项目进行修改名称、修改图标、导航注册表位置、导航文件位置、永久删除等操作</li>
-<li>对上述场景右键菜单自定义添加项目，自定义菜单命令</li>
+    <title>md语法速查</title>
+    <url>/2024/07/23/md%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5/</url>
+    <content><![CDATA[<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><blockquote>
+<p>语法：# (一级标题)  ## (二级标题)  ### (三级标题) ……</p>
+</blockquote>
+<blockquote>
+<p>代码：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;# 这是一级标题</span><br><span class="line">&gt;## 这是二级标题</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:  </p>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2></blockquote>
+<blockquote>
+<p>快捷键:</p>
+<ul>
+<li>Ctrl+数字1~6可以快速将选中的文本调成对应级别的标题</li>
+<li>Ctrl+0可以快速将选中的文本调成普通文本</li>
+<li>Ctrl+加号&#x2F;减号对标题级别进行加减</li>
 </ul>
-<h2 id="兼容性能"><a href="#兼容性能" class="headerlink" title="兼容性能"></a>兼容性能</h2><ul>
-<li>适用于Win 11、Win10、8.1、8、7、Vista</li>
-<li>适用于 64bit、32bit CPU 操作系统</li>
-<li>适用于高分屏，最佳显示缩放比为150%</li>
-<li>程序支持国际化多语言显示，欢迎为此程序制作语言字典</li>
+</blockquote>
+<h2 id="二、段落"><a href="#二、段落" class="headerlink" title="二、段落"></a>二、段落</h2><h3 id="1、换行"><a href="#1、换行" class="headerlink" title="1、换行"></a>1、换行</h3><blockquote>
+<p>代码:  </p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;这是一个段落</span><br><span class="line">&gt;这是一个段落</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果: </p>
+<p>这是一个段落<br>这是一个段落</p>
+</blockquote>
+<h3 id="2、分割线"><a href="#2、分割线" class="headerlink" title="2、分割线"></a>2、分割线</h3><blockquote>
+<p>语法:  —或者***+回车</p>
+</blockquote>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;---或者***</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<hr>
+</blockquote>
+<h2 id="三、文字显示"><a href="#三、文字显示" class="headerlink" title="三、文字显示"></a>三、文字显示</h2><h3 id="1、字体"><a href="#1、字体" class="headerlink" title="1、字体"></a>1、字体</h3><blockquote>
+<p>语法:</p>
+<ul>
+<li>粗体:  用一对双星号包裹</li>
+<li>删除线:  用一对双飘号包裹</li>
+<li>下划线:  用一对u标签包裹</li>
+<li>斜体:  用一对单星号包裹</li>
+<li>高亮:  用一对双等号包裹</li>
 </ul>
-<h2 id="开源程序：【点击下载】"><a href="#开源程序：【点击下载】" class="headerlink" title="开源程序：【点击下载】"></a>开源程序：【<a href="https://github.com/BluePointLilac/ContextMenuManager">点击下载</a>】</h2><h2 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h2><p><img src="/images/posts/windows-context-menu/overview.svg" alt="Windows 右键菜单管理示意"></p>
-<h2 id="程序下载"><a href="#程序下载" class="headerlink" title="程序下载"></a>程序下载</h2><ul>
-<li><a href="https://github.com/BluePointLilac/ContextMenuManager/releases/latest">最新版本</a><br>  <a href="https://github.com/BluePointLilac/ContextMenuManager/releases">GitHub Releases</a><br>  <a href="https://gitee.com/BluePointLilac/ContextMenuManager/releases">Gitee Releases</a></li>
-<li>下载说明：在Assets文件列表里面下载zip（建议）或者直接下载exe</li>
-<li>.NET版本说明：程序分为.NET3.5版和.NET4.0版，均适用于Win10、8.1、8、7、Vista系统<br>  win7自带.NET3.5，win8、win8.1、win10自带.NET4.0以上版本，Vista系统既不自带.NET3.5也不自带4.0以上版本<br>  自带.NET可直接运行程序，不自带则需要安装对应版本的<a href="https://dotnet.microsoft.com/download/dotnet-framework">.NET Framework运行库</a></li>
+</blockquote>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;**这是粗体**</span><br><span class="line">&gt;~~这是删除线~~</span><br><span class="line">&gt;&lt;u&gt;这是下划线&lt;/u&gt;</span><br><span class="line">&gt;*这是斜体*</span><br><span class="line">&gt;==这是高亮==</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><strong>这是粗体</strong><br><del>这是删除线</del><br><u>这是下划线</u><br><em>这是斜体</em><br>&#x3D;&#x3D;这是高亮&#x3D;&#x3D;</p>
+</blockquote>
+<blockquote>
+<p>快捷键:</p>
+<ul>
+<li>加粗:  Ctrl+B</li>
+<li>删除线:  Shift+Alt+5</li>
+<li>下划线:  Ctrl+U</li>
+<li>斜体:  Ctrl+I</li>
 </ul>
-<h2 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h2><ul>
-<li>程序需要对注册表项和文件进行读写删改操作，这些行为比较敏感，可能会被 Windows Defender 等误报为病毒，如发生此情况请自行添加进白名单。</li>
-<li>一些特殊菜单项可能会受到其他因素影响导致不会直接显示在右键菜单中，但是按照程序使用的通用规则在此程序中仍会显示为启用，这是正常的现象。</li>
-<li>每个右键管理程序禁用菜单方法可能不同，建议不要同时使用多个右键菜单管理程序，大部分程序使用简单暴力的备份删除法，此程序尽可能使用了系统提供的键值进行隐藏，通过其他程序禁用的菜单项目。请先使用对应程序还原，不然可能无法在此程序中看到它。</li>
-<li>此程序不用于清理未卸载干净的程序，但是可以帮助你快速定位菜单项相关注册表位置和文件位置，你可以根据相关内容进行你的操作。如果你是一个电脑小白，建议只使用启用或者禁用功能。</li>
+</blockquote>
+<h3 id="2、上下标"><a href="#2、上下标" class="headerlink" title="2、上下标"></a>2、上下标</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;x^2^</span><br><span class="line">&gt;H~2~O</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>x^2^<br>H<del>2</del>O</p>
+</blockquote>
+<h2 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h2><h3 id="1、无序列表"><a href="#1、无序列表" class="headerlink" title="1、无序列表"></a>1、无序列表</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;*/-/+ +空格</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>1.只有同一级别:</p>
+<ul>
+<li>苹果</li>
+<li>香蕉</li>
+<li>橘子</li>
 </ul>
+<p>2.子集类:</p>
+<ul>
+<li>一级分类<ul>
+<li>二级分类 <ul>
+<li>三级分类</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+]</p>
+</blockquote>
+<h3 id="2、有序列表"><a href="#2、有序列表" class="headerlink" title="2、有序列表"></a>2、有序列表</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;数字+.+空格</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<ol>
+<li>第一个标题</li>
+<li>第二个标题</li>
+<li>第三个标题</li>
+</ol>
+<ul>
+<li>子内容1</li>
+<li>子内容2</li>
+</ul>
+<ol start="4">
+<li>第四个标题</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+[</p>
+</blockquote>
+<h3 id="3、任务列表"><a href="#3、任务列表" class="headerlink" title="3、任务列表"></a>3、任务列表</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;- [ ] 吃早餐</span><br><span class="line">&gt;- [x] 背单词</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<ul>
+<li><input disabled="" type="checkbox"> 吃早餐</li>
+<li><input checked="" disabled="" type="checkbox"> 背单词</li>
+</ul>
+</blockquote>
+<h2 id="五、区块显示"><a href="#五、区块显示" class="headerlink" title="五、区块显示"></a>五、区块显示</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&gt;+回车</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<blockquote>
+<p>这是最外层区块</p>
+<blockquote>
+<p>这是内层区块</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>这是最内层区块</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="六、代码显示"><a href="#六、代码显示" class="headerlink" title="六、代码显示"></a>六、代码显示</h2><h3 id="1、行内代码"><a href="#1、行内代码" class="headerlink" title="1、行内代码"></a>1、行内代码</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;`int a=0;`（说明：`位于Esc下面）</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><code>int a=0;</code></p>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+&#96;</p>
+</blockquote>
+<h3 id="2、代码块"><a href="#2、代码块" class="headerlink" title="2、代码块"></a>2、代码块</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;```js/java/c#/text</span><br><span class="line">&gt;内容</span><br><span class="line">&gt;```</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+K</p>
+</blockquote>
+<h2 id="七、链接"><a href="#七、链接" class="headerlink" title="七、链接"></a>七、链接</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;www.baidu.com</span><br><span class="line">&gt;[百度一下](https://www.baidu.com)</span><br><span class="line">&gt;[百度一下](https://www.baidu.com &quot;https://www.baidu.com&quot;)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><a href="http://www.baidu.com/">www.baidu.com</a><br><a href="https://www.baidu.com/">百度一下</a><br><a href="https://www.baidu.com/" title="https://www.baidu.com">百度一下</a></p>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+K</p>
+</blockquote>
+<h2 id="八、脚注"><a href="#八、脚注" class="headerlink" title="八、脚注"></a>八、脚注</h2><blockquote>
+<p>说明:  对文本进行解释说明。</p>
+</blockquote>
+<blockquote>
+<p>代码: </p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;[^文本]</span><br><span class="line">&gt;[^文本]:解释说明</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>这是一个技术<a href="%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E6%A1%86%E6%9E%B6%E3%80%82">^①</a></p>
+</blockquote>
+<h2 id="九、图片插入"><a href="#九、图片插入" class="headerlink" title="九、图片插入"></a>九、图片插入</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;![不显示的文字](图片路径 &quot;图片标题&quot;)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+Shift+I</p>
+</blockquote>
+<h2 id="十、表格"><a href="#十、表格" class="headerlink" title="十、表格"></a>十、表格</h2><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;|  1   |  2   |  3   |</span><br><span class="line">&gt;| :--- | :--: | ---: |</span><br><span class="line">&gt;|  4   |  5   |  6   |</span><br><span class="line">&gt;|  7   |  8   |  9   |</span><br><span class="line">&gt;|  10  |  11  |  12  |</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th align="center">2</th>
+<th align="right">3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>4</td>
+<td align="center">5</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td>7</td>
+<td align="center">8</td>
+<td align="right">9</td>
+</tr>
+<tr>
+<td>10</td>
+<td align="center">11</td>
+<td align="right">12</td>
+</tr>
+</tbody></table>
+</blockquote>
+<blockquote>
+<p>快捷键:  Ctrl+T</p>
+</blockquote>
+<h2 id="十一、支持的HTML元素"><a href="#十一、支持的HTML元素" class="headerlink" title="十一、支持的HTML元素"></a>十一、支持的HTML元素</h2><h3 id="1、文本居中"><a href="#1、文本居中" class="headerlink" title="1、文本居中"></a>1、文本居中</h3><blockquote>
+<p>代码</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;center&gt;内容&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果</p>
+<center>内容</center>
+</blockquote>
+<h3 id="2、快捷键显示"><a href="#2、快捷键显示" class="headerlink" title="2、快捷键显示"></a>2、快捷键显示</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;kbd&gt;内容&lt;/kbd&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><kbd>内容</kbd></p>
+</blockquote>
+<h3 id="3、加粗"><a href="#3、加粗" class="headerlink" title="3、加粗"></a>3、加粗</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;b&gt;加粗&lt;/b&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<p><b>加粗</b></p>
+</blockquote>
+<h3 id="4、倾斜"><a href="#4、倾斜" class="headerlink" title="4、倾斜"></a>4、倾斜</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;i&gt;倾斜&lt;/i&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br><i>倾斜</i></p>
+</blockquote>
+<h3 id="5、上下标"><a href="#5、上下标" class="headerlink" title="5、上下标"></a>5、上下标</h3><blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;开始&lt;sup&gt;123hi你好&lt;/sup&gt;</span><br><span class="line">&gt;开始&lt;sub&gt;321hi你好&lt;/sub&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>开始<sup>123hi你好</sup><br>开始<sub>321hi你好</sub></p>
+</blockquote>
+<h3 id="6、填充的黑色箭头"><a href="#6、填充的黑色箭头" class="headerlink" title="6、填充的黑色箭头"></a>6、填充的黑色箭头</h3><blockquote>
+<p>代码：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&amp;#x27A4;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果：<br>&#x27A4;</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>软件</category>
+        <category>笔记</category>
       </categories>
       <tags>
         <tag>工具</tag>
-        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -1129,349 +1375,38 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>md语法速查</title>
-    <url>/2024/07/23/md%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5/</url>
-    <content><![CDATA[<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><blockquote>
-<p>语法：# (一级标题)  ## (二级标题)  ### (三级标题) ……</p>
-</blockquote>
-<blockquote>
-<p>代码：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;# 这是一级标题</span><br><span class="line">&gt;## 这是二级标题</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:  </p>
-<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2></blockquote>
-<blockquote>
-<p>快捷键:</p>
-<ul>
-<li>Ctrl+数字1~6可以快速将选中的文本调成对应级别的标题</li>
-<li>Ctrl+0可以快速将选中的文本调成普通文本</li>
-<li>Ctrl+加号&#x2F;减号对标题级别进行加减</li>
+    <title>Windows右键菜单管理软件</title>
+    <url>/2025/08/01/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h4 id="ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"><a href="#ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁" class="headerlink" title="ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"></a>ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁</h4><h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
+<li>启用或禁用文件、文件夹、新建、发送到、打开方式、自定义文件格式、IE浏览器、WinX等右键菜单项目</li>
+<li>对上述场景右键菜单项目进行修改名称、修改图标、导航注册表位置、导航文件位置、永久删除等操作</li>
+<li>对上述场景右键菜单自定义添加项目，自定义菜单命令</li>
 </ul>
-</blockquote>
-<h2 id="二、段落"><a href="#二、段落" class="headerlink" title="二、段落"></a>二、段落</h2><h3 id="1、换行"><a href="#1、换行" class="headerlink" title="1、换行"></a>1、换行</h3><blockquote>
-<p>代码:  </p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;这是一个段落</span><br><span class="line">&gt;这是一个段落</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果: </p>
-<p>这是一个段落<br>这是一个段落</p>
-</blockquote>
-<h3 id="2、分割线"><a href="#2、分割线" class="headerlink" title="2、分割线"></a>2、分割线</h3><blockquote>
-<p>语法:  —或者***+回车</p>
-</blockquote>
-<blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;---或者***</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<hr>
-</blockquote>
-<h2 id="三、文字显示"><a href="#三、文字显示" class="headerlink" title="三、文字显示"></a>三、文字显示</h2><h3 id="1、字体"><a href="#1、字体" class="headerlink" title="1、字体"></a>1、字体</h3><blockquote>
-<p>语法:</p>
-<ul>
-<li>粗体:  用一对双星号包裹</li>
-<li>删除线:  用一对双飘号包裹</li>
-<li>下划线:  用一对u标签包裹</li>
-<li>斜体:  用一对单星号包裹</li>
-<li>高亮:  用一对双等号包裹</li>
+<h2 id="兼容性能"><a href="#兼容性能" class="headerlink" title="兼容性能"></a>兼容性能</h2><ul>
+<li>适用于Win 11、Win10、8.1、8、7、Vista</li>
+<li>适用于 64bit、32bit CPU 操作系统</li>
+<li>适用于高分屏，最佳显示缩放比为150%</li>
+<li>程序支持国际化多语言显示，欢迎为此程序制作语言字典</li>
 </ul>
-</blockquote>
-<blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;**这是粗体**</span><br><span class="line">&gt;~~这是删除线~~</span><br><span class="line">&gt;&lt;u&gt;这是下划线&lt;/u&gt;</span><br><span class="line">&gt;*这是斜体*</span><br><span class="line">&gt;==这是高亮==</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><strong>这是粗体</strong><br><del>这是删除线</del><br><u>这是下划线</u><br><em>这是斜体</em><br>&#x3D;&#x3D;这是高亮&#x3D;&#x3D;</p>
-</blockquote>
-<blockquote>
-<p>快捷键:</p>
-<ul>
-<li>加粗:  Ctrl+B</li>
-<li>删除线:  Shift+Alt+5</li>
-<li>下划线:  Ctrl+U</li>
-<li>斜体:  Ctrl+I</li>
+<h2 id="开源程序：【点击下载】"><a href="#开源程序：【点击下载】" class="headerlink" title="开源程序：【点击下载】"></a>开源程序：【<a href="https://github.com/BluePointLilac/ContextMenuManager">点击下载</a>】</h2><h2 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h2><p><img src="/images/posts/windows-context-menu/overview.svg" alt="Windows 右键菜单管理示意"></p>
+<h2 id="程序下载"><a href="#程序下载" class="headerlink" title="程序下载"></a>程序下载</h2><ul>
+<li><a href="https://github.com/BluePointLilac/ContextMenuManager/releases/latest">最新版本</a><br>  <a href="https://github.com/BluePointLilac/ContextMenuManager/releases">GitHub Releases</a><br>  <a href="https://gitee.com/BluePointLilac/ContextMenuManager/releases">Gitee Releases</a></li>
+<li>下载说明：在Assets文件列表里面下载zip（建议）或者直接下载exe</li>
+<li>.NET版本说明：程序分为.NET3.5版和.NET4.0版，均适用于Win10、8.1、8、7、Vista系统<br>  win7自带.NET3.5，win8、win8.1、win10自带.NET4.0以上版本，Vista系统既不自带.NET3.5也不自带4.0以上版本<br>  自带.NET可直接运行程序，不自带则需要安装对应版本的<a href="https://dotnet.microsoft.com/download/dotnet-framework">.NET Framework运行库</a></li>
 </ul>
-</blockquote>
-<h3 id="2、上下标"><a href="#2、上下标" class="headerlink" title="2、上下标"></a>2、上下标</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;x^2^</span><br><span class="line">&gt;H~2~O</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>x^2^<br>H<del>2</del>O</p>
-</blockquote>
-<h2 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h2><h3 id="1、无序列表"><a href="#1、无序列表" class="headerlink" title="1、无序列表"></a>1、无序列表</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;*/-/+ +空格</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>1.只有同一级别:</p>
-<ul>
-<li>苹果</li>
-<li>香蕉</li>
-<li>橘子</li>
+<h2 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h2><ul>
+<li>程序需要对注册表项和文件进行读写删改操作，这些行为比较敏感，可能会被 Windows Defender 等误报为病毒，如发生此情况请自行添加进白名单。</li>
+<li>一些特殊菜单项可能会受到其他因素影响导致不会直接显示在右键菜单中，但是按照程序使用的通用规则在此程序中仍会显示为启用，这是正常的现象。</li>
+<li>每个右键管理程序禁用菜单方法可能不同，建议不要同时使用多个右键菜单管理程序，大部分程序使用简单暴力的备份删除法，此程序尽可能使用了系统提供的键值进行隐藏，通过其他程序禁用的菜单项目。请先使用对应程序还原，不然可能无法在此程序中看到它。</li>
+<li>此程序不用于清理未卸载干净的程序，但是可以帮助你快速定位菜单项相关注册表位置和文件位置，你可以根据相关内容进行你的操作。如果你是一个电脑小白，建议只使用启用或者禁用功能。</li>
 </ul>
-<p>2.子集类:</p>
-<ul>
-<li>一级分类<ul>
-<li>二级分类 <ul>
-<li>三级分类</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+]</p>
-</blockquote>
-<h3 id="2、有序列表"><a href="#2、有序列表" class="headerlink" title="2、有序列表"></a>2、有序列表</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;数字+.+空格</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<ol>
-<li>第一个标题</li>
-<li>第二个标题</li>
-<li>第三个标题</li>
-</ol>
-<ul>
-<li>子内容1</li>
-<li>子内容2</li>
-</ul>
-<ol start="4">
-<li>第四个标题</li>
-</ol>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+[</p>
-</blockquote>
-<h3 id="3、任务列表"><a href="#3、任务列表" class="headerlink" title="3、任务列表"></a>3、任务列表</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;- [ ] 吃早餐</span><br><span class="line">&gt;- [x] 背单词</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<ul>
-<li><input disabled="" type="checkbox"> 吃早餐</li>
-<li><input checked="" disabled="" type="checkbox"> 背单词</li>
-</ul>
-</blockquote>
-<h2 id="五、区块显示"><a href="#五、区块显示" class="headerlink" title="五、区块显示"></a>五、区块显示</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&gt;+回车</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<blockquote>
-<p>这是最外层区块</p>
-<blockquote>
-<p>这是内层区块</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>这是最内层区块</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="六、代码显示"><a href="#六、代码显示" class="headerlink" title="六、代码显示"></a>六、代码显示</h2><h3 id="1、行内代码"><a href="#1、行内代码" class="headerlink" title="1、行内代码"></a>1、行内代码</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;`int a=0;`（说明：`位于Esc下面）</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><code>int a=0;</code></p>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+&#96;</p>
-</blockquote>
-<h3 id="2、代码块"><a href="#2、代码块" class="headerlink" title="2、代码块"></a>2、代码块</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;```js/java/c#/text</span><br><span class="line">&gt;内容</span><br><span class="line">&gt;```</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+K</p>
-</blockquote>
-<h2 id="七、链接"><a href="#七、链接" class="headerlink" title="七、链接"></a>七、链接</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;www.baidu.com</span><br><span class="line">&gt;[百度一下](https://www.baidu.com)</span><br><span class="line">&gt;[百度一下](https://www.baidu.com &quot;https://www.baidu.com&quot;)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><a href="http://www.baidu.com/">www.baidu.com</a><br><a href="https://www.baidu.com/">百度一下</a><br><a href="https://www.baidu.com/" title="https://www.baidu.com">百度一下</a></p>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+K</p>
-</blockquote>
-<h2 id="八、脚注"><a href="#八、脚注" class="headerlink" title="八、脚注"></a>八、脚注</h2><blockquote>
-<p>说明:  对文本进行解释说明。</p>
-</blockquote>
-<blockquote>
-<p>代码: </p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;[^文本]</span><br><span class="line">&gt;[^文本]:解释说明</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>这是一个技术<a href="%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E6%A1%86%E6%9E%B6%E3%80%82">^①</a></p>
-</blockquote>
-<h2 id="九、图片插入"><a href="#九、图片插入" class="headerlink" title="九、图片插入"></a>九、图片插入</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;![不显示的文字](图片路径 &quot;图片标题&quot;)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+Shift+I</p>
-</blockquote>
-<h2 id="十、表格"><a href="#十、表格" class="headerlink" title="十、表格"></a>十、表格</h2><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;|  1   |  2   |  3   |</span><br><span class="line">&gt;| :--- | :--: | ---: |</span><br><span class="line">&gt;|  4   |  5   |  6   |</span><br><span class="line">&gt;|  7   |  8   |  9   |</span><br><span class="line">&gt;|  10  |  11  |  12  |</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<table>
-<thead>
-<tr>
-<th>1</th>
-<th align="center">2</th>
-<th align="right">3</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>4</td>
-<td align="center">5</td>
-<td align="right">6</td>
-</tr>
-<tr>
-<td>7</td>
-<td align="center">8</td>
-<td align="right">9</td>
-</tr>
-<tr>
-<td>10</td>
-<td align="center">11</td>
-<td align="right">12</td>
-</tr>
-</tbody></table>
-</blockquote>
-<blockquote>
-<p>快捷键:  Ctrl+T</p>
-</blockquote>
-<h2 id="十一、支持的HTML元素"><a href="#十一、支持的HTML元素" class="headerlink" title="十一、支持的HTML元素"></a>十一、支持的HTML元素</h2><h3 id="1、文本居中"><a href="#1、文本居中" class="headerlink" title="1、文本居中"></a>1、文本居中</h3><blockquote>
-<p>代码</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;center&gt;内容&lt;/center&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果</p>
-<center>内容</center>
-</blockquote>
-<h3 id="2、快捷键显示"><a href="#2、快捷键显示" class="headerlink" title="2、快捷键显示"></a>2、快捷键显示</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;kbd&gt;内容&lt;/kbd&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><kbd>内容</kbd></p>
-</blockquote>
-<h3 id="3、加粗"><a href="#3、加粗" class="headerlink" title="3、加粗"></a>3、加粗</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;b&gt;加粗&lt;/b&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:</p>
-<p><b>加粗</b></p>
-</blockquote>
-<h3 id="4、倾斜"><a href="#4、倾斜" class="headerlink" title="4、倾斜"></a>4、倾斜</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;&lt;i&gt;倾斜&lt;/i&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br><i>倾斜</i></p>
-</blockquote>
-<h3 id="5、上下标"><a href="#5、上下标" class="headerlink" title="5、上下标"></a>5、上下标</h3><blockquote>
-<p>代码:</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;开始&lt;sup&gt;123hi你好&lt;/sup&gt;</span><br><span class="line">&gt;开始&lt;sub&gt;321hi你好&lt;/sub&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果:<br>开始<sup>123hi你好</sup><br>开始<sub>321hi你好</sub></p>
-</blockquote>
-<h3 id="6、填充的黑色箭头"><a href="#6、填充的黑色箭头" class="headerlink" title="6、填充的黑色箭头"></a>6、填充的黑色箭头</h3><blockquote>
-<p>代码：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&amp;#x27A4;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>效果：<br>&#x27A4;</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一文带你光速入门Mathlab</title>
-    <url>/2024/09/17/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E5%85%89%E9%80%9F%E5%85%A5%E9%97%A8Mathlab/</url>
-    <content><![CDATA[<p><img src="/images/posts/matlab/overview.svg" alt="MATLAB 入门能力地图"></p>
-<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h2><p>Mathlab是一款功能强大的数学计算软件，广泛应用于工程、科学研究、数据分析等领域。它以其强大的矩阵运算和数据可视化能力，成为学术界和工业界的重要工具。本文将为你提供一个全面的入门指南，包括软件安装、基础操作、常用函数及实际应用示例，帮助你迅速上手Mathlab。</p>
-<h2 id="2-安装与环境配置"><a href="#2-安装与环境配置" class="headerlink" title="2. 安装与环境配置"></a>2. 安装与环境配置</h2><h3 id="2-1-下载与安装"><a href="#2-1-下载与安装" class="headerlink" title="2.1 下载与安装"></a>2.1 下载与安装</h3><p>首先，访问<a href="https://www.mathworks.com/">Mathlab官网</a>下载适合你操作系统的版本。安装过程中，你需要选择安装的组件，建议选择“Mathlab”及其相关工具箱，以获得更全面的功能支持。</p>
-<h3 id="2-2-界面介绍"><a href="#2-2-界面介绍" class="headerlink" title="2.2 界面介绍"></a>2.2 界面介绍</h3><p>启动Mathlab后，你会看到主界面包含以下几个部分：</p>
-<ul>
-<li><strong>命令窗口</strong>：用于输入命令并显示输出。</li>
-<li><strong>编辑器</strong>：用于编写和保存脚本文件。</li>
-<li><strong>工作区</strong>：显示当前工作环境中的变量。</li>
-<li><strong>当前文件夹</strong>：显示当前路径下的文件和文件夹。</li>
-</ul>
-<h2 id="3-基础操作"><a href="#3-基础操作" class="headerlink" title="3. 基础操作"></a>3. 基础操作</h2><h3 id="3-1-变量与数据类型"><a href="#3-1-变量与数据类型" class="headerlink" title="3.1 变量与数据类型"></a>3.1 变量与数据类型</h3><p>在Mathlab中，变量赋值使用“&#x3D;”符号。例如：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span>; <span class="comment">% 整数</span></span><br><span class="line">y = <span class="number">3.14</span>; <span class="comment">% 浮点数</span></span><br><span class="line">z = <span class="string">&#x27;Mathlab&#x27;</span>; <span class="comment">% 字符串</span></span><br></pre></td></tr></table></figure>
-<p>Mathlab支持多种数据类型，包括标量、向量、矩阵和字符串等。</p>
-<h3 id="3-2-数组与矩阵"><a href="#3-2-数组与矩阵" class="headerlink" title="3.2 数组与矩阵"></a>3.2 数组与矩阵</h3><p>数组和矩阵是Mathlab的核心数据结构。可以通过方括号创建：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">A = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>; <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]; <span class="comment">% 创建一个2x3矩阵</span></span><br></pre></td></tr></table></figure>
-<p>数组的索引从1开始，可以使用冒号运算符生成序列：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">v = <span class="number">1</span>:<span class="number">10</span>; <span class="comment">% 生成1到10的行向量</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-3-控制结构"><a href="#3-3-控制结构" class="headerlink" title="3.3 控制结构"></a>3.3 控制结构</h3><p>Mathlab支持常见的控制结构，如条件语句和循环语句：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> x &gt; <span class="number">0</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是正数&#x27;</span>);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是负数或零&#x27;</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="built_in">i</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="4-常用函数"><a href="#4-常用函数" class="headerlink" title="4. 常用函数"></a>4. 常用函数</h2><h3 id="4-1-数学函数"><a href="#4-1-数学函数" class="headerlink" title="4.1 数学函数"></a>4.1 数学函数</h3><p>Mathlab提供丰富的数学函数，以下是一些常用的：</p>
-<ul>
-<li><code>sin(x)</code>: 计算正弦值。</li>
-<li><code>cos(x)</code>: 计算余弦值。</li>
-<li><code>exp(x)</code>: 计算自然指数。</li>
-</ul>
-<h3 id="4-2-统计函数"><a href="#4-2-统计函数" class="headerlink" title="4.2 统计函数"></a>4.2 统计函数</h3><p>在数据分析中，常用的统计函数包括：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line">meanValue = <span class="built_in">mean</span>(data); <span class="comment">% 计算均值</span></span><br><span class="line">stdValue = std(data); <span class="comment">% 计算标准差</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-3-绘图函数"><a href="#4-3-绘图函数" class="headerlink" title="4.3 绘图函数"></a>4.3 绘图函数</h3><p>Mathlab的绘图功能强大，可以绘制多种类型的图形：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">100</span>); <span class="comment">% 生成0到2π的100个点</span></span><br><span class="line">y = <span class="built_in">sin</span>(x);</span><br><span class="line"><span class="built_in">figure</span>; <span class="comment">% 创建新图形窗口</span></span><br><span class="line"><span class="built_in">plot</span>(x, y, <span class="string">&#x27;r-&#x27;</span>, <span class="string">&#x27;LineWidth&#x27;</span>, <span class="number">2</span>); <span class="comment">% 绘制sin(x)曲线</span></span><br><span class="line">xlabel(<span class="string">&#x27;x (弧度)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;sin(x)&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;正弦函数图&#x27;</span>);</span><br><span class="line">grid on; <span class="comment">% 添加网格</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="5-实例应用"><a href="#5-实例应用" class="headerlink" title="5. 实例应用"></a>5. 实例应用</h2><h3 id="5-1-数据分析"><a href="#5-1-数据分析" class="headerlink" title="5.1 数据分析"></a>5.1 数据分析</h3><p>假设我们有一组随机生成的数据，需要计算其均值和标准差，并进行可视化：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = <span class="built_in">randn</span>(<span class="number">1</span>, <span class="number">1000</span>); <span class="comment">% 生成1000个随机数</span></span><br><span class="line">meanValue = <span class="built_in">mean</span>(data);</span><br><span class="line">stdValue = std(data);</span><br><span class="line"></span><br><span class="line"><span class="built_in">figure</span>;</span><br><span class="line">histogram(data, <span class="number">30</span>); <span class="comment">% 绘制直方图</span></span><br><span class="line">xlabel(<span class="string">&#x27;值&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;频率&#x27;</span>);</span><br><span class="line">title([<span class="string">&#x27;数据的均值：&#x27;</span>, num2str(meanValue), <span class="string">&#x27; 标准差：&#x27;</span>, num2str(stdValue)]);</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-2-信号处理"><a href="#5-2-信号处理" class="headerlink" title="5.2 信号处理"></a>5.2 信号处理</h3><p>在信号处理中，我们可以生成和分析不同频率的信号：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">Fs = <span class="number">1000</span>; <span class="comment">% 采样频率</span></span><br><span class="line">t = <span class="number">0</span>:<span class="number">1</span>/Fs:<span class="number">1</span>; <span class="comment">% 时间向量</span></span><br><span class="line">y1 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">50</span>*t); <span class="comment">% 50Hz信号</span></span><br><span class="line">y2 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">120</span>*t); <span class="comment">% 120Hz信号</span></span><br><span class="line">y = y1 + y2; <span class="comment">% 合成信号</span></span><br><span class="line"><span class="built_in">plot</span>(t, y); <span class="comment">% 绘制信号</span></span><br><span class="line">xlabel(<span class="string">&#x27;时间 (秒)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;幅度&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;合成信号&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-3-图像处理"><a href="#5-3-图像处理" class="headerlink" title="5.3 图像处理"></a>5.3 图像处理</h3><p>Mathlab也支持图像处理，可以用以下代码读取和显示图像：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">img = imread(<span class="string">&#x27;image.jpg&#x27;</span>); <span class="comment">% 读取图像</span></span><br><span class="line">imshow(img); <span class="comment">% 显示图像</span></span><br><span class="line">title(<span class="string">&#x27;原始图像&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-进阶功能"><a href="#6-进阶功能" class="headerlink" title="6. 进阶功能"></a>6. 进阶功能</h2><h3 id="6-1-脚本与函数"><a href="#6-1-脚本与函数" class="headerlink" title="6.1 脚本与函数"></a>6.1 脚本与函数</h3><p>通过编写脚本文件（.m文件），可以将多个命令组织在一起，方便重用。此外，还可以自定义函数，增强代码的可读性和可维护性。</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">result</span> = <span class="title">addNumbers</span><span class="params">(a, b)</span></span></span><br><span class="line">    <span class="comment">% 此函数返回两个数字的和</span></span><br><span class="line">    result = a + b;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="6-2-工具箱扩展"><a href="#6-2-工具箱扩展" class="headerlink" title="6.2 工具箱扩展"></a>6.2 工具箱扩展</h3><p>Mathlab提供多种工具箱，如<a href="https://www.mathworks.com/products/image.html">图像处理工具箱</a>、<a href="https://www.mathworks.com/products/signal.html">信号处理工具箱</a>等，安装这些工具箱可以扩展Mathlab的功能。你可以通过Mathlab命令窗口中的<code>ver</code>命令查看已安装的工具箱。</p>
-<h2 id="7-学习资源"><a href="#7-学习资源" class="headerlink" title="7. 学习资源"></a>7. 学习资源</h2><p>以下是一些推荐的学习资源，可以帮助你进一步深入学习Mathlab：</p>
-<ul>
-<li><a href="https://www.mathworks.com/help/matlab/">Mathlab文档</a></li>
-<li><a href="https://www.mathworks.com/learn/tutorials/matlab-onramp.html">Mathlab视频教程</a></li>
-<li><a href="https://www.mathworks.com/matlabcentral/">Mathlab中央论坛</a></li>
-</ul>
-<h2 id="8-结论"><a href="#8-结论" class="headerlink" title="8. 结论"></a>8. 结论</h2><p>通过本教程，你已经全面了解了Mathlab的基本操作、常用函数及实际应用示例。无论是在学术研究、工程设计还是数据分析中，Mathlab都能为你提供强有力的支持。继续深入学习Mathlab的各项功能，将帮助你在各领域中实现更高效的工作。</p>
 ]]></content>
       <categories>
         <category>软件</category>
       </categories>
       <tags>
         <tag>工具</tag>
-        <tag>设计</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -1627,39 +1562,68 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>三数之和:排序+双指针</title>
-    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
-    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
-<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
-<p><strong>示例 1：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 2：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 3：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>提示：</strong></p>
+    <title>一文带你光速入门Mathlab</title>
+    <url>/2024/09/17/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E5%85%89%E9%80%9F%E5%85%A5%E9%97%A8Mathlab/</url>
+    <content><![CDATA[<p><img src="/images/posts/matlab/overview.svg" alt="MATLAB 入门能力地图"></p>
+<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h2><p>Mathlab是一款功能强大的数学计算软件，广泛应用于工程、科学研究、数据分析等领域。它以其强大的矩阵运算和数据可视化能力，成为学术界和工业界的重要工具。本文将为你提供一个全面的入门指南，包括软件安装、基础操作、常用函数及实际应用示例，帮助你迅速上手Mathlab。</p>
+<h2 id="2-安装与环境配置"><a href="#2-安装与环境配置" class="headerlink" title="2. 安装与环境配置"></a>2. 安装与环境配置</h2><h3 id="2-1-下载与安装"><a href="#2-1-下载与安装" class="headerlink" title="2.1 下载与安装"></a>2.1 下载与安装</h3><p>首先，访问<a href="https://www.mathworks.com/">Mathlab官网</a>下载适合你操作系统的版本。安装过程中，你需要选择安装的组件，建议选择“Mathlab”及其相关工具箱，以获得更全面的功能支持。</p>
+<h3 id="2-2-界面介绍"><a href="#2-2-界面介绍" class="headerlink" title="2.2 界面介绍"></a>2.2 界面介绍</h3><p>启动Mathlab后，你会看到主界面包含以下几个部分：</p>
 <ul>
-<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
-<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
+<li><strong>命令窗口</strong>：用于输入命令并显示输出。</li>
+<li><strong>编辑器</strong>：用于编写和保存脚本文件。</li>
+<li><strong>工作区</strong>：显示当前工作环境中的变量。</li>
+<li><strong>当前文件夹</strong>：显示当前路径下的文件和文件夹。</li>
 </ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
-<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
-<p><strong>Python:</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+<h2 id="3-基础操作"><a href="#3-基础操作" class="headerlink" title="3. 基础操作"></a>3. 基础操作</h2><h3 id="3-1-变量与数据类型"><a href="#3-1-变量与数据类型" class="headerlink" title="3.1 变量与数据类型"></a>3.1 变量与数据类型</h3><p>在Mathlab中，变量赋值使用“&#x3D;”符号。例如：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span>; <span class="comment">% 整数</span></span><br><span class="line">y = <span class="number">3.14</span>; <span class="comment">% 浮点数</span></span><br><span class="line">z = <span class="string">&#x27;Mathlab&#x27;</span>; <span class="comment">% 字符串</span></span><br></pre></td></tr></table></figure>
+<p>Mathlab支持多种数据类型，包括标量、向量、矩阵和字符串等。</p>
+<h3 id="3-2-数组与矩阵"><a href="#3-2-数组与矩阵" class="headerlink" title="3.2 数组与矩阵"></a>3.2 数组与矩阵</h3><p>数组和矩阵是Mathlab的核心数据结构。可以通过方括号创建：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">A = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>; <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]; <span class="comment">% 创建一个2x3矩阵</span></span><br></pre></td></tr></table></figure>
+<p>数组的索引从1开始，可以使用冒号运算符生成序列：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">v = <span class="number">1</span>:<span class="number">10</span>; <span class="comment">% 生成1到10的行向量</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>Java:</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="literal">null</span> || n &lt; <span class="number">3</span>)</span><br><span class="line">            <span class="keyword">return</span> res;       </span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">return</span> res;           </span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;          </span><br><span class="line">            <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> i + <span class="number">1</span>, R = n - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (L &lt; R) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[L] + nums[R];</span><br><span class="line">        </span><br><span class="line">                <span class="keyword">if</span> (sum == <span class="number">0</span>) &#123;</span><br><span class="line">                    res.add(Arrays.asList(nums[i], nums[L], nums[R]));</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[L] == nums[L + <span class="number">1</span>]) L++;</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[R] == nums[R - <span class="number">1</span>]) R--;</span><br><span class="line">                    L++;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (sum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    L++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-3-控制结构"><a href="#3-3-控制结构" class="headerlink" title="3.3 控制结构"></a>3.3 控制结构</h3><p>Mathlab支持常见的控制结构，如条件语句和循环语句：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> x &gt; <span class="number">0</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是正数&#x27;</span>);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是负数或零&#x27;</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="built_in">i</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-常用函数"><a href="#4-常用函数" class="headerlink" title="4. 常用函数"></a>4. 常用函数</h2><h3 id="4-1-数学函数"><a href="#4-1-数学函数" class="headerlink" title="4.1 数学函数"></a>4.1 数学函数</h3><p>Mathlab提供丰富的数学函数，以下是一些常用的：</p>
+<ul>
+<li><code>sin(x)</code>: 计算正弦值。</li>
+<li><code>cos(x)</code>: 计算余弦值。</li>
+<li><code>exp(x)</code>: 计算自然指数。</li>
+</ul>
+<h3 id="4-2-统计函数"><a href="#4-2-统计函数" class="headerlink" title="4.2 统计函数"></a>4.2 统计函数</h3><p>在数据分析中，常用的统计函数包括：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line">meanValue = <span class="built_in">mean</span>(data); <span class="comment">% 计算均值</span></span><br><span class="line">stdValue = std(data); <span class="comment">% 计算标准差</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-3-绘图函数"><a href="#4-3-绘图函数" class="headerlink" title="4.3 绘图函数"></a>4.3 绘图函数</h3><p>Mathlab的绘图功能强大，可以绘制多种类型的图形：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">100</span>); <span class="comment">% 生成0到2π的100个点</span></span><br><span class="line">y = <span class="built_in">sin</span>(x);</span><br><span class="line"><span class="built_in">figure</span>; <span class="comment">% 创建新图形窗口</span></span><br><span class="line"><span class="built_in">plot</span>(x, y, <span class="string">&#x27;r-&#x27;</span>, <span class="string">&#x27;LineWidth&#x27;</span>, <span class="number">2</span>); <span class="comment">% 绘制sin(x)曲线</span></span><br><span class="line">xlabel(<span class="string">&#x27;x (弧度)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;sin(x)&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;正弦函数图&#x27;</span>);</span><br><span class="line">grid on; <span class="comment">% 添加网格</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-实例应用"><a href="#5-实例应用" class="headerlink" title="5. 实例应用"></a>5. 实例应用</h2><h3 id="5-1-数据分析"><a href="#5-1-数据分析" class="headerlink" title="5.1 数据分析"></a>5.1 数据分析</h3><p>假设我们有一组随机生成的数据，需要计算其均值和标准差，并进行可视化：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = <span class="built_in">randn</span>(<span class="number">1</span>, <span class="number">1000</span>); <span class="comment">% 生成1000个随机数</span></span><br><span class="line">meanValue = <span class="built_in">mean</span>(data);</span><br><span class="line">stdValue = std(data);</span><br><span class="line"></span><br><span class="line"><span class="built_in">figure</span>;</span><br><span class="line">histogram(data, <span class="number">30</span>); <span class="comment">% 绘制直方图</span></span><br><span class="line">xlabel(<span class="string">&#x27;值&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;频率&#x27;</span>);</span><br><span class="line">title([<span class="string">&#x27;数据的均值：&#x27;</span>, num2str(meanValue), <span class="string">&#x27; 标准差：&#x27;</span>, num2str(stdValue)]);</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-2-信号处理"><a href="#5-2-信号处理" class="headerlink" title="5.2 信号处理"></a>5.2 信号处理</h3><p>在信号处理中，我们可以生成和分析不同频率的信号：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">Fs = <span class="number">1000</span>; <span class="comment">% 采样频率</span></span><br><span class="line">t = <span class="number">0</span>:<span class="number">1</span>/Fs:<span class="number">1</span>; <span class="comment">% 时间向量</span></span><br><span class="line">y1 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">50</span>*t); <span class="comment">% 50Hz信号</span></span><br><span class="line">y2 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">120</span>*t); <span class="comment">% 120Hz信号</span></span><br><span class="line">y = y1 + y2; <span class="comment">% 合成信号</span></span><br><span class="line"><span class="built_in">plot</span>(t, y); <span class="comment">% 绘制信号</span></span><br><span class="line">xlabel(<span class="string">&#x27;时间 (秒)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;幅度&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;合成信号&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-3-图像处理"><a href="#5-3-图像处理" class="headerlink" title="5.3 图像处理"></a>5.3 图像处理</h3><p>Mathlab也支持图像处理，可以用以下代码读取和显示图像：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">img = imread(<span class="string">&#x27;image.jpg&#x27;</span>); <span class="comment">% 读取图像</span></span><br><span class="line">imshow(img); <span class="comment">% 显示图像</span></span><br><span class="line">title(<span class="string">&#x27;原始图像&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-进阶功能"><a href="#6-进阶功能" class="headerlink" title="6. 进阶功能"></a>6. 进阶功能</h2><h3 id="6-1-脚本与函数"><a href="#6-1-脚本与函数" class="headerlink" title="6.1 脚本与函数"></a>6.1 脚本与函数</h3><p>通过编写脚本文件（.m文件），可以将多个命令组织在一起，方便重用。此外，还可以自定义函数，增强代码的可读性和可维护性。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">result</span> = <span class="title">addNumbers</span><span class="params">(a, b)</span></span></span><br><span class="line">    <span class="comment">% 此函数返回两个数字的和</span></span><br><span class="line">    result = a + b;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-2-工具箱扩展"><a href="#6-2-工具箱扩展" class="headerlink" title="6.2 工具箱扩展"></a>6.2 工具箱扩展</h3><p>Mathlab提供多种工具箱，如<a href="https://www.mathworks.com/products/image.html">图像处理工具箱</a>、<a href="https://www.mathworks.com/products/signal.html">信号处理工具箱</a>等，安装这些工具箱可以扩展Mathlab的功能。你可以通过Mathlab命令窗口中的<code>ver</code>命令查看已安装的工具箱。</p>
+<h2 id="7-学习资源"><a href="#7-学习资源" class="headerlink" title="7. 学习资源"></a>7. 学习资源</h2><p>以下是一些推荐的学习资源，可以帮助你进一步深入学习Mathlab：</p>
+<ul>
+<li><a href="https://www.mathworks.com/help/matlab/">Mathlab文档</a></li>
+<li><a href="https://www.mathworks.com/learn/tutorials/matlab-onramp.html">Mathlab视频教程</a></li>
+<li><a href="https://www.mathworks.com/matlabcentral/">Mathlab中央论坛</a></li>
+</ul>
+<h2 id="8-结论"><a href="#8-结论" class="headerlink" title="8. 结论"></a>8. 结论</h2><p>通过本教程，你已经全面了解了Mathlab的基本操作、常用函数及实际应用示例。无论是在学术研究、工程设计还是数据分析中，Mathlab都能为你提供强有力的支持。继续深入学习Mathlab的各项功能，将帮助你在各领域中实现更高效的工作。</p>
 ]]></content>
       <categories>
-        <category>算法</category>
+        <category>软件</category>
       </categories>
       <tags>
-        <tag>Python</tag>
-        <tag>算法</tag>
-        <tag>Java</tag>
+        <tag>工具</tag>
+        <tag>设计</tag>
       </tags>
   </entry>
   <entry>
@@ -1843,253 +1807,39 @@ flowchart LR
       </categories>
   </entry>
   <entry>
-    <title>增长漏斗模型：从流量到留量的底层逻辑（理论+实操）</title>
-    <url>/2025/11/19/%E5%A2%9E%E9%95%BF%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B%EF%BC%9A%E4%BB%8E%E6%B5%81%E9%87%8F%E5%88%B0%E7%95%99%E9%87%8F%E7%9A%84%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%EF%BC%88%E7%90%86%E8%AE%BA-%E5%AE%9E%E6%93%8D%EF%BC%89/</url>
-    <content><![CDATA[<p>老板最关心的问题永远只有两个：</p>
-<ol>
-<li>今天的用户从哪儿来？</li>
-<li>明天的钱从哪儿来？</li>
-</ol>
-<p>增长漏斗就是回答这两个问题的万能框架。它把“用户旅程”拆成可度量、可干预、可复盘的阶段，让业务不再拍脑袋。</p>
-<p>增长漏斗模型（Growth Funnel Model）不仅是数据分析的框架，更是一种以用户为中心、以转化为目标的增长思维方式。</p>
-<p><strong>1</strong>.<strong>什么是增长漏斗模型？</strong> </p>
-<p>增长漏斗模型是一种通过可视化用户在产品中关键行为路径，来<strong>量化转化效率、定位流失环节</strong>的分析模型，其核心思想是：<strong>并非所有触达用户的都会转化为客户，你需要跟踪他们在每一步的动向，并优化整个流程。</strong></p>
-<p>增长漏斗 &#x3D; 把用户旅程拆成若干关键节点，通过数据看流失、通过实验提转化，最终让每一层都更“宽”或更“深”。</p>
+    <title>三数之和:排序+双指针</title>
+    <url>/2024/07/24/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%9A%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</url>
+    <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请你返回所有和为 <code>0</code> 且不重复的三元组。</p>
+<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 3：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
 <ul>
-<li><strong>漏斗（Funnel）</strong>：形象地比喻了用户从接触产品到完成最终目标（如付费）的过程中，数量逐层减少的现象。</li>
-<li><strong>增长（Growth）</strong>：意味着这个模型的最终目的是<strong>优化漏斗，减少不必要的流失，提升整体转化率</strong>，从而实现用户和业务的增长。</li>
+<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
+<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
 </ul>
-<p><strong>经典 5 级漏斗（AARRR）：</strong></p>
-<table>
-<thead>
-<tr>
-<th align="left">阶段</th>
-<th align="left">核心目标</th>
-<th align="left">关键问题</th>
-<th align="left">典型指标</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>1. 获取</strong>Acquisition</td>
-<td align="left">如何让用户发现并接触产品？</td>
-<td align="left">用户从哪里来？ （流量贵不贵？渠道好不好？）</td>
-<td align="left"><strong>新增用户数</strong>、UV、CTR、CPC、渠道流量、CAC（用户获取成本）</td>
-</tr>
-<tr>
-<td align="left"><strong>2. 激活</strong>Activation</td>
-<td align="left">如何让用户首次体验到产品核心价值？</td>
-<td align="left">用户的“Aha! Moment”（爽点）是什么？</td>
-<td align="left"><strong>激活率</strong>、新手引导完成率、关键行为完成率、注册率、首单率</td>
-</tr>
-<tr>
-<td align="left"><strong>3. 留存</strong>Retention</td>
-<td align="left">如何让用户回来并持续使用？</td>
-<td align="left">用户是否养成了使用习惯？</td>
-<td align="left"><strong>留存率</strong>（次日&#x2F;7日&#x2F;30日）、DAU&#x2F;MAU</td>
-</tr>
-<tr>
-<td align="left"><strong>4. 变现</strong>Revenue</td>
-<td align="left">如何从用户身上获取收入？</td>
-<td align="left">我们的商业模式如何运作？</td>
-<td align="left"><strong>转化率（付费率）</strong>、客单价（ARPU）、LTV（用户终身价值）、毛利率</td>
-</tr>
-<tr>
-<td align="left"><strong>5. 推荐</strong>Referral</td>
-<td align="left">如何让用户推荐更多新用户？</td>
-<td align="left">用户是否愿意推荐产品是否值得推荐？</td>
-<td align="left">**NPS（净推荐值）、*<em>K因子*<em>（病毒系数）、邀请分享数</em></em></td>
-</tr>
-</tbody></table>
-<p><strong>2 .为什么需要增长漏斗模型？</strong></p>
-<p><strong>（1）可视化用户旅程</strong>：将抽象的“用户路径”转化为清晰、可量化的阶段。</p>
-<p><strong>（2）精准定位问题</strong>：快速发现用户在哪个环节流失最严重，从而集中资源解决最关键的问题。</p>
-<p><strong>（3）量化改进效果</strong>：任何产品优化或运营策略上线后，都可以通过对比漏斗转化率的变化来评估其效果。</p>
-<p><strong>（4）统一团队认知</strong>：为产品、运营、市场团队提供一个共同的“地图”，对齐目标，协同优化。</p>
-<p><strong>3</strong>.<strong>怎么做？四步落地法</strong></p>
-<h4 id="Step-1-画地图：定义关键路径与转化目标"><a href="#Step-1-画地图：定义关键路径与转化目标" class="headerlink" title="Step 1 画地图：定义关键路径与转化目标"></a>Step 1 画地图：定义关键路径与转化目标</h4><ul>
-<li><p><strong>明确最终目标</strong>：你希望用户最终做什么？（例如：成功支付、发布第一条内容、完成首次投资）。</p>
-</li>
-<li><p><strong>描绘用户路径</strong>：回溯用户为完成这个目标需要经历哪些关键步骤（通常4-7步为宜，过多会过于复杂）。</p>
-</li>
-</ul>
-<p><strong>示例：电商购买的微观漏斗</strong><br>最终目标：<strong>支付成功</strong><br>关键路径：广告曝光 -&gt; 点击进入商品页 -&gt; 浏览详情 -&gt; 添加购物车 -&gt; 点击结算 -&gt; 填写订单 -&gt; 支付成功</p>
-<h4 id="Step-2-算漏斗：数据采集-可视化-流失点"><a href="#Step-2-算漏斗：数据采集-可视化-流失点" class="headerlink" title="Step 2 算漏斗：数据采集+可视化 + 流失点"></a>Step 2 算漏斗：数据采集+可视化 + 流失点</h4><ul>
-<li><p><strong>数据采集</strong>：通过埋点等技术手段，采集每个步骤的用户行为数据（如页面浏览、按钮点击事件）。</p>
-<p>  如：<strong>用「事件-属性」思维埋点：</strong>事件&#x3D;动作，属性&#x3D;动作细节（如渠道&#x3D;抖音，版本&#x3D;8.3.1）</p>
-</li>
-<li><p><strong>构建漏斗</strong>：在数据分析平台（如GA、GrowingIO、Amplitude）或BI工具中，按步骤配置漏斗，并选择要分析的时间范围、用户分群等。</p>
-<p>  <strong>指标：</strong>转化率（CVR）、流失率（1-CVR）。</p>
-<p>  <strong>输出</strong>：漏斗图 + 热力图（分渠道&#x2F;版本对比）。</p>
-</li>
-</ul>
-<h4 id="Step-3-找杠杆：漏斗分析与问题诊断（ICE-优先级）"><a href="#Step-3-找杠杆：漏斗分析与问题诊断（ICE-优先级）" class="headerlink" title="Step 3 找杠杆：漏斗分析与问题诊断（ICE 优先级）"></a>Step 3 找杠杆：漏斗分析与问题诊断（ICE 优先级）</h4><p>这是最关键的一步。看一个漏斗不仅要看最终转化率，更要<strong>深度分析每一步的转化和流失情况</strong>。</p>
-<ul>
-<li><strong>计算转化率</strong>：</li>
-</ul>
-<ol>
-<li><ul>
-<li><strong>每一步转化率</strong> &#x3D; 进入本步骤的用户数 &#x2F; 上一步的用户数；</li>
-<li><strong>总体转化率</strong> &#x3D; 完成最终目标的用户数 &#x2F; 进入第一步的用户数。</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>定位核心流失点：</li>
-</ul>
-<ol>
-<li><ul>
-<li>找到<strong>绝对流失人数最多</strong>和<strong>相对转化率最低</strong>的步骤。这里就是需要优先优化的“瓶颈”；</li>
-<li>对每一层流失，列 3 个候选实验，用 ICE（Impact 影响面 × Confidence 信心 × Ease 易实施）打分，只做前 20% 高杠杆实验。</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li><strong>多维度分解分析</strong>：</li>
-</ul>
-<ol>
-<li><ul>
-<li><strong>分渠道</strong>：不同广告来源的用户，漏斗表现有何差异？哪个渠道的用户质量更高？</li>
-<li><strong>分用户</strong>：新用户和老用户的漏斗路径有何不同？流失点是否一致？</li>
-<li><strong>分设备&#x2F;平台</strong>：App端和Web端的转化效率哪个更高？</li>
-<li><strong>分时间</strong>：节假日和平时的漏斗数据是否有波动？</li>
-</ul>
-</li>
-</ol>
-<h4 id="Step-4-跑实验：提出假设A-B-实验-迭代优化"><a href="#Step-4-跑实验：提出假设A-B-实验-迭代优化" class="headerlink" title="Step 4 跑实验：提出假设A&#x2F;B 实验&amp; 迭代优化"></a>Step 4 跑实验：提出假设A&#x2F;B 实验&amp; 迭代优化</h4><ul>
-<li>每次只改 1 个变量（如落地页标题）。</li>
-<li>运行到统计显著（p&lt;0.05）再全量发布。</li>
-<li>把结论沉淀成“实验知识库”，避免重复踩坑。</li>
-</ul>
-<p><strong>4</strong>.<strong>实战案例：某 DTC 咖啡订阅的 30 天增长战役<br>————————————————-</strong><br><strong>背景</strong></p>
-<ul>
-<li>产品：按月寄送精品咖啡豆。</li>
-<li>目标：30 天内把 GMV 提升 50%。</li>
-<li>现状：投放 100w UV → 注册 10w → 首单 1w → 续订 2k，整体付费率仅 2‰。</li>
-</ul>
-<p>该案例中已经确定了目标和转化漏斗，因此下面从绘制转化地图&amp;计算漏斗开始。</p>
-<h4 id="（1）画地图-算漏斗"><a href="#（1）画地图-算漏斗" class="headerlink" title="（1）画地图 &amp; 算漏斗"></a>（1）画地图 &amp; 算漏斗</h4><p>用 Amplitude 跑出漏斗（数据已脱敏）：</p>
-<table>
-<thead>
-<tr>
-<th align="left">阶段</th>
-<th align="left">人数</th>
-<th align="left">转化率</th>
-<th align="left">流失率</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">访问落地页</td>
-<td align="left">100w</td>
-<td align="left">100%</td>
-<td align="left">—</td>
-</tr>
-<tr>
-<td align="left">注册</td>
-<td align="left">20w</td>
-<td align="left">20%</td>
-<td align="left">80%</td>
-</tr>
-<tr>
-<td align="left">首单</td>
-<td align="left">1w</td>
-<td align="left">5%</td>
-<td align="left">95%</td>
-</tr>
-<tr>
-<td align="left">次月续订</td>
-<td align="left">2k</td>
-<td align="left">20%</td>
-<td align="left">80%</td>
-</tr>
-</tbody></table>
-<p>发现：</p>
-<ul>
-<li>最大流失在 <strong>注册→首单</strong>（该步骤流失率95%）。</li>
-<li>注册率、次月续订率也低，但首单率更低，优先解决首单。</li>
-</ul>
-<h4 id="（2）找杠杆"><a href="#（2）找杠杆" class="headerlink" title="（2）找杠杆"></a>（2）找杠杆</h4><p>团队头脑风暴 + 用户访谈，列出 3 个假设：</p>
-<ul>
-<li><p>H1 价格敏感：首次门槛太高（¥128&#x2F;月）。</p>
-</li>
-<li><p>H2 信任不足：没喝过，怕踩雷。</p>
-</li>
-<li><p>H3 选择困难：12 款豆子不知道选哪款。</p>
-</li>
-</ul>
-<p>用ICE方法打分后，先做 <strong>H2 信任不足</strong>（得分 72&#x2F;100）。</p>
-<h4 id="（3）跑实验"><a href="#（3）跑实验" class="headerlink" title="（3）跑实验"></a>（3）跑实验</h4><ul>
-<li>实验组：落地页增加「9.9 体验包（3 包挂耳+¥30 代金券）」。</li>
-<li>对照组：保持原落地页。</li>
-<li>运行 7 天，样本 2w UV&#x2F;组。</li>
-</ul>
-<h4 id="（4）-结果"><a href="#（4）-结果" class="headerlink" title="（4） 结果"></a>（4） 结果</h4><table>
-<thead>
-<tr>
-<th align="left">指标</th>
-<th align="left">实验组</th>
-<th align="left">对照组</th>
-<th align="left">提升</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">首单率</td>
-<td align="left">18%</td>
-<td align="left">5%</td>
-<td align="left">+40%</td>
-</tr>
-<tr>
-<td align="left">CAC</td>
-<td align="left">¥35</td>
-<td align="left">¥38</td>
-<td align="left">-8%</td>
-</tr>
-<tr>
-<td align="left">30 天 GMV</td>
-<td align="left">+55%</td>
-<td align="left">—</td>
-<td align="left">达成目标</td>
-</tr>
-</tbody></table>
-<p><strong>5</strong>.<strong>注意事项（常见坑 &amp; 对策）</strong><br>-——————————-<br><strong>注意事项：</strong></p>
-<p><strong>（1）不要盲目追求步骤数</strong>：漏斗不是步骤越多越好，应聚焦于最核心的关键行为。</p>
-<p><strong>（2）关注“流失用户”的去向</strong>：他们是真的离开了，还是去了其他路径？（例如，从购物车流失的用户可能去了客服页面咨询问题）。</p>
-<p><strong>（3）分群分析（Segmentation）</strong>：整体的漏斗会掩盖不同用户群体的差异。一定要进行分群分析。</p>
-<p><strong>（4）并非所有业务都是线性漏斗</strong>：一些复杂的业务（如内容平台、双边市场）的用户路径可能是<strong>网状</strong>或<strong>循环</strong>的，需要更灵活的模型（如循环漏斗）来补充。</p>
-<table>
-<thead>
-<tr>
-<th align="left">坑</th>
-<th align="left">症状</th>
-<th align="left">对策</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">漏斗断层</td>
-<td align="left">埋点缺失，漏斗中间“跳崖”</td>
-<td align="left">做“埋点评审”+ 日常自动化校验</td>
-</tr>
-<tr>
-<td align="left">虚荣指标</td>
-<td align="left">只盯 CTR、不盯 ROI</td>
-<td align="left">用北极星指标（如 LTV、CAC）</td>
-</tr>
-<tr>
-<td align="left">实验污染</td>
-<td align="left">不同版本串线、样本不均</td>
-<td align="left">使用唯一用户 ID + 分层抽样</td>
-</tr>
-</tbody></table>
-<p><strong>6.小结&amp;行动清单<br>——————</strong> </p>
-<p><strong>增长漏斗模型</strong>是将宏观增长目标（AARRR）拆解为微观可行动洞见的强大工具。它的工作流是一个清晰的闭环：</p>
-<p><strong>构建漏斗 -&gt; 测量转化 -&gt; 定位流失 -&gt; 提出假设 -&gt; A&#x2F;B测试 -&gt; 迭代优化 -&gt; 再次测量</strong></p>
-<p>掌握这个模型，意味着你能够用数据精准地诊断增长问题，并用实验科学地驱动增长。</p>
-<p>注意：把增长漏斗当“体检报告”，而不是“一次性项目”。</p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p><strong>排序 + 双指针</strong><br>本题的难点在于如何去除重复解。</p>
+<p><strong>算法流程</strong>：<br>特判，对于数组长度 n，如果数组为 null 或者数组长度小于 3，返回 []。<br>对数组进行排序。<br><strong>遍历排序后数组</strong>：<br>若 nums[i]&gt;0：因为已经排序好，所以后面不可能有三个数加和等于 0，直接返回结果。<br>对于重复元素：跳过，避免出现重复解<br>令左指针 L&#x3D;i+1，右指针 R&#x3D;n−1，当 L&lt;R 时，执行循环：<br>当 nums[i]+nums[L]+nums[R]&#x3D;&#x3D;0，执行循环，判断左界和右界是否和下一位置重复，去除重复解。并同时将 L,R 移到下一位置，寻找新的解<br>若和大于 0，说明 nums[R] 太大，R 左移<br>若和小于 0，说明 nums[L] 太小，L 右移<br>复杂度分析<br>时间复杂度：O(n<sup>2</sup>)，数组排序 O(NlogN)，遍历数组 O(n)，双指针遍历 O(n)，总体 O(NlogN)+O(n)∗O(n)，O(n<sup>2</sup>)<br>空间复杂度：O(1)</p>
+<p><strong>Python:</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">    n=<span class="built_in">len</span>(nums)</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">not</span> nums <span class="keyword">or</span> n&lt;<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">return</span> []</span><br><span class="line">    nums.sort()</span><br><span class="line">    res=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&gt;<span class="number">0</span>):</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span> <span class="keyword">and</span> nums[i]==nums[i-<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        L=i+<span class="number">1</span></span><br><span class="line">        R=n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span>(L&lt;R):</span><br><span class="line">            <span class="keyword">if</span>(nums[i]+nums[L]+nums[R]==<span class="number">0</span>):</span><br><span class="line">                res.append([nums[i],nums[L],nums[R]])</span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[L]==nums[L+<span class="number">1</span>]):</span><br><span class="line">                    L=L+<span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span>(L&lt;R <span class="keyword">and</span> nums[R]==nums[R-<span class="number">1</span>]):</span><br><span class="line">                    R=R-<span class="number">1</span></span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(nums[i]+nums[L]+nums[R]&gt;<span class="number">0</span>):</span><br><span class="line">                R=R-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                L=L+<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+
+<p><strong>Java:</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="literal">null</span> || n &lt; <span class="number">3</span>)</span><br><span class="line">            <span class="keyword">return</span> res;       </span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">return</span> res;           </span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;          </span><br><span class="line">            <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> i + <span class="number">1</span>, R = n - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (L &lt; R) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[L] + nums[R];</span><br><span class="line">        </span><br><span class="line">                <span class="keyword">if</span> (sum == <span class="number">0</span>) &#123;</span><br><span class="line">                    res.add(Arrays.asList(nums[i], nums[L], nums[R]));</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[L] == nums[L + <span class="number">1</span>]) L++;</span><br><span class="line">                    <span class="keyword">while</span> (L &lt; R &amp;&amp; nums[R] == nums[R - <span class="number">1</span>]) R--;</span><br><span class="line">                    L++;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (sum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    R--;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    L++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>方法</category>
+        <category>算法</category>
       </categories>
       <tags>
-        <tag>设计</tag>
+        <tag>Python</tag>
+        <tag>算法</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -2494,46 +2244,253 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>提升效率与稳定性:深入掌握conda环境与包管理</title>
-    <url>/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<p><img src="/images/posts/conda/workflow.svg" alt="Conda 环境管理流程"></p>
-<h2 id="一、conda基础概念"><a href="#一、conda基础概念" class="headerlink" title="一、conda基础概念"></a>一、conda基础概念</h2><p>在深入使用<strong>conda</strong>命令之前，首先需要了解<strong>conda</strong>的基础概念。<strong>conda</strong> 是一个开源的包管理系统和环境管理系统，可以安装、更新和管理多种语言的依赖库（不仅限于<font color='Peach'>Python</font>）。它的强大之处在于将包管理与环境管理结合为一体，使得在项目开发中，无论是管理依赖包还是创建虚拟环境，<strong>conda</strong> 都能够提供完整的解决方案。</p>
-<h3 id="conda与虚拟环境的区别"><a href="#conda与虚拟环境的区别" class="headerlink" title="conda与虚拟环境的区别"></a>conda与虚拟环境的区别</h3><p><strong>conda</strong> 与传统的虚拟环境工具（如<font color='Salmon'>venv、virtualenv</font>）不同，后者主要用于隔离项目的依赖，而  则同时管理包和环境。通过使用 <strong>conda</strong>，可以更方便地在不同项目之间切换环境，避免包之间的冲突。</p>
-<h2 id="二、必要准备：配置镜像源"><a href="#二、必要准备：配置镜像源" class="headerlink" title="二、必要准备：配置镜像源"></a>二、必要准备：配置镜像源</h2><p><font color='Bitersweet'>在使用Anaconda安装Python包时，系统会自动从默认源下载安装包，但是由于网络访问限制或网络连接速度较慢等原因，可能导致安装失败或速度较慢。为了解决这些问题，配置镜像源可以让用户从国内的服务器下载Python包，加快下载速度并减少下载失败的问题。</font></p>
-<h3 id="添加镜像源"><a href="#添加镜像源" class="headerlink" title="添加镜像源"></a>添加镜像源</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line"><span class="comment">#显示检索路径</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br><span class="line"><span class="comment">#显示镜像通道</span></span><br><span class="line">conda config --show channels</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="三、环境命令"><a href="#三、环境命令" class="headerlink" title="三、环境命令"></a>三、环境命令</h2><h3 id="1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本"><a href="#1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本" class="headerlink" title="1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本"></a>1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create --prefix D:\Python\Enviroment\myenv python=3.10.6</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-查看虚拟环境-conda-env-list"><a href="#2-查看虚拟环境-conda-env-list" class="headerlink" title="2.查看虚拟环境:conda env list"></a>2.查看虚拟环境:conda env list</h3><p><font color='Magenta'>其中<code>*</code>表示当前所在的环境</font></p>
-<p>命令输出中带 <code>*</code> 的一行表示当前激活的环境。</p>
-<h3 id="3-切换、退出和删除环境"><a href="#3-切换、退出和删除环境" class="headerlink" title="3.切换、退出和删除环境:"></a>3.切换、退出和删除环境:</h3><blockquote>
-<p>切换环境:conda activate+路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
-
-</blockquote>
-<blockquote>
-<p>退出环境</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;conda deactivate</span><br></pre></td></tr></table></figure>
-
-</blockquote>
-<blockquote>
-<p>删除环境:conda env remove -p+路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> remove -p D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
-
-</blockquote>
-<h2 id="四、包命令-先进入某一虚拟环境后使用"><a href="#四、包命令-先进入某一虚拟环境后使用" class="headerlink" title="四、包命令(先进入某一虚拟环境后使用)"></a>四、包命令(先进入某一虚拟环境后使用)</h2><h3 id="1-查找包-conda-search-包名"><a href="#1-查找包-conda-search-包名" class="headerlink" title="1.查找包:conda search+包名"></a>1.查找包:conda search+包名</h3><p> <font color='Magenta'>使用该命令会显示不同版本的python所支持的该包的版本</font></p>
-<h3 id="2-安装包-conda-install-包名"><a href="#2-安装包-conda-install-包名" class="headerlink" title="2.安装包:conda install+包名"></a>2.安装包:conda install+包名</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install seaborn </span><br></pre></td></tr></table></figure>
-
-<p><font color='Magenta'>也可以使用 conda install seaborn&#x3D;xxxx 下载指定版本的包</font></p>
-<h3 id="3-查看已下载的包-conda-list"><a href="#3-查看已下载的包-conda-list" class="headerlink" title="3.查看已下载的包:conda list"></a>3.查看已下载的包:conda list</h3><h3 id="4-更新包-conda-update-包名"><a href="#4-更新包-conda-update-包名" class="headerlink" title="4.更新包:conda update+包名"></a>4.更新包:conda update+包名</h3><h3 id="5-删除包-conda-remove-包名"><a href="#5-删除包-conda-remove-包名" class="headerlink" title="5.删除包:conda remove+包名"></a>5.删除包:conda remove+包名</h3>]]></content>
+    <title>增长漏斗模型：从流量到留量的底层逻辑（理论+实操）</title>
+    <url>/2025/11/19/%E5%A2%9E%E9%95%BF%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B%EF%BC%9A%E4%BB%8E%E6%B5%81%E9%87%8F%E5%88%B0%E7%95%99%E9%87%8F%E7%9A%84%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%EF%BC%88%E7%90%86%E8%AE%BA-%E5%AE%9E%E6%93%8D%EF%BC%89/</url>
+    <content><![CDATA[<p>老板最关心的问题永远只有两个：</p>
+<ol>
+<li>今天的用户从哪儿来？</li>
+<li>明天的钱从哪儿来？</li>
+</ol>
+<p>增长漏斗就是回答这两个问题的万能框架。它把“用户旅程”拆成可度量、可干预、可复盘的阶段，让业务不再拍脑袋。</p>
+<p>增长漏斗模型（Growth Funnel Model）不仅是数据分析的框架，更是一种以用户为中心、以转化为目标的增长思维方式。</p>
+<p><strong>1</strong>.<strong>什么是增长漏斗模型？</strong> </p>
+<p>增长漏斗模型是一种通过可视化用户在产品中关键行为路径，来<strong>量化转化效率、定位流失环节</strong>的分析模型，其核心思想是：<strong>并非所有触达用户的都会转化为客户，你需要跟踪他们在每一步的动向，并优化整个流程。</strong></p>
+<p>增长漏斗 &#x3D; 把用户旅程拆成若干关键节点，通过数据看流失、通过实验提转化，最终让每一层都更“宽”或更“深”。</p>
+<ul>
+<li><strong>漏斗（Funnel）</strong>：形象地比喻了用户从接触产品到完成最终目标（如付费）的过程中，数量逐层减少的现象。</li>
+<li><strong>增长（Growth）</strong>：意味着这个模型的最终目的是<strong>优化漏斗，减少不必要的流失，提升整体转化率</strong>，从而实现用户和业务的增长。</li>
+</ul>
+<p><strong>经典 5 级漏斗（AARRR）：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">阶段</th>
+<th align="left">核心目标</th>
+<th align="left">关键问题</th>
+<th align="left">典型指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>1. 获取</strong>Acquisition</td>
+<td align="left">如何让用户发现并接触产品？</td>
+<td align="left">用户从哪里来？ （流量贵不贵？渠道好不好？）</td>
+<td align="left"><strong>新增用户数</strong>、UV、CTR、CPC、渠道流量、CAC（用户获取成本）</td>
+</tr>
+<tr>
+<td align="left"><strong>2. 激活</strong>Activation</td>
+<td align="left">如何让用户首次体验到产品核心价值？</td>
+<td align="left">用户的“Aha! Moment”（爽点）是什么？</td>
+<td align="left"><strong>激活率</strong>、新手引导完成率、关键行为完成率、注册率、首单率</td>
+</tr>
+<tr>
+<td align="left"><strong>3. 留存</strong>Retention</td>
+<td align="left">如何让用户回来并持续使用？</td>
+<td align="left">用户是否养成了使用习惯？</td>
+<td align="left"><strong>留存率</strong>（次日&#x2F;7日&#x2F;30日）、DAU&#x2F;MAU</td>
+</tr>
+<tr>
+<td align="left"><strong>4. 变现</strong>Revenue</td>
+<td align="left">如何从用户身上获取收入？</td>
+<td align="left">我们的商业模式如何运作？</td>
+<td align="left"><strong>转化率（付费率）</strong>、客单价（ARPU）、LTV（用户终身价值）、毛利率</td>
+</tr>
+<tr>
+<td align="left"><strong>5. 推荐</strong>Referral</td>
+<td align="left">如何让用户推荐更多新用户？</td>
+<td align="left">用户是否愿意推荐产品是否值得推荐？</td>
+<td align="left">**NPS（净推荐值）、*<em>K因子*<em>（病毒系数）、邀请分享数</em></em></td>
+</tr>
+</tbody></table>
+<p><strong>2 .为什么需要增长漏斗模型？</strong></p>
+<p><strong>（1）可视化用户旅程</strong>：将抽象的“用户路径”转化为清晰、可量化的阶段。</p>
+<p><strong>（2）精准定位问题</strong>：快速发现用户在哪个环节流失最严重，从而集中资源解决最关键的问题。</p>
+<p><strong>（3）量化改进效果</strong>：任何产品优化或运营策略上线后，都可以通过对比漏斗转化率的变化来评估其效果。</p>
+<p><strong>（4）统一团队认知</strong>：为产品、运营、市场团队提供一个共同的“地图”，对齐目标，协同优化。</p>
+<p><strong>3</strong>.<strong>怎么做？四步落地法</strong></p>
+<h4 id="Step-1-画地图：定义关键路径与转化目标"><a href="#Step-1-画地图：定义关键路径与转化目标" class="headerlink" title="Step 1 画地图：定义关键路径与转化目标"></a>Step 1 画地图：定义关键路径与转化目标</h4><ul>
+<li><p><strong>明确最终目标</strong>：你希望用户最终做什么？（例如：成功支付、发布第一条内容、完成首次投资）。</p>
+</li>
+<li><p><strong>描绘用户路径</strong>：回溯用户为完成这个目标需要经历哪些关键步骤（通常4-7步为宜，过多会过于复杂）。</p>
+</li>
+</ul>
+<p><strong>示例：电商购买的微观漏斗</strong><br>最终目标：<strong>支付成功</strong><br>关键路径：广告曝光 -&gt; 点击进入商品页 -&gt; 浏览详情 -&gt; 添加购物车 -&gt; 点击结算 -&gt; 填写订单 -&gt; 支付成功</p>
+<h4 id="Step-2-算漏斗：数据采集-可视化-流失点"><a href="#Step-2-算漏斗：数据采集-可视化-流失点" class="headerlink" title="Step 2 算漏斗：数据采集+可视化 + 流失点"></a>Step 2 算漏斗：数据采集+可视化 + 流失点</h4><ul>
+<li><p><strong>数据采集</strong>：通过埋点等技术手段，采集每个步骤的用户行为数据（如页面浏览、按钮点击事件）。</p>
+<p>  如：<strong>用「事件-属性」思维埋点：</strong>事件&#x3D;动作，属性&#x3D;动作细节（如渠道&#x3D;抖音，版本&#x3D;8.3.1）</p>
+</li>
+<li><p><strong>构建漏斗</strong>：在数据分析平台（如GA、GrowingIO、Amplitude）或BI工具中，按步骤配置漏斗，并选择要分析的时间范围、用户分群等。</p>
+<p>  <strong>指标：</strong>转化率（CVR）、流失率（1-CVR）。</p>
+<p>  <strong>输出</strong>：漏斗图 + 热力图（分渠道&#x2F;版本对比）。</p>
+</li>
+</ul>
+<h4 id="Step-3-找杠杆：漏斗分析与问题诊断（ICE-优先级）"><a href="#Step-3-找杠杆：漏斗分析与问题诊断（ICE-优先级）" class="headerlink" title="Step 3 找杠杆：漏斗分析与问题诊断（ICE 优先级）"></a>Step 3 找杠杆：漏斗分析与问题诊断（ICE 优先级）</h4><p>这是最关键的一步。看一个漏斗不仅要看最终转化率，更要<strong>深度分析每一步的转化和流失情况</strong>。</p>
+<ul>
+<li><strong>计算转化率</strong>：</li>
+</ul>
+<ol>
+<li><ul>
+<li><strong>每一步转化率</strong> &#x3D; 进入本步骤的用户数 &#x2F; 上一步的用户数；</li>
+<li><strong>总体转化率</strong> &#x3D; 完成最终目标的用户数 &#x2F; 进入第一步的用户数。</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>定位核心流失点：</li>
+</ul>
+<ol>
+<li><ul>
+<li>找到<strong>绝对流失人数最多</strong>和<strong>相对转化率最低</strong>的步骤。这里就是需要优先优化的“瓶颈”；</li>
+<li>对每一层流失，列 3 个候选实验，用 ICE（Impact 影响面 × Confidence 信心 × Ease 易实施）打分，只做前 20% 高杠杆实验。</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><strong>多维度分解分析</strong>：</li>
+</ul>
+<ol>
+<li><ul>
+<li><strong>分渠道</strong>：不同广告来源的用户，漏斗表现有何差异？哪个渠道的用户质量更高？</li>
+<li><strong>分用户</strong>：新用户和老用户的漏斗路径有何不同？流失点是否一致？</li>
+<li><strong>分设备&#x2F;平台</strong>：App端和Web端的转化效率哪个更高？</li>
+<li><strong>分时间</strong>：节假日和平时的漏斗数据是否有波动？</li>
+</ul>
+</li>
+</ol>
+<h4 id="Step-4-跑实验：提出假设A-B-实验-迭代优化"><a href="#Step-4-跑实验：提出假设A-B-实验-迭代优化" class="headerlink" title="Step 4 跑实验：提出假设A&#x2F;B 实验&amp; 迭代优化"></a>Step 4 跑实验：提出假设A&#x2F;B 实验&amp; 迭代优化</h4><ul>
+<li>每次只改 1 个变量（如落地页标题）。</li>
+<li>运行到统计显著（p&lt;0.05）再全量发布。</li>
+<li>把结论沉淀成“实验知识库”，避免重复踩坑。</li>
+</ul>
+<p><strong>4</strong>.<strong>实战案例：某 DTC 咖啡订阅的 30 天增长战役<br>————————————————-</strong><br><strong>背景</strong></p>
+<ul>
+<li>产品：按月寄送精品咖啡豆。</li>
+<li>目标：30 天内把 GMV 提升 50%。</li>
+<li>现状：投放 100w UV → 注册 10w → 首单 1w → 续订 2k，整体付费率仅 2‰。</li>
+</ul>
+<p>该案例中已经确定了目标和转化漏斗，因此下面从绘制转化地图&amp;计算漏斗开始。</p>
+<h4 id="（1）画地图-算漏斗"><a href="#（1）画地图-算漏斗" class="headerlink" title="（1）画地图 &amp; 算漏斗"></a>（1）画地图 &amp; 算漏斗</h4><p>用 Amplitude 跑出漏斗（数据已脱敏）：</p>
+<table>
+<thead>
+<tr>
+<th align="left">阶段</th>
+<th align="left">人数</th>
+<th align="left">转化率</th>
+<th align="left">流失率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">访问落地页</td>
+<td align="left">100w</td>
+<td align="left">100%</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">注册</td>
+<td align="left">20w</td>
+<td align="left">20%</td>
+<td align="left">80%</td>
+</tr>
+<tr>
+<td align="left">首单</td>
+<td align="left">1w</td>
+<td align="left">5%</td>
+<td align="left">95%</td>
+</tr>
+<tr>
+<td align="left">次月续订</td>
+<td align="left">2k</td>
+<td align="left">20%</td>
+<td align="left">80%</td>
+</tr>
+</tbody></table>
+<p>发现：</p>
+<ul>
+<li>最大流失在 <strong>注册→首单</strong>（该步骤流失率95%）。</li>
+<li>注册率、次月续订率也低，但首单率更低，优先解决首单。</li>
+</ul>
+<h4 id="（2）找杠杆"><a href="#（2）找杠杆" class="headerlink" title="（2）找杠杆"></a>（2）找杠杆</h4><p>团队头脑风暴 + 用户访谈，列出 3 个假设：</p>
+<ul>
+<li><p>H1 价格敏感：首次门槛太高（¥128&#x2F;月）。</p>
+</li>
+<li><p>H2 信任不足：没喝过，怕踩雷。</p>
+</li>
+<li><p>H3 选择困难：12 款豆子不知道选哪款。</p>
+</li>
+</ul>
+<p>用ICE方法打分后，先做 <strong>H2 信任不足</strong>（得分 72&#x2F;100）。</p>
+<h4 id="（3）跑实验"><a href="#（3）跑实验" class="headerlink" title="（3）跑实验"></a>（3）跑实验</h4><ul>
+<li>实验组：落地页增加「9.9 体验包（3 包挂耳+¥30 代金券）」。</li>
+<li>对照组：保持原落地页。</li>
+<li>运行 7 天，样本 2w UV&#x2F;组。</li>
+</ul>
+<h4 id="（4）-结果"><a href="#（4）-结果" class="headerlink" title="（4） 结果"></a>（4） 结果</h4><table>
+<thead>
+<tr>
+<th align="left">指标</th>
+<th align="left">实验组</th>
+<th align="left">对照组</th>
+<th align="left">提升</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">首单率</td>
+<td align="left">18%</td>
+<td align="left">5%</td>
+<td align="left">+40%</td>
+</tr>
+<tr>
+<td align="left">CAC</td>
+<td align="left">¥35</td>
+<td align="left">¥38</td>
+<td align="left">-8%</td>
+</tr>
+<tr>
+<td align="left">30 天 GMV</td>
+<td align="left">+55%</td>
+<td align="left">—</td>
+<td align="left">达成目标</td>
+</tr>
+</tbody></table>
+<p><strong>5</strong>.<strong>注意事项（常见坑 &amp; 对策）</strong><br>-——————————-<br><strong>注意事项：</strong></p>
+<p><strong>（1）不要盲目追求步骤数</strong>：漏斗不是步骤越多越好，应聚焦于最核心的关键行为。</p>
+<p><strong>（2）关注“流失用户”的去向</strong>：他们是真的离开了，还是去了其他路径？（例如，从购物车流失的用户可能去了客服页面咨询问题）。</p>
+<p><strong>（3）分群分析（Segmentation）</strong>：整体的漏斗会掩盖不同用户群体的差异。一定要进行分群分析。</p>
+<p><strong>（4）并非所有业务都是线性漏斗</strong>：一些复杂的业务（如内容平台、双边市场）的用户路径可能是<strong>网状</strong>或<strong>循环</strong>的，需要更灵活的模型（如循环漏斗）来补充。</p>
+<table>
+<thead>
+<tr>
+<th align="left">坑</th>
+<th align="left">症状</th>
+<th align="left">对策</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">漏斗断层</td>
+<td align="left">埋点缺失，漏斗中间“跳崖”</td>
+<td align="left">做“埋点评审”+ 日常自动化校验</td>
+</tr>
+<tr>
+<td align="left">虚荣指标</td>
+<td align="left">只盯 CTR、不盯 ROI</td>
+<td align="left">用北极星指标（如 LTV、CAC）</td>
+</tr>
+<tr>
+<td align="left">实验污染</td>
+<td align="left">不同版本串线、样本不均</td>
+<td align="left">使用唯一用户 ID + 分层抽样</td>
+</tr>
+</tbody></table>
+<p><strong>6.小结&amp;行动清单<br>——————</strong> </p>
+<p><strong>增长漏斗模型</strong>是将宏观增长目标（AARRR）拆解为微观可行动洞见的强大工具。它的工作流是一个清晰的闭环：</p>
+<p><strong>构建漏斗 -&gt; 测量转化 -&gt; 定位流失 -&gt; 提出假设 -&gt; A&#x2F;B测试 -&gt; 迭代优化 -&gt; 再次测量</strong></p>
+<p>掌握这个模型，意味着你能够用数据精准地诊断增长问题，并用实验科学地驱动增长。</p>
+<p>注意：把增长漏斗当“体检报告”，而不是“一次性项目”。</p>
+]]></content>
       <categories>
         <category>方法</category>
       </categories>
       <tags>
-        <tag>AI</tag>
-        <tag>Python</tag>
+        <tag>设计</tag>
       </tags>
   </entry>
   <entry>
@@ -2588,6 +2545,125 @@ flowchart LR
       <tags>
         <tag>工具</tag>
         <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本地部署Llama3.1最强开源大模型！支持Windows、MacOS</title>
+    <url>/2024/08/07/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Llama3.1%E6%9C%80%E5%BC%BA%E5%BC%80%E6%BA%90%E5%A4%A7%E6%A8%A1%E5%9E%8B%EF%BC%9A%E6%94%AF%E6%8C%81Windows%E3%80%81MacOS/</url>
+    <content><![CDATA[<p><img src="/images/posts/llama31/local-or-cloud.svg" alt="Llama 3.1 本地或云端运行选择"></p>
+<p>1.本地电脑安装的硬件要求：</p>
+<p>Windows：3060以上显卡+8G以上显存+16G内存，硬盘空间至少20G</p>
+<p>Mac：M1或M2芯片 16G内存，20G以上硬盘空间</p>
+<p>在开始之前，首先我们需要安装Ollama客户端，来进行本地部署Llama3.1大模型</p>
+<p><strong>官方下载：</strong>【<a href="https://ollama.com/">点击前往</a>】</p>
+<p>安装命令：</p>
+<p>安装llama3.1-8b，至少需要8G的显存，安装命令就是</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ollama run llama3.1:8b</span><br></pre></td></tr></table></figure>
+
+<p>安装llama3.1-70b，至少需要大约 70-75 GB 显存，适合企业用户，安装命令就是</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ollama run llama3.1:78b</span><br></pre></td></tr></table></figure>
+
+<p>安装llama3.1-405b，这是一个极其庞大的模型，安装和运行它在本地需要非常高的显存和硬件资源，至少需要大约 400-450 GB 显存，适合顶级大企业用户，安装命令就是</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ollama run llama3.1:405b</span><br></pre></td></tr></table></figure>
+
+<p>2.如果你没有可运行的显卡，那么可以在Huggingface平台上使用，因为huggingFace 上已经托管了Llama3.1大模型，现在完全免费使用！</p>
+<p>【<a href="https://huggingface.co/chat/">链接直达</a>】</p>
+<p>如果本机硬件不足，可以使用上图右侧的云端方案快速体验。</p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自建Bitwarden密码管理器</title>
+    <url>/2026/02/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/</url>
+    <content><![CDATA[<p><strong>自建Bitwarden密码管理，推荐选择开源项目：<a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。</strong></p>
+<p><img src="/images/posts/bitwarden/architecture.svg" alt="Vaultwarden 自托管架构"></p>
+<p>部署非常简单，尤其是通过Docker，只需少量的配置就可以启动服务，安全稳定又可靠。而且 Bitwarden 大部分高级付费功能可以通过手动配置或第三方集成来免费实现。</p>
+<h2 id="安装教程："><a href="#安装教程：" class="headerlink" title="安装教程："></a>安装教程：</h2><h3 id="步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。"><a href="#步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。" class="headerlink" title="步骤 1：获取一台轻量级的VPS 【点击前往】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。"></a>步骤 1：获取一台轻量级的VPS 【<a href="https://www.vultr.com/?ref=7045490">点击前往</a>】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。</h3><p>SSH远程连接工具，可以选择开源的WindTerm 【<a href="https://github.com/kingToolbox/WindTerm">点击下载</a>】  </p>
+<h3 id="步骤-2-更新系统"><a href="#步骤-2-更新系统" class="headerlink" title="步骤 2: 更新系统"></a>步骤 2: 更新系统</h3><p>首先，更新你的系统以确保所有软件包都是最新的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="步骤-3-安装-Docker-和-Docker-Compose"><a href="#步骤-3-安装-Docker-和-Docker-Compose" class="headerlink" title="步骤 3: 安装 Docker 和 Docker Compose"></a>步骤 3: 安装 Docker 和 Docker Compose</h3><p>Vaultwarden使用Docker来运行，因此我们需要安装Docker和Docker Compose。</p>
+<ol>
+<li>安装Docker 和 Docker Compose 命令：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com  | bash &amp;&amp; <span class="built_in">sudo</span> curl -L <span class="string">&quot;https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-<span class="subst">$(uname  -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose &amp;&amp; <span class="built_in">sudo</span> <span class="built_in">chmod</span> +x /usr/local/bin/docker-compose &amp;&amp; docker-compose --version</span><br></pre></td></tr></table></figure>
+
+<p><strong>完成安装后：</strong></p>
+<p>Docker和Docker Compose就都安装好了，你可以通过以下命令验证安装：</p>
+<ul>
+<li><strong>Docker版本检查</strong>：<code>docker --version</code></li>
+<li><strong>Docker Compose版本检查</strong>：<code>docker-compose --version</code></li>
+</ul>
+<h3 id="步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口"><a href="#步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口" class="headerlink" title="步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口"></a>步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p 8080:80 -p 3012:3012 vaultwarden/server:latest</span><br></pre></td></tr></table></figure>
+
+<p>安装以后，就可以通过ip:8080 访问你的 Bitwarden密码管理面板，ip:3012 是你的 WebSocket 通信链接 ,但现在它是http协议，为了更安全，我们需要部署下HTTPS加密的访问协议。 我们可以通过Nginx Proxy Manager进行配置SSL和Nginx反代</p>
+<h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
+
+<p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
+<p>用户：<a href="mailto:&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a></p>
+<p>密码：admin</p>
+<p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
+
+<h3 id="步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件："><a href="#步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件：" class="headerlink" title="步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 Bitwarden 的官方客户端和浏览器插件："></a>步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 <strong>Bitwarden</strong> 的官方客户端和浏览器插件：</h3><h4 id="1-Bitwarden-桌面客户端"><a href="#1-Bitwarden-桌面客户端" class="headerlink" title="1. Bitwarden 桌面客户端"></a>1. <strong>Bitwarden 桌面客户端</strong></h4><ul>
+<li><strong>Windows</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a> </li>
+<li><strong>macOS</strong>: <a href="https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12&browser=macos">点击下载</a> </li>
+<li><strong>Linux</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a></li>
+</ul>
+<h4 id="2-Bitwarden-移动客户端"><a href="#2-Bitwarden-移动客户端" class="headerlink" title="2. Bitwarden 移动客户端"></a>2. <strong>Bitwarden 移动客户端</strong></h4><ul>
+<li><strong>iOS（App Store）</strong>: <a href="https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744">点击下载</a> </li>
+<li><strong>Android（Google Play）</strong>: <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&pli=1">点击下载</a></li>
+</ul>
+<h4 id="3-Bitwarden-浏览器插件"><a href="#3-Bitwarden-浏览器插件" class="headerlink" title="3. Bitwarden 浏览器插件"></a>3. <strong>Bitwarden 浏览器插件</strong></h4><ul>
+<li><strong>Chrome</strong>: <a href="https://chromewebstore.google.com/detail/bitwarden-%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/nngceckbapebfimnlniiiahkandclblb?browser=chrome">点击下载</a> </li>
+<li><strong>Firefox</strong>: <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox">点击下载</a> </li>
+<li><strong>Microsoft Edge</strong>: <a href="https://microsoftedge.microsoft.com/addons/detail/bitwarden-free-password-ma/cnjalbhlkpghadgdpnddpjlldadblomo">点击下载</a> </li>
+<li><strong>其它浏览器</strong>: <a href="https://bitwarden.com/download/#downloads-web-browser">点击下载</a></li>
+</ul>
+<h4 id="4-Bitwarden-命令行工具-CLI"><a href="#4-Bitwarden-命令行工具-CLI" class="headerlink" title="4. Bitwarden 命令行工具 (CLI)"></a>4. <strong>Bitwarden 命令行工具 (CLI)</strong></h4><ul>
+<li><strong>CLI 下载</strong>: <a href="https://bitwarden.com/download/#downloads-command-line-interface">点击下载</a></li>
+</ul>
+<p>你可以根据你的设备和浏览器选择相应的版本下载并安装。所有这些链接均为官方提供的下载链接，确保软件的安全和可靠性。</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟局域网VLAN</title>
+    <url>/2024/10/13/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91VLAN/</url>
+    <content><![CDATA[<p>VLAN（Virtual Local Area Network，虚拟局域网）技术在现代网络中扮演着重要的角色，它提供了一种灵活的方式来划分网络，提高安全性和网络性能。以下是VLAN的一些优缺点：</p>
+<h3 id="VLAN的优点："><a href="#VLAN的优点：" class="headerlink" title="VLAN的优点："></a>VLAN的优点：</h3><ol>
+<li><strong>提高安全性</strong>：VLAN可以将网络划分为多个逻辑上的广播域，限制了不同VLAN间的直接通信，从而增强了网络的安全性。</li>
+<li><strong>减少广播流量</strong>：通过将大型的广播域划分为更小的部分，VLAN可以减少网络上的广播流量，提高网络效率。</li>
+<li><strong>网络管理更加灵活</strong>：VLAN允许网络管理员根据功能、部门或应用需求来组织网络，而不受物理位置的限制，使得网络管理更加灵活和高效。</li>
+<li><strong>成本节约</strong>：VLAN减少了对昂贵网络升级的需求，提高了现有带宽和上行链路的利用率，从而节约了成本。</li>
+<li><strong>提高网络性能</strong>：通过分割网络为多个逻辑工作组，VLAN可以减少网络上不必要的流量，提高网络性能。</li>
+<li><strong>灵活性和可扩展性</strong>：VLAN技术具有灵活性和可扩展性，方便网络维护和管理，适应网络规模和业务需求的变化。</li>
+</ol>
+<h3 id="VLAN的缺点："><a href="#VLAN的缺点：" class="headerlink" title="VLAN的缺点："></a>VLAN的缺点：</h3><ol>
+<li><strong>管理复杂性</strong>：VLAN需要进行复杂的设置和管理，网络管理员必须精确地配置VLAN，以确保正确地分割广播域、引导数据流量、保持跨网络的通信并确保安全性。</li>
+<li><strong>配置错误可能导致安全风险</strong>：如果VLAN配置不当，可能会引起安全隐患，例如未授权的设备可能会接入到VLAN中，导致网络安全泄漏。</li>
+<li><strong>数据包延迟</strong>：使用VLAN可能会增加数据包的处理时间，从而增加延迟，因为每个数据包必须经过交换机上的额外处理。</li>
+<li><strong>对设备要求较高</strong>：尤其是在动态VLAN的配置中，对网络设备的要求较高，可能需要更多的处理能力和内存来维护VLAN信息。</li>
+<li><strong>VLAN数量限制</strong>：在标准定义中VLAN的数量只有4096个，无法满足大型数据中心的租户间隔离需求。</li>
+</ol>
+<p>总的来说，VLAN技术在提高网络的安全性、灵活性和性能方面提供了显著的优势，但也带来了一定的管理复杂性和潜在的配置挑战。网络管理员需要仔细规划和配置VLAN，以确保网络的高效和安全运行。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
       </tags>
   </entry>
   <entry>
@@ -2653,122 +2729,46 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>虚拟局域网VLAN</title>
-    <url>/2024/10/13/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91VLAN/</url>
-    <content><![CDATA[<p>VLAN（Virtual Local Area Network，虚拟局域网）技术在现代网络中扮演着重要的角色，它提供了一种灵活的方式来划分网络，提高安全性和网络性能。以下是VLAN的一些优缺点：</p>
-<h3 id="VLAN的优点："><a href="#VLAN的优点：" class="headerlink" title="VLAN的优点："></a>VLAN的优点：</h3><ol>
-<li><strong>提高安全性</strong>：VLAN可以将网络划分为多个逻辑上的广播域，限制了不同VLAN间的直接通信，从而增强了网络的安全性。</li>
-<li><strong>减少广播流量</strong>：通过将大型的广播域划分为更小的部分，VLAN可以减少网络上的广播流量，提高网络效率。</li>
-<li><strong>网络管理更加灵活</strong>：VLAN允许网络管理员根据功能、部门或应用需求来组织网络，而不受物理位置的限制，使得网络管理更加灵活和高效。</li>
-<li><strong>成本节约</strong>：VLAN减少了对昂贵网络升级的需求，提高了现有带宽和上行链路的利用率，从而节约了成本。</li>
-<li><strong>提高网络性能</strong>：通过分割网络为多个逻辑工作组，VLAN可以减少网络上不必要的流量，提高网络性能。</li>
-<li><strong>灵活性和可扩展性</strong>：VLAN技术具有灵活性和可扩展性，方便网络维护和管理，适应网络规模和业务需求的变化。</li>
-</ol>
-<h3 id="VLAN的缺点："><a href="#VLAN的缺点：" class="headerlink" title="VLAN的缺点："></a>VLAN的缺点：</h3><ol>
-<li><strong>管理复杂性</strong>：VLAN需要进行复杂的设置和管理，网络管理员必须精确地配置VLAN，以确保正确地分割广播域、引导数据流量、保持跨网络的通信并确保安全性。</li>
-<li><strong>配置错误可能导致安全风险</strong>：如果VLAN配置不当，可能会引起安全隐患，例如未授权的设备可能会接入到VLAN中，导致网络安全泄漏。</li>
-<li><strong>数据包延迟</strong>：使用VLAN可能会增加数据包的处理时间，从而增加延迟，因为每个数据包必须经过交换机上的额外处理。</li>
-<li><strong>对设备要求较高</strong>：尤其是在动态VLAN的配置中，对网络设备的要求较高，可能需要更多的处理能力和内存来维护VLAN信息。</li>
-<li><strong>VLAN数量限制</strong>：在标准定义中VLAN的数量只有4096个，无法满足大型数据中心的租户间隔离需求。</li>
-</ol>
-<p>总的来说，VLAN技术在提高网络的安全性、灵活性和性能方面提供了显著的优势，但也带来了一定的管理复杂性和潜在的配置挑战。网络管理员需要仔细规划和配置VLAN，以确保网络的高效和安全运行。</p>
-]]></content>
+    <title>提升效率与稳定性:深入掌握conda环境与包管理</title>
+    <url>/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<p><img src="/images/posts/conda/workflow.svg" alt="Conda 环境管理流程"></p>
+<h2 id="一、conda基础概念"><a href="#一、conda基础概念" class="headerlink" title="一、conda基础概念"></a>一、conda基础概念</h2><p>在深入使用<strong>conda</strong>命令之前，首先需要了解<strong>conda</strong>的基础概念。<strong>conda</strong> 是一个开源的包管理系统和环境管理系统，可以安装、更新和管理多种语言的依赖库（不仅限于<font color='Peach'>Python</font>）。它的强大之处在于将包管理与环境管理结合为一体，使得在项目开发中，无论是管理依赖包还是创建虚拟环境，<strong>conda</strong> 都能够提供完整的解决方案。</p>
+<h3 id="conda与虚拟环境的区别"><a href="#conda与虚拟环境的区别" class="headerlink" title="conda与虚拟环境的区别"></a>conda与虚拟环境的区别</h3><p><strong>conda</strong> 与传统的虚拟环境工具（如<font color='Salmon'>venv、virtualenv</font>）不同，后者主要用于隔离项目的依赖，而  则同时管理包和环境。通过使用 <strong>conda</strong>，可以更方便地在不同项目之间切换环境，避免包之间的冲突。</p>
+<h2 id="二、必要准备：配置镜像源"><a href="#二、必要准备：配置镜像源" class="headerlink" title="二、必要准备：配置镜像源"></a>二、必要准备：配置镜像源</h2><p><font color='Bitersweet'>在使用Anaconda安装Python包时，系统会自动从默认源下载安装包，但是由于网络访问限制或网络连接速度较慢等原因，可能导致安装失败或速度较慢。为了解决这些问题，配置镜像源可以让用户从国内的服务器下载Python包，加快下载速度并减少下载失败的问题。</font></p>
+<h3 id="添加镜像源"><a href="#添加镜像源" class="headerlink" title="添加镜像源"></a>添加镜像源</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line"><span class="comment">#显示检索路径</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br><span class="line"><span class="comment">#显示镜像通道</span></span><br><span class="line">conda config --show channels</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="三、环境命令"><a href="#三、环境命令" class="headerlink" title="三、环境命令"></a>三、环境命令</h2><h3 id="1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本"><a href="#1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本" class="headerlink" title="1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本"></a>1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create --prefix D:\Python\Enviroment\myenv python=3.10.6</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-查看虚拟环境-conda-env-list"><a href="#2-查看虚拟环境-conda-env-list" class="headerlink" title="2.查看虚拟环境:conda env list"></a>2.查看虚拟环境:conda env list</h3><p><font color='Magenta'>其中<code>*</code>表示当前所在的环境</font></p>
+<p>命令输出中带 <code>*</code> 的一行表示当前激活的环境。</p>
+<h3 id="3-切换、退出和删除环境"><a href="#3-切换、退出和删除环境" class="headerlink" title="3.切换、退出和删除环境:"></a>3.切换、退出和删除环境:</h3><blockquote>
+<p>切换环境:conda activate+路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<blockquote>
+<p>退出环境</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;conda deactivate</span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<blockquote>
+<p>删除环境:conda env remove -p+路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> remove -p D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<h2 id="四、包命令-先进入某一虚拟环境后使用"><a href="#四、包命令-先进入某一虚拟环境后使用" class="headerlink" title="四、包命令(先进入某一虚拟环境后使用)"></a>四、包命令(先进入某一虚拟环境后使用)</h2><h3 id="1-查找包-conda-search-包名"><a href="#1-查找包-conda-search-包名" class="headerlink" title="1.查找包:conda search+包名"></a>1.查找包:conda search+包名</h3><p> <font color='Magenta'>使用该命令会显示不同版本的python所支持的该包的版本</font></p>
+<h3 id="2-安装包-conda-install-包名"><a href="#2-安装包-conda-install-包名" class="headerlink" title="2.安装包:conda install+包名"></a>2.安装包:conda install+包名</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install seaborn </span><br></pre></td></tr></table></figure>
+
+<p><font color='Magenta'>也可以使用 conda install seaborn&#x3D;xxxx 下载指定版本的包</font></p>
+<h3 id="3-查看已下载的包-conda-list"><a href="#3-查看已下载的包-conda-list" class="headerlink" title="3.查看已下载的包:conda list"></a>3.查看已下载的包:conda list</h3><h3 id="4-更新包-conda-update-包名"><a href="#4-更新包-conda-update-包名" class="headerlink" title="4.更新包:conda update+包名"></a>4.更新包:conda update+包名</h3><h3 id="5-删除包-conda-remove-包名"><a href="#5-删除包-conda-remove-包名" class="headerlink" title="5.删除包:conda remove+包名"></a>5.删除包:conda remove+包名</h3>]]></content>
       <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>本地部署Llama3.1最强开源大模型！支持Windows、MacOS</title>
-    <url>/2024/08/07/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Llama3.1%E6%9C%80%E5%BC%BA%E5%BC%80%E6%BA%90%E5%A4%A7%E6%A8%A1%E5%9E%8B%EF%BC%9A%E6%94%AF%E6%8C%81Windows%E3%80%81MacOS/</url>
-    <content><![CDATA[<p><img src="/images/posts/llama31/local-or-cloud.svg" alt="Llama 3.1 本地或云端运行选择"></p>
-<p>1.本地电脑安装的硬件要求：</p>
-<p>Windows：3060以上显卡+8G以上显存+16G内存，硬盘空间至少20G</p>
-<p>Mac：M1或M2芯片 16G内存，20G以上硬盘空间</p>
-<p>在开始之前，首先我们需要安装Ollama客户端，来进行本地部署Llama3.1大模型</p>
-<p><strong>官方下载：</strong>【<a href="https://ollama.com/">点击前往</a>】</p>
-<p>安装命令：</p>
-<p>安装llama3.1-8b，至少需要8G的显存，安装命令就是</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ollama run llama3.1:8b</span><br></pre></td></tr></table></figure>
-
-<p>安装llama3.1-70b，至少需要大约 70-75 GB 显存，适合企业用户，安装命令就是</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ollama run llama3.1:78b</span><br></pre></td></tr></table></figure>
-
-<p>安装llama3.1-405b，这是一个极其庞大的模型，安装和运行它在本地需要非常高的显存和硬件资源，至少需要大约 400-450 GB 显存，适合顶级大企业用户，安装命令就是</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ollama run llama3.1:405b</span><br></pre></td></tr></table></figure>
-
-<p>2.如果你没有可运行的显卡，那么可以在Huggingface平台上使用，因为huggingFace 上已经托管了Llama3.1大模型，现在完全免费使用！</p>
-<p>【<a href="https://huggingface.co/chat/">链接直达</a>】</p>
-<p>如果本机硬件不足，可以使用上图右侧的云端方案快速体验。</p>
-]]></content>
-      <categories>
-        <category>科技</category>
+        <category>方法</category>
       </categories>
       <tags>
         <tag>AI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>自建Bitwarden密码管理器</title>
-    <url>/2026/02/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/</url>
-    <content><![CDATA[<p><strong>自建Bitwarden密码管理，推荐选择开源项目：<a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。</strong></p>
-<p><img src="/images/posts/bitwarden/architecture.svg" alt="Vaultwarden 自托管架构"></p>
-<p>部署非常简单，尤其是通过Docker，只需少量的配置就可以启动服务，安全稳定又可靠。而且 Bitwarden 大部分高级付费功能可以通过手动配置或第三方集成来免费实现。</p>
-<h2 id="安装教程："><a href="#安装教程：" class="headerlink" title="安装教程："></a>安装教程：</h2><h3 id="步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。"><a href="#步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。" class="headerlink" title="步骤 1：获取一台轻量级的VPS 【点击前往】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。"></a>步骤 1：获取一台轻量级的VPS 【<a href="https://www.vultr.com/?ref=7045490">点击前往</a>】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。</h3><p>SSH远程连接工具，可以选择开源的WindTerm 【<a href="https://github.com/kingToolbox/WindTerm">点击下载</a>】  </p>
-<h3 id="步骤-2-更新系统"><a href="#步骤-2-更新系统" class="headerlink" title="步骤 2: 更新系统"></a>步骤 2: 更新系统</h3><p>首先，更新你的系统以确保所有软件包都是最新的：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="步骤-3-安装-Docker-和-Docker-Compose"><a href="#步骤-3-安装-Docker-和-Docker-Compose" class="headerlink" title="步骤 3: 安装 Docker 和 Docker Compose"></a>步骤 3: 安装 Docker 和 Docker Compose</h3><p>Vaultwarden使用Docker来运行，因此我们需要安装Docker和Docker Compose。</p>
-<ol>
-<li>安装Docker 和 Docker Compose 命令：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com  | bash &amp;&amp; <span class="built_in">sudo</span> curl -L <span class="string">&quot;https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-<span class="subst">$(uname  -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose &amp;&amp; <span class="built_in">sudo</span> <span class="built_in">chmod</span> +x /usr/local/bin/docker-compose &amp;&amp; docker-compose --version</span><br></pre></td></tr></table></figure>
-
-<p><strong>完成安装后：</strong></p>
-<p>Docker和Docker Compose就都安装好了，你可以通过以下命令验证安装：</p>
-<ul>
-<li><strong>Docker版本检查</strong>：<code>docker --version</code></li>
-<li><strong>Docker Compose版本检查</strong>：<code>docker-compose --version</code></li>
-</ul>
-<h3 id="步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口"><a href="#步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口" class="headerlink" title="步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口"></a>步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p 8080:80 -p 3012:3012 vaultwarden/server:latest</span><br></pre></td></tr></table></figure>
-
-<p>安装以后，就可以通过ip:8080 访问你的 Bitwarden密码管理面板，ip:3012 是你的 WebSocket 通信链接 ,但现在它是http协议，为了更安全，我们需要部署下HTTPS加密的访问协议。 我们可以通过Nginx Proxy Manager进行配置SSL和Nginx反代</p>
-<h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
-
-<p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
-<p>用户：<a href="mailto:&#97;&#x64;&#x6d;&#x69;&#110;&#64;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#99;&#111;&#x6d;">&#97;&#x64;&#x6d;&#x69;&#110;&#64;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#99;&#111;&#x6d;</a></p>
-<p>密码：admin</p>
-<p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
-
-<h3 id="步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件："><a href="#步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件：" class="headerlink" title="步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 Bitwarden 的官方客户端和浏览器插件："></a>步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 <strong>Bitwarden</strong> 的官方客户端和浏览器插件：</h3><h4 id="1-Bitwarden-桌面客户端"><a href="#1-Bitwarden-桌面客户端" class="headerlink" title="1. Bitwarden 桌面客户端"></a>1. <strong>Bitwarden 桌面客户端</strong></h4><ul>
-<li><strong>Windows</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a> </li>
-<li><strong>macOS</strong>: <a href="https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12&browser=macos">点击下载</a> </li>
-<li><strong>Linux</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a></li>
-</ul>
-<h4 id="2-Bitwarden-移动客户端"><a href="#2-Bitwarden-移动客户端" class="headerlink" title="2. Bitwarden 移动客户端"></a>2. <strong>Bitwarden 移动客户端</strong></h4><ul>
-<li><strong>iOS（App Store）</strong>: <a href="https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744">点击下载</a> </li>
-<li><strong>Android（Google Play）</strong>: <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&pli=1">点击下载</a></li>
-</ul>
-<h4 id="3-Bitwarden-浏览器插件"><a href="#3-Bitwarden-浏览器插件" class="headerlink" title="3. Bitwarden 浏览器插件"></a>3. <strong>Bitwarden 浏览器插件</strong></h4><ul>
-<li><strong>Chrome</strong>: <a href="https://chromewebstore.google.com/detail/bitwarden-%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/nngceckbapebfimnlniiiahkandclblb?browser=chrome">点击下载</a> </li>
-<li><strong>Firefox</strong>: <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox">点击下载</a> </li>
-<li><strong>Microsoft Edge</strong>: <a href="https://microsoftedge.microsoft.com/addons/detail/bitwarden-free-password-ma/cnjalbhlkpghadgdpnddpjlldadblomo">点击下载</a> </li>
-<li><strong>其它浏览器</strong>: <a href="https://bitwarden.com/download/#downloads-web-browser">点击下载</a></li>
-</ul>
-<h4 id="4-Bitwarden-命令行工具-CLI"><a href="#4-Bitwarden-命令行工具-CLI" class="headerlink" title="4. Bitwarden 命令行工具 (CLI)"></a>4. <strong>Bitwarden 命令行工具 (CLI)</strong></h4><ul>
-<li><strong>CLI 下载</strong>: <a href="https://bitwarden.com/download/#downloads-command-line-interface">点击下载</a></li>
-</ul>
-<p>你可以根据你的设备和浏览器选择相应的版本下载并安装。所有这些链接均为官方提供的下载链接，确保软件的安全和可靠性。</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Github</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -3835,256 +3835,6 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>详尽指南：在VMware中安装和配置Ubuntu</title>
-    <url>/2024/08/02/%E8%AF%A6%E5%B0%BD%E6%8C%87%E5%8D%97%EF%BC%9A%E5%9C%A8VMware%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEUbuntu/</url>
-    <content><![CDATA[<p><img src="/images/posts/vmware-ubuntu/layers.svg" alt="VMware 中运行 Ubuntu 的系统层次"></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="1-什么是Linux？"><a href="#1-什么是Linux？" class="headerlink" title="1. 什么是Linux？"></a>1. 什么是Linux？</h3><p>Linux是一种开源的操作系统，由Linus Torvalds于1991年首次发布。它基于Unix操作系统，并以其强大的稳定性、安全性和灵活性著称。Linux被广泛应用于服务器、桌面计算机、移动设备和嵌入式系统中。</p>
-<h3 id="2-常见的Linux发行版"><a href="#2-常见的Linux发行版" class="headerlink" title="2. 常见的Linux发行版"></a>2. 常见的Linux发行版</h3><p>Linux发行版是将Linux内核与其他软件（如系统工具、图形用户界面、应用程序等）打包在一起的操作系统。以下是几种常见的Linux发行版及其优缺点：</p>
-<h4 id="2-1-Ubuntu"><a href="#2-1-Ubuntu" class="headerlink" title="2.1 Ubuntu"></a>2.1 Ubuntu</h4><p><strong>优点：</strong></p>
-<ul>
-<li><strong>易于使用</strong>：Ubuntu具有用户友好的图形界面，适合Linux初学者。</li>
-<li><strong>广泛的社区支持</strong>：拥有大量的用户和开发者，遇到问题时可以很容易地找到解决方案。</li>
-<li><strong>定期更新</strong>：每六个月发布一个新的版本，提供最新的软件和功能。</li>
-</ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li><strong>系统资源占用</strong>：相比一些轻量级发行版，Ubuntu对系统资源的需求更高。</li>
-</ul>
-<h4 id="2-2-CentOS"><a href="#2-2-CentOS" class="headerlink" title="2.2 CentOS"></a>2.2 CentOS</h4><p><strong>优点：</strong></p>
-<ul>
-<li><strong>稳定性高</strong>：基于Red Hat Enterprise Linux（RHEL），适用于企业级应用。</li>
-<li><strong>长期支持</strong>：每个版本都有长达十年的支持期，适合生产环境。</li>
-</ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li><strong>软件包较旧</strong>：为了保证稳定性，CentOS的软件包版本较旧，不适合需要最新软件的用户。</li>
-</ul>
-<h4 id="2-3-Fedora"><a href="#2-3-Fedora" class="headerlink" title="2.3 Fedora"></a>2.3 Fedora</h4><p><strong>优点：</strong></p>
-<ul>
-<li><strong>前沿技术</strong>：提供最新的技术和软件，适合开发者和技术爱好者。</li>
-<li><strong>社区驱动</strong>：由社区主导开发，开放性强。</li>
-</ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li><strong>更新频繁</strong>：版本更新周期短（约六个月），可能不适合需要长期稳定的用户。</li>
-</ul>
-<h4 id="2-4-Debian"><a href="#2-4-Debian" class="headerlink" title="2.4 Debian"></a>2.4 Debian</h4><p><strong>优点：</strong></p>
-<ul>
-<li><strong>稳定可靠</strong>：经过严格测试的软件包，适合服务器和生产环境。</li>
-<li><strong>丰富的软件库</strong>：拥有超过50000个软件包，几乎可以满足所有需求。</li>
-</ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li><strong>安装和配置较复杂</strong>：相比Ubuntu，Debian的安装和配置过程对新手来说不够友好。</li>
-</ul>
-<h3 id="3-为什么选择Ubuntu？"><a href="#3-为什么选择Ubuntu？" class="headerlink" title="3. 为什么选择Ubuntu？"></a>3. 为什么选择Ubuntu？</h3><p>对于初学者和普通用户来说，Ubuntu是一个理想的选择。其易用性、广泛的社区支持以及定期的更新使其成为个人和企业用户的首选。此外，Ubuntu还提供了丰富的软件资源和文档支持，帮助用户更快地上手和解决问题。</p>
-<h2 id="1-在VMware中安装Ubuntu"><a href="#1-在VMware中安装Ubuntu" class="headerlink" title="1. 在VMware中安装Ubuntu"></a>1. 在VMware中安装Ubuntu</h2><h3 id="1-1-准备工作"><a href="#1-1-准备工作" class="headerlink" title="1.1 准备工作"></a>1.1 准备工作</h3><p>在开始之前，需要准备以下材料：</p>
-<ul>
-<li>VMware Workstation</li>
-<li>Ubuntu ISO镜像文件，可以从<a href="https://ubuntu.com/download">Ubuntu官网</a>下载</li>
-<li>Xshell 7和Xftp 7</li>
-</ul>
-<h3 id="1-2-创建新的虚拟机"><a href="#1-2-创建新的虚拟机" class="headerlink" title="1.2 创建新的虚拟机"></a>1.2 创建新的虚拟机</h3><ol>
-<li>打开VMware Workstation，点击“新建虚拟机”（New Virtual Machine）。</li>
-<li>选择“典型（推荐）”（Typical (recommended)），点击“下一步”。</li>
-<li>选择“安装程序光盘映像文件（iso）”（Installer disc image file (iso)），然后点击“浏览”并选择之前下载的Ubuntu ISO文件，点击“下一步”。</li>
-<li>选择操作系统版本。一般来说，VMware会自动检测Ubuntu版本。如果未能自动检测，请手动选择对应版本。</li>
-<li>为虚拟机命名并选择安装位置，点击“下一步”。</li>
-<li>设置虚拟机的磁盘大小。默认值一般为20GB，可以根据需要调整。选择“将虚拟磁盘存储为单个文件”，点击“下一步”。</li>
-<li>点击“完成”，创建虚拟机。</li>
-</ol>
-<h3 id="1-3-安装Ubuntu"><a href="#1-3-安装Ubuntu" class="headerlink" title="1.3 安装Ubuntu"></a>1.3 安装Ubuntu</h3><ol>
-<li>启动新创建的虚拟机，Ubuntu安装程序将自动启动。</li>
-<li>选择安装语言，点击“安装Ubuntu”。</li>
-<li>选择键盘布局，点击“继续”。</li>
-<li>选择安装类型。可以选择“正常安装”或“最小安装”，根据需求选择即可。</li>
-<li>在“其他选项”中，选择是否下载更新和第三方软件，点击“继续”。</li>
-<li>选择安装类型。一般选择“擦除磁盘并安装Ubuntu”，点击“安装现在”。</li>
-<li>确认分区设置，点击“继续”。</li>
-<li>设置时区，点击“继续”。</li>
-<li>设置用户名、计算机名和密码，点击“继续”。</li>
-<li>等待安装完成，点击“重新启动”即可完成安装。</li>
-</ol>
-<h2 id="2-Ubuntu基本配置"><a href="#2-Ubuntu基本配置" class="headerlink" title="2. Ubuntu基本配置"></a>2. Ubuntu基本配置</h2><h3 id="2-1-更新系统"><a href="#2-1-更新系统" class="headerlink" title="2.1 更新系统"></a>2.1 更新系统</h3><p>安装完成后，首先需要更新系统软件包：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-2-安装常用软件"><a href="#2-2-安装常用软件" class="headerlink" title="2.2 安装常用软件"></a>2.2 安装常用软件</h3><p>可以根据需要安装一些常用的软件，如Git、Vim、Curl等：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install git vim curl -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-配置SSH连接"><a href="#2-3-配置SSH连接" class="headerlink" title="2.3 配置SSH连接"></a>2.3 配置SSH连接</h3><p>使用Xshell 7和Xftp 7进行SSH连接和文件传输。</p>
-<h4 id="2-3-1-安装SSH服务"><a href="#2-3-1-安装SSH服务" class="headerlink" title="2.3.1 安装SSH服务"></a>2.3.1 安装SSH服务</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install openssh-server -y</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> ssh</span><br><span class="line"><span class="built_in">sudo</span> systemctl start ssh</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-3-2-使用Xshell-7连接"><a href="#2-3-2-使用Xshell-7连接" class="headerlink" title="2.3.2 使用Xshell 7连接"></a>2.3.2 使用Xshell 7连接</h4><ol>
-<li>打开Xshell 7，点击“新建会话”。</li>
-<li>输入会话名称，并在“主机”栏输入虚拟机的IP地址。</li>
-<li>在“用户身份验证”中输入用户名和密码，点击“连接”。</li>
-<li>成功连接后，可以在Xshell中管理和操作Ubuntu系统。</li>
-</ol>
-<h4 id="2-3-3-使用Xftp-7传输文件"><a href="#2-3-3-使用Xftp-7传输文件" class="headerlink" title="2.3.3 使用Xftp 7传输文件"></a>2.3.3 使用Xftp 7传输文件</h4><ol>
-<li>打开Xftp 7，点击“新建会话”。</li>
-<li>输入会话名称，并在“主机”栏输入虚拟机的IP地址。</li>
-<li>在“用户身份验证”中输入用户名和密码，点击“连接”。</li>
-<li>成功连接后，可以在Xftp中进行文件的上传和下载。</li>
-</ol>
-<h3 id="2-4-配置防火墙"><a href="#2-4-配置防火墙" class="headerlink" title="2.4 配置防火墙"></a>2.4 配置防火墙</h3><p>为了提高系统安全性，可以配置防火墙：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ufw -y</span><br><span class="line"><span class="built_in">sudo</span> ufw allow OpenSSH</span><br><span class="line"><span class="built_in">sudo</span> ufw <span class="built_in">enable</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-常用命令"><a href="#3-常用命令" class="headerlink" title="3. 常用命令"></a>3. 常用命令</h2><h3 id="3-1-文件和目录操作"><a href="#3-1-文件和目录操作" class="headerlink" title="3.1 文件和目录操作"></a>3.1 文件和目录操作</h3><ul>
-<li>列出目录内容：<code>ls</code></li>
-<li>切换目录：<code>cd</code></li>
-<li>创建目录：<code>mkdir</code></li>
-<li>删除文件或目录：<code>rm</code>（使用<code>rm -r</code>删除目录及其内容）</li>
-<li>复制文件或目录：<code>cp</code></li>
-<li>移动或重命名文件或目录：<code>mv</code></li>
-</ul>
-<h3 id="3-2-系统管理"><a href="#3-2-系统管理" class="headerlink" title="3.2 系统管理"></a>3.2 系统管理</h3><ul>
-<li>查看磁盘使用情况：<code>df -h</code></li>
-<li>查看内存使用情况：<code>free -h</code></li>
-<li>查看系统信息：<code>uname -a</code></li>
-<li>查看当前运行的进程：<code>ps aux</code></li>
-<li>杀死进程：<code>kill [PID]</code></li>
-</ul>
-<h3 id="3-3-网络操作"><a href="#3-3-网络操作" class="headerlink" title="3.3 网络操作"></a>3.3 网络操作</h3><ul>
-<li>查看网络接口信息：<code>ip a</code></li>
-<li>测试网络连通性：<code>ping [IP/域名]</code></li>
-<li>查看路由表：<code>ip route</code></li>
-<li>下载文件：<code>wget [URL]</code> 或 <code>curl -O [URL]</code></li>
-</ul>
-<h3 id="3-4-软件管理"><a href="#3-4-软件管理" class="headerlink" title="3.4 软件管理"></a>3.4 软件管理</h3><ul>
-<li>安装软件包：<code>sudo apt install [包名]</code></li>
-<li>卸载软件包：<code>sudo apt remove [包名]</code></li>
-<li>搜索软件包：<code>apt search [关键字]</code></li>
-<li>更新软件包列表：<code>sudo apt update</code></li>
-<li>升级已安装的软件包：<code>sudo apt upgrade</code></li>
-</ul>
-<h3 id="3-5-权限管理"><a href="#3-5-权限管理" class="headerlink" title="3.5 权限管理"></a>3.5 权限管理</h3><ul>
-<li>修改文件权限：<code>chmod [权限] [文件]</code></li>
-<li>修改文件所属用户和用户组：<code>chown [用户]:[用户组] [文件]</code></li>
-<li>查看文件权限：<code>ls -l</code></li>
-</ul>
-<h2 id="4-高级配置"><a href="#4-高级配置" class="headerlink" title="4. 高级配置"></a>4. 高级配置</h2><h3 id="4-1-配置静态IP"><a href="#4-1-配置静态IP" class="headerlink" title="4.1 配置静态IP"></a>4.1 配置静态IP</h3><p>编辑网络配置文件以配置静态IP：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/netplan/01-netcfg.yaml</span><br></pre></td></tr></table></figure>
-
-<p>在文件中添加以下内容：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">network:</span></span><br><span class="line">  <span class="attr">version:</span> <span class="number">2</span></span><br><span class="line">  <span class="attr">ethernets:</span></span><br><span class="line">    <span class="attr">ens33:</span></span><br><span class="line">      <span class="attr">dhcp4:</span> <span class="literal">no</span></span><br><span class="line">      <span class="attr">addresses:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.100</span><span class="string">/24</span></span><br><span class="line">      <span class="attr">gateway4:</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span></span><br><span class="line">      <span class="attr">nameservers:</span></span><br><span class="line">        <span class="attr">addresses:</span> [<span class="number">8.8</span><span class="number">.8</span><span class="number">.8</span>, <span class="number">8.8</span><span class="number">.4</span><span class="number">.4</span>]</span><br></pre></td></tr></table></figure>
-
-<p>保存并应用配置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> netplan apply</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-2-安装和配置防火墙"><a href="#4-2-安装和配置防火墙" class="headerlink" title="4.2 安装和配置防火墙"></a>4.2 安装和配置防火墙</h3><p>除了前面提到的UFW，可以选择更高级的防火墙如<code>iptables</code>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install iptables -y</span><br></pre></td></tr></table></figure>
-
-<p>配置规则（以下为示例规则）：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -p tcp --dport 22 -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -p icmp -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -i lo -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -P INPUT DROP</span><br></pre></td></tr></table></figure>
-
-<p>保存规则：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> iptables-save &gt; /etc/iptables/rules.v4</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-常见问题和解决方法"><a href="#5-常见问题和解决方法" class="headerlink" title="5. 常见问题和解决方法"></a>5. 常见问题和解决方法</h2><h3 id="5-1-虚拟机网络连接问题"><a href="#5-1-虚拟机网络连接问题" class="headerlink" title="5.1 虚拟机网络连接问题"></a>5.1 虚拟机网络连接问题</h3><p>如果遇到虚拟机无法连接网络的问题，可以尝试以下步骤：</p>
-<ul>
-<li>检查虚拟机的网络适配器设置是否正确。</li>
-<li>尝试重启网络服务：<code>sudo systemctl restart networking</code></li>
-<li>确保VMware的虚拟网络编辑器配置正确。</li>
-</ul>
-<h3 id="5-2-无法启动虚拟机"><a href="#5-2-无法启动虚拟机" class="headerlink" title="5.2 无法启动虚拟机"></a>5.2 无法启动虚拟机</h3><p>如果虚拟机无法启动，可能是由于磁盘空间不足或配置文件损坏。可以尝试以下步骤：</p>
-<ul>
-<li>检查宿主机的磁盘空间是否足够。</li>
-<li>尝试修复虚拟机配置：打开VMware并选择“修复”（Repair）选项。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件定义网络SDN</title>
-    <url>/2024/10/26/%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9CSDN/</url>
-    <content><![CDATA[<p>软件定义网络（SDN）就像是网络世界的大脑和神经系统。就像大脑控制我们的身体一样，SDN的控制器控制着网络中的交换机和路由器等设备。这种网络架构的核心思想是将控制平面（负责决策数据如何传输）和数据平面（实际传输数据）分离开来。这样做的好处是，我们可以像编写程序一样来控制网络的行为，而不需要去手动配置每一个网络设备。</p>
-<h3 id="SDN的工作原理"><a href="#SDN的工作原理" class="headerlink" title="SDN的工作原理"></a>SDN的工作原理</h3><p>想象一下，网络就像一个繁忙的机场，飞机（数据包）需要按照控制塔（控制器）的指令来起飞和降落。在SDN中，控制器就是那个控制塔，它告诉网络设备（相当于机场跑道和导航系统）如何处理飞机的流量。这样，网络管理员可以通过控制器来监控和调整整个网络的流量，就像空中交通管制员一样。</p>
-<h3 id="SDN的优点"><a href="#SDN的优点" class="headerlink" title="SDN的优点"></a>SDN的优点</h3><ol>
-<li><strong>集中管理</strong>：网络管理员可以通过一个中央控制器来管理整个网络，这比去每个设备上进行配置要简单得多。</li>
-<li><strong>灵活性</strong>：网络可以根据需要快速调整，就像你可以根据交通情况调整道路的通行规则一样。</li>
-<li><strong>成本效益</strong>：由于减少了对专用硬件的依赖，SDN可以降低网络的建设和维护成本。</li>
-<li><strong>创新</strong>：开发者可以通过编程接口创建新的网络应用和服务，这促进了网络技术的创新。</li>
-</ol>
-<h3 id="SDN的缺点"><a href="#SDN的缺点" class="headerlink" title="SDN的缺点"></a>SDN的缺点</h3><ol>
-<li><strong>安全风险</strong>：由于控制器集中了大量的控制权，如果控制器受到攻击，整个网络都可能受到影响。</li>
-<li><strong>兼容性问题</strong>：SDN需要与传统网络设备兼容，这可能需要额外的适配工作。</li>
-<li><strong>技术成熟度</strong>：虽然SDN的概念已经提出一段时间了，但在市场上的广泛应用还需要时间来成熟。</li>
-</ol>
-<h3 id="SDN的编程接口"><a href="#SDN的编程接口" class="headerlink" title="SDN的编程接口"></a>SDN的编程接口</h3><p>SDN提供了两种主要的编程接口：</p>
-<ol>
-<li><p><strong>南向接口</strong>：这是控制器和网络设备之间的通信接口。最著名的南向接口协议是OpenFlow，它允许控制器告诉网络设备如何处理经过的数据包。这就像是给机场的导航系统下达指令，告诉它们如何引导飞机。</p>
-</li>
-<li><p><strong>北向接口</strong>：这是应用程序和控制器之间的通信接口。通过北向接口，开发者可以编写程序来控制网络的行为，比如创建虚拟网络或者实施安全策略。这就像是给空中交通管制员一个新工具，让他们能更有效地管理交通流量。</p>
-</li>
-</ol>
-<p>总的来说，SDN就像是给网络管理员和开发者提供了一套强大的工具，让他们能够更智能、更灵活地管理网络。虽然它还有一些挑战需要克服，但SDN的潜力是巨大的，它正在逐渐改变我们对网络的理解和使用方式。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>马斯克开源Grok-1：史上最大3140亿参数模型，权重架构全面公开</title>
-    <url>/2024/10/19/%E9%A9%AC%E6%96%AF%E5%85%8B%E5%BC%80%E6%BA%90Grok-1%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A73140%E4%BA%BF%E5%8F%82%E6%95%B0%E6%A8%A1%E5%9E%8B%EF%BC%8C%E6%9D%83%E9%87%8D%E6%9E%B6%E6%9E%84%E5%85%A8%E9%9D%A2%E5%85%AC%E5%BC%80/</url>
-    <content><![CDATA[<p><img src="/images/posts/grok1/moe.svg" alt="Grok-1 混合专家架构"></p>
-<p>马斯克的xAI公司正式开源了3140亿参数的大型语言模型Grok-1,包括权重和网络架构。这使Grok-1成为目前参数量最大的开源大语言模型。Grok-1采用混合专家(MoE)架构,在给定token上的激活权重为25%。xAI在2023年10月使用自定义训练堆栈从头训练了该模型,并遵守Apache 2.0许可证开源。</p>
-<p>1.Grok-1 开源模型下载：【<a href="magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">磁力链接</a>】 ，然后使用 【<a href="https://bbs.freedidi.com/t/topic/392">Torrent 客户端</a>】进行下载即可！</p>
-<p>2.Grok 开源项目：【<a href="https://github.com/xai-org/grok-1">Githubg 官方下载</a>】</p>
-<p>3.如果需要在云端安装Grok-1大模型，可以通过【<a href="https://www.vultr.com/?ref=7045490">租赁H100 云GPU</a>】进行云端搭建</p>
-<p>4.当然也可以直接调用HuggingFace 🤗 Hub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xai-org/grok-1.git &amp;&amp; <span class="built_in">cd</span> grok-1</span><br><span class="line">pip install huggingface_hub[hf_transfer]</span><br><span class="line">huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False</span><br></pre></td></tr></table></figure>
-
-
-<p>模型详情:</p>
-<ul>
-<li>基于大量文本数据训练,未针对任何特定任务微调</li>
-<li>3140亿参数MoE模型,激活权重25%</li>
-<li>使用旋转嵌入而非固定位置嵌入</li>
-<li>Tokenizer词汇大小131,072,嵌入大小6,144</li>
-<li>64层Transformer,每层解码器层包含多头注意力块和密集块</li>
-<li>多头注意力:48头查询,8头键&#x2F;值,键值大小128</li>
-<li>密集块:加宽因子8,隐藏层大小32768</li>
-<li>每个token从8个专家选择2个</li>
-<li>旋转位置嵌入大小6,144</li>
-<li>上下文长度8192 tokens,精度bf16</li>
-</ul>
-<p>模型能力:</p>
-<ul>
-<li>在标准LM基准测试中表现超过同等计算量模型</li>
-<li>HumanEval编码任务63.2%,MMLU 73%</li>
-<li>在匈牙利高中数学考试中获C级(59%)</li>
-<li>整体在推理和编码任务中表现出色</li>
-</ul>
-<p>局限性:</p>
-<ul>
-<li>缺少独立搜索网络能力,需结合搜索工具增强</li>
-<li>可能产生幻觉,需人工审查</li>
-<li>目前无法像X平台付费版实现实时获取信息</li>
-</ul>
-<p>开源意义:</p>
-<ul>
-<li>遵循Apache 2.0许可证,用户可自由使用修改分发</li>
-<li>体现了xAI追求透明化和社区开放的理念</li>
-<li>为进一步研究和创新提供了宝贵资源</li>
-</ul>
-<p>总的来说,Grok-1作为一款大规模开源语言模型,在模型能力和透明度方面都具有重要意义,值得业内外人士关注和探索。当然,模型的实际应用还需要结合其他工具和人工审查,以发挥其最大潜能。</p>
-]]></content>
-      <categories>
-        <category>科技</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>详解Python的66个内置函数</title>
     <url>/2024/10/21/%E8%AF%A6%E8%A7%A3Python%E7%9A%8466%E4%B8%AA%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p><img src="/images/posts/python-builtins/overview.svg" alt="Python 内置函数分类"></p>
@@ -4498,6 +4248,256 @@ flowchart LR
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>详尽指南：在VMware中安装和配置Ubuntu</title>
+    <url>/2024/08/02/%E8%AF%A6%E5%B0%BD%E6%8C%87%E5%8D%97%EF%BC%9A%E5%9C%A8VMware%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEUbuntu/</url>
+    <content><![CDATA[<p><img src="/images/posts/vmware-ubuntu/layers.svg" alt="VMware 中运行 Ubuntu 的系统层次"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="1-什么是Linux？"><a href="#1-什么是Linux？" class="headerlink" title="1. 什么是Linux？"></a>1. 什么是Linux？</h3><p>Linux是一种开源的操作系统，由Linus Torvalds于1991年首次发布。它基于Unix操作系统，并以其强大的稳定性、安全性和灵活性著称。Linux被广泛应用于服务器、桌面计算机、移动设备和嵌入式系统中。</p>
+<h3 id="2-常见的Linux发行版"><a href="#2-常见的Linux发行版" class="headerlink" title="2. 常见的Linux发行版"></a>2. 常见的Linux发行版</h3><p>Linux发行版是将Linux内核与其他软件（如系统工具、图形用户界面、应用程序等）打包在一起的操作系统。以下是几种常见的Linux发行版及其优缺点：</p>
+<h4 id="2-1-Ubuntu"><a href="#2-1-Ubuntu" class="headerlink" title="2.1 Ubuntu"></a>2.1 Ubuntu</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>易于使用</strong>：Ubuntu具有用户友好的图形界面，适合Linux初学者。</li>
+<li><strong>广泛的社区支持</strong>：拥有大量的用户和开发者，遇到问题时可以很容易地找到解决方案。</li>
+<li><strong>定期更新</strong>：每六个月发布一个新的版本，提供最新的软件和功能。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>系统资源占用</strong>：相比一些轻量级发行版，Ubuntu对系统资源的需求更高。</li>
+</ul>
+<h4 id="2-2-CentOS"><a href="#2-2-CentOS" class="headerlink" title="2.2 CentOS"></a>2.2 CentOS</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>稳定性高</strong>：基于Red Hat Enterprise Linux（RHEL），适用于企业级应用。</li>
+<li><strong>长期支持</strong>：每个版本都有长达十年的支持期，适合生产环境。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>软件包较旧</strong>：为了保证稳定性，CentOS的软件包版本较旧，不适合需要最新软件的用户。</li>
+</ul>
+<h4 id="2-3-Fedora"><a href="#2-3-Fedora" class="headerlink" title="2.3 Fedora"></a>2.3 Fedora</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>前沿技术</strong>：提供最新的技术和软件，适合开发者和技术爱好者。</li>
+<li><strong>社区驱动</strong>：由社区主导开发，开放性强。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>更新频繁</strong>：版本更新周期短（约六个月），可能不适合需要长期稳定的用户。</li>
+</ul>
+<h4 id="2-4-Debian"><a href="#2-4-Debian" class="headerlink" title="2.4 Debian"></a>2.4 Debian</h4><p><strong>优点：</strong></p>
+<ul>
+<li><strong>稳定可靠</strong>：经过严格测试的软件包，适合服务器和生产环境。</li>
+<li><strong>丰富的软件库</strong>：拥有超过50000个软件包，几乎可以满足所有需求。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>安装和配置较复杂</strong>：相比Ubuntu，Debian的安装和配置过程对新手来说不够友好。</li>
+</ul>
+<h3 id="3-为什么选择Ubuntu？"><a href="#3-为什么选择Ubuntu？" class="headerlink" title="3. 为什么选择Ubuntu？"></a>3. 为什么选择Ubuntu？</h3><p>对于初学者和普通用户来说，Ubuntu是一个理想的选择。其易用性、广泛的社区支持以及定期的更新使其成为个人和企业用户的首选。此外，Ubuntu还提供了丰富的软件资源和文档支持，帮助用户更快地上手和解决问题。</p>
+<h2 id="1-在VMware中安装Ubuntu"><a href="#1-在VMware中安装Ubuntu" class="headerlink" title="1. 在VMware中安装Ubuntu"></a>1. 在VMware中安装Ubuntu</h2><h3 id="1-1-准备工作"><a href="#1-1-准备工作" class="headerlink" title="1.1 准备工作"></a>1.1 准备工作</h3><p>在开始之前，需要准备以下材料：</p>
+<ul>
+<li>VMware Workstation</li>
+<li>Ubuntu ISO镜像文件，可以从<a href="https://ubuntu.com/download">Ubuntu官网</a>下载</li>
+<li>Xshell 7和Xftp 7</li>
+</ul>
+<h3 id="1-2-创建新的虚拟机"><a href="#1-2-创建新的虚拟机" class="headerlink" title="1.2 创建新的虚拟机"></a>1.2 创建新的虚拟机</h3><ol>
+<li>打开VMware Workstation，点击“新建虚拟机”（New Virtual Machine）。</li>
+<li>选择“典型（推荐）”（Typical (recommended)），点击“下一步”。</li>
+<li>选择“安装程序光盘映像文件（iso）”（Installer disc image file (iso)），然后点击“浏览”并选择之前下载的Ubuntu ISO文件，点击“下一步”。</li>
+<li>选择操作系统版本。一般来说，VMware会自动检测Ubuntu版本。如果未能自动检测，请手动选择对应版本。</li>
+<li>为虚拟机命名并选择安装位置，点击“下一步”。</li>
+<li>设置虚拟机的磁盘大小。默认值一般为20GB，可以根据需要调整。选择“将虚拟磁盘存储为单个文件”，点击“下一步”。</li>
+<li>点击“完成”，创建虚拟机。</li>
+</ol>
+<h3 id="1-3-安装Ubuntu"><a href="#1-3-安装Ubuntu" class="headerlink" title="1.3 安装Ubuntu"></a>1.3 安装Ubuntu</h3><ol>
+<li>启动新创建的虚拟机，Ubuntu安装程序将自动启动。</li>
+<li>选择安装语言，点击“安装Ubuntu”。</li>
+<li>选择键盘布局，点击“继续”。</li>
+<li>选择安装类型。可以选择“正常安装”或“最小安装”，根据需求选择即可。</li>
+<li>在“其他选项”中，选择是否下载更新和第三方软件，点击“继续”。</li>
+<li>选择安装类型。一般选择“擦除磁盘并安装Ubuntu”，点击“安装现在”。</li>
+<li>确认分区设置，点击“继续”。</li>
+<li>设置时区，点击“继续”。</li>
+<li>设置用户名、计算机名和密码，点击“继续”。</li>
+<li>等待安装完成，点击“重新启动”即可完成安装。</li>
+</ol>
+<h2 id="2-Ubuntu基本配置"><a href="#2-Ubuntu基本配置" class="headerlink" title="2. Ubuntu基本配置"></a>2. Ubuntu基本配置</h2><h3 id="2-1-更新系统"><a href="#2-1-更新系统" class="headerlink" title="2.1 更新系统"></a>2.1 更新系统</h3><p>安装完成后，首先需要更新系统软件包：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-安装常用软件"><a href="#2-2-安装常用软件" class="headerlink" title="2.2 安装常用软件"></a>2.2 安装常用软件</h3><p>可以根据需要安装一些常用的软件，如Git、Vim、Curl等：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install git vim curl -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3-配置SSH连接"><a href="#2-3-配置SSH连接" class="headerlink" title="2.3 配置SSH连接"></a>2.3 配置SSH连接</h3><p>使用Xshell 7和Xftp 7进行SSH连接和文件传输。</p>
+<h4 id="2-3-1-安装SSH服务"><a href="#2-3-1-安装SSH服务" class="headerlink" title="2.3.1 安装SSH服务"></a>2.3.1 安装SSH服务</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install openssh-server -y</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> ssh</span><br><span class="line"><span class="built_in">sudo</span> systemctl start ssh</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-3-2-使用Xshell-7连接"><a href="#2-3-2-使用Xshell-7连接" class="headerlink" title="2.3.2 使用Xshell 7连接"></a>2.3.2 使用Xshell 7连接</h4><ol>
+<li>打开Xshell 7，点击“新建会话”。</li>
+<li>输入会话名称，并在“主机”栏输入虚拟机的IP地址。</li>
+<li>在“用户身份验证”中输入用户名和密码，点击“连接”。</li>
+<li>成功连接后，可以在Xshell中管理和操作Ubuntu系统。</li>
+</ol>
+<h4 id="2-3-3-使用Xftp-7传输文件"><a href="#2-3-3-使用Xftp-7传输文件" class="headerlink" title="2.3.3 使用Xftp 7传输文件"></a>2.3.3 使用Xftp 7传输文件</h4><ol>
+<li>打开Xftp 7，点击“新建会话”。</li>
+<li>输入会话名称，并在“主机”栏输入虚拟机的IP地址。</li>
+<li>在“用户身份验证”中输入用户名和密码，点击“连接”。</li>
+<li>成功连接后，可以在Xftp中进行文件的上传和下载。</li>
+</ol>
+<h3 id="2-4-配置防火墙"><a href="#2-4-配置防火墙" class="headerlink" title="2.4 配置防火墙"></a>2.4 配置防火墙</h3><p>为了提高系统安全性，可以配置防火墙：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ufw -y</span><br><span class="line"><span class="built_in">sudo</span> ufw allow OpenSSH</span><br><span class="line"><span class="built_in">sudo</span> ufw <span class="built_in">enable</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-常用命令"><a href="#3-常用命令" class="headerlink" title="3. 常用命令"></a>3. 常用命令</h2><h3 id="3-1-文件和目录操作"><a href="#3-1-文件和目录操作" class="headerlink" title="3.1 文件和目录操作"></a>3.1 文件和目录操作</h3><ul>
+<li>列出目录内容：<code>ls</code></li>
+<li>切换目录：<code>cd</code></li>
+<li>创建目录：<code>mkdir</code></li>
+<li>删除文件或目录：<code>rm</code>（使用<code>rm -r</code>删除目录及其内容）</li>
+<li>复制文件或目录：<code>cp</code></li>
+<li>移动或重命名文件或目录：<code>mv</code></li>
+</ul>
+<h3 id="3-2-系统管理"><a href="#3-2-系统管理" class="headerlink" title="3.2 系统管理"></a>3.2 系统管理</h3><ul>
+<li>查看磁盘使用情况：<code>df -h</code></li>
+<li>查看内存使用情况：<code>free -h</code></li>
+<li>查看系统信息：<code>uname -a</code></li>
+<li>查看当前运行的进程：<code>ps aux</code></li>
+<li>杀死进程：<code>kill [PID]</code></li>
+</ul>
+<h3 id="3-3-网络操作"><a href="#3-3-网络操作" class="headerlink" title="3.3 网络操作"></a>3.3 网络操作</h3><ul>
+<li>查看网络接口信息：<code>ip a</code></li>
+<li>测试网络连通性：<code>ping [IP/域名]</code></li>
+<li>查看路由表：<code>ip route</code></li>
+<li>下载文件：<code>wget [URL]</code> 或 <code>curl -O [URL]</code></li>
+</ul>
+<h3 id="3-4-软件管理"><a href="#3-4-软件管理" class="headerlink" title="3.4 软件管理"></a>3.4 软件管理</h3><ul>
+<li>安装软件包：<code>sudo apt install [包名]</code></li>
+<li>卸载软件包：<code>sudo apt remove [包名]</code></li>
+<li>搜索软件包：<code>apt search [关键字]</code></li>
+<li>更新软件包列表：<code>sudo apt update</code></li>
+<li>升级已安装的软件包：<code>sudo apt upgrade</code></li>
+</ul>
+<h3 id="3-5-权限管理"><a href="#3-5-权限管理" class="headerlink" title="3.5 权限管理"></a>3.5 权限管理</h3><ul>
+<li>修改文件权限：<code>chmod [权限] [文件]</code></li>
+<li>修改文件所属用户和用户组：<code>chown [用户]:[用户组] [文件]</code></li>
+<li>查看文件权限：<code>ls -l</code></li>
+</ul>
+<h2 id="4-高级配置"><a href="#4-高级配置" class="headerlink" title="4. 高级配置"></a>4. 高级配置</h2><h3 id="4-1-配置静态IP"><a href="#4-1-配置静态IP" class="headerlink" title="4.1 配置静态IP"></a>4.1 配置静态IP</h3><p>编辑网络配置文件以配置静态IP：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/netplan/01-netcfg.yaml</span><br></pre></td></tr></table></figure>
+
+<p>在文件中添加以下内容：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">network:</span></span><br><span class="line">  <span class="attr">version:</span> <span class="number">2</span></span><br><span class="line">  <span class="attr">ethernets:</span></span><br><span class="line">    <span class="attr">ens33:</span></span><br><span class="line">      <span class="attr">dhcp4:</span> <span class="literal">no</span></span><br><span class="line">      <span class="attr">addresses:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.100</span><span class="string">/24</span></span><br><span class="line">      <span class="attr">gateway4:</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span></span><br><span class="line">      <span class="attr">nameservers:</span></span><br><span class="line">        <span class="attr">addresses:</span> [<span class="number">8.8</span><span class="number">.8</span><span class="number">.8</span>, <span class="number">8.8</span><span class="number">.4</span><span class="number">.4</span>]</span><br></pre></td></tr></table></figure>
+
+<p>保存并应用配置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> netplan apply</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-安装和配置防火墙"><a href="#4-2-安装和配置防火墙" class="headerlink" title="4.2 安装和配置防火墙"></a>4.2 安装和配置防火墙</h3><p>除了前面提到的UFW，可以选择更高级的防火墙如<code>iptables</code>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install iptables -y</span><br></pre></td></tr></table></figure>
+
+<p>配置规则（以下为示例规则）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -p tcp --dport 22 -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -p icmp -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -A INPUT -i lo -j ACCEPT</span><br><span class="line"><span class="built_in">sudo</span> iptables -P INPUT DROP</span><br></pre></td></tr></table></figure>
+
+<p>保存规则：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> iptables-save &gt; /etc/iptables/rules.v4</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-常见问题和解决方法"><a href="#5-常见问题和解决方法" class="headerlink" title="5. 常见问题和解决方法"></a>5. 常见问题和解决方法</h2><h3 id="5-1-虚拟机网络连接问题"><a href="#5-1-虚拟机网络连接问题" class="headerlink" title="5.1 虚拟机网络连接问题"></a>5.1 虚拟机网络连接问题</h3><p>如果遇到虚拟机无法连接网络的问题，可以尝试以下步骤：</p>
+<ul>
+<li>检查虚拟机的网络适配器设置是否正确。</li>
+<li>尝试重启网络服务：<code>sudo systemctl restart networking</code></li>
+<li>确保VMware的虚拟网络编辑器配置正确。</li>
+</ul>
+<h3 id="5-2-无法启动虚拟机"><a href="#5-2-无法启动虚拟机" class="headerlink" title="5.2 无法启动虚拟机"></a>5.2 无法启动虚拟机</h3><p>如果虚拟机无法启动，可能是由于磁盘空间不足或配置文件损坏。可以尝试以下步骤：</p>
+<ul>
+<li>检查宿主机的磁盘空间是否足够。</li>
+<li>尝试修复虚拟机配置：打开VMware并选择“修复”（Repair）选项。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>马斯克开源Grok-1：史上最大3140亿参数模型，权重架构全面公开</title>
+    <url>/2024/10/19/%E9%A9%AC%E6%96%AF%E5%85%8B%E5%BC%80%E6%BA%90Grok-1%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A73140%E4%BA%BF%E5%8F%82%E6%95%B0%E6%A8%A1%E5%9E%8B%EF%BC%8C%E6%9D%83%E9%87%8D%E6%9E%B6%E6%9E%84%E5%85%A8%E9%9D%A2%E5%85%AC%E5%BC%80/</url>
+    <content><![CDATA[<p><img src="/images/posts/grok1/moe.svg" alt="Grok-1 混合专家架构"></p>
+<p>马斯克的xAI公司正式开源了3140亿参数的大型语言模型Grok-1,包括权重和网络架构。这使Grok-1成为目前参数量最大的开源大语言模型。Grok-1采用混合专家(MoE)架构,在给定token上的激活权重为25%。xAI在2023年10月使用自定义训练堆栈从头训练了该模型,并遵守Apache 2.0许可证开源。</p>
+<p>1.Grok-1 开源模型下载：【<a href="magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">磁力链接</a>】 ，然后使用 【<a href="https://bbs.freedidi.com/t/topic/392">Torrent 客户端</a>】进行下载即可！</p>
+<p>2.Grok 开源项目：【<a href="https://github.com/xai-org/grok-1">Githubg 官方下载</a>】</p>
+<p>3.如果需要在云端安装Grok-1大模型，可以通过【<a href="https://www.vultr.com/?ref=7045490">租赁H100 云GPU</a>】进行云端搭建</p>
+<p>4.当然也可以直接调用HuggingFace 🤗 Hub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xai-org/grok-1.git &amp;&amp; <span class="built_in">cd</span> grok-1</span><br><span class="line">pip install huggingface_hub[hf_transfer]</span><br><span class="line">huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False</span><br></pre></td></tr></table></figure>
+
+
+<p>模型详情:</p>
+<ul>
+<li>基于大量文本数据训练,未针对任何特定任务微调</li>
+<li>3140亿参数MoE模型,激活权重25%</li>
+<li>使用旋转嵌入而非固定位置嵌入</li>
+<li>Tokenizer词汇大小131,072,嵌入大小6,144</li>
+<li>64层Transformer,每层解码器层包含多头注意力块和密集块</li>
+<li>多头注意力:48头查询,8头键&#x2F;值,键值大小128</li>
+<li>密集块:加宽因子8,隐藏层大小32768</li>
+<li>每个token从8个专家选择2个</li>
+<li>旋转位置嵌入大小6,144</li>
+<li>上下文长度8192 tokens,精度bf16</li>
+</ul>
+<p>模型能力:</p>
+<ul>
+<li>在标准LM基准测试中表现超过同等计算量模型</li>
+<li>HumanEval编码任务63.2%,MMLU 73%</li>
+<li>在匈牙利高中数学考试中获C级(59%)</li>
+<li>整体在推理和编码任务中表现出色</li>
+</ul>
+<p>局限性:</p>
+<ul>
+<li>缺少独立搜索网络能力,需结合搜索工具增强</li>
+<li>可能产生幻觉,需人工审查</li>
+<li>目前无法像X平台付费版实现实时获取信息</li>
+</ul>
+<p>开源意义:</p>
+<ul>
+<li>遵循Apache 2.0许可证,用户可自由使用修改分发</li>
+<li>体现了xAI追求透明化和社区开放的理念</li>
+<li>为进一步研究和创新提供了宝贵资源</li>
+</ul>
+<p>总的来说,Grok-1作为一款大规模开源语言模型,在模型能力和透明度方面都具有重要意义,值得业内外人士关注和探索。当然,模型的实际应用还需要结合其他工具和人工审查,以发挥其最大潜能。</p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件定义网络SDN</title>
+    <url>/2024/10/26/%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9CSDN/</url>
+    <content><![CDATA[<p>软件定义网络（SDN）就像是网络世界的大脑和神经系统。就像大脑控制我们的身体一样，SDN的控制器控制着网络中的交换机和路由器等设备。这种网络架构的核心思想是将控制平面（负责决策数据如何传输）和数据平面（实际传输数据）分离开来。这样做的好处是，我们可以像编写程序一样来控制网络的行为，而不需要去手动配置每一个网络设备。</p>
+<h3 id="SDN的工作原理"><a href="#SDN的工作原理" class="headerlink" title="SDN的工作原理"></a>SDN的工作原理</h3><p>想象一下，网络就像一个繁忙的机场，飞机（数据包）需要按照控制塔（控制器）的指令来起飞和降落。在SDN中，控制器就是那个控制塔，它告诉网络设备（相当于机场跑道和导航系统）如何处理飞机的流量。这样，网络管理员可以通过控制器来监控和调整整个网络的流量，就像空中交通管制员一样。</p>
+<h3 id="SDN的优点"><a href="#SDN的优点" class="headerlink" title="SDN的优点"></a>SDN的优点</h3><ol>
+<li><strong>集中管理</strong>：网络管理员可以通过一个中央控制器来管理整个网络，这比去每个设备上进行配置要简单得多。</li>
+<li><strong>灵活性</strong>：网络可以根据需要快速调整，就像你可以根据交通情况调整道路的通行规则一样。</li>
+<li><strong>成本效益</strong>：由于减少了对专用硬件的依赖，SDN可以降低网络的建设和维护成本。</li>
+<li><strong>创新</strong>：开发者可以通过编程接口创建新的网络应用和服务，这促进了网络技术的创新。</li>
+</ol>
+<h3 id="SDN的缺点"><a href="#SDN的缺点" class="headerlink" title="SDN的缺点"></a>SDN的缺点</h3><ol>
+<li><strong>安全风险</strong>：由于控制器集中了大量的控制权，如果控制器受到攻击，整个网络都可能受到影响。</li>
+<li><strong>兼容性问题</strong>：SDN需要与传统网络设备兼容，这可能需要额外的适配工作。</li>
+<li><strong>技术成熟度</strong>：虽然SDN的概念已经提出一段时间了，但在市场上的广泛应用还需要时间来成熟。</li>
+</ol>
+<h3 id="SDN的编程接口"><a href="#SDN的编程接口" class="headerlink" title="SDN的编程接口"></a>SDN的编程接口</h3><p>SDN提供了两种主要的编程接口：</p>
+<ol>
+<li><p><strong>南向接口</strong>：这是控制器和网络设备之间的通信接口。最著名的南向接口协议是OpenFlow，它允许控制器告诉网络设备如何处理经过的数据包。这就像是给机场的导航系统下达指令，告诉它们如何引导飞机。</p>
+</li>
+<li><p><strong>北向接口</strong>：这是应用程序和控制器之间的通信接口。通过北向接口，开发者可以编写程序来控制网络的行为，比如创建虚拟网络或者实施安全策略。这就像是给空中交通管制员一个新工具，让他们能更有效地管理交通流量。</p>
+</li>
+</ol>
+<p>总的来说，SDN就像是给网络管理员和开发者提供了一套强大的工具，让他们能够更智能、更灵活地管理网络。虽然它还有一些挑战需要克服，但SDN的潜力是巨大的，它正在逐渐改变我们对网络的理解和使用方式。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
       </tags>
   </entry>
 </search>
