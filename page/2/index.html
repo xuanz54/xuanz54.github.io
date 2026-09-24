@@ -38,8 +38,6 @@
 
       <!-- mermaid -->
       
-      <script src="https://cdn.staticfile.org/mermaid/8.14.0/mermaid.min.js"></script>
-      
       <style>
         .swal2-styled.swal2-confirm {
           font-size: 1.6rem;
@@ -60,7 +58,7 @@
     
   <div class="cover-frame">
     <div class="bg-box">
-      <img src="/images/cover.jpg" alt="image frame" />
+      <img src="/images/cover1.jpg" alt="image frame" />
     </div>
     <div class="cover-inner text-center text-white">
       <h1><a href="/">xuanz的博客</a></h1>
@@ -89,7 +87,7 @@
   <script>
     try {
       var typed = new Typed("#subtitle", {
-        strings: ['惟楚有才，于斯为盛', '心之所向，身之所往', '想要的都拥有，得不到的都释怀'],
+        strings: ['CodeBardPro', '', ''],
         startDelay: 0,
         typeSpeed: 200,
         loop: true,
@@ -153,6 +151,80 @@
     
     
     <article
+  id="post-软件定义网络SDN"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2024/10/26/%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9CSDN/"
+    >软件定义网络SDN</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2024/10/26/%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9CSDN/" class="article-date">
+  <time datetime="2024-10-26T09:29:00.000Z" itemprop="datePublished">2024-10-26</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>软件定义网络（SDN）就像是网络世界的大脑和神经系统。就像大脑控制我们的身体一样，SDN的控制器控制着网络中的交换机和路由器等设备。这种网络架构的核心思想是将控制平面（负责决策数据如何传输）和数据平面（实际传输数据）分离开来。这样做的好处是，我们可以像编写程序一样来控制网络的行为，而不需要去手动配置每一个网络设备。</p>
+<h3 id="SDN的工作原理"><a href="#SDN的工作原理" class="headerlink" title="SDN的工作原理"></a>SDN的工作原理</h3><p>想象一下，网络就像一个繁忙的机场，飞机（数据包）需要按照控制塔（控制器）的指令来起飞和降落。在SDN中，控制器就是那个控制塔，它告诉网络设备（相当于机场跑道和导航系统）如何处理飞机的流量。这样，网络管理员可以通过控制器来监控和调整整个网络的流量，就像空中交通管制员一样。</p>
+<h3 id="SDN的优点"><a href="#SDN的优点" class="headerlink" title="SDN的优点"></a>SDN的优点</h3><ol>
+<li><strong>集中管理</strong>：网络管理员可以通过一个中央控制器来管理整个网络，这比去每个设备上进行配置要简单得多。</li>
+<li><strong>灵活性</strong>：网络可以根据需要快速调整，就像你可以根据交通情况调整道路的通行规则一样。</li>
+<li><strong>成本效益</strong>：由于减少了对专用硬件的依赖，SDN可以降低网络的建设和维护成本。</li>
+<li><strong>创新</strong>：开发者可以通过编程接口创建新的网络应用和服务，这促进了网络技术的创新。</li>
+</ol>
+<h3 id="SDN的缺点"><a href="#SDN的缺点" class="headerlink" title="SDN的缺点"></a>SDN的缺点</h3><ol>
+<li><strong>安全风险</strong>：由于控制器集中了大量的控制权，如果控制器受到攻击，整个网络都可能受到影响。</li>
+<li><strong>兼容性问题</strong>：SDN需要与传统网络设备兼容，这可能需要额外的适配工作。</li>
+<li><strong>技术成熟度</strong>：虽然SDN的概念已经提出一段时间了，但在市场上的广泛应用还需要时间来成熟。</li>
+</ol>
+<h3 id="SDN的编程接口"><a href="#SDN的编程接口" class="headerlink" title="SDN的编程接口"></a>SDN的编程接口</h3><p>SDN提供了两种主要的编程接口：</p>
+<ol>
+<li><p><strong>南向接口</strong>：这是控制器和网络设备之间的通信接口。最著名的南向接口协议是OpenFlow，它允许控制器告诉网络设备如何处理经过的数据包。这就像是给机场的导航系统下达指令，告诉它们如何引导飞机。</p>
+</li>
+<li><p><strong>北向接口</strong>：这是应用程序和控制器之间的通信接口。通过北向接口，开发者可以编写程序来控制网络的行为，比如创建虚拟网络或者实施安全策略。这就像是给空中交通管制员一个新工具，让他们能更有效地管理交通流量。</p>
+</li>
+</ol>
+<p>总的来说，SDN就像是给网络管理员和开发者提供了一套强大的工具，让他们能够更智能、更灵活地管理网络。虽然它还有一些挑战需要克服，但SDN的潜力是巨大的，它正在逐渐改变我们对网络的理解和使用方式。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-详解Python的66个内置函数"
   class="article article-type-post"
   itemscope
@@ -181,7 +253,419 @@
   </div>
    
     </div>
+      
+    <div class="article-entry" itemprop="articleBody">
        
+  <p><img src="/images/posts/python-builtins/overview.svg" alt="Python 内置函数分类"></p>
+<p>Python 之所以被称为强大且易用，离不开其丰富的内置函数。这些函数可以大大简化我们日常的编程任务，无需额外安装任何库即可使用。</p>
+<p>Python 共有 66 个内置函数，本文将通过直观的解释和示例代码，带你逐个了解它们的功能和用法。</p>
+<h2 id="一、数学与数值处理"><a href="#一、数学与数值处理" class="headerlink" title="一、数学与数值处理"></a><strong>一、数学与数值处理</strong></h2><h4 id="1-abs-x"><a href="#1-abs-x" class="headerlink" title="1. abs(x)"></a><strong>1. <code>abs(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回数值的绝对值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = -<span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">abs</span>(x))  <span class="comment"># 输出：10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="2-all-iterable"><a href="#2-all-iterable" class="headerlink" title="2. all(iterable)"></a><strong>2. <code>all(iterable)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：若可迭代对象中的所有元素都为真，返回 <code>True</code>，否则返回 <code>False</code>。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iterable = [<span class="literal">True</span>, <span class="literal">True</span>, <span class="literal">False</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">all</span>(iterable))  <span class="comment"># 输出：False</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="3-any-iterable"><a href="#3-any-iterable" class="headerlink" title="3. any(iterable)"></a><strong>3. <code>any(iterable)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：若可迭代对象中至少有一个元素为真，返回 <code>True</code>，否则返回 <code>False</code>。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iterable = [<span class="literal">False</span>, <span class="literal">False</span>, <span class="literal">True</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">any</span>(iterable))  <span class="comment"># 输出：True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="4-bin-x"><a href="#4-bin-x" class="headerlink" title="4. bin(x)"></a><strong>4. <code>bin(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将整数转换为二进制字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">bin</span>(x))  <span class="comment"># 输出：0b1010</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="5-bool-x"><a href="#5-bool-x" class="headerlink" title="5. bool(x)"></a><strong>5. <code>bool(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将值转换为布尔类型。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">0</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">bool</span>(x))  <span class="comment"># 输出：False</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="6-divmod-a-b"><a href="#6-divmod-a-b" class="headerlink" title="6. divmod(a, b)"></a><strong>6. <code>divmod(a, b)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回两个数的商和余数。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a, b = <span class="number">10</span>, <span class="number">3</span></span><br><span class="line">result = <span class="built_in">divmod</span>(a, b)</span><br><span class="line"><span class="built_in">print</span>(result)  <span class="comment"># 输出：(3, 1)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="7-float-x"><a href="#7-float-x" class="headerlink" title="7. float(x)"></a><strong>7. <code>float(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将一个数转换为浮点数。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">float</span>(x))  <span class="comment"># 输出：10.0</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="8-int-x"><a href="#8-int-x" class="headerlink" title="8. int(x)"></a><strong>8. <code>int(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将值转换为整数。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">3.14</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(x))  <span class="comment"># 输出：3</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="9-max-iterable-key"><a href="#9-max-iterable-key" class="headerlink" title="9. max(iterable[, key])"></a><strong>9. <code>max(iterable[, key])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回可迭代对象中的最大值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">max</span>(numbers))  <span class="comment"># 输出：5</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="10-min-iterable-key"><a href="#10-min-iterable-key" class="headerlink" title="10. min(iterable[, key])"></a><strong>10. <code>min(iterable[, key])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回可迭代对象中的最小值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">min</span>(numbers))  <span class="comment"># 输出：1</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="11-pow-x-y-z"><a href="#11-pow-x-y-z" class="headerlink" title="11. pow(x, y[, z])"></a><strong>11. <code>pow(x, y[, z])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回 <code>x</code> 的 <code>y</code> 次幂，如果提供了 <code>z</code>，则返回结果对 <code>z</code> 取模。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x, y, z = <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span></span><br><span class="line">result = <span class="built_in">pow</span>(x, y, z)</span><br><span class="line"><span class="built_in">print</span>(result)  <span class="comment"># 输出：3</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="12-round-number-ndigits"><a href="#12-round-number-ndigits" class="headerlink" title="12. round(number[, ndigits])"></a><strong>12. <code>round(number[, ndigits])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：对数值进行四舍五入。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">3.14159</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">round</span>(x, <span class="number">2</span>))  <span class="comment"># 输出：3.14</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="13-sum-iterable-start"><a href="#13-sum-iterable-start" class="headerlink" title="13. sum(iterable[, start])"></a><strong>13. <code>sum(iterable[, start])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回可迭代对象中元素的总和。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">sum</span>(numbers))  <span class="comment"># 输出：15</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="二、字符串与字符处理"><a href="#二、字符串与字符处理" class="headerlink" title="二、字符串与字符处理"></a><strong>二、字符串与字符处理</strong></h2><h4 id="14-chr-i"><a href="#14-chr-i" class="headerlink" title="14. chr(i)"></a><strong>14. <code>chr(i)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回整数 <code>i</code> 对应的 Unicode 字符。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">i = <span class="number">65</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">chr</span>(i))  <span class="comment"># 输出：A</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="15-ord-c"><a href="#15-ord-c" class="headerlink" title="15. ord(c)"></a><strong>15. <code>ord(c)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回字符的 Unicode 编码。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">c = <span class="string">&#x27;A&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">ord</span>(c))  <span class="comment"># 输出：65</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="16-repr-object"><a href="#16-repr-object" class="headerlink" title="16. repr(object)"></a><strong>16. <code>repr(object)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回对象的字符串表示，通常用于调试。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&quot;Hello&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>(s))  <span class="comment"># 输出：&#x27;Hello&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="17-str-object"><a href="#17-str-object" class="headerlink" title="17. str(object=&#39;&#39;)"></a><strong>17. <code>str(object=&#39;&#39;)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将对象转换为字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">str</span>(x))  <span class="comment"># 输出：&#x27;10&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="三、序列操作"><a href="#三、序列操作" class="headerlink" title="三、序列操作"></a><strong>三、序列操作</strong></h2><h4 id="18-list-iterable"><a href="#18-list-iterable" class="headerlink" title="18. list([iterable])"></a><strong>18. <code>list([iterable])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将可迭代对象转换为列表。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">iterable = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">lst = <span class="built_in">list</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(lst)  <span class="comment"># 输出：[1, 2, 3]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="19-tuple-iterable"><a href="#19-tuple-iterable" class="headerlink" title="19. tuple([iterable])"></a><strong>19. <code>tuple([iterable])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将可迭代对象转换为元组。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">iterable = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">t = <span class="built_in">tuple</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(t)  <span class="comment"># 输出：(1, 2, 3)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="20-set-iterable"><a href="#20-set-iterable" class="headerlink" title="20. set([iterable])"></a><strong>20. <code>set([iterable])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将可迭代对象转换为集合。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">iterable = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">s = <span class="built_in">set</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(s)  <span class="comment"># 输出：&#123;1, 2, 3&#125;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="21-frozenset-iterable"><a href="#21-frozenset-iterable" class="headerlink" title="21. frozenset([iterable])"></a><strong>21. <code>frozenset([iterable])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个不可变集合。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">iterable = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">fs = <span class="built_in">frozenset</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(fs)  <span class="comment"># 输出：frozenset(&#123;1, 2, 3&#125;)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="22-sorted-iterable-key-reverse"><a href="#22-sorted-iterable-key-reverse" class="headerlink" title="22. sorted(iterable[, key][, reverse])"></a><strong>22. <code>sorted(iterable[, key][, reverse])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回排序后的列表。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>]</span><br><span class="line">sorted_numbers = <span class="built_in">sorted</span>(numbers)</span><br><span class="line"><span class="built_in">print</span>(sorted_numbers)  <span class="comment"># 输出：[1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="23-zip-iterables"><a href="#23-zip-iterables" class="headerlink" title="23. zip(*iterables)"></a><strong>23. <code>zip(*iterables)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将多个可迭代对象中的元素打包成元组。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">letters = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>]</span><br><span class="line">zipped = <span class="built_in">zip</span>(numbers, letters)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(zipped))  <span class="comment"># 输出：[(1, &#x27;a&#x27;), (2, &#x27;b&#x27;), (3, &#x27;c&#x27;)]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="24-input-prompt"><a href="#24-input-prompt" class="headerlink" title="24. input([prompt])"></a><strong>24. <code>input([prompt])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：从用户处接收输入，返回一个字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="built_in">input</span>(<span class="string">&quot;请输入您的姓名：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;您好，&quot;</span> + name + <span class="string">&quot;！&quot;</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="25-print-objects-sep-end-n-file-sys-stdout-flush-False"><a href="#25-print-objects-sep-end-n-file-sys-stdout-flush-False" class="headerlink" title="25. print(*objects, sep=&#39; &#39;, end=&#39;\n&#39;, file=sys.stdout, flush=False)"></a><strong>25. <code>print(*objects, sep=&#39; &#39;, end=&#39;\n&#39;, file=sys.stdout, flush=False)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：输出到控制台。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;xuanz&quot;</span></span><br><span class="line">age = <span class="number">20</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;My name is&quot;</span>, name, <span class="string">&quot;and I am&quot;</span>, age, <span class="string">&quot;years old.&quot;</span>)</span><br><span class="line"><span class="comment"># 输出：My name is xuanz and I am 20 years old.</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="26-open-file-mode-r-buffering-1-encoding-None-errors-None-newline-None-closefd-True-opener-None"><a href="#26-open-file-mode-r-buffering-1-encoding-None-errors-None-newline-None-closefd-True-opener-None" class="headerlink" title="26. open(file, mode=&#39;r&#39;, buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)"></a><strong>26. <code>open(file, mode=&#39;r&#39;, buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：打开文件并返回文件对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">file = <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;w&quot;</span>)</span><br><span class="line">file.write(<span class="string">&quot;Hello, World!&quot;</span>)</span><br><span class="line">file.close()</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="五、反射与动态执行"><a href="#五、反射与动态执行" class="headerlink" title="五、反射与动态执行"></a><strong>五、反射与动态执行</strong></h2><h4 id="27-eval-expression-globals-locals"><a href="#27-eval-expression-globals-locals" class="headerlink" title="27. eval(expression[, globals[, locals]])"></a><strong>27. <code>eval(expression[, globals[, locals]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：执行字符串表达式并返回结果。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">expression = <span class="string">&quot;2 + 3&quot;</span></span><br><span class="line">result = <span class="built_in">eval</span>(expression)</span><br><span class="line"><span class="built_in">print</span>(result)  <span class="comment"># 输出：5</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="28-exec-object-globals-locals"><a href="#28-exec-object-globals-locals" class="headerlink" title="28. exec(object[, globals[, locals]])"></a><strong>28. <code>exec(object[, globals[, locals]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：执行 Python 代码。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">code = <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">x = 5</span></span><br><span class="line"><span class="string">if x &gt; 0:</span></span><br><span class="line"><span class="string">    print(&quot;Positive&quot;)</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="built_in">exec</span>(code)  <span class="comment"># 输出：Positive</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="六、面向对象与反射"><a href="#六、面向对象与反射" class="headerlink" title="六、面向对象与反射"></a><strong>六、面向对象与反射</strong></h2><h4 id="29-callable-object"><a href="#29-callable-object" class="headerlink" title="29. callable(object)"></a><strong>29. <code>callable(object)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：检查对象是否可调用（如函数或方法）。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>():</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">callable</span>(func))  <span class="comment"># 输出：True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="30-classmethod-function"><a href="#30-classmethod-function" class="headerlink" title="30. classmethod(function)"></a><strong>30. <code>classmethod(function)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将一个函数转换为类方法。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">class_method</span>(<span class="params">cls</span>):</span><br><span class="line">        <span class="keyword">return</span> cls.attr</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(MyClass.class_method())  <span class="comment"># 输出：10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="31-delattr-object-name"><a href="#31-delattr-object-name" class="headerlink" title="31. delattr(object, name)"></a><strong>31. <code>delattr(object, name)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：删除对象的属性。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">delattr</span>(obj, <span class="string">&#x27;attr&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hasattr</span>(obj, <span class="string">&#x27;attr&#x27;</span>))  <span class="comment"># 输出：False</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="32-getattr-object-name-default"><a href="#32-getattr-object-name-default" class="headerlink" title="32. getattr(object, name[, default])"></a><strong>32. <code>getattr(object, name[, default])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回对象属性的值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">getattr</span>(obj, <span class="string">&#x27;attr&#x27;</span>))  <span class="comment"># 输出：10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="33-setattr-object-name-value"><a href="#33-setattr-object-name-value" class="headerlink" title="33. setattr(object, name, value)"></a><strong>33. <code>setattr(object, name, value)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：设置对象的属性值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">setattr</span>(obj, <span class="string">&#x27;attr&#x27;</span>, <span class="number">20</span>)</span><br><span class="line"><span class="built_in">print</span>(obj.attr)  <span class="comment"># 输出：20</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="34-hasattr-object-name"><a href="#34-hasattr-object-name" class="headerlink" title="34. hasattr(object, name)"></a><strong>34. <code>hasattr(object, name)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：检查对象是否有指定属性。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hasattr</span>(obj, <span class="string">&#x27;attr&#x27;</span>))  <span class="comment"># 输出：True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="35-property-fget-None-fset-None-fdel-None-doc-None"><a href="#35-property-fget-None-fset-None-fdel-None-doc-None" class="headerlink" title="35. property(fget=None, fset=None, fdel=None, doc=None)"></a><strong>35. <code>property(fget=None, fset=None, fdel=None, doc=None)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建对象的属性。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="variable language_">self</span>._attr = <span class="number">0</span></span><br><span class="line">    </span><br><span class="line"><span class="meta">    @property</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">attr</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">self</span>._attr</span><br><span class="line">    </span><br><span class="line"><span class="meta">    @attr.setter</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">attr</span>(<span class="params">self, value</span>):</span><br><span class="line">        <span class="variable language_">self</span>._attr = value</span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line">obj.attr = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(obj.attr)  <span class="comment"># 输出：10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="36-staticmethod-function"><a href="#36-staticmethod-function" class="headerlink" title="36. staticmethod(function)"></a><strong>36. <code>staticmethod(function)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将函数转换为静态方法。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">my_method</span>():</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;This is a static method.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(MyClass.my_method())  <span class="comment"># 输出：This is a static method.</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="37-super-type-object-or-type"><a href="#37-super-type-object-or-type" class="headerlink" title="37. super([type[, object-or-type]])"></a><strong>37. <code>super([type[, object-or-type]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回父类的对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Parent</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="variable language_">self</span>.attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Child</span>(<span class="title class_ inherited__">Parent</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line"></span><br><span class="line">child = Child()</span><br><span class="line"><span class="built_in">print</span>(child.attr)  <span class="comment"># 输出：10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="38-vars-object"><a href="#38-vars-object" class="headerlink" title="38. vars([object])"></a><strong>38. <code>vars([object])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回对象属性及属性值的字典。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    attr = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">vars</span>(obj))  <span class="comment"># 输出：&#123;&#x27;attr&#x27;: 10&#125;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="39-type-object"><a href="#39-type-object" class="headerlink" title="39. type(object)"></a><strong>39. <code>type(object)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回对象的类型。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(x))  <span class="comment"># 输出：&lt;class &#x27;int&#x27;&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="40-isinstance-object-classinfo"><a href="#40-isinstance-object-classinfo" class="headerlink" title="40. isinstance(object, classinfo)"></a><strong>40. <code>isinstance(object, classinfo)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：检查对象是否是指定类或类型的实例。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">obj = MyClass()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">isinstance</span>(obj, MyClass))  <span class="comment"># 输出：True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="41-issubclass-class-classinfo"><a href="#41-issubclass-class-classinfo" class="headerlink" title="41. issubclass(class, classinfo)"></a><strong>41. <code>issubclass(class, classinfo)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：检查一个类是否是另一个类的子类。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Parent</span>:</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Child</span>(<span class="title class_ inherited__">Parent</span>):</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">issubclass</span>(Child, Parent))  <span class="comment"># 输出：True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="七、数据结构操作"><a href="#七、数据结构操作" class="headerlink" title="七、数据结构操作"></a><strong>七、数据结构操作</strong></h2><h4 id="42-bytearray-source-encoding-errors"><a href="#42-bytearray-source-encoding-errors" class="headerlink" title="42. bytearray([source[, encoding[, errors]]])"></a><strong>42. <code>bytearray([source[, encoding[, errors]]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个可变字节数组对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">source = <span class="string">b&#x27;Hello&#x27;</span></span><br><span class="line">arr = <span class="built_in">bytearray</span>(source)</span><br><span class="line"><span class="built_in">print</span>(arr)  <span class="comment"># 输出：bytearray(b&#x27;Hello&#x27;)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="43-bytes-source-encoding-errors"><a href="#43-bytes-source-encoding-errors" class="headerlink" title="43. bytes([source[, encoding[, errors]]])"></a><strong>43. <code>bytes([source[, encoding[, errors]]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个不可变字节对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">source = <span class="string">&#x27;Hello&#x27;</span></span><br><span class="line">b = <span class="built_in">bytes</span>(source, encoding=<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(b)  <span class="comment"># 输出：b&#x27;Hello&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="44-dict-arg"><a href="#44-dict-arg" class="headerlink" title="44. dict([arg])"></a><strong>44. <code>dict([arg])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个字典。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d = <span class="built_in">dict</span>(a=<span class="number">1</span>, b=<span class="number">2</span>, c=<span class="number">3</span>)</span><br><span class="line"><span class="built_in">print</span>(d)  <span class="comment"># 输出：&#123;&#x27;a&#x27;: 1, &#x27;b&#x27;: 2, &#x27;c&#x27;: 3&#125;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="45-slice-stop"><a href="#45-slice-stop" class="headerlink" title="45. slice(stop)"></a><strong>45. <code>slice(stop)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个切片对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">s = <span class="built_in">slice</span>(<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(numbers[s])  <span class="comment"># 输出：[1, 2]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="46-enumerate-iterable-start-0"><a href="#46-enumerate-iterable-start-0" class="headerlink" title="46. enumerate(iterable, start=0)"></a><strong>46. <code>enumerate(iterable, start=0)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回一个枚举对象，包含索引和值。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">iterable = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>]</span><br><span class="line"><span class="keyword">for</span> i, value <span class="keyword">in</span> <span class="built_in">enumerate</span>(iterable):</span><br><span class="line">    <span class="built_in">print</span>(i, value)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="47-filter-function-iterable"><a href="#47-filter-function-iterable" class="headerlink" title="47. filter(function, iterable)"></a><strong>47. <code>filter(function, iterable)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：过滤可迭代对象中的元素。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">is_positive</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> x &gt; <span class="number">0</span></span><br><span class="line"></span><br><span class="line">numbers = [<span class="number">1</span>, -<span class="number">2</span>, <span class="number">3</span>, -<span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">result = <span class="built_in">filter</span>(is_positive, numbers)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result))  <span class="comment"># 输出：[1, 3, 5]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="48-map-function-iterable"><a href="#48-map-function-iterable" class="headerlink" title="48. map(function, iterable, ...)"></a><strong>48. <code>map(function, iterable, ...)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：对可迭代对象中的每个元素应用函数。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">square</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> x ** <span class="number">2</span></span><br><span class="line"></span><br><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">result = <span class="built_in">map</span>(square, numbers)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result))  <span class="comment"># 输出：[1, 4, 9, 16, 25]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="49-iter-object-sentinel"><a href="#49-iter-object-sentinel" class="headerlink" title="49. iter(object[, sentinel])"></a><strong>49. <code>iter(object[, sentinel])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个迭代器对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">iterable = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">iterator = <span class="built_in">iter</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(iterator))  <span class="comment"># 输出：1</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="50-next-iterator-default"><a href="#50-next-iterator-default" class="headerlink" title="50. next(iterator[, default])"></a><strong>50. <code>next(iterator[, default])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回迭代器中的下一个元素。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">iterable = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">iterator = <span class="built_in">iter</span>(iterable)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(iterator))  <span class="comment"># 输出：1</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="51-reversed-seq"><a href="#51-reversed-seq" class="headerlink" title="51. reversed(seq)"></a><strong>51. <code>reversed(seq)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回一个反向的迭代器对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">seq = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">rev_seq = <span class="built_in">reversed</span>(seq)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(rev_seq))  <span class="comment"># 输出：[3, 2, 1]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="52-memoryview-obj"><a href="#52-memoryview-obj" class="headerlink" title="52. memoryview(obj)"></a><strong>52. <code>memoryview(obj)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个内存视图对象，用于访问其他对象的内存。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">b = <span class="built_in">bytes</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line">mv = <span class="built_in">memoryview</span>(b)</span><br><span class="line"><span class="built_in">print</span>(mv[<span class="number">0</span>])  <span class="comment"># 输出：1</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="八、其他内置函数"><a href="#八、其他内置函数" class="headerlink" title="八、其他内置函数"></a><strong>八、其他内置函数</strong></h2><h4 id="53-oct-x"><a href="#53-oct-x" class="headerlink" title="53. oct(x)"></a><strong>53. <code>oct(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将整数转换为八进制字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">8</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">oct</span>(x))  <span class="comment"># 输出：0o10</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="54-hex-x"><a href="#54-hex-x" class="headerlink" title="54. hex(x)"></a><strong>54. <code>hex(x)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：将整数转换为十六进制字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">255</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hex</span>(x))  <span class="comment"># 输出：0xff</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="55-globals"><a href="#55-globals" class="headerlink" title="55. globals()"></a><strong>55. <code>globals()</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回当前全局作用域的字典。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">globals</span>())</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="56-locals"><a href="#56-locals" class="headerlink" title="56. locals()"></a><strong>56. <code>locals()</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回当前局部作用域的字典。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">locals</span>())</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="57-id-object"><a href="#57-id-object" class="headerlink" title="57. id(object)"></a><strong>57. <code>id(object)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回对象的唯一标识符。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">id</span>(x))</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="58-range-stop"><a href="#58-range-stop" class="headerlink" title="58. range(stop)"></a><strong>58. <code>range(stop)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回一个包含从 0 到 stop-1 的整数序列的可迭代对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="59-open-file-mode-r"><a href="#59-open-file-mode-r" class="headerlink" title="59. open(file, mode=&#39;r&#39;, ...)"></a><strong>59. <code>open(file, mode=&#39;r&#39;, ...)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：打开文件并返回文件对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;w&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    file.write(<span class="string">&quot;Hello, World!&quot;</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="60-eval-expression"><a href="#60-eval-expression" class="headerlink" title="60. eval(expression)"></a><strong>60. <code>eval(expression)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：执行字符串表达式并返回结果。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">expression = <span class="string">&quot;2 + 3&quot;</span></span><br><span class="line">result = <span class="built_in">eval</span>(expression)</span><br><span class="line"><span class="built_in">print</span>(result)  <span class="comment"># 输出：5</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="61-exec-object"><a href="#61-exec-object" class="headerlink" title="61. exec(object)"></a><strong>61. <code>exec(object)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：执行 Python 代码。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">code = <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">x = 5</span></span><br><span class="line"><span class="string">if x &gt; 0:</span></span><br><span class="line"><span class="string">    print(&quot;Positive&quot;)</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="built_in">exec</span>(code)  <span class="comment"># 输出：Positive</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="62-compile-source-filename-mode"><a href="#62-compile-source-filename-mode" class="headerlink" title="62. compile(source, filename, mode)"></a><strong>62. <code>compile(source, filename, mode)</code></strong></h4><ul>
+<li><p><strong>功能</strong>：编译源代码为代码或 AST 对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">source = <span class="string">&quot;print(&#x27;Hello, World!&#x27;)&quot;</span></span><br><span class="line">code = <span class="built_in">compile</span>(source, filename=<span class="string">&quot;&quot;</span>, mode=<span class="string">&quot;exec&quot;</span>)</span><br><span class="line"><span class="built_in">exec</span>(code)  <span class="comment"># 输出：Hello, World!</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="63-input-prompt"><a href="#63-input-prompt" class="headerlink" title="63. input([prompt])"></a><strong>63. <code>input([prompt])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：从用户处接收输入，返回字符串。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="built_in">input</span>(<span class="string">&quot;请输入您的姓名：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;您好，&quot;</span> + name + <span class="string">&quot;！&quot;</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="64-object"><a href="#64-object" class="headerlink" title="64. object()"></a><strong>64. <code>object()</code></strong></h4><ul>
+<li><p><strong>功能</strong>：返回一个新的空对象。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">obj = <span class="built_in">object</span>()</span><br><span class="line"><span class="built_in">print</span>(obj)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="65-help-object"><a href="#65-help-object" class="headerlink" title="65. help([object])"></a><strong>65. <code>help([object])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：获取对象的帮助信息。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">help</span>(<span class="built_in">list</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="66-complex-real-imag"><a href="#66-complex-real-imag" class="headerlink" title="66. complex([real[, imag]])"></a><strong>66. <code>complex([real[, imag]])</code></strong></h4><ul>
+<li><p><strong>功能</strong>：创建一个复数。</p>
+</li>
+<li><p>示例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">c = <span class="built_in">complex</span>(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"><span class="built_in">print</span>(c)  <span class="comment"># 输出：(3+4j)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>Python 的 66 个内置函数是编程的基础工具，可以简化代码编写，提升开发效率。掌握这些函数后，你将能够更轻松地完成各种编程任务。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
 
     <!-- copyright -->
     
@@ -227,7 +711,56 @@
   </div>
    
     </div>
+      
+    <div class="article-entry" itemprop="articleBody">
        
+  <p><img src="/images/posts/grok1/moe.svg" alt="Grok-1 混合专家架构"></p>
+<p>马斯克的xAI公司正式开源了3140亿参数的大型语言模型Grok-1,包括权重和网络架构。这使Grok-1成为目前参数量最大的开源大语言模型。Grok-1采用混合专家(MoE)架构,在给定token上的激活权重为25%。xAI在2023年10月使用自定义训练堆栈从头训练了该模型,并遵守Apache 2.0许可证开源。</p>
+<p>1.Grok-1 开源模型下载：【<a href="magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">磁力链接</a>】 ，然后使用 【<a target="_blank" rel="noopener" href="https://bbs.freedidi.com/t/topic/392">Torrent 客户端</a>】进行下载即可！</p>
+<p>2.Grok 开源项目：【<a target="_blank" rel="noopener" href="https://github.com/xai-org/grok-1">Githubg 官方下载</a>】</p>
+<p>3.如果需要在云端安装Grok-1大模型，可以通过【<a target="_blank" rel="noopener" href="https://www.vultr.com/?ref=7045490">租赁H100 云GPU</a>】进行云端搭建</p>
+<p>4.当然也可以直接调用HuggingFace 🤗 Hub：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xai-org/grok-1.git &amp;&amp; <span class="built_in">cd</span> grok-1</span><br><span class="line">pip install huggingface_hub[hf_transfer]</span><br><span class="line">huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False</span><br></pre></td></tr></table></figure>
+
+
+<p>模型详情:</p>
+<ul>
+<li>基于大量文本数据训练,未针对任何特定任务微调</li>
+<li>3140亿参数MoE模型,激活权重25%</li>
+<li>使用旋转嵌入而非固定位置嵌入</li>
+<li>Tokenizer词汇大小131,072,嵌入大小6,144</li>
+<li>64层Transformer,每层解码器层包含多头注意力块和密集块</li>
+<li>多头注意力:48头查询,8头键&#x2F;值,键值大小128</li>
+<li>密集块:加宽因子8,隐藏层大小32768</li>
+<li>每个token从8个专家选择2个</li>
+<li>旋转位置嵌入大小6,144</li>
+<li>上下文长度8192 tokens,精度bf16</li>
+</ul>
+<p>模型能力:</p>
+<ul>
+<li>在标准LM基准测试中表现超过同等计算量模型</li>
+<li>HumanEval编码任务63.2%,MMLU 73%</li>
+<li>在匈牙利高中数学考试中获C级(59%)</li>
+<li>整体在推理和编码任务中表现出色</li>
+</ul>
+<p>局限性:</p>
+<ul>
+<li>缺少独立搜索网络能力,需结合搜索工具增强</li>
+<li>可能产生幻觉,需人工审查</li>
+<li>目前无法像X平台付费版实现实时获取信息</li>
+</ul>
+<p>开源意义:</p>
+<ul>
+<li>遵循Apache 2.0许可证,用户可自由使用修改分发</li>
+<li>体现了xAI追求透明化和社区开放的理念</li>
+<li>为进一步研究和创新提供了宝贵资源</li>
+</ul>
+<p>总的来说,Grok-1作为一款大规模开源语言模型,在模型能力和透明度方面都具有重要意义,值得业内外人士关注和探索。当然,模型的实际应用还需要结合其他工具和人工审查,以发挥其最大潜能。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
 
     <!-- copyright -->
     
@@ -273,7 +806,37 @@
   </div>
    
     </div>
+      
+    <div class="article-entry" itemprop="articleBody">
        
+  <p>CSMA&#x2F;CD（Carrier Sense Multiple Access with Collision Detection）和CSMA&#x2F;CA（Carrier Sense Multiple Access with Collision Avoidance）都是网络通信中用来控制多个设备如何共享同一通信介质（比如以太网）的协议。它们都属于CSMA（Carrier Sense Multiple Access）家族，意思是“载波侦听多路访问”，但处理冲突的方式不同。</p>
+<h3 id="CSMA-CD（以太网常用）"><a href="#CSMA-CD（以太网常用）" class="headerlink" title="CSMA&#x2F;CD（以太网常用）"></a>CSMA&#x2F;CD（以太网常用）</h3><p><strong>通俗解释：</strong><br>想象一下，你在一个嘈杂的咖啡馆里，想要和朋友聊天。你先看看周围（载波侦听），如果没人在说话（没有信号），你就开口说话。但如果你发现有人在说话（检测到信号），你就等他们说完再开口。如果在你说话的时候，你发现有人也在说话（冲突检测），你就停下来，等一会儿再试。</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li><strong>冲突检测：</strong> 如果两个设备同时发送数据，它们会检测到冲突，然后停止发送，等待随机时间后再次尝试。</li>
+<li><strong>使用场景：</strong> 适用于有线网络，如以太网。在有线网络中，电信号的传播速度快，所以即使发生冲突，也能很快检测到并处理。</li>
+</ul>
+<h3 id="CSMA-CA（无线网络常用）"><a href="#CSMA-CA（无线网络常用）" class="headerlink" title="CSMA&#x2F;CA（无线网络常用）"></a>CSMA&#x2F;CA（无线网络常用）</h3><p><strong>通俗解释：</strong><br>现在想象你在同一个咖啡馆里，但这次你和朋友通过手语交流。在你开始“说话”之前，你先看看周围有没有人也在用手语（载波侦听）。如果没有，你就开始。如果你发现有人开始“说话”了，你就等他们说完（冲突避免）。你不会等到冲突发生后才停止，而是通过一些策略来避免它。</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li><strong>冲突避免：</strong> 在发送数据之前，设备会使用一种称为“退避算法”的机制来避免冲突。如果检测到信道忙，它会等待一段时间再尝试。</li>
+<li><strong>使用场景：</strong> 适用于无线网络，如Wi-Fi。无线信号的传播速度比有线慢，所以冲突检测不太实用。CSMA&#x2F;CA通过避免冲突来提高效率。</li>
+</ul>
+<h3 id="异同点："><a href="#异同点：" class="headerlink" title="异同点："></a>异同点：</h3><ul>
+<li><strong>相同点：</strong> 两者都是CSMA的变体，都需要在发送数据前先检测信道是否空闲。</li>
+<li><strong>不同点：</strong><ul>
+<li><strong>冲突处理：</strong> CSMA&#x2F;CD在冲突发生后处理，而CSMA&#x2F;CA在冲突可能发生前就采取措施避免。</li>
+<li><strong>适用场景：</strong> CSMA&#x2F;CD适用于有线网络，CSMA&#x2F;CA适用于无线网络。</li>
+<li><strong>效率：</strong> 在无线网络中，CSMA&#x2F;CA通常比CSMA&#x2F;CD更有效，因为它减少了因冲突导致的重传。</li>
+</ul>
+</li>
+</ul>
+<p>简单来说，CSMA&#x2F;CD像是在咖啡馆里大声说话，如果撞上了就停下来，等会儿再说；而CSMA&#x2F;CA像是用手语交流，如果看到别人也在“说话”，就等他们说完再说。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
 
     <!-- copyright -->
     
@@ -319,7 +882,98 @@
   </div>
    
     </div>
+      
+    <div class="article-entry" itemprop="articleBody">
        
+  <p>从计算机网络课本的角度来看，MAC地址和IP地址在网络通信中扮演着不同但互补的角色。下面将从更深入的层面对比二者：</p>
+<h3 id="MAC地址（Media-Access-Control-address）："><a href="#MAC地址（Media-Access-Control-address）：" class="headerlink" title="MAC地址（Media Access Control address）："></a>MAC地址（Media Access Control address）：</h3><ol>
+<li><p><strong>定义</strong>：</p>
+<ul>
+<li>MAC地址是数据链路层的地址，用于标识网络接口卡（NIC）。</li>
+<li>它是一个48位的唯一标识符，通常由IEEE 802标准组织分配。</li>
+</ul>
+</li>
+<li><p><strong>作用</strong>：</p>
+<ul>
+<li>MAC地址用于局域网（LAN）内部的设备通信，确保数据帧在局域网内正确地从发送者传输到接收者。</li>
+<li>它与以太网技术紧密相关，是链路层寻址和介质访问控制的基础。</li>
+</ul>
+</li>
+<li><p><strong>特性</strong>：</p>
+<ul>
+<li>MAC地址是硬件地址，通常烧录在网络设备的EPROM中，不易更改。</li>
+<li>它在制造时被分配，保证了全球唯一性，但可以通过软件手段进行克隆或伪装。</li>
+</ul>
+</li>
+<li><p><strong>通信过程</strong>：</p>
+<ul>
+<li>在以太网中，数据帧的发送和接收都依赖于MAC地址。</li>
+<li>使用ARP协议将IP地址解析为MAC地址，以便在局域网内进行通信。</li>
+</ul>
+</li>
+</ol>
+<h3 id="IP地址（Internet-Protocol-address）："><a href="#IP地址（Internet-Protocol-address）：" class="headerlink" title="IP地址（Internet Protocol address）："></a>IP地址（Internet Protocol address）：</h3><ol>
+<li><p><strong>定义</strong>：</p>
+<ul>
+<li>IP地址是网络层的地址，用于标识网络中的设备。</li>
+<li>它是一个32位（IPv4）或128位（IPv6）的数字，用于在更大的网络范围内（包括互联网）进行寻址。</li>
+</ul>
+</li>
+<li><p><strong>作用</strong>：</p>
+<ul>
+<li>IP地址用于不同网络之间的设备通信，确保数据包能够跨越多个网络传输到目标设备。</li>
+<li>它支持路由选择，允许数据包在复杂的网络拓扑中找到到达目的地的路径。</li>
+</ul>
+</li>
+<li><p><strong>特性</strong>：</p>
+<ul>
+<li>IP地址可以是静态分配的，也可以通过DHCP等协议动态分配。</li>
+<li>IPv4地址资源有限，而IPv6提供了几乎无限的地址空间。</li>
+</ul>
+</li>
+<li><p><strong>通信过程</strong>：</p>
+<ul>
+<li>IP地址用于在网络层进行路由选择，确定数据包的传输路径。</li>
+<li>在数据链路层，IP数据包被封装成帧，通过MAC地址在局域网内传输。</li>
+</ul>
+</li>
+</ol>
+<h3 id="联系与区别："><a href="#联系与区别：" class="headerlink" title="联系与区别："></a>联系与区别：</h3><ol>
+<li><p><strong>层级</strong>：</p>
+<ul>
+<li>MAC地址工作在OSI模型的数据链路层，而IP地址工作在网络层。</li>
+<li>它们共同确保了数据能够在网络的不同层级中正确传输。</li>
+</ul>
+</li>
+<li><p><strong>寻址范围</strong>：</p>
+<ul>
+<li>MAC地址局限于局域网，而IP地址可以跨越多个网络，包括互联网。</li>
+</ul>
+</li>
+<li><p><strong>动态性</strong>：</p>
+<ul>
+<li>MAC地址通常是固定的，而IP地址可以动态变化，尤其是在移动设备和动态IP环境中。</li>
+</ul>
+</li>
+<li><p><strong>安全性</strong>：</p>
+<ul>
+<li>MAC地址和IP地址都可以用于网络访问控制，但它们本身并不提供强大的安全保护。</li>
+<li>通常需要结合其他安全措施（如防火墙、VPN、加密协议等）来提高网络通信的安全性。</li>
+</ul>
+</li>
+<li><p><strong>地址解析</strong>：</p>
+<ul>
+<li>在局域网内，ARP协议用于将IP地址解析为MAC地址，以便在链路层进行通信。</li>
+<li>在更广泛的网络中，IP地址用于路由选择，而MAC地址用于最终的数据帧传输。</li>
+</ul>
+</li>
+</ol>
+<p>通过这些深入的对比，我们可以更好地理解MAC地址和IP地址在计算机网络中的作用和相互关系。它们是网络通信的基础，确保了数据能够在复杂的网络环境中从源头正确地传输到目的地。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
 
     <!-- copyright -->
     
@@ -365,7 +1019,31 @@
   </div>
    
     </div>
+      
+    <div class="article-entry" itemprop="articleBody">
        
+  <p>VLAN（Virtual Local Area Network，虚拟局域网）技术在现代网络中扮演着重要的角色，它提供了一种灵活的方式来划分网络，提高安全性和网络性能。以下是VLAN的一些优缺点：</p>
+<h3 id="VLAN的优点："><a href="#VLAN的优点：" class="headerlink" title="VLAN的优点："></a>VLAN的优点：</h3><ol>
+<li><strong>提高安全性</strong>：VLAN可以将网络划分为多个逻辑上的广播域，限制了不同VLAN间的直接通信，从而增强了网络的安全性。</li>
+<li><strong>减少广播流量</strong>：通过将大型的广播域划分为更小的部分，VLAN可以减少网络上的广播流量，提高网络效率。</li>
+<li><strong>网络管理更加灵活</strong>：VLAN允许网络管理员根据功能、部门或应用需求来组织网络，而不受物理位置的限制，使得网络管理更加灵活和高效。</li>
+<li><strong>成本节约</strong>：VLAN减少了对昂贵网络升级的需求，提高了现有带宽和上行链路的利用率，从而节约了成本。</li>
+<li><strong>提高网络性能</strong>：通过分割网络为多个逻辑工作组，VLAN可以减少网络上不必要的流量，提高网络性能。</li>
+<li><strong>灵活性和可扩展性</strong>：VLAN技术具有灵活性和可扩展性，方便网络维护和管理，适应网络规模和业务需求的变化。</li>
+</ol>
+<h3 id="VLAN的缺点："><a href="#VLAN的缺点：" class="headerlink" title="VLAN的缺点："></a>VLAN的缺点：</h3><ol>
+<li><strong>管理复杂性</strong>：VLAN需要进行复杂的设置和管理，网络管理员必须精确地配置VLAN，以确保正确地分割广播域、引导数据流量、保持跨网络的通信并确保安全性。</li>
+<li><strong>配置错误可能导致安全风险</strong>：如果VLAN配置不当，可能会引起安全隐患，例如未授权的设备可能会接入到VLAN中，导致网络安全泄漏。</li>
+<li><strong>数据包延迟</strong>：使用VLAN可能会增加数据包的处理时间，从而增加延迟，因为每个数据包必须经过交换机上的额外处理。</li>
+<li><strong>对设备要求较高</strong>：尤其是在动态VLAN的配置中，对网络设备的要求较高，可能需要更多的处理能力和内存来维护VLAN信息。</li>
+<li><strong>VLAN数量限制</strong>：在标准定义中VLAN的数量只有4096个，无法满足大型数据中心的租户间隔离需求。</li>
+</ol>
+<p>总的来说，VLAN技术在提高网络的安全性、灵活性和性能方面提供了显著的优势，但也带来了一定的管理复杂性和潜在的配置挑战。网络管理员需要仔细规划和配置VLAN，以确保网络的高效和安全运行。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
 
     <!-- copyright -->
     
@@ -411,7 +1089,67 @@
   </div>
    
     </div>
+      
+    <div class="article-entry" itemprop="articleBody">
        
+  <p><img src="/images/posts/matlab/overview.svg" alt="MATLAB 入门能力地图"></p>
+<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h2><p>Mathlab是一款功能强大的数学计算软件，广泛应用于工程、科学研究、数据分析等领域。它以其强大的矩阵运算和数据可视化能力，成为学术界和工业界的重要工具。本文将为你提供一个全面的入门指南，包括软件安装、基础操作、常用函数及实际应用示例，帮助你迅速上手Mathlab。</p>
+<h2 id="2-安装与环境配置"><a href="#2-安装与环境配置" class="headerlink" title="2. 安装与环境配置"></a>2. 安装与环境配置</h2><h3 id="2-1-下载与安装"><a href="#2-1-下载与安装" class="headerlink" title="2.1 下载与安装"></a>2.1 下载与安装</h3><p>首先，访问<a target="_blank" rel="noopener" href="https://www.mathworks.com/">Mathlab官网</a>下载适合你操作系统的版本。安装过程中，你需要选择安装的组件，建议选择“Mathlab”及其相关工具箱，以获得更全面的功能支持。</p>
+<h3 id="2-2-界面介绍"><a href="#2-2-界面介绍" class="headerlink" title="2.2 界面介绍"></a>2.2 界面介绍</h3><p>启动Mathlab后，你会看到主界面包含以下几个部分：</p>
+<ul>
+<li><strong>命令窗口</strong>：用于输入命令并显示输出。</li>
+<li><strong>编辑器</strong>：用于编写和保存脚本文件。</li>
+<li><strong>工作区</strong>：显示当前工作环境中的变量。</li>
+<li><strong>当前文件夹</strong>：显示当前路径下的文件和文件夹。</li>
+</ul>
+<h2 id="3-基础操作"><a href="#3-基础操作" class="headerlink" title="3. 基础操作"></a>3. 基础操作</h2><h3 id="3-1-变量与数据类型"><a href="#3-1-变量与数据类型" class="headerlink" title="3.1 变量与数据类型"></a>3.1 变量与数据类型</h3><p>在Mathlab中，变量赋值使用“&#x3D;”符号。例如：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">10</span>; <span class="comment">% 整数</span></span><br><span class="line">y = <span class="number">3.14</span>; <span class="comment">% 浮点数</span></span><br><span class="line">z = <span class="string">&#x27;Mathlab&#x27;</span>; <span class="comment">% 字符串</span></span><br></pre></td></tr></table></figure>
+<p>Mathlab支持多种数据类型，包括标量、向量、矩阵和字符串等。</p>
+<h3 id="3-2-数组与矩阵"><a href="#3-2-数组与矩阵" class="headerlink" title="3.2 数组与矩阵"></a>3.2 数组与矩阵</h3><p>数组和矩阵是Mathlab的核心数据结构。可以通过方括号创建：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>; <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]; <span class="comment">% 创建一个2x3矩阵</span></span><br></pre></td></tr></table></figure>
+<p>数组的索引从1开始，可以使用冒号运算符生成序列：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v = <span class="number">1</span>:<span class="number">10</span>; <span class="comment">% 生成1到10的行向量</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-3-控制结构"><a href="#3-3-控制结构" class="headerlink" title="3.3 控制结构"></a>3.3 控制结构</h3><p>Mathlab支持常见的控制结构，如条件语句和循环语句：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> x &gt; <span class="number">0</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是正数&#x27;</span>);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是负数或零&#x27;</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="built_in">i</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-常用函数"><a href="#4-常用函数" class="headerlink" title="4. 常用函数"></a>4. 常用函数</h2><h3 id="4-1-数学函数"><a href="#4-1-数学函数" class="headerlink" title="4.1 数学函数"></a>4.1 数学函数</h3><p>Mathlab提供丰富的数学函数，以下是一些常用的：</p>
+<ul>
+<li><code>sin(x)</code>: 计算正弦值。</li>
+<li><code>cos(x)</code>: 计算余弦值。</li>
+<li><code>exp(x)</code>: 计算自然指数。</li>
+</ul>
+<h3 id="4-2-统计函数"><a href="#4-2-统计函数" class="headerlink" title="4.2 统计函数"></a>4.2 统计函数</h3><p>在数据分析中，常用的统计函数包括：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line">meanValue = <span class="built_in">mean</span>(data); <span class="comment">% 计算均值</span></span><br><span class="line">stdValue = std(data); <span class="comment">% 计算标准差</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-3-绘图函数"><a href="#4-3-绘图函数" class="headerlink" title="4.3 绘图函数"></a>4.3 绘图函数</h3><p>Mathlab的绘图功能强大，可以绘制多种类型的图形：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">100</span>); <span class="comment">% 生成0到2π的100个点</span></span><br><span class="line">y = <span class="built_in">sin</span>(x);</span><br><span class="line"><span class="built_in">figure</span>; <span class="comment">% 创建新图形窗口</span></span><br><span class="line"><span class="built_in">plot</span>(x, y, <span class="string">&#x27;r-&#x27;</span>, <span class="string">&#x27;LineWidth&#x27;</span>, <span class="number">2</span>); <span class="comment">% 绘制sin(x)曲线</span></span><br><span class="line">xlabel(<span class="string">&#x27;x (弧度)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;sin(x)&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;正弦函数图&#x27;</span>);</span><br><span class="line">grid on; <span class="comment">% 添加网格</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-实例应用"><a href="#5-实例应用" class="headerlink" title="5. 实例应用"></a>5. 实例应用</h2><h3 id="5-1-数据分析"><a href="#5-1-数据分析" class="headerlink" title="5.1 数据分析"></a>5.1 数据分析</h3><p>假设我们有一组随机生成的数据，需要计算其均值和标准差，并进行可视化：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">data = <span class="built_in">randn</span>(<span class="number">1</span>, <span class="number">1000</span>); <span class="comment">% 生成1000个随机数</span></span><br><span class="line">meanValue = <span class="built_in">mean</span>(data);</span><br><span class="line">stdValue = std(data);</span><br><span class="line"></span><br><span class="line"><span class="built_in">figure</span>;</span><br><span class="line">histogram(data, <span class="number">30</span>); <span class="comment">% 绘制直方图</span></span><br><span class="line">xlabel(<span class="string">&#x27;值&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;频率&#x27;</span>);</span><br><span class="line">title([<span class="string">&#x27;数据的均值：&#x27;</span>, num2str(meanValue), <span class="string">&#x27; 标准差：&#x27;</span>, num2str(stdValue)]);</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-2-信号处理"><a href="#5-2-信号处理" class="headerlink" title="5.2 信号处理"></a>5.2 信号处理</h3><p>在信号处理中，我们可以生成和分析不同频率的信号：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Fs = <span class="number">1000</span>; <span class="comment">% 采样频率</span></span><br><span class="line">t = <span class="number">0</span>:<span class="number">1</span>/Fs:<span class="number">1</span>; <span class="comment">% 时间向量</span></span><br><span class="line">y1 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">50</span>*t); <span class="comment">% 50Hz信号</span></span><br><span class="line">y2 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">120</span>*t); <span class="comment">% 120Hz信号</span></span><br><span class="line">y = y1 + y2; <span class="comment">% 合成信号</span></span><br><span class="line"><span class="built_in">plot</span>(t, y); <span class="comment">% 绘制信号</span></span><br><span class="line">xlabel(<span class="string">&#x27;时间 (秒)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;幅度&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;合成信号&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-3-图像处理"><a href="#5-3-图像处理" class="headerlink" title="5.3 图像处理"></a>5.3 图像处理</h3><p>Mathlab也支持图像处理，可以用以下代码读取和显示图像：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">img = imread(<span class="string">&#x27;image.jpg&#x27;</span>); <span class="comment">% 读取图像</span></span><br><span class="line">imshow(img); <span class="comment">% 显示图像</span></span><br><span class="line">title(<span class="string">&#x27;原始图像&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-进阶功能"><a href="#6-进阶功能" class="headerlink" title="6. 进阶功能"></a>6. 进阶功能</h2><h3 id="6-1-脚本与函数"><a href="#6-1-脚本与函数" class="headerlink" title="6.1 脚本与函数"></a>6.1 脚本与函数</h3><p>通过编写脚本文件（.m文件），可以将多个命令组织在一起，方便重用。此外，还可以自定义函数，增强代码的可读性和可维护性。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">result</span> = <span class="title">addNumbers</span><span class="params">(a, b)</span></span></span><br><span class="line">    <span class="comment">% 此函数返回两个数字的和</span></span><br><span class="line">    result = a + b;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-2-工具箱扩展"><a href="#6-2-工具箱扩展" class="headerlink" title="6.2 工具箱扩展"></a>6.2 工具箱扩展</h3><p>Mathlab提供多种工具箱，如<a target="_blank" rel="noopener" href="https://www.mathworks.com/products/image.html">图像处理工具箱</a>、<a target="_blank" rel="noopener" href="https://www.mathworks.com/products/signal.html">信号处理工具箱</a>等，安装这些工具箱可以扩展Mathlab的功能。你可以通过Mathlab命令窗口中的<code>ver</code>命令查看已安装的工具箱。</p>
+<h2 id="7-学习资源"><a href="#7-学习资源" class="headerlink" title="7. 学习资源"></a>7. 学习资源</h2><p>以下是一些推荐的学习资源，可以帮助你进一步深入学习Mathlab：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.mathworks.com/help/matlab/">Mathlab文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.mathworks.com/learn/tutorials/matlab-onramp.html">Mathlab视频教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.mathworks.com/matlabcentral/">Mathlab中央论坛</a></li>
+</ul>
+<h2 id="8-结论"><a href="#8-结论" class="headerlink" title="8. 结论"></a>8. 结论</h2><p>通过本教程，你已经全面了解了Mathlab的基本操作、常用函数及实际应用示例。无论是在学术研究、工程设计还是数据分析中，Mathlab都能为你提供强有力的支持。继续深入学习Mathlab的各项功能，将帮助你在各领域中实现更高效的工作。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
 
     <!-- copyright -->
     
@@ -457,7 +1195,233 @@
   </div>
    
     </div>
+      
+    <div class="article-entry" itemprop="articleBody">
        
+  <p><img src="/images/posts/jupyter/modes.svg" alt="Jupyter Notebook 编辑模式与命令模式"></p>
+<h2 id="一、编辑模式与命令行模式"><a href="#一、编辑模式与命令行模式" class="headerlink" title="一、编辑模式与命令行模式"></a>一、编辑模式与命令行模式</h2><p>在jupyter notebook中，分为编辑与命令行两种模式。实际上就是代码编辑模式与非代码编辑模式，一个是选中编辑框（Enter键&#x2F;鼠标点击输入框），框线为绿色<br> 一个是不选中编辑框（Esc键&#x2F;鼠标点击输入框外的空白处），框线为蓝色<br> 注意：在编辑状态下，可以在当前 cell 中写代码，但进行有些 jupyter 的快捷键操作就不管用。在命令模式下，可以进行 jupyter 相关的快捷操作。注意：仅对当前编辑框有效。</p>
+<h2 id="二、编辑模式快捷键"><a href="#二、编辑模式快捷键" class="headerlink" title="二、编辑模式快捷键"></a>二、编辑模式快捷键</h2><h3 id="（1）运行代码-命令模式也可用"><a href="#（1）运行代码-命令模式也可用" class="headerlink" title="（1）运行代码(命令模式也可用)"></a>（1）运行代码(命令模式也可用)</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl + Enter</td>
+<td>运行本单元</td>
+</tr>
+<tr>
+<td>Shift + Enter</td>
+<td>运行本单元，选中下一单元</td>
+</tr>
+<tr>
+<td>Alt + Enter</td>
+<td>运行本单元，在下面插入一单元</td>
+</tr>
+</tbody></table>
+<h3 id="（2）光标跳转"><a href="#（2）光标跳转" class="headerlink" title="（2）光标跳转"></a>（2）光标跳转</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl + Home</td>
+<td>跳到单元开头</td>
+</tr>
+<tr>
+<td>Ctrl + End</td>
+<td>跳到单元结尾</td>
+</tr>
+<tr>
+<td>Ctrl + Home</td>
+<td>跳到单元开头</td>
+</tr>
+<tr>
+<td>Ctrl + ← 或 →</td>
+<td>跳到行首&#x2F;行尾</td>
+</tr>
+</tbody></table>
+<h3 id="（3）提示和格式"><a href="#（3）提示和格式" class="headerlink" title="（3）提示和格式"></a>（3）提示和格式</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Shift + Tab</td>
+<td>提示输入详情（对于函数）</td>
+</tr>
+<tr>
+<td>Ctrl + &#x2F;</td>
+<td>注释或取消注释</td>
+</tr>
+<tr>
+<td>Shift+Tab</td>
+<td>添加&#x2F;取消缩进</td>
+</tr>
+</tbody></table>
+<p>在输入参数时按Tab 提示输入（而Shift+Tab是查看提示详情）<br> <em><strong>注意</strong>：很多人按Shift+Tab无法出现提示内容，主要解决方法如下：</em><br> 在安装库的位置输入：<code>pip3 install jedi==0.17.2</code>，也就是装一个jedi提示建议的库。</p>
+<h3 id="（4）操作"><a href="#（4）操作" class="headerlink" title="（4）操作"></a>（4）操作</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl + A</td>
+<td>全选</td>
+</tr>
+<tr>
+<td>Ctrl + S</td>
+<td>保存</td>
+</tr>
+<tr>
+<td>Ctrl + Shift +‘-’</td>
+<td>分割单元</td>
+</tr>
+<tr>
+<td>ctrl + D</td>
+<td>删除该行内容</td>
+</tr>
+<tr>
+<td>Ctrl + U</td>
+<td>撤销操作</td>
+</tr>
+<tr>
+<td>Ctrl + Z</td>
+<td>撤销操作</td>
+</tr>
+</tbody></table>
+<p>Ctrl+Shift+’-‘将代码从光标处分割为两个单元</p>
+<h2 id="三、命令行模式快捷键"><a href="#三、命令行模式快捷键" class="headerlink" title="三、命令行模式快捷键"></a>三、命令行模式快捷键</h2><h3 id="（1）切换"><a href="#（1）切换" class="headerlink" title="（1）切换"></a>（1）切换</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Y</td>
+<td>把当前 cell 内容转换为代码形式</td>
+</tr>
+<tr>
+<td>M</td>
+<td>把当前 cell 内容转换为 markdown 形式</td>
+</tr>
+<tr>
+<td>R</td>
+<td>单元转入raw状态</td>
+</tr>
+<tr>
+<td>H</td>
+<td>显示快捷键帮助</td>
+</tr>
+<tr>
+<td>I</td>
+<td>中断Notebook内核</td>
+</tr>
+<tr>
+<td>0+0</td>
+<td>重启Notebook内核</td>
+</tr>
+</tbody></table>
+<p>在命令行模式按下M，则将代码编辑器转化成文本编辑器，也就是markdown</p>
+<p>再按下Y，又转化成代码编辑器</p>
+<p> <em><strong>注意</strong>：0+0是连续按两下数字0</em></p>
+<h3 id="（2）单元格选择"><a href="#（2）单元格选择" class="headerlink" title="（2）单元格选择"></a>（2）单元格选择</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>L</td>
+<td>显示&#x2F;隐藏行号</td>
+</tr>
+<tr>
+<td>↑&#x2F;K</td>
+<td>选中上方单元</td>
+</tr>
+<tr>
+<td>↓&#x2F;J</td>
+<td>选中下方单元</td>
+</tr>
+<tr>
+<td>Shift-↑&#x2F;↓</td>
+<td>扩大选中上&#x2F;下方单元</td>
+</tr>
+</tbody></table>
+<h3 id="（3）单元格操作"><a href="#（3）单元格操作" class="headerlink" title="（3）单元格操作"></a>（3）单元格操作</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>在上方插入新单元</td>
+</tr>
+<tr>
+<td>B</td>
+<td>在下方插入新单元</td>
+</tr>
+<tr>
+<td>X</td>
+<td>剪切选中的单元</td>
+</tr>
+<tr>
+<td>C</td>
+<td>复制选中的单元</td>
+</tr>
+<tr>
+<td>Shift-V</td>
+<td>粘贴到上方单元</td>
+</tr>
+<tr>
+<td>V</td>
+<td>粘贴到下方单元</td>
+</tr>
+<tr>
+<td>D+D</td>
+<td>删除选中的单元</td>
+</tr>
+<tr>
+<td>Shift-M</td>
+<td>合并选中的单元</td>
+</tr>
+</tbody></table>
+<h3 id="（4）其他操作"><a href="#（4）其他操作" class="headerlink" title="（4）其他操作"></a>（4）其他操作</h3><ul>
+<li>在markdown下的在文本操作（若是代码，则自动转化成文本并设置标题）<br>  1-6 ：设定 1-6 级标题</li>
+<li>Ctr+Y： 撤销</li>
+<li>H：查看快捷键</li>
+<li>Z ：恢复删除的最后一个单元</li>
+<li>F：查找替换</li>
+<li>S：保存文档（注意：不是Ctrl+S）</li>
+</ul>
+<h2 id="四、jupyter魔法函数（编辑模式下）"><a href="#四、jupyter魔法函数（编辑模式下）" class="headerlink" title="四、jupyter魔法函数（编辑模式下）"></a>四、jupyter魔法函数（编辑模式下）</h2><ul>
+<li>（1） <strong>%reset</strong> 删除当前 Jupyter 环境中的所有变量或名称。</li>
+<li>（2） <strong>%timeit</strong> 计算当前 cell 的代码运行时长。</li>
+<li>（3） <strong>%time</strong> 计算当前代码行的运行时长。</li>
+<li>（4） <strong>%timeit</strong> 计算当前代码行的平均运行时长（即在执行一个语句100000次(默认情况下)后，再给出运行最快3次的平均值。</li>
+<li>（5） <strong>%run</strong> 用于运行本地或网络中的 Python 文件，例如本地脚本文件的运行：%run ex.py。</li>
+<li>（6） <strong>%pwd</strong> 显示 Jupyter 当前的工作空间。</li>
+<li>（7） <strong>%matplotlib</strong> 显示绘图结果的风格，默认为 %matplotlib inline，是直接将图片显示在浏览器中，如果希望图片单独生成，可以使用 %matplotlib。</li>
+<li>（8）<strong>load</strong> 文件加载，例如本地脚本文件的加载：%load ex.py。</li>
+<li>（9） <strong>%hist</strong> 显示当前 Jupyter 中，所有运行过的历史代码。</li>
+<li>（10） <strong>%who</strong> 显示当前 Jupyter 环境中的所有变量或名称。</li>
+</ul>
+ 
+      <!-- reward -->
+      
+    </div>
+    
 
     <!-- copyright -->
     
@@ -503,7 +1467,45 @@
   </div>
    
     </div>
+      
+    <div class="article-entry" itemprop="articleBody">
        
+  <p><img src="/images/posts/conda/workflow.svg" alt="Conda 环境管理流程"></p>
+<h2 id="一、conda基础概念"><a href="#一、conda基础概念" class="headerlink" title="一、conda基础概念"></a>一、conda基础概念</h2><p>在深入使用<strong>conda</strong>命令之前，首先需要了解<strong>conda</strong>的基础概念。<strong>conda</strong> 是一个开源的包管理系统和环境管理系统，可以安装、更新和管理多种语言的依赖库（不仅限于<font color='Peach'>Python</font>）。它的强大之处在于将包管理与环境管理结合为一体，使得在项目开发中，无论是管理依赖包还是创建虚拟环境，<strong>conda</strong> 都能够提供完整的解决方案。</p>
+<h3 id="conda与虚拟环境的区别"><a href="#conda与虚拟环境的区别" class="headerlink" title="conda与虚拟环境的区别"></a>conda与虚拟环境的区别</h3><p><strong>conda</strong> 与传统的虚拟环境工具（如<font color='Salmon'>venv、virtualenv</font>）不同，后者主要用于隔离项目的依赖，而  则同时管理包和环境。通过使用 <strong>conda</strong>，可以更方便地在不同项目之间切换环境，避免包之间的冲突。</p>
+<h2 id="二、必要准备：配置镜像源"><a href="#二、必要准备：配置镜像源" class="headerlink" title="二、必要准备：配置镜像源"></a>二、必要准备：配置镜像源</h2><p><font color='Bitersweet'>在使用Anaconda安装Python包时，系统会自动从默认源下载安装包，但是由于网络访问限制或网络连接速度较慢等原因，可能导致安装失败或速度较慢。为了解决这些问题，配置镜像源可以让用户从国内的服务器下载Python包，加快下载速度并减少下载失败的问题。</font></p>
+<h3 id="添加镜像源"><a href="#添加镜像源" class="headerlink" title="添加镜像源"></a>添加镜像源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line"><span class="comment">#显示检索路径</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br><span class="line"><span class="comment">#显示镜像通道</span></span><br><span class="line">conda config --show channels</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="三、环境命令"><a href="#三、环境命令" class="headerlink" title="三、环境命令"></a>三、环境命令</h2><h3 id="1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本"><a href="#1-创建虚拟环境-conda-create-prefix-路径-python-xxx版本" class="headerlink" title="1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本"></a>1.创建虚拟环境:conda create - -prefix +路径+python&#x3D;xxx版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create --prefix D:\Python\Enviroment\myenv python=3.10.6</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-查看虚拟环境-conda-env-list"><a href="#2-查看虚拟环境-conda-env-list" class="headerlink" title="2.查看虚拟环境:conda env list"></a>2.查看虚拟环境:conda env list</h3><p><font color='Magenta'>其中<code>*</code>表示当前所在的环境</font></p>
+<p>命令输出中带 <code>*</code> 的一行表示当前激活的环境。</p>
+<h3 id="3-切换、退出和删除环境"><a href="#3-切换、退出和删除环境" class="headerlink" title="3.切换、退出和删除环境:"></a>3.切换、退出和删除环境:</h3><blockquote>
+<p>切换环境:conda activate+路径</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<blockquote>
+<p>退出环境</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;conda deactivate</span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<blockquote>
+<p>删除环境:conda env remove -p+路径</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda <span class="built_in">env</span> remove -p D:\Python\Enviroment\myenv</span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<h2 id="四、包命令-先进入某一虚拟环境后使用"><a href="#四、包命令-先进入某一虚拟环境后使用" class="headerlink" title="四、包命令(先进入某一虚拟环境后使用)"></a>四、包命令(先进入某一虚拟环境后使用)</h2><h3 id="1-查找包-conda-search-包名"><a href="#1-查找包-conda-search-包名" class="headerlink" title="1.查找包:conda search+包名"></a>1.查找包:conda search+包名</h3><p> <font color='Magenta'>使用该命令会显示不同版本的python所支持的该包的版本</font></p>
+<h3 id="2-安装包-conda-install-包名"><a href="#2-安装包-conda-install-包名" class="headerlink" title="2.安装包:conda install+包名"></a>2.安装包:conda install+包名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install seaborn </span><br></pre></td></tr></table></figure>
+
+<p><font color='Magenta'>也可以使用 conda install seaborn&#x3D;xxxx 下载指定版本的包</font></p>
+<h3 id="3-查看已下载的包-conda-list"><a href="#3-查看已下载的包-conda-list" class="headerlink" title="3.查看已下载的包:conda list"></a>3.查看已下载的包:conda list</h3><h3 id="4-更新包-conda-update-包名"><a href="#4-更新包-conda-update-包名" class="headerlink" title="4.更新包:conda update+包名"></a>4.更新包:conda update+包名</h3><h3 id="5-删除包-conda-remove-包名"><a href="#5-删除包-conda-remove-包名" class="headerlink" title="5.删除包:conda remove+包名"></a>5.删除包:conda remove+包名</h3> 
+      <!-- reward -->
+      
+    </div>
+    
 
     <!-- copyright -->
     
@@ -549,7 +1551,33 @@
   </div>
    
     </div>
+      
+    <div class="article-entry" itemprop="articleBody">
        
+  <p><img src="/images/posts/llama31/local-or-cloud.svg" alt="Llama 3.1 本地或云端运行选择"></p>
+<p>1.本地电脑安装的硬件要求：</p>
+<p>Windows：3060以上显卡+8G以上显存+16G内存，硬盘空间至少20G</p>
+<p>Mac：M1或M2芯片 16G内存，20G以上硬盘空间</p>
+<p>在开始之前，首先我们需要安装Ollama客户端，来进行本地部署Llama3.1大模型</p>
+<p><strong>官方下载：</strong>【<a target="_blank" rel="noopener" href="https://ollama.com/">点击前往</a>】</p>
+<p>安装命令：</p>
+<p>安装llama3.1-8b，至少需要8G的显存，安装命令就是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ollama run llama3.1:8b</span><br></pre></td></tr></table></figure>
+
+<p>安装llama3.1-70b，至少需要大约 70-75 GB 显存，适合企业用户，安装命令就是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ollama run llama3.1:78b</span><br></pre></td></tr></table></figure>
+
+<p>安装llama3.1-405b，这是一个极其庞大的模型，安装和运行它在本地需要非常高的显存和硬件资源，至少需要大约 400-450 GB 显存，适合顶级大企业用户，安装命令就是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ollama run llama3.1:405b</span><br></pre></td></tr></table></figure>
+
+<p>2.如果你没有可运行的显卡，那么可以在Huggingface平台上使用，因为huggingFace 上已经托管了Llama3.1大模型，现在完全免费使用！</p>
+<p>【<a target="_blank" rel="noopener" href="https://huggingface.co/chat/">链接直达</a>】</p>
+<p>如果本机硬件不足，可以使用上图右侧的云端方案快速体验。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
 
     <!-- copyright -->
     
@@ -566,59 +1594,13 @@
 </article>
 
     
-    <article
-  id="post-详尽指南：在VMware中安装和配置Ubuntu"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2024/08/02/%E8%AF%A6%E5%B0%BD%E6%8C%87%E5%8D%97%EF%BC%9A%E5%9C%A8VMware%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEUbuntu/"
-    >详尽指南：在VMware中安装和配置Ubuntu</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2024/08/02/%E8%AF%A6%E5%B0%BD%E6%8C%87%E5%8D%97%EF%BC%9A%E5%9C%A8VMware%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEUbuntu/" class="article-date">
-  <time datetime="2024-08-01T16:01:00.000Z" itemprop="datePublished">2024-08-02</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%96%B9%E6%B3%95/">方法</a>
-  </div>
-   
-    </div>
-       
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
+    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
   </nav>
   
 </section>
@@ -629,7 +1611,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2024-2026
+        2015-2026
         <i class="ri-heart-fill heart_icon"></i> CodeBardPro
       </li>
     </ul>
@@ -640,6 +1622,13 @@
     </ul>
     <ul>
       <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
         
       </li>
     </ul>
@@ -652,8 +1641,6 @@
     <ul>
       <li>
         <!-- cnzz统计 -->
-        
-        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
         
       </li>
     </ul>
@@ -714,6 +1701,10 @@
         <i class="ri-search-line"></i>
       </a>
       
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
       
     </li>
   </ul>
@@ -874,11 +1865,11 @@
 <!-- Katex -->
 
 <!-- busuanzi  -->
-
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
 <!-- ClickLove -->
- 
-<script src="/js/clickLove.js"></script>
- 
+
 <!-- ClickBoom1 -->
 
 <!-- ClickBoom2 -->
