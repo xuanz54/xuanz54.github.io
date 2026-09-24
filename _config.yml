@@ -98,6 +98,35 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: ayer
 
+# Keep site-specific theme settings in the source branch, outside the Ayer submodule.
+theme_config:
+  menu:
+    主页: /
+    归档: /archives
+    分类: /categories
+    标签: /tags
+    壁纸: https://haowallpaper.com/
+    关于我: /about
+  subtitle:
+    text: 惟楚有才，于斯为盛
+    text2: 心之所向，身之所往
+    text3: 想要的都拥有，得不到的都释怀
+  cover:
+    path: /images/cover.jpg
+  excerpt_all: true
+  toc: false
+  copyright_type: 0
+  rss: ''
+  busuanzi:
+    enable: false
+  click_effect: 1
+  since: 2024
+  github:
+    enable: false
+  ads: null
+  mermaid:
+    enable: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
