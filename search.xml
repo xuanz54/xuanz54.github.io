@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>IDM直装注册版（完美，不反弹！）</title>
+    <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
+    <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
+<p><strong>中文绿色特别版：【<a href="https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file">点击下载</a>】</strong></p>
+<p><strong>一定要安装IDM的浏览器插件，才可以自动调用下载！</strong></p>
+<p><strong>浏览器插件：</strong>【<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">进入安装</a>】</p>
+<p>再华丽的语言也无法表达IDM的牛C！</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DeepSeek 多模态大模型Janus-Pro-7B本地部署教程</title>
     <url>/2025/02/01/DeepSeek-%E5%A4%9A%E6%A8%A1%E6%80%81%E5%A4%A7%E6%A8%A1%E5%9E%8BJanus-Pro-7B%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>DeepSeek 又深夜发大招！开源了多模态大模型Janus-Pro-7B，普通电脑可以直接安装使用，现在我们就来本地部署！支持图像识别和图像生成，性能非常强悍！</p>
@@ -58,6 +75,38 @@
       </tags>
   </entry>
   <entry>
+    <title>Omakub专为开发者设计的Ubuntu环境配置项目</title>
+    <url>/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<p>Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。</p>
+<p>提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。</p>
+<p><img src="/images/posts/omakub/toolchain.svg" alt="Omakub 开发环境组成"></p>
+<h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><ol>
+<li>一键式配置：通过一条命令即可完成所有配置。</li>
+<li>预装工具：包括浏览器、终端、编辑器、通讯工具（如 WhatsApp、Signal、Spotify、Zoom、1Password）等。</li>
+<li>版本控制：内置 GitHub CLI，方便进行版本控制和代码管理。</li>
+<li>容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。</li>
+<li>语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。</li>
+<li>系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。</li>
+</ol>
+<h4 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h4><p>安装 Omakub 只需以下步骤：</p>
+<ol>
+<li><p>在计算机上安装 Ubuntu 24.04+。</p>
+</li>
+<li><p>打开终端（Ctrl+Alt+T），运行以下命令：</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://omakub.org/install | bash</span><br></pre></td></tr></table></figure>
+
+<p> 整个安装过程大约需要 30 分钟，具体时间取决于网络状况。安装完成后，系统会自动配置所有工具和设置。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git的使用</title>
     <url>/2024/07/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="Git-与-GitHub"><a href="#Git-与-GitHub" class="headerlink" title="Git 与 GitHub"></a>Git 与 GitHub</h1><h2 id="Git-的起源"><a href="#Git-的起源" class="headerlink" title="Git 的起源"></a>Git 的起源</h2><h4 id="“自由主义-开源-教皇”-林纳斯·托瓦兹"><a href="#“自由主义-开源-教皇”-林纳斯·托瓦兹" class="headerlink" title="“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹"></a>“自由主义( 开源 ) 教皇” 林纳斯·托瓦兹</h4><ul>
@@ -80,7 +129,7 @@
 <ol>
 <li><p><font color ='blue'><strong>git config –global user.name</strong></font>“<font color = 'red'><strong>Your Name</strong></font>“</p>
 </li>
-<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#x65;&#x6d;&#97;&#x69;&#108;&#64;&#x78;&#x78;&#120;&#x2e;&#x63;&#x6f;&#x6d;">&#x65;&#x6d;&#97;&#x69;&#108;&#64;&#x78;&#x78;&#120;&#x2e;&#x63;&#x6f;&#x6d;</a></strong></font>“</p>
+<li><p><font color= 'blue'><strong>git config –global user.email</strong></font>“<font color = 'red'><strong><a href="mailto:&#x65;&#x6d;&#x61;&#105;&#108;&#x40;&#x78;&#x78;&#x78;&#46;&#99;&#x6f;&#109;">&#x65;&#x6d;&#x61;&#105;&#108;&#x40;&#x78;&#x78;&#x78;&#46;&#99;&#x6f;&#109;</a></strong></font>“</p>
 <p> <strong>备注：</strong>以上二步的姓名和邮箱可以随意更改，建议使用自己的</p>
 </li>
 <li><p><font color='blue'><strong>git config user.name</strong></font> 用于查看配置的姓名</p>
@@ -301,261 +350,38 @@
       </tags>
   </entry>
   <entry>
-    <title>Jev模型深度解析：不生成一个字的AI决策引擎</title>
-    <url>/2026/09/24/Jev%E6%A8%A1%E5%9E%8B%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90%EF%BC%9A%E4%B8%8D%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E5%AD%97%E7%9A%84AI%E5%86%B3%E7%AD%96%E5%BC%95%E6%93%8E/</url>
-    <content><![CDATA[<blockquote>
-<p>最近，一个名为 <strong>Jev</strong> 的AI模型在技术圈引发了巨大讨论。它发布仅3天就登顶 Hacker News，被称为首个 <strong>System One 模型</strong>——一个不聊天、不写文章、只输出结构化判断的AI引擎。本文将带你全面了解这个颠覆认知的新模型。</p>
-</blockquote>
-<p><img src="https://i.mji.rip/2026/09/24/b412af9e68d277ab98865c5d8c12326a.jpeg" alt="Jev模型封面"></p>
-<h2 id="一、Jev-是什么？"><a href="#一、Jev-是什么？" class="headerlink" title="一、Jev 是什么？"></a>一、Jev 是什么？</h2><p><strong>Jev</strong> 是由 <strong>TypeSafe AI</strong> 于2026年9月推出的旗舰模型，创始人是 <strong>Diogo Almeida</strong>。它的定位非常独特——不是聊天机器人，不是写作助手，而是一个专门做<strong>结构化决策</strong>的AI引擎。</p>
-<p>官方对它的定义非常简洁：</p>
-<blockquote>
-<p><em>“Send state and typed questions; get structured answers your code can use directly.”</em></p>
-<p>（传入状态和类型化问题，获得代码可直接使用的结构化答案。）</p>
-</blockquote>
-<p>这意味着什么？传统的LLM（如GPT、Claude）给你的是一段文字，你需要自己解析、提取、判断；而Jev直接给你一个带类型、带置信度的结构化结果，你的代码可以立即使用，无需任何后处理。</p>
-<hr>
-<h2 id="二、System-One-vs-System-Two：思考方式的革命"><a href="#二、System-One-vs-System-Two：思考方式的革命" class="headerlink" title="二、System One vs System Two：思考方式的革命"></a>二、System One vs System Two：思考方式的革命</h2><p>Jev 被称为 <strong>System One 模型</strong>，这个概念源自诺贝尔经济学奖得主丹尼尔·卡尼曼的《思考，快与慢》：</p>
-<table>
-<thead>
-<tr>
-<th>维度</th>
-<th>System Two（现有LLM）</th>
-<th>System One（Jev）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>思考方式</strong></td>
-<td>慢、深、逐token推理</td>
-<td>快、直觉、毫秒级判定</td>
-</tr>
-<tr>
-<td><strong>输出形式</strong></td>
-<td>生成自然语言文本</td>
-<td>输出结构化数据</td>
-</tr>
-<tr>
-<td><strong>使用对象</strong></td>
-<td>人类阅读</td>
-<td>代码直接消费</td>
-</tr>
-<tr>
-<td><strong>典型延迟</strong></td>
-<td>数秒</td>
-<td>70-500毫秒</td>
-</tr>
-<tr>
-<td><strong>成本结构</strong></td>
-<td>输入输出均收费</td>
-<td>输入收费，输出免费</td>
-</tr>
-</tbody></table>
-<p><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80" alt="快慢思考对比"></p>
-<p>简单来说，现有的LLM像是你的”深度思考顾问”，它会写很长的报告给你看；而Jev像是你的”直觉判断引擎”，它在毫秒间给出”是&#x2F;否”、”选A”、”评分8.5”这样的结论，直接嵌入你的业务代码。</p>
-<hr>
-<h2 id="三、Jev-的三大核心原语"><a href="#三、Jev-的三大核心原语" class="headerlink" title="三、Jev 的三大核心原语"></a>三、Jev 的三大核心原语</h2><p>Jev 的API设计极其简洁，核心只有三种<strong>题型（Primitives）</strong>：</p>
-<h3 id="1-Choice（选择）"><a href="#1-Choice（选择）" class="headerlink" title="1. Choice（选择）"></a>1. Choice（选择）</h3><p>从多个选项中选择一个最合适的答案。例如：</p>
-<ul>
-<li>这封邮件属于哪个部门？”技术部” &#x2F; “市场部” &#x2F; “人事部”</li>
-<li>这条内容的风险等级？”低风险” &#x2F; “中风险” &#x2F; “高风险”</li>
+    <title>Windows右键菜单管理软件</title>
+    <url>/2025/08/01/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h4 id="ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"><a href="#ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁" class="headerlink" title="ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"></a>ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁</h4><h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
+<li>启用或禁用文件、文件夹、新建、发送到、打开方式、自定义文件格式、IE浏览器、WinX等右键菜单项目</li>
+<li>对上述场景右键菜单项目进行修改名称、修改图标、导航注册表位置、导航文件位置、永久删除等操作</li>
+<li>对上述场景右键菜单自定义添加项目，自定义菜单命令</li>
 </ul>
-<h3 id="2-Score（评分）"><a href="#2-Score（评分）" class="headerlink" title="2. Score（评分）"></a>2. Score（评分）</h3><p>按照评分标准给出量化分数。例如：</p>
-<ul>
-<li>这篇简历的技术能力打分（1-10分）</li>
-<li>这段代码的质量评分（1-100分）</li>
+<h2 id="兼容性能"><a href="#兼容性能" class="headerlink" title="兼容性能"></a>兼容性能</h2><ul>
+<li>适用于Win 11、Win10、8.1、8、7、Vista</li>
+<li>适用于 64bit、32bit CPU 操作系统</li>
+<li>适用于高分屏，最佳显示缩放比为150%</li>
+<li>程序支持国际化多语言显示，欢迎为此程序制作语言字典</li>
 </ul>
-<h3 id="3-Noul（是非概率）"><a href="#3-Noul（是非概率）" class="headerlink" title="3. Noul（是非概率）"></a>3. Noul（是非概率）</h3><p>判断一个陈述为真的概率，返回0到1之间的数值。例如：</p>
-<ul>
-<li>这封邮件是垃圾邮件的概率：0.92</li>
-<li>这个请求需要人工审核的概率：0.15</li>
+<h2 id="开源程序：【点击下载】"><a href="#开源程序：【点击下载】" class="headerlink" title="开源程序：【点击下载】"></a>开源程序：【<a href="https://github.com/BluePointLilac/ContextMenuManager">点击下载</a>】</h2><h2 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h2><p><img src="/images/posts/windows-context-menu/overview.svg" alt="Windows 右键菜单管理示意"></p>
+<h2 id="程序下载"><a href="#程序下载" class="headerlink" title="程序下载"></a>程序下载</h2><ul>
+<li><a href="https://github.com/BluePointLilac/ContextMenuManager/releases/latest">最新版本</a><br>  <a href="https://github.com/BluePointLilac/ContextMenuManager/releases">GitHub Releases</a><br>  <a href="https://gitee.com/BluePointLilac/ContextMenuManager/releases">Gitee Releases</a></li>
+<li>下载说明：在Assets文件列表里面下载zip（建议）或者直接下载exe</li>
+<li>.NET版本说明：程序分为.NET3.5版和.NET4.0版，均适用于Win10、8.1、8、7、Vista系统<br>  win7自带.NET3.5，win8、win8.1、win10自带.NET4.0以上版本，Vista系统既不自带.NET3.5也不自带4.0以上版本<br>  自带.NET可直接运行程序，不自带则需要安装对应版本的<a href="https://dotnet.microsoft.com/download/dotnet-framework">.NET Framework运行库</a></li>
 </ul>
-<p><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="三种题型示意图"></p>
-<p>这三种题型可以<strong>并行组合</strong>在单次API调用中，一次性获得多维度的判断结果。</p>
-<hr>
-<h2 id="四、Jev-vs-传统-LLM：不只是快慢之分"><a href="#四、Jev-vs-传统-LLM：不只是快慢之分" class="headerlink" title="四、Jev vs 传统 LLM：不只是快慢之分"></a>四、Jev vs 传统 LLM：不只是快慢之分</h2><p>很多人误以为Jev只是”一个更快的LLM”或”加了JSON模式约束的GPT”。实际上，它们的本质差异远不止于此：</p>
-<h3 id="关键差异"><a href="#关键差异" class="headerlink" title="关键差异"></a>关键差异</h3><table>
-<thead>
-<tr>
-<th>特性</th>
-<th>传统LLM</th>
-<th>Jev</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>输出确定性</strong></td>
-<td>可能产生幻觉，输出不可预测</td>
-<td>零幻觉，输出严格按类型约束</td>
-</tr>
-<tr>
-<td><strong>置信度校准</strong></td>
-<td>通常过度自信</td>
-<td>每个决策附带校准后的置信度</td>
-</tr>
-<tr>
-<td><strong>延迟</strong></td>
-<td>典型数秒（长文本更长）</td>
-<td>70-500毫秒</td>
-</tr>
-<tr>
-<td><strong>成本</strong></td>
-<td>输入+输出均计费</td>
-<td>仅输入计费，输出免费</td>
-</tr>
-<tr>
-<td><strong>接口契约</strong></td>
-<td>字符串输出，需解析</td>
-<td>结构化输出，代码直接使用</td>
-</tr>
-<tr>
-<td><strong>训练目标</strong></td>
-<td>RLHF（迎合人类偏好）</td>
-<td>RLCD（校准决策）</td>
-</tr>
-</tbody></table>
-<h3 id="性能对比数据"><a href="#性能对比数据" class="headerlink" title="性能对比数据"></a>性能对比数据</h3><p>TypeSafe 官方给出的对比数据非常惊人：</p>
-<ul>
-<li><strong>速度快 193.6 倍</strong></li>
-<li><strong>成本低 444.6 倍</strong></li>
-<li><strong>输入价格</strong>：$0.042 &#x2F; 百万 token（比 Claude 低 238 倍）</li>
+<h2 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h2><ul>
+<li>程序需要对注册表项和文件进行读写删改操作，这些行为比较敏感，可能会被 Windows Defender 等误报为病毒，如发生此情况请自行添加进白名单。</li>
+<li>一些特殊菜单项可能会受到其他因素影响导致不会直接显示在右键菜单中，但是按照程序使用的通用规则在此程序中仍会显示为启用，这是正常的现象。</li>
+<li>每个右键管理程序禁用菜单方法可能不同，建议不要同时使用多个右键菜单管理程序，大部分程序使用简单暴力的备份删除法，此程序尽可能使用了系统提供的键值进行隐藏，通过其他程序禁用的菜单项目。请先使用对应程序还原，不然可能无法在此程序中看到它。</li>
+<li>此程序不用于清理未卸载干净的程序，但是可以帮助你快速定位菜单项相关注册表位置和文件位置，你可以根据相关内容进行你的操作。如果你是一个电脑小白，建议只使用启用或者禁用功能。</li>
 </ul>
-<p><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="性能对比"></p>
-<hr>
-<h2 id="五、实际应用场景"><a href="#五、实际应用场景" class="headerlink" title="五、实际应用场景"></a>五、实际应用场景</h2><p>Jev 在发布后的短短几天内，社区已经涌现了大量实战案例：</p>
-<h3 id="1-模型路由（Model-Routing）"><a href="#1-模型路由（Model-Routing）" class="headerlink" title="1. 模型路由（Model Routing）"></a>1. 模型路由（Model Routing）</h3><p>根据用户请求的复杂度，自动决定使用哪个模型处理。简单查询走Jev，复杂查询走GPT-5，实现成本与质量的最优平衡。</p>
-<h3 id="2-内容审核与风控"><a href="#2-内容审核与风控" class="headerlink" title="2. 内容审核与风控"></a>2. 内容审核与风控</h3><p>实时判断用户生成内容是否违规，输出风险等级和置信度，高置信度时自动处理，低置信度时转人工审核。</p>
-<h3 id="3-智能工单分流"><a href="#3-智能工单分流" class="headerlink" title="3. 智能工单分流"></a>3. 智能工单分流</h3><p>客服工单自动分类和优先级排序。实测中，Jev用<strong>12.8秒</strong>完成了原本需要100分钟的面试评估，成本仅<strong>0.005美元</strong>。</p>
-<h3 id="4-浏览器智能体"><a href="#4-浏览器智能体" class="headerlink" title="4. 浏览器智能体"></a>4. 浏览器智能体</h3><p>Browser Use + Jev 构建的超快浏览器智能体，搜索航班仅需<strong>7秒</strong>，成本<strong>0.0039美元</strong>。</p>
-<h3 id="5-实时游戏AI"><a href="#5-实时游戏AI" class="headerlink" title="5. 实时游戏AI"></a>5. 实时游戏AI</h3><p>Jev 驱动的实时Doom演示、贪吃蛇、数独求解等，展示了其在实时交互场景中的潜力。</p>
-<p><img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80" alt="应用场景"></p>
-<hr>
-<h2 id="六、API-实战示例"><a href="#六、API-实战示例" class="headerlink" title="六、API 实战示例"></a>六、API 实战示例</h2><p>Jev 的API设计非常简洁。以下是一个典型的调用示例：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">response = requests.post(</span><br><span class="line">    <span class="string">&quot;https://api.typesafe.ai/v1/jev&quot;</span>,</span><br><span class="line">    headers=&#123;<span class="string">&quot;Authorization&quot;</span>: <span class="string">&quot;Bearer YOUR_API_KEY&quot;</span>&#125;,</span><br><span class="line">    json=&#123;</span><br><span class="line">        <span class="string">&quot;model&quot;</span>: <span class="string">&quot;jev-1&quot;</span>,</span><br><span class="line">        <span class="string">&quot;state&quot;</span>: <span class="string">&quot;用户提交了一张身份证照片，文字识别结果为：姓名：张三，身份证号：110101199001011234&quot;</span>,</span><br><span class="line">        <span class="string">&quot;questions&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;type&quot;</span>: <span class="string">&quot;choice&quot;</span>,</span><br><span class="line">                <span class="string">&quot;text&quot;</span>: <span class="string">&quot;这张身份证照片是否清晰可辨？&quot;</span>,</span><br><span class="line">                <span class="string">&quot;options&quot;</span>: [<span class="string">&quot;清晰&quot;</span>, <span class="string">&quot;模糊&quot;</span>, <span class="string">&quot;无法判断&quot;</span>]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;type&quot;</span>: <span class="string">&quot;score&quot;</span>,</span><br><span class="line">                <span class="string">&quot;text&quot;</span>: <span class="string">&quot;评估这张身份证的真实可信度&quot;</span>,</span><br><span class="line">                <span class="string">&quot;min&quot;</span>: <span class="number">1</span>,</span><br><span class="line">                <span class="string">&quot;max&quot;</span>: <span class="number">10</span></span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;type&quot;</span>: <span class="string">&quot;noul&quot;</span>,</span><br><span class="line">                <span class="string">&quot;text&quot;</span>: <span class="string">&quot;这是否是一张真实的身份证照片？&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">result = response.json()</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
-
-<p>返回结果示例：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;answers&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span><span class="attr">&quot;choice&quot;</span><span class="punctuation">:</span> <span class="string">&quot;清晰&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;confidence&quot;</span><span class="punctuation">:</span> <span class="number">0.97</span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span><span class="attr">&quot;score&quot;</span><span class="punctuation">:</span> <span class="number">8</span><span class="punctuation">,</span> <span class="attr">&quot;confidence&quot;</span><span class="punctuation">:</span> <span class="number">0.85</span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span><span class="attr">&quot;noul&quot;</span><span class="punctuation">:</span> <span class="number">0.92</span><span class="punctuation">,</span> <span class="attr">&quot;confidence&quot;</span><span class="punctuation">:</span> <span class="number">0.88</span><span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;usage&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;input_tokens&quot;</span><span class="punctuation">:</span> <span class="number">156</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;output_tokens&quot;</span><span class="punctuation">:</span> <span class="number">0</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>注意：<strong>output_tokens 为 0</strong>，因为Jev不生成文本，输出是纯粹的结构化数据。</p>
-<hr>
-<h2 id="七、设计理念：原子化提问"><a href="#七、设计理念：原子化提问" class="headerlink" title="七、设计理念：原子化提问"></a>七、设计理念：原子化提问</h2><p>Jev 的设计哲学强调<strong>原子化提问（Atomic Questions）</strong>。不要把复杂的推理任务交给模型，而是拆分成一系列简单、明确、可验证的判断题，然后在代码层面组合结果。</p>
-<p>这种方式有几个显著优势：</p>
-<ol>
-<li><strong>可解释性强</strong>：每个判断都有独立的置信度，哪里不确定一目了然</li>
-<li><strong>易于调试</strong>：单个问题出错不会影响整体流程</li>
-<li><strong>组合灵活</strong>：代码可以自由组合多个判断结果，实现复杂业务逻辑</li>
-<li><strong>成本可控</strong>：简单问题的token消耗极低</li>
-</ol>
-<hr>
-<h2 id="八、局限性与适用边界"><a href="#八、局限性与适用边界" class="headerlink" title="八、局限性与适用边界"></a>八、局限性与适用边界</h2><p>虽然Jev非常强大，但它并非万能。官方和社区都指出了一些明确的边界：</p>
-<p><strong>Jev 擅长的：</strong></p>
-<ul>
-<li>分类、评分、路由等有明确选项的判断任务</li>
-<li>需要低延迟的实时决策场景</li>
-<li>成本敏感的大规模自动化流程</li>
-<li>需要校准置信度的风控场景</li>
-</ul>
-<p><strong>Jev 不擅长的：</strong></p>
-<ul>
-<li>开放式创意写作</li>
-<li>需要深度推理的复杂数学证明</li>
-<li>多轮对话和情感交流</li>
-<li>生成人类可读的说明文字</li>
-</ul>
-<p><strong>关键原则</strong>：Jev 不是 LLM 的替代品，而是 LLM 的互补层。在AI系统的架构中，Jev 负责快速、廉价的初步判断，LLM 负责复杂、深度的最终处理。</p>
-<hr>
-<h2 id="九、社区生态与资源"><a href="#九、社区生态与资源" class="headerlink" title="九、社区生态与资源"></a>九、社区生态与资源</h2><p>Jev 的社区增长速度令人惊讶。截至9月下旬：</p>
-<ul>
-<li><strong>GitHub 项目</strong>：超过 750 个相关开源项目</li>
-<li><strong>实战案例</strong>：2611 条社区精选内容</li>
-<li><strong>覆盖领域</strong>：金融、游戏、营销、网络安全、法律合规、科研等</li>
-</ul>
-<p>热门开源项目包括：</p>
-<ul>
-<li><strong>QuantDinger</strong>：集成Jev的AI交易系统（1.2万 Stars）</li>
-<li><strong>awesome-jev</strong>：社区精选资源列表</li>
-<li><strong>learn-agent-architecture</strong>：现代AI Agent教程（含Jev接入章节）</li>
-</ul>
-<p><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="社区生态"></p>
-<hr>
-<h2 id="十、总结与展望"><a href="#十、总结与展望" class="headerlink" title="十、总结与展望"></a>十、总结与展望</h2><p>Jev 的出现代表了一种新的AI模型范式——**从”生成内容给人看”转向”做出判断给代码用”**。这不是渐进式的改进，而是根本性的定位转变。</p>
-<p>它的意义在于：</p>
-<ol>
-<li><strong>填补了LLM的空白</strong>：在”需要快速、廉价、结构化决策”的场景中，LLM是过度设计且不够可靠的</li>
-<li><strong>重新定义了AI的工程边界</strong>：类型化输出和校准置信度让AI真正融入软件工程流程</li>
-<li><strong>开启了System One模型的新赛道</strong>：未来可能出现更多专注于特定决策类型的轻量级模型</li>
-</ol>
-<p>正如TypeSafe在官网所说：</p>
-<blockquote>
-<p><em>“LLMs produce words for people. Jev produces typed decisions and is more like code: reliable, fast, self-consistent, and type-safe.”</em></p>
-</blockquote>
-<p>如果你正在构建AI应用，不妨思考一下：你的系统中，哪些决策可以由Jev这样的System One模型处理，哪些还需要LLM的深度推理？合理分工，或许能让你的AI系统更快、更便宜、更可靠。</p>
-<hr>
-<p><strong>参考资源：</strong></p>
-<ul>
-<li><a href="https://typesafe.ai/">TypeSafe AI 官网</a></li>
-<li><a href="https://docs.typesafe.ai/">Jev 官方文档</a></li>
-<li><a href="https://jev.guide/">Jev 社区指南</a></li>
-<li><a href="https://github.com/yibie/awesome-jev">GitHub: awesome-jev</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文信息整理于2026年9月，Jev模型仍在快速迭代中，具体API和价格请以官方最新文档为准。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>科技</category>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IDM直装注册版（完美，不反弹！）</title>
-    <url>/2024/07/26/IDM%E7%9B%B4%E8%A3%85%E6%B3%A8%E5%86%8C%E7%89%88%EF%BC%88%E5%AE%8C%E7%BE%8E%EF%BC%8C%E4%B8%8D%E5%8F%8D%E5%BC%B9%EF%BC%81%EF%BC%89/</url>
-    <content><![CDATA[<p><strong>Internet Download Manager v6.38.15.2</strong></p>
-<p><strong>中文绿色特别版：【<a href="https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file">点击下载</a>】</strong></p>
-<p><strong>一定要安装IDM的浏览器插件，才可以自动调用下载！</strong></p>
-<p><strong>浏览器插件：</strong>【<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">进入安装</a>】</p>
-<p>再华丽的语言也无法表达IDM的牛C！</p>
 ]]></content>
       <categories>
         <category>软件</category>
       </categories>
       <tags>
         <tag>工具</tag>
-        <tag>浏览器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Omakub专为开发者设计的Ubuntu环境配置项目</title>
-    <url>/2024/10/28/Omakub%E4%B8%93%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BE%E8%AE%A1%E7%9A%84Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<p>Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。</p>
-<p>提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。</p>
-<p><img src="/images/posts/omakub/toolchain.svg" alt="Omakub 开发环境组成"></p>
-<h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><ol>
-<li>一键式配置：通过一条命令即可完成所有配置。</li>
-<li>预装工具：包括浏览器、终端、编辑器、通讯工具（如 WhatsApp、Signal、Spotify、Zoom、1Password）等。</li>
-<li>版本控制：内置 GitHub CLI，方便进行版本控制和代码管理。</li>
-<li>容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。</li>
-<li>语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。</li>
-<li>系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。</li>
-</ol>
-<h4 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h4><p>安装 Omakub 只需以下步骤：</p>
-<ol>
-<li><p>在计算机上安装 Ubuntu 24.04+。</p>
-</li>
-<li><p>打开终端（Ctrl+Alt+T），运行以下命令：</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://omakub.org/install | bash</span><br></pre></td></tr></table></figure>
-
-<p> 整个安装过程大约需要 30 分钟，具体时间取决于网络状况。安装完成后，系统会自动配置所有工具和设置。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -787,6 +613,158 @@
       <tags>
         <tag>工具</tag>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>v2rayN 新手保姆级教程：从下载安装到节点配置全流程</title>
+    <url>/2026/03/26/v2rayN-%E6%96%B0%E6%89%8B%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B%EF%BC%9A%E4%BB%8E%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%88%B0%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE%E5%85%A8%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="v2rayN-新手保姆级教程：从下载安装到节点配置全流程"><a href="#v2rayN-新手保姆级教程：从下载安装到节点配置全流程" class="headerlink" title="v2rayN 新手保姆级教程：从下载安装到节点配置全流程"></a>v2rayN 新手保姆级教程：从下载安装到节点配置全流程</h1><p>v2rayN 是目前功能最强大、最受欢迎的图形化代理客户端之一。随着 7.x 版本的发布，它不仅在 Windows 上表现卓越，更通过 Avalonia 框架完美支持了 macOS 和 Linux 系统。它支持多种协议，包括 VMess、VLESS (Reality)、Shadowsocks、Trojan 及 Hysteria2。</p>
+<p>如果你是第一次接触 v2rayN，本教程将手把手带你完成从下载到成功开启代理的全过程。</p>
+<h2 id="第一步：下载与安装"><a href="#第一步：下载与安装" class="headerlink" title="第一步：下载与安装"></a>第一步：下载与安装</h2><h3 id="1-获取软件"><a href="#1-获取软件" class="headerlink" title="1. 获取软件"></a>1. 获取软件</h3><p>为了确保安全性与下载速度，建议通过以下渠道获取：</p>
+<ul>
+<li><strong>GitHub 官方发布页</strong>：<a href="https://github.com/2dust/v2rayN/releases">2dust&#x2F;v2rayN&#x2F;releases</a></li>
+</ul>
+<h3 id="2-下载哪个文件？"><a href="#2-下载哪个文件？" class="headerlink" title="2. 下载哪个文件？"></a>2. 下载哪个文件？</h3><p>对于大多数 Windows 10&#x2F;11 用户，我们推荐下载： <strong><code>v2rayN-windows-64-SelfContained.zip</code></strong></p>
+<p>这个包的优势在于：</p>
+<ul>
+<li><strong>解压即用</strong>：内置了所有必需的核心组件。</li>
+<li><strong>环境免安装</strong>：无需手动安装 Microsoft .NET 运行环境。</li>
+</ul>
+<h3 id="3-安装与运行"><a href="#3-安装与运行" class="headerlink" title="3. 安装与运行"></a>3. 安装与运行</h3><ol>
+<li>将下载的压缩包解压到一个固定的位置（建议不要放在桌面或 C 盘，推荐放在 D 盘或 E 盘文件夹中）。</li>
+<li>在解压后的文件夹中，找到 <strong>v2rayN.exe</strong> (Windows 用户) 或对应的运行图标。</li>
+<li><strong>重要</strong>：Windows 用户建议右键点击程序，选择 “以管理员身份运行”，以确保代理权限正常。</li>
+</ol>
+<p><em>注意：如果运行报错提示缺少组件，请根据提示安装 .NET 8.0 Desktop Runtime。</em></p>
+<h2 id="第二步：添加节点订阅"><a href="#第二步：添加节点订阅" class="headerlink" title="第二步：添加节点订阅"></a>第二步：添加节点订阅</h2><p>v2rayN 本身只是一个工具，你需要导入有效的服务器节点（订阅链接）才能访问网络。</p>
+<h3 id="1-获取订阅地址"><a href="#1-获取订阅地址" class="headerlink" title="1. 获取订阅地址"></a>1. 获取订阅地址</h3><p>通常你可以从自己购买的加速服务（机场）后台复制 V2Ray 订阅链接。</p>
+<p>我们以<a href="https://go.v2rayn.co/yf">扬帆云机场</a>为例，购买订阅服务后登录机场服务商的后台，点击订阅链接并复制订阅地址：</p>
+<p><img src="/images/posts/v2rayn/subscription-flow.svg" alt="v2rayN 订阅导入流程"></p>
+<h3 id="2-导入软件"><a href="#2-导入软件" class="headerlink" title="2. 导入软件"></a>2. 导入软件</h3><ol>
+<li><p>打开 v2rayN 主界面。</p>
+</li>
+<li><p>点击顶部菜单栏的 <strong>订阅分组</strong>，选择 <strong>订阅分组设置</strong>。</p>
+</li>
+<li><p>在弹出的窗口中点击 <strong>添加</strong>。</p>
+</li>
+<li><p>在 <strong>别名</strong> 处随便填写，在 <strong>可选地址 (url)</strong> 处粘贴你刚才复制的订阅链接。</p>
+</li>
+<li><p>点击 <strong>确定</strong> 保存。</p>
+</li>
+<li><p>回到主界面，点击 <strong>订阅分组</strong> -&gt; **更新全部订阅 (不通过代理)**。</p>
+</li>
+</ol>
+<p>操作完成后，你应该能看到列表中出现了一排节点。</p>
+<h2 id="第三步：开启代理与模式选择"><a href="#第三步：开启代理与模式选择" class="headerlink" title="第三步：开启代理与模式选择"></a>第三步：开启代理与模式选择</h2><p>这是最关键的一步，决定了电脑是否已经处于代理加速状态。</p>
+<h3 id="1-选择节点"><a href="#1-选择节点" class="headerlink" title="1. 选择节点"></a>1. 选择节点</h3><p>在节点列表中，左键点击选中一个想使用的节点，然后按键盘上的Enter (回车)。当节点的别名变色或显示“活动”状态时，表示已选中。</p>
+<h3 id="2-设置系统代理"><a href="#2-设置系统代理" class="headerlink" title="2. 设置系统代理"></a>2. 设置系统代理</h3><p>在软件界面的<strong>最底部图标栏</strong>，找到以下三项关键设置：</p>
+<ul>
+<li><strong>系统代理</strong>：将其设置为 <strong>自动配置系统代理</strong>。此时底部图标会变为红色。</li>
+<li><strong>路由</strong>：将其设置为 <strong>绕过大陆</strong>。这可以确保访问百度、淘宝等国内网站时不走代理，访问 YouTube、Google 时才加速。</li>
+</ul>
+<h3 id="3-测试网络"><a href="#3-测试网络" class="headerlink" title="3. 测试网络"></a>3. 测试网络</h3><p>打开浏览器，尝试访问 Google。如果能正常打开，恭喜，配置已成功。</p>
+<h2 id="高级设置说明"><a href="#高级设置说明" class="headerlink" title="高级设置说明"></a>高级设置说明</h2><h3 id="TUN-模式"><a href="#TUN-模式" class="headerlink" title="TUN 模式"></a>TUN 模式</h3><p>在软件底部可以找到 TUN 模式开关。</p>
+<ul>
+<li><strong>作用</strong>：接管整机流量。对于一些不遵循系统代理的浏览器插件、游戏或特定软件非常有用。</li>
+<li><strong>建议</strong>：普通网页浏览不需要开启，仅在某些软件无法正常代理时开启。</li>
+</ul>
+<h3 id="核心选择"><a href="#核心选择" class="headerlink" title="核心选择"></a>核心选择</h3><p>v2rayN 支持切换 Xray-core、sing-box 等核心。目前大部分订阅链接都支持 Xray，保持默认即可。</p>
+<h2 id="常见问题排查-FAQ"><a href="#常见问题排查-FAQ" class="headerlink" title="常见问题排查 FAQ"></a>常见问题排查 FAQ</h2><h3 id="1-软件开启了但无法上网？"><a href="#1-软件开启了但无法上网？" class="headerlink" title="1. 软件开启了但无法上网？"></a>1. 软件开启了但无法上网？</h3><ul>
+<li>检查系统时间是否准确（误差不能超过 90 秒，否则无法连接）。</li>
+<li>确认系统代理是否已设为“自动配置系统代理”。</li>
+<li>尝试更换其他节点进行连接。</li>
+</ul>
+<h3 id="2-点击更新订阅失败？"><a href="#2-点击更新订阅失败？" class="headerlink" title="2. 点击更新订阅失败？"></a>2. 点击更新订阅失败？</h3><ul>
+<li>请确认你的网络能够访问订阅地址，或者尝试更换不同的网络环境。</li>
+<li>确认订阅链接是否过期或被服务商重置。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pandas数据结构</title>
+    <url>/2024/07/23/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>构造 DataFrame 和 Series 的方法有多种。以下是一些常见的方法：</p>
+<h3 id="构造-DataFrame："><a href="#构造-DataFrame：" class="headerlink" title="构造 DataFrame："></a>构造 DataFrame：</h3><ol>
+<li><strong>从字典构造</strong>：使用字典创建 DataFrame，字典的键是列名，值是列的数据。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;A&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="string">&#x27;B&#x27;</span>: [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]&#125;</span><br><span class="line">df = pd.DataFrame(data)</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>从列表构造</strong>：使用列表构造 DataFrame，每个子列表代表一行数据。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = [[<span class="number">1</span>, <span class="number">4</span>], [<span class="number">2</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">6</span>]]</span><br><span class="line">df = pd.DataFrame(data, columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>从 NumPy 数组构造</strong>：使用 NumPy 数组构造 DataFrame。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">data = np.array([[<span class="number">1</span>, <span class="number">4</span>], [<span class="number">2</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">6</span>]])</span><br><span class="line">df = pd.DataFrame(data, columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><strong>从 Series 构造</strong>：使用 Series 构造 DataFrame。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s1 = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">s2 = pd.Series([<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&#x27;A&#x27;</span>: s1, <span class="string">&#x27;B&#x27;</span>: s2&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="构造-Series："><a href="#构造-Series：" class="headerlink" title="构造 Series："></a>构造 Series：</h3><ol>
+<li><strong>从列表构造</strong>：使用列表构造 Series。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>从 NumPy 数组构造</strong>：使用 NumPy 数组构造 Series。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">arr = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br><span class="line">s = pd.Series(arr)</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>从字典构造</strong>：使用字典构造 Series，字典的键作为索引。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = &#123;<span class="string">&#x27;a&#x27;</span>: <span class="number">1</span>, <span class="string">&#x27;b&#x27;</span>: <span class="number">2</span>, <span class="string">&#x27;c&#x27;</span>: <span class="number">3</span>, <span class="string">&#x27;d&#x27;</span>: <span class="number">4</span>&#125;</span><br><span class="line">s = pd.Series(data)</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><strong>从标量值构造</strong>：使用标量值构造 Series，指定索引长度。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = pd.Series(<span class="number">5</span>, index=[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<p>这些是构造 DataFrame 和 Series 最常见的方法，根据数据的来源和形式选择合适的构造方式。</p>
+<hr>
+<p>在 Pandas 中，<code>iloc</code>、<code>loc</code>、<code>at</code> 和 <code>iat</code> 是用于访问数据的四种方法，它们之间的区别和使用方法如下：</p>
+<ol>
+<li><code>iloc</code>：通过整数位置来访问数据。你可以使用行号和列号来获取数据。行和列的编号都是从 0 开始的。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个示例 DataFrame</span></span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&#x27;A&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="string">&#x27;B&#x27;</span>: [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过整数位置访问数据</span></span><br><span class="line"><span class="built_in">print</span>(df.iloc[<span class="number">0</span>, <span class="number">1</span>])  <span class="comment"># 输出第 0 行、第 1 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><code>loc</code>：通过标签来访问数据。你可以使用行标签和列标签来获取数据。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 loc 访问数据</span></span><br><span class="line"><span class="built_in">print</span>(df.loc[<span class="number">0</span>, <span class="string">&#x27;B&#x27;</span>])  <span class="comment"># 输出第 0 行、&#x27;B&#x27; 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><code>at</code>：通过标签快速访问标量值。类似于 <code>loc</code>，但 <code>at</code> 只能用于获取单个元素，速度更快。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 at 访问单个元素</span></span><br><span class="line"><span class="built_in">print</span>(df.at[<span class="number">0</span>, <span class="string">&#x27;B&#x27;</span>])  <span class="comment"># 输出第 0 行、&#x27;B&#x27; 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><code>iat</code>：通过整数位置快速访问标量值。类似于 <code>iloc</code>，但 <code>iat</code> 只能用于获取单个元素，速度更快。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 iat 访问单个元素</span></span><br><span class="line"><span class="built_in">print</span>(df.iat[<span class="number">0</span>, <span class="number">1</span>])  <span class="comment"># 输出第 0 行、第 1 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
+
+<p>总结一下：</p>
+<ul>
+<li>当你知道你要访问的数据的位置时，使用 <code>iloc</code> 和 <code>iat</code>，它们更快。其中iat获取单个元素</li>
+<li>当你知道你要访问的数据的标签时，使用 <code>loc</code> 和 <code>at</code>，它们更直观。其中at获取单个元素</li>
+</ul>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -1301,387 +1279,6 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>Windows右键菜单管理软件</title>
-    <url>/2025/08/01/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h4 id="ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"><a href="#ContextMenuManager-是一款免安装的开源软件，可以非常方便的管理Windows-电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁" class="headerlink" title="ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁"></a>ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁</h4><h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
-<li>启用或禁用文件、文件夹、新建、发送到、打开方式、自定义文件格式、IE浏览器、WinX等右键菜单项目</li>
-<li>对上述场景右键菜单项目进行修改名称、修改图标、导航注册表位置、导航文件位置、永久删除等操作</li>
-<li>对上述场景右键菜单自定义添加项目，自定义菜单命令</li>
-</ul>
-<h2 id="兼容性能"><a href="#兼容性能" class="headerlink" title="兼容性能"></a>兼容性能</h2><ul>
-<li>适用于Win 11、Win10、8.1、8、7、Vista</li>
-<li>适用于 64bit、32bit CPU 操作系统</li>
-<li>适用于高分屏，最佳显示缩放比为150%</li>
-<li>程序支持国际化多语言显示，欢迎为此程序制作语言字典</li>
-</ul>
-<h2 id="开源程序：【点击下载】"><a href="#开源程序：【点击下载】" class="headerlink" title="开源程序：【点击下载】"></a>开源程序：【<a href="https://github.com/BluePointLilac/ContextMenuManager">点击下载</a>】</h2><h2 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h2><p><img src="/images/posts/windows-context-menu/overview.svg" alt="Windows 右键菜单管理示意"></p>
-<h2 id="程序下载"><a href="#程序下载" class="headerlink" title="程序下载"></a>程序下载</h2><ul>
-<li><a href="https://github.com/BluePointLilac/ContextMenuManager/releases/latest">最新版本</a><br>  <a href="https://github.com/BluePointLilac/ContextMenuManager/releases">GitHub Releases</a><br>  <a href="https://gitee.com/BluePointLilac/ContextMenuManager/releases">Gitee Releases</a></li>
-<li>下载说明：在Assets文件列表里面下载zip（建议）或者直接下载exe</li>
-<li>.NET版本说明：程序分为.NET3.5版和.NET4.0版，均适用于Win10、8.1、8、7、Vista系统<br>  win7自带.NET3.5，win8、win8.1、win10自带.NET4.0以上版本，Vista系统既不自带.NET3.5也不自带4.0以上版本<br>  自带.NET可直接运行程序，不自带则需要安装对应版本的<a href="https://dotnet.microsoft.com/download/dotnet-framework">.NET Framework运行库</a></li>
-</ul>
-<h2 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h2><ul>
-<li>程序需要对注册表项和文件进行读写删改操作，这些行为比较敏感，可能会被 Windows Defender 等误报为病毒，如发生此情况请自行添加进白名单。</li>
-<li>一些特殊菜单项可能会受到其他因素影响导致不会直接显示在右键菜单中，但是按照程序使用的通用规则在此程序中仍会显示为启用，这是正常的现象。</li>
-<li>每个右键管理程序禁用菜单方法可能不同，建议不要同时使用多个右键菜单管理程序，大部分程序使用简单暴力的备份删除法，此程序尽可能使用了系统提供的键值进行隐藏，通过其他程序禁用的菜单项目。请先使用对应程序还原，不然可能无法在此程序中看到它。</li>
-<li>此程序不用于清理未卸载干净的程序，但是可以帮助你快速定位菜单项相关注册表位置和文件位置，你可以根据相关内容进行你的操作。如果你是一个电脑小白，建议只使用启用或者禁用功能。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一文带你深入理解MAC地址和IP地址</title>
-    <url>/2024/10/14/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3MAC%E5%9C%B0%E5%9D%80%E5%92%8CIP%E5%9C%B0%E5%9D%80/</url>
-    <content><![CDATA[<p>从计算机网络课本的角度来看，MAC地址和IP地址在网络通信中扮演着不同但互补的角色。下面将从更深入的层面对比二者：</p>
-<h3 id="MAC地址（Media-Access-Control-address）："><a href="#MAC地址（Media-Access-Control-address）：" class="headerlink" title="MAC地址（Media Access Control address）："></a>MAC地址（Media Access Control address）：</h3><ol>
-<li><p><strong>定义</strong>：</p>
-<ul>
-<li>MAC地址是数据链路层的地址，用于标识网络接口卡（NIC）。</li>
-<li>它是一个48位的唯一标识符，通常由IEEE 802标准组织分配。</li>
-</ul>
-</li>
-<li><p><strong>作用</strong>：</p>
-<ul>
-<li>MAC地址用于局域网（LAN）内部的设备通信，确保数据帧在局域网内正确地从发送者传输到接收者。</li>
-<li>它与以太网技术紧密相关，是链路层寻址和介质访问控制的基础。</li>
-</ul>
-</li>
-<li><p><strong>特性</strong>：</p>
-<ul>
-<li>MAC地址是硬件地址，通常烧录在网络设备的EPROM中，不易更改。</li>
-<li>它在制造时被分配，保证了全球唯一性，但可以通过软件手段进行克隆或伪装。</li>
-</ul>
-</li>
-<li><p><strong>通信过程</strong>：</p>
-<ul>
-<li>在以太网中，数据帧的发送和接收都依赖于MAC地址。</li>
-<li>使用ARP协议将IP地址解析为MAC地址，以便在局域网内进行通信。</li>
-</ul>
-</li>
-</ol>
-<h3 id="IP地址（Internet-Protocol-address）："><a href="#IP地址（Internet-Protocol-address）：" class="headerlink" title="IP地址（Internet Protocol address）："></a>IP地址（Internet Protocol address）：</h3><ol>
-<li><p><strong>定义</strong>：</p>
-<ul>
-<li>IP地址是网络层的地址，用于标识网络中的设备。</li>
-<li>它是一个32位（IPv4）或128位（IPv6）的数字，用于在更大的网络范围内（包括互联网）进行寻址。</li>
-</ul>
-</li>
-<li><p><strong>作用</strong>：</p>
-<ul>
-<li>IP地址用于不同网络之间的设备通信，确保数据包能够跨越多个网络传输到目标设备。</li>
-<li>它支持路由选择，允许数据包在复杂的网络拓扑中找到到达目的地的路径。</li>
-</ul>
-</li>
-<li><p><strong>特性</strong>：</p>
-<ul>
-<li>IP地址可以是静态分配的，也可以通过DHCP等协议动态分配。</li>
-<li>IPv4地址资源有限，而IPv6提供了几乎无限的地址空间。</li>
-</ul>
-</li>
-<li><p><strong>通信过程</strong>：</p>
-<ul>
-<li>IP地址用于在网络层进行路由选择，确定数据包的传输路径。</li>
-<li>在数据链路层，IP数据包被封装成帧，通过MAC地址在局域网内传输。</li>
-</ul>
-</li>
-</ol>
-<h3 id="联系与区别："><a href="#联系与区别：" class="headerlink" title="联系与区别："></a>联系与区别：</h3><ol>
-<li><p><strong>层级</strong>：</p>
-<ul>
-<li>MAC地址工作在OSI模型的数据链路层，而IP地址工作在网络层。</li>
-<li>它们共同确保了数据能够在网络的不同层级中正确传输。</li>
-</ul>
-</li>
-<li><p><strong>寻址范围</strong>：</p>
-<ul>
-<li>MAC地址局限于局域网，而IP地址可以跨越多个网络，包括互联网。</li>
-</ul>
-</li>
-<li><p><strong>动态性</strong>：</p>
-<ul>
-<li>MAC地址通常是固定的，而IP地址可以动态变化，尤其是在移动设备和动态IP环境中。</li>
-</ul>
-</li>
-<li><p><strong>安全性</strong>：</p>
-<ul>
-<li>MAC地址和IP地址都可以用于网络访问控制，但它们本身并不提供强大的安全保护。</li>
-<li>通常需要结合其他安全措施（如防火墙、VPN、加密协议等）来提高网络通信的安全性。</li>
-</ul>
-</li>
-<li><p><strong>地址解析</strong>：</p>
-<ul>
-<li>在局域网内，ARP协议用于将IP地址解析为MAC地址，以便在链路层进行通信。</li>
-<li>在更广泛的网络中，IP地址用于路由选择，而MAC地址用于最终的数据帧传输。</li>
-</ul>
-</li>
-</ol>
-<p>通过这些深入的对比，我们可以更好地理解MAC地址和IP地址在计算机网络中的作用和相互关系。它们是网络通信的基础，确保了数据能够在复杂的网络环境中从源头正确地传输到目的地。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一文带你深入理解CSMA/CD和CSMA/CA</title>
-    <url>/2024/10/14/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3CSMA-CD%E5%92%8CCSMA-CA/</url>
-    <content><![CDATA[<p>CSMA&#x2F;CD（Carrier Sense Multiple Access with Collision Detection）和CSMA&#x2F;CA（Carrier Sense Multiple Access with Collision Avoidance）都是网络通信中用来控制多个设备如何共享同一通信介质（比如以太网）的协议。它们都属于CSMA（Carrier Sense Multiple Access）家族，意思是“载波侦听多路访问”，但处理冲突的方式不同。</p>
-<h3 id="CSMA-CD（以太网常用）"><a href="#CSMA-CD（以太网常用）" class="headerlink" title="CSMA&#x2F;CD（以太网常用）"></a>CSMA&#x2F;CD（以太网常用）</h3><p><strong>通俗解释：</strong><br>想象一下，你在一个嘈杂的咖啡馆里，想要和朋友聊天。你先看看周围（载波侦听），如果没人在说话（没有信号），你就开口说话。但如果你发现有人在说话（检测到信号），你就等他们说完再开口。如果在你说话的时候，你发现有人也在说话（冲突检测），你就停下来，等一会儿再试。</p>
-<p><strong>特点：</strong></p>
-<ul>
-<li><strong>冲突检测：</strong> 如果两个设备同时发送数据，它们会检测到冲突，然后停止发送，等待随机时间后再次尝试。</li>
-<li><strong>使用场景：</strong> 适用于有线网络，如以太网。在有线网络中，电信号的传播速度快，所以即使发生冲突，也能很快检测到并处理。</li>
-</ul>
-<h3 id="CSMA-CA（无线网络常用）"><a href="#CSMA-CA（无线网络常用）" class="headerlink" title="CSMA&#x2F;CA（无线网络常用）"></a>CSMA&#x2F;CA（无线网络常用）</h3><p><strong>通俗解释：</strong><br>现在想象你在同一个咖啡馆里，但这次你和朋友通过手语交流。在你开始“说话”之前，你先看看周围有没有人也在用手语（载波侦听）。如果没有，你就开始。如果你发现有人开始“说话”了，你就等他们说完（冲突避免）。你不会等到冲突发生后才停止，而是通过一些策略来避免它。</p>
-<p><strong>特点：</strong></p>
-<ul>
-<li><strong>冲突避免：</strong> 在发送数据之前，设备会使用一种称为“退避算法”的机制来避免冲突。如果检测到信道忙，它会等待一段时间再尝试。</li>
-<li><strong>使用场景：</strong> 适用于无线网络，如Wi-Fi。无线信号的传播速度比有线慢，所以冲突检测不太实用。CSMA&#x2F;CA通过避免冲突来提高效率。</li>
-</ul>
-<h3 id="异同点："><a href="#异同点：" class="headerlink" title="异同点："></a>异同点：</h3><ul>
-<li><strong>相同点：</strong> 两者都是CSMA的变体，都需要在发送数据前先检测信道是否空闲。</li>
-<li><strong>不同点：</strong><ul>
-<li><strong>冲突处理：</strong> CSMA&#x2F;CD在冲突发生后处理，而CSMA&#x2F;CA在冲突可能发生前就采取措施避免。</li>
-<li><strong>适用场景：</strong> CSMA&#x2F;CD适用于有线网络，CSMA&#x2F;CA适用于无线网络。</li>
-<li><strong>效率：</strong> 在无线网络中，CSMA&#x2F;CA通常比CSMA&#x2F;CD更有效，因为它减少了因冲突导致的重传。</li>
-</ul>
-</li>
-</ul>
-<p>简单来说，CSMA&#x2F;CD像是在咖啡馆里大声说话，如果撞上了就停下来，等会儿再说；而CSMA&#x2F;CA像是用手语交流，如果看到别人也在“说话”，就等他们说完再说。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>v2rayN 新手保姆级教程：从下载安装到节点配置全流程</title>
-    <url>/2026/03/26/v2rayN-%E6%96%B0%E6%89%8B%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B%EF%BC%9A%E4%BB%8E%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%88%B0%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE%E5%85%A8%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="v2rayN-新手保姆级教程：从下载安装到节点配置全流程"><a href="#v2rayN-新手保姆级教程：从下载安装到节点配置全流程" class="headerlink" title="v2rayN 新手保姆级教程：从下载安装到节点配置全流程"></a>v2rayN 新手保姆级教程：从下载安装到节点配置全流程</h1><p>v2rayN 是目前功能最强大、最受欢迎的图形化代理客户端之一。随着 7.x 版本的发布，它不仅在 Windows 上表现卓越，更通过 Avalonia 框架完美支持了 macOS 和 Linux 系统。它支持多种协议，包括 VMess、VLESS (Reality)、Shadowsocks、Trojan 及 Hysteria2。</p>
-<p>如果你是第一次接触 v2rayN，本教程将手把手带你完成从下载到成功开启代理的全过程。</p>
-<h2 id="第一步：下载与安装"><a href="#第一步：下载与安装" class="headerlink" title="第一步：下载与安装"></a>第一步：下载与安装</h2><h3 id="1-获取软件"><a href="#1-获取软件" class="headerlink" title="1. 获取软件"></a>1. 获取软件</h3><p>为了确保安全性与下载速度，建议通过以下渠道获取：</p>
-<ul>
-<li><strong>GitHub 官方发布页</strong>：<a href="https://github.com/2dust/v2rayN/releases">2dust&#x2F;v2rayN&#x2F;releases</a></li>
-</ul>
-<h3 id="2-下载哪个文件？"><a href="#2-下载哪个文件？" class="headerlink" title="2. 下载哪个文件？"></a>2. 下载哪个文件？</h3><p>对于大多数 Windows 10&#x2F;11 用户，我们推荐下载： <strong><code>v2rayN-windows-64-SelfContained.zip</code></strong></p>
-<p>这个包的优势在于：</p>
-<ul>
-<li><strong>解压即用</strong>：内置了所有必需的核心组件。</li>
-<li><strong>环境免安装</strong>：无需手动安装 Microsoft .NET 运行环境。</li>
-</ul>
-<h3 id="3-安装与运行"><a href="#3-安装与运行" class="headerlink" title="3. 安装与运行"></a>3. 安装与运行</h3><ol>
-<li>将下载的压缩包解压到一个固定的位置（建议不要放在桌面或 C 盘，推荐放在 D 盘或 E 盘文件夹中）。</li>
-<li>在解压后的文件夹中，找到 <strong>v2rayN.exe</strong> (Windows 用户) 或对应的运行图标。</li>
-<li><strong>重要</strong>：Windows 用户建议右键点击程序，选择 “以管理员身份运行”，以确保代理权限正常。</li>
-</ol>
-<p><em>注意：如果运行报错提示缺少组件，请根据提示安装 .NET 8.0 Desktop Runtime。</em></p>
-<h2 id="第二步：添加节点订阅"><a href="#第二步：添加节点订阅" class="headerlink" title="第二步：添加节点订阅"></a>第二步：添加节点订阅</h2><p>v2rayN 本身只是一个工具，你需要导入有效的服务器节点（订阅链接）才能访问网络。</p>
-<h3 id="1-获取订阅地址"><a href="#1-获取订阅地址" class="headerlink" title="1. 获取订阅地址"></a>1. 获取订阅地址</h3><p>通常你可以从自己购买的加速服务（机场）后台复制 V2Ray 订阅链接。</p>
-<p>我们以<a href="https://go.v2rayn.co/yf">扬帆云机场</a>为例，购买订阅服务后登录机场服务商的后台，点击订阅链接并复制订阅地址：</p>
-<p><img src="/images/posts/v2rayn/subscription-flow.svg" alt="v2rayN 订阅导入流程"></p>
-<h3 id="2-导入软件"><a href="#2-导入软件" class="headerlink" title="2. 导入软件"></a>2. 导入软件</h3><ol>
-<li><p>打开 v2rayN 主界面。</p>
-</li>
-<li><p>点击顶部菜单栏的 <strong>订阅分组</strong>，选择 <strong>订阅分组设置</strong>。</p>
-</li>
-<li><p>在弹出的窗口中点击 <strong>添加</strong>。</p>
-</li>
-<li><p>在 <strong>别名</strong> 处随便填写，在 <strong>可选地址 (url)</strong> 处粘贴你刚才复制的订阅链接。</p>
-</li>
-<li><p>点击 <strong>确定</strong> 保存。</p>
-</li>
-<li><p>回到主界面，点击 <strong>订阅分组</strong> -&gt; **更新全部订阅 (不通过代理)**。</p>
-</li>
-</ol>
-<p>操作完成后，你应该能看到列表中出现了一排节点。</p>
-<h2 id="第三步：开启代理与模式选择"><a href="#第三步：开启代理与模式选择" class="headerlink" title="第三步：开启代理与模式选择"></a>第三步：开启代理与模式选择</h2><p>这是最关键的一步，决定了电脑是否已经处于代理加速状态。</p>
-<h3 id="1-选择节点"><a href="#1-选择节点" class="headerlink" title="1. 选择节点"></a>1. 选择节点</h3><p>在节点列表中，左键点击选中一个想使用的节点，然后按键盘上的Enter (回车)。当节点的别名变色或显示“活动”状态时，表示已选中。</p>
-<h3 id="2-设置系统代理"><a href="#2-设置系统代理" class="headerlink" title="2. 设置系统代理"></a>2. 设置系统代理</h3><p>在软件界面的<strong>最底部图标栏</strong>，找到以下三项关键设置：</p>
-<ul>
-<li><strong>系统代理</strong>：将其设置为 <strong>自动配置系统代理</strong>。此时底部图标会变为红色。</li>
-<li><strong>路由</strong>：将其设置为 <strong>绕过大陆</strong>。这可以确保访问百度、淘宝等国内网站时不走代理，访问 YouTube、Google 时才加速。</li>
-</ul>
-<h3 id="3-测试网络"><a href="#3-测试网络" class="headerlink" title="3. 测试网络"></a>3. 测试网络</h3><p>打开浏览器，尝试访问 Google。如果能正常打开，恭喜，配置已成功。</p>
-<h2 id="高级设置说明"><a href="#高级设置说明" class="headerlink" title="高级设置说明"></a>高级设置说明</h2><h3 id="TUN-模式"><a href="#TUN-模式" class="headerlink" title="TUN 模式"></a>TUN 模式</h3><p>在软件底部可以找到 TUN 模式开关。</p>
-<ul>
-<li><strong>作用</strong>：接管整机流量。对于一些不遵循系统代理的浏览器插件、游戏或特定软件非常有用。</li>
-<li><strong>建议</strong>：普通网页浏览不需要开启，仅在某些软件无法正常代理时开启。</li>
-</ul>
-<h3 id="核心选择"><a href="#核心选择" class="headerlink" title="核心选择"></a>核心选择</h3><p>v2rayN 支持切换 Xray-core、sing-box 等核心。目前大部分订阅链接都支持 Xray，保持默认即可。</p>
-<h2 id="常见问题排查-FAQ"><a href="#常见问题排查-FAQ" class="headerlink" title="常见问题排查 FAQ"></a>常见问题排查 FAQ</h2><h3 id="1-软件开启了但无法上网？"><a href="#1-软件开启了但无法上网？" class="headerlink" title="1. 软件开启了但无法上网？"></a>1. 软件开启了但无法上网？</h3><ul>
-<li>检查系统时间是否准确（误差不能超过 90 秒，否则无法连接）。</li>
-<li>确认系统代理是否已设为“自动配置系统代理”。</li>
-<li>尝试更换其他节点进行连接。</li>
-</ul>
-<h3 id="2-点击更新订阅失败？"><a href="#2-点击更新订阅失败？" class="headerlink" title="2. 点击更新订阅失败？"></a>2. 点击更新订阅失败？</h3><ul>
-<li>请确认你的网络能够访问订阅地址，或者尝试更换不同的网络环境。</li>
-<li>确认订阅链接是否过期或被服务商重置。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一文带你光速入门Mathlab</title>
-    <url>/2024/09/17/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E5%85%89%E9%80%9F%E5%85%A5%E9%97%A8Mathlab/</url>
-    <content><![CDATA[<p><img src="/images/posts/matlab/overview.svg" alt="MATLAB 入门能力地图"></p>
-<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h2><p>Mathlab是一款功能强大的数学计算软件，广泛应用于工程、科学研究、数据分析等领域。它以其强大的矩阵运算和数据可视化能力，成为学术界和工业界的重要工具。本文将为你提供一个全面的入门指南，包括软件安装、基础操作、常用函数及实际应用示例，帮助你迅速上手Mathlab。</p>
-<h2 id="2-安装与环境配置"><a href="#2-安装与环境配置" class="headerlink" title="2. 安装与环境配置"></a>2. 安装与环境配置</h2><h3 id="2-1-下载与安装"><a href="#2-1-下载与安装" class="headerlink" title="2.1 下载与安装"></a>2.1 下载与安装</h3><p>首先，访问<a href="https://www.mathworks.com/">Mathlab官网</a>下载适合你操作系统的版本。安装过程中，你需要选择安装的组件，建议选择“Mathlab”及其相关工具箱，以获得更全面的功能支持。</p>
-<h3 id="2-2-界面介绍"><a href="#2-2-界面介绍" class="headerlink" title="2.2 界面介绍"></a>2.2 界面介绍</h3><p>启动Mathlab后，你会看到主界面包含以下几个部分：</p>
-<ul>
-<li><strong>命令窗口</strong>：用于输入命令并显示输出。</li>
-<li><strong>编辑器</strong>：用于编写和保存脚本文件。</li>
-<li><strong>工作区</strong>：显示当前工作环境中的变量。</li>
-<li><strong>当前文件夹</strong>：显示当前路径下的文件和文件夹。</li>
-</ul>
-<h2 id="3-基础操作"><a href="#3-基础操作" class="headerlink" title="3. 基础操作"></a>3. 基础操作</h2><h3 id="3-1-变量与数据类型"><a href="#3-1-变量与数据类型" class="headerlink" title="3.1 变量与数据类型"></a>3.1 变量与数据类型</h3><p>在Mathlab中，变量赋值使用“&#x3D;”符号。例如：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span>; <span class="comment">% 整数</span></span><br><span class="line">y = <span class="number">3.14</span>; <span class="comment">% 浮点数</span></span><br><span class="line">z = <span class="string">&#x27;Mathlab&#x27;</span>; <span class="comment">% 字符串</span></span><br></pre></td></tr></table></figure>
-<p>Mathlab支持多种数据类型，包括标量、向量、矩阵和字符串等。</p>
-<h3 id="3-2-数组与矩阵"><a href="#3-2-数组与矩阵" class="headerlink" title="3.2 数组与矩阵"></a>3.2 数组与矩阵</h3><p>数组和矩阵是Mathlab的核心数据结构。可以通过方括号创建：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">A = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>; <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]; <span class="comment">% 创建一个2x3矩阵</span></span><br></pre></td></tr></table></figure>
-<p>数组的索引从1开始，可以使用冒号运算符生成序列：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">v = <span class="number">1</span>:<span class="number">10</span>; <span class="comment">% 生成1到10的行向量</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-3-控制结构"><a href="#3-3-控制结构" class="headerlink" title="3.3 控制结构"></a>3.3 控制结构</h3><p>Mathlab支持常见的控制结构，如条件语句和循环语句：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> x &gt; <span class="number">0</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是正数&#x27;</span>);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是负数或零&#x27;</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="built_in">i</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="4-常用函数"><a href="#4-常用函数" class="headerlink" title="4. 常用函数"></a>4. 常用函数</h2><h3 id="4-1-数学函数"><a href="#4-1-数学函数" class="headerlink" title="4.1 数学函数"></a>4.1 数学函数</h3><p>Mathlab提供丰富的数学函数，以下是一些常用的：</p>
-<ul>
-<li><code>sin(x)</code>: 计算正弦值。</li>
-<li><code>cos(x)</code>: 计算余弦值。</li>
-<li><code>exp(x)</code>: 计算自然指数。</li>
-</ul>
-<h3 id="4-2-统计函数"><a href="#4-2-统计函数" class="headerlink" title="4.2 统计函数"></a>4.2 统计函数</h3><p>在数据分析中，常用的统计函数包括：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line">meanValue = <span class="built_in">mean</span>(data); <span class="comment">% 计算均值</span></span><br><span class="line">stdValue = std(data); <span class="comment">% 计算标准差</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-3-绘图函数"><a href="#4-3-绘图函数" class="headerlink" title="4.3 绘图函数"></a>4.3 绘图函数</h3><p>Mathlab的绘图功能强大，可以绘制多种类型的图形：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">100</span>); <span class="comment">% 生成0到2π的100个点</span></span><br><span class="line">y = <span class="built_in">sin</span>(x);</span><br><span class="line"><span class="built_in">figure</span>; <span class="comment">% 创建新图形窗口</span></span><br><span class="line"><span class="built_in">plot</span>(x, y, <span class="string">&#x27;r-&#x27;</span>, <span class="string">&#x27;LineWidth&#x27;</span>, <span class="number">2</span>); <span class="comment">% 绘制sin(x)曲线</span></span><br><span class="line">xlabel(<span class="string">&#x27;x (弧度)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;sin(x)&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;正弦函数图&#x27;</span>);</span><br><span class="line">grid on; <span class="comment">% 添加网格</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="5-实例应用"><a href="#5-实例应用" class="headerlink" title="5. 实例应用"></a>5. 实例应用</h2><h3 id="5-1-数据分析"><a href="#5-1-数据分析" class="headerlink" title="5.1 数据分析"></a>5.1 数据分析</h3><p>假设我们有一组随机生成的数据，需要计算其均值和标准差，并进行可视化：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = <span class="built_in">randn</span>(<span class="number">1</span>, <span class="number">1000</span>); <span class="comment">% 生成1000个随机数</span></span><br><span class="line">meanValue = <span class="built_in">mean</span>(data);</span><br><span class="line">stdValue = std(data);</span><br><span class="line"></span><br><span class="line"><span class="built_in">figure</span>;</span><br><span class="line">histogram(data, <span class="number">30</span>); <span class="comment">% 绘制直方图</span></span><br><span class="line">xlabel(<span class="string">&#x27;值&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;频率&#x27;</span>);</span><br><span class="line">title([<span class="string">&#x27;数据的均值：&#x27;</span>, num2str(meanValue), <span class="string">&#x27; 标准差：&#x27;</span>, num2str(stdValue)]);</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-2-信号处理"><a href="#5-2-信号处理" class="headerlink" title="5.2 信号处理"></a>5.2 信号处理</h3><p>在信号处理中，我们可以生成和分析不同频率的信号：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">Fs = <span class="number">1000</span>; <span class="comment">% 采样频率</span></span><br><span class="line">t = <span class="number">0</span>:<span class="number">1</span>/Fs:<span class="number">1</span>; <span class="comment">% 时间向量</span></span><br><span class="line">y1 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">50</span>*t); <span class="comment">% 50Hz信号</span></span><br><span class="line">y2 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">120</span>*t); <span class="comment">% 120Hz信号</span></span><br><span class="line">y = y1 + y2; <span class="comment">% 合成信号</span></span><br><span class="line"><span class="built_in">plot</span>(t, y); <span class="comment">% 绘制信号</span></span><br><span class="line">xlabel(<span class="string">&#x27;时间 (秒)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;幅度&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;合成信号&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-3-图像处理"><a href="#5-3-图像处理" class="headerlink" title="5.3 图像处理"></a>5.3 图像处理</h3><p>Mathlab也支持图像处理，可以用以下代码读取和显示图像：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">img = imread(<span class="string">&#x27;image.jpg&#x27;</span>); <span class="comment">% 读取图像</span></span><br><span class="line">imshow(img); <span class="comment">% 显示图像</span></span><br><span class="line">title(<span class="string">&#x27;原始图像&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-进阶功能"><a href="#6-进阶功能" class="headerlink" title="6. 进阶功能"></a>6. 进阶功能</h2><h3 id="6-1-脚本与函数"><a href="#6-1-脚本与函数" class="headerlink" title="6.1 脚本与函数"></a>6.1 脚本与函数</h3><p>通过编写脚本文件（.m文件），可以将多个命令组织在一起，方便重用。此外，还可以自定义函数，增强代码的可读性和可维护性。</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">result</span> = <span class="title">addNumbers</span><span class="params">(a, b)</span></span></span><br><span class="line">    <span class="comment">% 此函数返回两个数字的和</span></span><br><span class="line">    result = a + b;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="6-2-工具箱扩展"><a href="#6-2-工具箱扩展" class="headerlink" title="6.2 工具箱扩展"></a>6.2 工具箱扩展</h3><p>Mathlab提供多种工具箱，如<a href="https://www.mathworks.com/products/image.html">图像处理工具箱</a>、<a href="https://www.mathworks.com/products/signal.html">信号处理工具箱</a>等，安装这些工具箱可以扩展Mathlab的功能。你可以通过Mathlab命令窗口中的<code>ver</code>命令查看已安装的工具箱。</p>
-<h2 id="7-学习资源"><a href="#7-学习资源" class="headerlink" title="7. 学习资源"></a>7. 学习资源</h2><p>以下是一些推荐的学习资源，可以帮助你进一步深入学习Mathlab：</p>
-<ul>
-<li><a href="https://www.mathworks.com/help/matlab/">Mathlab文档</a></li>
-<li><a href="https://www.mathworks.com/learn/tutorials/matlab-onramp.html">Mathlab视频教程</a></li>
-<li><a href="https://www.mathworks.com/matlabcentral/">Mathlab中央论坛</a></li>
-</ul>
-<h2 id="8-结论"><a href="#8-结论" class="headerlink" title="8. 结论"></a>8. 结论</h2><p>通过本教程，你已经全面了解了Mathlab的基本操作、常用函数及实际应用示例。无论是在学术研究、工程设计还是数据分析中，Mathlab都能为你提供强有力的支持。继续深入学习Mathlab的各项功能，将帮助你在各领域中实现更高效的工作。</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>设计</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>pandas数据结构</title>
-    <url>/2024/07/23/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>构造 DataFrame 和 Series 的方法有多种。以下是一些常见的方法：</p>
-<h3 id="构造-DataFrame："><a href="#构造-DataFrame：" class="headerlink" title="构造 DataFrame："></a>构造 DataFrame：</h3><ol>
-<li><strong>从字典构造</strong>：使用字典创建 DataFrame，字典的键是列名，值是列的数据。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;A&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="string">&#x27;B&#x27;</span>: [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]&#125;</span><br><span class="line">df = pd.DataFrame(data)</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><strong>从列表构造</strong>：使用列表构造 DataFrame，每个子列表代表一行数据。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = [[<span class="number">1</span>, <span class="number">4</span>], [<span class="number">2</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">6</span>]]</span><br><span class="line">df = pd.DataFrame(data, columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><strong>从 NumPy 数组构造</strong>：使用 NumPy 数组构造 DataFrame。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">data = np.array([[<span class="number">1</span>, <span class="number">4</span>], [<span class="number">2</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">6</span>]])</span><br><span class="line">df = pd.DataFrame(data, columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li><strong>从 Series 构造</strong>：使用 Series 构造 DataFrame。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s1 = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">s2 = pd.Series([<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&#x27;A&#x27;</span>: s1, <span class="string">&#x27;B&#x27;</span>: s2&#125;)</span><br></pre></td></tr></table></figure>
-
-<h3 id="构造-Series："><a href="#构造-Series：" class="headerlink" title="构造 Series："></a>构造 Series：</h3><ol>
-<li><strong>从列表构造</strong>：使用列表构造 Series。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><strong>从 NumPy 数组构造</strong>：使用 NumPy 数组构造 Series。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">arr = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br><span class="line">s = pd.Series(arr)</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><strong>从字典构造</strong>：使用字典构造 Series，字典的键作为索引。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = &#123;<span class="string">&#x27;a&#x27;</span>: <span class="number">1</span>, <span class="string">&#x27;b&#x27;</span>: <span class="number">2</span>, <span class="string">&#x27;c&#x27;</span>: <span class="number">3</span>, <span class="string">&#x27;d&#x27;</span>: <span class="number">4</span>&#125;</span><br><span class="line">s = pd.Series(data)</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li><strong>从标量值构造</strong>：使用标量值构造 Series，指定索引长度。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = pd.Series(<span class="number">5</span>, index=[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>])</span><br></pre></td></tr></table></figure>
-
-<p>这些是构造 DataFrame 和 Series 最常见的方法，根据数据的来源和形式选择合适的构造方式。</p>
-<hr>
-<p>在 Pandas 中，<code>iloc</code>、<code>loc</code>、<code>at</code> 和 <code>iat</code> 是用于访问数据的四种方法，它们之间的区别和使用方法如下：</p>
-<ol>
-<li><code>iloc</code>：通过整数位置来访问数据。你可以使用行号和列号来获取数据。行和列的编号都是从 0 开始的。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个示例 DataFrame</span></span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&#x27;A&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="string">&#x27;B&#x27;</span>: [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过整数位置访问数据</span></span><br><span class="line"><span class="built_in">print</span>(df.iloc[<span class="number">0</span>, <span class="number">1</span>])  <span class="comment"># 输出第 0 行、第 1 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><code>loc</code>：通过标签来访问数据。你可以使用行标签和列标签来获取数据。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 loc 访问数据</span></span><br><span class="line"><span class="built_in">print</span>(df.loc[<span class="number">0</span>, <span class="string">&#x27;B&#x27;</span>])  <span class="comment"># 输出第 0 行、&#x27;B&#x27; 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><code>at</code>：通过标签快速访问标量值。类似于 <code>loc</code>，但 <code>at</code> 只能用于获取单个元素，速度更快。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 at 访问单个元素</span></span><br><span class="line"><span class="built_in">print</span>(df.at[<span class="number">0</span>, <span class="string">&#x27;B&#x27;</span>])  <span class="comment"># 输出第 0 行、&#x27;B&#x27; 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li><code>iat</code>：通过整数位置快速访问标量值。类似于 <code>iloc</code>，但 <code>iat</code> 只能用于获取单个元素，速度更快。</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 iat 访问单个元素</span></span><br><span class="line"><span class="built_in">print</span>(df.iat[<span class="number">0</span>, <span class="number">1</span>])  <span class="comment"># 输出第 0 行、第 1 列的元素，这里输出的是 4</span></span><br></pre></td></tr></table></figure>
-
-<p>总结一下：</p>
-<ul>
-<li>当你知道你要访问的数据的位置时，使用 <code>iloc</code> 和 <code>iat</code>，它们更快。其中iat获取单个元素</li>
-<li>当你知道你要访问的数据的标签时，使用 <code>loc</code> 和 <code>at</code>，它们更直观。其中at获取单个元素</li>
-</ul>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>md语法速查</title>
     <url>/2024/07/23/md%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5/</url>
     <content><![CDATA[<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><blockquote>
@@ -1963,35 +1560,197 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>主流大语言模型评测与选择</title>
-    <url>/2024/07/24/%E4%B8%BB%E6%B5%81%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%B8%8E%E9%80%89%E6%8B%A9/</url>
-    <content><![CDATA[<h1 id="主流大语言模型评测与选择"><a href="#主流大语言模型评测与选择" class="headerlink" title="主流大语言模型评测与选择"></a>主流大语言模型评测与选择</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>近年来，人工智能技术迅猛发展，大语言模型作为其中的重要组成部分，在各个领域展示了其强大的能力和广泛的应用前景。本文将详细评测目前市面上的几款主流大语言模型，包括OpenAI的ChatGPT，Google的Gemini，Anthropic的Claude，百度的文心一言，月之暗面的Kimi，字节跳动的豆包，以及科大讯飞的讯飞星火。我们将从模型性能、应用场景、用户体验、创新性及可扩展性等方面进行深入分析，以帮助用户在选择合适的大语言模型时提供参考。</p>
-<h2 id="模型简介"><a href="#模型简介" class="headerlink" title="模型简介"></a>模型简介</h2><h3 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a><a href="https://chatgpt.com/">ChatGPT</a></h3><p>ChatGPT是OpenAI推出的一款强大大语言模型，凭借其出色的自然语言处理能力和多样化的应用场景，迅速成为业界翘楚。ChatGPT能够流畅地理解和生成人类语言，并在对话系统、内容生成、编程辅助等方面表现优异。</p>
-<h3 id="Google-Gemini"><a href="#Google-Gemini" class="headerlink" title="Google Gemini"></a><a href="https://gemini.google.com/">Google Gemini</a></h3><p>Google Gemini是Google开发的一款新型大语言模型，融合了Google在自然语言处理和机器学习领域的前沿技术。Gemini的独特之处在于其强大的多任务处理能力和高度定制化的应用方案，适用于从信息检索到创意生成的广泛领域。</p>
-<h3 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a><a href="https://claude.ai/">Claude</a></h3><p>Claude是Anthropic推出的大语言模型，以其在安全性和伦理方面的创新性设计著称。Claude旨在在保持强大生成能力的同时，最大限度地减少有害输出，其在内容生成和对话系统中的表现非常出色。</p>
-<h3 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a><a href="https://yiyan.baidu.com/">文心一言</a></h3><p>文心一言是百度推出的一款大语言模型，专注于中文语境下的自然语言处理和生成。文心一言在中文理解和生成方面具有很高的精度，广泛应用于中文对话系统、自动翻译和内容生成等领域。</p>
-<h3 id="Kimi"><a href="#Kimi" class="headerlink" title="Kimi"></a><a href="https://kimi.moonshot.cn/">Kimi</a></h3><p>Kimi是由年轻的公司月之暗面推出的一款新兴大语言模型。虽然市场知名度较低，但其在特定领域如技术文档生成和代码辅助编写方面表现不俗。Kimi致力于提供高效、精准的技术解决方案。</p>
-<h3 id="豆包"><a href="#豆包" class="headerlink" title="豆包"></a><a href="https://www.doubao.com/">豆包</a></h3><p>豆包是字节跳动推出的大语言模型，专注于内容生成和创意写作。豆包利用字节跳动在内容平台上的数据优势，在生成自然且富有创意的文本方面表现出色。</p>
-<h3 id="讯飞星火"><a href="#讯飞星火" class="headerlink" title="讯飞星火"></a><a href="https://xinghuo.xfyun.cn/">讯飞星火</a></h3><p>讯飞星火是科大讯飞推出的智能语言模型，特别擅长语音识别和自然语言理解。讯飞星火在智能助手、教育和客服系统中有着广泛应用。</p>
-<h2 id="模型性能对比"><a href="#模型性能对比" class="headerlink" title="模型性能对比"></a>模型性能对比</h2><h3 id="1-语言理解能力"><a href="#1-语言理解能力" class="headerlink" title="1. 语言理解能力"></a>1. 语言理解能力</h3><p>在语言理解能力方面，ChatGPT和Google Gemini表现尤为突出。ChatGPT在多语言环境中的表现非常稳定，能够处理复杂的语法结构和上下文信息。Google Gemini则凭借其强大的数据支持和算法优化，在处理自然语言任务时展现出卓越的性能。</p>
-<p>文心一言在中文语言处理方面具有明显优势，特别是在处理汉语特有的语法和词汇时，表现出色。豆包在生成富有创意的文本方面表现优异，但在复杂的语言理解任务中稍显不足。Claude以其对安全性和伦理问题的重视，确保了在生成内容时尽量减少不良信息的输出。讯飞星火则在语音识别和自然语言理解方面具有独特优势，特别适合语音交互场景。</p>
-<h3 id="2-生成能力"><a href="#2-生成能力" class="headerlink" title="2. 生成能力"></a>2. 生成能力</h3><p>在文本生成能力方面，ChatGPT和豆包表现最佳。ChatGPT生成的文本流畅自然，适用于多种应用场景。豆包凭借其在内容平台上的数据积累，能够生成极具创意和吸引力的内容。Google Gemini和Claude在生成任务中也表现不俗，能够根据输入生成高质量的文本。</p>
-<p>文心一言在生成中文文本方面具有优势，特别是在处理中文对话和自动翻译任务时，表现优异。Kimi在技术文档生成方面表现突出，适合用于代码辅助编写和技术文档生成。讯飞星火则在语音到文本的转换中表现出色，适用于语音助手和客服系统。</p>
-<h3 id="3-应用场景"><a href="#3-应用场景" class="headerlink" title="3. 应用场景"></a>3. 应用场景</h3><p>不同的大语言模型在应用场景上各有所长。ChatGPT适用于对话系统、内容生成、编程辅助等多种场景。Google Gemini凭借其多任务处理能力，适用于信息检索、创意生成等广泛领域。Claude在内容生成和对话系统中表现出色，同时其在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。</p>
-<p>文心一言专注于中文语言处理，适用于中文对话系统、自动翻译和内容生成等领域。Kimi在技术文档生成和代码辅助编写方面表现突出。豆包在内容生成和创意写作方面具有优势，适用于需要生成自然且富有创意文本的场景。讯飞星火在语音识别和自然语言理解方面具有独特优势，适用于语音助手、教育和客服系统。</p>
-<h2 id="用户体验"><a href="#用户体验" class="headerlink" title="用户体验"></a>用户体验</h2><p>在用户体验方面，ChatGPT和Google Gemini表现最佳。ChatGPT以其高效的响应速度和自然的对话体验，获得了广泛好评。Google Gemini则凭借其强大的多任务处理能力和高度定制化的应用方案，提供了极佳的用户体验。</p>
-<p>文心一言在中文语言处理方面具有优势，能够提供精准的中文对话和文本生成体验。Claude以其对安全性和伦理问题的重视，确保用户在使用过程中获得安全可靠的体验。豆包在生成创意文本方面表现出色，特别适合需要高质量内容生成的用户。讯飞星火在语音识别和自然语言理解方面表现优异，为用户提供了便捷的语音交互体验。</p>
-<h2 id="创新性及可扩展性"><a href="#创新性及可扩展性" class="headerlink" title="创新性及可扩展性"></a>创新性及可扩展性</h2><p>在创新性和可扩展性方面，ChatGPT和Google Gemini同样表现出色。ChatGPT不断更新和优化其模型，推出了多个版本，持续提升其性能和应用范围。Google Gemini则利用其在机器学习和自然语言处理领域的前沿技术，推出了高度定制化和多任务处理能力的解决方案。</p>
-<p>Claude在安全性和伦理方面的创新设计，使其在生成内容时能够最大限度地减少有害输出。文心一言在中文语言处理方面的创新性，使其在中文语境下具有很高的应用价值。Kimi虽然市场知名度较低，但其在技术文档生成和代码辅助编写方面的独特功能，使其在特定领域具有优势。豆包利用字节跳动在内容平台上的数据优势，在内容生成和创意写作方面具有独特的创新性。讯飞星火在语音识别和自然语言理解方面的技术创新，使其在语音交互场景中具有广泛的应用前景。</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>综上所述，不同的大语言模型在各自的应用场景中具有不同的优势。<strong>ChatGPT</strong>和<strong>Google Gemini</strong>在多任务处理和用户体验方面表现出色，适用于广泛的应用场景。<strong>Claude</strong>在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。<strong>文心一言</strong>在中文语言处理方面具有明显优势，特别适合中文对话系统和自动翻译等任务。<strong>Kimi</strong>在技术文档生成和代码辅助编写方面表现突出。<strong>豆包</strong>在内容生成和创意写作方面具有优势。<strong>讯飞星火</strong>在语音识别和自然语言理解方面表现优异，适用于语音交互场景。</p>
-<p>在选择合适的大语言模型时，用户应根据具体的应用需求和场景，综合考虑各个模型的性能、用户体验和创新性等因素，选择最符合自身需求的模型。希望本文的评测能够为用户在选择大语言模型时提供有价值的参考。</p>
+    <title>一文带你光速入门Mathlab</title>
+    <url>/2024/09/17/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E5%85%89%E9%80%9F%E5%85%A5%E9%97%A8Mathlab/</url>
+    <content><![CDATA[<p><img src="/images/posts/matlab/overview.svg" alt="MATLAB 入门能力地图"></p>
+<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h2><p>Mathlab是一款功能强大的数学计算软件，广泛应用于工程、科学研究、数据分析等领域。它以其强大的矩阵运算和数据可视化能力，成为学术界和工业界的重要工具。本文将为你提供一个全面的入门指南，包括软件安装、基础操作、常用函数及实际应用示例，帮助你迅速上手Mathlab。</p>
+<h2 id="2-安装与环境配置"><a href="#2-安装与环境配置" class="headerlink" title="2. 安装与环境配置"></a>2. 安装与环境配置</h2><h3 id="2-1-下载与安装"><a href="#2-1-下载与安装" class="headerlink" title="2.1 下载与安装"></a>2.1 下载与安装</h3><p>首先，访问<a href="https://www.mathworks.com/">Mathlab官网</a>下载适合你操作系统的版本。安装过程中，你需要选择安装的组件，建议选择“Mathlab”及其相关工具箱，以获得更全面的功能支持。</p>
+<h3 id="2-2-界面介绍"><a href="#2-2-界面介绍" class="headerlink" title="2.2 界面介绍"></a>2.2 界面介绍</h3><p>启动Mathlab后，你会看到主界面包含以下几个部分：</p>
+<ul>
+<li><strong>命令窗口</strong>：用于输入命令并显示输出。</li>
+<li><strong>编辑器</strong>：用于编写和保存脚本文件。</li>
+<li><strong>工作区</strong>：显示当前工作环境中的变量。</li>
+<li><strong>当前文件夹</strong>：显示当前路径下的文件和文件夹。</li>
+</ul>
+<h2 id="3-基础操作"><a href="#3-基础操作" class="headerlink" title="3. 基础操作"></a>3. 基础操作</h2><h3 id="3-1-变量与数据类型"><a href="#3-1-变量与数据类型" class="headerlink" title="3.1 变量与数据类型"></a>3.1 变量与数据类型</h3><p>在Mathlab中，变量赋值使用“&#x3D;”符号。例如：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="number">10</span>; <span class="comment">% 整数</span></span><br><span class="line">y = <span class="number">3.14</span>; <span class="comment">% 浮点数</span></span><br><span class="line">z = <span class="string">&#x27;Mathlab&#x27;</span>; <span class="comment">% 字符串</span></span><br></pre></td></tr></table></figure>
+<p>Mathlab支持多种数据类型，包括标量、向量、矩阵和字符串等。</p>
+<h3 id="3-2-数组与矩阵"><a href="#3-2-数组与矩阵" class="headerlink" title="3.2 数组与矩阵"></a>3.2 数组与矩阵</h3><p>数组和矩阵是Mathlab的核心数据结构。可以通过方括号创建：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">A = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>; <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]; <span class="comment">% 创建一个2x3矩阵</span></span><br></pre></td></tr></table></figure>
+<p>数组的索引从1开始，可以使用冒号运算符生成序列：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">v = <span class="number">1</span>:<span class="number">10</span>; <span class="comment">% 生成1到10的行向量</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-3-控制结构"><a href="#3-3-控制结构" class="headerlink" title="3.3 控制结构"></a>3.3 控制结构</h3><p>Mathlab支持常见的控制结构，如条件语句和循环语句：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> x &gt; <span class="number">0</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是正数&#x27;</span>);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="string">&#x27;x是负数或零&#x27;</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line">    <span class="built_in">disp</span>(<span class="built_in">i</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-常用函数"><a href="#4-常用函数" class="headerlink" title="4. 常用函数"></a>4. 常用函数</h2><h3 id="4-1-数学函数"><a href="#4-1-数学函数" class="headerlink" title="4.1 数学函数"></a>4.1 数学函数</h3><p>Mathlab提供丰富的数学函数，以下是一些常用的：</p>
+<ul>
+<li><code>sin(x)</code>: 计算正弦值。</li>
+<li><code>cos(x)</code>: 计算余弦值。</li>
+<li><code>exp(x)</code>: 计算自然指数。</li>
+</ul>
+<h3 id="4-2-统计函数"><a href="#4-2-统计函数" class="headerlink" title="4.2 统计函数"></a>4.2 统计函数</h3><p>在数据分析中，常用的统计函数包括：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line">meanValue = <span class="built_in">mean</span>(data); <span class="comment">% 计算均值</span></span><br><span class="line">stdValue = std(data); <span class="comment">% 计算标准差</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-3-绘图函数"><a href="#4-3-绘图函数" class="headerlink" title="4.3 绘图函数"></a>4.3 绘图函数</h3><p>Mathlab的绘图功能强大，可以绘制多种类型的图形：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">100</span>); <span class="comment">% 生成0到2π的100个点</span></span><br><span class="line">y = <span class="built_in">sin</span>(x);</span><br><span class="line"><span class="built_in">figure</span>; <span class="comment">% 创建新图形窗口</span></span><br><span class="line"><span class="built_in">plot</span>(x, y, <span class="string">&#x27;r-&#x27;</span>, <span class="string">&#x27;LineWidth&#x27;</span>, <span class="number">2</span>); <span class="comment">% 绘制sin(x)曲线</span></span><br><span class="line">xlabel(<span class="string">&#x27;x (弧度)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;sin(x)&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;正弦函数图&#x27;</span>);</span><br><span class="line">grid on; <span class="comment">% 添加网格</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-实例应用"><a href="#5-实例应用" class="headerlink" title="5. 实例应用"></a>5. 实例应用</h2><h3 id="5-1-数据分析"><a href="#5-1-数据分析" class="headerlink" title="5.1 数据分析"></a>5.1 数据分析</h3><p>假设我们有一组随机生成的数据，需要计算其均值和标准差，并进行可视化：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">data = <span class="built_in">randn</span>(<span class="number">1</span>, <span class="number">1000</span>); <span class="comment">% 生成1000个随机数</span></span><br><span class="line">meanValue = <span class="built_in">mean</span>(data);</span><br><span class="line">stdValue = std(data);</span><br><span class="line"></span><br><span class="line"><span class="built_in">figure</span>;</span><br><span class="line">histogram(data, <span class="number">30</span>); <span class="comment">% 绘制直方图</span></span><br><span class="line">xlabel(<span class="string">&#x27;值&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;频率&#x27;</span>);</span><br><span class="line">title([<span class="string">&#x27;数据的均值：&#x27;</span>, num2str(meanValue), <span class="string">&#x27; 标准差：&#x27;</span>, num2str(stdValue)]);</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-2-信号处理"><a href="#5-2-信号处理" class="headerlink" title="5.2 信号处理"></a>5.2 信号处理</h3><p>在信号处理中，我们可以生成和分析不同频率的信号：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">Fs = <span class="number">1000</span>; <span class="comment">% 采样频率</span></span><br><span class="line">t = <span class="number">0</span>:<span class="number">1</span>/Fs:<span class="number">1</span>; <span class="comment">% 时间向量</span></span><br><span class="line">y1 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">50</span>*t); <span class="comment">% 50Hz信号</span></span><br><span class="line">y2 = <span class="built_in">sin</span>(<span class="number">2</span>*<span class="built_in">pi</span>*<span class="number">120</span>*t); <span class="comment">% 120Hz信号</span></span><br><span class="line">y = y1 + y2; <span class="comment">% 合成信号</span></span><br><span class="line"><span class="built_in">plot</span>(t, y); <span class="comment">% 绘制信号</span></span><br><span class="line">xlabel(<span class="string">&#x27;时间 (秒)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;幅度&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;合成信号&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-3-图像处理"><a href="#5-3-图像处理" class="headerlink" title="5.3 图像处理"></a>5.3 图像处理</h3><p>Mathlab也支持图像处理，可以用以下代码读取和显示图像：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">img = imread(<span class="string">&#x27;image.jpg&#x27;</span>); <span class="comment">% 读取图像</span></span><br><span class="line">imshow(img); <span class="comment">% 显示图像</span></span><br><span class="line">title(<span class="string">&#x27;原始图像&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-进阶功能"><a href="#6-进阶功能" class="headerlink" title="6. 进阶功能"></a>6. 进阶功能</h2><h3 id="6-1-脚本与函数"><a href="#6-1-脚本与函数" class="headerlink" title="6.1 脚本与函数"></a>6.1 脚本与函数</h3><p>通过编写脚本文件（.m文件），可以将多个命令组织在一起，方便重用。此外，还可以自定义函数，增强代码的可读性和可维护性。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">result</span> = <span class="title">addNumbers</span><span class="params">(a, b)</span></span></span><br><span class="line">    <span class="comment">% 此函数返回两个数字的和</span></span><br><span class="line">    result = a + b;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-2-工具箱扩展"><a href="#6-2-工具箱扩展" class="headerlink" title="6.2 工具箱扩展"></a>6.2 工具箱扩展</h3><p>Mathlab提供多种工具箱，如<a href="https://www.mathworks.com/products/image.html">图像处理工具箱</a>、<a href="https://www.mathworks.com/products/signal.html">信号处理工具箱</a>等，安装这些工具箱可以扩展Mathlab的功能。你可以通过Mathlab命令窗口中的<code>ver</code>命令查看已安装的工具箱。</p>
+<h2 id="7-学习资源"><a href="#7-学习资源" class="headerlink" title="7. 学习资源"></a>7. 学习资源</h2><p>以下是一些推荐的学习资源，可以帮助你进一步深入学习Mathlab：</p>
+<ul>
+<li><a href="https://www.mathworks.com/help/matlab/">Mathlab文档</a></li>
+<li><a href="https://www.mathworks.com/learn/tutorials/matlab-onramp.html">Mathlab视频教程</a></li>
+<li><a href="https://www.mathworks.com/matlabcentral/">Mathlab中央论坛</a></li>
+</ul>
+<h2 id="8-结论"><a href="#8-结论" class="headerlink" title="8. 结论"></a>8. 结论</h2><p>通过本教程，你已经全面了解了Mathlab的基本操作、常用函数及实际应用示例。无论是在学术研究、工程设计还是数据分析中，Mathlab都能为你提供强有力的支持。继续深入学习Mathlab的各项功能，将帮助你在各领域中实现更高效的工作。</p>
 ]]></content>
       <categories>
-        <category>科技</category>
+        <category>软件</category>
       </categories>
       <tags>
-        <tag>AI</tag>
         <tag>工具</tag>
+        <tag>设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一文带你深入理解MAC地址和IP地址</title>
+    <url>/2024/10/14/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3MAC%E5%9C%B0%E5%9D%80%E5%92%8CIP%E5%9C%B0%E5%9D%80/</url>
+    <content><![CDATA[<p>从计算机网络课本的角度来看，MAC地址和IP地址在网络通信中扮演着不同但互补的角色。下面将从更深入的层面对比二者：</p>
+<h3 id="MAC地址（Media-Access-Control-address）："><a href="#MAC地址（Media-Access-Control-address）：" class="headerlink" title="MAC地址（Media Access Control address）："></a>MAC地址（Media Access Control address）：</h3><ol>
+<li><p><strong>定义</strong>：</p>
+<ul>
+<li>MAC地址是数据链路层的地址，用于标识网络接口卡（NIC）。</li>
+<li>它是一个48位的唯一标识符，通常由IEEE 802标准组织分配。</li>
+</ul>
+</li>
+<li><p><strong>作用</strong>：</p>
+<ul>
+<li>MAC地址用于局域网（LAN）内部的设备通信，确保数据帧在局域网内正确地从发送者传输到接收者。</li>
+<li>它与以太网技术紧密相关，是链路层寻址和介质访问控制的基础。</li>
+</ul>
+</li>
+<li><p><strong>特性</strong>：</p>
+<ul>
+<li>MAC地址是硬件地址，通常烧录在网络设备的EPROM中，不易更改。</li>
+<li>它在制造时被分配，保证了全球唯一性，但可以通过软件手段进行克隆或伪装。</li>
+</ul>
+</li>
+<li><p><strong>通信过程</strong>：</p>
+<ul>
+<li>在以太网中，数据帧的发送和接收都依赖于MAC地址。</li>
+<li>使用ARP协议将IP地址解析为MAC地址，以便在局域网内进行通信。</li>
+</ul>
+</li>
+</ol>
+<h3 id="IP地址（Internet-Protocol-address）："><a href="#IP地址（Internet-Protocol-address）：" class="headerlink" title="IP地址（Internet Protocol address）："></a>IP地址（Internet Protocol address）：</h3><ol>
+<li><p><strong>定义</strong>：</p>
+<ul>
+<li>IP地址是网络层的地址，用于标识网络中的设备。</li>
+<li>它是一个32位（IPv4）或128位（IPv6）的数字，用于在更大的网络范围内（包括互联网）进行寻址。</li>
+</ul>
+</li>
+<li><p><strong>作用</strong>：</p>
+<ul>
+<li>IP地址用于不同网络之间的设备通信，确保数据包能够跨越多个网络传输到目标设备。</li>
+<li>它支持路由选择，允许数据包在复杂的网络拓扑中找到到达目的地的路径。</li>
+</ul>
+</li>
+<li><p><strong>特性</strong>：</p>
+<ul>
+<li>IP地址可以是静态分配的，也可以通过DHCP等协议动态分配。</li>
+<li>IPv4地址资源有限，而IPv6提供了几乎无限的地址空间。</li>
+</ul>
+</li>
+<li><p><strong>通信过程</strong>：</p>
+<ul>
+<li>IP地址用于在网络层进行路由选择，确定数据包的传输路径。</li>
+<li>在数据链路层，IP数据包被封装成帧，通过MAC地址在局域网内传输。</li>
+</ul>
+</li>
+</ol>
+<h3 id="联系与区别："><a href="#联系与区别：" class="headerlink" title="联系与区别："></a>联系与区别：</h3><ol>
+<li><p><strong>层级</strong>：</p>
+<ul>
+<li>MAC地址工作在OSI模型的数据链路层，而IP地址工作在网络层。</li>
+<li>它们共同确保了数据能够在网络的不同层级中正确传输。</li>
+</ul>
+</li>
+<li><p><strong>寻址范围</strong>：</p>
+<ul>
+<li>MAC地址局限于局域网，而IP地址可以跨越多个网络，包括互联网。</li>
+</ul>
+</li>
+<li><p><strong>动态性</strong>：</p>
+<ul>
+<li>MAC地址通常是固定的，而IP地址可以动态变化，尤其是在移动设备和动态IP环境中。</li>
+</ul>
+</li>
+<li><p><strong>安全性</strong>：</p>
+<ul>
+<li>MAC地址和IP地址都可以用于网络访问控制，但它们本身并不提供强大的安全保护。</li>
+<li>通常需要结合其他安全措施（如防火墙、VPN、加密协议等）来提高网络通信的安全性。</li>
+</ul>
+</li>
+<li><p><strong>地址解析</strong>：</p>
+<ul>
+<li>在局域网内，ARP协议用于将IP地址解析为MAC地址，以便在链路层进行通信。</li>
+<li>在更广泛的网络中，IP地址用于路由选择，而MAC地址用于最终的数据帧传输。</li>
+</ul>
+</li>
+</ol>
+<p>通过这些深入的对比，我们可以更好地理解MAC地址和IP地址在计算机网络中的作用和相互关系。它们是网络通信的基础，确保了数据能够在复杂的网络环境中从源头正确地传输到目的地。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一文带你深入理解CSMA/CD和CSMA/CA</title>
+    <url>/2024/10/14/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3CSMA-CD%E5%92%8CCSMA-CA/</url>
+    <content><![CDATA[<p>CSMA&#x2F;CD（Carrier Sense Multiple Access with Collision Detection）和CSMA&#x2F;CA（Carrier Sense Multiple Access with Collision Avoidance）都是网络通信中用来控制多个设备如何共享同一通信介质（比如以太网）的协议。它们都属于CSMA（Carrier Sense Multiple Access）家族，意思是“载波侦听多路访问”，但处理冲突的方式不同。</p>
+<h3 id="CSMA-CD（以太网常用）"><a href="#CSMA-CD（以太网常用）" class="headerlink" title="CSMA&#x2F;CD（以太网常用）"></a>CSMA&#x2F;CD（以太网常用）</h3><p><strong>通俗解释：</strong><br>想象一下，你在一个嘈杂的咖啡馆里，想要和朋友聊天。你先看看周围（载波侦听），如果没人在说话（没有信号），你就开口说话。但如果你发现有人在说话（检测到信号），你就等他们说完再开口。如果在你说话的时候，你发现有人也在说话（冲突检测），你就停下来，等一会儿再试。</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li><strong>冲突检测：</strong> 如果两个设备同时发送数据，它们会检测到冲突，然后停止发送，等待随机时间后再次尝试。</li>
+<li><strong>使用场景：</strong> 适用于有线网络，如以太网。在有线网络中，电信号的传播速度快，所以即使发生冲突，也能很快检测到并处理。</li>
+</ul>
+<h3 id="CSMA-CA（无线网络常用）"><a href="#CSMA-CA（无线网络常用）" class="headerlink" title="CSMA&#x2F;CA（无线网络常用）"></a>CSMA&#x2F;CA（无线网络常用）</h3><p><strong>通俗解释：</strong><br>现在想象你在同一个咖啡馆里，但这次你和朋友通过手语交流。在你开始“说话”之前，你先看看周围有没有人也在用手语（载波侦听）。如果没有，你就开始。如果你发现有人开始“说话”了，你就等他们说完（冲突避免）。你不会等到冲突发生后才停止，而是通过一些策略来避免它。</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li><strong>冲突避免：</strong> 在发送数据之前，设备会使用一种称为“退避算法”的机制来避免冲突。如果检测到信道忙，它会等待一段时间再尝试。</li>
+<li><strong>使用场景：</strong> 适用于无线网络，如Wi-Fi。无线信号的传播速度比有线慢，所以冲突检测不太实用。CSMA&#x2F;CA通过避免冲突来提高效率。</li>
+</ul>
+<h3 id="异同点："><a href="#异同点：" class="headerlink" title="异同点："></a>异同点：</h3><ul>
+<li><strong>相同点：</strong> 两者都是CSMA的变体，都需要在发送数据前先检测信道是否空闲。</li>
+<li><strong>不同点：</strong><ul>
+<li><strong>冲突处理：</strong> CSMA&#x2F;CD在冲突发生后处理，而CSMA&#x2F;CA在冲突可能发生前就采取措施避免。</li>
+<li><strong>适用场景：</strong> CSMA&#x2F;CD适用于有线网络，CSMA&#x2F;CA适用于无线网络。</li>
+<li><strong>效率：</strong> 在无线网络中，CSMA&#x2F;CA通常比CSMA&#x2F;CD更有效，因为它减少了因冲突导致的重传。</li>
+</ul>
+</li>
+</ul>
+<p>简单来说，CSMA&#x2F;CD像是在咖啡馆里大声说话，如果撞上了就停下来，等会儿再说；而CSMA&#x2F;CA像是用手语交流，如果看到别人也在“说话”，就等他们说完再说。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
       </tags>
   </entry>
   <entry>
@@ -2050,286 +1809,35 @@ flowchart LR
       </categories>
   </entry>
   <entry>
-    <title>增长漏斗模型：从流量到留量的底层逻辑（理论+实操）</title>
-    <url>/2025/11/19/%E5%A2%9E%E9%95%BF%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B%EF%BC%9A%E4%BB%8E%E6%B5%81%E9%87%8F%E5%88%B0%E7%95%99%E9%87%8F%E7%9A%84%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%EF%BC%88%E7%90%86%E8%AE%BA-%E5%AE%9E%E6%93%8D%EF%BC%89/</url>
-    <content><![CDATA[<p>老板最关心的问题永远只有两个：</p>
-<ol>
-<li>今天的用户从哪儿来？</li>
-<li>明天的钱从哪儿来？</li>
-</ol>
-<p>增长漏斗就是回答这两个问题的万能框架。它把“用户旅程”拆成可度量、可干预、可复盘的阶段，让业务不再拍脑袋。</p>
-<p>增长漏斗模型（Growth Funnel Model）不仅是数据分析的框架，更是一种以用户为中心、以转化为目标的增长思维方式。</p>
-<p><strong>1</strong>.<strong>什么是增长漏斗模型？</strong> </p>
-<p>增长漏斗模型是一种通过可视化用户在产品中关键行为路径，来<strong>量化转化效率、定位流失环节</strong>的分析模型，其核心思想是：<strong>并非所有触达用户的都会转化为客户，你需要跟踪他们在每一步的动向，并优化整个流程。</strong></p>
-<p>增长漏斗 &#x3D; 把用户旅程拆成若干关键节点，通过数据看流失、通过实验提转化，最终让每一层都更“宽”或更“深”。</p>
-<ul>
-<li><strong>漏斗（Funnel）</strong>：形象地比喻了用户从接触产品到完成最终目标（如付费）的过程中，数量逐层减少的现象。</li>
-<li><strong>增长（Growth）</strong>：意味着这个模型的最终目的是<strong>优化漏斗，减少不必要的流失，提升整体转化率</strong>，从而实现用户和业务的增长。</li>
-</ul>
-<p><strong>经典 5 级漏斗（AARRR）：</strong></p>
-<table>
-<thead>
-<tr>
-<th align="left">阶段</th>
-<th align="left">核心目标</th>
-<th align="left">关键问题</th>
-<th align="left">典型指标</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>1. 获取</strong>Acquisition</td>
-<td align="left">如何让用户发现并接触产品？</td>
-<td align="left">用户从哪里来？ （流量贵不贵？渠道好不好？）</td>
-<td align="left"><strong>新增用户数</strong>、UV、CTR、CPC、渠道流量、CAC（用户获取成本）</td>
-</tr>
-<tr>
-<td align="left"><strong>2. 激活</strong>Activation</td>
-<td align="left">如何让用户首次体验到产品核心价值？</td>
-<td align="left">用户的“Aha! Moment”（爽点）是什么？</td>
-<td align="left"><strong>激活率</strong>、新手引导完成率、关键行为完成率、注册率、首单率</td>
-</tr>
-<tr>
-<td align="left"><strong>3. 留存</strong>Retention</td>
-<td align="left">如何让用户回来并持续使用？</td>
-<td align="left">用户是否养成了使用习惯？</td>
-<td align="left"><strong>留存率</strong>（次日&#x2F;7日&#x2F;30日）、DAU&#x2F;MAU</td>
-</tr>
-<tr>
-<td align="left"><strong>4. 变现</strong>Revenue</td>
-<td align="left">如何从用户身上获取收入？</td>
-<td align="left">我们的商业模式如何运作？</td>
-<td align="left"><strong>转化率（付费率）</strong>、客单价（ARPU）、LTV（用户终身价值）、毛利率</td>
-</tr>
-<tr>
-<td align="left"><strong>5. 推荐</strong>Referral</td>
-<td align="left">如何让用户推荐更多新用户？</td>
-<td align="left">用户是否愿意推荐产品是否值得推荐？</td>
-<td align="left">**NPS（净推荐值）、*<em>K因子*<em>（病毒系数）、邀请分享数</em></em></td>
-</tr>
-</tbody></table>
-<p><strong>2 .为什么需要增长漏斗模型？</strong></p>
-<p><strong>（1）可视化用户旅程</strong>：将抽象的“用户路径”转化为清晰、可量化的阶段。</p>
-<p><strong>（2）精准定位问题</strong>：快速发现用户在哪个环节流失最严重，从而集中资源解决最关键的问题。</p>
-<p><strong>（3）量化改进效果</strong>：任何产品优化或运营策略上线后，都可以通过对比漏斗转化率的变化来评估其效果。</p>
-<p><strong>（4）统一团队认知</strong>：为产品、运营、市场团队提供一个共同的“地图”，对齐目标，协同优化。</p>
-<p><strong>3</strong>.<strong>怎么做？四步落地法</strong></p>
-<h4 id="Step-1-画地图：定义关键路径与转化目标"><a href="#Step-1-画地图：定义关键路径与转化目标" class="headerlink" title="Step 1 画地图：定义关键路径与转化目标"></a>Step 1 画地图：定义关键路径与转化目标</h4><ul>
-<li><p><strong>明确最终目标</strong>：你希望用户最终做什么？（例如：成功支付、发布第一条内容、完成首次投资）。</p>
-</li>
-<li><p><strong>描绘用户路径</strong>：回溯用户为完成这个目标需要经历哪些关键步骤（通常4-7步为宜，过多会过于复杂）。</p>
-</li>
-</ul>
-<p><strong>示例：电商购买的微观漏斗</strong><br>最终目标：<strong>支付成功</strong><br>关键路径：广告曝光 -&gt; 点击进入商品页 -&gt; 浏览详情 -&gt; 添加购物车 -&gt; 点击结算 -&gt; 填写订单 -&gt; 支付成功</p>
-<h4 id="Step-2-算漏斗：数据采集-可视化-流失点"><a href="#Step-2-算漏斗：数据采集-可视化-流失点" class="headerlink" title="Step 2 算漏斗：数据采集+可视化 + 流失点"></a>Step 2 算漏斗：数据采集+可视化 + 流失点</h4><ul>
-<li><p><strong>数据采集</strong>：通过埋点等技术手段，采集每个步骤的用户行为数据（如页面浏览、按钮点击事件）。</p>
-<p>  如：<strong>用「事件-属性」思维埋点：</strong>事件&#x3D;动作，属性&#x3D;动作细节（如渠道&#x3D;抖音，版本&#x3D;8.3.1）</p>
-</li>
-<li><p><strong>构建漏斗</strong>：在数据分析平台（如GA、GrowingIO、Amplitude）或BI工具中，按步骤配置漏斗，并选择要分析的时间范围、用户分群等。</p>
-<p>  <strong>指标：</strong>转化率（CVR）、流失率（1-CVR）。</p>
-<p>  <strong>输出</strong>：漏斗图 + 热力图（分渠道&#x2F;版本对比）。</p>
-</li>
-</ul>
-<h4 id="Step-3-找杠杆：漏斗分析与问题诊断（ICE-优先级）"><a href="#Step-3-找杠杆：漏斗分析与问题诊断（ICE-优先级）" class="headerlink" title="Step 3 找杠杆：漏斗分析与问题诊断（ICE 优先级）"></a>Step 3 找杠杆：漏斗分析与问题诊断（ICE 优先级）</h4><p>这是最关键的一步。看一个漏斗不仅要看最终转化率，更要<strong>深度分析每一步的转化和流失情况</strong>。</p>
-<ul>
-<li><strong>计算转化率</strong>：</li>
-</ul>
-<ol>
-<li><ul>
-<li><strong>每一步转化率</strong> &#x3D; 进入本步骤的用户数 &#x2F; 上一步的用户数；</li>
-<li><strong>总体转化率</strong> &#x3D; 完成最终目标的用户数 &#x2F; 进入第一步的用户数。</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>定位核心流失点：</li>
-</ul>
-<ol>
-<li><ul>
-<li>找到<strong>绝对流失人数最多</strong>和<strong>相对转化率最低</strong>的步骤。这里就是需要优先优化的“瓶颈”；</li>
-<li>对每一层流失，列 3 个候选实验，用 ICE（Impact 影响面 × Confidence 信心 × Ease 易实施）打分，只做前 20% 高杠杆实验。</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li><strong>多维度分解分析</strong>：</li>
-</ul>
-<ol>
-<li><ul>
-<li><strong>分渠道</strong>：不同广告来源的用户，漏斗表现有何差异？哪个渠道的用户质量更高？</li>
-<li><strong>分用户</strong>：新用户和老用户的漏斗路径有何不同？流失点是否一致？</li>
-<li><strong>分设备&#x2F;平台</strong>：App端和Web端的转化效率哪个更高？</li>
-<li><strong>分时间</strong>：节假日和平时的漏斗数据是否有波动？</li>
-</ul>
-</li>
-</ol>
-<h4 id="Step-4-跑实验：提出假设A-B-实验-迭代优化"><a href="#Step-4-跑实验：提出假设A-B-实验-迭代优化" class="headerlink" title="Step 4 跑实验：提出假设A&#x2F;B 实验&amp; 迭代优化"></a>Step 4 跑实验：提出假设A&#x2F;B 实验&amp; 迭代优化</h4><ul>
-<li>每次只改 1 个变量（如落地页标题）。</li>
-<li>运行到统计显著（p&lt;0.05）再全量发布。</li>
-<li>把结论沉淀成“实验知识库”，避免重复踩坑。</li>
-</ul>
-<p><strong>4</strong>.<strong>实战案例：某 DTC 咖啡订阅的 30 天增长战役<br>————————————————-</strong><br><strong>背景</strong></p>
-<ul>
-<li>产品：按月寄送精品咖啡豆。</li>
-<li>目标：30 天内把 GMV 提升 50%。</li>
-<li>现状：投放 100w UV → 注册 10w → 首单 1w → 续订 2k，整体付费率仅 2‰。</li>
-</ul>
-<p>该案例中已经确定了目标和转化漏斗，因此下面从绘制转化地图&amp;计算漏斗开始。</p>
-<h4 id="（1）画地图-算漏斗"><a href="#（1）画地图-算漏斗" class="headerlink" title="（1）画地图 &amp; 算漏斗"></a>（1）画地图 &amp; 算漏斗</h4><p>用 Amplitude 跑出漏斗（数据已脱敏）：</p>
-<table>
-<thead>
-<tr>
-<th align="left">阶段</th>
-<th align="left">人数</th>
-<th align="left">转化率</th>
-<th align="left">流失率</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">访问落地页</td>
-<td align="left">100w</td>
-<td align="left">100%</td>
-<td align="left">—</td>
-</tr>
-<tr>
-<td align="left">注册</td>
-<td align="left">20w</td>
-<td align="left">20%</td>
-<td align="left">80%</td>
-</tr>
-<tr>
-<td align="left">首单</td>
-<td align="left">1w</td>
-<td align="left">5%</td>
-<td align="left">95%</td>
-</tr>
-<tr>
-<td align="left">次月续订</td>
-<td align="left">2k</td>
-<td align="left">20%</td>
-<td align="left">80%</td>
-</tr>
-</tbody></table>
-<p>发现：</p>
-<ul>
-<li>最大流失在 <strong>注册→首单</strong>（该步骤流失率95%）。</li>
-<li>注册率、次月续订率也低，但首单率更低，优先解决首单。</li>
-</ul>
-<h4 id="（2）找杠杆"><a href="#（2）找杠杆" class="headerlink" title="（2）找杠杆"></a>（2）找杠杆</h4><p>团队头脑风暴 + 用户访谈，列出 3 个假设：</p>
-<ul>
-<li><p>H1 价格敏感：首次门槛太高（¥128&#x2F;月）。</p>
-</li>
-<li><p>H2 信任不足：没喝过，怕踩雷。</p>
-</li>
-<li><p>H3 选择困难：12 款豆子不知道选哪款。</p>
-</li>
-</ul>
-<p>用ICE方法打分后，先做 <strong>H2 信任不足</strong>（得分 72&#x2F;100）。</p>
-<h4 id="（3）跑实验"><a href="#（3）跑实验" class="headerlink" title="（3）跑实验"></a>（3）跑实验</h4><ul>
-<li>实验组：落地页增加「9.9 体验包（3 包挂耳+¥30 代金券）」。</li>
-<li>对照组：保持原落地页。</li>
-<li>运行 7 天，样本 2w UV&#x2F;组。</li>
-</ul>
-<h4 id="（4）-结果"><a href="#（4）-结果" class="headerlink" title="（4） 结果"></a>（4） 结果</h4><table>
-<thead>
-<tr>
-<th align="left">指标</th>
-<th align="left">实验组</th>
-<th align="left">对照组</th>
-<th align="left">提升</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">首单率</td>
-<td align="left">18%</td>
-<td align="left">5%</td>
-<td align="left">+40%</td>
-</tr>
-<tr>
-<td align="left">CAC</td>
-<td align="left">¥35</td>
-<td align="left">¥38</td>
-<td align="left">-8%</td>
-</tr>
-<tr>
-<td align="left">30 天 GMV</td>
-<td align="left">+55%</td>
-<td align="left">—</td>
-<td align="left">达成目标</td>
-</tr>
-</tbody></table>
-<p><strong>5</strong>.<strong>注意事项（常见坑 &amp; 对策）</strong><br>-——————————-<br><strong>注意事项：</strong></p>
-<p><strong>（1）不要盲目追求步骤数</strong>：漏斗不是步骤越多越好，应聚焦于最核心的关键行为。</p>
-<p><strong>（2）关注“流失用户”的去向</strong>：他们是真的离开了，还是去了其他路径？（例如，从购物车流失的用户可能去了客服页面咨询问题）。</p>
-<p><strong>（3）分群分析（Segmentation）</strong>：整体的漏斗会掩盖不同用户群体的差异。一定要进行分群分析。</p>
-<p><strong>（4）并非所有业务都是线性漏斗</strong>：一些复杂的业务（如内容平台、双边市场）的用户路径可能是<strong>网状</strong>或<strong>循环</strong>的，需要更灵活的模型（如循环漏斗）来补充。</p>
-<table>
-<thead>
-<tr>
-<th align="left">坑</th>
-<th align="left">症状</th>
-<th align="left">对策</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">漏斗断层</td>
-<td align="left">埋点缺失，漏斗中间“跳崖”</td>
-<td align="left">做“埋点评审”+ 日常自动化校验</td>
-</tr>
-<tr>
-<td align="left">虚荣指标</td>
-<td align="left">只盯 CTR、不盯 ROI</td>
-<td align="left">用北极星指标（如 LTV、CAC）</td>
-</tr>
-<tr>
-<td align="left">实验污染</td>
-<td align="left">不同版本串线、样本不均</td>
-<td align="left">使用唯一用户 ID + 分层抽样</td>
-</tr>
-</tbody></table>
-<p><strong>6.小结&amp;行动清单<br>——————</strong> </p>
-<p><strong>增长漏斗模型</strong>是将宏观增长目标（AARRR）拆解为微观可行动洞见的强大工具。它的工作流是一个清晰的闭环：</p>
-<p><strong>构建漏斗 -&gt; 测量转化 -&gt; 定位流失 -&gt; 提出假设 -&gt; A&#x2F;B测试 -&gt; 迭代优化 -&gt; 再次测量</strong></p>
-<p>掌握这个模型，意味着你能够用数据精准地诊断增长问题，并用实验科学地驱动增长。</p>
-<p>注意：把增长漏斗当“体检报告”，而不是“一次性项目”。</p>
+    <title>主流大语言模型评测与选择</title>
+    <url>/2024/07/24/%E4%B8%BB%E6%B5%81%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%B8%8E%E9%80%89%E6%8B%A9/</url>
+    <content><![CDATA[<h1 id="主流大语言模型评测与选择"><a href="#主流大语言模型评测与选择" class="headerlink" title="主流大语言模型评测与选择"></a>主流大语言模型评测与选择</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>近年来，人工智能技术迅猛发展，大语言模型作为其中的重要组成部分，在各个领域展示了其强大的能力和广泛的应用前景。本文将详细评测目前市面上的几款主流大语言模型，包括OpenAI的ChatGPT，Google的Gemini，Anthropic的Claude，百度的文心一言，月之暗面的Kimi，字节跳动的豆包，以及科大讯飞的讯飞星火。我们将从模型性能、应用场景、用户体验、创新性及可扩展性等方面进行深入分析，以帮助用户在选择合适的大语言模型时提供参考。</p>
+<h2 id="模型简介"><a href="#模型简介" class="headerlink" title="模型简介"></a>模型简介</h2><h3 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a><a href="https://chatgpt.com/">ChatGPT</a></h3><p>ChatGPT是OpenAI推出的一款强大大语言模型，凭借其出色的自然语言处理能力和多样化的应用场景，迅速成为业界翘楚。ChatGPT能够流畅地理解和生成人类语言，并在对话系统、内容生成、编程辅助等方面表现优异。</p>
+<h3 id="Google-Gemini"><a href="#Google-Gemini" class="headerlink" title="Google Gemini"></a><a href="https://gemini.google.com/">Google Gemini</a></h3><p>Google Gemini是Google开发的一款新型大语言模型，融合了Google在自然语言处理和机器学习领域的前沿技术。Gemini的独特之处在于其强大的多任务处理能力和高度定制化的应用方案，适用于从信息检索到创意生成的广泛领域。</p>
+<h3 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a><a href="https://claude.ai/">Claude</a></h3><p>Claude是Anthropic推出的大语言模型，以其在安全性和伦理方面的创新性设计著称。Claude旨在在保持强大生成能力的同时，最大限度地减少有害输出，其在内容生成和对话系统中的表现非常出色。</p>
+<h3 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a><a href="https://yiyan.baidu.com/">文心一言</a></h3><p>文心一言是百度推出的一款大语言模型，专注于中文语境下的自然语言处理和生成。文心一言在中文理解和生成方面具有很高的精度，广泛应用于中文对话系统、自动翻译和内容生成等领域。</p>
+<h3 id="Kimi"><a href="#Kimi" class="headerlink" title="Kimi"></a><a href="https://kimi.moonshot.cn/">Kimi</a></h3><p>Kimi是由年轻的公司月之暗面推出的一款新兴大语言模型。虽然市场知名度较低，但其在特定领域如技术文档生成和代码辅助编写方面表现不俗。Kimi致力于提供高效、精准的技术解决方案。</p>
+<h3 id="豆包"><a href="#豆包" class="headerlink" title="豆包"></a><a href="https://www.doubao.com/">豆包</a></h3><p>豆包是字节跳动推出的大语言模型，专注于内容生成和创意写作。豆包利用字节跳动在内容平台上的数据优势，在生成自然且富有创意的文本方面表现出色。</p>
+<h3 id="讯飞星火"><a href="#讯飞星火" class="headerlink" title="讯飞星火"></a><a href="https://xinghuo.xfyun.cn/">讯飞星火</a></h3><p>讯飞星火是科大讯飞推出的智能语言模型，特别擅长语音识别和自然语言理解。讯飞星火在智能助手、教育和客服系统中有着广泛应用。</p>
+<h2 id="模型性能对比"><a href="#模型性能对比" class="headerlink" title="模型性能对比"></a>模型性能对比</h2><h3 id="1-语言理解能力"><a href="#1-语言理解能力" class="headerlink" title="1. 语言理解能力"></a>1. 语言理解能力</h3><p>在语言理解能力方面，ChatGPT和Google Gemini表现尤为突出。ChatGPT在多语言环境中的表现非常稳定，能够处理复杂的语法结构和上下文信息。Google Gemini则凭借其强大的数据支持和算法优化，在处理自然语言任务时展现出卓越的性能。</p>
+<p>文心一言在中文语言处理方面具有明显优势，特别是在处理汉语特有的语法和词汇时，表现出色。豆包在生成富有创意的文本方面表现优异，但在复杂的语言理解任务中稍显不足。Claude以其对安全性和伦理问题的重视，确保了在生成内容时尽量减少不良信息的输出。讯飞星火则在语音识别和自然语言理解方面具有独特优势，特别适合语音交互场景。</p>
+<h3 id="2-生成能力"><a href="#2-生成能力" class="headerlink" title="2. 生成能力"></a>2. 生成能力</h3><p>在文本生成能力方面，ChatGPT和豆包表现最佳。ChatGPT生成的文本流畅自然，适用于多种应用场景。豆包凭借其在内容平台上的数据积累，能够生成极具创意和吸引力的内容。Google Gemini和Claude在生成任务中也表现不俗，能够根据输入生成高质量的文本。</p>
+<p>文心一言在生成中文文本方面具有优势，特别是在处理中文对话和自动翻译任务时，表现优异。Kimi在技术文档生成方面表现突出，适合用于代码辅助编写和技术文档生成。讯飞星火则在语音到文本的转换中表现出色，适用于语音助手和客服系统。</p>
+<h3 id="3-应用场景"><a href="#3-应用场景" class="headerlink" title="3. 应用场景"></a>3. 应用场景</h3><p>不同的大语言模型在应用场景上各有所长。ChatGPT适用于对话系统、内容生成、编程辅助等多种场景。Google Gemini凭借其多任务处理能力，适用于信息检索、创意生成等广泛领域。Claude在内容生成和对话系统中表现出色，同时其在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。</p>
+<p>文心一言专注于中文语言处理，适用于中文对话系统、自动翻译和内容生成等领域。Kimi在技术文档生成和代码辅助编写方面表现突出。豆包在内容生成和创意写作方面具有优势，适用于需要生成自然且富有创意文本的场景。讯飞星火在语音识别和自然语言理解方面具有独特优势，适用于语音助手、教育和客服系统。</p>
+<h2 id="用户体验"><a href="#用户体验" class="headerlink" title="用户体验"></a>用户体验</h2><p>在用户体验方面，ChatGPT和Google Gemini表现最佳。ChatGPT以其高效的响应速度和自然的对话体验，获得了广泛好评。Google Gemini则凭借其强大的多任务处理能力和高度定制化的应用方案，提供了极佳的用户体验。</p>
+<p>文心一言在中文语言处理方面具有优势，能够提供精准的中文对话和文本生成体验。Claude以其对安全性和伦理问题的重视，确保用户在使用过程中获得安全可靠的体验。豆包在生成创意文本方面表现出色，特别适合需要高质量内容生成的用户。讯飞星火在语音识别和自然语言理解方面表现优异，为用户提供了便捷的语音交互体验。</p>
+<h2 id="创新性及可扩展性"><a href="#创新性及可扩展性" class="headerlink" title="创新性及可扩展性"></a>创新性及可扩展性</h2><p>在创新性和可扩展性方面，ChatGPT和Google Gemini同样表现出色。ChatGPT不断更新和优化其模型，推出了多个版本，持续提升其性能和应用范围。Google Gemini则利用其在机器学习和自然语言处理领域的前沿技术，推出了高度定制化和多任务处理能力的解决方案。</p>
+<p>Claude在安全性和伦理方面的创新设计，使其在生成内容时能够最大限度地减少有害输出。文心一言在中文语言处理方面的创新性，使其在中文语境下具有很高的应用价值。Kimi虽然市场知名度较低，但其在技术文档生成和代码辅助编写方面的独特功能，使其在特定领域具有优势。豆包利用字节跳动在内容平台上的数据优势，在内容生成和创意写作方面具有独特的创新性。讯飞星火在语音识别和自然语言理解方面的技术创新，使其在语音交互场景中具有广泛的应用前景。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>综上所述，不同的大语言模型在各自的应用场景中具有不同的优势。<strong>ChatGPT</strong>和<strong>Google Gemini</strong>在多任务处理和用户体验方面表现出色，适用于广泛的应用场景。<strong>Claude</strong>在安全性和伦理方面的设计，使其适用于需要严格内容审核的场景。<strong>文心一言</strong>在中文语言处理方面具有明显优势，特别适合中文对话系统和自动翻译等任务。<strong>Kimi</strong>在技术文档生成和代码辅助编写方面表现突出。<strong>豆包</strong>在内容生成和创意写作方面具有优势。<strong>讯飞星火</strong>在语音识别和自然语言理解方面表现优异，适用于语音交互场景。</p>
+<p>在选择合适的大语言模型时，用户应根据具体的应用需求和场景，综合考虑各个模型的性能、用户体验和创新性等因素，选择最符合自身需求的模型。希望本文的评测能够为用户在选择大语言模型时提供有价值的参考。</p>
 ]]></content>
       <categories>
-        <category>方法</category>
+        <category>科技</category>
       </categories>
       <tags>
-        <tag>设计</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
-    <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
-    <content><![CDATA[<p><img src="/images/posts/us-election-2024/timeline.svg" alt="2024 美国大选民主党候选人更替时间线"></p>
-<p>​	</p>
-<p>​	当地时间7月21日下午，美国总统拜登宣布，他不再谋求连任，并全力支持副总统哈里斯作为民主党总统候选人，参与2024年总统角逐。22日，哈里斯发表声明称，已获得足够支持成为民主党总统候选人。</p>
-<p>​	拜登“主动请辞”，让民主党总算松了口气。然而，临阵换帅怎么说也是兵家大忌。相比拜登，副总统哈里斯尽管有年龄、性别及少数族裔等诸多“优势”加持，但想在未来短短几个月内扭转颓势，给民主党带来好运，恐怕是“不可能完成的任务”。</p>
-<p><strong>临危受命，哈里斯手里有几张牌？</strong></p>
-<p>​	被推上风口浪尖的副总统哈里斯，在拜登宣布支持提名她作为党内总统候选人的第一时间，表达了对拜登的感谢之情，希望自己能够“赢得党内总统候选人的提名”，尽一切努力击败共和党总统候选人特朗普。</p>
-<p>​	临危受命的哈里斯，手里到底握有几张牌？</p>
-<p>​	首先，哈里斯的年龄优势。1964年出生的哈里斯，比拜登整整年轻了22岁，比特朗普年轻19岁，享有巨大的年龄优势。在拜登的年龄、健康状况和认知能力饱受质疑、成为特朗普竞选团队重要攻击把柄的情况下，选择年轻的哈里斯无疑是对特朗普竞选策略的釜底抽薪，让对手无法再将火力集中于民主党总统候选人的年龄和健康状况上。一个朝气蓬勃、充满活力的哈里斯将为民主党沉闷的竞选活动注入新鲜血液，相比之下，特朗普的年龄反而成了劣势和诟病对象。</p>
-<p>​	其次，哈里斯的女性身份。民调显示，特朗普在女性选民中的支持率一直低迷，远低于拜登在女性中的支持率。特朗普私生活的不检点和在堕胎问题上的首鼠两端立场，让很多女性选民对他望而却步。然而，拜登由于年龄、健康问题以及在堕胎问题上的不坚定立场，也无法激起女性选民、特别是年轻女性选民的热情。哈里斯在堕胎问题上“支持选择权”（支持女性有堕胎权利和自由）的坚定立场和对女性权利的坚强捍卫，无疑在情感上与女性、特别是年轻女性更能产生共鸣。特别是在面对特朗普时，哈里斯的女性身份和女权立场，更能赢得女性选民支持。</p>
-<p>​	再次，哈里斯的少数族裔身份。哈里斯的父母分别来自印度和牙买加，拥有亚裔和非裔双重少数族裔身份。这两大少数族裔身份的加持，相对于特朗普，哈里斯更能获得非裔和亚裔少数族裔的共情与共鸣。特朗普在对哈里斯进行“攻击”时，更可能投鼠忌器，担心一不小心被扣上种族主义的帽子。在拉美裔、非裔等少数族裔对拜登日益不满的节骨眼，作为少数族裔的哈里斯“出征”，或许能扭转不利于民主党的选情变化，逐步赢得少数族裔支持。</p>
-<p>​	最后，哈里斯担任检察官的经历。在进入华盛顿政坛以前，哈里斯长期在加州政治圈耕耘，先后在县检察官办公室和旧金山地方检察官办公室工作，并历任旧金山地区检察官和加州总检察长。长期担任检察官的经历，让哈里斯熟稔法律，思维敏捷，长于辩论，并善于抓住对手漏洞穷追猛打。哈里斯担任参议员期间，曾在司法部长塞申斯和联邦最高法院大法官卡瓦纳任命听证会上对其进行刨根问底式的“灵魂拷问”，给观众留下深刻印象。哈里斯的这些经历及雄辩口才，与拜登辩论时的卡壳、口吃和不知所云，将形成强烈反差，特朗普将遇到一个强劲的辩论对手。特别是，特朗普被定罪与哈里斯作为“检察官”的履历，如果进行辩论，很容易让人浮现起检察官“审判”犯人的画面。</p>
-<p><strong>哈里斯锁定党内提名已无悬念</strong></p>
-<p>​	哈里斯虽然得到拜登的全力支持，但是到目前为止，民主党内大佬、前总统奥巴马还没有明确表态。奥巴马在拜登退选后的一份声明中表示：“在接下来的几天里，我们将在未知的水域前行。但我非常有信心，我们党的领导人将能组织一个产生一位杰出候选人的过程。”显然，奥巴马对哈里斯并不满意。</p>
-<p>​	不过，好消息是，自拜登周日宣布退选后，民主党已经迅速集结在哈里斯周围，哈里斯也已获得了拜登的竞选资金，准备全力迎战特朗普。特别是没有在第一时间表态的民主党重量级人物——前议长佩洛西、参议院民主党领袖舒默和众议院民主党领袖杰弗里斯，已经在当地时间周一表态支持哈里斯。此外，所有民主党州长都已经表态支持哈里斯，密歇根州长惠特曼还自告奋勇担任哈里斯竞选团队的共同主席。</p>
-<p>​	鉴于民主党全国代表大会召开在即，留给民主党的时间已经不多了。特别是，俄亥俄州最早9月份就开始大选投票。根据该州法律，两党必须在8月7日前提交总统候选人名单。因此，民主党几乎没有时间就总统候选人进行内部详细讨论和公开角逐。果然，当地时间7月22日，哈里斯发表声明称已获得足够支持成为民主党总统候选人。</p>
-<p><strong>哈里斯能否挽回民主党颓势？</strong></p>
-<p>​	哈里斯锁定党内总统候选人提名几无悬念，但是能否扭转民主党选举颓势，将是一个巨大的问号。实际上，从目前情况看，这似乎是一个无法完成的任务。</p>
-<p>​	首先，临阵换帅是兵家大忌。在距民主党全国代表大会召开不到一个月，距大选投票不足4个月之际，通过“逼宫”方式，迫使现任总统和党内总统候选人退选，无异于一场不流血的“政变”。这至少说明：第一，民主党对赢得此次大选几乎失去了信心，否则也不会铤而走险，出此下策。第二，民主党担心的不仅仅是失去白宫，更担心可能失去国会参议院多数席位及两院的控制权。</p>
-<p>​	逼退现任总统候选人，还会留下诸多“后遗症”。一是影响民主党内部团结。拜登在宣布退选的前一天还坚持不会退选，退选时声称是出于党派利益和国家利益退选，并对奥巴马等“幕后主使”心怀怨愤。奥巴马在拜登退选后特意没有选择公开支持哈里斯，以及佩洛西、舒默等人姗姗来迟的支持，都凸显民主党内部在这一问题上的分歧与矛盾。二是留给哈里斯的时间不多。哈里斯尽管位居副总统，但普遍认为她不在拜登的决策核心圈。哈里斯仓促上位，在短时间内团结本党、凝聚共识，组建竞选团队，提出竞选纲领，迎战特朗普，扭转民主党颓势，可谓时间紧、任务重，困难重重。</p>
-<p>​	其次，哈里斯是“矮子里面拔将军”。哈里斯近四年的副总统履历，并没有成为她的政治加分项，相反可能是负资产。哈里斯担任副总统期间，几乎没有拿得出手、哪怕是一项让美国民众能够印象深刻的政绩。相反，在美国民众的记忆里，满是哈里斯在公开场合不合时宜的“傻笑”、面对边境非法移民激增时的手足无措以及副总统办公室内“宫斗”的丑闻。就像特朗普在竞选集会上嘲讽的，近四年时间里，拜登只让哈里斯专注一件事，即应对边境非法移民问题，但她却完全搞砸了，非法移民长驱直入，让美国边境形同虚设。拿着这张成绩单的哈里斯，能否成为特朗普的“克星”和民主党的“救星”，让人捏把汗。</p>
-<p>​	最后，特朗普风头正健。至少自去年底以来，无论是全国性民调，还是在6-7个关键摇摆州的民调，特朗普都稳定领先拜登。特别是今年4月以来美国大学校园抗议运动、6月27日拜登与特朗普的首场大选电视辩论以及7月13日特朗普在竞选中的遇刺事件，更是进一步拖累了拜登的人气，让民主党忧心如焚。特朗普遇刺后的诸多民调显示，人们对特朗普的正面印象有了较大幅度提升。据美国广播公司新闻和益普索的民调，在未遂暗杀和共和党全国代表大会之后，特朗普的支持率稳步上升，达到40%，创下了该机构四年来民意调查的最高支持率，而大多数美国人则希望总统拜登退出竞选。很多美国政治评论家甚至认为，特朗普在竞选中遇袭，已经将特朗普变成了一种政治符号，完成了对他选举的“加冕仪式”。尽管有些夸张，但特朗普遇袭及遇袭后特朗普在特勤人员簇拥下高举拳头、高呼“战斗”的“定型照”，无疑是今年大选最具冲击力的画面。</p>
-<p>​	哈里斯要挽回民主党选情颓势，可能难于上青天。但是，这并不意味着哈里斯就无计可施。如果哈里斯将矛头对准特朗普的人品、集中于特朗普的道德瑕疵，聚焦特朗普对美国选举制度和法治的践踏与不尊重，强调特朗普代表了富人和大公司的利益，把大选再次变成对特朗普的“公投”，或许还能给特朗普竞选造成一定干扰，给民主党赢得一些喘息空间。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>时政</tag>
+        <tag>工具</tag>
+        <tag>AI</tag>
       </tags>
   </entry>
   <entry>
@@ -2734,6 +2242,310 @@ flowchart LR
       </tags>
   </entry>
   <entry>
+    <title>增长漏斗模型：从流量到留量的底层逻辑（理论+实操）</title>
+    <url>/2025/11/19/%E5%A2%9E%E9%95%BF%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B%EF%BC%9A%E4%BB%8E%E6%B5%81%E9%87%8F%E5%88%B0%E7%95%99%E9%87%8F%E7%9A%84%E5%BA%95%E5%B1%82%E9%80%BB%E8%BE%91%EF%BC%88%E7%90%86%E8%AE%BA-%E5%AE%9E%E6%93%8D%EF%BC%89/</url>
+    <content><![CDATA[<p>老板最关心的问题永远只有两个：</p>
+<ol>
+<li>今天的用户从哪儿来？</li>
+<li>明天的钱从哪儿来？</li>
+</ol>
+<p>增长漏斗就是回答这两个问题的万能框架。它把“用户旅程”拆成可度量、可干预、可复盘的阶段，让业务不再拍脑袋。</p>
+<p>增长漏斗模型（Growth Funnel Model）不仅是数据分析的框架，更是一种以用户为中心、以转化为目标的增长思维方式。</p>
+<p><strong>1</strong>.<strong>什么是增长漏斗模型？</strong> </p>
+<p>增长漏斗模型是一种通过可视化用户在产品中关键行为路径，来<strong>量化转化效率、定位流失环节</strong>的分析模型，其核心思想是：<strong>并非所有触达用户的都会转化为客户，你需要跟踪他们在每一步的动向，并优化整个流程。</strong></p>
+<p>增长漏斗 &#x3D; 把用户旅程拆成若干关键节点，通过数据看流失、通过实验提转化，最终让每一层都更“宽”或更“深”。</p>
+<ul>
+<li><strong>漏斗（Funnel）</strong>：形象地比喻了用户从接触产品到完成最终目标（如付费）的过程中，数量逐层减少的现象。</li>
+<li><strong>增长（Growth）</strong>：意味着这个模型的最终目的是<strong>优化漏斗，减少不必要的流失，提升整体转化率</strong>，从而实现用户和业务的增长。</li>
+</ul>
+<p><strong>经典 5 级漏斗（AARRR）：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">阶段</th>
+<th align="left">核心目标</th>
+<th align="left">关键问题</th>
+<th align="left">典型指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>1. 获取</strong>Acquisition</td>
+<td align="left">如何让用户发现并接触产品？</td>
+<td align="left">用户从哪里来？ （流量贵不贵？渠道好不好？）</td>
+<td align="left"><strong>新增用户数</strong>、UV、CTR、CPC、渠道流量、CAC（用户获取成本）</td>
+</tr>
+<tr>
+<td align="left"><strong>2. 激活</strong>Activation</td>
+<td align="left">如何让用户首次体验到产品核心价值？</td>
+<td align="left">用户的“Aha! Moment”（爽点）是什么？</td>
+<td align="left"><strong>激活率</strong>、新手引导完成率、关键行为完成率、注册率、首单率</td>
+</tr>
+<tr>
+<td align="left"><strong>3. 留存</strong>Retention</td>
+<td align="left">如何让用户回来并持续使用？</td>
+<td align="left">用户是否养成了使用习惯？</td>
+<td align="left"><strong>留存率</strong>（次日&#x2F;7日&#x2F;30日）、DAU&#x2F;MAU</td>
+</tr>
+<tr>
+<td align="left"><strong>4. 变现</strong>Revenue</td>
+<td align="left">如何从用户身上获取收入？</td>
+<td align="left">我们的商业模式如何运作？</td>
+<td align="left"><strong>转化率（付费率）</strong>、客单价（ARPU）、LTV（用户终身价值）、毛利率</td>
+</tr>
+<tr>
+<td align="left"><strong>5. 推荐</strong>Referral</td>
+<td align="left">如何让用户推荐更多新用户？</td>
+<td align="left">用户是否愿意推荐产品是否值得推荐？</td>
+<td align="left">**NPS（净推荐值）、*<em>K因子*<em>（病毒系数）、邀请分享数</em></em></td>
+</tr>
+</tbody></table>
+<p><strong>2 .为什么需要增长漏斗模型？</strong></p>
+<p><strong>（1）可视化用户旅程</strong>：将抽象的“用户路径”转化为清晰、可量化的阶段。</p>
+<p><strong>（2）精准定位问题</strong>：快速发现用户在哪个环节流失最严重，从而集中资源解决最关键的问题。</p>
+<p><strong>（3）量化改进效果</strong>：任何产品优化或运营策略上线后，都可以通过对比漏斗转化率的变化来评估其效果。</p>
+<p><strong>（4）统一团队认知</strong>：为产品、运营、市场团队提供一个共同的“地图”，对齐目标，协同优化。</p>
+<p><strong>3</strong>.<strong>怎么做？四步落地法</strong></p>
+<h4 id="Step-1-画地图：定义关键路径与转化目标"><a href="#Step-1-画地图：定义关键路径与转化目标" class="headerlink" title="Step 1 画地图：定义关键路径与转化目标"></a>Step 1 画地图：定义关键路径与转化目标</h4><ul>
+<li><p><strong>明确最终目标</strong>：你希望用户最终做什么？（例如：成功支付、发布第一条内容、完成首次投资）。</p>
+</li>
+<li><p><strong>描绘用户路径</strong>：回溯用户为完成这个目标需要经历哪些关键步骤（通常4-7步为宜，过多会过于复杂）。</p>
+</li>
+</ul>
+<p><strong>示例：电商购买的微观漏斗</strong><br>最终目标：<strong>支付成功</strong><br>关键路径：广告曝光 -&gt; 点击进入商品页 -&gt; 浏览详情 -&gt; 添加购物车 -&gt; 点击结算 -&gt; 填写订单 -&gt; 支付成功</p>
+<h4 id="Step-2-算漏斗：数据采集-可视化-流失点"><a href="#Step-2-算漏斗：数据采集-可视化-流失点" class="headerlink" title="Step 2 算漏斗：数据采集+可视化 + 流失点"></a>Step 2 算漏斗：数据采集+可视化 + 流失点</h4><ul>
+<li><p><strong>数据采集</strong>：通过埋点等技术手段，采集每个步骤的用户行为数据（如页面浏览、按钮点击事件）。</p>
+<p>  如：<strong>用「事件-属性」思维埋点：</strong>事件&#x3D;动作，属性&#x3D;动作细节（如渠道&#x3D;抖音，版本&#x3D;8.3.1）</p>
+</li>
+<li><p><strong>构建漏斗</strong>：在数据分析平台（如GA、GrowingIO、Amplitude）或BI工具中，按步骤配置漏斗，并选择要分析的时间范围、用户分群等。</p>
+<p>  <strong>指标：</strong>转化率（CVR）、流失率（1-CVR）。</p>
+<p>  <strong>输出</strong>：漏斗图 + 热力图（分渠道&#x2F;版本对比）。</p>
+</li>
+</ul>
+<h4 id="Step-3-找杠杆：漏斗分析与问题诊断（ICE-优先级）"><a href="#Step-3-找杠杆：漏斗分析与问题诊断（ICE-优先级）" class="headerlink" title="Step 3 找杠杆：漏斗分析与问题诊断（ICE 优先级）"></a>Step 3 找杠杆：漏斗分析与问题诊断（ICE 优先级）</h4><p>这是最关键的一步。看一个漏斗不仅要看最终转化率，更要<strong>深度分析每一步的转化和流失情况</strong>。</p>
+<ul>
+<li><strong>计算转化率</strong>：</li>
+</ul>
+<ol>
+<li><ul>
+<li><strong>每一步转化率</strong> &#x3D; 进入本步骤的用户数 &#x2F; 上一步的用户数；</li>
+<li><strong>总体转化率</strong> &#x3D; 完成最终目标的用户数 &#x2F; 进入第一步的用户数。</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>定位核心流失点：</li>
+</ul>
+<ol>
+<li><ul>
+<li>找到<strong>绝对流失人数最多</strong>和<strong>相对转化率最低</strong>的步骤。这里就是需要优先优化的“瓶颈”；</li>
+<li>对每一层流失，列 3 个候选实验，用 ICE（Impact 影响面 × Confidence 信心 × Ease 易实施）打分，只做前 20% 高杠杆实验。</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><strong>多维度分解分析</strong>：</li>
+</ul>
+<ol>
+<li><ul>
+<li><strong>分渠道</strong>：不同广告来源的用户，漏斗表现有何差异？哪个渠道的用户质量更高？</li>
+<li><strong>分用户</strong>：新用户和老用户的漏斗路径有何不同？流失点是否一致？</li>
+<li><strong>分设备&#x2F;平台</strong>：App端和Web端的转化效率哪个更高？</li>
+<li><strong>分时间</strong>：节假日和平时的漏斗数据是否有波动？</li>
+</ul>
+</li>
+</ol>
+<h4 id="Step-4-跑实验：提出假设A-B-实验-迭代优化"><a href="#Step-4-跑实验：提出假设A-B-实验-迭代优化" class="headerlink" title="Step 4 跑实验：提出假设A&#x2F;B 实验&amp; 迭代优化"></a>Step 4 跑实验：提出假设A&#x2F;B 实验&amp; 迭代优化</h4><ul>
+<li>每次只改 1 个变量（如落地页标题）。</li>
+<li>运行到统计显著（p&lt;0.05）再全量发布。</li>
+<li>把结论沉淀成“实验知识库”，避免重复踩坑。</li>
+</ul>
+<p><strong>4</strong>.<strong>实战案例：某 DTC 咖啡订阅的 30 天增长战役<br>————————————————-</strong><br><strong>背景</strong></p>
+<ul>
+<li>产品：按月寄送精品咖啡豆。</li>
+<li>目标：30 天内把 GMV 提升 50%。</li>
+<li>现状：投放 100w UV → 注册 10w → 首单 1w → 续订 2k，整体付费率仅 2‰。</li>
+</ul>
+<p>该案例中已经确定了目标和转化漏斗，因此下面从绘制转化地图&amp;计算漏斗开始。</p>
+<h4 id="（1）画地图-算漏斗"><a href="#（1）画地图-算漏斗" class="headerlink" title="（1）画地图 &amp; 算漏斗"></a>（1）画地图 &amp; 算漏斗</h4><p>用 Amplitude 跑出漏斗（数据已脱敏）：</p>
+<table>
+<thead>
+<tr>
+<th align="left">阶段</th>
+<th align="left">人数</th>
+<th align="left">转化率</th>
+<th align="left">流失率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">访问落地页</td>
+<td align="left">100w</td>
+<td align="left">100%</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">注册</td>
+<td align="left">20w</td>
+<td align="left">20%</td>
+<td align="left">80%</td>
+</tr>
+<tr>
+<td align="left">首单</td>
+<td align="left">1w</td>
+<td align="left">5%</td>
+<td align="left">95%</td>
+</tr>
+<tr>
+<td align="left">次月续订</td>
+<td align="left">2k</td>
+<td align="left">20%</td>
+<td align="left">80%</td>
+</tr>
+</tbody></table>
+<p>发现：</p>
+<ul>
+<li>最大流失在 <strong>注册→首单</strong>（该步骤流失率95%）。</li>
+<li>注册率、次月续订率也低，但首单率更低，优先解决首单。</li>
+</ul>
+<h4 id="（2）找杠杆"><a href="#（2）找杠杆" class="headerlink" title="（2）找杠杆"></a>（2）找杠杆</h4><p>团队头脑风暴 + 用户访谈，列出 3 个假设：</p>
+<ul>
+<li><p>H1 价格敏感：首次门槛太高（¥128&#x2F;月）。</p>
+</li>
+<li><p>H2 信任不足：没喝过，怕踩雷。</p>
+</li>
+<li><p>H3 选择困难：12 款豆子不知道选哪款。</p>
+</li>
+</ul>
+<p>用ICE方法打分后，先做 <strong>H2 信任不足</strong>（得分 72&#x2F;100）。</p>
+<h4 id="（3）跑实验"><a href="#（3）跑实验" class="headerlink" title="（3）跑实验"></a>（3）跑实验</h4><ul>
+<li>实验组：落地页增加「9.9 体验包（3 包挂耳+¥30 代金券）」。</li>
+<li>对照组：保持原落地页。</li>
+<li>运行 7 天，样本 2w UV&#x2F;组。</li>
+</ul>
+<h4 id="（4）-结果"><a href="#（4）-结果" class="headerlink" title="（4） 结果"></a>（4） 结果</h4><table>
+<thead>
+<tr>
+<th align="left">指标</th>
+<th align="left">实验组</th>
+<th align="left">对照组</th>
+<th align="left">提升</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">首单率</td>
+<td align="left">18%</td>
+<td align="left">5%</td>
+<td align="left">+40%</td>
+</tr>
+<tr>
+<td align="left">CAC</td>
+<td align="left">¥35</td>
+<td align="left">¥38</td>
+<td align="left">-8%</td>
+</tr>
+<tr>
+<td align="left">30 天 GMV</td>
+<td align="left">+55%</td>
+<td align="left">—</td>
+<td align="left">达成目标</td>
+</tr>
+</tbody></table>
+<p><strong>5</strong>.<strong>注意事项（常见坑 &amp; 对策）</strong><br>-——————————-<br><strong>注意事项：</strong></p>
+<p><strong>（1）不要盲目追求步骤数</strong>：漏斗不是步骤越多越好，应聚焦于最核心的关键行为。</p>
+<p><strong>（2）关注“流失用户”的去向</strong>：他们是真的离开了，还是去了其他路径？（例如，从购物车流失的用户可能去了客服页面咨询问题）。</p>
+<p><strong>（3）分群分析（Segmentation）</strong>：整体的漏斗会掩盖不同用户群体的差异。一定要进行分群分析。</p>
+<p><strong>（4）并非所有业务都是线性漏斗</strong>：一些复杂的业务（如内容平台、双边市场）的用户路径可能是<strong>网状</strong>或<strong>循环</strong>的，需要更灵活的模型（如循环漏斗）来补充。</p>
+<table>
+<thead>
+<tr>
+<th align="left">坑</th>
+<th align="left">症状</th>
+<th align="left">对策</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">漏斗断层</td>
+<td align="left">埋点缺失，漏斗中间“跳崖”</td>
+<td align="left">做“埋点评审”+ 日常自动化校验</td>
+</tr>
+<tr>
+<td align="left">虚荣指标</td>
+<td align="left">只盯 CTR、不盯 ROI</td>
+<td align="left">用北极星指标（如 LTV、CAC）</td>
+</tr>
+<tr>
+<td align="left">实验污染</td>
+<td align="left">不同版本串线、样本不均</td>
+<td align="left">使用唯一用户 ID + 分层抽样</td>
+</tr>
+</tbody></table>
+<p><strong>6.小结&amp;行动清单<br>——————</strong> </p>
+<p><strong>增长漏斗模型</strong>是将宏观增长目标（AARRR）拆解为微观可行动洞见的强大工具。它的工作流是一个清晰的闭环：</p>
+<p><strong>构建漏斗 -&gt; 测量转化 -&gt; 定位流失 -&gt; 提出假设 -&gt; A&#x2F;B测试 -&gt; 迭代优化 -&gt; 再次测量</strong></p>
+<p>掌握这个模型，意味着你能够用数据精准地诊断增长问题，并用实验科学地驱动增长。</p>
+<p>注意：把增长漏斗当“体检报告”，而不是“一次性项目”。</p>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>拜登退选：哈里斯接任，2024年总统大选的新格局</title>
+    <url>/2024/07/23/%E6%8B%9C%E7%99%BB%E9%80%80%E9%80%89%EF%BC%9A%E5%93%88%E9%87%8C%E6%96%AF%E6%8E%A5%E4%BB%BB%EF%BC%8C2024%E5%B9%B4%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E7%9A%84%E6%96%B0%E6%A0%BC%E5%B1%80/</url>
+    <content><![CDATA[<p><img src="/images/posts/us-election-2024/timeline.svg" alt="2024 美国大选民主党候选人更替时间线"></p>
+<p>​	</p>
+<p>​	当地时间7月21日下午，美国总统拜登宣布，他不再谋求连任，并全力支持副总统哈里斯作为民主党总统候选人，参与2024年总统角逐。22日，哈里斯发表声明称，已获得足够支持成为民主党总统候选人。</p>
+<p>​	拜登“主动请辞”，让民主党总算松了口气。然而，临阵换帅怎么说也是兵家大忌。相比拜登，副总统哈里斯尽管有年龄、性别及少数族裔等诸多“优势”加持，但想在未来短短几个月内扭转颓势，给民主党带来好运，恐怕是“不可能完成的任务”。</p>
+<p><strong>临危受命，哈里斯手里有几张牌？</strong></p>
+<p>​	被推上风口浪尖的副总统哈里斯，在拜登宣布支持提名她作为党内总统候选人的第一时间，表达了对拜登的感谢之情，希望自己能够“赢得党内总统候选人的提名”，尽一切努力击败共和党总统候选人特朗普。</p>
+<p>​	临危受命的哈里斯，手里到底握有几张牌？</p>
+<p>​	首先，哈里斯的年龄优势。1964年出生的哈里斯，比拜登整整年轻了22岁，比特朗普年轻19岁，享有巨大的年龄优势。在拜登的年龄、健康状况和认知能力饱受质疑、成为特朗普竞选团队重要攻击把柄的情况下，选择年轻的哈里斯无疑是对特朗普竞选策略的釜底抽薪，让对手无法再将火力集中于民主党总统候选人的年龄和健康状况上。一个朝气蓬勃、充满活力的哈里斯将为民主党沉闷的竞选活动注入新鲜血液，相比之下，特朗普的年龄反而成了劣势和诟病对象。</p>
+<p>​	其次，哈里斯的女性身份。民调显示，特朗普在女性选民中的支持率一直低迷，远低于拜登在女性中的支持率。特朗普私生活的不检点和在堕胎问题上的首鼠两端立场，让很多女性选民对他望而却步。然而，拜登由于年龄、健康问题以及在堕胎问题上的不坚定立场，也无法激起女性选民、特别是年轻女性选民的热情。哈里斯在堕胎问题上“支持选择权”（支持女性有堕胎权利和自由）的坚定立场和对女性权利的坚强捍卫，无疑在情感上与女性、特别是年轻女性更能产生共鸣。特别是在面对特朗普时，哈里斯的女性身份和女权立场，更能赢得女性选民支持。</p>
+<p>​	再次，哈里斯的少数族裔身份。哈里斯的父母分别来自印度和牙买加，拥有亚裔和非裔双重少数族裔身份。这两大少数族裔身份的加持，相对于特朗普，哈里斯更能获得非裔和亚裔少数族裔的共情与共鸣。特朗普在对哈里斯进行“攻击”时，更可能投鼠忌器，担心一不小心被扣上种族主义的帽子。在拉美裔、非裔等少数族裔对拜登日益不满的节骨眼，作为少数族裔的哈里斯“出征”，或许能扭转不利于民主党的选情变化，逐步赢得少数族裔支持。</p>
+<p>​	最后，哈里斯担任检察官的经历。在进入华盛顿政坛以前，哈里斯长期在加州政治圈耕耘，先后在县检察官办公室和旧金山地方检察官办公室工作，并历任旧金山地区检察官和加州总检察长。长期担任检察官的经历，让哈里斯熟稔法律，思维敏捷，长于辩论，并善于抓住对手漏洞穷追猛打。哈里斯担任参议员期间，曾在司法部长塞申斯和联邦最高法院大法官卡瓦纳任命听证会上对其进行刨根问底式的“灵魂拷问”，给观众留下深刻印象。哈里斯的这些经历及雄辩口才，与拜登辩论时的卡壳、口吃和不知所云，将形成强烈反差，特朗普将遇到一个强劲的辩论对手。特别是，特朗普被定罪与哈里斯作为“检察官”的履历，如果进行辩论，很容易让人浮现起检察官“审判”犯人的画面。</p>
+<p><strong>哈里斯锁定党内提名已无悬念</strong></p>
+<p>​	哈里斯虽然得到拜登的全力支持，但是到目前为止，民主党内大佬、前总统奥巴马还没有明确表态。奥巴马在拜登退选后的一份声明中表示：“在接下来的几天里，我们将在未知的水域前行。但我非常有信心，我们党的领导人将能组织一个产生一位杰出候选人的过程。”显然，奥巴马对哈里斯并不满意。</p>
+<p>​	不过，好消息是，自拜登周日宣布退选后，民主党已经迅速集结在哈里斯周围，哈里斯也已获得了拜登的竞选资金，准备全力迎战特朗普。特别是没有在第一时间表态的民主党重量级人物——前议长佩洛西、参议院民主党领袖舒默和众议院民主党领袖杰弗里斯，已经在当地时间周一表态支持哈里斯。此外，所有民主党州长都已经表态支持哈里斯，密歇根州长惠特曼还自告奋勇担任哈里斯竞选团队的共同主席。</p>
+<p>​	鉴于民主党全国代表大会召开在即，留给民主党的时间已经不多了。特别是，俄亥俄州最早9月份就开始大选投票。根据该州法律，两党必须在8月7日前提交总统候选人名单。因此，民主党几乎没有时间就总统候选人进行内部详细讨论和公开角逐。果然，当地时间7月22日，哈里斯发表声明称已获得足够支持成为民主党总统候选人。</p>
+<p><strong>哈里斯能否挽回民主党颓势？</strong></p>
+<p>​	哈里斯锁定党内总统候选人提名几无悬念，但是能否扭转民主党选举颓势，将是一个巨大的问号。实际上，从目前情况看，这似乎是一个无法完成的任务。</p>
+<p>​	首先，临阵换帅是兵家大忌。在距民主党全国代表大会召开不到一个月，距大选投票不足4个月之际，通过“逼宫”方式，迫使现任总统和党内总统候选人退选，无异于一场不流血的“政变”。这至少说明：第一，民主党对赢得此次大选几乎失去了信心，否则也不会铤而走险，出此下策。第二，民主党担心的不仅仅是失去白宫，更担心可能失去国会参议院多数席位及两院的控制权。</p>
+<p>​	逼退现任总统候选人，还会留下诸多“后遗症”。一是影响民主党内部团结。拜登在宣布退选的前一天还坚持不会退选，退选时声称是出于党派利益和国家利益退选，并对奥巴马等“幕后主使”心怀怨愤。奥巴马在拜登退选后特意没有选择公开支持哈里斯，以及佩洛西、舒默等人姗姗来迟的支持，都凸显民主党内部在这一问题上的分歧与矛盾。二是留给哈里斯的时间不多。哈里斯尽管位居副总统，但普遍认为她不在拜登的决策核心圈。哈里斯仓促上位，在短时间内团结本党、凝聚共识，组建竞选团队，提出竞选纲领，迎战特朗普，扭转民主党颓势，可谓时间紧、任务重，困难重重。</p>
+<p>​	其次，哈里斯是“矮子里面拔将军”。哈里斯近四年的副总统履历，并没有成为她的政治加分项，相反可能是负资产。哈里斯担任副总统期间，几乎没有拿得出手、哪怕是一项让美国民众能够印象深刻的政绩。相反，在美国民众的记忆里，满是哈里斯在公开场合不合时宜的“傻笑”、面对边境非法移民激增时的手足无措以及副总统办公室内“宫斗”的丑闻。就像特朗普在竞选集会上嘲讽的，近四年时间里，拜登只让哈里斯专注一件事，即应对边境非法移民问题，但她却完全搞砸了，非法移民长驱直入，让美国边境形同虚设。拿着这张成绩单的哈里斯，能否成为特朗普的“克星”和民主党的“救星”，让人捏把汗。</p>
+<p>​	最后，特朗普风头正健。至少自去年底以来，无论是全国性民调，还是在6-7个关键摇摆州的民调，特朗普都稳定领先拜登。特别是今年4月以来美国大学校园抗议运动、6月27日拜登与特朗普的首场大选电视辩论以及7月13日特朗普在竞选中的遇刺事件，更是进一步拖累了拜登的人气，让民主党忧心如焚。特朗普遇刺后的诸多民调显示，人们对特朗普的正面印象有了较大幅度提升。据美国广播公司新闻和益普索的民调，在未遂暗杀和共和党全国代表大会之后，特朗普的支持率稳步上升，达到40%，创下了该机构四年来民意调查的最高支持率，而大多数美国人则希望总统拜登退出竞选。很多美国政治评论家甚至认为，特朗普在竞选中遇袭，已经将特朗普变成了一种政治符号，完成了对他选举的“加冕仪式”。尽管有些夸张，但特朗普遇袭及遇袭后特朗普在特勤人员簇拥下高举拳头、高呼“战斗”的“定型照”，无疑是今年大选最具冲击力的画面。</p>
+<p>​	哈里斯要挽回民主党选情颓势，可能难于上青天。但是，这并不意味着哈里斯就无计可施。如果哈里斯将矛头对准特朗普的人品、集中于特朗普的道德瑕疵，聚焦特朗普对美国选举制度和法治的践踏与不尊重，强调特朗普代表了富人和大公司的利益，把大选再次变成对特朗普的“公投”，或许还能给特朗普竞选造成一定干扰，给民主党赢得一些喘息空间。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>时政</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搜索引擎搜索技巧</title>
+    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<ol>
+<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
+<li>限定标题：<code>intitle:标题内容</code></li>
+<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
+<li>限定内容关键词：<code>intext:内容关键词</code></li>
+<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
+<li>限定网址搜索来源：<code>site:具体的网址</code></li>
+<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
+</ol>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>提升效率与稳定性:深入掌握conda环境与包管理</title>
     <url>/2024/08/11/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1conda%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<p><img src="/images/posts/conda/workflow.svg" alt="Conda 环境管理流程"></p>
@@ -2774,27 +2586,6 @@ flowchart LR
       <tags>
         <tag>AI</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搜索引擎搜索技巧</title>
-    <url>/2024/07/23/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<ol>
-<li>限定关键词：<code>&quot;搜索内容&quot;</code> <strong>保证关键词是连续出现</strong></li>
-<li>限定标题：<code>intitle:标题内容</code></li>
-<li>限定多个关键词：<code>allintitle:标题内容1 标题内容2</code></li>
-<li>限定内容关键词：<code>intext:内容关键词</code></li>
-<li>限定网址：<code>inurl:包含的url</code> 如包含cctv</li>
-<li>限定网址搜索来源：<code>site:具体的网址</code></li>
-<li>限定文件格式：<code>文件内容 filetype:文件格式</code> 如 毕业论文 filetype:pdf</li>
-</ol>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>浏览器</tag>
       </tags>
   </entry>
   <entry>
@@ -2887,6 +2678,67 @@ flowchart LR
       </categories>
       <tags>
         <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自建Bitwarden密码管理器</title>
+    <url>/2026/02/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/</url>
+    <content><![CDATA[<p><strong>自建Bitwarden密码管理，推荐选择开源项目：<a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。</strong></p>
+<p><img src="/images/posts/bitwarden/architecture.svg" alt="Vaultwarden 自托管架构"></p>
+<p>部署非常简单，尤其是通过Docker，只需少量的配置就可以启动服务，安全稳定又可靠。而且 Bitwarden 大部分高级付费功能可以通过手动配置或第三方集成来免费实现。</p>
+<h2 id="安装教程："><a href="#安装教程：" class="headerlink" title="安装教程："></a>安装教程：</h2><h3 id="步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。"><a href="#步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。" class="headerlink" title="步骤 1：获取一台轻量级的VPS 【点击前往】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。"></a>步骤 1：获取一台轻量级的VPS 【<a href="https://www.vultr.com/?ref=7045490">点击前往</a>】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。</h3><p>SSH远程连接工具，可以选择开源的WindTerm 【<a href="https://github.com/kingToolbox/WindTerm">点击下载</a>】  </p>
+<h3 id="步骤-2-更新系统"><a href="#步骤-2-更新系统" class="headerlink" title="步骤 2: 更新系统"></a>步骤 2: 更新系统</h3><p>首先，更新你的系统以确保所有软件包都是最新的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="步骤-3-安装-Docker-和-Docker-Compose"><a href="#步骤-3-安装-Docker-和-Docker-Compose" class="headerlink" title="步骤 3: 安装 Docker 和 Docker Compose"></a>步骤 3: 安装 Docker 和 Docker Compose</h3><p>Vaultwarden使用Docker来运行，因此我们需要安装Docker和Docker Compose。</p>
+<ol>
+<li>安装Docker 和 Docker Compose 命令：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com  | bash &amp;&amp; <span class="built_in">sudo</span> curl -L <span class="string">&quot;https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-<span class="subst">$(uname  -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose &amp;&amp; <span class="built_in">sudo</span> <span class="built_in">chmod</span> +x /usr/local/bin/docker-compose &amp;&amp; docker-compose --version</span><br></pre></td></tr></table></figure>
+
+<p><strong>完成安装后：</strong></p>
+<p>Docker和Docker Compose就都安装好了，你可以通过以下命令验证安装：</p>
+<ul>
+<li><strong>Docker版本检查</strong>：<code>docker --version</code></li>
+<li><strong>Docker Compose版本检查</strong>：<code>docker-compose --version</code></li>
+</ul>
+<h3 id="步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口"><a href="#步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口" class="headerlink" title="步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口"></a>步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p 8080:80 -p 3012:3012 vaultwarden/server:latest</span><br></pre></td></tr></table></figure>
+
+<p>安装以后，就可以通过ip:8080 访问你的 Bitwarden密码管理面板，ip:3012 是你的 WebSocket 通信链接 ,但现在它是http协议，为了更安全，我们需要部署下HTTPS加密的访问协议。 我们可以通过Nginx Proxy Manager进行配置SSL和Nginx反代</p>
+<h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
+
+<p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
+<p>用户：<a href="mailto:&#97;&#x64;&#109;&#105;&#x6e;&#x40;&#101;&#x78;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;">&#97;&#x64;&#109;&#105;&#x6e;&#x40;&#101;&#x78;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;</a></p>
+<p>密码：admin</p>
+<p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
+
+<h3 id="步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件："><a href="#步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件：" class="headerlink" title="步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 Bitwarden 的官方客户端和浏览器插件："></a>步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 <strong>Bitwarden</strong> 的官方客户端和浏览器插件：</h3><h4 id="1-Bitwarden-桌面客户端"><a href="#1-Bitwarden-桌面客户端" class="headerlink" title="1. Bitwarden 桌面客户端"></a>1. <strong>Bitwarden 桌面客户端</strong></h4><ul>
+<li><strong>Windows</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a> </li>
+<li><strong>macOS</strong>: <a href="https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12&browser=macos">点击下载</a> </li>
+<li><strong>Linux</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a></li>
+</ul>
+<h4 id="2-Bitwarden-移动客户端"><a href="#2-Bitwarden-移动客户端" class="headerlink" title="2. Bitwarden 移动客户端"></a>2. <strong>Bitwarden 移动客户端</strong></h4><ul>
+<li><strong>iOS（App Store）</strong>: <a href="https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744">点击下载</a> </li>
+<li><strong>Android（Google Play）</strong>: <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&pli=1">点击下载</a></li>
+</ul>
+<h4 id="3-Bitwarden-浏览器插件"><a href="#3-Bitwarden-浏览器插件" class="headerlink" title="3. Bitwarden 浏览器插件"></a>3. <strong>Bitwarden 浏览器插件</strong></h4><ul>
+<li><strong>Chrome</strong>: <a href="https://chromewebstore.google.com/detail/bitwarden-%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/nngceckbapebfimnlniiiahkandclblb?browser=chrome">点击下载</a> </li>
+<li><strong>Firefox</strong>: <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox">点击下载</a> </li>
+<li><strong>Microsoft Edge</strong>: <a href="https://microsoftedge.microsoft.com/addons/detail/bitwarden-free-password-ma/cnjalbhlkpghadgdpnddpjlldadblomo">点击下载</a> </li>
+<li><strong>其它浏览器</strong>: <a href="https://bitwarden.com/download/#downloads-web-browser">点击下载</a></li>
+</ul>
+<h4 id="4-Bitwarden-命令行工具-CLI"><a href="#4-Bitwarden-命令行工具-CLI" class="headerlink" title="4. Bitwarden 命令行工具 (CLI)"></a>4. <strong>Bitwarden 命令行工具 (CLI)</strong></h4><ul>
+<li><strong>CLI 下载</strong>: <a href="https://bitwarden.com/download/#downloads-command-line-interface">点击下载</a></li>
+</ul>
+<p>你可以根据你的设备和浏览器选择相应的版本下载并安装。所有这些链接均为官方提供的下载链接，确保软件的安全和可靠性。</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -3948,8 +3800,8 @@ flowchart LR
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>AI</tag>
         <tag>工具</tag>
+        <tag>AI</tag>
       </tags>
   </entry>
   <entry>
@@ -3978,67 +3830,6 @@ flowchart LR
       </categories>
       <tags>
         <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>自建Bitwarden密码管理器</title>
-    <url>/2026/02/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/</url>
-    <content><![CDATA[<p><strong>自建Bitwarden密码管理，推荐选择开源项目：<a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。</strong></p>
-<p><img src="/images/posts/bitwarden/architecture.svg" alt="Vaultwarden 自托管架构"></p>
-<p>部署非常简单，尤其是通过Docker，只需少量的配置就可以启动服务，安全稳定又可靠。而且 Bitwarden 大部分高级付费功能可以通过手动配置或第三方集成来免费实现。</p>
-<h2 id="安装教程："><a href="#安装教程：" class="headerlink" title="安装教程："></a>安装教程：</h2><h3 id="步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。"><a href="#步骤-1：获取一台轻量级的VPS-【点击前往】，已经有vps的可以跳过，系统推荐选择Debian-11，地区选择就近原则。" class="headerlink" title="步骤 1：获取一台轻量级的VPS 【点击前往】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。"></a>步骤 1：获取一台轻量级的VPS 【<a href="https://www.vultr.com/?ref=7045490">点击前往</a>】，已经有vps的可以跳过，系统推荐选择Debian 11，地区选择就近原则。</h3><p>SSH远程连接工具，可以选择开源的WindTerm 【<a href="https://github.com/kingToolbox/WindTerm">点击下载</a>】  </p>
-<h3 id="步骤-2-更新系统"><a href="#步骤-2-更新系统" class="headerlink" title="步骤 2: 更新系统"></a>步骤 2: 更新系统</h3><p>首先，更新你的系统以确保所有软件包都是最新的：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="步骤-3-安装-Docker-和-Docker-Compose"><a href="#步骤-3-安装-Docker-和-Docker-Compose" class="headerlink" title="步骤 3: 安装 Docker 和 Docker Compose"></a>步骤 3: 安装 Docker 和 Docker Compose</h3><p>Vaultwarden使用Docker来运行，因此我们需要安装Docker和Docker Compose。</p>
-<ol>
-<li>安装Docker 和 Docker Compose 命令：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com  | bash &amp;&amp; <span class="built_in">sudo</span> curl -L <span class="string">&quot;https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-<span class="subst">$(uname  -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose &amp;&amp; <span class="built_in">sudo</span> <span class="built_in">chmod</span> +x /usr/local/bin/docker-compose &amp;&amp; docker-compose --version</span><br></pre></td></tr></table></figure>
-
-<p><strong>完成安装后：</strong></p>
-<p>Docker和Docker Compose就都安装好了，你可以通过以下命令验证安装：</p>
-<ul>
-<li><strong>Docker版本检查</strong>：<code>docker --version</code></li>
-<li><strong>Docker Compose版本检查</strong>：<code>docker-compose --version</code></li>
-</ul>
-<h3 id="步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口"><a href="#步骤-3-一键部署-Vaultwarden-，含-WebSocket-端口" class="headerlink" title="步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口"></a>步骤 3: 一键部署 Vaultwarden ，含 WebSocket 端口</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p 8080:80 -p 3012:3012 vaultwarden/server:latest</span><br></pre></td></tr></table></figure>
-
-<p>安装以后，就可以通过ip:8080 访问你的 Bitwarden密码管理面板，ip:3012 是你的 WebSocket 通信链接 ,但现在它是http协议，为了更安全，我们需要部署下HTTPS加密的访问协议。 我们可以通过Nginx Proxy Manager进行配置SSL和Nginx反代</p>
-<h3 id="步骤-4：一键安装-Nginx-Proxy-Manager"><a href="#步骤-4：一键安装-Nginx-Proxy-Manager" class="headerlink" title="步骤 4：一键安装 Nginx Proxy Manager"></a>步骤 4：一键安装 Nginx Proxy Manager</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name=npm \</span><br><span class="line">  -p 81:81 \</span><br><span class="line">  -p 443:443 \</span><br><span class="line">  -v /home/npm/data:/data \</span><br><span class="line">  -v /home/npm/letsencrypt:/etc/letsencrypt \</span><br><span class="line">  --restart=always \</span><br><span class="line">  jc21/nginx-proxy-manager:latest</span><br></pre></td></tr></table></figure>
-
-<p>安装成功后进入<strong>Nginx Proxy Manager 管理界面：<code>http://&lt;你的服务器IP&gt;:81</code></strong></p>
-<p>用户：<a href="mailto:&#97;&#100;&#109;&#105;&#110;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#111;&#109;">&#97;&#100;&#109;&#105;&#110;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#111;&#109;</a></p>
-<p>密码：admin</p>
-<p>登入后记得先修改密码！然后在里面绑定你自己的域名并安装SSL证书，都是可视化操作，非常简单，可以看零度的视频教程演示！记得开放下端口：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw allow 80/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 443/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 8080/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 3012/tcp</span><br></pre></td></tr></table></figure>
-
-<h3 id="步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件："><a href="#步骤-5-：安装-Bitwarden-的客户端-或-浏览器插件你可以通过以下链接下载-Bitwarden-的官方客户端和浏览器插件：" class="headerlink" title="步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 Bitwarden 的官方客户端和浏览器插件："></a>步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 <strong>Bitwarden</strong> 的官方客户端和浏览器插件：</h3><h4 id="1-Bitwarden-桌面客户端"><a href="#1-Bitwarden-桌面客户端" class="headerlink" title="1. Bitwarden 桌面客户端"></a>1. <strong>Bitwarden 桌面客户端</strong></h4><ul>
-<li><strong>Windows</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a> </li>
-<li><strong>macOS</strong>: <a href="https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12&browser=macos">点击下载</a> </li>
-<li><strong>Linux</strong>: <a href="https://bitwarden.com/download/#downloads-desktop">点击下载</a></li>
-</ul>
-<h4 id="2-Bitwarden-移动客户端"><a href="#2-Bitwarden-移动客户端" class="headerlink" title="2. Bitwarden 移动客户端"></a>2. <strong>Bitwarden 移动客户端</strong></h4><ul>
-<li><strong>iOS（App Store）</strong>: <a href="https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744">点击下载</a> </li>
-<li><strong>Android（Google Play）</strong>: <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&pli=1">点击下载</a></li>
-</ul>
-<h4 id="3-Bitwarden-浏览器插件"><a href="#3-Bitwarden-浏览器插件" class="headerlink" title="3. Bitwarden 浏览器插件"></a>3. <strong>Bitwarden 浏览器插件</strong></h4><ul>
-<li><strong>Chrome</strong>: <a href="https://chromewebstore.google.com/detail/bitwarden-%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/nngceckbapebfimnlniiiahkandclblb?browser=chrome">点击下载</a> </li>
-<li><strong>Firefox</strong>: <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox">点击下载</a> </li>
-<li><strong>Microsoft Edge</strong>: <a href="https://microsoftedge.microsoft.com/addons/detail/bitwarden-free-password-ma/cnjalbhlkpghadgdpnddpjlldadblomo">点击下载</a> </li>
-<li><strong>其它浏览器</strong>: <a href="https://bitwarden.com/download/#downloads-web-browser">点击下载</a></li>
-</ul>
-<h4 id="4-Bitwarden-命令行工具-CLI"><a href="#4-Bitwarden-命令行工具-CLI" class="headerlink" title="4. Bitwarden 命令行工具 (CLI)"></a>4. <strong>Bitwarden 命令行工具 (CLI)</strong></h4><ul>
-<li><strong>CLI 下载</strong>: <a href="https://bitwarden.com/download/#downloads-command-line-interface">点击下载</a></li>
-</ul>
-<p>你可以根据你的设备和浏览器选择相应的版本下载并安装。所有这些链接均为官方提供的下载链接，确保软件的安全和可靠性。</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -4204,6 +3995,91 @@ flowchart LR
       </categories>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件定义网络SDN</title>
+    <url>/2024/10/26/%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9CSDN/</url>
+    <content><![CDATA[<p>软件定义网络（SDN）就像是网络世界的大脑和神经系统。就像大脑控制我们的身体一样，SDN的控制器控制着网络中的交换机和路由器等设备。这种网络架构的核心思想是将控制平面（负责决策数据如何传输）和数据平面（实际传输数据）分离开来。这样做的好处是，我们可以像编写程序一样来控制网络的行为，而不需要去手动配置每一个网络设备。</p>
+<h3 id="SDN的工作原理"><a href="#SDN的工作原理" class="headerlink" title="SDN的工作原理"></a>SDN的工作原理</h3><p>想象一下，网络就像一个繁忙的机场，飞机（数据包）需要按照控制塔（控制器）的指令来起飞和降落。在SDN中，控制器就是那个控制塔，它告诉网络设备（相当于机场跑道和导航系统）如何处理飞机的流量。这样，网络管理员可以通过控制器来监控和调整整个网络的流量，就像空中交通管制员一样。</p>
+<h3 id="SDN的优点"><a href="#SDN的优点" class="headerlink" title="SDN的优点"></a>SDN的优点</h3><ol>
+<li><strong>集中管理</strong>：网络管理员可以通过一个中央控制器来管理整个网络，这比去每个设备上进行配置要简单得多。</li>
+<li><strong>灵活性</strong>：网络可以根据需要快速调整，就像你可以根据交通情况调整道路的通行规则一样。</li>
+<li><strong>成本效益</strong>：由于减少了对专用硬件的依赖，SDN可以降低网络的建设和维护成本。</li>
+<li><strong>创新</strong>：开发者可以通过编程接口创建新的网络应用和服务，这促进了网络技术的创新。</li>
+</ol>
+<h3 id="SDN的缺点"><a href="#SDN的缺点" class="headerlink" title="SDN的缺点"></a>SDN的缺点</h3><ol>
+<li><strong>安全风险</strong>：由于控制器集中了大量的控制权，如果控制器受到攻击，整个网络都可能受到影响。</li>
+<li><strong>兼容性问题</strong>：SDN需要与传统网络设备兼容，这可能需要额外的适配工作。</li>
+<li><strong>技术成熟度</strong>：虽然SDN的概念已经提出一段时间了，但在市场上的广泛应用还需要时间来成熟。</li>
+</ol>
+<h3 id="SDN的编程接口"><a href="#SDN的编程接口" class="headerlink" title="SDN的编程接口"></a>SDN的编程接口</h3><p>SDN提供了两种主要的编程接口：</p>
+<ol>
+<li><p><strong>南向接口</strong>：这是控制器和网络设备之间的通信接口。最著名的南向接口协议是OpenFlow，它允许控制器告诉网络设备如何处理经过的数据包。这就像是给机场的导航系统下达指令，告诉它们如何引导飞机。</p>
+</li>
+<li><p><strong>北向接口</strong>：这是应用程序和控制器之间的通信接口。通过北向接口，开发者可以编写程序来控制网络的行为，比如创建虚拟网络或者实施安全策略。这就像是给空中交通管制员一个新工具，让他们能更有效地管理交通流量。</p>
+</li>
+</ol>
+<p>总的来说，SDN就像是给网络管理员和开发者提供了一套强大的工具，让他们能够更智能、更灵活地管理网络。虽然它还有一些挑战需要克服，但SDN的潜力是巨大的，它正在逐渐改变我们对网络的理解和使用方式。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>马斯克开源Grok-1：史上最大3140亿参数模型，权重架构全面公开</title>
+    <url>/2024/10/19/%E9%A9%AC%E6%96%AF%E5%85%8B%E5%BC%80%E6%BA%90Grok-1%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A73140%E4%BA%BF%E5%8F%82%E6%95%B0%E6%A8%A1%E5%9E%8B%EF%BC%8C%E6%9D%83%E9%87%8D%E6%9E%B6%E6%9E%84%E5%85%A8%E9%9D%A2%E5%85%AC%E5%BC%80/</url>
+    <content><![CDATA[<p><img src="/images/posts/grok1/moe.svg" alt="Grok-1 混合专家架构"></p>
+<p>马斯克的xAI公司正式开源了3140亿参数的大型语言模型Grok-1,包括权重和网络架构。这使Grok-1成为目前参数量最大的开源大语言模型。Grok-1采用混合专家(MoE)架构,在给定token上的激活权重为25%。xAI在2023年10月使用自定义训练堆栈从头训练了该模型,并遵守Apache 2.0许可证开源。</p>
+<p>1.Grok-1 开源模型下载：【<a href="magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">磁力链接</a>】 ，然后使用 【<a href="https://bbs.freedidi.com/t/topic/392">Torrent 客户端</a>】进行下载即可！</p>
+<p>2.Grok 开源项目：【<a href="https://github.com/xai-org/grok-1">Githubg 官方下载</a>】</p>
+<p>3.如果需要在云端安装Grok-1大模型，可以通过【<a href="https://www.vultr.com/?ref=7045490">租赁H100 云GPU</a>】进行云端搭建</p>
+<p>4.当然也可以直接调用HuggingFace 🤗 Hub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xai-org/grok-1.git &amp;&amp; <span class="built_in">cd</span> grok-1</span><br><span class="line">pip install huggingface_hub[hf_transfer]</span><br><span class="line">huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False</span><br></pre></td></tr></table></figure>
+
+
+<p>模型详情:</p>
+<ul>
+<li>基于大量文本数据训练,未针对任何特定任务微调</li>
+<li>3140亿参数MoE模型,激活权重25%</li>
+<li>使用旋转嵌入而非固定位置嵌入</li>
+<li>Tokenizer词汇大小131,072,嵌入大小6,144</li>
+<li>64层Transformer,每层解码器层包含多头注意力块和密集块</li>
+<li>多头注意力:48头查询,8头键&#x2F;值,键值大小128</li>
+<li>密集块:加宽因子8,隐藏层大小32768</li>
+<li>每个token从8个专家选择2个</li>
+<li>旋转位置嵌入大小6,144</li>
+<li>上下文长度8192 tokens,精度bf16</li>
+</ul>
+<p>模型能力:</p>
+<ul>
+<li>在标准LM基准测试中表现超过同等计算量模型</li>
+<li>HumanEval编码任务63.2%,MMLU 73%</li>
+<li>在匈牙利高中数学考试中获C级(59%)</li>
+<li>整体在推理和编码任务中表现出色</li>
+</ul>
+<p>局限性:</p>
+<ul>
+<li>缺少独立搜索网络能力,需结合搜索工具增强</li>
+<li>可能产生幻觉,需人工审查</li>
+<li>目前无法像X平台付费版实现实时获取信息</li>
+</ul>
+<p>开源意义:</p>
+<ul>
+<li>遵循Apache 2.0许可证,用户可自由使用修改分发</li>
+<li>体现了xAI追求透明化和社区开放的理念</li>
+<li>为进一步研究和创新提供了宝贵资源</li>
+</ul>
+<p>总的来说,Grok-1作为一款大规模开源语言模型,在模型能力和透明度方面都具有重要意义,值得业内外人士关注和探索。当然,模型的实际应用还需要结合其他工具和人工审查,以发挥其最大潜能。</p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
       </tags>
   </entry>
   <entry>
@@ -4620,91 +4496,6 @@ flowchart LR
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>马斯克开源Grok-1：史上最大3140亿参数模型，权重架构全面公开</title>
-    <url>/2024/10/19/%E9%A9%AC%E6%96%AF%E5%85%8B%E5%BC%80%E6%BA%90Grok-1%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A73140%E4%BA%BF%E5%8F%82%E6%95%B0%E6%A8%A1%E5%9E%8B%EF%BC%8C%E6%9D%83%E9%87%8D%E6%9E%B6%E6%9E%84%E5%85%A8%E9%9D%A2%E5%85%AC%E5%BC%80/</url>
-    <content><![CDATA[<p><img src="/images/posts/grok1/moe.svg" alt="Grok-1 混合专家架构"></p>
-<p>马斯克的xAI公司正式开源了3140亿参数的大型语言模型Grok-1,包括权重和网络架构。这使Grok-1成为目前参数量最大的开源大语言模型。Grok-1采用混合专家(MoE)架构,在给定token上的激活权重为25%。xAI在2023年10月使用自定义训练堆栈从头训练了该模型,并遵守Apache 2.0许可证开源。</p>
-<p>1.Grok-1 开源模型下载：【<a href="magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">磁力链接</a>】 ，然后使用 【<a href="https://bbs.freedidi.com/t/topic/392">Torrent 客户端</a>】进行下载即可！</p>
-<p>2.Grok 开源项目：【<a href="https://github.com/xai-org/grok-1">Githubg 官方下载</a>】</p>
-<p>3.如果需要在云端安装Grok-1大模型，可以通过【<a href="https://www.vultr.com/?ref=7045490">租赁H100 云GPU</a>】进行云端搭建</p>
-<p>4.当然也可以直接调用HuggingFace 🤗 Hub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xai-org/grok-1.git &amp;&amp; <span class="built_in">cd</span> grok-1</span><br><span class="line">pip install huggingface_hub[hf_transfer]</span><br><span class="line">huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False</span><br></pre></td></tr></table></figure>
-
-
-<p>模型详情:</p>
-<ul>
-<li>基于大量文本数据训练,未针对任何特定任务微调</li>
-<li>3140亿参数MoE模型,激活权重25%</li>
-<li>使用旋转嵌入而非固定位置嵌入</li>
-<li>Tokenizer词汇大小131,072,嵌入大小6,144</li>
-<li>64层Transformer,每层解码器层包含多头注意力块和密集块</li>
-<li>多头注意力:48头查询,8头键&#x2F;值,键值大小128</li>
-<li>密集块:加宽因子8,隐藏层大小32768</li>
-<li>每个token从8个专家选择2个</li>
-<li>旋转位置嵌入大小6,144</li>
-<li>上下文长度8192 tokens,精度bf16</li>
-</ul>
-<p>模型能力:</p>
-<ul>
-<li>在标准LM基准测试中表现超过同等计算量模型</li>
-<li>HumanEval编码任务63.2%,MMLU 73%</li>
-<li>在匈牙利高中数学考试中获C级(59%)</li>
-<li>整体在推理和编码任务中表现出色</li>
-</ul>
-<p>局限性:</p>
-<ul>
-<li>缺少独立搜索网络能力,需结合搜索工具增强</li>
-<li>可能产生幻觉,需人工审查</li>
-<li>目前无法像X平台付费版实现实时获取信息</li>
-</ul>
-<p>开源意义:</p>
-<ul>
-<li>遵循Apache 2.0许可证,用户可自由使用修改分发</li>
-<li>体现了xAI追求透明化和社区开放的理念</li>
-<li>为进一步研究和创新提供了宝贵资源</li>
-</ul>
-<p>总的来说,Grok-1作为一款大规模开源语言模型,在模型能力和透明度方面都具有重要意义,值得业内外人士关注和探索。当然,模型的实际应用还需要结合其他工具和人工审查,以发挥其最大潜能。</p>
-]]></content>
-      <categories>
-        <category>科技</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件定义网络SDN</title>
-    <url>/2024/10/26/%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9CSDN/</url>
-    <content><![CDATA[<p>软件定义网络（SDN）就像是网络世界的大脑和神经系统。就像大脑控制我们的身体一样，SDN的控制器控制着网络中的交换机和路由器等设备。这种网络架构的核心思想是将控制平面（负责决策数据如何传输）和数据平面（实际传输数据）分离开来。这样做的好处是，我们可以像编写程序一样来控制网络的行为，而不需要去手动配置每一个网络设备。</p>
-<h3 id="SDN的工作原理"><a href="#SDN的工作原理" class="headerlink" title="SDN的工作原理"></a>SDN的工作原理</h3><p>想象一下，网络就像一个繁忙的机场，飞机（数据包）需要按照控制塔（控制器）的指令来起飞和降落。在SDN中，控制器就是那个控制塔，它告诉网络设备（相当于机场跑道和导航系统）如何处理飞机的流量。这样，网络管理员可以通过控制器来监控和调整整个网络的流量，就像空中交通管制员一样。</p>
-<h3 id="SDN的优点"><a href="#SDN的优点" class="headerlink" title="SDN的优点"></a>SDN的优点</h3><ol>
-<li><strong>集中管理</strong>：网络管理员可以通过一个中央控制器来管理整个网络，这比去每个设备上进行配置要简单得多。</li>
-<li><strong>灵活性</strong>：网络可以根据需要快速调整，就像你可以根据交通情况调整道路的通行规则一样。</li>
-<li><strong>成本效益</strong>：由于减少了对专用硬件的依赖，SDN可以降低网络的建设和维护成本。</li>
-<li><strong>创新</strong>：开发者可以通过编程接口创建新的网络应用和服务，这促进了网络技术的创新。</li>
-</ol>
-<h3 id="SDN的缺点"><a href="#SDN的缺点" class="headerlink" title="SDN的缺点"></a>SDN的缺点</h3><ol>
-<li><strong>安全风险</strong>：由于控制器集中了大量的控制权，如果控制器受到攻击，整个网络都可能受到影响。</li>
-<li><strong>兼容性问题</strong>：SDN需要与传统网络设备兼容，这可能需要额外的适配工作。</li>
-<li><strong>技术成熟度</strong>：虽然SDN的概念已经提出一段时间了，但在市场上的广泛应用还需要时间来成熟。</li>
-</ol>
-<h3 id="SDN的编程接口"><a href="#SDN的编程接口" class="headerlink" title="SDN的编程接口"></a>SDN的编程接口</h3><p>SDN提供了两种主要的编程接口：</p>
-<ol>
-<li><p><strong>南向接口</strong>：这是控制器和网络设备之间的通信接口。最著名的南向接口协议是OpenFlow，它允许控制器告诉网络设备如何处理经过的数据包。这就像是给机场的导航系统下达指令，告诉它们如何引导飞机。</p>
-</li>
-<li><p><strong>北向接口</strong>：这是应用程序和控制器之间的通信接口。通过北向接口，开发者可以编写程序来控制网络的行为，比如创建虚拟网络或者实施安全策略。这就像是给空中交通管制员一个新工具，让他们能更有效地管理交通流量。</p>
-</li>
-</ol>
-<p>总的来说，SDN就像是给网络管理员和开发者提供了一套强大的工具，让他们能够更智能、更灵活地管理网络。虽然它还有一些挑战需要克服，但SDN的潜力是巨大的，它正在逐渐改变我们对网络的理解和使用方式。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
       </tags>
   </entry>
 </search>
