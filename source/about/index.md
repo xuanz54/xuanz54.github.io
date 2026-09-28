@@ -1,62 +1,82 @@
 # 关于我
 
-你好，我是 **xuanz**，一名聚焦人工智能与软件工程的学习者与实践者。
+你好，我是 **xuanz54**，GitHub 用户名为 **CodeBardPro**。我是一名关注数据挖掘、商业智能与大语言模型的数据分析与软件工程实践者。
 
-这个博客最初创建于生成式 AI 快速发展的阶段。如今，我们已经从“与模型对话”走向“让 Agent 理解目标、调用工具并完成任务”。相比单纯追逐模型能力，我更关注如何把 AI 变成可靠、可评估、真正解决问题的系统。
+我喜欢把数据、模型和软件工程连接起来：从数据探索与机器学习，到本地优先的开发者工具、跨平台脚本和 AI Agent 工具链，持续将想法做成可运行、可复用、可维护的项目。
 
-我会在这里记录自己的学习、实践与思考，内容不局限于某一种技术，也包括对产品、工程和个人成长的持续探索。
+- GitHub 主页：[github.com/xuanz54](https://github.com/xuanz54)
+- 博客仓库：[xuanz54/xuanz54.github.io](https://github.com/xuanz54/xuanz54.github.io)
+- 博客地址：[xuanz54.github.io](https://xuanz54.github.io/)
 
 ## 关注方向
 
-### AI Agent 与大模型应用
+### 数据分析与机器学习
 
-- Agent 工作流设计、任务规划与工具调用
-- RAG、知识库与上下文工程
-- 多 Agent 协作与自动化流程
-- 提示词设计、结构化输出与模型评测
-- AI 应用的可靠性、可观测性与成本优化
+- 使用 Python、Jupyter Notebook 和数据科学工具进行探索性数据分析
+- 关注数据可视化、统计建模、机器学习与业务问题之间的联系
+- 从数据清洗、特征分析到模型验证，构建可复现的分析过程
 
-### 机器学习与数据
+### 本地优先的开发者工具
 
-- 机器学习与深度学习
-- 自然语言处理与计算机视觉
-- 数据处理、分析、挖掘与可视化
-- 概率统计、线性代数与算法基础
+- 通过轻量桌面应用解决日常开发、转换、调试和效率问题
+- 重视离线可用、数据本地处理、免安装和低使用门槛
+- 关注 React、Vite、Tailwind CSS、Neutralino.js 等现代前端与桌面技术
 
-### 软件工程与产品实现
+### Web、自动化与跨平台脚本
 
-- Web 开发与后端服务
-- JavaScript、Java 与数据库
-- API 设计、系统集成与工程化部署
-- 从需求分析、原型验证到可用产品的完整实践
+- 使用 Python 异步生态构建 Web UI、REST API 和自动化数据处理流程
+- 编写覆盖 Linux、Windows 和 macOS 的脚本与命令行工具
+- 关注数据持久化、接口设计、部署维护和跨平台使用体验
 
-## 我的技术观
+### AI Agent 与开发者工具链
 
-在 Agent 时代，模型只是系统的一部分。一个真正有价值的 AI 产品，还需要清晰的问题定义、可信的数据、合理的工作流，以及完善的评测和反馈机制。
+- 探索 Skills、结构化文档和工具调用如何帮助 Agent 完成真实开发任务
+- 关注 UI 组件检索、代码集成、上下文组织和人机协作流程
+- 将 AI 能力放进可复用、可验证的工程工具中，而不是停留在概念演示
 
-我希望自己不仅能够理解算法和模型，也能够把技术转化为稳定、易用、可持续迭代的产品。对我而言，学习技术的最终目的不是堆砌概念，而是提升解决真实问题的能力。
+## 精选项目
+
+这些项目来自我 GitHub 主页当前展示的主要仓库。每个链接都可以查看完整源码、README 和最新进展。
+
+### [DevBox](https://github.com/xuanz54/DevBox)
+
+本地优先的 Windows 开发者工具箱，基于 **Neutralino.js + React + Vite + Tailwind CSS**，提供 23 个离线小工具。项目以单文件绿色 exe 为目标，覆盖 JSON、Markdown、时间戳、二维码、文本处理、编码转换、哈希和随机决策等常见开发场景，数据全部在本地处理。
+
+### [xuanz54.github.io](https://github.com/xuanz54/xuanz54.github.io)
+
+本博客的源码仓库，基于 **Hexo + Ayer** 主题构建，通过 Markdown 管理内容并发布到 GitHub Pages。项目包含文章归档、分类、标签、本地搜索、深色模式、图片预览、代码复制和 Live2D 等功能，也记录了博客的配置、构建和发布过程。
+
+### [data-analysis](https://github.com/xuanz54/data-analysis)
+
+数据分析与机器学习实战项目集，使用 **Python、Pandas、NumPy、Matplotlib、Seaborn、PyEcharts、Scikit-learn、NetworkX 和 SciPy** 等工具，通过 Jupyter Notebook 进行交互式分析。项目涵盖红酒数据集多维分析、一线城市租房市场洞察、客户流失预测和机器学习基础实践。
+
+### [TikTokDownloader](https://github.com/xuanz54/TikTokDownloader)
+
+面向开发者的抖音 / TikTok 多维度数据采集工具，提供 **Web UI、Web API 和终端交互** 三种使用方式。项目基于 Python 异步生态，支持账号、作品、合集、评论、直播、热榜、搜索和话题等数据采集，并可导出为 CSV、Excel、SQLite、MySQL、JSON 和 TXT 等格式。
+
+### [Shell](https://github.com/xuanz54/Shell)
+
+跨平台运维脚本合集，覆盖 **Linux、Windows 和 macOS**，包含 74 个脚本和 3 份对照表。内容涉及系统监控、网络检测、文件处理、备份恢复、部署运维、用户管理、日志分析和发行版适配，所有脚本和目录均按实际使用场景组织。
+
+### [Uiverse-Galaxy-Skill](https://github.com/xuanz54/Uiverse-Galaxy-Skill)
+
+面向人类开发者和 AI Agent 的 UI 组件检索与集成工具包，封装 Uiverse Galaxy 3000+ 个开源组件。项目同时提供 Python 命令行脚本、`SKILL.md` 和参考文档，支持原生 HTML、React、Vue、Tailwind CSS 和 Next.js，帮助开发者或 Agent 更快完成组件查找与项目适配。
 
 ## 关于这个博客
 
-这里主要用于分享：
+这里记录数据分析、机器学习、软件开发、AI Agent、效率工具和项目实践。博客源码、主题配置、静态生成、搜索、归档、分类、标签、图片资源和 GitHub Pages 发布方式，都整理在 [博客仓库 README](https://github.com/xuanz54/xuanz54.github.io#readme) 中。
 
-- AI Agent 与大模型应用实践
-- 编程、算法和软件工程笔记
-- 项目复盘与技术选型思考
-- 学习方法、效率工具与阶段性总结
-
-文章既是知识整理，也是对思考过程的公开记录。我会尽量让每篇内容都有明确的问题、可复现的过程和经得起推敲的结论。
-
-博客的技术选型、目录结构、页面生成流程、搜索、归档、分类、标签、深色模式、图片预览、代码复制、Live2D 与 GitHub Pages 发布原理，均整理在 [GitHub 项目 README](https://github.com/xuanz54/xuanz54.github.io#readme) 中。需要了解详细功能实现时，可以前往查看。
+文章既是知识整理，也是对实践过程的公开记录。我会尽量保留问题背景、实现过程和可复现的结果，方便之后继续迭代。
 
 ## 技术之外
 
-工作和学习之外，我也喜欢篮球、健身、音乐和美食。常听流行音乐、R&B 与 Hip-Hop。技术让我保持好奇，这些爱好则帮助我保持节奏和对生活的感受力。
+工作和学习之外，我喜欢篮球、健身、音乐和美食，也常听流行音乐、R&B 与 Hip-Hop。技术让我保持好奇，这些兴趣则帮助我保持节奏和对生活的感受力。
 
 ## 联系我
 
-如果你对人工智能、Agent、软件开发或博客中的内容有想法，欢迎与我交流。
+如果你对数据分析、人工智能、Agent、软件开发或博客中的内容有想法，欢迎交流：
 
 - 邮箱：<xuanz54@qq.com>
+- GitHub：[github.com/xuanz54](https://github.com/xuanz54)
 
-期待与同样重视长期学习和实践的人建立连接。
+也可以直接通过具体项目的 Issue 或 Discussion 与我交流。
