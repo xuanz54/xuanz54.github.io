@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>给你的心</title>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0612;--rose:#ff4d79;--gold:#ffd9a0;--ink:#fff2f5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{height:100%;margin:0;background:var(--bg);overflow:hidden;color:var(--ink)}
+canvas{position:fixed;inset:0;display:block}
+#ui{position:fixed;left:0;right:0;bottom:7vh;text-align:center;pointer-events:none;padding:0 24px}
+#ui *{pointer-events:auto}
+#to{font-family:"Ma Shan Zheng","Noto Serif SC",cursive,serif;font-size:clamp(28px,5vw,48px);color:var(--gold);outline:none;letter-spacing:.08em;text-shadow:0 0 24px rgba(255,77,121,.7)}
+#msg{font-family:"Noto Serif SC",serif;font-weight:300;font-size:clamp(15px,2.2vw,20px);line-height:1.9;letter-spacing:.12em;margin:10px auto 0;max-width:560px;min-height:3.8em;outline:none;opacity:.92}
+#hint{position:fixed;top:calc(env(safe-area-inset-top,0px) + 16px);width:100%;text-align:center;font:300 13px "Noto Serif SC",serif;letter-spacing:.2em;opacity:.45;pointer-events:none}
+@media (prefers-reduced-motion:reduce){ #to{text-shadow:none}}
+</style>
+</head>
+<body>
+<div id="hint">移动鼠标拨动爱心 · 点击放烟花</div>
+<div id="ui">
+  <div id="to" contenteditable="true" spellcheck="false">亲爱的你</div>
+  <div id="msg" contenteditable="true" spellcheck="false"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+const MSG="遇见你之后，平凡的日子都开始发光。\n我想把所有的心动，都留给你。\n——可以做我的唯一吗？";
+// 支持 ?to=名字&msg=内容 自定义
+try{const q=new URLSearchParams(location.search);if(q.get('to'))document.getElementById('to').textContent=q.get('to');if(q.get('msg'))window.__m=q.get('msg')}catch(e){}
+const R=new URLSearchParams(location.search||'');
+
+const scene=new THREE.Scene();
+scene.fog=new THREE.FogExp2(0x0a0612,0.022);
+const cam=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,200);
+cam.position.set(0,0,16);
+const ren=new THREE.WebGLRenderer({antialias:true});
+ren.setPixelRatio(Math.min(devicePixelRatio,2));
+ren.setSize(innerWidth,innerHeight);
+ren.setClearColor(0x0a0612);
+document.body.appendChild(ren.domElement);
+
+// 发光圆点贴图
+const cv=document.createElement('canvas');cv.width=cv.height=64;
+const cx=cv.getContext('2d'),g=cx.createRadialGradient(32,32,0,32,32,32);
+g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(.25,'rgba(255,255,255,.6)');g.addColorStop(1,'rgba(255,255,255,0)');
+cx.fillStyle=g;cx.fillRect(0,0,64,64);
+const tex=new THREE.CanvasTexture(cv);
+
+// 星空
+{const n=1400,p=new Float32Array(n*3);
+for(let i=0;i<n;i++){p[i*3]=(Math.random()-.5)*120;p[i*3+1]=(Math.random()-.5)*80;p[i*3+2]=-10-Math.random()*50}
+const gm=new THREE.BufferGeometry();gm.setAttribute('position',new THREE.BufferAttribute(p,3));
+scene.add(new THREE.Points(gm,new THREE.PointsMaterial({size:.22,map:tex,transparent:true,opacity:.7,depthWrite:false,blending:THREE.AdditiveBlending,color:0xbfb0ff})))}
+
+// 爱心粒子
+const N=11000,base=new Float32Array(N*3),pos=new Float32Array(N*3),vel=new Float32Array(N*3),col=new Float32Array(N*3);
+const cA=new THREE.Color(0xff2e63),cB=new THREE.Color(0xff9ab5),cC=new THREE.Color(0xffd9a0),tmp=new THREE.Color();
+for(let i=0;i<N;i++){
+  const t=Math.random()*Math.PI*2;
+  const s=Math.pow(Math.random(),.3);
+  const hx=16*Math.pow(Math.sin(t),3),hy=13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t);
+  const k=.36;
+  const x=hx*k*s,y=(hy+1)*k*s;
+  const z=(Math.random()-.5)*4.2*(1-s*s*.75)*(1-Math.abs(hx)/24);
+  base.set([x,y,z],i*3);pos.set([x,y,z],i*3);
+  tmp.copy(cA).lerp(cB,Math.random()*.8);
+  if(Math.random()<.08)tmp.copy(cC);
+  tmp.multiplyScalar(.6+.4*s);
+  col.set([tmp.r,tmp.g,tmp.b],i*3);
+}
+const hg=new THREE.BufferGeometry();
+hg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+hg.setAttribute('color',new THREE.BufferAttribute(col,3));
+const heart=new THREE.Points(hg,new THREE.PointsMaterial({size:.17,map:tex,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));
+scene.add(heart);
+
+// 环绕的小爱心光环
+const ringN=420,rp=new Float32Array(ringN*3),rg=new THREE.BufferGeometry();
+for(let i=0;i<ringN;i++){const a=Math.random()*Math.PI*2,r=9+Math.random()*3;rp.set([Math.cos(a)*r,(Math.random()-.5)*2.5,Math.sin(a)*r],i*3)}
+rg.setAttribute('position',new THREE.BufferAttribute(rp,3));
+const ring=new THREE.Points(rg,new THREE.PointsMaterial({size:.14,map:tex,transparent:true,opacity:.55,depthWrite:false,blending:THREE.AdditiveBlending,color:0xffb3c6}));
+ring.rotation.x=.35;scene.add(ring);
+
+// 烟花粒子池
+const FN=9000,fp=new Float32Array(FN*3).fill(9999),fv=new Float32Array(FN*3),fc=new Float32Array(FN*3),fcol=new Float32Array(FN*3),life=new Float32Array(FN),decay=new Float32Array(FN);
+let fi=0;
+const fg=new THREE.BufferGeometry();
+fg.setAttribute('position',new THREE.BufferAttribute(fp,3));
+fg.setAttribute('color',new THREE.BufferAttribute(fc,3));
+scene.add(Object.assign(new THREE.Points(fg,new THREE.PointsMaterial({size:.3,map:tex,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending})),{frustumCulled:false}));
+function emit(x,y,z,vx,vy,vz,c,d){
+  const i=fi;fi=(fi+1)%FN;
+  fp[i*3]=x;fp[i*3+1]=y;fp[i*3+2]=z;fv[i*3]=vx;fv[i*3+1]=vy;fv[i*3+2]=vz;
+  fcol[i*3]=c.r;fcol[i*3+1]=c.g;fcol[i*3+2]=c.b;life[i]=1;decay[i]=d;
+}
+const PAL=[0xff4d79,0xffd9a0,0xff9ab5,0xc9a7ff,0xff7a59,0x8fe3ff,0xffffff];
+function burst(x,y,z,type){
+  const c=new THREE.Color(PAL[Math.random()*PAL.length|0]),c2=new THREE.Color(PAL[Math.random()*PAL.length|0]);
+  const n=type==='heart'?260:320,sp=type==='heart'?.11:.16+Math.random()*.06;
+  for(let i=0;i<n;i++){
+    let vx,vy,vz=(Math.random()-.5)*.04;
+    if(type==='heart'){const t=i/n*Math.PI*2;vx=16*Math.pow(Math.sin(t),3)/16*sp*2.2;vy=(13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t))/16*sp*2.2;}
+    else{const u=Math.random()*2-1,a=Math.random()*Math.PI*2,r=Math.sqrt(1-u*u),m=sp*(.35+Math.random()*.65);vx=r*Math.cos(a)*m;vy=u*m;vz=r*Math.sin(a)*m}
+    emit(x,y,z,vx,vy,vz,Math.random()<.5?c:c2,.008+Math.random()*.008);
+  }
+}
+const rockets=[];
+function launch(tx,ty,tz,type){rockets.push({x:tx+(Math.random()-.5)*2,y:-9,z:tz,vy:0,ty,tx,type})}
+function launchAuto(){
+  const x=(Math.random()-.5)*26,y=Math.random()*5+2,z=-4-Math.random()*8;
+  launch(x,y,z,Math.random()<.35?'heart':'ball');
+}
+
+// 鼠标
+const mouse=new THREE.Vector2(0,0),mTarget=new THREE.Vector2(0,0),mLocal=new THREE.Vector3(999,999,0);
+const ray=new THREE.Raycaster(),plane=new THREE.Plane(new THREE.Vector3(0,0,1),0);
+function worldAt(nx,ny,zp){
+  ray.setFromCamera({x:nx,y:ny},cam);
+  const p=new THREE.Plane(new THREE.Vector3(0,0,1),-zp),v=new THREE.Vector3();
+  ray.ray.intersectPlane(p,v);return v;
+}
+addEventListener('pointermove',e=>{mTarget.set(e.clientX/innerWidth*2-1,-(e.clientY/innerHeight*2-1))});
+addEventListener('pointerdown',e=>{
+  if(e.target.closest&&e.target.closest('#ui'))return;
+  const nx=e.clientX/innerWidth*2-1,ny=-(e.clientY/innerHeight*2-1);
+  const w=worldAt(nx,ny,-2);
+  launch(w.x,w.y,w.z,Math.random()<.45?'heart':'ball');
+  if(Math.random()<.5)setTimeout(()=>burst(w.x+(Math.random()-.5)*4,w.y+(Math.random()-.5)*3,w.z,'ball'),180);
+});
+addEventListener('resize',()=>{cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();ren.setSize(innerWidth,innerHeight)});
+
+// 文案打字机
+const msgEl=document.getElementById('msg'),full=window.__m||MSG;
+let ti=0;const typer=setInterval(()=>{ti++;msgEl.textContent=full.slice(0,ti);if(ti>=full.length){clearInterval(typer)}},140);
+msgEl.addEventListener('focus',()=>clearInterval(typer));
+
+// 主循环
+const clock=new THREE.Clock();let nextAuto=1,T=0;
+function beatFn(t){const p=t%1.3;return Math.exp(-p*9)*.09+Math.exp(-Math.max(p-.28,0)*11)*(p>.28?.06:0)}
+function loop(){
+  requestAnimationFrame(loop);
+  const dt=Math.min(clock.getDelta(),.05);T+=dt;
+  mouse.lerp(mTarget,.06);
+  // 相机与爱心跟随鼠标
+  heart.rotation.y+=((mouse.x*.6+Math.sin(T*.4)*.25)-heart.rotation.y)*.05;
+  heart.rotation.x+=((-mouse.y*.3)-heart.rotation.x)*.05;
+  cam.position.x+=(mouse.x*1.4-cam.position.x)*.03;
+  cam.position.y+=(mouse.y*.9-cam.position.y)*.03;
+  cam.lookAt(0,0,0);
+  ring.rotation.y+=dt*.12;
+
+  // 鼠标在爱心局部空间的位置
+  heart.updateMatrixWorld();
+  const mw=worldAt(mouse.x,mouse.y,0);
+  mLocal.copy(mw);heart.worldToLocal(mLocal);
+
+  const beat=1+beatFn(T),R2=2.6;
+  for(let i=0;i<N;i++){
+    const j=i*3;
+    const tx=base[j]*beat,ty=base[j+1]*beat,tz=base[j+2]*beat;
+    const dx=pos[j]-mLocal.x,dy=pos[j+1]-mLocal.y,d2=dx*dx+dy*dy;
+    if(d2<R2*R2){const d=Math.sqrt(d2)+.001,f=(1-d/R2)*.16;vel[j]+=dx/d*f;vel[j+1]+=dy/d*f;vel[j+2]+=(Math.random()-.3)*f*1.6}
+    // 轻微漂浮
+    vel[j]+=(tx-pos[j])*.035+Math.sin(T*1.3+i)*.0004;
+    vel[j+1]+=(ty-pos[j+1])*.035+Math.cos(T*1.1+i*.7)*.0004;
+    vel[j+2]+=(tz-pos[j+2])*.035;
+    vel[j]*=.9;vel[j+1]*=.9;vel[j+2]*=.9;
+    pos[j]+=vel[j];pos[j+1]+=vel[j+1];pos[j+2]+=vel[j+2];
+  }
+  hg.attributes.position.needsUpdate=true;
+
+  // 火箭
+  for(let i=rockets.length-1;i>=0;i--){
+    const r=rockets[i];r.vy=Math.min((r.vy||0)+.012,.42);r.y+=r.vy;
+    emit(r.x,r.y,r.z,(Math.random()-.5)*.02,-.02,0,new THREE.Color(0xffd9a0),.05);
+    if(r.y>=r.ty){burst(r.x,r.y,r.z,r.type);rockets.splice(i,1)}
+  }
+  nextAuto-=dt;if(nextAuto<=0){launchAuto();nextAuto=1.2+Math.random()*1.6}
+
+  // 烟花更新
+  for(let i=0;i<FN;i++){
+    if(life[i]<=0){fc[i*3]=fc[i*3+1]=fc[i*3+2]=0;continue}
+    const j=i*3;
+    fv[j+1]-=.0022;fv[j]*=.985;fv[j+1]*=.985;fv[j+2]*=.985;
+    fp[j]+=fv[j];fp[j+1]+=fv[j+1];fp[j+2]+=fv[j+2];
+    life[i]-=decay[i];
+    const l=Math.max(life[i],0),f=l*l;
+    fc[j]=fcol[j]*f;fc[j+1]=fcol[j+1]*f;fc[j+2]=fcol[j+2]*f;
+  }
+  fg.attributes.position.needsUpdate=true;fg.attributes.color.needsUpdate=true;
+  ren.render(scene,cam);
+}
+loop();
+setTimeout(()=>burst(-7,5,-4,'heart'),600);
+setTimeout(()=>burst(7,4,-4,'heart'),1100);
+})();
+</script>
+</body>
+</html>
