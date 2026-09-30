@@ -106,8 +106,8 @@ theme_config:
     归档: /archives
     分类: /categories
     标签: /tags
-    壁纸: /love/
     关于我: /about
+    感谢: /love/
   subtitle:
     text: 惟楚有才，于斯为盛
     text2: 心之所向，身之所往
