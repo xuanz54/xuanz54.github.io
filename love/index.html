@@ -3,34 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>给你的心</title>
-<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;500&display=swap" rel="stylesheet">
+<title>xuanz的博客</title>
 <style>
 :root{--bg:#0a0612;--rose:#ff4d79;--gold:#ffd9a0;--ink:#fff2f5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html,body{height:100%;margin:0;background:var(--bg);overflow:hidden;color:var(--ink)}
-canvas{position:fixed;inset:0;display:block}
-#ui{position:fixed;left:0;right:0;bottom:7vh;text-align:center;pointer-events:none;padding:0 24px}
-#ui *{pointer-events:auto}
-#to{font-family:"Ma Shan Zheng","Noto Serif SC",cursive,serif;font-size:clamp(28px,5vw,48px);color:var(--gold);outline:none;letter-spacing:.08em;text-shadow:0 0 24px rgba(255,77,121,.7)}
-#msg{font-family:"Noto Serif SC",serif;font-weight:300;font-size:clamp(15px,2.2vw,20px);line-height:1.9;letter-spacing:.12em;margin:10px auto 0;max-width:560px;min-height:3.8em;outline:none;opacity:.92}
-#hint{position:fixed;top:calc(env(safe-area-inset-top,0px) + 16px);width:100%;text-align:center;font:300 13px "Noto Serif SC",serif;letter-spacing:.2em;opacity:.45;pointer-events:none}
-@media (prefers-reduced-motion:reduce){ #to{text-shadow:none}}
+canvas{position:fixed;inset:0;display:block;z-index:0}
 </style>
 </head>
 <body>
-<div id="hint">移动鼠标拨动爱心 · 点击放烟花</div>
-<div id="ui">
-  <div id="to" contenteditable="true" spellcheck="false">亲爱的你</div>
-  <div id="msg" contenteditable="true" spellcheck="false"></div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="three.min.js"></script>
 <script>
 (function(){
-const MSG="遇见你之后，平凡的日子都开始发光。\n我想把所有的心动，都留给你。\n——可以做我的唯一吗？";
-// 支持 ?to=名字&msg=内容 自定义
-try{const q=new URLSearchParams(location.search);if(q.get('to'))document.getElementById('to').textContent=q.get('to');if(q.get('msg'))window.__m=q.get('msg')}catch(e){}
-const R=new URLSearchParams(location.search||'');
-
 const scene=new THREE.Scene();
 scene.fog=new THREE.FogExp2(0x0a0612,0.022);
 const cam=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,200);
@@ -123,18 +106,12 @@ function worldAt(nx,ny,zp){
 }
 addEventListener('pointermove',e=>{mTarget.set(e.clientX/innerWidth*2-1,-(e.clientY/innerHeight*2-1))});
 addEventListener('pointerdown',e=>{
-  if(e.target.closest&&e.target.closest('#ui'))return;
   const nx=e.clientX/innerWidth*2-1,ny=-(e.clientY/innerHeight*2-1);
   const w=worldAt(nx,ny,-2);
   launch(w.x,w.y,w.z,Math.random()<.45?'heart':'ball');
   if(Math.random()<.5)setTimeout(()=>burst(w.x+(Math.random()-.5)*4,w.y+(Math.random()-.5)*3,w.z,'ball'),180);
 });
 addEventListener('resize',()=>{cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();ren.setSize(innerWidth,innerHeight)});
-
-// 文案打字机
-const msgEl=document.getElementById('msg'),full=window.__m||MSG;
-let ti=0;const typer=setInterval(()=>{ti++;msgEl.textContent=full.slice(0,ti);if(ti>=full.length){clearInterval(typer)}},140);
-msgEl.addEventListener('focus',()=>clearInterval(typer));
 
 // 主循环
 const clock=new THREE.Clock();let nextAuto=1,T=0;
