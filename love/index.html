@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>v2rayN 新手保姆级教程：从下载安装到节点配置全流程 |  xuanz的博客</title>
+      <title> xuanz的博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -57,115 +57,217 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-v2rayN-新手保姆级教程：从下载安装到节点配置全流程"
-  class="article article-type-post"
+  id="page-"
+  class="article article-type-page"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
 >
   <div class="article-inner">
-    
-    <header class="article-header">
        
-<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  v2rayN 新手保姆级教程：从下载安装到节点配置全流程
-</h1>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2026/03/26/v2rayN-%E6%96%B0%E6%89%8B%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B%EF%BC%9A%E4%BB%8E%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%88%B0%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE%E5%85%A8%E6%B5%81%E7%A8%8B/" class="article-date">
-  <time datetime="2026-03-26T01:39:57.000Z" itemprop="datePublished">2026-03-26</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a>
-  </div>
-  
-<div class="word_count">
-    <span class="post-time">
-        <span class="post-meta-item-icon">
-            <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">1.1k</span>
-        </span>
-    </span>
-
-    <span class="post-time">
-        &nbsp; | &nbsp;
-        <span class="post-meta-item-icon">
-            <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">3 min</span>
-        </span>
-    </span>
-</div>
- 
-    </div>
-      
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="v2rayN-新手保姆级教程：从下载安装到节点配置全流程"><a href="#v2rayN-新手保姆级教程：从下载安装到节点配置全流程" class="headerlink" title="v2rayN 新手保姆级教程：从下载安装到节点配置全流程"></a>v2rayN 新手保姆级教程：从下载安装到节点配置全流程</h1><p>v2rayN 是目前功能最强大、最受欢迎的图形化代理客户端之一。随着 7.x 版本的发布，它不仅在 Windows 上表现卓越，更通过 Avalonia 框架完美支持了 macOS 和 Linux 系统。它支持多种协议，包括 VMess、VLESS (Reality)、Shadowsocks、Trojan 及 Hysteria2。</p>
-<p>如果你是第一次接触 v2rayN，本教程将手把手带你完成从下载到成功开启代理的全过程。</p>
-<h2 id="第一步：下载与安装"><a href="#第一步：下载与安装" class="headerlink" title="第一步：下载与安装"></a>第一步：下载与安装</h2><h3 id="1-获取软件"><a href="#1-获取软件" class="headerlink" title="1. 获取软件"></a>1. 获取软件</h3><p>为了确保安全性与下载速度，建议通过以下渠道获取：</p>
-<ul>
-<li><strong>GitHub 官方发布页</strong>：<a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayN/releases">2dust&#x2F;v2rayN&#x2F;releases</a></li>
-</ul>
-<h3 id="2-下载哪个文件？"><a href="#2-下载哪个文件？" class="headerlink" title="2. 下载哪个文件？"></a>2. 下载哪个文件？</h3><p>对于大多数 Windows 10&#x2F;11 用户，我们推荐下载： <strong><code>v2rayN-windows-64-SelfContained.zip</code></strong></p>
-<p>这个包的优势在于：</p>
-<ul>
-<li><strong>解压即用</strong>：内置了所有必需的核心组件。</li>
-<li><strong>环境免安装</strong>：无需手动安装 Microsoft .NET 运行环境。</li>
-</ul>
-<h3 id="3-安装与运行"><a href="#3-安装与运行" class="headerlink" title="3. 安装与运行"></a>3. 安装与运行</h3><ol>
-<li>将下载的压缩包解压到一个固定的位置（建议不要放在桌面或 C 盘，推荐放在 D 盘或 E 盘文件夹中）。</li>
-<li>在解压后的文件夹中，找到 <strong>v2rayN.exe</strong> (Windows 用户) 或对应的运行图标。</li>
-<li><strong>重要</strong>：Windows 用户建议右键点击程序，选择 “以管理员身份运行”，以确保代理权限正常。</li>
-</ol>
-<p><em>注意：如果运行报错提示缺少组件，请根据提示安装 .NET 8.0 Desktop Runtime。</em></p>
-<h2 id="第二步：添加节点订阅"><a href="#第二步：添加节点订阅" class="headerlink" title="第二步：添加节点订阅"></a>第二步：添加节点订阅</h2><p>v2rayN 本身只是一个工具，你需要导入有效的服务器节点（订阅链接）才能访问网络。</p>
-<h3 id="1-获取订阅地址"><a href="#1-获取订阅地址" class="headerlink" title="1. 获取订阅地址"></a>1. 获取订阅地址</h3><p>通常你可以从自己购买的加速服务（机场）后台复制 V2Ray 订阅链接。</p>
-<p>我们以<a target="_blank" rel="noopener" href="https://go.v2rayn.co/yf">扬帆云机场</a>为例，购买订阅服务后登录机场服务商的后台，点击订阅链接并复制订阅地址：</p>
-<p><img src="/images/posts/v2rayn/subscription-flow.svg" alt="v2rayN 订阅导入流程"></p>
-<h3 id="2-导入软件"><a href="#2-导入软件" class="headerlink" title="2. 导入软件"></a>2. 导入软件</h3><ol>
-<li><p>打开 v2rayN 主界面。</p>
-</li>
-<li><p>点击顶部菜单栏的 <strong>订阅分组</strong>，选择 <strong>订阅分组设置</strong>。</p>
-</li>
-<li><p>在弹出的窗口中点击 <strong>添加</strong>。</p>
-</li>
-<li><p>在 <strong>别名</strong> 处随便填写，在 <strong>可选地址 (url)</strong> 处粘贴你刚才复制的订阅链接。</p>
-</li>
-<li><p>点击 <strong>确定</strong> 保存。</p>
-</li>
-<li><p>回到主界面，点击 <strong>订阅分组</strong> -&gt; **更新全部订阅 (不通过代理)**。</p>
-</li>
-</ol>
-<p>操作完成后，你应该能看到列表中出现了一排节点。</p>
-<h2 id="第三步：开启代理与模式选择"><a href="#第三步：开启代理与模式选择" class="headerlink" title="第三步：开启代理与模式选择"></a>第三步：开启代理与模式选择</h2><p>这是最关键的一步，决定了电脑是否已经处于代理加速状态。</p>
-<h3 id="1-选择节点"><a href="#1-选择节点" class="headerlink" title="1. 选择节点"></a>1. 选择节点</h3><p>在节点列表中，左键点击选中一个想使用的节点，然后按键盘上的Enter (回车)。当节点的别名变色或显示“活动”状态时，表示已选中。</p>
-<h3 id="2-设置系统代理"><a href="#2-设置系统代理" class="headerlink" title="2. 设置系统代理"></a>2. 设置系统代理</h3><p>在软件界面的<strong>最底部图标栏</strong>，找到以下三项关键设置：</p>
-<ul>
-<li><strong>系统代理</strong>：将其设置为 <strong>自动配置系统代理</strong>。此时底部图标会变为红色。</li>
-<li><strong>路由</strong>：将其设置为 <strong>绕过大陆</strong>。这可以确保访问百度、淘宝等国内网站时不走代理，访问 YouTube、Google 时才加速。</li>
-</ul>
-<h3 id="3-测试网络"><a href="#3-测试网络" class="headerlink" title="3. 测试网络"></a>3. 测试网络</h3><p>打开浏览器，尝试访问 Google。如果能正常打开，恭喜，配置已成功。</p>
-<h2 id="高级设置说明"><a href="#高级设置说明" class="headerlink" title="高级设置说明"></a>高级设置说明</h2><h3 id="TUN-模式"><a href="#TUN-模式" class="headerlink" title="TUN 模式"></a>TUN 模式</h3><p>在软件底部可以找到 TUN 模式开关。</p>
-<ul>
-<li><strong>作用</strong>：接管整机流量。对于一些不遵循系统代理的浏览器插件、游戏或特定软件非常有用。</li>
-<li><strong>建议</strong>：普通网页浏览不需要开启，仅在某些软件无法正常代理时开启。</li>
-</ul>
-<h3 id="核心选择"><a href="#核心选择" class="headerlink" title="核心选择"></a>核心选择</h3><p>v2rayN 支持切换 Xray-core、sing-box 等核心。目前大部分订阅链接都支持 Xray，保持默认即可。</p>
-<h2 id="常见问题排查-FAQ"><a href="#常见问题排查-FAQ" class="headerlink" title="常见问题排查 FAQ"></a>常见问题排查 FAQ</h2><h3 id="1-软件开启了但无法上网？"><a href="#1-软件开启了但无法上网？" class="headerlink" title="1. 软件开启了但无法上网？"></a>1. 软件开启了但无法上网？</h3><ul>
-<li>检查系统时间是否准确（误差不能超过 90 秒，否则无法连接）。</li>
-<li>确认系统代理是否已设为“自动配置系统代理”。</li>
-<li>尝试更换其他节点进行连接。</li>
-</ul>
-<h3 id="2-点击更新订阅失败？"><a href="#2-点击更新订阅失败？" class="headerlink" title="2. 点击更新订阅失败？"></a>2. 点击更新订阅失败？</h3><ul>
-<li>请确认你的网络能够访问订阅地址，或者尝试更换不同的网络环境。</li>
-<li>确认订阅链接是否过期或被服务商重置。</li>
-</ul>
+  <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>给你的心</title>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0612;--rose:#ff4d79;--gold:#ffd9a0;--ink:#fff2f5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{height:100%;margin:0;background:var(--bg);overflow:hidden;color:var(--ink)}
+canvas{position:fixed;inset:0;display:block}
+#ui{position:fixed;left:0;right:0;bottom:7vh;text-align:center;pointer-events:none;padding:0 24px}
+#ui *{pointer-events:auto}
+#to{font-family:"Ma Shan Zheng","Noto Serif SC",cursive,serif;font-size:clamp(28px,5vw,48px);color:var(--gold);outline:none;letter-spacing:.08em;text-shadow:0 0 24px rgba(255,77,121,.7)}
+#msg{font-family:"Noto Serif SC",serif;font-weight:300;font-size:clamp(15px,2.2vw,20px);line-height:1.9;letter-spacing:.12em;margin:10px auto 0;max-width:560px;min-height:3.8em;outline:none;opacity:.92}
+#hint{position:fixed;top:calc(env(safe-area-inset-top,0px) + 16px);width:100%;text-align:center;font:300 13px "Noto Serif SC",serif;letter-spacing:.2em;opacity:.45;pointer-events:none}
+@media (prefers-reduced-motion:reduce){ #to{text-shadow:none}}
+</style>
+</head>
+<body>
+<div id="hint">移动鼠标拨动爱心 · 点击放烟花</div>
+<div id="ui">
+  <div id="to" contenteditable="true" spellcheck="false">亲爱的你</div>
+  <div id="msg" contenteditable="true" spellcheck="false"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+const MSG="遇见你之后，平凡的日子都开始发光。\n我想把所有的心动，都留给你。\n——可以做我的唯一吗？";
+// 支持 ?to=名字&msg=内容 自定义
+try{const q=new URLSearchParams(location.search);if(q.get('to'))document.getElementById('to').textContent=q.get('to');if(q.get('msg'))window.__m=q.get('msg')}catch(e){}
+const R=new URLSearchParams(location.search||'');
+
+const scene=new THREE.Scene();
+scene.fog=new THREE.FogExp2(0x0a0612,0.022);
+const cam=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,200);
+cam.position.set(0,0,16);
+const ren=new THREE.WebGLRenderer({antialias:true});
+ren.setPixelRatio(Math.min(devicePixelRatio,2));
+ren.setSize(innerWidth,innerHeight);
+ren.setClearColor(0x0a0612);
+document.body.appendChild(ren.domElement);
+
+// 发光圆点贴图
+const cv=document.createElement('canvas');cv.width=cv.height=64;
+const cx=cv.getContext('2d'),g=cx.createRadialGradient(32,32,0,32,32,32);
+g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(.25,'rgba(255,255,255,.6)');g.addColorStop(1,'rgba(255,255,255,0)');
+cx.fillStyle=g;cx.fillRect(0,0,64,64);
+const tex=new THREE.CanvasTexture(cv);
+
+// 星空
+{const n=1400,p=new Float32Array(n*3);
+for(let i=0;i<n;i++){p[i*3]=(Math.random()-.5)*120;p[i*3+1]=(Math.random()-.5)*80;p[i*3+2]=-10-Math.random()*50}
+const gm=new THREE.BufferGeometry();gm.setAttribute('position',new THREE.BufferAttribute(p,3));
+scene.add(new THREE.Points(gm,new THREE.PointsMaterial({size:.22,map:tex,transparent:true,opacity:.7,depthWrite:false,blending:THREE.AdditiveBlending,color:0xbfb0ff})))}
+
+// 爱心粒子
+const N=11000,base=new Float32Array(N*3),pos=new Float32Array(N*3),vel=new Float32Array(N*3),col=new Float32Array(N*3);
+const cA=new THREE.Color(0xff2e63),cB=new THREE.Color(0xff9ab5),cC=new THREE.Color(0xffd9a0),tmp=new THREE.Color();
+for(let i=0;i<N;i++){
+  const t=Math.random()*Math.PI*2;
+  const s=Math.pow(Math.random(),.3);
+  const hx=16*Math.pow(Math.sin(t),3),hy=13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t);
+  const k=.36;
+  const x=hx*k*s,y=(hy+1)*k*s;
+  const z=(Math.random()-.5)*4.2*(1-s*s*.75)*(1-Math.abs(hx)/24);
+  base.set([x,y,z],i*3);pos.set([x,y,z],i*3);
+  tmp.copy(cA).lerp(cB,Math.random()*.8);
+  if(Math.random()<.08)tmp.copy(cC);
+  tmp.multiplyScalar(.6+.4*s);
+  col.set([tmp.r,tmp.g,tmp.b],i*3);
+}
+const hg=new THREE.BufferGeometry();
+hg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+hg.setAttribute('color',new THREE.BufferAttribute(col,3));
+const heart=new THREE.Points(hg,new THREE.PointsMaterial({size:.17,map:tex,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));
+scene.add(heart);
+
+// 环绕的小爱心光环
+const ringN=420,rp=new Float32Array(ringN*3),rg=new THREE.BufferGeometry();
+for(let i=0;i<ringN;i++){const a=Math.random()*Math.PI*2,r=9+Math.random()*3;rp.set([Math.cos(a)*r,(Math.random()-.5)*2.5,Math.sin(a)*r],i*3)}
+rg.setAttribute('position',new THREE.BufferAttribute(rp,3));
+const ring=new THREE.Points(rg,new THREE.PointsMaterial({size:.14,map:tex,transparent:true,opacity:.55,depthWrite:false,blending:THREE.AdditiveBlending,color:0xffb3c6}));
+ring.rotation.x=.35;scene.add(ring);
+
+// 烟花粒子池
+const FN=9000,fp=new Float32Array(FN*3).fill(9999),fv=new Float32Array(FN*3),fc=new Float32Array(FN*3),fcol=new Float32Array(FN*3),life=new Float32Array(FN),decay=new Float32Array(FN);
+let fi=0;
+const fg=new THREE.BufferGeometry();
+fg.setAttribute('position',new THREE.BufferAttribute(fp,3));
+fg.setAttribute('color',new THREE.BufferAttribute(fc,3));
+scene.add(Object.assign(new THREE.Points(fg,new THREE.PointsMaterial({size:.3,map:tex,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending})),{frustumCulled:false}));
+function emit(x,y,z,vx,vy,vz,c,d){
+  const i=fi;fi=(fi+1)%FN;
+  fp[i*3]=x;fp[i*3+1]=y;fp[i*3+2]=z;fv[i*3]=vx;fv[i*3+1]=vy;fv[i*3+2]=vz;
+  fcol[i*3]=c.r;fcol[i*3+1]=c.g;fcol[i*3+2]=c.b;life[i]=1;decay[i]=d;
+}
+const PAL=[0xff4d79,0xffd9a0,0xff9ab5,0xc9a7ff,0xff7a59,0x8fe3ff,0xffffff];
+function burst(x,y,z,type){
+  const c=new THREE.Color(PAL[Math.random()*PAL.length|0]),c2=new THREE.Color(PAL[Math.random()*PAL.length|0]);
+  const n=type==='heart'?260:320,sp=type==='heart'?.11:.16+Math.random()*.06;
+  for(let i=0;i<n;i++){
+    let vx,vy,vz=(Math.random()-.5)*.04;
+    if(type==='heart'){const t=i/n*Math.PI*2;vx=16*Math.pow(Math.sin(t),3)/16*sp*2.2;vy=(13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t))/16*sp*2.2;}
+    else{const u=Math.random()*2-1,a=Math.random()*Math.PI*2,r=Math.sqrt(1-u*u),m=sp*(.35+Math.random()*.65);vx=r*Math.cos(a)*m;vy=u*m;vz=r*Math.sin(a)*m}
+    emit(x,y,z,vx,vy,vz,Math.random()<.5?c:c2,.008+Math.random()*.008);
+  }
+}
+const rockets=[];
+function launch(tx,ty,tz,type){rockets.push({x:tx+(Math.random()-.5)*2,y:-9,z:tz,vy:0,ty,tx,type})}
+function launchAuto(){
+  const x=(Math.random()-.5)*26,y=Math.random()*5+2,z=-4-Math.random()*8;
+  launch(x,y,z,Math.random()<.35?'heart':'ball');
+}
+
+// 鼠标
+const mouse=new THREE.Vector2(0,0),mTarget=new THREE.Vector2(0,0),mLocal=new THREE.Vector3(999,999,0);
+const ray=new THREE.Raycaster(),plane=new THREE.Plane(new THREE.Vector3(0,0,1),0);
+function worldAt(nx,ny,zp){
+  ray.setFromCamera({x:nx,y:ny},cam);
+  const p=new THREE.Plane(new THREE.Vector3(0,0,1),-zp),v=new THREE.Vector3();
+  ray.ray.intersectPlane(p,v);return v;
+}
+addEventListener('pointermove',e=>{mTarget.set(e.clientX/innerWidth*2-1,-(e.clientY/innerHeight*2-1))});
+addEventListener('pointerdown',e=>{
+  if(e.target.closest&&e.target.closest('#ui'))return;
+  const nx=e.clientX/innerWidth*2-1,ny=-(e.clientY/innerHeight*2-1);
+  const w=worldAt(nx,ny,-2);
+  launch(w.x,w.y,w.z,Math.random()<.45?'heart':'ball');
+  if(Math.random()<.5)setTimeout(()=>burst(w.x+(Math.random()-.5)*4,w.y+(Math.random()-.5)*3,w.z,'ball'),180);
+});
+addEventListener('resize',()=>{cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();ren.setSize(innerWidth,innerHeight)});
+
+// 文案打字机
+const msgEl=document.getElementById('msg'),full=window.__m||MSG;
+let ti=0;const typer=setInterval(()=>{ti++;msgEl.textContent=full.slice(0,ti);if(ti>=full.length){clearInterval(typer)}},140);
+msgEl.addEventListener('focus',()=>clearInterval(typer));
+
+// 主循环
+const clock=new THREE.Clock();let nextAuto=1,T=0;
+function beatFn(t){const p=t%1.3;return Math.exp(-p*9)*.09+Math.exp(-Math.max(p-.28,0)*11)*(p>.28?.06:0)}
+function loop(){
+  requestAnimationFrame(loop);
+  const dt=Math.min(clock.getDelta(),.05);T+=dt;
+  mouse.lerp(mTarget,.06);
+  // 相机与爱心跟随鼠标
+  heart.rotation.y+=((mouse.x*.6+Math.sin(T*.4)*.25)-heart.rotation.y)*.05;
+  heart.rotation.x+=((-mouse.y*.3)-heart.rotation.x)*.05;
+  cam.position.x+=(mouse.x*1.4-cam.position.x)*.03;
+  cam.position.y+=(mouse.y*.9-cam.position.y)*.03;
+  cam.lookAt(0,0,0);
+  ring.rotation.y+=dt*.12;
+
+  // 鼠标在爱心局部空间的位置
+  heart.updateMatrixWorld();
+  const mw=worldAt(mouse.x,mouse.y,0);
+  mLocal.copy(mw);heart.worldToLocal(mLocal);
+
+  const beat=1+beatFn(T),R2=2.6;
+  for(let i=0;i<N;i++){
+    const j=i*3;
+    const tx=base[j]*beat,ty=base[j+1]*beat,tz=base[j+2]*beat;
+    const dx=pos[j]-mLocal.x,dy=pos[j+1]-mLocal.y,d2=dx*dx+dy*dy;
+    if(d2<R2*R2){const d=Math.sqrt(d2)+.001,f=(1-d/R2)*.16;vel[j]+=dx/d*f;vel[j+1]+=dy/d*f;vel[j+2]+=(Math.random()-.3)*f*1.6}
+    // 轻微漂浮
+    vel[j]+=(tx-pos[j])*.035+Math.sin(T*1.3+i)*.0004;
+    vel[j+1]+=(ty-pos[j+1])*.035+Math.cos(T*1.1+i*.7)*.0004;
+    vel[j+2]+=(tz-pos[j+2])*.035;
+    vel[j]*=.9;vel[j+1]*=.9;vel[j+2]*=.9;
+    pos[j]+=vel[j];pos[j+1]+=vel[j+1];pos[j+2]+=vel[j+2];
+  }
+  hg.attributes.position.needsUpdate=true;
+
+  // 火箭
+  for(let i=rockets.length-1;i>=0;i--){
+    const r=rockets[i];r.vy=Math.min((r.vy||0)+.012,.42);r.y+=r.vy;
+    emit(r.x,r.y,r.z,(Math.random()-.5)*.02,-.02,0,new THREE.Color(0xffd9a0),.05);
+    if(r.y>=r.ty){burst(r.x,r.y,r.z,r.type);rockets.splice(i,1)}
+  }
+  nextAuto-=dt;if(nextAuto<=0){launchAuto();nextAuto=1.2+Math.random()*1.6}
+
+  // 烟花更新
+  for(let i=0;i<FN;i++){
+    if(life[i]<=0){fc[i*3]=fc[i*3+1]=fc[i*3+2]=0;continue}
+    const j=i*3;
+    fv[j+1]-=.0022;fv[j]*=.985;fv[j+1]*=.985;fv[j+2]*=.985;
+    fp[j]+=fv[j];fp[j+1]+=fv[j+1];fp[j+2]+=fv[j+2];
+    life[i]-=decay[i];
+    const l=Math.max(life[i],0),f=l*l;
+    fc[j]=fcol[j]*f;fc[j+1]=fcol[j+1]*f;fc[j+2]=fcol[j+2]*f;
+  }
+  fg.attributes.position.needsUpdate=true;fg.attributes.color.needsUpdate=true;
+  ren.render(scene,cam);
+}
+loop();
+setTimeout(()=>burst(-7,5,-4,'heart'),600);
+setTimeout(()=>burst(7,4,-4,'heart'),1100);
+})();
+</script>
+</body>
+</html>
  
       <!-- reward -->
       
@@ -224,48 +326,18 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xuanz54.github.io/2026/03/26/v2rayN-%E6%96%B0%E6%89%8B%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B%EF%BC%9A%E4%BB%8E%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%88%B0%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE%E5%85%A8%E6%B5%81%E7%A8%8B/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xuanz54.github.io/love/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li></ul>
-
     </footer>
   </div>
 
    
-  <nav class="article-nav">
-    
-      <a href="/2026/07/20/%E7%8E%B0%E4%BB%A3Agent%E6%8A%80%E6%9C%AF%E6%A0%88%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            现代Agent技术栈学习笔记
-          
-        </div>
-      </a>
-    
-    
-      <a href="/2026/02/11/%E8%87%AA%E5%BB%BABitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%99%A8/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">自建Bitwarden密码管理器</div>
-      </a>
-    
-  </nav>
-
   
    
   
-   
-    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
-    <div id="twikoo" class="twikoo"></div>
-    <script>
-        twikoo.init({
-            envId: ""
-        })
-    </script>
- 
 </article>
 
 </section>
