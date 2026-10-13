@@ -7,6 +7,8 @@ tags:
 date: 2026-09-08 14:35:00
 ---
 
+<a href="/images/posts/ssh-nginx/ssh-nginx-guide.png"><img src="/images/posts/ssh-nginx/ssh-nginx-guide.png" alt="SSH 与 Nginx 从零到实战图解" style="width:75%;height:auto;display:block;margin:0 auto;"></a>
+
 # SSH 与 Nginx 从零到实战
 
 > 面向完全没有 Linux 运维经验的初学者。建议准备一台自己的 Linux 虚拟机（Ubuntu 22.04/24.04 均可），所有带 `sudo` 的命令都在这台实验机中执行。不要直接在生产服务器上照抄实验命令。
