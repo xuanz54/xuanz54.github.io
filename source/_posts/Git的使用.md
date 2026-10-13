@@ -1,14 +1,14 @@
 ---
-title: Git的使用
+title: Git的使用(2026修订版)
 tags:
   - Linux
   - Github
 categories:
   - 笔记
-date: 2024-07-24 13:45:00
+date: 2026-10-13 13:45:00
 ---
 
-![Git 入门小课堂：初始化仓库、三区协作流程与分支合并](/images/posts/git/git-guide.png)
+<a href="/images/posts/git/git-guide.png"><img src="/images/posts/git/git-guide.png" alt="Git 入门小课堂：初始化仓库、三区协作流程与分支合并" style="width:50%;height:auto;display:block;margin:0 auto;"></a>
 
 # Git 与 GitHub
 
