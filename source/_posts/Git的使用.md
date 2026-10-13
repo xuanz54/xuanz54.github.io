@@ -8,6 +8,8 @@ categories:
 date: 2024-07-24 13:45:00
 ---
 
+![Git 入门小课堂：初始化仓库、三区协作流程与分支合并](/images/posts/git/git-guide.png)
+
 # Git 与 GitHub
 
 ## Git 的起源
