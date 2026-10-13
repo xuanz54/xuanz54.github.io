@@ -8,7 +8,7 @@ categories:
 date: 2026-10-13 13:45:00
 ---
 
-<a href="/images/posts/git/git-guide.png"><img src="/images/posts/git/git-guide.png" alt="Git 入门小课堂：初始化仓库、三区协作流程与分支合并" style="width:50%;height:auto;display:block;margin:0 auto;"></a>
+<a href="/images/posts/git/git-guide.png"><img src="/images/posts/git/git-guide.png" alt="Git 入门小课堂：初始化仓库、三区协作流程与分支合并" style="width:75%;height:auto;display:block;margin:0 auto;"></a>
 
 # Git 与 GitHub
 
