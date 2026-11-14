@@ -101,6 +101,8 @@ theme: ayer
 
 # Keep site-specific theme settings in the source branch, outside the Ayer submodule.
 theme_config:
+  alipay: /images/alipay.jpg?v=20261114
+  weixin: /images/wechat.jpg?v=20261114
   menu:
     主页: /
     归档: /archives
