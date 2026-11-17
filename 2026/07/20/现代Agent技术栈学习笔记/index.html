@@ -109,7 +109,6 @@
   <h1 id="现代Agent技术栈学习笔记"><a href="#现代Agent技术栈学习笔记" class="headerlink" title="现代Agent技术栈学习笔记"></a>现代Agent技术栈学习笔记</h1><blockquote>
 <p>适用对象：想系统理解 Codex、AI Agent、Skills、MCP、工具调用、上下文工程和 Agent 工程化的人。<br>阅读目标：读完后能把这些概念放进同一张地图里，并知道下一步如何实践。</p>
 </blockquote>
-<p><img src="/images/posts/agent-stack/overview.svg" alt="现代 Agent 技术栈"></p>
 <h2 id="0-一句话总览"><a href="#0-一句话总览" class="headerlink" title="0. 一句话总览"></a>0. 一句话总览</h2><p>这一波 AI 工具的核心变化，不是“模型能聊天”，而是“模型能在受控环境里带着上下文使用工具完成任务”。  </p>
 <p>可以把整个体系理解成：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">用户目标</span><br><span class="line">  -&gt; 上下文工程</span><br><span class="line">  -&gt; Agent 推理与计划</span><br><span class="line">  -&gt; 工具调用 / 浏览器 / 代码 / 文件 / API</span><br><span class="line">  -&gt; MCP 等协议把外部能力标准化接入</span><br><span class="line">  -&gt; Skills 把可复用工作流沉淀下来</span><br><span class="line">  -&gt; 沙箱、审批、日志、评测保证可控</span><br><span class="line">  -&gt; 可验证的交付物</span><br></pre></td></tr></table></figure>
@@ -136,7 +135,8 @@
 <li><strong>安全与治理</strong>：权限、沙箱、审批、日志、评测、数据边界。</li>
 <li><strong>实践项目</strong>：让 Agent 真正完成一个有验收标准的任务。</li>
 </ol>
-<h2 id="2-大图：现代-AI-Agent-系统由什么组成"><a href="#2-大图：现代-AI-Agent-系统由什么组成" class="headerlink" title="2. 大图：现代 AI Agent 系统由什么组成"></a>2. 大图：现代 AI Agent 系统由什么组成</h2><p>一个现代 Agent 系统一般包含这些层：</p>
+<h2 id="2-大图：现代-AI-Agent-系统由什么组成"><a href="#2-大图：现代-AI-Agent-系统由什么组成" class="headerlink" title="2. 大图：现代 AI Agent 系统由什么组成"></a>2. 大图：现代 AI Agent 系统由什么组成</h2><p><a href="/images/posts/agent-stack/augmented-llm.png"><img src="/images/posts/agent-stack/augmented-llm.png" alt="Anthropic 官方图解：LLM 与检索、工具和记忆组成增强模型" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a></p>
+<p>一个现代 Agent 系统一般包含这些层：</p>
 <table>
 <thead>
 <tr>
@@ -204,7 +204,7 @@
 </ul>
 <p>的 AI 系统。</p>
 <p>它的典型循环是：</p>
-<p><img src="/images/posts/agent-stack/agent-loop.svg" alt="Agent Loop"></p>
+<p><a href="/images/posts/agent-stack/autonomous-agent.png"><img src="/images/posts/agent-stack/autonomous-agent.png" alt="Anthropic 官方图解：Agent 在环境反馈中循环调用工具" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a></p>
 <p>这个循环有时被称为 Agent Loop、ReAct、Plan-Act-Observe 等。名称不同，核心思想相同：<br><strong>模型要能在行动结果的反馈中继续推理。</strong></p>
 <h3 id="3-2-Agent-与-Chatbot-的区别"><a href="#3-2-Agent-与-Chatbot-的区别" class="headerlink" title="3.2 Agent 与 Chatbot 的区别"></a>3.2 Agent 与 Chatbot 的区别</h3><table>
 <thead>
@@ -277,6 +277,7 @@
 <p>在 Codex 这样的环境里，Agent 不只是“建议你怎么改”，而是可以实际操作工作区：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">读取文件 -&gt; 搜索代码 -&gt; 制定修改方案 -&gt; 编辑文件 -&gt; 运行测试 -&gt; 根据失败日志继续修改 -&gt; 汇报结果</span><br></pre></td></tr></table></figure>
 
+<p><a href="/images/posts/agent-stack/coding-agent.png"><img src="/images/posts/agent-stack/coding-agent.png" alt="Anthropic 官方图解：编码 Agent 的规划、执行与测试反馈流程" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a></p>
 <h3 id="4-2-Codex-的核心价值"><a href="#4-2-Codex-的核心价值" class="headerlink" title="4.2 Codex 的核心价值"></a>4.2 Codex 的核心价值</h3><p>Codex 的价值在于把 AI 放进真实工程上下文：</p>
 <ul>
 <li><strong>仓库上下文</strong>：读真实代码，而不是只靠用户粘贴片段。</li>
@@ -778,7 +779,8 @@
 <p>可以这样看：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">模型通过 function/tool calling 表达“我要调用某个工具”</span><br><span class="line">Agent 宿主负责执行这个工具</span><br><span class="line">MCP 可以作为工具来源之一，把外部 server 暴露成工具/资源/提示</span><br></pre></td></tr></table></figure>
 
-<h2 id="12-Multi-Agent：多个-Agent-协作"><a href="#12-Multi-Agent：多个-Agent-协作" class="headerlink" title="12. Multi-Agent：多个 Agent 协作"></a>12. Multi-Agent：多个 Agent 协作</h2><p>Multi-Agent 指多个 Agent 分工协作。常见模式：</p>
+<h2 id="12-Multi-Agent：多个-Agent-协作"><a href="#12-Multi-Agent：多个-Agent-协作" class="headerlink" title="12. Multi-Agent：多个 Agent 协作"></a>12. Multi-Agent：多个 Agent 协作</h2><p><a href="/images/posts/agent-stack/orchestrator-workers.png"><img src="/images/posts/agent-stack/orchestrator-workers.png" alt="Anthropic 官方图解：协调者分配任务给多个工作 Agent" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a></p>
+<p>Multi-Agent 指多个 Agent 分工协作。常见模式：</p>
 <table>
 <thead>
 <tr>
@@ -853,7 +855,8 @@
 <li>错误和恢复路径。</li>
 </ul>
 <p>没有日志的 Agent 很难调试，也很难建立信任。</p>
-<h2 id="14-评测：如何判断-Agent-做得好不好"><a href="#14-评测：如何判断-Agent-做得好不好" class="headerlink" title="14. 评测：如何判断 Agent 做得好不好"></a>14. 评测：如何判断 Agent 做得好不好</h2><p>Agent 的评测不能只看“回答像不像”。要看任务是否完成。</p>
+<h2 id="14-评测：如何判断-Agent-做得好不好"><a href="#14-评测：如何判断-Agent-做得好不好" class="headerlink" title="14. 评测：如何判断 Agent 做得好不好"></a>14. 评测：如何判断 Agent 做得好不好</h2><p><a href="/images/posts/agent-stack/evaluator-optimizer.png"><img src="/images/posts/agent-stack/evaluator-optimizer.png" alt="Anthropic 官方图解：生成器与评估器组成改进循环" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a></p>
+<p>Agent 的评测不能只看“回答像不像”。要看任务是否完成。</p>
 <p>常见评测维度：</p>
 <table>
 <thead>

@@ -88,7 +88,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">386</span>
+            <span class="post-count">380</span>
         </span>
     </span>
 
@@ -106,8 +106,8 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p>DeepSeek 又深夜发大招！开源了多模态大模型Janus-Pro-7B，普通电脑可以直接安装使用，现在我们就来本地部署！支持图像识别和图像生成，性能非常强悍！</p>
-<p><img src="/images/posts/deepseek-janus/janus-overview.svg" alt="Janus-Pro-7B 本地部署流程"></p>
+  <p><a href="/images/posts/deepseek-janus/deepseek-logo.svg"><img src="/images/posts/deepseek-janus/deepseek-logo.svg" alt="DeepSeek 标志" loading="lazy" style="width:75%;max-width:280px;height:auto;display:block;margin:1.5em auto;"></a></p>
+<p>DeepSeek 又深夜发大招！开源了多模态大模型Janus-Pro-7B，普通电脑可以直接安装使用，现在我们就来本地部署！支持图像识别和图像生成，性能非常强悍！</p>
 <p>1、检查自己是否安装了 Git 和 conda ，如果没有安装，请点击前往下载【<a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a>】和 【<a target="_blank" rel="noopener" href="https://www.anaconda.com/download">Conda</a>】</p>
 <p>2、创建虚拟环境</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n myenvp python=3.10 -y</span><br></pre></td></tr></table></figure>
@@ -134,8 +134,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python demo/app_januspro.py --device cuda</span><br></pre></td></tr></table></figure>
 
 <p>安装完成以后，根据提示打开本地链接：<a target="_blank" rel="noopener" href="http://127.0.0.1:7860/">http://127.0.0.1:7860</a> 即可进入到使用面板</p>
-<p><img src="/images/posts/deepseek-janus/janus-webui.svg" alt="Janus-Pro 本地 WebUI 示意"></p>
-<p>右侧的文生图面板用于输入描述并生成图像，操作位置见上图。</p>
+<p>在界面中选择文生图功能，输入描述后生成图像。</p>
 <p><strong>退出以后该如何启动？ 按下方的步骤即可：</strong></p>
 <p>1、激活 Conda 虚拟环境</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate myenvp</span><br></pre></td></tr></table></figure>
