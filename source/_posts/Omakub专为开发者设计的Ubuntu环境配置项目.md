@@ -7,13 +7,16 @@ categories:
 date: 2024-10-28 16:17:00
 ---
 
+<a href="/images/posts/omakub/ubuntu-logo.svg"><img src="/images/posts/omakub/ubuntu-logo.svg" alt="Ubuntu 标志" loading="lazy" style="width:75%;max-width:360px;height:auto;display:block;margin:1.5em auto;"></a>
+
 Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on Rails 的创造者 David Heinemeier Hansson（DHH）发起。其目标是通过一条命令将全新的 Ubuntu 系统转化为一个配置完备、美观且现代化的 Web 开发系统，简化开发环境的搭建过程。
 
 提供一键式配置，集成了大量流行的开发工具和应用程序，如 Chrome、Firefox、Alacritty 终端、Neovim 和 VSCode 编辑器等。它不仅适用于新手，也为那些希望快速搭建开发环境的开发者提供了便利。Omakub 还对 Ubuntu 的 UI 进行了优化，适应键盘优先和窗口平铺的工作流程。
 
-![Omakub 开发环境组成](/images/posts/omakub/toolchain.svg)
 
  
+
+
 
 #### 主要功能
 
@@ -23,6 +26,8 @@ Omakub 是一个专为开发者设计的 Ubuntu 环境配置项目，由 Ruby on
 4. 容器管理：预配置 MySQL 和 Redis 容器，提供 lazydocker 工具简化管理。
 5. 语言管理：使用 mise 工具管理 Ruby、Node.js、Python、Go、Java 等多种编程语言。
 6. 系统优化：调整 Ubuntu UI，提供快捷键操作和窗口平铺功能。
+
+
 
 #### 安装指南
 

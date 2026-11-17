@@ -8,7 +8,7 @@ categories:
 date: 2024-08-11 18:35:00
 ---
 
-![Conda 环境管理流程](/images/posts/conda/workflow.svg)
+<a href="/images/posts/conda/conda-logo.svg"><img src="/images/posts/conda/conda-logo.svg" alt="Conda 官方标志" loading="lazy" style="width:75%;max-width:420px;height:auto;display:block;margin:1.5em auto;"></a>
 
 ## 一、conda基础概念
 

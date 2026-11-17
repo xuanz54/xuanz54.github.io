@@ -8,6 +8,8 @@ categories:
 date: 2025-08-01 23:15:00
 ---
 
+<a href="/images/posts/windows-context-menu/context-icon.png"><img src="/images/posts/windows-context-menu/context-icon.png" alt="ContextMenuManager 官方应用图标" loading="lazy" style="width:75%;max-width:128px;height:auto;display:block;margin:1.5em auto;"></a>
+
 #### ContextMenuManager 是一款免安装的开源软件，可以非常方便的管理Windows 电脑的右键菜单，轻松去除不必要的或者是流氓的菜单选项，还你电脑一个干净、清爽、简洁
 
 ## 主要功能
@@ -29,7 +31,8 @@ date: 2025-08-01 23:15:00
 
 ## 运行截图
 
-![Windows 右键菜单管理示意](/images/posts/windows-context-menu/overview.svg)
+
+
 
 
 

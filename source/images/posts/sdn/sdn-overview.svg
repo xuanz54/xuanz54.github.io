@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.2" width="720" height="675" viewBox="0 0 20320 19050" preserveAspectRatio="xMidYMid" fill-rule="evenodd" clip-path="url(#presentation_clip_path)" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+ <defs class="ClipPathGroup">
+  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+   <rect x="0" y="0" width="20320" height="19050"/>
+  </clipPath>
+ </defs>
+ <g>
+  <g id="id2" class="Master_Slide">
+  </g>
+ </g>
+ <g class="SlideGroup">
+  <g>
+   <g id="id1" class="Slide" clip-path="url(#presentation_clip_path)">
+    <g class="Page">
+     <g class="com.sun.star.drawing.CustomShape">
+      <g id="id3">
+       <path fill="rgb(128,128,128)" stroke="none" d="M 10153,5095 L 437,5095 437,564 19868,564 19868,5095 10153,5095 Z"/>
+       <path fill="none" stroke="rgb(128,128,128)" d="M 10153,5095 L 437,5095 437,564 19868,564 19868,5095 10153,5095 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="8608" y="1265"><tspan fill="rgb(128,128,128)" stroke="none">SDN 逻辑层</tspan></tspan></tspan></text>
+       <path fill="rgb(114,159,207)" stroke="none" d="M 9953,4895 L 237,4895 237,364 19668,364 19668,4895 9953,4895 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 9953,4895 L 237,4895 237,364 19668,364 19668,4895 9953,4895 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="8408" y="1065"><tspan fill="rgb(0,0,0)" stroke="none">SDN 逻辑层</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.CustomShape">
+      <g id="id4">
+       <path fill="rgb(128,128,128)" stroke="none" d="M 9899,18252 L 1318,18252 1318,11821 18480,11821 18480,18252 9899,18252 Z"/>
+       <path fill="none" stroke="rgb(128,128,128)" d="M 9899,18252 L 1318,18252 1318,11821 18480,11821 18480,18252 9899,18252 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="7480" y="12522"><tspan fill="rgb(128,128,128)" stroke="none">物理网络</tspan></tspan></tspan></text>
+       <path fill="rgb(255,207,146)" stroke="none" d="M 9696,18049 L 1115,18049 1115,11618 18277,11618 18277,18049 9696,18049 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 9696,18049 L 1115,18049 1115,11618 18277,11618 18277,18049 9696,18049 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="7277" y="12319"><tspan fill="rgb(0,0,0)" stroke="none">物理网络</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.CustomShape">
+      <g id="id5">
+       <path fill="rgb(255,153,102)" stroke="none" d="M 2020,13811 C 1922,13811 1825,13908 1825,14006 L 1825,14786 C 1825,14883 1922,14981 2020,14981 L 6452,14981 C 6549,14981 6647,14883 6647,14786 L 6647,14006 C 6647,13908 6549,13811 6452,13811 L 2020,13811 Z M 1825,13811 L 1825,13811 Z M 6648,14982 L 6648,14982 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 2020,13811 C 1922,13811 1825,13908 1825,14006 L 1825,14786 C 1825,14883 1922,14981 2020,14981 L 6452,14981 C 6549,14981 6647,14883 6647,14786 L 6647,14006 C 6647,13908 6549,13811 6452,13811 L 2020,13811 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 1825,13811 L 1825,13811 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 6648,14982 L 6648,14982 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="564px" font-weight="400"><tspan class="TextPosition" x="2297" y="14591"><tspan fill="rgb(0,0,0)" stroke="none">网络交换机</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.CustomShape">
+      <g id="id6">
+       <path fill="rgb(255,153,102)" stroke="none" d="M 4289,15564 C 4191,15564 4094,15661 4094,15759 L 4094,16539 C 4094,16636 4191,16734 4289,16734 L 8721,16734 C 8818,16734 8916,16636 8916,16539 L 8916,15759 C 8916,15661 8818,15564 8721,15564 L 4289,15564 Z M 4094,15564 L 4094,15564 Z M 8917,16734 L 8917,16734 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 4289,15564 C 4191,15564 4094,15661 4094,15759 L 4094,16539 C 4094,16636 4191,16734 4289,16734 L 8721,16734 C 8818,16734 8916,16636 8916,16539 L 8916,15759 C 8916,15661 8818,15564 8721,15564 L 4289,15564 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 4094,15564 L 4094,15564 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 8917,16734 L 8917,16734 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="564px" font-weight="400"><tspan class="TextPosition" x="4566" y="16343"><tspan fill="rgb(0,0,0)" stroke="none">网络交换机</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.CustomShape">
+      <g id="id7">
+       <path fill="rgb(255,153,102)" stroke="none" d="M 12657,13811 C 12559,13811 12462,13908 12462,14006 L 12462,14786 C 12462,14883 12559,14981 12657,14981 L 17089,14981 C 17186,14981 17284,14883 17284,14786 L 17284,14006 C 17284,13908 17186,13811 17089,13811 L 12657,13811 Z M 12462,13811 L 12462,13811 Z M 17285,14982 L 17285,14982 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 12657,13811 C 12559,13811 12462,13908 12462,14006 L 12462,14786 C 12462,14883 12559,14981 12657,14981 L 17089,14981 C 17186,14981 17284,14883 17284,14786 L 17284,14006 C 17284,13908 17186,13811 17089,13811 L 12657,13811 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 12462,13811 L 12462,13811 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 17285,14982 L 17285,14982 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="564px" font-weight="400"><tspan class="TextPosition" x="12934" y="14591"><tspan fill="rgb(0,0,0)" stroke="none">网络交换机</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.CustomShape">
+      <g id="id8">
+       <path fill="rgb(255,153,102)" stroke="none" d="M 7268,13811 C 7170,13811 7073,13908 7073,14006 L 7073,14786 C 7073,14883 7170,14981 7268,14981 L 11700,14981 C 11797,14981 11895,14883 11895,14786 L 11895,14006 C 11895,13908 11797,13811 11700,13811 L 7268,13811 Z M 7073,13811 L 7073,13811 Z M 11896,14982 L 11896,14982 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 7268,13811 C 7170,13811 7073,13908 7073,14006 L 7073,14786 C 7073,14883 7170,14981 7268,14981 L 11700,14981 C 11797,14981 11895,14883 11895,14786 L 11895,14006 C 11895,13908 11797,13811 11700,13811 L 7268,13811 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 7073,13811 L 7073,13811 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 11896,14982 L 11896,14982 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="564px" font-weight="400"><tspan class="TextPosition" x="7545" y="14591"><tspan fill="rgb(0,0,0)" stroke="none">网络交换机</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.CustomShape">
+      <g id="id9">
+       <path fill="rgb(255,153,102)" stroke="none" d="M 10044,15564 C 9946,15564 9849,15661 9849,15759 L 9849,16539 C 9849,16636 9946,16734 10044,16734 L 14476,16734 C 14573,16734 14671,16636 14671,16539 L 14671,15759 C 14671,15661 14573,15564 14476,15564 L 10044,15564 Z M 9849,15564 L 9849,15564 Z M 14672,16734 L 14672,16734 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 10044,15564 C 9946,15564 9849,15661 9849,15759 L 9849,16539 C 9849,16636 9946,16734 10044,16734 L 14476,16734 C 14573,16734 14671,16636 14671,16539 L 14671,15759 C 14671,15661 14573,15564 14476,15564 L 10044,15564 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 9849,15564 L 9849,15564 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 14672,16734 L 14672,16734 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="564px" font-weight="400"><tspan class="TextPosition" x="10321" y="16343"><tspan fill="rgb(0,0,0)" stroke="none">网络交换机</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.CustomShape">
+      <g id="id10">
+       <path fill="rgb(153,204,255)" stroke="none" d="M 5087,1480 C 7017,1480 8491,2068 8491,2837 8491,3606 7017,4194 5087,4194 3157,4194 1683,3606 1683,2837 1683,2068 3157,1480 5087,1480 Z M 1683,1480 L 1683,1480 Z M 8492,4196 L 8492,4196 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 5087,1480 C 7017,1480 8491,2068 8491,2837 8491,3606 7017,4194 5087,4194 3157,4194 1683,3606 1683,2837 1683,2068 3157,1480 5087,1480 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 1683,1480 L 1683,1480 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 8492,4196 L 8492,4196 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="2892" y="3058"><tspan fill="rgb(0,0,0)" stroke="none">虚拟服务</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.CustomShape">
+      <g id="id11">
+       <path fill="rgb(153,204,255)" stroke="none" d="M 14873,1480 C 16803,1480 18277,2068 18277,2837 18277,3606 16803,4194 14873,4194 12943,4194 11469,3606 11469,2837 11469,2068 12943,1480 14873,1480 Z M 11469,1480 L 11469,1480 Z M 18278,4196 L 18278,4196 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 14873,1480 C 16803,1480 18277,2068 18277,2837 18277,3606 16803,4194 14873,4194 12943,4194 11469,3606 11469,2837 11469,2068 12943,1480 14873,1480 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 11469,1480 L 11469,1480 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 18278,4196 L 18278,4196 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="12678" y="3058"><tspan fill="rgb(0,0,0)" stroke="none">虚拟服务</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.CustomShape">
+      <g id="id12">
+       <path fill="rgb(148,189,94)" stroke="none" d="M 8385,6357 L 14875,6357 12711,9574 6222,9574 8385,6357 Z M 6222,6357 L 6222,6357 Z M 14875,9574 L 14875,9574 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 8385,6357 L 14875,6357 12711,9574 6222,9574 8385,6357 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 6222,6357 L 6222,6357 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 14875,9574 L 14875,9574 Z"/>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="9177" y="8186"><tspan fill="rgb(0,0,0)" stroke="none">控制器</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.ConnectorShape">
+      <g id="id13">
+       <path fill="none" stroke="rgb(0,0,0)" d="M 9424,10032 C 8931,12545 4735,10828 4272,13382"/>
+       <path fill="rgb(0,0,0)" stroke="none" d="M 9466,9573 L 9274,10007 9573,10035 9466,9573 Z"/>
+       <path fill="rgb(0,0,0)" stroke="none" d="M 4236,13811 L 4425,13376 4126,13349 4236,13811 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.ConnectorShape">
+      <g id="id14">
+       <path fill="none" stroke="rgb(0,0,0)" d="M 10583,10034 C 10993,12544 14453,10832 14842,13375"/>
+       <path fill="rgb(0,0,0)" stroke="none" d="M 10548,9573 L 10434,10033 10733,10010 10548,9573 Z"/>
+       <path fill="rgb(0,0,0)" stroke="none" d="M 14873,13811 L 14989,13351 14690,13373 14873,13811 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.ConnectorShape">
+      <g id="id15">
+       <path fill="none" stroke="rgb(0,0,0)" d="M 6875,7926 C 5682,7696 5177,6854 5095,4630"/>
+       <path fill="rgb(0,0,0)" stroke="none" d="M 7303,7965 L 6869,7773 6841,8071 7303,7965 Z"/>
+       <path fill="rgb(0,0,0)" stroke="none" d="M 5087,4196 L 4945,4649 5245,4643 5087,4196 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.ConnectorShape">
+      <g id="id16">
+       <path fill="none" stroke="rgb(0,0,0)" d="M 11725,5938 C 12261,4930 14270,5632 14786,4599"/>
+       <path fill="rgb(0,0,0)" stroke="none" d="M 11630,6357 L 11881,5955 11589,5884 11630,6357 Z"/>
+       <path fill="rgb(0,0,0)" stroke="none" d="M 14873,4196 L 14627,4601 14919,4668 14873,4196 Z"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

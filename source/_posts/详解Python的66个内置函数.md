@@ -7,7 +7,7 @@ categories:
 date: 2024-10-21 19:07:00
 ---
 
-![Python 内置函数分类](/images/posts/python-builtins/overview.svg)
+<a href="/images/posts/python-builtins/python-logo.svg"><img src="/images/posts/python-builtins/python-logo.svg" alt="Python 官方标志" loading="lazy" style="width:75%;max-width:380px;height:auto;display:block;margin:1.5em auto;"></a>
 
 Python 之所以被称为强大且易用，离不开其丰富的内置函数。这些函数可以大大简化我们日常的编程任务，无需额外安装任何库即可使用。
 

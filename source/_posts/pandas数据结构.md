@@ -12,6 +12,8 @@ date: 2024-07-23 23:20:00
 
 ### 构造 DataFrame：
 
+<a href="/images/posts/pandas/dataframe.svg"><img src="/images/posts/pandas/dataframe.svg" alt="pandas 官方图解：带行索引和列名的二维 DataFrame" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
+
 1. **从字典构造**：使用字典创建 DataFrame，字典的键是列名，值是列的数据。
 
 ```python
@@ -46,6 +48,8 @@ df = pd.DataFrame({'A': s1, 'B': s2})
 ```
 
 ### 构造 Series：
+
+<a href="/images/posts/pandas/series.svg"><img src="/images/posts/pandas/series.svg" alt="pandas 官方图解：从 DataFrame 的单列得到一维 Series" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
 
 1. **从列表构造**：使用列表构造 Series。
 

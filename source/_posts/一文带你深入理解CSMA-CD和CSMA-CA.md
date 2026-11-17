@@ -11,6 +11,8 @@ CSMA/CD（Carrier Sense Multiple Access with Collision Detection）和CSMA/CA（
 
 ### CSMA/CD（以太网常用）
 
+<a href="/images/posts/csma/collision-detection.png"><img src="/images/posts/csma/collision-detection.png" alt="CSMA/CD 中文碰撞检测时序图：信号传播、检测碰撞与停止发送" loading="lazy" style="width:75%;max-width:877px;height:auto;display:block;margin:1.5em auto;"></a>
+
 **通俗解释：**
 想象一下，你在一个嘈杂的咖啡馆里，想要和朋友聊天。你先看看周围（载波侦听），如果没人在说话（没有信号），你就开口说话。但如果你发现有人在说话（检测到信号），你就等他们说完再开口。如果在你说话的时候，你发现有人也在说话（冲突检测），你就停下来，等一会儿再试。
 
@@ -19,6 +21,8 @@ CSMA/CD（Carrier Sense Multiple Access with Collision Detection）和CSMA/CA（
 - **使用场景：** 适用于有线网络，如以太网。在有线网络中，电信号的传播速度快，所以即使发生冲突，也能很快检测到并处理。
 
 ### CSMA/CA（无线网络常用）
+
+<a href="/images/posts/csma/csma-ca.svg"><img src="/images/posts/csma/csma-ca.svg" alt="CSMA/CA 矢量流程图：信道侦听、随机退避与 RTS/CTS 交换" loading="lazy" style="width:75%;max-width:680px;height:auto;display:block;margin:1.5em auto;"></a>
 
 **通俗解释：**
 现在想象你在同一个咖啡馆里，但这次你和朋友通过手语交流。在你开始“说话”之前，你先看看周围有没有人也在用手语（载波侦听）。如果没有，你就开始。如果你发现有人开始“说话”了，你就等他们说完（冲突避免）。你不会等到冲突发生后才停止，而是通过一些策略来避免它。

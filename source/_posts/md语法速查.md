@@ -6,6 +6,9 @@ categories:
   - 笔记
 date: 2024-07-23 15:58:00
 ---
+
+<a href="/images/posts/markdown/markdown-logo.svg"><img src="/images/posts/markdown/markdown-logo.svg" alt="Markdown 标志" loading="lazy" style="width:75%;max-width:220px;height:auto;display:block;margin:1.5em auto;"></a>
+
 ## 一、标题
 
 >语法：# (一级标题)  ## (二级标题)  ### (三级标题) ......
@@ -223,7 +226,9 @@ date: 2024-07-23 15:58:00
 ## 九、图片插入
 >代码:
 >```text
->![不显示的文字](图片路径 "图片标题")
+```markdown
+![不显示的文字](图片路径 "图片标题")
+```
 >```
 
 >快捷键:  Ctrl+Shift+I

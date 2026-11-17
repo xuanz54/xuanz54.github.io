@@ -9,7 +9,6 @@ date: 2026-02-11 23:15:40
 ---
 **自建Bitwarden密码管理，推荐选择开源项目：[Vaultwarden](https://github.com/dani-garcia/vaultwarden)，轻量级、开源且免费，适合个人用户和小团队使用，部署简单，资源占用少。对于大多数用户来说，足以满足密码管理需求。**
 
-![Vaultwarden 自托管架构](/images/posts/bitwarden/architecture.svg)
 
 部署非常简单，尤其是通过Docker，只需少量的配置就可以启动服务，安全稳定又可靠。而且 Bitwarden 大部分高级付费功能可以通过手动配置或第三方集成来免费实现。
 
@@ -79,6 +78,8 @@ sudo ufw allow 443/tcp
 sudo ufw allow 8080/tcp
 sudo ufw allow 3012/tcp
 ```
+
+<a href="/images/posts/bitwarden/web-vault.png"><img src="/images/posts/bitwarden/web-vault.png" alt="Bitwarden 官方 Web 密码库界面截图，展示保管库列表与登录条目" loading="lazy" style="width:75%;max-width:1162px;height:auto;display:block;margin:1.5em auto;"></a>
 
 ### 步骤 5 ：安装 Bitwarden 的客户端 或 浏览器插件你可以通过以下链接下载 **Bitwarden** 的官方客户端和浏览器插件：
 

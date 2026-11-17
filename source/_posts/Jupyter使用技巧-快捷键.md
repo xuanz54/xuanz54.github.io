@@ -9,7 +9,7 @@ categories:
 date: 2024-09-01 00:14:00
 ---
 
-![Jupyter Notebook 编辑模式与命令模式](/images/posts/jupyter/modes.svg)
+<a href="/images/posts/jupyter/jupyter-logo.svg"><img src="/images/posts/jupyter/jupyter-logo.svg" alt="Jupyter 官方标志" loading="lazy" style="width:75%;max-width:420px;height:auto;display:block;margin:1.5em auto;"></a>
 
 ## 一、编辑模式与命令行模式
 

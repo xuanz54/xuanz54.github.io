@@ -7,6 +7,8 @@ categories:
   - 软件
 ---
 
+<a href="/images/posts/v2rayn/v2rayn-icon.png"><img src="/images/posts/v2rayn/v2rayn-icon.png" alt="v2rayN 官方应用图标" loading="lazy" style="width:75%;max-width:128px;height:auto;display:block;margin:1.5em auto;"></a>
+
 # v2rayN 新手保姆级教程：从下载安装到节点配置全流程
 
 v2rayN 是目前功能最强大、最受欢迎的图形化代理客户端之一。随着 7.x 版本的发布，它不仅在 Windows 上表现卓越，更通过 Avalonia 框架完美支持了 macOS 和 Linux 系统。它支持多种协议，包括 VMess、VLESS (Reality)、Shadowsocks、Trojan 及 Hysteria2。
@@ -40,6 +42,8 @@ v2rayN 是目前功能最强大、最受欢迎的图形化代理客户端之一�
 
 *注意：如果运行报错提示缺少组件，请根据提示安装 .NET 8.0 Desktop Runtime。*
 
+
+
 ## 第二步：添加节点订阅
 
 v2rayN 本身只是一个工具，你需要导入有效的服务器节点（订阅链接）才能访问网络。
@@ -50,9 +54,10 @@ v2rayN 本身只是一个工具，你需要导入有效的服务器节点（订�
 
 我们以[扬帆云机场](https://go.v2rayn.co/yf)为例，购买订阅服务后登录机场服务商的后台，点击订阅链接并复制订阅地址：
 
-![v2rayN 订阅导入流程](/images/posts/v2rayn/subscription-flow.svg)
 
 ### 2. 导入软件
+
+
 
 1. 打开 v2rayN 主界面。
 

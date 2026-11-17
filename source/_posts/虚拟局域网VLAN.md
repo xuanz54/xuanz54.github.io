@@ -9,6 +9,8 @@ date: 2024-10-13 21:33:13
 
 VLAN（Virtual Local Area Network，虚拟局域网）技术在现代网络中扮演着重要的角色，它提供了一种灵活的方式来划分网络，提高安全性和网络性能。以下是VLAN的一些优缺点：
 
+<a href="/images/posts/vlan/vlan-network.png"><img src="/images/posts/vlan/vlan-network.png" alt="同一物理网络中划分多个逻辑 VLAN 的结构示意" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
+
 ### VLAN的优点：
 
 1. **提高安全性**：VLAN可以将网络划分为多个逻辑上的广播域，限制了不同VLAN间的直接通信，从而增强了网络的安全性。

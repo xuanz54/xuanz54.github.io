@@ -11,6 +11,8 @@ date: 2024-10-14 15:56:00
 
 ### MAC地址（Media Access Control address）：
 
+<a href="/images/posts/mac-ip/mac-address.png"><img src="/images/posts/mac-ip/mac-address.png" alt="48 位 MAC 地址中的厂商标识与设备标识结构" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
+
 1. **定义**：
    - MAC地址是数据链路层的地址，用于标识网络接口卡（NIC）。
    - 它是一个48位的唯一标识符，通常由IEEE 802标准组织分配。
@@ -28,6 +30,8 @@ date: 2024-10-14 15:56:00
    - 使用ARP协议将IP地址解析为MAC地址，以便在局域网内进行通信。
 
 ### IP地址（Internet Protocol address）：
+
+<a href="/images/posts/mac-ip/ipv4-address.png"><img src="/images/posts/mac-ip/ipv4-address.png" alt="IPv4 地址的二进制与点分十进制对应关系" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
 
 1. **定义**：
    - IP地址是网络层的地址，用于标识网络中的设备。

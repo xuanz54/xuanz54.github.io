@@ -7,7 +7,7 @@ categories:
 date: 2024-08-02 00:01:00
 ---
 
-![VMware 中运行 Ubuntu 的系统层次](/images/posts/vmware-ubuntu/layers.svg)
+<a href="/images/posts/vmware-ubuntu/ubuntu-logo.svg"><img src="/images/posts/vmware-ubuntu/ubuntu-logo.svg" alt="Ubuntu 标志" loading="lazy" style="width:75%;max-width:360px;height:auto;display:block;margin:1.5em auto;"></a>
 
 ## 前言
 
@@ -82,6 +82,8 @@ Linux发行版是将Linux内核与其他软件（如系统工具、图形用户�
 
 ### 1.3 安装Ubuntu
 
+
+
 1. 启动新创建的虚拟机，Ubuntu安装程序将自动启动。
 2. 选择安装语言，点击“安装Ubuntu”。
 3. 选择键盘布局，点击“继续”。
@@ -92,6 +94,8 @@ Linux发行版是将Linux内核与其他软件（如系统工具、图形用户�
 8. 设置时区，点击“继续”。
 9. 设置用户名、计算机名和密码，点击“继续”。
 10. 等待安装完成，点击“重新启动”即可完成安装。
+
+
 
 ## 2. Ubuntu基本配置
 

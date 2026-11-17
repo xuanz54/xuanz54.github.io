@@ -9,9 +9,10 @@ date: 2024-08-07 12:15:00
 
 
 
-![Llama 3.1 本地或云端运行选择](/images/posts/llama31/local-or-cloud.svg)
 
 
+
+<a href="/images/posts/llama31/llama31-models.png"><img src="/images/posts/llama31/llama31-models.png" alt="Llama 3.1 官方模型系列介绍：8B、70B 与 405B" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
 
 1.本地电脑安装的硬件要求：
 
@@ -47,4 +48,4 @@ ollama run llama3.1:405b
 
 【[链接直达](https://huggingface.co/chat/)】
 
-如果本机硬件不足，可以使用上图右侧的云端方案快速体验。
+如果本机硬件不足，可以通过上面的 Hugging Face 链接在线体验。

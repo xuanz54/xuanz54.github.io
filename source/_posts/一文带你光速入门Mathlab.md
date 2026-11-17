@@ -8,7 +8,7 @@ categories:
 date: 2024-09-17 12:22:00
 ---
 
-![MATLAB 入门能力地图](/images/posts/matlab/overview.svg)
+<a href="/images/posts/matlab/matlab-logo.svg"><img src="/images/posts/matlab/matlab-logo.svg" alt="MATLAB 标志" loading="lazy" style="width:75%;max-width:240px;height:auto;display:block;margin:1.5em auto;"></a>
 
 ## 1. 引言
 
@@ -19,6 +19,8 @@ Mathlab是一款功能强大的数学计算软件，广泛应用于工程、科�
 首先，访问[Mathlab官网](https://www.mathworks.com/)下载适合你操作系统的版本。安装过程中，你需要选择安装的组件，建议选择“Mathlab”及其相关工具箱，以获得更全面的功能支持。
 
 ### 2.2 界面介绍
+
+
 启动Mathlab后，你会看到主界面包含以下几个部分：
 - **命令窗口**：用于输入命令并显示输出。
 - **编辑器**：用于编写和保存脚本文件。
@@ -86,6 +88,8 @@ ylabel('sin(x)');
 title('正弦函数图');
 grid on; % 添加网格
 ```
+
+
 
 ## 5. 实例应用
 ### 5.1 数据分析

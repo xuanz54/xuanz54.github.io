@@ -7,9 +7,12 @@ categories:
 date: 2025-02-01 14:40:00
 ---
 
+<a href="/images/posts/deepseek-janus/deepseek-logo.svg"><img src="/images/posts/deepseek-janus/deepseek-logo.svg" alt="DeepSeek 标志" loading="lazy" style="width:75%;max-width:280px;height:auto;display:block;margin:1.5em auto;"></a>
+
 DeepSeek 又深夜发大招！开源了多模态大模型Janus-Pro-7B，普通电脑可以直接安装使用，现在我们就来本地部署！支持图像识别和图像生成，性能非常强悍！
 
-![Janus-Pro-7B 本地部署流程](/images/posts/deepseek-janus/janus-overview.svg)
+
+
 
 1、检查自己是否安装了 Git 和 conda ，如果没有安装，请点击前往下载【[Git](https://git-scm.com/)】和 【[Conda](https://www.anaconda.com/download)】
 
@@ -69,9 +72,8 @@ python demo/app_januspro.py --device cuda
 
 安装完成以后，根据提示打开本地链接：http://127.0.0.1:7860 即可进入到使用面板
 
-![Janus-Pro 本地 WebUI 示意](/images/posts/deepseek-janus/janus-webui.svg)
 
-右侧的文生图面板用于输入描述并生成图像，操作位置见上图。
+在界面中选择文生图功能，输入描述后生成图像。
 
 **退出以后该如何启动？ 按下方的步骤即可：**
 

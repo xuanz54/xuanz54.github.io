@@ -13,7 +13,6 @@ date: 2026-07-20 15:06:00
 > 适用对象：想系统理解 Codex、AI Agent、Skills、MCP、工具调用、上下文工程和 Agent 工程化的人。  
 > 阅读目标：读完后能把这些概念放进同一张地图里，并知道下一步如何实践。
 
-![现代 Agent 技术栈](/images/posts/agent-stack/overview.svg)
 
 
 
@@ -60,6 +59,8 @@ date: 2026-07-20 15:06:00
 
 ## 2. 大图：现代 AI Agent 系统由什么组成
 
+<a href="/images/posts/agent-stack/augmented-llm.png"><img src="/images/posts/agent-stack/augmented-llm.png" alt="Anthropic 官方图解：LLM 与检索、工具和记忆组成增强模型" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
+
 一个现代 Agent 系统一般包含这些层：
 
 | 层级       | 作用               | 常见例子                                          |
@@ -95,7 +96,8 @@ date: 2026-07-20 15:06:00
 
 它的典型循环是：
 
-![Agent Loop](/images/posts/agent-stack/agent-loop.svg)
+<a href="/images/posts/agent-stack/autonomous-agent.png"><img src="/images/posts/agent-stack/autonomous-agent.png" alt="Anthropic 官方图解：Agent 在环境反馈中循环调用工具" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
+
 
 这个循环有时被称为 Agent Loop、ReAct、Plan-Act-Observe 等。名称不同，核心思想相同：  
 **模型要能在行动结果的反馈中继续推理。**
@@ -152,6 +154,8 @@ Codex 可以理解为 OpenAI 面向软件开发任务的编码 Agent。它的重
 ```text
 读取文件 -> 搜索代码 -> 制定修改方案 -> 编辑文件 -> 运行测试 -> 根据失败日志继续修改 -> 汇报结果
 ```
+
+<a href="/images/posts/agent-stack/coding-agent.png"><img src="/images/posts/agent-stack/coding-agent.png" alt="Anthropic 官方图解：编码 Agent 的规划、执行与测试反馈流程" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
 
 ### 4.2 Codex 的核心价值
 
@@ -625,6 +629,8 @@ MCP 可以作为工具来源之一，把外部 server 暴露成工具/资源/提
 
 ## 12. Multi-Agent：多个 Agent 协作
 
+<a href="/images/posts/agent-stack/orchestrator-workers.png"><img src="/images/posts/agent-stack/orchestrator-workers.png" alt="Anthropic 官方图解：协调者分配任务给多个工作 Agent" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
+
 Multi-Agent 指多个 Agent 分工协作。常见模式：
 
 | 模式           | 说明                                              |
@@ -701,6 +707,8 @@ Agent 必须把网页、文档、邮件、搜索结果视为不可信内容。
 没有日志的 Agent 很难调试，也很难建立信任。
 
 ## 14. 评测：如何判断 Agent 做得好不好
+
+<a href="/images/posts/agent-stack/evaluator-optimizer.png"><img src="/images/posts/agent-stack/evaluator-optimizer.png" alt="Anthropic 官方图解：生成器与评估器组成改进循环" loading="lazy" style="width:75%;max-width:1200px;height:auto;display:block;margin:1.5em auto;"></a>
 
 Agent 的评测不能只看“回答像不像”。要看任务是否完成。
 

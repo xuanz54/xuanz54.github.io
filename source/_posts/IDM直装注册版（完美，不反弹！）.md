@@ -8,7 +8,11 @@ categories:
 date: 2024-07-26 21:42:00
 ---
 
+<a href="/images/posts/idm/idm-box.png"><img src="/images/posts/idm/idm-box.png" alt="Internet Download Manager 官方软件包装图" loading="lazy" style="width:75%;max-width:200px;height:auto;display:block;margin:1.5em auto;"></a>
+
 **Internet Download Manager v6.38.15.2**
+
+
 
 **中文绿色特别版：【[点击下载](https://www.mediafire.com/file/lk9opo8bhcak3to/Inet.Download.Manager.v6.38.15.2.rar/file)】**
 
